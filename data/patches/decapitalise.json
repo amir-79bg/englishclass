@@ -1,0 +1,1760 @@
+{
+ "14": {
+  "en": "air force"
+ },
+ "1355": {
+  "en": "euphoric"
+ },
+ "1356": {
+  "en": "melancholic"
+ },
+ "1357": {
+  "en": "ambivalent"
+ },
+ "1358": {
+  "en": "apathetic"
+ },
+ "1359": {
+  "en": "ebullient"
+ },
+ "1360": {
+  "en": "despondent"
+ },
+ "1361": {
+  "en": "exhilarated"
+ },
+ "1362": {
+  "en": "contemptuous"
+ },
+ "1363": {
+  "en": "estranged"
+ },
+ "1364": {
+  "en": "forlorn"
+ },
+ "1365": {
+  "en": "intrigued"
+ },
+ "1366": {
+  "en": "overwhelmed"
+ },
+ "1367": {
+  "en": "radiant"
+ },
+ "1368": {
+  "en": "sullen"
+ },
+ "1369": {
+  "en": "vexed"
+ },
+ "1370": {
+  "en": "wistful"
+ },
+ "1371": {
+  "en": "zealous"
+ },
+ "1372": {
+  "en": "apprehensive"
+ },
+ "1373": {
+  "en": "complacent"
+ },
+ "1374": {
+  "en": "defiant"
+ },
+ "1375": {
+  "en": "diligent"
+ },
+ "1376": {
+  "en": "elated"
+ },
+ "1377": {
+  "en": "frivolous"
+ },
+ "1379": {
+  "en": "haughty"
+ },
+ "1380": {
+  "en": "indignant"
+ },
+ "1381": {
+  "en": "jovial"
+ },
+ "1382": {
+  "en": "meticulous"
+ },
+ "1383": {
+  "en": "nonchalant"
+ },
+ "1384": {
+  "en": "obstinate"
+ },
+ "1385": {
+  "en": "pensive"
+ },
+ "1386": {
+  "en": "quixotic"
+ },
+ "1388": {
+  "en": "sardonic"
+ },
+ "1389": {
+  "en": "taciturn"
+ },
+ "1390": {
+  "en": "unyielding"
+ },
+ "1391": {
+  "en": "vehement"
+ },
+ "1392": {
+  "en": "wary"
+ },
+ "1393": {
+  "en": "zealot"
+ },
+ "1394": {
+  "en": "affable"
+ },
+ "1395": {
+  "en": "bellicose"
+ },
+ "1396": {
+  "en": "candid"
+ },
+ "1397": {
+  "en": "debonair"
+ },
+ "1398": {
+  "en": "erudite"
+ },
+ "1399": {
+  "en": "fastidious"
+ },
+ "1400": {
+  "en": "altruistic"
+ },
+ "1401": {
+  "en": "benevolent"
+ },
+ "1402": {
+  "en": "cerebral"
+ },
+ "1403": {
+  "en": "dogmatic"
+ },
+ "1404": {
+  "en": "egoistic"
+ },
+ "1405": {
+  "en": "fanatical"
+ },
+ "1406": {
+  "en": "gregarious"
+ },
+ "1407": {
+  "en": "hermetic"
+ },
+ "1408": {
+  "en": "iconoclastic"
+ },
+ "1409": {
+  "en": "judicious"
+ },
+ "1410": {
+  "en": "knavish"
+ },
+ "1411": {
+  "en": "laconic"
+ },
+ "1412": {
+  "en": "munificent"
+ },
+ "1413": {
+  "en": "narcissistic"
+ },
+ "1414": {
+  "en": "obsequious"
+ },
+ "1415": {
+  "en": "pragmatic"
+ },
+ "1416": {
+  "en": "querulous"
+ },
+ "1417": {
+  "en": "reticent"
+ },
+ "1418": {
+  "en": "sanguine"
+ },
+ "1419": {
+  "en": "truculent"
+ },
+ "1420": {
+  "en": "umbrageous"
+ },
+ "1421": {
+  "en": "venerable"
+ },
+ "1422": {
+  "en": "winsome"
+ },
+ "1423": {
+  "en": "abrasive"
+ },
+ "1424": {
+  "en": "boisterous"
+ },
+ "1425": {
+  "en": "cantankerous"
+ },
+ "1426": {
+  "en": "effervescent"
+ },
+ "1427": {
+  "en": "furtive"
+ },
+ "1428": {
+  "en": "garrulous"
+ },
+ "1429": {
+  "en": "hubristic"
+ },
+ "1430": {
+  "en": "insolent"
+ },
+ "1431": {
+  "en": "jocular"
+ },
+ "1433": {
+  "en": "lugubrious"
+ },
+ "1434": {
+  "en": "mordant"
+ },
+ "1435": {
+  "en": "nefarious"
+ },
+ "1436": {
+  "en": "ostentatious"
+ },
+ "1437": {
+  "en": "pugnacious"
+ },
+ "1438": {
+  "en": "quaint"
+ },
+ "1439": {
+  "en": "rambunctious"
+ },
+ "1440": {
+  "en": "sagacious"
+ },
+ "1441": {
+  "en": "urbane"
+ },
+ "1442": {
+  "en": "voluble"
+ },
+ "1444": {
+  "en": "delusional"
+ },
+ "1445": {
+  "en": "ethereal"
+ },
+ "1446": {
+  "en": "frenetic"
+ },
+ "1447": {
+  "en": "hallucinatory"
+ },
+ "1448": {
+  "en": "introspective"
+ },
+ "1449": {
+  "en": "lethargic"
+ },
+ "1450": {
+  "en": "manic"
+ },
+ "1451": {
+  "en": "neurotic"
+ },
+ "1452": {
+  "en": "obsessive"
+ },
+ "1453": {
+  "en": "paranoid"
+ },
+ "1454": {
+  "en": "quintessential"
+ },
+ "1455": {
+  "en": "restless"
+ },
+ "1456": {
+  "en": "sedentary"
+ },
+ "1457": {
+  "en": "turbulent"
+ },
+ "1458": {
+  "en": "unhinged"
+ },
+ "1459": {
+  "en": "vulnerable"
+ },
+ "1460": {
+  "en": "whimsical"
+ },
+ "1461": {
+  "en": "aberrant"
+ },
+ "1462": {
+  "en": "bewildered"
+ },
+ "1463": {
+  "en": "compliant"
+ },
+ "1464": {
+  "en": "deflated"
+ },
+ "1465": {
+  "en": "enervated"
+ },
+ "1466": {
+  "en": "fractious"
+ },
+ "1468": {
+  "en": "hapless"
+ },
+ "1469": {
+  "en": "incensed"
+ },
+ "1470": {
+  "en": "jaded"
+ },
+ "1471": {
+  "en": "languid"
+ },
+ "1472": {
+  "en": "mellifluous"
+ },
+ "1473": {
+  "en": "nostalgic"
+ },
+ "1474": {
+  "en": "obfuscated"
+ },
+ "1475": {
+  "en": "perplexed"
+ },
+ "1476": {
+  "en": "quiescent"
+ },
+ "1477": {
+  "en": "rapt"
+ },
+ "1479": {
+  "en": "tranquil"
+ },
+ "1480": {
+  "en": "unsettled"
+ },
+ "1481": {
+  "en": "vigilant"
+ },
+ "1482": {
+  "en": "coercive"
+ },
+ "1483": {
+  "en": "deferential"
+ },
+ "1484": {
+  "en": "elitist"
+ },
+ "1485": {
+  "en": "fawning"
+ },
+ "1486": {
+  "en": "ingratiating"
+ },
+ "1487": {
+  "en": "loquacious"
+ },
+ "1488": {
+  "en": "patronizing"
+ },
+ "1489": {
+  "en": "unassuming"
+ },
+ "1490": {
+  "en": "aghast"
+ },
+ "1491": {
+  "en": "bemused"
+ },
+ "1492": {
+  "en": "chagrined"
+ },
+ "1493": {
+  "en": "disgruntled"
+ },
+ "1494": {
+  "en": "exasperated"
+ },
+ "1495": {
+  "en": "flippant"
+ },
+ "1496": {
+  "en": "gratified"
+ },
+ "1497": {
+  "en": "hysterical"
+ },
+ "1498": {
+  "en": "jubilant"
+ },
+ "1499": {
+  "en": "livid"
+ },
+ "1500": {
+  "en": "morose"
+ },
+ "1501": {
+  "en": "nonplussed"
+ },
+ "1502": {
+  "en": "outraged"
+ },
+ "1503": {
+  "en": "petrified"
+ },
+ "1504": {
+  "en": "quizzical"
+ },
+ "1505": {
+  "en": "rueful"
+ },
+ "1506": {
+  "en": "tremulous"
+ },
+ "1507": {
+  "en": "upset"
+ },
+ "1508": {
+  "en": "contrite"
+ },
+ "1509": {
+  "en": "frustrated"
+ },
+ "1510": {
+  "en": "conscientious"
+ },
+ "1511": {
+  "en": "dutiful"
+ },
+ "1512": {
+  "en": "egalitarian"
+ },
+ "1513": {
+  "en": "genuine"
+ },
+ "1514": {
+  "en": "honorable"
+ },
+ "1515": {
+  "en": "integrous"
+ },
+ "1516": {
+  "en": "just"
+ },
+ "1517": {
+  "en": "kindhearted"
+ },
+ "1518": {
+  "en": "laudable"
+ },
+ "1519": {
+  "en": "merciful"
+ },
+ "1521": {
+  "en": "obliging"
+ },
+ "1522": {
+  "en": "principled"
+ },
+ "1523": {
+  "en": "quiet"
+ },
+ "1524": {
+  "en": "righteous"
+ },
+ "1526": {
+  "en": "virtuous"
+ },
+ "1528": {
+  "en": "blameless"
+ },
+ "1529": {
+  "en": "charitable"
+ },
+ "1530": {
+  "en": "decent"
+ },
+ "1531": {
+  "en": "ethical"
+ },
+ "1532": {
+  "en": "faithful"
+ },
+ "1534": {
+  "en": "idealistic"
+ },
+ "1535": {
+  "en": "law-abiding"
+ },
+ "1537": {
+  "en": "ambrosial"
+ },
+ "1539": {
+  "en": "culinary"
+ },
+ "1540": {
+  "en": "delectable"
+ },
+ "1541": {
+  "en": "epicurean"
+ },
+ "1542": {
+  "en": "fragrant"
+ },
+ "1543": {
+  "en": "gourmet"
+ },
+ "1544": {
+  "en": "herbaceous"
+ },
+ "1545": {
+  "en": "insipid"
+ },
+ "1546": {
+  "en": "juicy"
+ },
+ "1547": {
+  "en": "luscious"
+ },
+ "1549": {
+  "en": "nourishing"
+ },
+ "1550": {
+  "en": "opulent"
+ },
+ "1551": {
+  "en": "palatable"
+ },
+ "1553": {
+  "en": "tantalizing"
+ },
+ "1554": {
+  "en": "umami"
+ },
+ "1555": {
+  "en": "velvety"
+ },
+ "1556": {
+  "en": "wholesome"
+ },
+ "1557": {
+  "en": "zesty"
+ },
+ "1558": {
+  "en": "appetizing"
+ },
+ "1560": {
+  "en": "crispy"
+ },
+ "1561": {
+  "en": "delicate"
+ },
+ "1562": {
+  "en": "earthy"
+ },
+ "1563": {
+  "en": "fruity"
+ },
+ "1564": {
+  "en": "grainy"
+ },
+ "1565": {
+  "en": "hearty"
+ },
+ "1566": {
+  "en": "intense"
+ },
+ "1568": {
+  "en": "kaleidoscopic"
+ },
+ "1569": {
+  "en": "lemony"
+ },
+ "1571": {
+  "en": "nutty"
+ },
+ "1572": {
+  "en": "peppery"
+ },
+ "1573": {
+  "en": "quenching"
+ },
+ "1574": {
+  "en": "refreshing"
+ },
+ "1575": {
+  "en": "smoky"
+ },
+ "1576": {
+  "en": "tangy"
+ },
+ "1577": {
+  "en": "alkaline"
+ },
+ "1578": {
+  "en": "antioxidant"
+ },
+ "1579": {
+  "en": "bioavailability"
+ },
+ "1580": {
+  "en": "caloric"
+ },
+ "1581": {
+  "en": "detoxifying"
+ },
+ "1582": {
+  "en": "elimination"
+ },
+ "1583": {
+  "en": "fermented"
+ },
+ "1584": {
+  "en": "gluten-free"
+ },
+ "1585": {
+  "en": "holistic"
+ },
+ "1586": {
+  "en": "intermittent"
+ },
+ "1587": {
+  "en": "keto"
+ },
+ "1588": {
+  "en": "lactose-free"
+ },
+ "1589": {
+  "en": "macrobiotic"
+ },
+ "1591": {
+  "en": "paleo"
+ },
+ "1592": {
+  "en": "quinoa"
+ },
+ "1594": {
+  "en": "superfood"
+ },
+ "1595": {
+  "en": "therapeutic"
+ },
+ "1596": {
+  "en": "unprocessed"
+ },
+ "1599": {
+  "en": "anti-inflammatory"
+ },
+ "1601": {
+  "en": "cruelty-free"
+ },
+ "1603": {
+  "en": "fortified"
+ },
+ "1605": {
+  "en": "heart-healthy"
+ },
+ "1606": {
+  "en": "irradiated"
+ },
+ "1607": {
+  "en": "ketogenic"
+ },
+ "1608": {
+  "en": "low-carb"
+ },
+ "1612": {
+  "en": "probiotic"
+ },
+ "1614": {
+  "en": "sustainable"
+ },
+ "1615": {
+  "en": "whole-grain"
+ },
+ "1616": {
+  "en": "baste"
+ },
+ "1618": {
+  "en": "braise"
+ },
+ "1619": {
+  "en": "caramelize"
+ },
+ "1620": {
+  "en": "deglaze"
+ },
+ "1621": {
+  "en": "emulsify"
+ },
+ "1623": {
+  "en": "infuse"
+ },
+ "1624": {
+  "en": "julienne"
+ },
+ "1625": {
+  "en": "knead"
+ },
+ "1626": {
+  "en": "leaven"
+ },
+ "1627": {
+  "en": "marinate"
+ },
+ "1628": {
+  "en": "poach"
+ },
+ "1629": {
+  "en": "puree"
+ },
+ "1630": {
+  "en": "scorch"
+ },
+ "1632": {
+  "en": "whisk"
+ },
+ "1633": {
+  "en": "zest"
+ },
+ "1635": {
+  "en": "blackened"
+ },
+ "1636": {
+  "en": "breaded"
+ },
+ "1637": {
+  "en": "caramelized"
+ },
+ "1638": {
+  "en": "devilled"
+ },
+ "1639": {
+  "en": "emulsified"
+ },
+ "1640": {
+  "en": "fricasseed"
+ },
+ "1641": {
+  "en": "glazed"
+ },
+ "1642": {
+  "en": "infused"
+ },
+ "1643": {
+  "en": "julienned"
+ },
+ "1644": {
+  "en": "kneaded"
+ },
+ "1645": {
+  "en": "marinated"
+ },
+ "1646": {
+  "en": "poached"
+ },
+ "1647": {
+  "en": "pureed"
+ },
+ "1648": {
+  "en": "reduced"
+ },
+ "1649": {
+  "en": "seared"
+ },
+ "1650": {
+  "en": "simmered"
+ },
+ "1651": {
+  "en": "whisked"
+ },
+ "1652": {
+  "en": "zested"
+ },
+ "1653": {
+  "en": "amino acid"
+ },
+ "1654": {
+  "en": "biopolymer"
+ },
+ "1655": {
+  "en": "dehydration"
+ },
+ "1656": {
+  "en": "electrolyte"
+ },
+ "1657": {
+  "en": "fibre"
+ },
+ "1658": {
+  "en": "glucose"
+ },
+ "1659": {
+  "en": "hemoglobin"
+ },
+ "1660": {
+  "en": "insulin"
+ },
+ "1661": {
+  "en": "ketone"
+ },
+ "1662": {
+  "en": "lipid"
+ },
+ "1664": {
+  "en": "nutrient"
+ },
+ "1665": {
+  "en": "osteoporosis"
+ },
+ "1666": {
+  "en": "protein"
+ },
+ "1667": {
+  "en": "riboflavin"
+ },
+ "1668": {
+  "en": "selenium"
+ },
+ "1669": {
+  "en": "tryptophan"
+ },
+ "1670": {
+  "en": "unsaturated"
+ },
+ "1671": {
+  "en": "vitamin"
+ },
+ "1672": {
+  "en": "waistline"
+ },
+ "1673": {
+  "en": "xerosis"
+ },
+ "1674": {
+  "en": "zinc"
+ },
+ "1675": {
+  "en": "biomarker"
+ },
+ "1676": {
+  "en": "calcium"
+ },
+ "1677": {
+  "en": "digestion"
+ },
+ "1678": {
+  "en": "enzyme"
+ },
+ "1679": {
+  "en": "fatty acid"
+ },
+ "1680": {
+  "en": "glycogen"
+ },
+ "1681": {
+  "en": "hormone"
+ },
+ "1682": {
+  "en": "iodine"
+ },
+ "1683": {
+  "en": "keratin"
+ },
+ "1684": {
+  "en": "lactose"
+ },
+ "1685": {
+  "en": "magnesium"
+ },
+ "1686": {
+  "en": "niacin"
+ },
+ "1687": {
+  "en": "oxalate"
+ },
+ "1688": {
+  "en": "potassium"
+ },
+ "1689": {
+  "en": "quercetin"
+ },
+ "1690": {
+  "en": "retinol"
+ },
+ "1691": {
+  "en": "sucrose"
+ },
+ "1692": {
+  "en": "thiamine"
+ },
+ "1693": {
+  "en": "uric acid"
+ },
+ "1694": {
+  "en": "adaptogen"
+ },
+ "1695": {
+  "en": "bioflavonoid"
+ },
+ "1696": {
+  "en": "carotenoid"
+ },
+ "1697": {
+  "en": "chelated"
+ },
+ "1698": {
+  "en": "colostrum"
+ },
+ "1699": {
+  "en": "digestive enzyme"
+ },
+ "1700": {
+  "en": "echinacea"
+ },
+ "1701": {
+  "en": "flavonoid"
+ },
+ "1702": {
+  "en": "glutamine"
+ },
+ "1703": {
+  "en": "herbal"
+ },
+ "1704": {
+  "en": "inulin"
+ },
+ "1705": {
+  "en": "joint supplement"
+ },
+ "1707": {
+  "en": "melatonin"
+ },
+ "1708": {
+  "en": "nootropic"
+ },
+ "1710": {
+  "en": "prebiotic"
+ },
+ "1711": {
+  "en": "resveratrol"
+ },
+ "1712": {
+  "en": "spirulina"
+ },
+ "1713": {
+  "en": "turmeric"
+ },
+ "1714": {
+  "en": "vitamin D"
+ },
+ "1715": {
+  "en": "ashwagandha"
+ },
+ "1716": {
+  "en": "beta-glucan"
+ },
+ "1717": {
+  "en": "biotin"
+ },
+ "1718": {
+  "en": "caffeine"
+ },
+ "1719": {
+  "en": "coenzyme Q10"
+ },
+ "1720": {
+  "en": "elderberry"
+ },
+ "1722": {
+  "en": "ginseng"
+ },
+ "1723": {
+  "en": "glutathione"
+ },
+ "1726": {
+  "en": "taurine"
+ },
+ "1727": {
+  "en": "vitamin C"
+ },
+ "1729": {
+  "en": "pycnogenol"
+ },
+ "1730": {
+  "en": "malnutrition"
+ },
+ "1731": {
+  "en": "deficiency"
+ },
+ "1732": {
+  "en": "toxicity"
+ },
+ "1733": {
+  "en": "intolerance"
+ },
+ "1734": {
+  "en": "allergy"
+ },
+ "1735": {
+  "en": "celiac"
+ },
+ "1736": {
+  "en": "anemia"
+ },
+ "1737": {
+  "en": "diabetes"
+ },
+ "1738": {
+  "en": "hypertension"
+ },
+ "1739": {
+  "en": "hyperglycemia"
+ },
+ "1740": {
+  "en": "hypoglycemia"
+ },
+ "1741": {
+  "en": "dyslipidemia"
+ },
+ "1742": {
+  "en": "gout"
+ },
+ "1744": {
+  "en": "gallstones"
+ },
+ "1745": {
+  "en": "fatty liver"
+ },
+ "1746": {
+  "en": "cirrhosis"
+ },
+ "1747": {
+  "en": "pancreatitis"
+ },
+ "1748": {
+  "en": "gastritis"
+ },
+ "1749": {
+  "en": "ulcer"
+ },
+ "1750": {
+  "en": "reflux"
+ },
+ "1751": {
+  "en": "diverticulitis"
+ },
+ "1752": {
+  "en": "crohn's"
+ },
+ "1753": {
+  "en": "colitis"
+ },
+ "1754": {
+  "en": "anorexia"
+ },
+ "1755": {
+  "en": "bulimia"
+ },
+ "1756": {
+  "en": "binge eating"
+ },
+ "1757": {
+  "en": "insulin resistance"
+ },
+ "1758": {
+  "en": "oxidative stress"
+ },
+ "1759": {
+  "en": "inflammation"
+ },
+ "1760": {
+  "en": "atherosclerosis"
+ },
+ "1761": {
+  "en": "thrombosis"
+ },
+ "1762": {
+  "en": "stroke"
+ },
+ "1764": {
+  "en": "hypotension"
+ },
+ "1765": {
+  "en": "anaphylaxis"
+ },
+ "1766": {
+  "en": "neuropathy"
+ },
+ "1767": {
+  "en": "retinopathy"
+ },
+ "1768": {
+  "en": "nephropathy"
+ },
+ "1769": {
+  "en": "gastroenteritis"
+ },
+ "1770": {
+  "en": "abseiling"
+ },
+ "1771": {
+  "en": "bungee jumping"
+ },
+ "1772": {
+  "en": "canyoning"
+ },
+ "1773": {
+  "en": "diving"
+ },
+ "1774": {
+  "en": "expedition"
+ },
+ "1775": {
+  "en": "fording"
+ },
+ "1777": {
+  "en": "heli-skiing"
+ },
+ "1779": {
+  "en": "jungle trekking"
+ },
+ "1780": {
+  "en": "kayaking"
+ },
+ "1782": {
+  "en": "mountaineering"
+ },
+ "1783": {
+  "en": "navigation"
+ },
+ "1784": {
+  "en": "orienteering"
+ },
+ "1785": {
+  "en": "paragliding"
+ },
+ "1787": {
+  "en": "rafting"
+ },
+ "1788": {
+  "en": "safari"
+ },
+ "1789": {
+  "en": "scuba diving"
+ },
+ "1790": {
+  "en": "snorkeling"
+ },
+ "1791": {
+  "en": "skiing"
+ },
+ "1792": {
+  "en": "snowboarding"
+ },
+ "1793": {
+  "en": "surfing"
+ },
+ "1794": {
+  "en": "trekking"
+ },
+ "1800": {
+  "en": "climbing"
+ },
+ "1801": {
+  "en": "cycling"
+ },
+ "1805": {
+  "en": "archaeological"
+ },
+ "1807": {
+  "en": "shrine"
+ },
+ "1808": {
+  "en": "mosque"
+ },
+ "1809": {
+  "en": "synagogue"
+ },
+ "1810": {
+  "en": "exhibition"
+ },
+ "1811": {
+  "en": "artefact"
+ },
+ "1814": {
+  "en": "fortress"
+ },
+ "1816": {
+  "en": "cemetery"
+ },
+ "1818": {
+  "en": "crypt"
+ },
+ "1820": {
+  "en": "monastery"
+ },
+ "1823": {
+  "en": "tourist"
+ },
+ "1824": {
+  "en": "itinerary"
+ },
+ "1826": {
+  "en": "excursion"
+ },
+ "1828": {
+  "en": "tourist guide"
+ },
+ "1829": {
+  "en": "local culture"
+ },
+ "1830": {
+  "en": "historic district"
+ },
+ "1841": {
+  "en": "swamp"
+ },
+ "1849": {
+  "en": "wildlife"
+ },
+ "1850": {
+  "en": "biodiversity"
+ },
+ "1851": {
+  "en": "habitat"
+ },
+ "1852": {
+  "en": "conservation"
+ },
+ "1853": {
+  "en": "preservation"
+ },
+ "1854": {
+  "en": "national park"
+ },
+ "1856": {
+  "en": "sanctuary"
+ },
+ "1857": {
+  "en": "eco-tourism"
+ },
+ "1858": {
+  "en": "endangered"
+ },
+ "1859": {
+  "en": "extinction"
+ },
+ "1860": {
+  "en": "biome"
+ },
+ "1861": {
+  "en": "aquatic"
+ },
+ "1862": {
+  "en": "terrestrial"
+ },
+ "1863": {
+  "en": "marine"
+ },
+ "1866": {
+  "en": "mangrove"
+ },
+ "1868": {
+  "en": "wetland"
+ },
+ "1872": {
+  "en": "fungus"
+ },
+ "1873": {
+  "en": "bacteria"
+ },
+ "1874": {
+  "en": "plankton"
+ },
+ "1875": {
+  "en": "phytoplankton"
+ },
+ "1876": {
+  "en": "zooplankton"
+ },
+ "1877": {
+  "en": "decomposer"
+ },
+ "1878": {
+  "en": "predator"
+ },
+ "1879": {
+  "en": "prey"
+ },
+ "1880": {
+  "en": "symbiosis"
+ },
+ "1881": {
+  "en": "parasitism"
+ },
+ "1882": {
+  "en": "mutualism"
+ },
+ "1883": {
+  "en": "commensalism"
+ },
+ "1884": {
+  "en": "food web"
+ },
+ "1885": {
+  "en": "food chain"
+ },
+ "1886": {
+  "en": "photosynthesis"
+ },
+ "1887": {
+  "en": "respiration"
+ },
+ "1888": {
+  "en": "pollutant"
+ },
+ "1889": {
+  "en": "acid rain"
+ },
+ "1892": {
+  "en": "protect"
+ },
+ "1893": {
+  "en": "restore"
+ },
+ "1894": {
+  "en": "reforestation"
+ },
+ "1895": {
+  "en": "conservationist"
+ },
+ "1896": {
+  "en": "extinct"
+ },
+ "1897": {
+  "en": "poaching"
+ },
+ "1898": {
+  "en": "deforestation"
+ },
+ "1900": {
+  "en": "climate change"
+ },
+ "1901": {
+  "en": "smog"
+ },
+ "1902": {
+  "en": "ozone layer"
+ },
+ "1904": {
+  "en": "methane"
+ },
+ "1905": {
+  "en": "emission"
+ },
+ "1906": {
+  "en": "reuse"
+ },
+ "1907": {
+  "en": "compost"
+ },
+ "1908": {
+  "en": "pesticide"
+ },
+ "1909": {
+  "en": "herbicide"
+ },
+ "1910": {
+  "en": "fertilizer"
+ },
+ "1911": {
+  "en": "waste"
+ },
+ "1912": {
+  "en": "landfill"
+ },
+ "1913": {
+  "en": "incineration"
+ },
+ "1914": {
+  "en": "species"
+ },
+ "1915": {
+  "en": "protection"
+ },
+ "1916": {
+  "en": "sustainability"
+ },
+ "1917": {
+  "en": "alternative"
+ },
+ "1918": {
+  "en": "global"
+ },
+ "1919": {
+  "en": "nitrous oxide"
+ },
+ "1920": {
+  "en": "fluorinated"
+ },
+ "1921": {
+  "en": "emissions"
+ },
+ "1923": {
+  "en": "solar"
+ },
+ "1924": {
+  "en": "hydroelectric"
+ },
+ "1925": {
+  "en": "geothermal"
+ },
+ "1926": {
+  "en": "nuclear"
+ },
+ "1929": {
+  "en": "sea-level rise"
+ },
+ "1930": {
+  "en": "extreme weather"
+ },
+ "1933": {
+  "en": "tornado"
+ },
+ "1934": {
+  "en": "wildfire"
+ },
+ "1935": {
+  "en": "adaptation"
+ },
+ "1936": {
+  "en": "mitigation"
+ },
+ "1937": {
+  "en": "adapt"
+ },
+ "1938": {
+  "en": "mitigate"
+ },
+ "1941": {
+  "en": "climate action"
+ },
+ "1944": {
+  "en": "climate justice"
+ },
+ "1945": {
+  "en": "artifact"
+ },
+ "1946": {
+  "en": "relic"
+ },
+ "1948": {
+  "en": "sarcophagus"
+ },
+ "1949": {
+  "en": "hieroglyph"
+ },
+ "1950": {
+  "en": "cuneiform"
+ },
+ "1951": {
+  "en": "petroglyph"
+ },
+ "1953": {
+  "en": "stratigraphy"
+ },
+ "1954": {
+  "en": "paleontology"
+ },
+ "1955": {
+  "en": "anthropology"
+ },
+ "1956": {
+  "en": "dig"
+ },
+ "1959": {
+  "en": "pottery"
+ },
+ "1961": {
+  "en": "inscription"
+ },
+ "1962": {
+  "en": "stele"
+ },
+ "1963": {
+  "en": "obelisk"
+ },
+ "1964": {
+  "en": "columns"
+ },
+ "1965": {
+  "en": "mosaic"
+ },
+ "1966": {
+  "en": "fresco"
+ },
+ "1968": {
+  "en": "excavate"
+ },
+ "1969": {
+  "en": "unearth"
+ },
+ "1970": {
+  "en": "decipher"
+ },
+ "1971": {
+  "en": "analyze"
+ },
+ "1972": {
+  "en": "document"
+ },
+ "1973": {
+  "en": "civilization"
+ },
+ "1975": {
+  "en": "dynasty"
+ },
+ "1976": {
+  "en": "monarchy"
+ },
+ "1981": {
+  "en": "treaty"
+ },
+ "1986": {
+  "en": "emperor"
+ },
+ "1989": {
+  "en": "serf"
+ },
+ "1990": {
+  "en": "peasant"
+ },
+ "1992": {
+  "en": "artisan"
+ },
+ "1993": {
+  "en": "scholar"
+ },
+ "1994": {
+  "en": "philosopher"
+ },
+ "1997": {
+  "en": "nomad"
+ },
+ "1998": {
+  "en": "settler"
+ },
+ "2000": {
+  "en": "explorer"
+ },
+ "2001": {
+  "en": "innovation"
+ },
+ "2002": {
+  "en": "technology"
+ },
+ "2004": {
+  "en": "agriculture"
+ },
+ "2006": {
+  "en": "medieval"
+ },
+ "2008": {
+  "en": "modern"
+ },
+ "2009": {
+  "en": "social"
+ },
+ "2010": {
+  "en": "custom"
+ },
+ "2011": {
+  "en": "tradition"
+ },
+ "2012": {
+  "en": "belief"
+ },
+ "2013": {
+  "en": "religion"
+ },
+ "2014": {
+  "en": "language"
+ },
+ "2015": {
+  "en": "ethnicity"
+ },
+ "2016": {
+  "en": "identity"
+ },
+ "2017": {
+  "en": "gender"
+ },
+ "2018": {
+  "en": "caste"
+ },
+ "2019": {
+  "en": "status"
+ },
+ "2021": {
+  "en": "norms"
+ },
+ "2022": {
+  "en": "values"
+ },
+ "2023": {
+  "en": "taboo"
+ },
+ "2024": {
+  "en": "sacred"
+ },
+ "2025": {
+  "en": "profane"
+ },
+ "2026": {
+  "en": "myth"
+ },
+ "2028": {
+  "en": "folklore"
+ },
+ "2029": {
+  "en": "kinship"
+ },
+ "2030": {
+  "en": "descent"
+ },
+ "2031": {
+  "en": "lineage"
+ },
+ "2032": {
+  "en": "clan"
+ },
+ "2036": {
+  "en": "shaman"
+ },
+ "2037": {
+  "en": "sorcerer"
+ },
+ "2038": {
+  "en": "animism"
+ },
+ "2039": {
+  "en": "polytheism"
+ },
+ "2040": {
+  "en": "monotheism"
+ },
+ "2041": {
+  "en": "totem"
+ },
+ "2042": {
+  "en": "rite"
+ },
+ "2043": {
+  "en": "ceremony"
+ },
+ "2044": {
+  "en": "festival"
+ },
+ "2045": {
+  "en": "gathering"
+ },
+ "2060": {
+  "en": "inca"
+ },
+ "2068": {
+  "en": "slavic"
+ },
+ "2084": {
+  "en": "olmec"
+ },
+ "2086": {
+  "en": "moche"
+ },
+ "2087": {
+  "en": "legacy"
+ },
+ "2088": {
+  "en": "intangible"
+ },
+ "2089": {
+  "en": "cultural"
+ },
+ "2092": {
+  "en": "literature"
+ },
+ "2093": {
+  "en": "architecture"
+ },
+ "2094": {
+  "en": "archive"
+ },
+ "2095": {
+  "en": "manuscript"
+ },
+ "2096": {
+  "en": "scroll"
+ },
+ "2101": {
+  "en": "great Wall"
+ },
+ "2105": {
+  "en": "taj Mahal"
+ },
+ "2107": {
+  "en": "statue"
+ },
+ "2108": {
+  "en": "mythology"
+ },
+ "2110": {
+  "en": "storytelling"
+ },
+ "2111": {
+  "en": "cultural identity"
+ },
+ "2112": {
+  "en": "arbitration"
+ },
+ "2114": {
+  "en": "gateway"
+ },
+ "2116": {
+  "en": "arrival"
+ },
+ "2117": {
+  "en": "radar"
+ },
+ "2118": {
+  "en": "dada"
+ }
+}

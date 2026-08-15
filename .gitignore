@@ -1,0 +1,28 @@
+# Local browser/automation profiles
+.cdp-profile/
+cdpjobs/
+cdpjobs2/
+cdpjump/
+
+# Local agent and editor state
+.agents/
+.claude/settings.local.json
+
+# Dependencies, logs, and local environment files
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+
+# Generated deployment bundles and local snapshots
+cloudflare-upload*/
+cloudflare-upload*.zip
+*.backup.html
+*.pre-*.html
+data/*.pre-*.json
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
