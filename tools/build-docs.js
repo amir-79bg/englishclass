@@ -606,27 +606,31 @@ function renderPortal(rootDirectory) {
 
 function runBuild(rootDirectory, { check = false } = {}) {
   const outputPath = path.join(rootDirectory, 'docs', 'index.html');
+  const mirrorPath = path.join(rootDirectory, 'technical-docs.html');
   const result = renderPortal(rootDirectory);
   const current = fs.existsSync(outputPath) ? fs.readFileSync(outputPath, 'utf8') : null;
+  const currentMirror = fs.existsSync(mirrorPath) ? fs.readFileSync(mirrorPath, 'utf8') : null;
   const expected = result.html;
+  const changed = current !== expected || currentMirror !== expected;
 
   if (check) {
-    if (current !== expected) {
+    if (changed) {
       console.error('Documentation portal is stale. Run: node tools/build-docs.js');
-      return { status: 1, changed: true, outputPath, data: result.data };
+      return { status: 1, changed: true, outputPath, mirrorPath, data: result.data };
     }
     console.log('Documentation portal is up to date.');
-    return { status: 0, changed: false, outputPath, data: result.data };
+    return { status: 0, changed: false, outputPath, mirrorPath, data: result.data };
   }
 
-  if (current === expected) {
+  if (!changed) {
     console.log('Documentation portal already up to date.');
-    return { status: 0, changed: false, outputPath, data: result.data };
+    return { status: 0, changed: false, outputPath, mirrorPath, data: result.data };
   }
 
   fs.writeFileSync(outputPath, expected, 'utf8');
-  console.log(`Built docs/index.html from ${result.data.meta.totalDocs} Markdown documents.`);
-  return { status: 0, changed: true, outputPath, data: result.data };
+  fs.writeFileSync(mirrorPath, expected, 'utf8');
+  console.log(`Built docs/index.html and technical-docs.html from ${result.data.meta.totalDocs} Markdown documents.`);
+  return { status: 0, changed: true, outputPath, mirrorPath, data: result.data };
 }
 
 function watchDocumentation(rootDirectory) {

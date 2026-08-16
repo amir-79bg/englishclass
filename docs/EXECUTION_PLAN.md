@@ -6,7 +6,7 @@
 
 **Current phase:** Phase 0 — environment and repository governance
 
-**Next executable task:** `ENV-004` — finish the Android SDK toolchain
+**Next executable task:** `ARC-001` — canonical content data model and initial ERD (backend/Android toolchains are ready on the macOS session machine, see §12.1; `ENV-004`/`ENV-005` on the original Windows machine, §12, are still open)
 
 این سند مرجع رسمی هدف محصول، مرز MVP، معماری، تصمیم‌ها، ترتیب اجرا و وضعیت کار است. هر AI یا توسعه‌دهنده باید پیش از تغییر فایل‌ها، ابتدا `AGENTS.md` و سپس تمام این سند را بخواند.
 
@@ -62,7 +62,7 @@ Backend و Android در یک Git repository نگهداری می‌شوند، و�
 ├── CLAUDE.md                   # entrypoint برای Claude
 ├── .github/
 │   └── copilot-instructions.md # entrypoint برای Copilot
-└── لغتنامه (ورژن ۱۱).html      # محصول legacy؛ فعلاً در محل فعلی می‌ماند
+└── english-vocab-v1.html      # محصول legacy؛ فعلاً در محل فعلی می‌ماند
 ```
 
 تا پیش از یک task مهاجرت اختصاصی، فایل‌های legacy به پوشه دیگری منتقل نمی‌شوند؛ چون ابزارها و مستندات فعلی به مسیرهای موجود وابسته‌اند.
@@ -183,11 +183,11 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 
 | ID | Status | Task | Acceptance / evidence |
 |---|---|---|---|
-| `ENV-001` | DONE | نصب backend toolchain | PHP 8.5.0، Composer 2.10.2، Laravel Installer 5.31.1؛ تمام PHP extensionهای لازم حاضر؛ `composer diagnose` بدون vulnerability |
+| `ENV-001` | DONE (Windows و macOS) | نصب backend toolchain | Windows: PHP 8.5.0، Composer 2.10.2، Laravel Installer 5.31.1. macOS (این نشست، از طریق Homebrew): PHP 8.5.9، Composer 2.10.2، Laravel Installer 5.31.1؛ همه از طریق `~/.zshrc` در PATH. |
 | `ENV-002` | DONE | دریافت installer رسمی Android Studio | نسخه 2026.1.3.7؛ 1,508,410,976 bytes؛ SHA-256 مطابق winget؛ امضای `Google LLC` معتبر |
 | `ENV-003` | DONE | نصب Android Studio | نصب در `C:\Program Files\Android\Android Studio`؛ build و JBR داخلی معتبر؛ Registry و winget نصب را تشخیص می‌دهند |
-| `ENV-004` | TODO | نصب Android SDK toolchain | SDK platform، build-tools، platform-tools، command-line tools؛ اجرای موفق `adb version` |
-| `ENV-005` | BLOCKED | فعال‌سازی Virtualization برای Emulator | نیازمند اقدام دستی کاربر در BIOS/UEFI و سپس Windows Hypervisor Platform؛ تا آن زمان گوشی واقعی قابل استفاده است |
+| `ENV-004` | DONE (روی macOS) | نصب Android SDK toolchain | روی دستگاه macOS این نشست انجام شد: platform-tools 37.0.1، build-tools;36.1.0، platforms;android-36، cmdline-tools;latest؛ `adb version` موفق. روی دستگاه Windows اصلی این سند هنوز انجام نشده. |
+| `ENV-005` | BLOCKED (فقط روی Windows) | فعال‌سازی Virtualization برای Emulator | نیازمند اقدام دستی کاربر در BIOS/UEFI و سپس Windows Hypervisor Platform؛ تا آن زمان گوشی واقعی قابل استفاده است. روی macOS این محدودیت مصداق ندارد (Apple Hypervisor framework استفاده می‌شود)؛ هنوز روی macOS تست نشده. |
 | `DOC-001` | DONE | ایجاد سند اجرایی canonical | این فایل ایجاد و از README قابل کشف است |
 | `DOC-002` | DONE | افزودن entrypoint برای AIها | `AGENTS.md`، `CLAUDE.md` و Copilot instructions به سند canonical ارجاع می‌دهند |
 | `DOC-003` | DONE | ساخت پرتال خوانای مستندات | ۲۲ سند در `docs/index.html` آفلاین و self-contained؛ ۱ سند canonical و ۲۱ legacy؛ جست‌وجو/ناوبری/RTL/LTR/چاپ؛ generator با `--check`/`--watch`؛ شش تست و CI پاس |
@@ -328,6 +328,26 @@ Verified on 2026-08-16:
 | Virtualization | CPU پشتیبانی می‌کند ولی در BIOS/UEFI غیرفعال است |
 | Docker/Redis/DB server | عمداً برای Phase 0 نصب نشده |
 
+### 12.1 دستگاه دوم — macOS
+
+این پروژه گاهی از یک دستگاه macOS جداگانه هم اجرا می‌شود (نه همان دستگاه Windows بالا). وضعیت toolchain روی آن مستقل ردیابی می‌شود:
+
+Verified on 2026-08-16:
+
+| Tool | State |
+|---|---|
+| macOS | Darwin 25.5.0 (arm64) |
+| Package manager | Homebrew 6.0.12 |
+| Node / npm | 20.19.0 / 11.5.2 (از پیش نصب بود؛ ارتقا نشد) |
+| PHP | 8.5.9 (Homebrew)؛ در `~/.zshrc` به PATH اضافه شد |
+| Composer | 2.10.2 (Homebrew) |
+| Laravel Installer | 5.31.1 (`composer global require laravel/installer`) |
+| JDK | Homebrew `openjdk@17` 17.0.20؛ `JAVA_HOME` در `~/.zshrc` تنظیم شد |
+| Android SDK | ریشه: `/opt/homebrew/share/android-commandlinetools`؛ نصب‌شده: `platform-tools` 37.0.1، `build-tools;36.1.0`، `platforms;android-36`، `cmdline-tools;latest`؛ لایسنس‌ها پذیرفته شد |
+| Android Studio (GUI) | نصب نشده — فقط command-line SDK؛ برای build/gradle headless لازم نیست، اما برای IDE باید جداگانه با `brew install --cask android-studio` نصب شود |
+| Emulator / Virtualization | تست نشده |
+| Docker/Redis/DB server | عمداً نصب نشده |
+
 ## 13. Verification and change log
 
 این جدول append-only است.
@@ -340,3 +360,5 @@ Verified on 2026-08-16:
 | 2026-08-16 | `DOC-002` | Codex | ورودی‌های `AGENTS.md`، `CLAUDE.md` و `.github/copilot-instructions.md` ایجاد شدند و همگی به سند canonical ارجاع می‌دهند. |
 | 2026-08-16 | `ENV-003` | Codex | Android Studio در `C:\Program Files\Android\Android Studio` نصب شد؛ build = `AI-261.26222.65.2613.15948027`؛ Authenticode فایل `studio64.exe` معتبر و signer = Google LLC؛ JBR داخلی OpenJDK 25.0.2 با exit code صفر اجرا شد؛ Registry و `winget list` نصب را تشخیص دادند. |
 | 2026-08-16 | `DOC-003` | Codex | `node --test tools/build-docs.test.js` = 6/6 pass؛ `node tools/build-docs.js --check` = current؛ `git diff --check` = pass؛ خروجی ۲۲ سند/۳۴۴ heading و بدون asset شبکه‌ای؛ Edge desktop render پاس؛ CDP در viewport واقعی 360px مقدار `scrollWidth = clientWidth = 360` را برای خانه/سند تأیید کرد و جست‌وجوی فارسی «همگام سازی» یک نتیجه برگرداند. |
+| 2026-08-16 | `ENV-001` (macOS) | Claude | روی دستگاه macOS جداگانه (بخش 12.1): `brew install php composer openjdk@17 android-commandlinetools`؛ `php -v` = 8.5.9؛ `composer --version` = 2.10.2؛ `composer global require laravel/installer` → `laravel --version` = Laravel Installer 5.31.1. |
+| 2026-08-16 | `ENV-004` (macOS) | Claude | روی همان دستگاه macOS: `JAVA_HOME` روی `openjdk@17` (17.0.20) تنظیم شد؛ `yes \| sdkmanager --licenses` همه لایسنس‌ها را پذیرفت؛ `sdkmanager "platform-tools" "build-tools;36.1.0" "platforms;android-36" "cmdline-tools;latest"` نصب شد؛ `sdkmanager --list_installed` هر سه پکیج را تأیید کرد؛ `adb version` = 1.0.41 (platform-tools 37.0.1-15733141) موفق. یک نسخهٔ تکراری `cmdline-tools/latest-2` (173MB) حذف شد. تمام PATH/`JAVA_HOME`/`ANDROID_HOME` در `~/.zshrc` پایدار شدند. Android Studio (GUI) نصب نشد — این کار برای هیچ build خط‌فرمانی لازم نبود؛ در صورت نیاز به IDE باید جداگانه درخواست شود. |

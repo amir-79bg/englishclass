@@ -4,7 +4,7 @@
 
 **Scope note.** I do not say whether independent tracks are a good idea. Where a fact obviously bears on that decision (a track that would be empty, a dependency that would break) I state the fact and the number, and stop.
 
-Sources: `data/src/app.jsx` (2,648 lines), `data/src/template.html` (13,689 lines), and the seven data assets inside `لغتنامه (ورژن ۱۱).html`. Design intent read from `docs/ux-structure-plan.md`, `docs/methodology.md`, `docs/learning-path.md` — this map describes what is **in the source as shipped**, which in several places is ahead of those documents (the three-step «درس امروز», `vocab_sr_v1` and the per-word mode ladder are all implemented in `app.jsx` now, though both documents are still marked "decided, not implemented").
+Sources: `data/src/app.jsx` (2,648 lines), `data/src/template.html` (13,689 lines), and the seven data assets inside `english-vocab-v1.html`. Design intent read from `docs/ux-structure-plan.md`, `docs/methodology.md`, `docs/learning-path.md` — this map describes what is **in the source as shipped**, which in several places is ahead of those documents (the three-step «درس امروز», `vocab_sr_v1` and the per-word mode ladder are all implemented in `app.jsx` now, though both documents are still marked "decided, not implemented").
 
 ---
 

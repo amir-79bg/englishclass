@@ -25,8 +25,9 @@ Read-only investigation does not require a plan edit unless it changes an assump
 
 ## Documentation portal
 
-- Markdown files under `docs/` are the documentation source of truth. Never edit the generated `docs/index.html` by hand.
-- After adding, removing, renaming, or changing any `docs/**/*.md` file, run `node tools/build-docs.js` and include the refreshed `docs/index.html` in the same change.
+- Markdown files under `docs/` are the documentation source of truth. Never edit the generated `docs/index.html` or `technical-docs.html` by hand.
+- `technical-docs.html` at the repository root is a byte-identical mirror of `docs/index.html`, kept next to `english-vocab-v1.html` so the docs portal is easy to find and open.
+- After adding, removing, renaming, or changing any `docs/**/*.md` file, run `node tools/build-docs.js` and include both refreshed `docs/index.html` and `technical-docs.html` in the same change.
 - Before closing documentation work, run `node --test tools/build-docs.test.js` and `node tools/build-docs.js --check`.
 - `--check` must pass in CI. A stale generated portal means the task is not complete.
 - Use `node tools/build-docs.js --watch` while editing several documents if live rebuilding is useful.

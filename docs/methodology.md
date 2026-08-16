@@ -15,7 +15,7 @@ This is a **deliberate vocabulary course built on successive relearning**, and i
 
 ## 0. What I measured, and how
 
-Everything numeric below was measured from the shipped bundle (`لغتنامه (ورژن ۱۱).html`), not from the summaries in the agent briefs. Scripts read the manifest with `tools/bundle.js`.
+Everything numeric below was measured from the shipped bundle (`english-vocab-v1.html`), not from the summaries in the agent briefs. Scripts read the manifest with `tools/bundle.js`.
 
 | Claim | Measured |
 |---|---|

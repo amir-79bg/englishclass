@@ -1,11 +1,11 @@
 # لغتنامه — English vocabulary app
 
-An offline English-vocabulary trainer for Persian speakers, shipped as **one self-contained HTML file**. No server or build step is required for the core trainer: open `لغتنامه (ورژن ۱۱).html` in a browser and it runs. Optional Google Drive sync needs internet and a hosted HTTPS origin.
+An offline English-vocabulary trainer for Persian speakers, shipped as **one self-contained HTML file**. No server or build step is required for the core trainer: open `english-vocab-v1.html` in a browser and it runs. Optional Google Drive sync needs internet and a hosted HTTPS origin.
 
 > [!IMPORTANT]
 > The Laravel API + native Android rebuild is managed in this same repository as a monorepo. The canonical vision, architecture, task board, decisions, and verified progress live in [`docs/EXECUTION_PLAN.md`](docs/EXECUTION_PLAN.md). AI agents must read [`AGENTS.md`](AGENTS.md) before changing the repository.
 
-For a clean, searchable, offline view of every project document, open [`docs/index.html`](docs/index.html). Markdown remains the source of truth; the portal is regenerated with `node tools/build-docs.js` whenever documentation changes.
+For a clean, searchable, offline view of every project document, open [`technical-docs.html`](technical-docs.html) at the repository root. Markdown files under `docs/` remain the source of truth; both `technical-docs.html` and its mirror at `docs/index.html` are regenerated with `node tools/build-docs.js` whenever documentation changes.
 
 ## Optional Google Drive sync
 

@@ -9,7 +9,7 @@ const path = require('path');
 const zlib = require('zlib');
 
 const ROOT = path.join(__dirname, '..');
-const HTML = path.join(ROOT, 'لغتنامه (ورژن ۱۱).html');
+const HTML = path.join(ROOT, 'english-vocab-v1.html');
 // The manifest entry holding window.VOCAB_WORDS / VOCAB_CATS / VOCAB_ORDER.
 const VOCAB_UUID = '3350f0d9-3377-4f1f-8ad4-94ed2bec7ad7';
 
