@@ -122,6 +122,65 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 - conflict policy هر نوع داده باید پیش از پیاده‌سازی همان نوع ثبت شود.
 - حذف داده کاربر، reset progress و merge چند دستگاه بدون acceptance criteria صریح پیاده‌سازی نمی‌شوند.
 
+### 4.6 گراف اتصال اجزا
+
+نمای کلی این‌که چطور تسک‌های فاز ۱ (بخش 7) و اجزای سیستم (بخش‌های 4.1 تا 4.5) به هم وصل‌اند — قبل از شروع `ARC-001`.
+
+**۱) وابستگی تسک‌های Phase 1 به هم:**
+
+```text
+ARC-001 (مدل canonical محتوا + ERD)
+   │
+   ├──→ DATA-001 (migration شناسه‌های legacy)
+   │        از ARC-001 استفاده می‌کند تا legacy_id → id جدید map شود
+   │
+   ├──→ ARC-002 (مدل user state و SRS)
+   │        رکوردهای پیشرفت به entity واژه در ARC-001 اشاره می‌کنند
+   │
+   └──→ ARC-003 (قرارداد OpenAPI v1)
+            schema محتوا و manifest از مدل ARC-001 می‌آید
+            │
+            └──→ ARC-004 (سیاست sync و conflict)
+                     idempotency/cursor روی همان endpointهای ARC-003 تعریف می‌شود
+                     و به entity‌های user state از ARC-002 وابسته است
+```
+
+**۲) اجزای سیستم که همین مدل‌ها را مصرف می‌کنند:**
+
+```text
+                         ┌─────────────────────────┐
+                         │   ARC-001 content model  │
+                         │ words / categories /     │
+                         │ examples / curricula /    │
+                         │ content versions          │
+                         └────────────┬──────────────┘
+                                      │
+                 ┌────────────────────┼────────────────────┐
+                 ▼                    ▼                    ▼
+        ┌─────────────────┐  ┌────────────────┐   ┌──────────────────┐
+        │  Laravel DB      │  │ ARC-003 OpenAPI │   │ Android Room      │
+        │  migrations      │  │ /api/v1 schema  │   │ schema (content)  │
+        │  (BE-001)        │  │                  │   │ (AND-001)         │
+        └────────┬─────────┘  └────────┬─────────┘   └─────────┬─────────┘
+                 │                      │                       │
+                 └──────────┬───────────┴───────────┬───────────┘
+                            ▼                        ▼
+                  ┌───────────────────┐   ┌─────────────────────────┐
+                  │ ARC-002 user state │   │ ARC-004 sync/conflict    │
+                  │ + SRS model        │──▶│ policy (idempotency،      │
+                  │                    │   │ cursor، retry)            │
+                  └─────────┬──────────┘   └────────────┬─────────────┘
+                            │                            │
+                            ▼                            ▼
+                  Android Room (progress)      Outbox + WorkManager
+                            │                            │
+                            └──────────────┬─────────────┘
+                                           ▼
+                              اولین Vertical Slice (بخش 6)
+```
+
+خلاصه: `ARC-001` پایه‌ی همه چیز است — بدون مدل محتوای پایدار، نه migration (`DATA-001`)، نه schema اندروید/لاراول، و نه قرارداد API (`ARC-003`) قابل تعریف نیستند. `ARC-002` و `ARC-004` روی همین پایه سوار می‌شوند و در نهایت Vertical Slice بخش 6 را ممکن می‌کنند.
+
 ## 5. محدوده MVP
 
 ### داخل MVP
@@ -362,3 +421,4 @@ Verified on 2026-08-16:
 | 2026-08-16 | `DOC-003` | Codex | `node --test tools/build-docs.test.js` = 6/6 pass؛ `node tools/build-docs.js --check` = current؛ `git diff --check` = pass؛ خروجی ۲۲ سند/۳۴۴ heading و بدون asset شبکه‌ای؛ Edge desktop render پاس؛ CDP در viewport واقعی 360px مقدار `scrollWidth = clientWidth = 360` را برای خانه/سند تأیید کرد و جست‌وجوی فارسی «همگام سازی» یک نتیجه برگرداند. |
 | 2026-08-16 | `ENV-001` (macOS) | Claude | روی دستگاه macOS جداگانه (بخش 12.1): `brew install php composer openjdk@17 android-commandlinetools`؛ `php -v` = 8.5.9؛ `composer --version` = 2.10.2؛ `composer global require laravel/installer` → `laravel --version` = Laravel Installer 5.31.1. |
 | 2026-08-16 | `ENV-004` (macOS) | Claude | روی همان دستگاه macOS: `JAVA_HOME` روی `openjdk@17` (17.0.20) تنظیم شد؛ `yes \| sdkmanager --licenses` همه لایسنس‌ها را پذیرفت؛ `sdkmanager "platform-tools" "build-tools;36.1.0" "platforms;android-36" "cmdline-tools;latest"` نصب شد؛ `sdkmanager --list_installed` هر سه پکیج را تأیید کرد؛ `adb version` = 1.0.41 (platform-tools 37.0.1-15733141) موفق. یک نسخهٔ تکراری `cmdline-tools/latest-2` (173MB) حذف شد. تمام PATH/`JAVA_HOME`/`ANDROID_HOME` در `~/.zshrc` پایدار شدند. Android Studio (GUI) نصب نشد — این کار برای هیچ build خط‌فرمانی لازم نبود؛ در صورت نیاز به IDE باید جداگانه درخواست شود. |
+| 2026-08-16 | مستندسازی (بدون task ID) | Claude | بخش «۴.۶ گراف اتصال اجزا» اضافه شد: دو دیاگرام ASCII — وابستگی تسک‌های Phase 1 به هم (`ARC-001` → `DATA-001`/`ARC-002`/`ARC-003` → `ARC-004`) و نگاشت این تسک‌ها به اجزای واقعی سیستم (Laravel DB، OpenAPI، Room، Outbox/WorkManager) — پیش از شروع `ARC-001`. `node --test tools/build-docs.test.js` = 6/6 pass؛ `node tools/build-docs.js --check` = current. |
