@@ -754,7 +754,11 @@ class Component extends DCLogic {
       r[4] = 1; r[5] = Math.max(4, Number(r[5]) || 0); r[8] = 1; r[6] = day + 60;
     }
     sr[i] = r; this.srSave();
-    this.setState(s => ({ tick: (s.tick || 0) + 1 }));
+    // This rewrites the word's SRS stage, and modeFor() derives the card's
+    // drill mode from that same stage — so the card must be re-prepared or
+    // it keeps the previous mode's stale options/input with nothing fillable,
+    // "fixed" only by a reload that happens to rebuild the state from scratch.
+    this.prepare();
   }
   // __seeded is a marker, not a word — skip anything that is not a record.
   srCounts() {
