@@ -498,7 +498,7 @@ class Component extends DCLogic {
     this.state = {
       screen: 'home', data: this.load(W.length), settingsFrom: 'home', job: null, jobLevel: 'A1',
       nEn: '', nFa: '', nEx: '', nCat: 'general', nErr: '', nBusy: false, nReview: null,
-      editEn: null, editVal: '', msText: '', msBusy: false, msErr: '',
+      editEn: null, editVal: '', msText: '', msBusy: false, msErr: '', msOpen: false,
       catFilter: 'all', catPickEn: null, addingCat: false, newCatName: '', dictToolsOpen: false, wordMoreEn: null, practiceLv: 'A1',
       showBack: false, picked: null, typed: '', checked: false, correct: null,
       options: [], quiz: null, result: null, query: '', dictSort: 'course', dictTrBusy: false, dictTrResult: null, dictTrErr: '', limit: 60, confirmReset: false, tick: 0, ex: null, game: null,
@@ -1524,7 +1524,7 @@ class Component extends DCLogic {
   }
   prepare() {
     const mode = this.mode();
-    const st = { showBack: false, picked: null, typed: '', checked: false, correct: null, options: [], msText: '', msErr: '', editEn: null };
+    const st = { showBack: false, picked: null, typed: '', checked: false, correct: null, options: [], msText: '', msErr: '', msOpen: false, editEn: null };
     if (mode === 'mcq' || mode === 'cloze') st.options = this.buildOptions();
     this.setState(st, () => {
       const w = this.current();
@@ -4006,6 +4006,15 @@ class Component extends DCLogic {
       synList: (w.syn || []).join(' · '),
       hasIpa: !!w.ipa, ipaText: w.ipa || '',
       showMyBlock: answered,
+      // Collapsed by default so the rating buttons — the action every card
+      // actually needs — are never competing with an optional exercise for
+      // attention. A word with an already-saved sentence opens automatically
+      // so past work isn't hidden behind an extra tap.
+      msExpanded: !!(s.msOpen || myS),
+      msToggle: () => this.setState({ msOpen: !s.msOpen }),
+      msToggleLabel: (s.msOpen || myS) ? 'بستن جمله‌سازی' : '+ جمله بساز با این واژه',
+      msToggleIcon: (s.msOpen || myS) ? 'ph ph-caret-up' : 'ph ph-pencil-line',
+      msToggleStyle: 'display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:9px;font-size:12px;cursor:pointer;background:transparent;border:1px solid rgba(233,233,237,.16);color:rgba(233,233,237,.65)',
       hasMyRes: !!myS,
       mySavedS: myS ? myS.s : '',
       mySavedLabel: 'آخرین تمرین شما با «' + w.en + '»',

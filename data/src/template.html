@@ -9981,54 +9981,58 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
         </div>
       </sc-if>
 
-      <sc-if value="{{ showMyBlock }}" hint-placeholder-val="{{ false }}">
-        <div style="padding:14px 2px 0;border-top:1px solid rgba(233,233,237,.075);margin-bottom:14px">
-          <div style="display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(233,233,237,.62);margin-bottom:3px"><i class="ph ph-translate"></i><span>جملهٔ خودت — بررسی آنلاین املا و دستور + ترجمهٔ فارسی</span></div>
-          <div style="font-size:9.5px;color:rgba(233,233,237,.38);margin-bottom:9px">فقط با زدن دکمه، متن برای بررسی به LanguageTool و برای ترجمه به MyMemory فرستاده می‌شود.</div>
-          <div style="margin-bottom:10px">
-            <div style="font-size:10px;color:#b3a9e6;margin-bottom:6px"><i class="ph ph-pencil-line"></i> تمرین تازه یا بازنویسی شما</div>
-            <div class="practice-input-row">
-              <input value="{{ msText }}" sc-camel-on-change="{{ onMs }}" sc-camel-on-key-down="{{ msKey }}" autocomplete="off" spellcheck="true" placeholder="{{ msPlaceholder }}" aria-label="تمرین تازهٔ جمله‌سازی" style="{{ msInputStyle }}">
-              <button class="vbtn" sc-camel-on-click="{{ checkMy }}" aria-busy="{{ msBusy }}" style="{{ msBtnStyle }}">{{ msBtnLabel }}</button>
-            </div>
-            <sc-if value="{{ hasMsErr }}" hint-placeholder-val="{{ false }}"><div style="margin-top:7px;font-size:12px;color:#d98f8f">{{ msErr }}</div></sc-if>
-          </div>
-          <sc-if value="{{ hasMyRes }}" hint-placeholder-val="{{ false }}">
-            <div style="padding:11px 0 0;border-top:1px solid rgba(233,233,237,.07);margin-bottom:9px">
-              <div style="font-size:9.5px;color:rgba(233,233,237,.48);margin-bottom:5px"><i class="ph ph-clock-counter-clockwise"></i> {{ mySavedLabel }}</div>
-              <div style="font-family:Inter,sans-serif;font-size:14px;direction:ltr;text-align:left;line-height:1.6;color:rgba(233,233,237,.85)">{{ mySavedS }}</div>
-              <sc-if value="{{ hasMyCorrected }}" hint-placeholder-val="{{ false }}">
-                <div style="margin-top:8px;padding:8px 10px;border-right:2px solid rgba(224,164,88,.55);background:linear-gradient(90deg,transparent,rgba(224,164,88,.05))">
-                  <div style="font-size:9.5px;color:#e0a458;margin-bottom:4px">پیشنهاد اصلاح‌شده</div>
-                  <div style="font-family:Inter,sans-serif;font-size:13.5px;direction:ltr;text-align:left;line-height:1.6">{{ myCorrected }}</div>
-                </div>
-              </sc-if>
-              <sc-if value="{{ hasMyTranslation }}" hint-placeholder-val="{{ false }}">
-                <div style="margin-top:8px;padding:8px 10px;border-right:2px solid rgba(132,197,217,.55);background:linear-gradient(90deg,transparent,rgba(132,197,217,.05))">
-                  <div style="font-size:9.5px;color:#84c5d9;margin-bottom:4px">ترجمهٔ فارسی</div>
-                  <div style="font-size:13px;line-height:1.8;color:rgba(233,233,237,.85)">{{ myTranslation }}</div>
-                </div>
-              </sc-if>
-              <div style="{{ myServiceStyle }}"><i class="ph ph-cloud-check"></i><span>{{ myService }}</span></div>
-              <div style="{{ myFbStyle }}"><i class="{{ myFbIcon }}" style="margin-top:3px"></i><span>{{ myFb }}</span></div>
-              <sc-if value="{{ hasMyChecks }}" hint-placeholder-val="{{ false }}">
-                <div style="display:grid;gap:3px;margin-top:7px">
-                  <sc-for list="{{ myChecks }}" as="c" hint-placeholder-count="4">
-                    <div style="{{ c.style }}"><i class="{{ c.icon }}" style="margin-top:3px;flex:none"></i><span style="unicode-bidi:plaintext">{{ c.label }}</span></div>
-                  </sc-for>
-                </div>
-                <div style="font-size:11px;color:rgba(233,233,237,.55);margin-top:6px">{{ myScoreLabel }}</div>
-              </sc-if>
-            </div>
-          </sc-if>
-        </div>
-      </sc-if>
-
       <div style="display:flex;direction:rtl;flex-direction:row;gap:9px;justify-content:center;flex-wrap:wrap">
         <sc-for list="{{ actions }}" as="a" hint-placeholder-count="2">
           <button class="vbtn" sc-camel-on-click="{{ a.go }}" style="{{ a.style }}"><i class="{{ a.icon }}"></i><span style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.25"><span>{{ a.label }}</span><sc-if value="{{ a.sub }}" hint-placeholder-val=""><span style="font-size:9.5px;opacity:.7;font-weight:400">{{ a.sub }}</span></sc-if></span></button>
         </sc-for>
       </div>
+
+      <sc-if value="{{ showMyBlock }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:14px 2px 0;border-top:1px solid rgba(233,233,237,.075);margin-top:14px">
+          <button class="vbtn" sc-camel-on-click="{{ msToggle }}" style="{{ msToggleStyle }}"><i class="{{ msToggleIcon }}"></i><span>{{ msToggleLabel }}</span></button>
+          <sc-if value="{{ msExpanded }}" hint-placeholder-val="{{ false }}">
+            <div style="margin-top:11px">
+              <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(233,233,237,.62);margin-bottom:4px"><i class="ph ph-translate"></i><span>بررسی آنلاین املا و دستور + ترجمهٔ فارسی</span></div>
+              <div style="font-size:10.5px;color:rgba(233,233,237,.48);margin-bottom:9px;line-height:1.7">با زدن «بررسی»، متن برای بررسی به LanguageTool و برای ترجمه به MyMemory فرستاده می‌شود.</div>
+              <div style="margin-bottom:10px">
+                <div class="practice-input-row">
+                  <input value="{{ msText }}" sc-camel-on-change="{{ onMs }}" sc-camel-on-key-down="{{ msKey }}" autocomplete="off" spellcheck="true" placeholder="{{ msPlaceholder }}" aria-label="تمرین تازهٔ جمله‌سازی" style="{{ msInputStyle }}">
+                  <button class="vbtn" sc-camel-on-click="{{ checkMy }}" aria-busy="{{ msBusy }}" style="{{ msBtnStyle }}">{{ msBtnLabel }}</button>
+                </div>
+                <sc-if value="{{ hasMsErr }}" hint-placeholder-val="{{ false }}"><div style="margin-top:7px;font-size:12px;color:#d98f8f">{{ msErr }}</div></sc-if>
+              </div>
+              <sc-if value="{{ hasMyRes }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:11px 0 0;border-top:1px solid rgba(233,233,237,.07);margin-bottom:9px">
+                  <div style="font-size:9.5px;color:rgba(233,233,237,.48);margin-bottom:5px"><i class="ph ph-clock-counter-clockwise"></i> {{ mySavedLabel }}</div>
+                  <div style="font-family:Inter,sans-serif;font-size:14px;direction:ltr;text-align:left;line-height:1.6;color:rgba(233,233,237,.85)">{{ mySavedS }}</div>
+                  <sc-if value="{{ hasMyCorrected }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:8px;padding:8px 10px;border-right:2px solid rgba(224,164,88,.55);background:linear-gradient(90deg,transparent,rgba(224,164,88,.05))">
+                      <div style="font-size:9.5px;color:#e0a458;margin-bottom:4px">پیشنهاد اصلاح‌شده</div>
+                      <div style="font-family:Inter,sans-serif;font-size:13.5px;direction:ltr;text-align:left;line-height:1.6">{{ myCorrected }}</div>
+                    </div>
+                  </sc-if>
+                  <sc-if value="{{ hasMyTranslation }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:8px;padding:8px 10px;border-right:2px solid rgba(132,197,217,.55);background:linear-gradient(90deg,transparent,rgba(132,197,217,.05))">
+                      <div style="font-size:9.5px;color:#84c5d9;margin-bottom:4px">ترجمهٔ فارسی</div>
+                      <div style="font-size:13px;line-height:1.8;color:rgba(233,233,237,.85)">{{ myTranslation }}</div>
+                    </div>
+                  </sc-if>
+                  <div style="{{ myServiceStyle }}"><i class="ph ph-cloud-check"></i><span>{{ myService }}</span></div>
+                  <div style="{{ myFbStyle }}"><i class="{{ myFbIcon }}" style="margin-top:3px"></i><span>{{ myFb }}</span></div>
+                  <sc-if value="{{ hasMyChecks }}" hint-placeholder-val="{{ false }}">
+                    <div style="display:grid;gap:3px;margin-top:7px">
+                      <sc-for list="{{ myChecks }}" as="c" hint-placeholder-count="4">
+                        <div style="{{ c.style }}"><i class="{{ c.icon }}" style="margin-top:3px;flex:none"></i><span style="unicode-bidi:plaintext">{{ c.label }}</span></div>
+                      </sc-for>
+                    </div>
+                    <div style="font-size:11px;color:rgba(233,233,237,.55);margin-top:6px">{{ myScoreLabel }}</div>
+                  </sc-if>
+                </div>
+              </sc-if>
+            </div>
+          </sc-if>
+        </div>
+      </sc-if>
     </div>
   </div>
 
