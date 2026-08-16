@@ -6,7 +6,7 @@
 
 **Current phase:** Phase 0 — environment and repository governance
 
-**Next executable task:** `ENV-004` — install and verify Android SDK toolchain
+**Next executable task:** `DOC-003` — build the generated documentation portal
 
 این سند مرجع رسمی هدف محصول، مرز MVP، معماری، تصمیم‌ها، ترتیب اجرا و وضعیت کار است. هر AI یا توسعه‌دهنده باید پیش از تغییر فایل‌ها، ابتدا `AGENTS.md` و سپس تمام این سند را بخواند.
 
@@ -190,6 +190,7 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 | `ENV-005` | BLOCKED | فعال‌سازی Virtualization برای Emulator | نیازمند اقدام دستی کاربر در BIOS/UEFI و سپس Windows Hypervisor Platform؛ تا آن زمان گوشی واقعی قابل استفاده است |
 | `DOC-001` | DONE | ایجاد سند اجرایی canonical | این فایل ایجاد و از README قابل کشف است |
 | `DOC-002` | DONE | افزودن entrypoint برای AIها | `AGENTS.md`، `CLAUDE.md` و Copilot instructions به سند canonical ارجاع می‌دهند |
+| `DOC-003` | IN PROGRESS | ساخت پرتال خوانای مستندات | `docs/index.html` آفلاین و self-contained؛ کشف بازگشتی Markdownها؛ جست‌وجو/ناوبری/RTL/LTR/چاپ؛ build و stale-check خودکار؛ الزام به‌روزرسانی برای AI و CI |
 
 ### Phase 1 — قراردادها و مدل داده
 
@@ -249,6 +250,7 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 | `D-006` | 2026-08-16 | ACCEPTED | توسعه محلی backend ابتدا با SQLite انجام شود. | حذف نصب زودهنگام DB server؛ تعویض production بعداً |
 | `D-007` | 2026-08-16 | ACCEPTED | محتوا به‌صورت versioned pack منتشر شود، نه هزاران درخواست واژه. | سرعت، آفلاین و consistency |
 | `D-008` | 2026-08-16 | ACCEPTED | legacy در مسیر فعلی باقی بماند تا migration وابستگی‌ها را مشخص کند. | جلوگیری از شکستن pipeline و تاریخچه موجود |
+| `D-009` | 2026-08-16 | ACCEPTED | فایل‌های Markdown منبع اصلی مستندات بمانند و `docs/index.html` به‌صورت generated و self-contained از آن‌ها ساخته شود. | HTML ایستا نمی‌تواند از `file://` فایل‌های جدید پوشه را کشف کند؛ generated snapshot آفلاین، قابل‌اشتراک و قابل‌کنترل در Git است. |
 
 تصمیم‌ها append-only هستند. تغییر یک تصمیم با ID جدید و ارجاع به تصمیم superseded ثبت می‌شود؛ سطر قبلی حذف نمی‌شود.
 
