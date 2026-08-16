@@ -503,7 +503,7 @@ class Component extends DCLogic {
       showBack: false, picked: null, typed: '', checked: false, correct: null,
       options: [], quiz: null, result: null, query: '', dictSort: 'course', dictTrBusy: false, dictTrResult: null, dictTrErr: '', limit: 60, confirmReset: false, tick: 0, ex: null, game: null,
       gpText: '', gpBusy: false, gpErr: '', gpResult: null, gFlowNote: '',
-      installHelpOpen: false, installAvailable: false, placement: null
+      placement: null
     };
     this.sentCache = {};
     try { this.sentCache = JSON.parse(localStorage.getItem('vocab_sentences') || '{}'); } catch (e) {}
@@ -634,13 +634,6 @@ class Component extends DCLogic {
       } catch (err) { alert(err && err.message ? err.message : 'فایل پشتیبان معتبر نیست.'); }
     };
     r.readAsText(f); e.target.value = '';
-  }
-  async installShortcut() {
-    if (this._installPromptEvent) {
-      const prompt = this._installPromptEvent; this._installPromptEvent = null;
-      try { await prompt.prompt(); await prompt.userChoice; } catch (e) {}
-      if (this._mounted) this.setState({ installAvailable: false, installHelpOpen: false });
-    } else if (this._mounted) this.setState({ installHelpOpen: true });
   }
   // ---- cross-section resume ----
   // The app stores progress for six sections in six keys and can therefore
@@ -1421,16 +1414,10 @@ class Component extends DCLogic {
       }, 150);
     }
     if (window.speechSynthesis) window.speechSynthesis.getVoices();
-    this._onInstallPrompt = e => {
-      e.preventDefault(); this._installPromptEvent = e;
-      if (this._mounted) this.setState({ installAvailable: true });
-    };
-    window.addEventListener('beforeinstallprompt', this._onInstallPrompt);
   }
   componentWillUnmount() {
     this._mounted = false;
     clearInterval(this.iv); clearInterval(this.csIv); clearInterval(this.dIv);
-    if (this._onInstallPrompt) window.removeEventListener('beforeinstallprompt', this._onInstallPrompt);
     this.lsAuto = false;
     try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
     clearInterval(this.sbIv);
@@ -3842,12 +3829,6 @@ class Component extends DCLogic {
     const jobTerms = jobLesson.terms.map((x, i) => Object.assign({}, x, { n: String(i + 1), color: jobColors[i % jobColors.length] }));
     const jobArticleParts = highlightedJobParts(jobLesson.text, jobTerms, jobColors);
 
-    const ua = (navigator && navigator.userAgent) || '';
-    const installHelpText = /iphone|ipad|ipod/i.test(ua)
-      ? 'در Safari دکمهٔ Share را بزن و سپس «Add to Home Screen» را انتخاب کن.'
-      : 'از منوی مرورگر گزینهٔ «افزودن به صفحهٔ اصلی» یا «Create shortcut» را انتخاب کن.';
-    const standalone = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
-
     const vals = Object.assign(this.exVals(), this.courseVals(), this.listenVals(), this.discVals(), this.sentVals(), {
       totalWords: String(total), roundNum: String(d.round), roundName: info.name, streak: String(d.streak || 1),
       cardStarIcon: (this.current() && (d.starred || {})[this.current().i]) ? 'ph-fill ph-star' : 'ph ph-star',
@@ -3861,10 +3842,6 @@ class Component extends DCLogic {
       isHome: s.screen === 'home', isStudy: s.screen === 'study', isQuiz: s.screen === 'quiz', isResult: s.screen === 'result', isBrowse: s.screen === 'browse',
       isWords: s.screen === 'words', isJobs: s.screen === 'jobs', isJobDetail: s.screen === 'jobdetail' && !!s.job,
       isSettings: s.screen === 'settings',
-      showInstall: !standalone, installHelpOpen: !!s.installHelpOpen,
-      installHelp: installHelpText, installLabel: s.installAvailable ? 'نصب برنامه' : 'افزودن به صفحهٔ اصلی',
-      installShortcut: () => this.installShortcut(),
-      closeInstallHelp: () => this.setState({ installHelpOpen: false }),
       navTabs: NAV.map(t => {
         const active = t.screen === s.screen || (t.owns || []).indexOf(s.screen) >= 0;
         return {

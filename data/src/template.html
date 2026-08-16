@@ -9726,21 +9726,6 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
 <div class="vcard">
 
-  <sc-if value="{{ showInstall }}" hint-placeholder-val="{{ false }}">
-  <div style="padding:10px 12px;border-radius:11px;background:rgba(132,197,217,.08);border:1px solid rgba(132,197,217,.3);margin-bottom:14px">
-    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-      <button class="vbtn" sc-camel-on-click="{{ installShortcut }}" style="display:flex;align-items:center;gap:5px;padding:6px 9px;border-radius:8px;background:transparent;border:1px solid rgba(233,233,237,.14);color:rgba(233,233,237,.66);font-size:10.5px"><i class="ph ph-device-mobile"></i><span>{{ installLabel }}</span></button>
-      <span style="font-size:10px;color:rgba(233,233,237,.4)">برای بازکردن سریع‌تر برنامه از صفحهٔ اصلی دستگاه</span>
-    </div>
-    <sc-if value="{{ installHelpOpen }}" hint-placeholder-val="{{ false }}">
-      <div style="display:flex;align-items:flex-start;gap:8px;margin-top:9px;padding:9px 10px;border-radius:9px;background:rgba(233,233,237,.035);font-size:10.5px;color:rgba(233,233,237,.62);line-height:1.8">
-        <i class="ph ph-info" style="margin-top:3px"></i><span style="flex:1">{{ installHelp }}</span>
-        <button class="vbtn" sc-camel-on-click="{{ closeInstallHelp }}" aria-label="بستن راهنما" style="width:26px;height:26px;border-radius:7px;background:transparent;border:1px solid rgba(233,233,237,.12);color:rgba(233,233,237,.55)"><i class="ph ph-x"></i></button>
-      </div>
-    </sc-if>
-  </div>
-  </sc-if>
-
   <div style="font-size:12px;color:rgba(233,233,237,.55);line-height:1.9;margin-bottom:14px">هر بخش مسیر خودش را دارد و با سرعت خودت جلو می‌رود. هر وقت خواستی، هرکدام را که خواستی.</div>
 
   <div style="display:grid;gap:0;margin-bottom:20px;padding:2px 12px;border-radius:16px;background:rgba(233,233,237,.026);box-shadow:inset 0 0 0 1px rgba(233,233,237,.055)">
