@@ -2,6 +2,9 @@
 
 An offline English-vocabulary trainer for Persian speakers, shipped as **one self-contained HTML file**. No server or build step is required for the core trainer: open `لغتنامه (ورژن ۱۱).html` in a browser and it runs. Optional Google Drive sync needs internet and a hosted HTTPS origin.
 
+> [!IMPORTANT]
+> The Laravel API + native Android rebuild is managed in this same repository as a monorepo. The canonical vision, architecture, task board, decisions, and verified progress live in [`docs/EXECUTION_PLAN.md`](docs/EXECUTION_PLAN.md). AI agents must read [`AGENTS.md`](AGENTS.md) before changing the repository.
+
 ## Optional Google Drive sync
 
 The home screen includes local-first Google Drive backup. Progress always stays in browser `localStorage`; when Drive is unavailable the UI reports that the cloud backup is pending, not that local progress was lost. Concurrent updates are stored as immutable snapshots and presented to the learner for an explicit choice.
