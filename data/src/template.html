@@ -9709,7 +9709,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
       <button class="vbtn" sc-camel-on-click="{{ crumbUp }}" aria-label="بازگشت" style="flex:none;width:40px;height:40px;border-radius:11px;background:rgba(233,233,237,.03);border:1px solid rgba(233,233,237,.1);color:rgba(233,233,237,.68);display:grid;place-items:center;font-size:16px"><i class="ph ph-caret-right"></i></button>
       <div style="min-width:0">
         <div style="font-size:14px;font-weight:500;color:rgba(233,233,237,.9);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ crumb }}</div>
-        <sc-if value="{{ crumbPos }}" hint-placeholder-val="{{ false }}"><div style="font-size:10.5px;color:rgba(233,233,237,.45);font-family:Inter,sans-serif;margin-top:2px">{{ crumbPos }}</div></sc-if>
+        <sc-if value="{{ crumbPos }}" hint-placeholder-val="{{ false }}"><div style="font-size:10.5px;color:rgba(233,233,237,.45);font-family:Inter,sans-serif;margin-top:2px;unicode-bidi:plaintext">{{ crumbPos }}</div></sc-if>
       </div>
     </div>
   </sc-if>
@@ -10117,12 +10117,12 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 <div class="vcard">
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
     <div style="flex:1;height:5px;border-radius:99px;background:rgba(233,233,237,.09);overflow:hidden"><div style="{{ plBarStyle }}"></div></div>
-    <div style="font-size:11px;color:rgba(233,233,237,.55);font-family:Inter,sans-serif">{{ plPos }}</div>
+    <div style="font-size:11px;color:rgba(233,233,237,.55);font-family:Inter,sans-serif;unicode-bidi:plaintext">{{ plPos }}</div>
   </div>
   <div style="padding:4px 0">
     <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#84c5d9;margin-bottom:14px"><i class="ph-fill ph-gauge"></i><span>{{ plLevelLabel }}</span></div>
     <div style="text-align:center;margin-bottom:18px">
-      <div style="font-family:Inter,sans-serif;font-size:30px;font-weight:600;direction:ltr;letter-spacing:-.02em">{{ plPrompt }}</div>
+      <div style="{{ plPromptStyle }}">{{ plPrompt }}</div>
       <div style="font-size:11.5px;color:rgba(233,233,237,.55);margin-top:6px">{{ plHint }}</div>
     </div>
     <div style="display:grid;gap:8px">
@@ -10134,6 +10134,11 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
         </button>
       </sc-for>
     </div>
+    <sc-if value="{{ plShowWhy }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:flex-start;gap:8px;margin-top:12px;padding:10px 12px;border-radius:9px;background:rgba(132,197,217,.07);border:1px solid rgba(132,197,217,.25);font-size:11.5px;color:rgba(233,233,237,.72);line-height:1.8">
+        <i class="ph ph-lightbulb" style="margin-top:2px;color:#84c5d9"></i><span style="flex:1">{{ plWhy }}</span>
+      </div>
+    </sc-if>
     <div style="display:flex;justify-content:center;margin-top:16px">
       <button class="vbtn" sc-camel-on-click="{{ plNext }}" style="{{ plNextStyle }}"><span>{{ plNextLabel }}</span><i class="ph ph-arrow-left"></i></button>
     </div>

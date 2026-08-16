@@ -12,9 +12,112 @@ const MODES = [
 ];
 const QUIZ_EVERY = 300, QUIZ_LEN = 20, PASS = 0.7;
 // Placement is a quick per-level probe, not the mastery check the periodic
-// quiz is — five words is enough to tell "knows this level" from "doesn't",
-// and a shorter bar (60%) fits a first encounter with unfamiliar words.
-const PLACEMENT_LEN = 5, PLACEMENT_PASS = 0.6;
+// quiz is. 9 items / 6-correct (~67%) instead of 5/60%: with 4-option MCQ
+// and c=.25 guessing, 5 items at 60% only requires ~47% real knowledge and
+// lets someone who knows nothing of a level pass it 10% of the time; 9/6
+// roughly triples the separation between a 20%-knower and a 60%-knower.
+// Each level probes 6 vocabulary items + 3 grammar items (see PLACEMENT_WORDS
+// below and GRAM[L].choose) rather than vocabulary alone — vocabulary breadth
+// predicts proficiency well at the bottom of the CEFR scale but syntactic
+// knowledge is the stronger signal at the top (Shiotsu & Weir), which is
+// exactly where a word-only test struggles to tell adjacent levels apart.
+const PLACEMENT_LEN = 9, PLACEMENT_PASS = 6 / 9, PLACEMENT_VOCAB_N = 6, PLACEMENT_GRAM_N = 3;
+// The one thing placement genuinely cannot get from data/words.json: a small,
+// hand-checked, actually CEFR-appropriate word per level. VOCAB_ORDER has no
+// real difficulty signal past the ~1,800 words that appear in the app's own
+// curricula (tools/reorder.js ties everything else to a flat score and sorts
+// by length) — so a level test drawn from it was mostly measuring word length
+// and proper-noun familiarity, not English level. This 72-word bank (12 per
+// level, docs/placement-test-methodology.md §8.1) is curated by hand instead:
+// real words at each level, unique Persian gloss (no shared-meaning distractor
+// collisions), no proper nouns. Source of truth is data/placement.json; keep
+// the two in sync by hand if either changes.
+const PLACEMENT_WORDS = {
+  "A1": [
+    { "i": 2315, "en": "house", "fa": "خانه / مجلس" },
+    { "i": 2344, "en": "water", "fa": "آب" },
+    { "i": 211, "en": "family", "fa": "خانواده" },
+    { "i": 1308, "en": "friend", "fa": "دوست" },
+    { "i": 1203, "en": "school", "fa": "مدرسه" },
+    { "i": 3058, "en": "happy", "fa": "خوشحال / شاد" },
+    { "i": 2352, "en": "small", "fa": "کوچک" },
+    { "i": 1131, "en": "kitchen", "fa": "آشپزخانه" },
+    { "i": 1332, "en": "morning", "fa": "صبح" },
+    { "i": 100, "en": "city", "fa": "شهر" },
+    { "i": 1277, "en": "money", "fa": "پول" },
+    { "i": 1182, "en": "book", "fa": "کتاب" }
+  ],
+  "A2": [
+    { "i": 4055, "en": "apartment", "fa": "آپارتمان / خانه" },
+    { "i": 2817, "en": "holiday", "fa": "تعطیلات / روز تعطیل" },
+    { "i": 3109, "en": "hospital", "fa": "بیمارستان" },
+    { "i": 810, "en": "restaurant", "fa": "رستوران" },
+    { "i": 151, "en": "decide", "fa": "تصمیم گرفتن" },
+    { "i": 2834, "en": "remember", "fa": "به یاد آوردن" },
+    { "i": 165, "en": "difficult", "fa": "دشوار" },
+    { "i": 1041, "en": "dangerous", "fa": "خطرناک" },
+    { "i": 60, "en": "borrow", "fa": "قرض گرفتن" },
+    { "i": 293, "en": "improve", "fa": "بهبود بخشیدن" },
+    { "i": 6444, "en": "invite", "fa": "دعوت کردن" },
+    { "i": 110, "en": "comfortable", "fa": "راحت" }
+  ],
+  "B1": [
+    { "i": 198, "en": "environment", "fa": "محیط" },
+    { "i": 3117, "en": "opportunity", "fa": "فرصت" },
+    { "i": 1317, "en": "relationship", "fa": "رابطه" },
+    { "i": 3656, "en": "argument", "fa": "دعوا / بحث / استدلال" },
+    { "i": 6907, "en": "considerable", "fa": "قابل‌توجه / زیاد" },
+    { "i": 2750, "en": "various", "fa": "مختلف / گوناگون" },
+    { "i": 1272, "en": "industry", "fa": "صنعت" },
+    { "i": 37, "en": "avoid", "fa": "اجتناب کردن" },
+    { "i": 5313, "en": "imagine", "fa": "تصور کردن / در نظر گرفتن" },
+    { "i": 2948, "en": "decision", "fa": "تصمیم" },
+    { "i": 1036, "en": "experience", "fa": "تجربه کردن" },
+    { "i": 4451, "en": "attempt", "fa": "تلاش" }
+  ],
+  "B2": [
+    { "i": 1917, "en": "alternative", "fa": "جایگزین" },
+    { "i": 5433, "en": "principle", "fa": "اصل / نیت" },
+    { "i": 3102, "en": "impact", "fa": "تأثیر / برخورد" },
+    { "i": 10397, "en": "controversy", "fa": "مجادله / بحث" },
+    { "i": 9517, "en": "phenomenon", "fa": "پدیده / رویداد خاص" },
+    { "i": 10109, "en": "justify", "fa": "توجیه کردن" },
+    { "i": 3716, "en": "comprehensive", "fa": "جامع / کامل" },
+    { "i": 9113, "en": "consequence", "fa": "نتیجه / پیامد" },
+    { "i": 5615, "en": "substantial", "fa": "قابل‌توجه / بزرگ" },
+    { "i": 10498, "en": "constraint", "fa": "محدودیت / قید" },
+    { "i": 4999, "en": "flexible", "fa": "انعطاف‌پذیر" },
+    { "i": 189, "en": "efficient", "fa": "کارآمد" }
+  ],
+  "C1": [
+    { "i": 3419, "en": "implementation", "fa": "اجرا / پیاده‌سازی" },
+    { "i": 5522, "en": "interpretation", "fa": "تفسیر / برداشت" },
+    { "i": 4189, "en": "infrastructure", "fa": "زیرساخت" },
+    { "i": 170, "en": "discrimination", "fa": "تبعیض" },
+    { "i": 6071, "en": "rehabilitation", "fa": "بازتوانبخشی / احیاء" },
+    { "i": 6155, "en": "authentication", "fa": "احراز هویت / تأیید" },
+    { "i": 7549, "en": "accountability", "fa": "پاسخ‌گویی / مسئولیت" },
+    { "i": 7144, "en": "correspondence", "fa": "مکاتبات / تطابق" },
+    { "i": 8602, "en": "reconstruction", "fa": "بازسازی / احیا" },
+    { "i": 10058, "en": "characterization", "fa": "نقش‌آفرینی / تشریح" },
+    { "i": 453, "en": "procrastination", "fa": "اهمال‌کاری" },
+    { "i": 10083, "en": "confidentiality", "fa": "محرمانگی / سری بودن" }
+  ],
+  "C2": [
+    { "i": 9772, "en": "empirical", "fa": "تجربی / مشاهده‌ای" },
+    { "i": 9302, "en": "hypothesis", "fa": "فرضیه / گمان" },
+    { "i": 7410, "en": "synthesis", "fa": "ترکیب / تولید" },
+    { "i": 1357, "en": "ambivalent", "fa": "دوسوگرا" },
+    { "i": 1399, "en": "fastidious", "fa": "سخت‌گیر" },
+    { "i": 9592, "en": "equilibrium", "fa": "تعادل / توازن" },
+    { "i": 9416, "en": "catalyst", "fa": "عامل تحریک‌کننده" },
+    { "i": 6691, "en": "methodology", "fa": "روش / روش‌شناسی" },
+    { "i": 8152, "en": "correlation", "fa": "همبستگی / ارتباط" },
+    { "i": 9715, "en": "deviation", "fa": "انحراف / فاصله از مسیر" },
+    { "i": 9887, "en": "convergence", "fa": "همگرایی / تقارب" },
+    { "i": 763, "en": "resilient", "fa": "تابآور" }
+  ]
+};
 // The verbs the collocation groups are built around. Every verb group has
 // exactly one distinct first word, so distractors have to come from this list —
 // drawing them from the other groups produced options like "make / bitterly /
@@ -1170,7 +1273,24 @@ class Component extends DCLogic {
     const due = ord.filter(i => this.srDue(i, day))
       .sort((a, b) => (this.srRec(a)[6] || 0) - (this.srRec(b)[6] || 0))
       .slice(0, MAX_REVIEWS);
-    const fresh = sl.filter(i => { const x = this.srRec(i); return !x || !x[4]; }).slice(0, MAX_NEW);
+    const isFresh = i => { const x = this.srRec(i); return !x || !x[4]; };
+    let fresh = sl.filter(isFresh).slice(0, MAX_NEW);
+    // srDue() is false for any word that was never introduced, so once the
+    // round advances past a band (placement or manual level change),
+    // chunkOrder() would otherwise never draw new words from that band again
+    // — placing someone at C1 silently orphaned every lower-band word they
+    // hadn't already met. Reserve one new-word slot per session for the
+    // nearest lower band that still has un-introduced words, so a high
+    // placement borrows from what it skipped instead of discarding it.
+    const band0 = this.band(r);
+    if (band0 > 0) {
+      fresh = fresh.slice(0, Math.max(0, MAX_NEW - 1));
+      for (let b = band0 - 1; b >= 0 && fresh.length < MAX_NEW; b--) {
+        const lowerSp = spans[b]; if (!lowerSp) continue;
+        const lowerFresh = ord.slice(lowerSp[0], lowerSp[0] + lowerSp[1]).filter(isFresh);
+        if (lowerFresh.length) { fresh.push(shuffled(lowerFresh, r * 977 + b)[0]); break; }
+      }
+    }
     // Three reviews, then one new word. A backlog can no longer hide all new
     // material, and a session remains a calm, predictable twenty cards.
     const out = [], reviews = due.slice(), news = fresh.slice();
@@ -1524,33 +1644,51 @@ class Component extends DCLogic {
   }
 
   // ---- level placement ----
-  // A short probe per CEFR level: five words, always English-shown /
-  // pick-the-meaning so it stays a pure vocabulary check. Levels run in
-  // order starting at A1; failing a level's bar stops the test there,
-  // rather than making a beginner sit through six levels' worth of words
-  // they were never going to know.
-  placementQs(L) {
-    const idx = Array.from(this.levelWordIndices(L)).filter(i => this.W[i] && this.W[i].fa);
-    if (idx.length < 4) return [];
-    const withFa = this.W.filter(x => x.fa);
-    const pool = shuffled(idx, LEVELS.indexOf(L) * 733 + 11).slice(0, PLACEMENT_LEN);
-    return pool.map((wi, k) => {
-      const same = idx.filter(i => i !== wi);
-      const src = same.length >= 3 ? same : withFa.filter(x => x.i !== wi).map(x => x.i);
-      const r = mulberry(wi * 17 + k);
+  // A short probe per CEFR level: 6 vocabulary items (from the hand-leveled
+  // PLACEMENT_WORDS, not the unleveled main word order) + 3 grammar items
+  // (GRAM[L].choose — already CEFR-authored, with a Persian `why` rationale
+  // shown as feedback on a miss). Levels run in order starting at A1;
+  // failing a level's bar stops the test there, rather than making a
+  // beginner sit through six levels' worth of items they were never going
+  // to know. Every attempt draws a fresh random seed (docs/placement-test-
+  // methodology.md §8.7) — a fixed seed meant every learner, forever, saw
+  // the exact same 30 items.
+  placementVocabQs(L, seed) {
+    const bank = (PLACEMENT_WORDS[L] || []).slice();
+    if (bank.length < 4) return [];
+    const pick = shuffled(bank, seed).slice(0, PLACEMENT_VOCAB_N);
+    return pick.map((w, k) => {
+      const others = bank.filter(x => x.i !== w.i);
+      const r = mulberry(seed + w.i * 17 + k);
       const dis = []; let guard = 0;
       while (dis.length < 3 && guard++ < 200) {
-        const c = src[Math.floor(r() * src.length)];
-        if (c !== wi && !dis.includes(c)) dis.push(c);
+        const c = others[Math.floor(r() * others.length)];
+        if (c && !dis.some(d => d.i === c.i)) dis.push(c);
       }
-      const opts = shuffled(dis.concat([wi]), wi + k).map(i => ({ i, label: this.W[i].fa, correct: i === wi }));
-      return { wi, opts };
+      const opts = shuffled(dis.concat([w]), w.i + k).map(x => ({ label: x.fa, correct: x.i === w.i }));
+      return { kind: 'vocab', prompt: w.en, opts };
     });
   }
+  placementGramQs(L, seed) {
+    const pool = [];
+    this.gramLessons(L).forEach(les => (les.choose || []).forEach((c, idx) => pool.push({ les, c, idx })));
+    if (!pool.length) return [];
+    const pick = shuffled(pool, seed + 91).slice(0, PLACEMENT_GRAM_N);
+    return pick.map(({ les, c, idx }) => ({
+      kind: 'gram', prompt: c.q, why: c.why || '',
+      opts: c.opts.map((label, i) => ({ label, correct: i === c.a })),
+      key: les.id + ':' + idx
+    }));
+  }
+  placementQs(L, seed) {
+    const items = this.placementVocabQs(L, seed).concat(this.placementGramQs(L, seed));
+    return items.length >= 4 ? shuffled(items, seed + 7) : [];
+  }
   startPlacement() {
-    const qs = this.placementQs('A1');
+    const seed = Date.now() ^ Math.floor(Math.random() * 1e9);
+    const qs = this.placementQs('A1', seed);
     if (!qs.length) return;
-    this.setState({ screen: 'placement', placement: { level: 'A1', li: 0, qs, k: 0, picked: null, right: 0, results: [] } });
+    this.setState({ screen: 'placement', placement: { level: 'A1', li: 0, seed, qs, k: 0, picked: null, right: 0, results: [] } });
   }
   placementPick(oi) {
     const p = this.state.placement; if (!p || p.picked != null) return;
@@ -1567,9 +1705,9 @@ class Component extends DCLogic {
     const results = p.results.concat([{ level: p.level, right: p.right, total }]);
     const nextLi = p.li + 1;
     if (score >= PLACEMENT_PASS && nextLi < LEVELS.length) {
-      const qs = this.placementQs(LEVELS[nextLi]);
+      const qs = this.placementQs(LEVELS[nextLi], p.seed + nextLi * 613);
       if (qs.length) {
-        this.setState({ placement: { level: LEVELS[nextLi], li: nextLi, qs, k: 0, picked: null, right: 0, results } });
+        this.setState({ placement: { level: LEVELS[nextLi], li: nextLi, seed: p.seed, qs, k: 0, picked: null, right: 0, results } });
         return;
       }
     }
@@ -3542,18 +3680,26 @@ class Component extends DCLogic {
     }
 
     const pl = s.placement;
-    let plPrompt = '', plOptions = [], plPos = '', plBarStyle = 'height:100%;width:0%;background:#84c5d9',
-      plLevelLabel = '', plBreakdown = [], plResultTitle = '', plResultDesc = '';
+    let plPrompt = '', plHint = 'معنی فارسی کدام است؟', plPromptStyle = 'font-family:Inter,sans-serif;font-size:30px;font-weight:600;direction:ltr;letter-spacing:-.02em',
+      plOptions = [], plPos = '', plBarStyle = 'height:100%;width:0%;background:#84c5d9',
+      plLevelLabel = '', plBreakdown = [], plResultTitle = '', plResultDesc = '', plShowWhy = false, plWhy = '';
     if (pl) {
       plLevelLabel = 'در حال آزمون سطح ' + pl.level;
       if (!pl.done) {
-        const cur = pl.qs[pl.k], plw = W[cur.wi];
-        plPrompt = plw.en;
+        const cur = pl.qs[pl.k];
+        plPrompt = cur.prompt;
         plPos = (pl.k + 1) + ' / ' + pl.qs.length;
         plBarStyle = 'height:100%;width:' + Math.round((pl.k / pl.qs.length) * 100) + '%;background:#84c5d9;transition:width .3s';
+        if (cur.kind === 'gram') {
+          plHint = 'کدام گزینه جای خالی را درست پر می‌کند؟';
+          plPromptStyle = 'font-family:Inter,sans-serif;font-size:19px;font-weight:600;direction:ltr;line-height:1.5';
+        }
+        plShowWhy = cur.kind === 'gram' && pl.picked != null && !!cur.why;
+        plWhy = plShowWhy ? cur.why : '';
         plOptions = cur.opts.map((o, i) => ({
           n: String(i + 1), label: o.label, numStyle: numS, style: optS(o.correct, i === pl.picked, pl.picked),
-          textStyle: 'flex:1', mark: pl.picked == null ? '' : (o.correct ? 'ph-fill ph-check-circle' : (i === pl.picked ? 'ph-fill ph-x-circle' : '')),
+          textStyle: 'flex:1;' + (cur.kind === 'gram' ? 'font-family:Inter,sans-serif;direction:ltr;text-align:left;' : ''),
+          mark: pl.picked == null ? '' : (o.correct ? 'ph-fill ph-check-circle' : (i === pl.picked ? 'ph-fill ph-x-circle' : '')),
           markStyle: 'font-size:16px;flex:none', pick: () => this.placementPick(i)
         }));
       } else {
@@ -3921,8 +4067,8 @@ class Component extends DCLogic {
 
       isPlacement: s.screen === 'placement', showPlacementBtn: s.screen === 'home',
       startPlacement: () => this.startPlacement(), skipPlacement: () => this.skipPlacement(),
-      plDone: !!(pl && pl.done), plNotDone: !!(pl && !pl.done), plLevelLabel, plPrompt, plOptions, plPos, plBarStyle,
-      plHint: 'معنی فارسی کدام است؟',
+      plDone: !!(pl && pl.done), plNotDone: !!(pl && !pl.done), plLevelLabel, plPrompt, plPromptStyle, plOptions, plPos, plBarStyle,
+      plHint, plShowWhy, plWhy,
       plNext: () => this.placementAdvance(),
       plNextLabel: pl && pl.k + 1 >= pl.qs.length ? 'دیدن نتیجه' : 'سؤال بعدی',
       plNextStyle: btn('transparent', pl && pl.picked != null ? '#84c5d9' : 'rgba(233,233,237,.42)', pl && pl.picked != null ? '#84c5d9' : 'rgba(233,233,237,.55)'),
