@@ -20,10 +20,6 @@ html.vocab-boot-failed #vocab-boot-retry{display:block}
 @keyframes vocabBootSpin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){#vocab-boot-ring{animation-duration:1.5s}#vocab-boot{transition:none}}
 </style>
-<!-- Public OAuth configuration. Never place a Google client secret here. -->
-<meta name="vocab-google-client-id" content="YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com">
-<!-- Optional HTTPS address used when somebody opens the downloadable file locally. -->
-<meta name="vocab-online-url" content="">
 <script src="dca9788e-44f6-4c35-8178-a7a6297cb03f"></script>
 <script src="456306af-9ddf-4578-8ecd-ae8659b7d079"></script>
 <script src="34d1c5c1-b9f4-4615-8a79-553cb010b907"></script>
@@ -9718,7 +9714,6 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
     </div>
   </sc-if>
   <div style="display:flex;align-items:center;gap:7px;flex:none">
-    <button class="vbtn" sc-camel-on-click="{{ driveAction }}" title="{{ driveMessage }}" aria-label="وضعیت همگام‌سازی Google Drive" style="{{ driveHeaderStyle }}"><i class="{{ driveIcon }}"></i></button>
     <sc-if value="{{ showGear }}" hint-placeholder-val="{{ true }}">
       <button class="vbtn" sc-camel-on-click="{{ goSettings }}" title="تنظیمات" aria-label="تنظیمات" style="width:44px;height:44px;border-radius:11px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.1);color:rgba(233,233,237,.58);font-size:16px;display:grid;place-items:center"><i class="ph ph-gear-six"></i></button>
     </sc-if>
@@ -9728,32 +9723,20 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
 <div class="vcard">
 
-  <div style="{{ driveCardStyle }}">
-    <div style="display:flex;align-items:flex-start;gap:11px;flex-wrap:wrap">
-      <div style="width:38px;height:38px;flex:none;border-radius:10px;display:grid;place-items:center;background:rgba(18,20,31,.28);font-size:19px"><i class="{{ driveIcon }}"></i></div>
-      <div style="flex:1;min-width:190px">
-        <div style="font-size:13.5px;font-weight:500;margin-bottom:4px">پشتیبان Google Drive</div>
-        <div style="font-size:11.5px;color:rgba(233,233,237,.62);line-height:1.85">{{ driveMessage }}</div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:5px;font-size:10px;color:rgba(233,233,237,.45)">
-          <sc-if value="{{ driveHasAccount }}" hint-placeholder-val="{{ false }}"><span style="direction:ltr;unicode-bidi:plaintext">{{ driveAccount }}</span></sc-if>
-          <sc-if value="{{ driveHasLastSync }}" hint-placeholder-val="{{ false }}"><span>آخرین همگام‌سازی: {{ driveLastSync }}</span></sc-if>
-        </div>
-      </div>
-      <button class="vbtn" sc-camel-on-click="{{ driveAction }}" style="{{ driveButtonStyle }}"><i class="{{ driveIcon }}"></i><span>{{ driveButtonLabel }}</span></button>
+  <sc-if value="{{ showInstall }}" hint-placeholder-val="{{ false }}">
+  <div style="padding:10px 12px;border-radius:11px;background:rgba(132,197,217,.08);border:1px solid rgba(132,197,217,.3);margin-bottom:14px">
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+      <button class="vbtn" sc-camel-on-click="{{ installShortcut }}" style="display:flex;align-items:center;gap:5px;padding:6px 9px;border-radius:8px;background:transparent;border:1px solid rgba(233,233,237,.14);color:rgba(233,233,237,.66);font-size:10.5px"><i class="ph ph-device-mobile"></i><span>{{ installLabel }}</span></button>
+      <span style="font-size:10px;color:rgba(233,233,237,.4)">برای بازکردن سریع‌تر برنامه از صفحهٔ اصلی دستگاه</span>
     </div>
-    <sc-if value="{{ driveShowInstall }}" hint-placeholder-val="{{ false }}">
-      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:11px;padding-top:10px;border-top:1px solid rgba(233,233,237,.08)">
-        <button class="vbtn" sc-camel-on-click="{{ installShortcut }}" style="display:flex;align-items:center;gap:5px;padding:6px 9px;border-radius:8px;background:transparent;border:1px solid rgba(233,233,237,.14);color:rgba(233,233,237,.66);font-size:10.5px"><i class="ph ph-device-mobile"></i><span>{{ driveInstallLabel }}</span></button>
-        <span style="font-size:10px;color:rgba(233,233,237,.4)">برای بازکردن سریع‌تر برنامه از صفحهٔ اصلی دستگاه</span>
-      </div>
-    </sc-if>
-    <sc-if value="{{ driveInstallHelpOpen }}" hint-placeholder-val="{{ false }}">
+    <sc-if value="{{ installHelpOpen }}" hint-placeholder-val="{{ false }}">
       <div style="display:flex;align-items:flex-start;gap:8px;margin-top:9px;padding:9px 10px;border-radius:9px;background:rgba(233,233,237,.035);font-size:10.5px;color:rgba(233,233,237,.62);line-height:1.8">
-        <i class="ph ph-info" style="margin-top:3px"></i><span style="flex:1">{{ driveInstallHelp }}</span>
+        <i class="ph ph-info" style="margin-top:3px"></i><span style="flex:1">{{ installHelp }}</span>
         <button class="vbtn" sc-camel-on-click="{{ closeInstallHelp }}" aria-label="بستن راهنما" style="width:26px;height:26px;border-radius:7px;background:transparent;border:1px solid rgba(233,233,237,.12);color:rgba(233,233,237,.55)"><i class="ph ph-x"></i></button>
       </div>
     </sc-if>
   </div>
+  </sc-if>
 
   <div style="font-size:12px;color:rgba(233,233,237,.55);line-height:1.9;margin-bottom:14px">هر بخش مسیر خودش را دارد و با سرعت خودت جلو می‌رود. هر وقت خواستی، هرکدام را که خواستی.</div>
 
@@ -9904,18 +9887,6 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
   <div style="font-size:12px;color:rgba(233,233,237,.5);line-height:1.9;margin-bottom:12px">مدیریت فایل پشتیبان و داده‌های یادگیری این دستگاه</div>
 
   <div style="display:grid;gap:0;max-width:660px;border-top:1px solid rgba(233,233,237,.075)">
-    <div style="padding:18px 3px;border-bottom:1px solid rgba(233,233,237,.075)">
-      <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:500;margin-bottom:5px"><i class="{{ driveIcon }}" style="color:#84c5d9"></i><span>همگام‌سازی Google Drive</span></div>
-      <div style="font-size:11.5px;color:rgba(233,233,237,.55);line-height:1.9;margin-bottom:4px">{{ driveMessage }}</div>
-      <sc-if value="{{ driveHasLastSync }}" hint-placeholder-val="{{ false }}"><div style="font-size:10px;color:rgba(233,233,237,.4);margin-bottom:11px">آخرین همگام‌سازی: {{ driveLastSync }}</div></sc-if>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
-        <button class="vbtn" sc-camel-on-click="{{ driveAction }}" style="{{ driveButtonStyle }}"><i class="{{ driveIcon }}"></i><span>{{ driveButtonLabel }}</span></button>
-        <sc-if value="{{ driveCanDisconnect }}" hint-placeholder-val="{{ false }}">
-          <button class="vbtn" sc-camel-on-click="{{ driveDisconnect }}" style="padding:9px 13px;border-radius:9px;background:transparent;border:1px solid rgba(233,233,237,.16);color:rgba(233,233,237,.58);font-size:11.5px">قطع دسترسی Drive</button>
-        </sc-if>
-      </div>
-    </div>
-
     <div style="padding:18px 3px;border-bottom:1px solid rgba(233,233,237,.075)">
       <div style="display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:500;margin-bottom:5px"><i class="ph ph-hard-drives" style="color:#84c5d9"></i><span>پشتیبان‌گیری و بازیابی</span></div>
       <div style="font-size:11.5px;color:rgba(233,233,237,.5);line-height:1.9;margin-bottom:13px">اطلاعات در همین مرورگر ذخیره می‌شود. برای انتقال به دستگاه دیگر یا جلوگیری از حذف ناخواسته، فایل پشتیبان بگیر.</div>
@@ -11365,34 +11336,6 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 
 
 </div>
-
-<sc-if value="{{ driveConflictOpen }}" hint-placeholder-val="{{ false }}">
-  <div style="position:fixed;inset:0;z-index:60;background:rgba(5,7,13,.78);backdrop-filter:blur(6px);display:grid;place-items:center;padding:18px" role="presentation">
-    <div role="dialog" aria-modal="true" aria-labelledby="drive-conflict-title" style="width:min(560px,100%);max-height:88vh;overflow:auto;border-radius:18px;background:#1a1d2b;border:1px solid rgba(224,164,88,.42);box-shadow:0 28px 80px rgba(0,0,0,.55);padding:20px">
-      <div style="display:flex;align-items:flex-start;gap:11px;margin-bottom:9px">
-        <div style="width:42px;height:42px;flex:none;border-radius:12px;display:grid;place-items:center;background:rgba(224,164,88,.13);border:1px solid rgba(224,164,88,.4);color:#e0a458;font-size:20px"><i class="ph ph-warning-diamond"></i></div>
-        <div style="flex:1">
-          <div id="drive-conflict-title" style="font-size:17px;font-weight:500;margin-bottom:4px">دو پیشرفت متفاوت پیدا شد</div>
-          <div style="font-size:11.5px;color:rgba(233,233,237,.58);line-height:1.9">نسخه‌ها هم‌زمان از دو دستگاه تغییر کرده‌اند. نسخه‌ای را که می‌خواهی ادامه پیدا کند انتخاب کن؛ هر دو نسخه در Drive محفوظ می‌مانند.</div>
-        </div>
-      </div>
-      <div style="display:grid;gap:9px;margin:16px 0 13px">
-        <sc-for list="{{ driveConflictChoices }}" as="c" hint-placeholder-count="2">
-          <button class="vbtn" sc-camel-on-click="{{ c.choose }}" style="{{ c.style }}">
-            <div style="width:36px;height:36px;flex:none;border-radius:10px;display:grid;place-items:center;background:rgba(132,197,217,.1);border:1px solid rgba(132,197,217,.28);color:#84c5d9;font-size:17px"><i class="{{ c.icon }}"></i></div>
-            <div style="flex:1;min-width:0">
-              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:3px"><span style="font-size:13px;font-weight:500">{{ c.label }}</span><span style="font-size:9px;padding:3px 6px;border-radius:99px;background:rgba(233,233,237,.05);color:rgba(233,233,237,.5)">{{ c.badge }}</span></div>
-              <div style="font-size:10.5px;color:rgba(233,233,237,.56);line-height:1.7">{{ c.summary }}</div>
-              <div style="font-size:9.5px;color:rgba(233,233,237,.38);margin-top:3px">{{ c.date }}</div>
-            </div>
-            <i class="ph ph-caret-left" style="color:rgba(233,233,237,.42)"></i>
-          </button>
-        </sc-for>
-      </div>
-      <button class="vbtn" sc-camel-on-click="{{ closeDriveConflict }}" style="width:100%;padding:10px 13px;border-radius:9px;background:transparent;border:1px solid rgba(233,233,237,.14);color:rgba(233,233,237,.58);font-size:11.5px">فعلاً تصمیم نمی‌گیرم</button>
-    </div>
-  </div>
-</sc-if>
 
 <div style="position:fixed;left:0;right:0;bottom:0;z-index:20;display:{{ navDisplay }};background:#161826;border-top:1px solid rgba(233,233,237,.09);padding:6px 8px calc(6px + env(safe-area-inset-bottom))">
   <div style="max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px">
