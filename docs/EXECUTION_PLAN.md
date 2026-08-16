@@ -6,7 +6,7 @@
 
 **Current phase:** Phase 0 — environment and repository governance
 
-**Next executable task:** `ARC-001` — canonical content data model and initial ERD (backend/Android toolchains are ready on the macOS session machine, see §12.1; `ENV-004`/`ENV-005` on the original Windows machine, §12, are still open)
+**Next executable task:** `ARC-002` — user state and SRS data model (content model landed in `docs/architecture/content-model.md`, see `ARC-001`; `ENV-004`/`ENV-005` on the original Windows machine, §12, are still open)
 
 این سند مرجع رسمی هدف محصول، مرز MVP، معماری، تصمیم‌ها، ترتیب اجرا و وضعیت کار است. هر AI یا توسعه‌دهنده باید پیش از تغییر فایل‌ها، ابتدا `AGENTS.md` و سپس تمام این سند را بخواند.
 
@@ -255,7 +255,7 @@ ARC-001 (مدل canonical محتوا + ERD)
 
 | ID | Status | Task | Acceptance / evidence |
 |---|---|---|---|
-| `ARC-001` | TODO | مدل canonical محتوا و ERD اولیه | words/categories/examples/curricula/content versions و روابط مستند شوند |
+| `ARC-001` | DONE | مدل canonical محتوا و ERD اولیه | `docs/architecture/content-model.md`: entities (Category، Word، Example، ContentVersion، CurriculumUnit، DiscussionMethod) با فیلد/نوع/constraint، ERD متنی، و یادداشت migration برای `DATA-001` |
 | `ARC-002` | TODO | مدل user state و SRS | progress/favorites/custom content/activity/outbox با invariants مشخص شود |
 | `ARC-003` | TODO | قرارداد OpenAPI v1 | health/auth/manifest/content/sync schemas و error envelope تعریف شوند |
 | `ARC-004` | TODO | سیاست sync و conflict | idempotency، cursor، ordering و conflict policy هر نوع داده مستند شود |
@@ -422,3 +422,4 @@ Verified on 2026-08-16:
 | 2026-08-16 | `ENV-001` (macOS) | Claude | روی دستگاه macOS جداگانه (بخش 12.1): `brew install php composer openjdk@17 android-commandlinetools`؛ `php -v` = 8.5.9؛ `composer --version` = 2.10.2؛ `composer global require laravel/installer` → `laravel --version` = Laravel Installer 5.31.1. |
 | 2026-08-16 | `ENV-004` (macOS) | Claude | روی همان دستگاه macOS: `JAVA_HOME` روی `openjdk@17` (17.0.20) تنظیم شد؛ `yes \| sdkmanager --licenses` همه لایسنس‌ها را پذیرفت؛ `sdkmanager "platform-tools" "build-tools;36.1.0" "platforms;android-36" "cmdline-tools;latest"` نصب شد؛ `sdkmanager --list_installed` هر سه پکیج را تأیید کرد؛ `adb version` = 1.0.41 (platform-tools 37.0.1-15733141) موفق. یک نسخهٔ تکراری `cmdline-tools/latest-2` (173MB) حذف شد. تمام PATH/`JAVA_HOME`/`ANDROID_HOME` در `~/.zshrc` پایدار شدند. Android Studio (GUI) نصب نشد — این کار برای هیچ build خط‌فرمانی لازم نبود؛ در صورت نیاز به IDE باید جداگانه درخواست شود. |
 | 2026-08-16 | مستندسازی (بدون task ID) | Claude | بخش «۴.۶ گراف اتصال اجزا» اضافه شد: دو دیاگرام ASCII — وابستگی تسک‌های Phase 1 به هم (`ARC-001` → `DATA-001`/`ARC-002`/`ARC-003` → `ARC-004`) و نگاشت این تسک‌ها به اجزای واقعی سیستم (Laravel DB، OpenAPI، Room، Outbox/WorkManager) — پیش از شروع `ARC-001`. `node --test tools/build-docs.test.js` = 6/6 pass؛ `node tools/build-docs.js --check` = current. |
+| 2026-08-16 | `ARC-001` | Claude | `docs/architecture/content-model.md` ایجاد شد: خواندن مستقیم `data/words.json` (۱۰,۵۲۴ رکورد)، `data/categories.json` (۲۹ دسته) و هر پنج فایل `data/curricula/*.js` (grammar، sentences، listening1/2، discussion، collocations)؛ شش entity با فیلد/نوع/constraint (`Category`, `Word`, `Example`, `ContentVersion`, `CurriculumUnit`, `DiscussionMethod`)، ERD متنی، و یادداشت migration برای `DATA-001`. طبق بخش ۵ (خارج از MVP: «انتقال کامل grammar/speaking در یک release»)، پنج curriculum غیرواژگانی عمداً به‌صورت polymorphic/JSON مدل شدند تا از over-engineering پیش از هر مصرف‌کننده‌ی واقعی جلوگیری شود. `node --test tools/build-docs.test.js` = 6/6 pass؛ `node tools/build-docs.js --check` = current. |
