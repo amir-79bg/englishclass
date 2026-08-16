@@ -623,7 +623,14 @@ class Component extends DCLogic {
     const gi = this.gramItems();
     const gDone = this.gramDoneCount();
     const gStarted = this.gramStartedCount();
-    const gNext = gi.find(x => !this.gramStats(x.les).complete);
+    // Prefer the first incomplete lesson AT the placed level or above, so a
+    // placement result actually moves the "next" suggestion — otherwise this
+    // always resolves to lesson one of A1 for anyone who hasn't touched
+    // grammar yet, no matter what level they were placed into. Lower levels
+    // remain visitable (gramLevelUnlocked), just not the default landing spot.
+    const gBand = this.band((d && d.round) || 1);
+    const gNext = gi.find(x => !this.gramStats(x.les).complete && LEVELS.indexOf(x.lv) >= gBand)
+      || gi.find(x => !this.gramStats(x.les).complete);
     const wi = this.writeItems();
     // Keep previously unlocked writing available.  Grammar completion is now
     // stricter (all stages, not merely an attempted quiz), so using “started”
@@ -1576,7 +1583,16 @@ class Component extends DCLogic {
       d.round = li * PER_LEVEL + 1;
       d.pos = 0;
       d.order = this.chunkOrder(d.round, n);
-    }, { screen: 'study', placement: null }, () => {
+    }, {
+      screen: 'study', placement: null,
+      // d.round alone unlocks every section (each *LevelUnlocked() now checks
+      // it), but grammar/sentence/listening/discussion/jobs each also
+      // remember their own last-viewed level in state — overwrite those too,
+      // or a section visited earlier this session would keep showing its old
+      // level instead of picking up the placement result.
+      gLv: p.finalLevel, sbLv: p.finalLevel, lsLv: p.finalLevel, dLv: p.finalLevel,
+      jobLevel: p.finalLevel, practiceLv: p.finalLevel
+    }, () => {
       if (!this.state.data.order.length) this.setState({ screen: 'home' });
       else this.prepare();
     });
@@ -1890,6 +1906,8 @@ class Component extends DCLogic {
   sbSave(p) { try { localStorage.setItem('vocab_sent', JSON.stringify(p)); } catch (e) {} }
   sbLevelUnlocked(L) {
     const at = LEVELS.indexOf(L); if (at <= 0) return true;
+    const d = (this.state && this.state.data) || this.load();
+    if (at <= this.band(d.round || 1)) return true;
     const scores = (this.sbLoad().s) || {};
     if (Object.keys(scores).some(k => k.indexOf(L + '_') === 0)) return true;
     const required = ['chunk', 'expand', 'combine', 'free'];
@@ -2475,6 +2493,8 @@ class Component extends DCLogic {
   gramLessons(lv) { return ((window.GRAM || {})[lv || this.state.gLv || 'A1']) || []; }
   gramLevelUnlocked(L) {
     const at = LEVELS.indexOf(L); if (at <= 0) return true;
+    const d = (this.state && this.state.data) || this.load();
+    if (at <= this.band(d.round || 1)) return true;
     if (this.gramLessons(L).some(les => this.gramStats(les).attempted > 0)) return true;
     return LEVELS.slice(0, at).every(lv => {
       const lessons = this.gramLessons(lv);
@@ -2946,6 +2966,8 @@ class Component extends DCLogic {
   lsProg() { try { return JSON.parse(localStorage.getItem('vocab_listen') || '{}') || {}; } catch (e) { return {}; } }
   lsLevelUnlocked(L) {
     const at = LEVELS.indexOf(L); if (at <= 0) return true;
+    const d = (this.state && this.state.data) || this.load();
+    if (at <= this.band(d.round || 1)) return true;
     const all = this.lsAll(), p = this.lsProg(), read = p.r || {}, quiz = p.q || {};
     if (all.some(t => t.lv === L && (read[t.id] || quiz[t.id] != null))) return true;
     return LEVELS.slice(0, at).every(lv => {
@@ -3176,6 +3198,8 @@ class Component extends DCLogic {
   dcProg() { try { return JSON.parse(localStorage.getItem('vocab_disc') || '{}') || {}; } catch (e) { return {}; } }
   dcLevelUnlocked(L) {
     const at = LEVELS.indexOf(L); if (at <= 0) return true;
+    const d = (this.state && this.state.data) || this.load();
+    if (at <= this.band(d.round || 1)) return true;
     const all = this.dcSessions(), done = (this.dcProg().s) || {};
     if (all.some(x => x.lv === L && done[x.id])) return true;
     return LEVELS.slice(0, at).every(lv => {
@@ -3542,7 +3566,7 @@ class Component extends DCLogic {
           };
         });
         plResultTitle = 'سطح تو: ' + pl.finalLevel;
-        plResultDesc = 'از این به بعد دورهٔ واژگان از همین سطح شروع می‌شود. پیشرفت و واژه‌هایی که قبلاً دیده‌ای دست‌نخورده می‌مانند.';
+        plResultDesc = 'از این به بعد واژگان، دستور زبان، جمله‌سازی، شنیدن و گفت‌وگو همه از همین سطح شروع می‌شوند. پیشرفت و واژه‌هایی که قبلاً دیده‌ای دست‌نخورده می‌مانند.';
       }
     }
 
