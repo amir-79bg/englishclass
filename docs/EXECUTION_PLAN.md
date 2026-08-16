@@ -257,7 +257,7 @@ ARC-001 (مدل canonical محتوا + ERD)
 |---|---|---|---|
 | `ARC-001` | DONE | مدل canonical محتوا و ERD اولیه | `docs/architecture/content-model.md`: entities (Category، Word، Example، ContentVersion، CurriculumUnit، DiscussionMethod) با فیلد/نوع/constraint، ERD متنی، و یادداشت migration برای `DATA-001` |
 | `ARC-002` | TODO | مدل user state و SRS | progress/favorites/custom content/activity/outbox با invariants مشخص شود |
-| `ARC-003` | TODO | قرارداد OpenAPI v1 | health/auth/manifest/content/sync schemas و error envelope تعریف شوند |
+| `ARC-003` | TODO | قرارداد OpenAPI v1 | health/auth/manifest/content/sync schemas و error envelope تعریف شوند؛ برای مسیرهای ابزار نوشتاری از `docs/architecture/writing-tools-api-recommendation.md` پیروی شود |
 | `ARC-004` | TODO | سیاست sync و conflict | idempotency، cursor، ordering و conflict policy هر نوع داده مستند شود |
 | `DATA-001` | TODO | قرارداد migration شناسه‌های legacy | mapping برای word `i`/headword و import report تعریف شود |
 
