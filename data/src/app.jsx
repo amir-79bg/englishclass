@@ -3917,10 +3917,10 @@ class Component extends DCLogic {
       // The home screen is now four tracks side by side, each at its own
       // position. No day, no ticks that reset at midnight, no order imposed.
       trackCards: this.tracks().map(t => ({
-        label: t.label, icon: t.icon, sub: t.sub, next: t.next,
+        label: t.label, icon: t.icon, sub: t.sub,
         pct: t.total ? progressLabel(t.done, t.total) : '',
         barStyle: 'height:100%;width:' + progressWidth(t.done, t.total) + '%;background:' + t.color + ';transition:width .35s',
-        style: 'display:flex;align-items:center;gap:12px;padding:15px 14px;border-radius:0;background:transparent;border:0;border-bottom:1px solid rgba(233,233,237,.065);cursor:pointer;width:100%;text-align:right' + (t.locked ? ';opacity:.55' : ''),
+        style: cardBtn(t.color) + (t.locked ? ';opacity:.55' : ''),
         iconStyle: iconSq(t.color),
         go: t.go
       })),

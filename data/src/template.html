@@ -9726,9 +9726,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
 <div class="vcard">
 
-  <div style="font-size:12px;color:rgba(233,233,237,.55);line-height:1.9;margin-bottom:14px">هر بخش مسیر خودش را دارد و با سرعت خودت جلو می‌رود. هر وقت خواستی، هرکدام را که خواستی.</div>
-
-  <div style="display:grid;gap:0;margin-bottom:20px;padding:2px 12px;border-radius:16px;background:rgba(233,233,237,.026);box-shadow:inset 0 0 0 1px rgba(233,233,237,.055)">
+  <div style="display:grid;gap:8px;margin-bottom:20px">
     <sc-for list="{{ trackCards }}" as="t" hint-placeholder-count="5">
       <button class="vbtn" sc-camel-on-click="{{ t.go }}" style="{{ t.style }}">
         <div style="{{ t.iconStyle }}"><i class="{{ t.icon }}"></i></div>
@@ -9739,9 +9737,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
           </div>
           <div style="height:4px;border-radius:99px;background:rgba(233,233,237,.09);overflow:hidden;margin-bottom:6px"><div style="{{ t.barStyle }}"></div></div>
           <div style="font-size:11.5px;color:rgba(233,233,237,.55);line-height:1.7">{{ t.sub }}</div>
-          <div style="font-size:11.5px;color:rgba(233,233,237,.8);line-height:1.7;margin-top:3px">بعدی: {{ t.next }}</div>
         </div>
-        <i class="ph ph-caret-left" style="flex:none;font-size:16px;color:rgba(233,233,237,.55)"></i>
       </button>
     </sc-for>
   </div>
