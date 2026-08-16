@@ -11,6 +11,10 @@ const MODES = [
   { mode: 'cloze',  name: 'در جمله',      desc: 'جای خالی یک جمله‌ی واقعی را پر کن', icon: 'ph ph-text-aa' }
 ];
 const QUIZ_EVERY = 300, QUIZ_LEN = 20, PASS = 0.7;
+// Placement is a quick per-level probe, not the mastery check the periodic
+// quiz is — five words is enough to tell "knows this level" from "doesn't",
+// and a shorter bar (60%) fits a first encounter with unfamiliar words.
+const PLACEMENT_LEN = 5, PLACEMENT_PASS = 0.6;
 // The verbs the collocation groups are built around. Every verb group has
 // exactly one distinct first word, so distractors have to come from this list —
 // drawing them from the other groups produced options like "make / bitterly /
@@ -333,7 +337,7 @@ const WORD_LADDER = [
 // here independently — an unbounded engine plus one finite course, never n
 // parallel skill tracks.
 const SB_MODE_FA = { pattern: 'الگو', chunk: 'تکه‌چینی', expand: 'بسط دادن', combine: 'ترکیب', free: 'نوشتن آزاد', game: 'بازی' };
-const RUNNERS = ['study', 'quiz', 'result', 'add', 'exercise', 'game', 'sbrun', 'glesson', 'csrun', 'ltext', 'dses'];
+const RUNNERS = ['study', 'quiz', 'result', 'add', 'exercise', 'game', 'sbrun', 'glesson', 'csrun', 'ltext', 'dses', 'placement'];
 // The seven curricula, grouped by what the learner DOES — not by which data
 // file backs them. Three groups is what makes the app describable in a sentence.
 const HUBS = {
@@ -396,7 +400,7 @@ class Component extends DCLogic {
       showBack: false, picked: null, typed: '', checked: false, correct: null,
       options: [], quiz: null, result: null, query: '', dictSort: 'course', dictTrBusy: false, dictTrResult: null, dictTrErr: '', limit: 60, confirmReset: false, tick: 0, ex: null, game: null,
       gpText: '', gpBusy: false, gpErr: '', gpResult: null, gFlowNote: '',
-      installHelpOpen: false, installAvailable: false
+      installHelpOpen: false, installAvailable: false, placement: null
     };
     this.sentCache = {};
     try { this.sentCache = JSON.parse(localStorage.getItem('vocab_sentences') || '{}'); } catch (e) {}
@@ -1511,6 +1515,74 @@ class Component extends DCLogic {
       q.missed.forEach(wi => { const at = Math.min(d.pos + 5, d.order.length); d.order = d.order.slice(0, at).concat([wi], d.order.slice(at)); });
     }, { screen: 'result', quiz: null, result: { kind: 'quiz', score: Math.round(score * 100), passed, mile: q.mile, missed: q.missed } });
   }
+
+  // ---- level placement ----
+  // A short probe per CEFR level: five words, always English-shown /
+  // pick-the-meaning so it stays a pure vocabulary check. Levels run in
+  // order starting at A1; failing a level's bar stops the test there,
+  // rather than making a beginner sit through six levels' worth of words
+  // they were never going to know.
+  placementQs(L) {
+    const idx = Array.from(this.levelWordIndices(L)).filter(i => this.W[i] && this.W[i].fa);
+    if (idx.length < 4) return [];
+    const withFa = this.W.filter(x => x.fa);
+    const pool = shuffled(idx, LEVELS.indexOf(L) * 733 + 11).slice(0, PLACEMENT_LEN);
+    return pool.map((wi, k) => {
+      const same = idx.filter(i => i !== wi);
+      const src = same.length >= 3 ? same : withFa.filter(x => x.i !== wi).map(x => x.i);
+      const r = mulberry(wi * 17 + k);
+      const dis = []; let guard = 0;
+      while (dis.length < 3 && guard++ < 200) {
+        const c = src[Math.floor(r() * src.length)];
+        if (c !== wi && !dis.includes(c)) dis.push(c);
+      }
+      const opts = shuffled(dis.concat([wi]), wi + k).map(i => ({ i, label: this.W[i].fa, correct: i === wi }));
+      return { wi, opts };
+    });
+  }
+  startPlacement() {
+    const qs = this.placementQs('A1');
+    if (!qs.length) return;
+    this.setState({ screen: 'placement', placement: { level: 'A1', li: 0, qs, k: 0, picked: null, right: 0, results: [] } });
+  }
+  placementPick(oi) {
+    const p = this.state.placement; if (!p || p.picked != null) return;
+    const opt = p.qs[p.k].opts[oi];
+    this.setState({ placement: Object.assign({}, p, { picked: oi, right: p.right + (opt.correct ? 1 : 0) }) });
+  }
+  placementAdvance() {
+    const p = this.state.placement; if (!p || p.picked == null) return;
+    if (p.k + 1 < p.qs.length) {
+      this.setState({ placement: Object.assign({}, p, { k: p.k + 1, picked: null }) });
+      return;
+    }
+    const total = p.qs.length, score = total ? p.right / total : 0;
+    const results = p.results.concat([{ level: p.level, right: p.right, total }]);
+    const nextLi = p.li + 1;
+    if (score >= PLACEMENT_PASS && nextLi < LEVELS.length) {
+      const qs = this.placementQs(LEVELS[nextLi]);
+      if (qs.length) {
+        this.setState({ placement: { level: LEVELS[nextLi], li: nextLi, qs, k: 0, picked: null, right: 0, results } });
+        return;
+      }
+    }
+    const finalLevel = results.filter(x => x.total && x.right / x.total >= PLACEMENT_PASS).map(x => x.level).pop() || 'A1';
+    this.setState({ placement: Object.assign({}, p, { results, done: true, finalLevel }) });
+  }
+  applyPlacement() {
+    const p = this.state.placement; if (!p || !p.finalLevel) return;
+    const n = this.W.length, li = LEVELS.indexOf(p.finalLevel);
+    this.set(d => {
+      d.round = li * PER_LEVEL + 1;
+      d.pos = 0;
+      d.order = this.chunkOrder(d.round, n);
+    }, { screen: 'study', placement: null }, () => {
+      if (!this.state.data.order.length) this.setState({ screen: 'home' });
+      else this.prepare();
+    });
+  }
+  skipPlacement() { this.setState({ screen: 'home', placement: null }); }
+
   check() {
     const w = this.current(); if (!w) return;
     const ok = norm(this.state.typed) === norm(w.en);
@@ -3445,6 +3517,35 @@ class Component extends DCLogic {
       }));
     }
 
+    const pl = s.placement;
+    let plPrompt = '', plOptions = [], plPos = '', plBarStyle = 'height:100%;width:0%;background:#84c5d9',
+      plLevelLabel = '', plBreakdown = [], plResultTitle = '', plResultDesc = '';
+    if (pl) {
+      plLevelLabel = 'در حال آزمون سطح ' + pl.level;
+      if (!pl.done) {
+        const cur = pl.qs[pl.k], plw = W[cur.wi];
+        plPrompt = plw.en;
+        plPos = (pl.k + 1) + ' / ' + pl.qs.length;
+        plBarStyle = 'height:100%;width:' + Math.round((pl.k / pl.qs.length) * 100) + '%;background:#84c5d9;transition:width .3s';
+        plOptions = cur.opts.map((o, i) => ({
+          n: String(i + 1), label: o.label, numStyle: numS, style: optS(o.correct, i === pl.picked, pl.picked),
+          textStyle: 'flex:1', mark: pl.picked == null ? '' : (o.correct ? 'ph-fill ph-check-circle' : (i === pl.picked ? 'ph-fill ph-x-circle' : '')),
+          markStyle: 'font-size:16px;flex:none', pick: () => this.placementPick(i)
+        }));
+      } else {
+        plBreakdown = pl.results.map(r => {
+          const passed = r.total > 0 && r.right / r.total >= PLACEMENT_PASS;
+          return {
+            level: r.level, label: r.level + ' · ' + r.right + ' از ' + r.total,
+            passedIcon: passed ? 'ph-fill ph-check-circle' : 'ph-fill ph-x-circle',
+            passedStyle: 'font-size:15px;color:' + (passed ? '#8fd9c1' : '#d98f8f')
+          };
+        });
+        plResultTitle = 'سطح تو: ' + pl.finalLevel;
+        plResultDesc = 'از این به بعد دورهٔ واژگان از همین سطح شروع می‌شود. پیشرفت و واژه‌هایی که قبلاً دیده‌ای دست‌نخورده می‌مانند.';
+      }
+    }
+
     const res = s.result || {};
     let resultTitle = '', resultDesc = '', resultIcon = 'ph-fill ph-trophy', resultCol = '#e0a458', resultActions = [], missed = [];
     // The app's main missing connection: finishing today's cards hands the
@@ -3794,6 +3895,16 @@ class Component extends DCLogic {
       quizNextLabel: q && q.k + 1 >= q.qs.length ? 'دیدن نتیجه' : 'سؤال بعدی',
       quizNextStyle: btn('transparent', q && q.picked != null ? '#e0a458' : 'rgba(233,233,237,.42)', q && q.picked != null ? '#e0a458' : 'rgba(233,233,237,.55)'),
 
+      isPlacement: s.screen === 'placement', showPlacementBtn: s.screen === 'home',
+      startPlacement: () => this.startPlacement(), skipPlacement: () => this.skipPlacement(),
+      plDone: !!(pl && pl.done), plNotDone: !!(pl && !pl.done), plLevelLabel, plPrompt, plOptions, plPos, plBarStyle,
+      plHint: 'معنی فارسی کدام است؟',
+      plNext: () => this.placementAdvance(),
+      plNextLabel: pl && pl.k + 1 >= pl.qs.length ? 'دیدن نتیجه' : 'سؤال بعدی',
+      plNextStyle: btn('transparent', pl && pl.picked != null ? '#84c5d9' : 'rgba(233,233,237,.42)', pl && pl.picked != null ? '#84c5d9' : 'rgba(233,233,237,.55)'),
+      plResultTitle, plResultDesc, plBreakdown,
+      plApply: () => this.applyPlacement(),
+
       resultTitle, resultDesc, resultIcon, resultActions,
       resultIconStyle: 'width:56px;height:56px;margin:0 auto;border-radius:16px;display:grid;place-items:center;font-size:28px;background:' + resultCol + '1f;border:1px solid ' + resultCol + '44;color:' + resultCol,
       hasMissed: missed.length > 0, missed,
@@ -3889,6 +4000,7 @@ class Component extends DCLogic {
       settings: ['تنظیمات', '', 'home'],
       study:    ['یادگیری · واژه‌ها', 'posLabel', 'home'],
       quiz:     ['یادگیری · آزمون واژه', 'quizPos', 'home'],
+      placement:['تعیین سطح', 'plPos', 'home'],
       result:   ['یادگیری · نتیجه', '', 'home'],
       browse:   ['', '', null],
       add:      ['واژه‌نامه · افزودن واژه', '', 'browse'],
