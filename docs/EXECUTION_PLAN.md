@@ -6,7 +6,7 @@
 
 **Current phase:** Phase 0 — environment and repository governance
 
-**Next executable task:** `ENV-003` — install Android Studio
+**Next executable task:** `ENV-004` — install and verify Android SDK toolchain
 
 این سند مرجع رسمی هدف محصول، مرز MVP، معماری، تصمیم‌ها، ترتیب اجرا و وضعیت کار است. هر AI یا توسعه‌دهنده باید پیش از تغییر فایل‌ها، ابتدا `AGENTS.md` و سپس تمام این سند را بخواند.
 
@@ -185,7 +185,7 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 |---|---|---|---|
 | `ENV-001` | DONE | نصب backend toolchain | PHP 8.5.0، Composer 2.10.2، Laravel Installer 5.31.1؛ تمام PHP extensionهای لازم حاضر؛ `composer diagnose` بدون vulnerability |
 | `ENV-002` | DONE | دریافت installer رسمی Android Studio | نسخه 2026.1.3.7؛ 1,508,410,976 bytes؛ SHA-256 مطابق winget؛ امضای `Google LLC` معتبر |
-| `ENV-003` | TODO | نصب Android Studio | IDE در مسیر معتبر نصب و از Registry/CLI قابل تشخیص باشد |
+| `ENV-003` | DONE | نصب Android Studio | نصب در `C:\Program Files\Android\Android Studio`؛ build و JBR داخلی معتبر؛ Registry و winget نصب را تشخیص می‌دهند |
 | `ENV-004` | TODO | نصب Android SDK toolchain | SDK platform، build-tools، platform-tools، command-line tools؛ اجرای موفق `adb version` |
 | `ENV-005` | BLOCKED | فعال‌سازی Virtualization برای Emulator | نیازمند اقدام دستی کاربر در BIOS/UEFI و سپس Windows Hypervisor Platform؛ تا آن زمان گوشی واقعی قابل استفاده است |
 | `DOC-001` | DONE | ایجاد سند اجرایی canonical | این فایل ایجاد و از README قابل کشف است |
@@ -319,7 +319,7 @@ Verified on 2026-08-16:
 | PHP | 8.5.0؛ extensionهای لازم Laravel حاضر |
 | Composer | 2.10.2؛ `composer diagnose` و vulnerability check پاس |
 | Laravel Installer | 5.31.1 |
-| Android Studio | installer نسخه 2026.1.3.7 دانلود و اعتبارسنجی شده؛ هنوز نصب نشده |
+| Android Studio | نصب‌شده؛ build `AI-261.26222.65.2613.15948027`؛ امضای `studio64.exe` معتبر؛ JBR داخلی OpenJDK 25.0.2 |
 | Android SDK / adb | نصب نشده |
 | Virtualization | CPU پشتیبانی می‌کند ولی در BIOS/UEFI غیرفعال است |
 | Docker/Redis/DB server | عمداً برای Phase 0 نصب نشده |
@@ -334,3 +334,4 @@ Verified on 2026-08-16:
 | 2026-08-16 | `ENV-002` | Codex | Android Studio 2026.1.3.7، size = 1,508,410,976 bytes، SHA-256 = `33c0da36175dbab84b16257e9709fce0ca9bdc533af92ed08d6634116f78bcdd`، Authenticode signer = Google LLC، status = Valid |
 | 2026-08-16 | `DOC-001` | Codex | سند canonical شامل vision، scope، architecture، task board، decisions، DoD و AI protocol ایجاد شد. |
 | 2026-08-16 | `DOC-002` | Codex | ورودی‌های `AGENTS.md`، `CLAUDE.md` و `.github/copilot-instructions.md` ایجاد شدند و همگی به سند canonical ارجاع می‌دهند. |
+| 2026-08-16 | `ENV-003` | Codex | Android Studio در `C:\Program Files\Android\Android Studio` نصب شد؛ build = `AI-261.26222.65.2613.15948027`؛ Authenticode فایل `studio64.exe` معتبر و signer = Google LLC؛ JBR داخلی OpenJDK 25.0.2 با exit code صفر اجرا شد؛ Registry و `winget list` نصب را تشخیص دادند. |
