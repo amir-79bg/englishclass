@@ -1897,13 +1897,19 @@ class Component extends DCLogic {
     try { localStorage.setItem('vocab_mycats', JSON.stringify(this.myCats)); } catch (e) {}
     this.setState({ addingCat: false, newCatName: '' });
   }
+  hasCategory(k) {
+    return !!(k && (this.CATS[k] || this.myCats.some(c => c && c.key === k)));
+  }
   rebuildW() {
     const ov = this.over || {}, co = this.catOver || {}, fm = this.faMap || {};
     const app = x => {
       const fa = ov[x.en] || x.fa || fm[x.en] || '';
-      return (fa !== x.fa || co[x.en]) ? Object.assign({}, x, { fa }, co[x.en] ? { cat: co[x.en] } : null) : x;
+      // Ignore stale/unknown category overrides from older or malformed backups.
+      // Valid built-in and user-created categories still take precedence.
+      const overCat = co[x.en], cat = this.hasCategory(overCat) ? overCat : x.cat;
+      return (fa !== x.fa || cat !== x.cat) ? Object.assign({}, x, { fa, cat }) : x;
     };
-    this.W = this.BASE.map(app).concat(this.custom.map((c, k) => app({ i: this.BASE.length + k, en: c.en, fa: c.fa, cat: c.cat || 'general', ex: c.ex || null, own: true })));
+    this.W = this.BASE.map(app).concat(this.custom.map((c, k) => app({ i: this.BASE.length + k, en: c.en, fa: c.fa, cat: this.hasCategory(c.cat) ? c.cat : 'general', ex: c.ex || null, own: true })));
   }
   editStart(en, fa) { this.setState({ editEn: en, editVal: fa }); }
   editSave() {

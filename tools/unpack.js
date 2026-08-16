@@ -1,8 +1,9 @@
 // Write the app's own source out of the bundle so it can be read and grepped.
 //   node tools/unpack.js        -> data/src/template.html + data/src/app.jsx
 //
-// Read-only with respect to the bundle. data/src is a scratch copy: editing it
-// changes nothing, patches go back through tools/bundle.js writeTemplate().
+// Read-only with respect to the bundle. data/src is the editable source tree;
+// changes go back through tools/repack.js (logic in app.jsx, markup elsewhere
+// in template.html).
 const fs = require('fs');
 const path = require('path');
 const { ROOT, readBundle, readTemplate } = require('./bundle');

@@ -59,38 +59,41 @@ function writeTemplate(b, tpl) {
   b.lines[b.templateLine] = JSON.stringify(tpl).replace(/<\//g, '<\\u002F');
 }
 
+function assignmentRange(js, name, open, close) {
+  const marker = js.indexOf(`window.${name}`);
+  if (marker < 0) throw new Error(`bundle: ${name} assignment not found`);
+  const start = js.indexOf(open, marker);
+  const end = start < 0 ? -1 : js.indexOf(close, start);
+  if (start < 0 || end < 0) throw new Error(`bundle: ${name} value not found`);
+  return { start, end };
+}
+
 // window.VOCAB_WORDS = [ ... ];  → the array, and a writer that puts it back.
 function readWords(b) {
   const js = readAsset(b, VOCAB_UUID);
-  const start = js.indexOf('[', js.indexOf('window.VOCAB_WORDS'));
-  const end = js.indexOf('];\n', start);
-  if (start < 0 || end < 0) throw new Error('bundle: VOCAB_WORDS array not found');
+  const { start, end } = assignmentRange(js, 'VOCAB_WORDS', '[', '];\n');
   return JSON.parse(js.slice(start, end + 1));
 }
 
 function writeWords(b, words) {
   const js = readAsset(b, VOCAB_UUID);
-  const start = js.indexOf('[', js.indexOf('window.VOCAB_WORDS'));
-  const end = js.indexOf('];\n', start);
-  if (start < 0 || end < 0) throw new Error('bundle: VOCAB_WORDS array not found');
+  const { start, end } = assignmentRange(js, 'VOCAB_WORDS', '[', '];\n');
   writeAsset(b, VOCAB_UUID, js.slice(0, start) + JSON.stringify(words) + js.slice(end + 1));
+  if (JSON.stringify(readWords(b)) !== JSON.stringify(words)) throw new Error('bundle: VOCAB_WORDS write round-trip mismatch');
 }
 
 // window.VOCAB_CATS = { ... }; -> runtime icon, colour and Persian label map.
 function readCats(b) {
   const js = readAsset(b, VOCAB_UUID);
-  const start = js.indexOf('{', js.indexOf('window.VOCAB_CATS'));
-  const end = js.indexOf('};\n', start);
-  if (start < 0 || end < 0) throw new Error('bundle: VOCAB_CATS object not found');
+  const { start, end } = assignmentRange(js, 'VOCAB_CATS', '{', '};\n');
   return JSON.parse(js.slice(start, end + 1));
 }
 
 function writeCats(b, cats) {
   const js = readAsset(b, VOCAB_UUID);
-  const start = js.indexOf('{', js.indexOf('window.VOCAB_CATS'));
-  const end = js.indexOf('};\n', start);
-  if (start < 0 || end < 0) throw new Error('bundle: VOCAB_CATS object not found');
+  const { start, end } = assignmentRange(js, 'VOCAB_CATS', '{', '};\n');
   writeAsset(b, VOCAB_UUID, js.slice(0, start) + JSON.stringify(cats) + js.slice(end + 1));
+  if (JSON.stringify(readCats(b)) !== JSON.stringify(cats)) throw new Error('bundle: VOCAB_CATS write round-trip mismatch');
 }
 
 module.exports = { ROOT, HTML, VOCAB_UUID, readBundle, writeBundle, readAsset, writeAsset, readTemplate, writeTemplate, readWords, writeWords, readCats, writeCats };

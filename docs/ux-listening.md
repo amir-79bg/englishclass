@@ -17,7 +17,7 @@ Loaded `LISTEN_1` + `LISTEN_2` out of the bundle and counted. The data is far mo
 | Quiz questions per text | **3, every single text** |
 | Fields per text | `id` `lv` `topic` `title` `titleFa` `lines[{en,fa}]` `q[{q,opts,a}]` |
 | Levels | A1 **4** · A2 **4** · B1 **4** · B2 **4** · C1 **2** · C2 **2** |
-| Topics | 19 distinct, all present in `CAT_FA` — `catLabel` never falls through to `'عمومی'` |
+| Topics | 19 distinct, all present in `data/categories.json` / `VOCAB_CATS` — `catLabel` never falls through to `'عمومی'` |
 
 **No level is empty**, so the empty state never fires today (see finding 9 — it is still dead code that cannot fire, which is a different problem). The thin levels are C1 and C2 with **two texts each**: a learner who reaches C1 exhausts the section in two sittings, and the level chip cheerfully advertises `C2 · 2` next to `A1 · 4` with nothing saying that is the end of the road.
 

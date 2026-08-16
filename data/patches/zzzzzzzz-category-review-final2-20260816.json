@@ -1,0 +1,563 @@
+{
+ "25": {
+  "cat": "place"
+ },
+ "94": {
+  "cat": "food"
+ },
+ "95": {
+  "cat": "time"
+ },
+ "98": {
+  "cat": "food"
+ },
+ "209": {
+  "cat": "body"
+ },
+ "521": {
+  "cat": "place"
+ },
+ "615": {
+  "cat": "food"
+ },
+ "654": {
+  "cat": "nature"
+ },
+ "811": {
+  "cat": "food"
+ },
+ "831": {
+  "cat": "place"
+ },
+ "1552": {
+  "cat": "food"
+ },
+ "1612": {
+  "cat": "health"
+ },
+ "1622": {
+  "cat": "food"
+ },
+ "1720": {
+  "cat": "food"
+ },
+ "1721": {
+  "cat": "food"
+ },
+ "1735": {
+  "cat": "health"
+ },
+ "1831": {
+  "cat": "nature"
+ },
+ "1851": {
+  "cat": "nature"
+ },
+ "1869": {
+  "cat": "nature"
+ },
+ "1967": {
+  "cat": "time"
+ },
+ "2007": {
+  "cat": "time"
+ },
+ "2044": {
+  "cat": "time"
+ },
+ "2046": {
+  "cat": "place"
+ },
+ "2047": {
+  "cat": "place"
+ },
+ "2049": {
+  "cat": "place"
+ },
+ "2050": {
+  "cat": "place"
+ },
+ "2051": {
+  "cat": "place"
+ },
+ "2053": {
+  "cat": "place"
+ },
+ "2057": {
+  "cat": "place"
+ },
+ "2100": {
+  "cat": "place"
+ },
+ "2318": {
+  "cat": "place"
+ },
+ "2330": {
+  "cat": "place"
+ },
+ "2463": {
+  "cat": "time"
+ },
+ "2513": {
+  "cat": "place"
+ },
+ "2657": {
+  "cat": "time"
+ },
+ "2662": {
+  "cat": "time"
+ },
+ "2935": {
+  "cat": "time"
+ },
+ "2943": {
+  "cat": "nature"
+ },
+ "2981": {
+  "cat": "place"
+ },
+ "3106": {
+  "cat": "place"
+ },
+ "3122": {
+  "cat": "place"
+ },
+ "3295": {
+  "cat": "place"
+ },
+ "3337": {
+  "cat": "time"
+ },
+ "3571": {
+  "cat": "place"
+ },
+ "3580": {
+  "cat": "time"
+ },
+ "3593": {
+  "cat": "time"
+ },
+ "3628": {
+  "cat": "tech"
+ },
+ "3655": {
+  "cat": "nature"
+ },
+ "3660": {
+  "cat": "body"
+ },
+ "4008": {
+  "cat": "place"
+ },
+ "4060": {
+  "cat": "place"
+ },
+ "4070": {
+  "cat": "place"
+ },
+ "4132": {
+  "cat": "place"
+ },
+ "4134": {
+  "cat": "time"
+ },
+ "4158": {
+  "cat": "time"
+ },
+ "4358": {
+  "cat": "feeling"
+ },
+ "4382": {
+  "cat": "place"
+ },
+ "4398": {
+  "cat": "place"
+ },
+ "4467": {
+  "cat": "food"
+ },
+ "4637": {
+  "cat": "place"
+ },
+ "4663": {
+  "cat": "place"
+ },
+ "4777": {
+  "cat": "place"
+ },
+ "4802": {
+  "cat": "place"
+ },
+ "4857": {
+  "cat": "place"
+ },
+ "4914": {
+  "cat": "place"
+ },
+ "4937": {
+  "cat": "time"
+ },
+ "4963": {
+  "cat": "feeling"
+ },
+ "5006": {
+  "cat": "feeling"
+ },
+ "5065": {
+  "cat": "place"
+ },
+ "5220": {
+  "cat": "time"
+ },
+ "5249": {
+  "cat": "animal"
+ },
+ "5390": {
+  "cat": "time"
+ },
+ "5406": {
+  "cat": "feeling"
+ },
+ "5623": {
+  "cat": "place"
+ },
+ "5649": {
+  "cat": "place"
+ },
+ "5844": {
+  "cat": "feeling"
+ },
+ "5890": {
+  "cat": "place"
+ },
+ "5961": {
+  "cat": "place"
+ },
+ "6026": {
+  "cat": "nature"
+ },
+ "6212": {
+  "cat": "place"
+ },
+ "6213": {
+  "cat": "body"
+ },
+ "6265": {
+  "cat": "place"
+ },
+ "6375": {
+  "cat": "time"
+ },
+ "6450": {
+  "cat": "nature"
+ },
+ "6452": {
+  "cat": "feeling"
+ },
+ "6473": {
+  "cat": "place"
+ },
+ "6594": {
+  "cat": "sport"
+ },
+ "6597": {
+  "cat": "place"
+ },
+ "6632": {
+  "cat": "feeling"
+ },
+ "6647": {
+  "cat": "nature"
+ },
+ "6688": {
+  "cat": "place"
+ },
+ "6728": {
+  "cat": "place"
+ },
+ "6766": {
+  "cat": "place"
+ },
+ "6785": {
+  "cat": "feeling"
+ },
+ "6796": {
+  "cat": "time"
+ },
+ "6825": {
+  "cat": "food"
+ },
+ "6838": {
+  "cat": "place"
+ },
+ "7007": {
+  "cat": "feeling"
+ },
+ "7089": {
+  "cat": "time"
+ },
+ "7138": {
+  "cat": "place"
+ },
+ "7194": {
+  "cat": "animal"
+ },
+ "7224": {
+  "cat": "food"
+ },
+ "7280": {
+  "cat": "time"
+ },
+ "7301": {
+  "cat": "place"
+ },
+ "7341": {
+  "cat": "place"
+ },
+ "7363": {
+  "cat": "place"
+ },
+ "7366": {
+  "cat": "place"
+ },
+ "7399": {
+  "cat": "place"
+ },
+ "7411": {
+  "cat": "food"
+ },
+ "7471": {
+  "cat": "nature"
+ },
+ "7497": {
+  "cat": "place"
+ },
+ "7518": {
+  "cat": "body"
+ },
+ "7609": {
+  "cat": "time"
+ },
+ "7614": {
+  "cat": "place"
+ },
+ "7638": {
+  "cat": "nature"
+ },
+ "7707": {
+  "cat": "food"
+ },
+ "7746": {
+  "cat": "place"
+ },
+ "7790": {
+  "cat": "animal"
+ },
+ "7854": {
+  "cat": "time"
+ },
+ "7935": {
+  "cat": "time"
+ },
+ "7949": {
+  "cat": "place"
+ },
+ "8001": {
+  "cat": "place"
+ },
+ "8058": {
+  "cat": "place"
+ },
+ "8065": {
+  "cat": "place"
+ },
+ "8135": {
+  "cat": "place"
+ },
+ "8142": {
+  "cat": "nature"
+ },
+ "8237": {
+  "cat": "animal"
+ },
+ "8274": {
+  "cat": "place"
+ },
+ "8313": {
+  "cat": "place"
+ },
+ "8338": {
+  "cat": "body"
+ },
+ "8349": {
+  "cat": "place"
+ },
+ "8363": {
+  "cat": "food"
+ },
+ "8465": {
+  "cat": "place"
+ },
+ "8471": {
+  "cat": "place"
+ },
+ "8563": {
+  "cat": "place"
+ },
+ "8589": {
+  "cat": "place"
+ },
+ "8651": {
+  "cat": "place"
+ },
+ "8686": {
+  "cat": "place"
+ },
+ "8871": {
+  "cat": "place"
+ },
+ "8894": {
+  "cat": "feeling"
+ },
+ "8915": {
+  "cat": "body"
+ },
+ "8923": {
+  "cat": "place"
+ },
+ "8942": {
+  "cat": "tech"
+ },
+ "8947": {
+  "cat": "place"
+ },
+ "8958": {
+  "cat": "food"
+ },
+ "8983": {
+  "cat": "time"
+ },
+ "9094": {
+  "cat": "place"
+ },
+ "9120": {
+  "cat": "animal"
+ },
+ "9123": {
+  "cat": "place"
+ },
+ "9229": {
+  "cat": "place"
+ },
+ "9283": {
+  "cat": "body"
+ },
+ "9328": {
+  "cat": "feeling"
+ },
+ "9381": {
+  "cat": "place"
+ },
+ "9434": {
+  "cat": "nature"
+ },
+ "9442": {
+  "cat": "place"
+ },
+ "9521": {
+  "cat": "nature"
+ },
+ "9562": {
+  "cat": "place"
+ },
+ "9581": {
+  "cat": "place"
+ },
+ "9591": {
+  "cat": "food"
+ },
+ "9666": {
+  "cat": "time"
+ },
+ "9712": {
+  "cat": "food"
+ },
+ "9767": {
+  "cat": "money"
+ },
+ "9825": {
+  "cat": "time"
+ },
+ "9833": {
+  "cat": "food"
+ },
+ "9871": {
+  "cat": "place"
+ },
+ "9895": {
+  "cat": "place"
+ },
+ "9935": {
+  "cat": "feeling"
+ },
+ "10043": {
+  "cat": "food"
+ },
+ "10046": {
+  "cat": "place"
+ },
+ "10056": {
+  "cat": "place"
+ },
+ "10059": {
+  "cat": "body"
+ },
+ "10072": {
+  "cat": "time"
+ },
+ "10124": {
+  "cat": "food"
+ },
+ "10128": {
+  "cat": "place"
+ },
+ "10160": {
+  "cat": "food"
+ },
+ "10173": {
+  "cat": "animal"
+ },
+ "10184": {
+  "cat": "time"
+ },
+ "10242": {
+  "cat": "place"
+ },
+ "10253": {
+  "cat": "place"
+ },
+ "10333": {
+  "cat": "place"
+ },
+ "10337": {
+  "cat": "food"
+ },
+ "10341": {
+  "cat": "nature"
+ },
+ "10412": {
+  "cat": "animal"
+ },
+ "10442": {
+  "cat": "place"
+ },
+ "10487": {
+  "cat": "place"
+ },
+ "10520": {
+  "cat": "place"
+ },
+ "10521": {
+  "cat": "nature"
+ }
+}

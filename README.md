@@ -55,7 +55,7 @@ node tools/rebuild.js        # data/words.json -> bundle
 
 `data/categories.json` is the single source of truth for category order, Persian labels, icons, colours and allowed keys. `rebuild.js` folds both this metadata and `data/words.json` into the HTML bundle. Category assignments follow the topic-first policy in `docs/vocabulary-categories.md`: use a clear topic when one exists, otherwise the word's real grammatical role, and reserve `phrase` for non-topical multiword entries.
 
-After category work, run `node tools/audit-categories.js` as well as the normal validator. It checks that the editable data, bundled metadata, duplicate headwords and Listening topics agree.
+After category work, run both `node tools/repack.js` (app/source changes) and `node tools/rebuild.js` (words/category metadata), then `node tools/audit-categories.js`. The audit checks that the editable data, bundled app source and metadata, duplicate headwords, icons and Listening topics agree.
 
 ### Word entry shape
 
