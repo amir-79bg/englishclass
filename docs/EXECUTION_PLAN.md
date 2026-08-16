@@ -6,7 +6,7 @@
 
 **Current phase:** Phase 0 — environment and repository governance
 
-**Next executable task:** `DOC-003` — build the generated documentation portal
+**Next executable task:** `ENV-004` — finish the Android SDK toolchain
 
 این سند مرجع رسمی هدف محصول، مرز MVP، معماری، تصمیم‌ها، ترتیب اجرا و وضعیت کار است. هر AI یا توسعه‌دهنده باید پیش از تغییر فایل‌ها، ابتدا `AGENTS.md` و سپس تمام این سند را بخواند.
 
@@ -190,7 +190,7 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 | `ENV-005` | BLOCKED | فعال‌سازی Virtualization برای Emulator | نیازمند اقدام دستی کاربر در BIOS/UEFI و سپس Windows Hypervisor Platform؛ تا آن زمان گوشی واقعی قابل استفاده است |
 | `DOC-001` | DONE | ایجاد سند اجرایی canonical | این فایل ایجاد و از README قابل کشف است |
 | `DOC-002` | DONE | افزودن entrypoint برای AIها | `AGENTS.md`، `CLAUDE.md` و Copilot instructions به سند canonical ارجاع می‌دهند |
-| `DOC-003` | IN PROGRESS | ساخت پرتال خوانای مستندات | `docs/index.html` آفلاین و self-contained؛ کشف بازگشتی Markdownها؛ جست‌وجو/ناوبری/RTL/LTR/چاپ؛ build و stale-check خودکار؛ الزام به‌روزرسانی برای AI و CI |
+| `DOC-003` | DONE | ساخت پرتال خوانای مستندات | ۲۲ سند در `docs/index.html` آفلاین و self-contained؛ ۱ سند canonical و ۲۱ legacy؛ جست‌وجو/ناوبری/RTL/LTR/چاپ؛ generator با `--check`/`--watch`؛ شش تست و CI پاس |
 
 ### Phase 1 — قراردادها و مدل داده
 
@@ -251,6 +251,7 @@ Outbox + WorkManager  ←→  /api/v1  ←→  Laravel services  ←→  server 
 | `D-007` | 2026-08-16 | ACCEPTED | محتوا به‌صورت versioned pack منتشر شود، نه هزاران درخواست واژه. | سرعت، آفلاین و consistency |
 | `D-008` | 2026-08-16 | ACCEPTED | legacy در مسیر فعلی باقی بماند تا migration وابستگی‌ها را مشخص کند. | جلوگیری از شکستن pipeline و تاریخچه موجود |
 | `D-009` | 2026-08-16 | ACCEPTED | فایل‌های Markdown منبع اصلی مستندات بمانند و `docs/index.html` به‌صورت generated و self-contained از آن‌ها ساخته شود. | HTML ایستا نمی‌تواند از `file://` فایل‌های جدید پوشه را کشف کند؛ generated snapshot آفلاین، قابل‌اشتراک و قابل‌کنترل در Git است. |
+| `D-010` | 2026-08-16 | ACCEPTED | فقط `EXECUTION_PLAN.md` مرجع زنده بازطراحی است؛ ۲۱ سند فعلی دیگر با برچسب legacy/reference نگهداری شوند و سند تازه خودکار legacy فرض نشود. | حفظ شواهد مهاجرت بدون اشتباه‌گرفتن پیشنهادها و auditهای نسخه قدیمی با تصمیم فعلی |
 
 تصمیم‌ها append-only هستند. تغییر یک تصمیم با ID جدید و ارجاع به تصمیم superseded ثبت می‌شود؛ سطر قبلی حذف نمی‌شود.
 
@@ -298,6 +299,7 @@ AI نباید پاسخ این پرسش‌ها را از خودش بسازد. ک�
 - تغییرهای موجود کاربر را حفظ کن.
 - legacy bundle را مستقیم ویرایش نکن.
 - تست را هم‌زمان با implementation بساز.
+- پس از هر تغییر در `docs/**/*.md`، فرمان `node tools/build-docs.js` را اجرا و `docs/index.html` را در همان change به‌روز کن.
 - داده destructive یا migration برگشت‌ناپذیر را بدون مجوز صریح اجرا نکن.
 
 ### پایان کار
@@ -337,3 +339,4 @@ Verified on 2026-08-16:
 | 2026-08-16 | `DOC-001` | Codex | سند canonical شامل vision، scope، architecture، task board، decisions، DoD و AI protocol ایجاد شد. |
 | 2026-08-16 | `DOC-002` | Codex | ورودی‌های `AGENTS.md`، `CLAUDE.md` و `.github/copilot-instructions.md` ایجاد شدند و همگی به سند canonical ارجاع می‌دهند. |
 | 2026-08-16 | `ENV-003` | Codex | Android Studio در `C:\Program Files\Android\Android Studio` نصب شد؛ build = `AI-261.26222.65.2613.15948027`؛ Authenticode فایل `studio64.exe` معتبر و signer = Google LLC؛ JBR داخلی OpenJDK 25.0.2 با exit code صفر اجرا شد؛ Registry و `winget list` نصب را تشخیص دادند. |
+| 2026-08-16 | `DOC-003` | Codex | `node --test tools/build-docs.test.js` = 6/6 pass؛ `node tools/build-docs.js --check` = current؛ `git diff --check` = pass؛ خروجی ۲۲ سند/۳۴۴ heading و بدون asset شبکه‌ای؛ Edge desktop render پاس؛ CDP در viewport واقعی 360px مقدار `scrollWidth = clientWidth = 360` را برای خانه/سند تأیید کرد و جست‌وجوی فارسی «همگام سازی» یک نتیجه برگرداند. |

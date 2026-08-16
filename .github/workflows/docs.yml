@@ -1,0 +1,30 @@
+name: Documentation portal
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-docs:
+    name: Test and verify generated documentation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run documentation generator tests
+        run: node --test tools/build-docs.test.js
+
+      - name: Verify committed portal is current
+        run: node tools/build-docs.js --check

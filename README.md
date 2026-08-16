@@ -5,6 +5,8 @@ An offline English-vocabulary trainer for Persian speakers, shipped as **one sel
 > [!IMPORTANT]
 > The Laravel API + native Android rebuild is managed in this same repository as a monorepo. The canonical vision, architecture, task board, decisions, and verified progress live in [`docs/EXECUTION_PLAN.md`](docs/EXECUTION_PLAN.md). AI agents must read [`AGENTS.md`](AGENTS.md) before changing the repository.
 
+For a clean, searchable, offline view of every project document, open [`docs/index.html`](docs/index.html). Markdown remains the source of truth; the portal is regenerated with `node tools/build-docs.js` whenever documentation changes.
+
 ## Optional Google Drive sync
 
 The home screen includes local-first Google Drive backup. Progress always stays in browser `localStorage`; when Drive is unavailable the UI reports that the cloud backup is pending, not that local progress was lost. Concurrent updates are stored as immutable snapshots and presented to the learner for an explicit choice.
