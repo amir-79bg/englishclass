@@ -1,0 +1,766 @@
+{
+ "26": {
+  "ex": "My brother and I always argue about the TV remote.",
+  "exfa": "من و برادرم همیشه بر سر کنترل تلویزیون بحث می‌کنیم."
+ },
+ "107": {
+  "ex": "My son likes to collect old coins.",
+  "exfa": "پسرم دوست دارد سکه‌های قدیمی جمع کند."
+ },
+ "127": {
+  "ex": "It's more convenient to shop online than in stores.",
+  "exfa": "خرید آنلاین از خرید در فروشگاه راحت‌تر است."
+ },
+ "129": {
+  "ex": "My father likes to cook dinner on weekends.",
+  "exfa": "پدرم دوست دارد آخر هفته‌ها شام آشپزی کند."
+ },
+ "137": {
+  "ex": "This job requires a lot of creativity.",
+  "exfa": "این شغل به خلاقیت زیادی نیاز دارد."
+ },
+ "164": {
+  "ex": "Their two houses are completely different.",
+  "exfa": "خانه‌های آن دو کاملاً متفاوت است."
+ },
+ "200": {
+  "ex": "I love fruit, especially strawberries.",
+  "exfa": "من میوه دوست دارم، مخصوصاً توت‌فرنگی."
+ },
+ "206": {
+  "ex": "It's hard for him to express his feelings.",
+  "exfa": "برایش سخت است که احساساتش را ابراز کند."
+ },
+ "241": {
+  "ex": "We spent the afternoon at an art gallery.",
+  "exfa": "بعدازظهر را در یک گالری هنری گذراندیم."
+ },
+ "377": {
+  "ex": "She has a lot of musical talent.",
+  "exfa": "او استعداد موزیکال زیادی دارد."
+ },
+ "407": {
+  "ex": "We need to organize the files before the meeting.",
+  "exfa": "باید قبل از جلسه پرونده‌ها را سازماندهی کنیم."
+ },
+ "427": {
+  "ex": "The band will perform live at the festival.",
+  "exfa": "این گروه در جشنواره به‌صورت زنده اجرا می‌کند."
+ },
+ "447": {
+  "ex": "She spent all night preparing for the exam.",
+  "exfa": "او تمام شب را برای آماده شدن برای امتحان صرف کرد."
+ },
+ "451": {
+  "ex": "This is a private conversation between us.",
+  "exfa": "این یک گفتگوی خصوصی بین ماست."
+ },
+ "466": {
+  "ex": "I didn't realize how late it was.",
+  "exfa": "متوجه نشدم که چقدر دیر وقت است."
+ },
+ "527": {
+  "ex": "My little sister is very smart for her age.",
+  "exfa": "خواهر کوچکم برای سنش خیلی باهوش است."
+ },
+ "537": {
+  "ex": "Can you spell your last name for me?",
+  "exfa": "می‌توانی نام خانوادگی‌ات را برایم هجی کنی؟"
+ },
+ "551": {
+  "ex": "This movie isn't suitable for young children.",
+  "exfa": "این فیلم برای بچه‌های کوچک مناسب نیست."
+ },
+ "603": {
+  "ex": "Our trip to the mountains was unforgettable.",
+  "exfa": "سفرمان به کوهستان فراموش‌نشدنی بود."
+ },
+ "617": {
+  "ex": "The movie contains some violent scenes.",
+  "exfa": "این فیلم چند صحنه‌ی خشن دارد."
+ },
+ "705": {
+  "ex": "Scientists discovered a new type of frog in the forest.",
+  "exfa": "دانشمندان نوع جدیدی از قورباغه را در جنگل کشف کردند."
+ },
+ "757": {
+  "ex": "The children grew impatient waiting for the bus.",
+  "exfa": "بچه‌ها در انتظار اتوبوس بی‌صبر شدند."
+ },
+ "769": {
+  "ex": "My little brother is always energetic in the morning.",
+  "exfa": "برادر کوچکم همیشه صبح‌ها پرانرژی است."
+ },
+ "853": {
+  "ex": "We visited an ancient castle during our trip.",
+  "exfa": "در سفرمان از یک قلعه‌ی باستانی بازدید کردیم."
+ },
+ "967": {
+  "ex": "Customers often complain about slow service.",
+  "exfa": "مشتری‌ها اغلب از خدمات کند شکایت می‌کنند."
+ },
+ "969": {
+  "ex": "I really enjoy spending time with my family.",
+  "exfa": "من واقعاً از گذراندن وقت با خانواده‌ام لذت می‌برم."
+ },
+ "970": {
+  "ex": "She helped organise the school trip last year.",
+  "exfa": "او سال گذشته در سازماندهی سفر مدرسه کمک کرد."
+ },
+ "973": {
+  "ex": "Can you help me solve this math problem?",
+  "exfa": "می‌توانی کمکم کنی این مسئله‌ی ریاضی را حل کنم؟"
+ },
+ "974": {
+  "ex": "I really admire how hard she works.",
+  "exfa": "من واقعاً برای تلاش زیادش او را تحسین می‌کنم."
+ },
+ "977": {
+  "ex": "My parents don't allow me to stay out late.",
+  "exfa": "والدینم اجازه نمی‌دهند دیر وقت بیرون بمانم."
+ },
+ "981": {
+  "ex": "This book doesn't belong to me.",
+  "exfa": "این کتاب متعلق به من نیست."
+ },
+ "983": {
+  "ex": "Loud music at night really bothers my neighbors.",
+  "exfa": "موسیقی بلند شب همسایه‌هایم را واقعاً اذیت می‌کند."
+ },
+ "987": {
+  "ex": "We celebrate my sister's birthday every June.",
+  "exfa": "ما هر ژوئن تولد خواهرم را جشن می‌گیریم."
+ },
+ "999": {
+  "ex": "Artists create beautiful paintings from simple colors.",
+  "exfa": "هنرمندان از رنگ‌های ساده نقاشی‌های زیبا خلق می‌کنند."
+ },
+ "1011": {
+  "ex": "The magician made the coin disappear.",
+  "exfa": "شعبده‌باز سکه را ناپدید کرد."
+ },
+ "1027": {
+  "ex": "The company was established in 1990.",
+  "exfa": "این شرکت در سال ۱۹۹۰ تأسیس شد."
+ },
+ "1034": {
+  "ex": "Do you think aliens really exist?",
+  "exfa": "فکر می‌کنی موجودات فضایی واقعاً وجود دارند؟"
+ },
+ "1041": {
+  "ex": "Swimming in that river is very dangerous.",
+  "exfa": "شنا کردن در آن رودخانه خیلی خطرناک است."
+ },
+ "1045": {
+  "ex": "Her English is excellent after two years of study.",
+  "exfa": "انگلیسی او بعد از دو سال تحصیل عالی است."
+ },
+ "1047": {
+  "ex": "That restaurant is too expensive for students.",
+  "exfa": "آن رستوران برای دانشجوها خیلی گران است."
+ },
+ "1055": {
+  "ex": "It's impossible to finish this work in one day.",
+  "exfa": "تمام کردن این کار در یک روز غیرممکن است."
+ },
+ "1059": {
+  "ex": "A mysterious noise came from the old house.",
+  "exfa": "صدایی مرموز از خانه‌ی قدیمی به گوش رسید."
+ },
+ "1069": {
+  "ex": "That was a silly mistake to make.",
+  "exfa": "آن یک اشتباه احمقانه بود."
+ },
+ "1091": {
+  "ex": "It's unusual for him to be late.",
+  "exfa": "دیر کردن برای او غیرعادی است."
+ },
+ "1151": {
+  "ex": "She wore a blue dress to the wedding.",
+  "exfa": "او یک لباس آبی به عروسی پوشید."
+ },
+ "1221": {
+  "ex": "They play hockey on the ice every winter.",
+  "exfa": "آن‌ها هر زمستان روی یخ هاکی بازی می‌کنند."
+ },
+ "1222": {
+  "ex": "We watched the football match on TV last night.",
+  "exfa": "دیشب مسابقه‌ی فوتبال را از تلویزیون تماشا کردیم."
+ },
+ "1289": {
+  "ex": "It's natural to feel nervous before an exam.",
+  "exfa": "طبیعی است که قبل از امتحان احساس عصبی بودن کنی."
+ },
+ "1345": {
+  "ex": "He finally admitted that he made a mistake.",
+  "exfa": "او بالاخره اعتراف کرد که اشتباه کرده است."
+ },
+ "1825": {
+  "ex": "We booked a guided tour of the old city.",
+  "exfa": "ما یک تور با راهنما از شهر قدیمی رزرو کردیم."
+ },
+ "1858": {
+  "ex": "Tigers are an endangered species.",
+  "exfa": "ببرها گونه‌ای در خطر انقراض هستند."
+ },
+ "2091": {
+  "ex": "They take a dance class every Friday night.",
+  "exfa": "آن‌ها هر جمعه شب کلاس رقص می‌روند."
+ },
+ "2131": {
+  "ex": "Do you have a pen I could borrow?",
+  "exfa": "آیا خودکاری داری که بتوانم قرض بگیرم؟"
+ },
+ "2139": {
+  "ex": "I searched everywhere for my keys this morning.",
+  "exfa": "امروز صبح همه‌جا دنبال کلیدهایم گشتم."
+ },
+ "2205": {
+  "ex": "My family always supports my decisions.",
+  "exfa": "خانواده‌ام همیشه از تصمیم‌هایم حمایت می‌کند."
+ },
+ "2259": {
+  "ex": "We travel to my grandparents' house every summer.",
+  "exfa": "ما هر تابستان به خانه‌ی پدربزرگ و مادربزرگم سفر می‌کنیم."
+ },
+ "2295": {
+  "ex": "Can you check my homework before class?",
+  "exfa": "می‌توانی قبل از کلاس تکالیفم را بررسی کنی؟"
+ },
+ "2395": {
+  "ex": "The price includes breakfast and dinner.",
+  "exfa": "این قیمت شامل صبحانه و شام می‌شود."
+ },
+ "2406": {
+  "ex": "Can you print this document for me?",
+  "exfa": "می‌توانی این سند را برایم چاپ کنی؟"
+ },
+ "2414": {
+  "ex": "Would you like to join us for dinner?",
+  "exfa": "دوست داری برای شام به ما بپیوندی؟"
+ },
+ "2418": {
+  "ex": "She is taking an advanced English course this year.",
+  "exfa": "او امسال یک دوره‌ی پیشرفته‌ی زبان انگلیسی می‌گذراند."
+ },
+ "2442": {
+  "ex": "The class will start in five minutes.",
+  "exfa": "کلاس تا پنج دقیقه‌ی دیگر شروع می‌شود."
+ },
+ "2449": {
+  "ex": "She said yes when he asked her to marry him.",
+  "exfa": "او وقتی از او خواستگاری کرد گفت بله."
+ },
+ "2521": {
+  "ex": "I need additional time to finish this report.",
+  "exfa": "برای تمام کردن این گزارش به زمان اضافی نیاز دارم."
+ },
+ "2635": {
+  "ex": "He drives to work every morning.",
+  "exfa": "او هر روز صبح رانندگی می‌کند و به سر کار می‌رود."
+ },
+ "2637": {
+  "ex": "I have called her several times today.",
+  "exfa": "امروز چندین بار به او زنگ زدم."
+ },
+ "2661": {
+  "ex": "The official announcement will come out tomorrow.",
+  "exfa": "اعلامیه‌ی رسمی فردا منتشر می‌شود."
+ },
+ "2723": {
+  "ex": "I usually walk to school with my friends.",
+  "exfa": "من معمولاً با دوستانم پیاده به مدرسه می‌روم."
+ },
+ "2773": {
+  "ex": "I received a letter from my old friend today.",
+  "exfa": "امروز نامه‌ای از دوست قدیمی‌ام دریافت کردم."
+ },
+ "2779": {
+  "ex": "The river is very wide near the bridge.",
+  "exfa": "رودخانه نزدیک پل خیلی پهن است."
+ },
+ "2813": {
+  "ex": "She practices the piano every afternoon.",
+  "exfa": "او هر بعدازظهر پیانو تمرین می‌کند."
+ },
+ "2863": {
+  "ex": "Please copy this page for the meeting.",
+  "exfa": "لطفاً این صفحه را برای جلسه کپی کن."
+ },
+ "2867": {
+  "ex": "Don't force your little sister to share her toys.",
+  "exfa": "خواهر کوچکت را مجبور نکن اسباب‌بازی‌هایش را به اشتراک بگذارد."
+ },
+ "2893": {
+  "ex": "Let's stop here and continue the lesson tomorrow.",
+  "exfa": "بیا اینجا متوقف شویم و فردا درس را ادامه دهیم."
+ },
+ "2911": {
+  "ex": "Look both ways before you cross the street.",
+  "exfa": "قبل از عبور از خیابان به هر دو طرف نگاه کن."
+ },
+ "2973": {
+  "ex": "Paris is the capital of France.",
+  "exfa": "پاریس پایتخت فرانسه است."
+ },
+ "2991": {
+  "ex": "She wants to learn a foreign language next year.",
+  "exfa": "او می‌خواهد سال بعد یک زبان خارجی یاد بگیرد."
+ },
+ "3058": {
+  "ex": "The children looked happy when they saw the puppy.",
+  "exfa": "بچه‌ها وقتی توله‌سگ را دیدند خوشحال به نظر رسیدند."
+ },
+ "3062": {
+  "ex": "Japan is a highly developed country.",
+  "exfa": "ژاپن کشوری بسیار توسعه‌یافته است."
+ },
+ "3069": {
+  "ex": "She feeds the cat every morning before school.",
+  "exfa": "او هر روز صبح قبل از مدرسه به گربه غذا می‌دهد."
+ },
+ "3084": {
+  "ex": "I recently moved to a new city.",
+  "exfa": "من اخیراً به شهر جدیدی نقل‌مکان کردم."
+ },
+ "3115": {
+  "ex": "Her English pronunciation is almost perfect.",
+  "exfa": "تلفظ انگلیسی او تقریباً بی‌نقص است."
+ },
+ "3119": {
+  "ex": "This is a classic recipe my grandmother used.",
+  "exfa": "این یک دستور غذای کلاسیک است که مادربزرگم استفاده می‌کرد."
+ },
+ "3197": {
+  "ex": "This museum offers many educational programs for kids.",
+  "exfa": "این موزه برنامه‌های آموزشی زیادی برای بچه‌ها ارائه می‌دهد."
+ },
+ "3199": {
+  "ex": "The bridge is made of strong metal beams.",
+  "exfa": "پل از تیرهای فلزی محکم ساخته شده است."
+ },
+ "3208": {
+  "ex": "It's likely to rain later this afternoon.",
+  "exfa": "احتمالاً بعدازظهر باران می‌بارد."
+ },
+ "3239": {
+  "ex": "The two neighbors reached a pacific agreement after their argument.",
+  "exfa": "دو همسایه بعد از دعوایشان به توافقی صلح‌جویانه رسیدند."
+ },
+ "3274": {
+  "ex": "I bought a pack of chewing gum at the store.",
+  "exfa": "یک بسته آدامس از فروشگاه خریدم."
+ },
+ "3375": {
+  "ex": "I don't fully understand this grammar rule.",
+  "exfa": "این قانون گرامری را کاملاً نمی‌فهمم."
+ },
+ "3458": {
+  "ex": "The movie will begin at eight o'clock.",
+  "exfa": "فیلم ساعت هشت شروع می‌شود."
+ },
+ "3461": {
+  "ex": "The royal family lives in a huge palace.",
+  "exfa": "خانواده‌ی سلطنتی در یک کاخ بزرگ زندگی می‌کند."
+ },
+ "3475": {
+  "ex": "We have a weekly meeting every Monday morning.",
+  "exfa": "ما هر دوشنبه صبح یک جلسه‌ی هفتگی داریم."
+ },
+ "3545": {
+  "ex": "The magazine publishes new scientific discoveries every month.",
+  "exfa": "این مجله هر ماه کشفیات علمی جدید منتشر می‌کند."
+ },
+ "3609": {
+  "ex": "The bus arrived quickly, so we didn't wait long.",
+  "exfa": "اتوبوس سریع رسید، پس زیاد منتظر نماندیم."
+ },
+ "3615": {
+  "ex": "Please heat the soup before you serve it.",
+  "exfa": "لطفاً قبل از سرو کردن سوپ را گرم کن."
+ },
+ "3621": {
+  "ex": "The factory uses several chemical products.",
+  "exfa": "کارخانه از چند محصول شیمیایی استفاده می‌کند."
+ },
+ "3645": {
+  "ex": "We walk to the market together every Saturday.",
+  "exfa": "ما هر شنبه با هم پیاده تا بازار می‌رویم."
+ },
+ "3669": {
+  "ex": "Let's pick a movie to watch tonight.",
+  "exfa": "بیا امشب یک فیلم برای تماشا انتخاب کنیم."
+ },
+ "3749": {
+  "ex": "The children watched the magic show with wide eyes.",
+  "exfa": "بچه‌ها با چشمانی گشاد نمایش جادو را تماشا کردند."
+ },
+ "3814": {
+  "ex": "The lights automatically turn off at midnight.",
+  "exfa": "چراغ‌ها نیمه‌شب به‌طور خودکار خاموش می‌شوند."
+ },
+ "3845": {
+  "ex": "I saw an advertisement for a new phone on TV.",
+  "exfa": "یک آگهی برای یک گوشی جدید در تلویزیون دیدم."
+ },
+ "3958": {
+  "ex": "Please speak more clearly so I can understand you.",
+  "exfa": "لطفاً واضح‌تر صحبت کن تا بتوانم بفهمم."
+ },
+ "3979": {
+  "ex": "A brown bear walked out of the forest.",
+  "exfa": "یک خرس قهوه‌ای از جنگل بیرون آمد."
+ },
+ "3993": {
+  "ex": "I don't know exactly what time the movie starts.",
+  "exfa": "دقیقاً نمی‌دانم فیلم چه ساعتی شروع می‌شود."
+ },
+ "3998": {
+  "ex": "We are nearly at the airport now.",
+  "exfa": "الان تقریباً به فرودگاه رسیده‌ایم."
+ },
+ "4051": {
+  "ex": "The candy costs only fifty cents.",
+  "exfa": "آن آب‌نبات فقط پنجاه سنت قیمت دارد."
+ },
+ "4054": {
+  "ex": "The two brothers often fight over the remote control.",
+  "exfa": "آن دو برادر اغلب بر سر کنترل تلویزیون دعوا می‌کنند."
+ },
+ "4069": {
+  "ex": "The ball rolled down the hill and into the street.",
+  "exfa": "توپ از تپه غلتید و به خیابان رسید."
+ },
+ "4077": {
+  "ex": "Try not to think about things in a negative way.",
+  "exfa": "سعی کن به چیزها منفی فکر نکنی."
+ },
+ "4127": {
+  "ex": "You should wear a coat, it's cold outside.",
+  "exfa": "باید یک پالتو بپوشی، بیرون سرد است."
+ },
+ "4227": {
+  "ex": "I usually drink instant coffee in the morning.",
+  "exfa": "من معمولاً صبح‌ها قهوه‌ی فوری می‌نوشم."
+ },
+ "4229": {
+  "ex": "This is an automatic door that opens by itself.",
+  "exfa": "این یک در خودکار است که خودش باز می‌شود."
+ },
+ "4247": {
+  "ex": "She always speaks to customers in a friendly manner.",
+  "exfa": "او همیشه با مشتری‌ها با شیوه‌ای دوستانه صحبت می‌کند."
+ },
+ "4267": {
+  "ex": "The principal called a meeting for all the teachers.",
+  "exfa": "مدیر مدرسه جلسه‌ای برای همه‌ی معلم‌ها تشکیل داد."
+ },
+ "4319": {
+  "ex": "I will certainly call you back tomorrow.",
+  "exfa": "من فردا مطمئناً به شما زنگ می‌زنم."
+ },
+ "4335": {
+  "ex": "We mostly eat rice and vegetables at home.",
+  "exfa": "ما در خانه بیشتر برنج و سبزیجات می‌خوریم."
+ },
+ "4387": {
+  "ex": "She will represent our school in the competition.",
+  "exfa": "او در مسابقه نماینده‌ی مدرسه‌ی ما خواهد بود."
+ },
+ "4389": {
+  "ex": "This apartment is ideal for a small family.",
+  "exfa": "این آپارتمان برای یک خانواده‌ی کوچک ایده‌آل است."
+ },
+ "4451": {
+  "ex": "She made another attempt to pass the driving test.",
+  "exfa": "او یک تلاش دیگر برای قبول شدن در آزمون رانندگی کرد."
+ },
+ "4485": {
+  "ex": "The article says pollution can kill many animals.",
+  "exfa": "این مقاله می‌گوید آلودگی می‌تواند بسیاری از حیوانات را بکشد."
+ },
+ "4509": {
+  "ex": "News of the accident spread quickly through town.",
+  "exfa": "خبر تصادف سریع در شهر پخش شد."
+ },
+ "4550": {
+  "ex": "The exam was extremely difficult this year.",
+  "exfa": "امسال امتحان بسیار سخت بود."
+ },
+ "4602": {
+  "ex": "A big wave knocked the surfer off his board.",
+  "exfa": "یک موج بزرگ موج‌سوار را از تخته‌اش انداخت."
+ },
+ "4691": {
+  "ex": "I often wonder what my life would be like abroad.",
+  "exfa": "من اغلب به این فکر می‌کنم که زندگی‌ام در خارج از کشور چطور می‌بود."
+ },
+ "4715": {
+  "ex": "We need to replace the broken window.",
+  "exfa": "باید پنجره‌ی شکسته را جایگزین کنیم."
+ },
+ "4739": {
+  "ex": "The kids love to slide down the hill on their sleds.",
+  "exfa": "بچه‌ها عاشق سر خوردن از تپه با سورتمه هستند."
+ },
+ "4753": {
+  "ex": "Don't forget to lock the door before you leave.",
+  "exfa": "یادت نرود قبل از رفتن در را قفل کنی."
+ },
+ "4804": {
+  "ex": "I am truly grateful for your help.",
+  "exfa": "من واقعاً از کمکت سپاسگزارم."
+ },
+ "5139": {
+  "ex": "The new road is smooth and easy to drive on.",
+  "exfa": "جاده‌ی جدید صاف و برای رانندگی راحت است."
+ },
+ "5179": {
+  "ex": "There were about a hundred people at the concert.",
+  "exfa": "حدود صد نفر در کنسرت بودند."
+ },
+ "5222": {
+  "ex": "He successfully finished the marathon this year.",
+  "exfa": "او امسال با موفقیت ماراتن را تمام کرد."
+ },
+ "5241": {
+  "ex": "Our team is well organized this semester.",
+  "exfa": "تیم ما این ترم خیلی سازمان‌یافته است."
+ },
+ "5313": {
+  "ex": "Can you imagine living without a phone?",
+  "exfa": "می‌توانی زندگی بدون تلفن را تصور کنی؟"
+ },
+ "5399": {
+  "ex": "Unfortunately, the flight was cancelled due to the storm.",
+  "exfa": "متأسفانه پرواز به‌خاطر طوفان لغو شد."
+ },
+ "5423": {
+  "ex": "He read his favorite comic book all weekend.",
+  "exfa": "او تمام آخر هفته کتاب کمیک مورد علاقه‌اش را خواند."
+ },
+ "5424": {
+  "ex": "Please read the instructions carefully.",
+  "exfa": "لطفاً دستورالعمل‌ها را با دقت بخوان."
+ },
+ "5442": {
+  "ex": "Thick smoke rose from the burning building.",
+  "exfa": "دود غلیظی از ساختمان در حال سوختن بلند شد."
+ },
+ "5459": {
+  "ex": "I strongly disagree with that decision.",
+  "exfa": "من شدیداً با آن تصمیم مخالفم."
+ },
+ "5484": {
+  "ex": "The book is mainly about her childhood in Iran.",
+  "exfa": "این کتاب عمدتاً درباره‌ی کودکی او در ایران است."
+ },
+ "5579": {
+  "ex": "Apparently, the train was late again this morning.",
+  "exfa": "ظاهراً قطار امروز صبح دوباره دیر رسید."
+ },
+ "5611": {
+  "ex": "The prisoners tried to escape at night.",
+  "exfa": "زندانی‌ها شب سعی کردند فرار کنند."
+ },
+ "5747": {
+  "ex": "You should take your health seriously.",
+  "exfa": "باید سلامتی‌ات را جدی بگیری."
+ },
+ "5801": {
+  "ex": "The party was a big surprise for my mom.",
+  "exfa": "مهمانی یک شگفتی بزرگ برای مادرم بود."
+ },
+ "5819": {
+  "ex": "I am glad you could come to the party.",
+  "exfa": "خوشحالم که توانستی به مهمانی بیایی."
+ },
+ "5875": {
+  "ex": "The author will publish her new book next month.",
+  "exfa": "نویسنده کتاب جدیدش را ماه بعد منتشر می‌کند."
+ },
+ "5896": {
+  "ex": "The teacher tries to treat all students fairly.",
+  "exfa": "معلم سعی می‌کند با همه‌ی دانش‌آموزان عادلانه رفتار کند."
+ },
+ "5899": {
+  "ex": "Dolphins are known to be very intelligent animals.",
+  "exfa": "دلفین‌ها به‌عنوان حیوانات بسیار باهوش شناخته می‌شوند."
+ },
+ "5959": {
+  "ex": "We had a lovely evening by the lake.",
+  "exfa": "ما یک عصر دوست‌داشتنی کنار دریاچه داشتیم."
+ },
+ "5972": {
+  "ex": "You should exercise regularly to stay healthy.",
+  "exfa": "برای سالم ماندن باید به‌طور منظم ورزش کنی."
+ },
+ "6089": {
+  "ex": "Did I spell your name correctly?",
+  "exfa": "آیا اسمت را درست هجی کردم؟"
+ },
+ "6102": {
+  "ex": "My teacher was pleased with my test results.",
+  "exfa": "معلمم از نتیجه‌ی امتحانم راضی بود."
+ },
+ "6104": {
+  "ex": "This app is widely used by students around the world.",
+  "exfa": "این اپلیکیشن به‌طور گسترده توسط دانش‌آموزان سراسر جهان استفاده می‌شود."
+ },
+ "6167": {
+  "ex": "The player kicked the ball into the goal.",
+  "exfa": "بازیکن توپ را با لگد به داخل دروازه زد."
+ },
+ "6241": {
+  "ex": "The hunter tried to shoot the deer.",
+  "exfa": "شکارچی سعی کرد به گوزن شلیک کند."
+ },
+ "6322": {
+  "ex": "Basically, we need more time to finish the project.",
+  "exfa": "اساساً ما برای تمام کردن پروژه به زمان بیشتری نیاز داریم."
+ },
+ "6527": {
+  "ex": "Please shut the window, it's getting cold.",
+  "exfa": "لطفاً پنجره را ببند، دارد سرد می‌شود."
+ },
+ "6538": {
+  "ex": "Her health has greatly improved since the surgery.",
+  "exfa": "سلامتی او از زمان جراحی بسیار بهتر شده است."
+ },
+ "6555": {
+  "ex": "We had a pleasant walk along the beach.",
+  "exfa": "یک قدم‌زدن دلنشین کنار ساحل داشتیم."
+ },
+ "6731": {
+  "ex": "His explanation seemed very logical to me.",
+  "exfa": "توضیح او برایم خیلی منطقی به نظر رسید."
+ },
+ "6834": {
+  "ex": "The new shoes fit her perfectly.",
+  "exfa": "کفش‌های جدید کاملاً اندازه‌ی او بودند."
+ },
+ "7213": {
+  "ex": "He became slim after months of exercise.",
+  "exfa": "او بعد از ماه‌ها ورزش لاغر شد."
+ },
+ "7391": {
+  "ex": "Bend your knees before you lift the box.",
+  "exfa": "قبل از بلند کردن جعبه زانوهایت را خم کن."
+ },
+ "7535": {
+  "ex": "He told a joke that made everyone laugh.",
+  "exfa": "او شوخی‌ای گفت که همه را خنداند."
+ },
+ "7631": {
+  "ex": "I like to relax on the couch after work.",
+  "exfa": "من دوست دارم بعد از کار روی مبل استراحت کنم."
+ },
+ "7637": {
+  "ex": "I hardly slept last night because of the noise.",
+  "exfa": "دیشب به‌خاطر سر و صدا به‌سختی خوابیدم."
+ },
+ "7779": {
+  "ex": "My grandmother prays every morning before breakfast.",
+  "exfa": "مادربزرگم هر روز صبح قبل از صبحانه دعا می‌کند."
+ },
+ "7808": {
+  "ex": "We should offer our seat to elderly passengers.",
+  "exfa": "باید صندلی‌مان را به مسافران مسن بدهیم."
+ },
+ "7933": {
+  "ex": "It's amazing that anyone survived that crash.",
+  "exfa": "شگفت‌آور است که کسی از آن تصادف زنده ماند."
+ },
+ "8020": {
+  "ex": "A yellow butterfly landed on the flower.",
+  "exfa": "یک پروانه‌ی زرد روی گل نشست."
+ },
+ "8023": {
+  "ex": "It rained heavily all weekend.",
+  "exfa": "تمام آخر هفته باران به شدت بارید."
+ },
+ "8034": {
+  "ex": "Wash the dishes and leave them in the sink.",
+  "exfa": "ظرف‌ها را بشور و در سینک بگذار."
+ },
+ "8273": {
+  "ex": "I need the precise time of the meeting.",
+  "exfa": "به زمان دقیق جلسه نیاز دارم."
+ },
+ "8285": {
+  "ex": "We gather around the table for dinner every night.",
+  "exfa": "ما هر شب دور میز برای شام جمع می‌شویم."
+ },
+ "8333": {
+  "ex": "She worked hard and finally succeeded in her exams.",
+  "exfa": "او سخت تلاش کرد و بالاخره در امتحاناتش موفق شد."
+ },
+ "8765": {
+  "ex": "I can't remember the first lyric of that song.",
+  "exfa": "اولین بیت آن ترانه را یادم نمی‌آید."
+ },
+ "8863": {
+  "ex": "Shake the bottle before you open it.",
+  "exfa": "قبل از باز کردن بطری آن را تکان بده."
+ },
+ "9030": {
+  "ex": "The job is physically demanding, so you need to be fit.",
+  "exfa": "این شغل از نظر جسمانی سخت است، پس باید آماده باشی."
+ },
+ "9031": {
+  "ex": "We divided the pizza into eight slices.",
+  "exfa": "پیتزا را به هشت تکه تقسیم کردیم."
+ },
+ "9350": {
+  "ex": "Someone tried to steal my bike last night.",
+  "exfa": "دیشب کسی سعی کرد دوچرخه‌ام را بدزدد."
+ },
+ "9406": {
+  "ex": "She got dressed quickly and ran to catch the bus.",
+  "exfa": "او سریع لباس پوشید و برای رسیدن به اتوبوس دوید."
+ },
+ "9455": {
+  "ex": "An elephant used its trunk to grab the branch.",
+  "exfa": "یک فیل با خرطومش شاخه را گرفت."
+ },
+ "9502": {
+  "ex": "The dog tried to bite the mailman.",
+  "exfa": "سگ سعی کرد پستچی را گاز بگیرد."
+ },
+ "9553": {
+  "ex": "His desk is always neat and organised.",
+  "exfa": "میز او همیشه مرتب و سازمان‌یافته است."
+ },
+ "9668": {
+  "ex": "The sky gradually turned dark as the storm came.",
+  "exfa": "با آمدن طوفان آسمان به‌تدریج تاریک شد."
+ },
+ "9677": {
+  "ex": "Add some garlic to the sauce for more flavor.",
+  "exfa": "برای طعم بهتر کمی سیر به سس اضافه کن."
+ },
+ "9679": {
+  "ex": "The sun shines brightly every summer morning.",
+  "exfa": "هر صبح تابستان خورشید به‌شدت می‌درخشد."
+ },
+ "9761": {
+  "ex": "Most importantly, remember to bring your passport.",
+  "exfa": "از همه مهم‌تر، یادت باشد پاسپورتت را بیاوری."
+ },
+ "9953": {
+  "ex": "A tear rolled down her cheek during the movie.",
+  "exfa": "در حین فیلم یک اشک روی گونه‌اش چکید."
+ },
+ "10030": {
+  "ex": "The lake will freeze if the weather stays cold.",
+  "exfa": "اگر هوا سرد بماند دریاچه یخ می‌زند."
+ },
+ "10129": {
+  "ex": "We had a picnic in the park on Sunday.",
+  "exfa": "یکشنبه در پارک پیک‌نیک داشتیم."
+ },
+ "10254": {
+  "ex": "He played badly in the last two games.",
+  "exfa": "او در دو بازی آخر بد بازی کرد."
+ }
+}

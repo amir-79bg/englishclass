@@ -1,0 +1,634 @@
+{
+ "179": {
+  "ex": "We had dreadful weather during our entire vacation.",
+  "exfa": "در تمام تعطیلاتمان هوا وحشتناک بود."
+ },
+ "209": {
+  "ex": "The camera can recognize people using facial features.",
+  "exfa": "دوربین می‌تواند افراد را با استفاده از ویژگی‌های صورت تشخیص دهد."
+ },
+ "301": {
+  "ex": "The meeting was quite informal, with everyone in jeans.",
+  "exfa": "جلسه کاملاً غیررسمی بود و همه شلوار جین پوشیده بودند."
+ },
+ "371": {
+  "ex": "She stays motivated by setting small daily goals.",
+  "exfa": "او با تعیین اهداف کوچک روزانه باانگیزه می‌ماند."
+ },
+ "419": {
+  "ex": "He inherited the house through his paternal grandfather.",
+  "exfa": "او خانه را از پدربزرگ پدری‌اش به ارث برد."
+ },
+ "531": {
+  "ex": "My brother is very sociable and makes friends easily.",
+  "exfa": "برادرم خیلی اجتماعی است و به راحتی دوست پیدا می‌کند."
+ },
+ "541": {
+  "ex": "The country needs political stability to attract investors.",
+  "exfa": "این کشور برای جذب سرمایه‌گذاران به پایداری سیاسی نیاز دارد."
+ },
+ "601": {
+  "ex": "The job offer seemed unattractive because of the low salary.",
+  "exfa": "پیشنهاد شغلی به خاطر حقوق پایین غیرجذاب به نظر می‌رسید."
+ },
+ "687": {
+  "ex": "Prices have risen considerably over the past year.",
+  "exfa": "قیمت‌ها در سال گذشته به‌طور قابل توجهی افزایش یافته‌اند."
+ },
+ "689": {
+  "ex": "The museum displays both classical and contemporary art.",
+  "exfa": "موزه هم آثار کلاسیک و هم آثار معاصر را به نمایش می‌گذارد."
+ },
+ "731": {
+  "ex": "Wearing a seatbelt is compulsory in this country.",
+  "exfa": "بستن کمربند ایمنی در این کشور اجباری است."
+ },
+ "753": {
+  "ex": "The children were fascinated by the magic show.",
+  "exfa": "بچه‌ها مجذوب نمایش شعبده‌بازی شده بودند."
+ },
+ "761": {
+  "ex": "He's quite pessimistic about the economy this year.",
+  "exfa": "او درباره‌ی اقتصاد امسال کاملاً بدبین است."
+ },
+ "763": {
+  "ex": "Children are often more resilient than we expect after hard times.",
+  "exfa": "بچه‌ها اغلب بعد از دوران سخت تاب‌آورتر از چیزی هستند که انتظار داریم."
+ },
+ "775": {
+  "ex": "It's more sensible to save some money each month.",
+  "exfa": "منطقی‌تر است هر ماه مقداری پول پس‌انداز کنیم."
+ },
+ "861": {
+  "ex": "Sugar can cause teeth to decay over time.",
+  "exfa": "قند می‌تواند باعث پوسیدن دندان‌ها در طول زمان شود."
+ },
+ "873": {
+  "ex": "The tribe performs a ritual dance before every harvest.",
+  "exfa": "این قبیله پیش از هر برداشت محصول رقصی آیینی اجرا می‌کند."
+ },
+ "1057": {
+  "ex": "He was irresponsible when he left the children alone.",
+  "exfa": "او وقتی بچه‌ها را تنها گذاشت غیرمسئول بود."
+ },
+ "1073": {
+  "ex": "His knowledge of the topic is only superficial.",
+  "exfa": "دانش او درباره‌ی این موضوع فقط سطحی است."
+ },
+ "1089": {
+  "ex": "The old car became unreliable and often broke down.",
+  "exfa": "ماشین قدیمی غیرقابل اعتماد شده بود و اغلب خراب می‌شد."
+ },
+ "1383": {
+  "ex": "He stayed nonchalant even after losing the match.",
+  "exfa": "او حتی بعد از باختن مسابقه هم بی‌تفاوت ماند."
+ },
+ "1401": {
+  "ex": "The benevolent old man gave food to anyone who was hungry.",
+  "exfa": "آن پیرمرد خیرخواه به هر کسی که گرسنه بود غذا می‌داد."
+ },
+ "1407": {
+  "ex": "He lived a hermetic life, rarely speaking to his neighbors.",
+  "exfa": "او زندگی‌ای منزوی داشت و به‌ندرت با همسایه‌هایش حرف می‌زد."
+ },
+ "1413": {
+  "ex": "His narcissistic behavior made it hard to work with him.",
+  "exfa": "رفتار خودشیفته‌ی او کار کردن با او را سخت می‌کرد."
+ },
+ "1449": {
+  "ex": "The heat made everyone feel lethargic and sleepy.",
+  "exfa": "گرما همه را بی‌حال و خواب‌آلود کرده بود."
+ },
+ "1457": {
+  "ex": "The country went through a turbulent period after the war.",
+  "exfa": "کشور پس از جنگ دوره‌ای پرآشوب را پشت سر گذاشت."
+ },
+ "1463": {
+  "ex": "The factory must be compliant with safety regulations.",
+  "exfa": "کارخانه باید مطابق با مقررات ایمنی باشد."
+ },
+ "1497": {
+  "ex": "She became hysterical when she heard the news.",
+  "exfa": "وقتی خبر را شنید حالتی دیوانه‌وار پیدا کرد."
+ },
+ "1511": {
+  "ex": "As a dutiful son, he visits his parents every weekend.",
+  "exfa": "او به عنوان پسری وظیفه‌شناس هر آخر هفته والدینش را می‌بیند."
+ },
+ "1551": {
+  "ex": "The chef made the bitter vegetable more palatable with spices.",
+  "exfa": "سرآشپز با ادویه‌ها آن سبزی تلخ را خوش‌طعم‌تر کرد."
+ },
+ "1621": {
+  "ex": "Whisk the oil and vinegar together to emulsify the dressing.",
+  "exfa": "روغن و سرکه را هم بزنید تا سس امولسیون شود."
+ },
+ "1955": {
+  "ex": "She is studying anthropology to understand different cultures.",
+  "exfa": "او انسان‌شناسی می‌خواند تا فرهنگ‌های مختلف را بشناسد."
+ },
+ "1981": {
+  "ex": "The two countries signed a peace treaty last month.",
+  "exfa": "دو کشور ماه گذشته یک معاهده‌ی صلح امضا کردند."
+ },
+ "2087": {
+  "ex": "The scientist left behind a lasting legacy of discoveries.",
+  "exfa": "آن دانشمند میراثی ماندگار از اکتشافات به جا گذاشت."
+ },
+ "2697": {
+  "ex": "Federal law requires companies to report large transactions.",
+  "exfa": "قانون فدرال شرکت‌ها را ملزم به گزارش تراکنش‌های بزرگ می‌کند."
+ },
+ "2947": {
+  "ex": "We picked up our rental car at the airport.",
+  "exfa": "ماشین اجاره‌ای‌مان را از فرودگاه تحویل گرفتیم."
+ },
+ "2959": {
+  "ex": "Plug the cable into the back of the computer.",
+  "exfa": "کابل را به پشت کامپیوتر وصل کن."
+ },
+ "3194": {
+  "ex": "He started a small enterprise selling handmade furniture.",
+  "exfa": "او یک شرکت کوچک برای فروش مبلمان دست‌ساز راه انداخت."
+ },
+ "3235": {
+  "ex": "The train's expected arrival time is nine o'clock.",
+  "exfa": "زمان مورد انتظار ورود قطار ساعت نه است."
+ },
+ "3249": {
+  "ex": "The proposed budget cuts worried many employees.",
+  "exfa": "کاهش بودجه‌ی پیشنهادی بسیاری از کارمندان را نگران کرد."
+ },
+ "3282": {
+  "ex": "She gave a detailed explanation of the accident.",
+  "exfa": "او توضیحی مفصل درباره‌ی حادثه ارائه داد."
+ },
+ "3333": {
+  "ex": "The company hired an external auditor to check its accounts.",
+  "exfa": "شرکت یک حسابرس خارجی برای بررسی حساب‌هایش استخدام کرد."
+ },
+ "3349": {
+  "ex": "The car has a manual gearbox instead of automatic.",
+  "exfa": "این ماشین به جای اتوماتیک، گیربکس دستی دارد."
+ },
+ "3531": {
+  "ex": "The new drug is still in clinical trials.",
+  "exfa": "داروی جدید هنوز در مرحله‌ی آزمایش‌های بالینی است."
+ },
+ "3782": {
+  "ex": "Police asked witnesses to identify the suspect.",
+  "exfa": "پلیس از شاهدان خواست مظنون را شناسایی کنند."
+ },
+ "3867": {
+  "ex": "She bought a portable speaker to take on trips.",
+  "exfa": "او یک بلندگوی قابل حمل برای سفرها خرید."
+ },
+ "3890": {
+  "ex": "All students gathered in the hall for the morning assembly.",
+  "exfa": "همه‌ی دانش‌آموزان برای گردهمایی صبحگاهی در سالن جمع شدند."
+ },
+ "3937": {
+  "ex": "The donor chose to remain anonymous.",
+  "exfa": "اهداکننده ترجیح داد ناشناس بماند."
+ },
+ "3999": {
+  "ex": "Only students over eighteen are eligible for the scholarship.",
+  "exfa": "فقط دانش‌آموزان بالای هجده سال واجد شرایط بورسیه هستند."
+ },
+ "4035": {
+  "ex": "The newspaper's editorial criticized the new tax policy.",
+  "exfa": "سرمقاله‌ی روزنامه از سیاست مالیاتی جدید انتقاد کرد."
+ },
+ "4045": {
+  "ex": "The company found a replacement for the broken part quickly.",
+  "exfa": "شرکت به سرعت جایگزینی برای قطعه‌ی شکسته پیدا کرد."
+ },
+ "4154": {
+  "ex": "The stain was completely removed after washing.",
+  "exfa": "لکه پس از شست‌وشو کاملاً برداشته شد."
+ },
+ "4181": {
+  "ex": "She has a dynamic personality that energizes the whole team.",
+  "exfa": "او شخصیتی پویا دارد که به کل تیم انرژی می‌دهد."
+ },
+ "4194": {
+  "ex": "The house was originally built in the 1920s.",
+  "exfa": "این خانه در اصل در دهه‌ی ۱۹۲۰ ساخته شده بود."
+ },
+ "4278": {
+  "ex": "He had previously worked as a teacher before joining our team.",
+  "exfa": "او قبلاً به عنوان معلم کار می‌کرد پیش از اینکه به تیم ما بپیوندد."
+ },
+ "4293": {
+  "ex": "His English has improved a lot since he moved abroad.",
+  "exfa": "انگلیسی او از وقتی به خارج رفته خیلی بهبود یافته است."
+ },
+ "4357": {
+  "ex": "Police finally caught the serial burglar last night.",
+  "exfa": "پلیس بالاخره دیشب دزد سریالی را دستگیر کرد."
+ },
+ "4383": {
+  "ex": "This course was designed specifically for beginners.",
+  "exfa": "این دوره مخصوصاً برای مبتدیان طراحی شده است."
+ },
+ "4593": {
+  "ex": "The new phone plan offers unlimited data.",
+  "exfa": "طرح جدید تلفن همراه اینترنت نامحدود ارائه می‌دهد."
+ },
+ "4657": {
+  "ex": "Please find the report attached to this email.",
+  "exfa": "لطفاً گزارش پیوست‌شده به این ایمیل را ببینید."
+ },
+ "4669": {
+  "ex": "They adopted a baby girl from a nearby orphanage.",
+  "exfa": "آن‌ها یک دختر بچه را از یتیم‌خانه‌ای نزدیک به فرزندی پذیرفتند."
+ },
+ "4679": {
+  "ex": "The constant noise from the street kept me awake.",
+  "exfa": "سر و صدای دائم خیابان نگذاشت بخوابم."
+ },
+ "4787": {
+  "ex": "The city launched a new initiative to reduce plastic waste.",
+  "exfa": "شهرداری طرحی جدید برای کاهش زباله‌های پلاستیکی راه‌اندازی کرد."
+ },
+ "4807": {
+  "ex": "The fire caused extensive damage to the building.",
+  "exfa": "آتش‌سوزی خسارت گسترده‌ای به ساختمان وارد کرد."
+ },
+ "4877": {
+  "ex": "The doctor asked for her consent before the surgery.",
+  "exfa": "پزشک پیش از عمل جراحی رضایت او را خواست."
+ },
+ "4942": {
+  "ex": "The store sells official team merchandise like shirts and caps.",
+  "exfa": "این فروشگاه کالای رسمی تیم مانند تی‌شرت و کلاه می‌فروشد."
+ },
+ "4947": {
+  "ex": "Visitors leave flowers at the war memorial every year.",
+  "exfa": "بازدیدکنندگان هر سال گل‌هایی در بنای یادبود جنگ می‌گذارند."
+ },
+ "4959": {
+  "ex": "She finally met her biological father last year.",
+  "exfa": "او سال گذشته بالاخره پدر زیستی خود را ملاقات کرد."
+ },
+ "4999": {
+  "ex": "My boss lets me keep flexible working hours.",
+  "exfa": "رئیسم اجازه می‌دهد ساعات کاری انعطاف‌پذیر داشته باشم."
+ },
+ "5017": {
+  "ex": "The novel raises deep intellectual questions about identity.",
+  "exfa": "این رمان پرسش‌های فکری عمیقی درباره‌ی هویت مطرح می‌کند."
+ },
+ "5023": {
+  "ex": "The compass needle points north because of the magnetic field.",
+  "exfa": "عقربه‌ی قطب‌نما به خاطر میدان مغناطیسی به سمت شمال اشاره می‌کند."
+ },
+ "5026": {
+  "ex": "The new medicine treats the infection effectively.",
+  "exfa": "داروی جدید عفونت را به‌طور مؤثر درمان می‌کند."
+ },
+ "5151": {
+  "ex": "They hired a consultant to improve their marketing strategy.",
+  "exfa": "آن‌ها یک مشاور برای بهبود استراتژی بازاریابی خود استخدام کردند."
+ },
+ "5269": {
+  "ex": "The startup is known for its innovative approach to recycling.",
+  "exfa": "این استارتاپ به خاطر رویکرد نوآورانه‌اش در بازیافت شناخته شده است."
+ },
+ "5485": {
+  "ex": "The city is known for its diverse ethnic communities.",
+  "exfa": "این شهر به خاطر جوامع قومی متنوعش شناخته شده است."
+ },
+ "5487": {
+  "ex": "The new law was passed by parliament last week.",
+  "exfa": "قانون جدید هفته‌ی گذشته توسط پارلمان تصویب شد."
+ },
+ "5573": {
+  "ex": "Being expensive doesn't necessarily mean it's better.",
+  "exfa": "گران بودن لزوماً به معنای بهتر بودن نیست."
+ },
+ "5609": {
+  "ex": "Trust is fundamental to any good relationship.",
+  "exfa": "اعتماد برای هر رابطه‌ی خوبی بنیادی است."
+ },
+ "5693": {
+  "ex": "His involvement in the project was minimal.",
+  "exfa": "درگیری او در پروژه بسیار کم بود."
+ },
+ "5911": {
+  "ex": "We will finish the project on time, regardless of the cost.",
+  "exfa": "ما پروژه را سر وقت تمام می‌کنیم، صرف‌نظر از هزینه."
+ },
+ "6083": {
+  "ex": "The class was divided into four small groups.",
+  "exfa": "کلاس به چهار گروه کوچک تقسیم شد."
+ },
+ "6125": {
+  "ex": "The map shows the geographic boundaries of each country.",
+  "exfa": "نقشه مرزهای جغرافیایی هر کشور را نشان می‌دهد."
+ },
+ "6193": {
+  "ex": "All employees must comply with the new dress code.",
+  "exfa": "همه‌ی کارمندان باید از قانون جدید پوشش تبعیت کنند."
+ },
+ "6341": {
+  "ex": "Moving to a new country requires a lot of adjustment.",
+  "exfa": "مهاجرت به کشوری جدید به سازگاری زیادی نیاز دارد."
+ },
+ "6519": {
+  "ex": "The names in the list are arranged in alphabetical order.",
+  "exfa": "نام‌ها در فهرست به ترتیب الفبایی چیده شده‌اند."
+ },
+ "6563": {
+  "ex": "They announced their engagement at a family dinner.",
+  "exfa": "آن‌ها نامزدی خود را در یک شام خانوادگی اعلام کردند."
+ },
+ "6689": {
+  "ex": "Workers must wear masks near hazardous chemicals.",
+  "exfa": "کارگران باید نزدیک مواد شیمیایی خطرناک ماسک بزنند."
+ },
+ "6836": {
+  "ex": "I recognized her voice instantly on the phone.",
+  "exfa": "صدایش را فوراً پشت تلفن شناختم."
+ },
+ "6869": {
+  "ex": "The agent showed the house to several prospective buyers.",
+  "exfa": "مشاور املاک خانه را به چند خریدار بالقوه نشان داد."
+ },
+ "6899": {
+  "ex": "The chemical is potentially dangerous if inhaled.",
+  "exfa": "این ماده شیمیایی در صورت استنشاق احتمالاً خطرناک است."
+ },
+ "6903": {
+  "ex": "The school promotes an inclusive environment for all students.",
+  "exfa": "مدرسه محیطی فراگیر برای همه‌ی دانش‌آموزان ترویج می‌کند."
+ },
+ "7019": {
+  "ex": "The two designs are virtually identical.",
+  "exfa": "این دو طرح عملاً یکسان هستند."
+ },
+ "7029": {
+  "ex": "This building was formerly a hospital.",
+  "exfa": "این ساختمان پیشتر یک بیمارستان بود."
+ },
+ "7036": {
+  "ex": "Smoking is strictly forbidden inside the building.",
+  "exfa": "سیگار کشیدن داخل ساختمان به‌شدت ممنوع است."
+ },
+ "7043": {
+  "ex": "She wore an elegant black dress to the wedding.",
+  "exfa": "او لباسی شیک و مشکی به عروسی پوشید."
+ },
+ "7141": {
+  "ex": "The therapist studies deviant behavior in teenagers.",
+  "exfa": "این درمانگر رفتار منحرف در نوجوانان را بررسی می‌کند."
+ },
+ "7281": {
+  "ex": "The chef prepared an exceptional meal for the guests.",
+  "exfa": "سرآشپز غذایی استثنایی برای مهمانان آماده کرد."
+ },
+ "7285": {
+  "ex": "The game improves children's spatial awareness and coordination.",
+  "exfa": "این بازی آگاهی فضایی و هماهنگی کودکان را بهبود می‌بخشد."
+ },
+ "7305": {
+  "ex": "The doctor is unavailable until next Monday.",
+  "exfa": "دکتر تا دوشنبه‌ی آینده در دسترس نیست."
+ },
+ "7314": {
+  "ex": "The two plans are essentially the same.",
+  "exfa": "این دو برنامه اساساً یکسان هستند."
+ },
+ "7349": {
+  "ex": "The village is isolated, with no roads leading to it.",
+  "exfa": "این روستا منزوی است و هیچ جاده‌ای به آن نمی‌رسد."
+ },
+ "7411": {
+  "ex": "She drizzled olive oil over the fresh salad.",
+  "exfa": "او روغن زیتون را روی سالاد تازه ریخت."
+ },
+ "7456": {
+  "ex": "We paid for our meals separately at the restaurant.",
+  "exfa": "ما هزینه‌ی غذایمان را در رستوران جداگانه پرداختیم."
+ },
+ "7489": {
+  "ex": "His provincial attitude made him resistant to new ideas.",
+  "exfa": "نگرش کوته‌فکرانه‌ی او باعث می‌شد در برابر ایده‌های جدید مقاومت کند."
+ },
+ "7509": {
+  "ex": "The software uses a sophisticated algorithm to detect fraud.",
+  "exfa": "این نرم‌افزار از الگوریتمی پیچیده برای شناسایی تقلب استفاده می‌کند."
+ },
+ "7523": {
+  "ex": "The factory was fined for dumping toxic waste into the river.",
+  "exfa": "کارخانه به خاطر ریختن زباله‌های سمی در رودخانه جریمه شد."
+ },
+ "7574": {
+  "ex": "The plan changed, so we adjusted our schedule accordingly.",
+  "exfa": "برنامه تغییر کرد، پس برنامه‌ی زمانی خود را بر این اساس تنظیم کردیم."
+ },
+ "7629": {
+  "ex": "Trust is an integral part of any partnership.",
+  "exfa": "اعتماد بخشی جدایی‌ناپذیر از هر همکاری‌ای است."
+ },
+ "7651": {
+  "ex": "Divers came to see the colorful coral near the reef.",
+  "exfa": "غواصان برای دیدن مرجان‌های رنگارنگ نزدیک صخره آمدند."
+ },
+ "7688": {
+  "ex": "The house has three bedrooms; additionally, it has a garage.",
+  "exfa": "این خانه سه اتاق خواب دارد؛ علاوه بر این، یک گاراژ هم دارد."
+ },
+ "7713": {
+  "ex": "The pillows on the sofa are purely decorative.",
+  "exfa": "کوسن‌های روی مبل صرفاً تزیینی هستند."
+ },
+ "7788": {
+  "ex": "The hotel rooms are reasonably priced for the location.",
+  "exfa": "قیمت اتاق‌های هتل با توجه به موقعیت مکانی معقولانه است."
+ },
+ "7795": {
+  "ex": "The company made radical changes to survive the crisis.",
+  "exfa": "شرکت برای عبور از بحران تغییراتی ریشه‌ای انجام داد."
+ },
+ "7822": {
+  "ex": "This gym is used exclusively by hotel guests.",
+  "exfa": "این باشگاه فقط توسط مهمانان هتل استفاده می‌شود."
+ },
+ "7859": {
+  "ex": "She is actively looking for a new job.",
+  "exfa": "او به‌طور فعال به دنبال شغل جدید است."
+ },
+ "7869": {
+  "ex": "Two passengers were injured in the car accident.",
+  "exfa": "دو مسافر در تصادف رانندگی آسیب دیدند."
+ },
+ "7897": {
+  "ex": "The wound became infected because it wasn't cleaned properly.",
+  "exfa": "زخم چون درست تمیز نشده بود آلوده شد."
+ },
+ "8008": {
+  "ex": "She is paid an hourly wage of fifteen dollars.",
+  "exfa": "او دستمزد ساعتی پانزده دلاری دریافت می‌کند."
+ },
+ "8019": {
+  "ex": "The company offers a bonus as an incentive to work harder.",
+  "exfa": "شرکت پاداشی به عنوان انگیزه برای کار بیشتر ارائه می‌دهد."
+ },
+ "8038": {
+  "ex": "He is completely devoted to his family.",
+  "exfa": "او کاملاً وقف خانواده‌اش شده است."
+ },
+ "8049": {
+  "ex": "The country built a new naval base on the coast.",
+  "exfa": "این کشور یک پایگاه نظامی دریایی جدید در ساحل ساخت."
+ },
+ "8119": {
+  "ex": "The new policy substantially reduced traffic accidents.",
+  "exfa": "سیاست جدید تصادفات رانندگی را به‌طور قابل‌توجهی کاهش داد."
+ },
+ "8171": {
+  "ex": "The government promised to be more transparent about its spending.",
+  "exfa": "دولت وعده داد درباره‌ی هزینه‌هایش شفاف‌تر باشد."
+ },
+ "8189": {
+  "ex": "He chose vocational training instead of going to university.",
+  "exfa": "او به جای دانشگاه، آموزش حرفه‌ای را انتخاب کرد."
+ },
+ "8213": {
+  "ex": "She is a distinguished professor of physics.",
+  "exfa": "او استادی برجسته در رشته‌ی فیزیک است."
+ },
+ "8397": {
+  "ex": "These hiking boots are durable enough to last for years.",
+  "exfa": "این پوتین‌های کوهنوردی به قدری بادوام هستند که سال‌ها دوام می‌آورند."
+ },
+ "8422": {
+  "ex": "The two teams worked independently on the same project.",
+  "exfa": "دو تیم به‌طور مستقل روی همان پروژه کار کردند."
+ },
+ "8571": {
+  "ex": "Her success is a testament to years of hard work.",
+  "exfa": "موفقیت او گواهی بر سال‌ها تلاش سخت است."
+ },
+ "8573": {
+  "ex": "English is the dominant language in international business.",
+  "exfa": "انگلیسی زبان غالب در تجارت بین‌المللی است."
+ },
+ "8652": {
+  "ex": "I was so tired I literally fell asleep at my desk.",
+  "exfa": "آنقدر خسته بودم که به معنای واقعی کلمه پشت میزم خوابم برد."
+ },
+ "8657": {
+  "ex": "The table in the dining room is oval, not round.",
+  "exfa": "میز اتاق ناهارخوری بیضی‌شکل است، نه گرد."
+ },
+ "8711": {
+  "ex": "Aboriginal art often tells ancient stories of the land.",
+  "exfa": "هنر بومی اغلب داستان‌های باستانی سرزمین را روایت می‌کند."
+ },
+ "8729": {
+  "ex": "The menu offers a varied selection of dishes.",
+  "exfa": "منو انتخابی متنوع از غذاها ارائه می‌دهد."
+ },
+ "8883": {
+  "ex": "Fresh vegetables are readily available at the local market.",
+  "exfa": "سبزیجات تازه به‌آسانی در بازار محلی در دسترس هستند."
+ },
+ "9025": {
+  "ex": "The whole town celebrates the carnival with music and costumes.",
+  "exfa": "تمام شهر کارناوال را با موسیقی و لباس‌های عجیب جشن می‌گیرد."
+ },
+ "9093": {
+  "ex": "She thoroughly cleaned the kitchen before the guests arrived.",
+  "exfa": "او پیش از رسیدن مهمانان آشپزخانه را کاملاً تمیز کرد."
+ },
+ "9147": {
+  "ex": "The wicked stepmother locked the girl in a tower.",
+  "exfa": "نامادری شرور، دختر را در برجی حبس کرد."
+ },
+ "9163": {
+  "ex": "The teacher was impressed by her essay.",
+  "exfa": "معلم تحت تأثیر انشای او قرار گرفت."
+ },
+ "9181": {
+  "ex": "She twisted her ankle while running on the trail.",
+  "exfa": "او هنگام دویدن در مسیر، مچ پایش پیچ خورد."
+ },
+ "9253": {
+  "ex": "The old factory has stood abandoned for decades.",
+  "exfa": "کارخانه‌ی قدیمی سال‌هاست رها شده باقی مانده است."
+ },
+ "9342": {
+  "ex": "The meeting starts at precisely nine o'clock.",
+  "exfa": "جلسه دقیقاً ساعت نه شروع می‌شود."
+ },
+ "9507": {
+  "ex": "The disease is highly infectious and spreads quickly.",
+  "exfa": "این بیماری بسیار واگیردار است و سریع پخش می‌شود."
+ },
+ "9655": {
+  "ex": "We need a competent manager who can handle pressure.",
+  "exfa": "به مدیری توانمند نیاز داریم که بتواند فشار را تحمل کند."
+ },
+ "9671": {
+  "ex": "A quiet neighborhood is highly desirable for families.",
+  "exfa": "محله‌ای آرام برای خانواده‌ها بسیار مطلوب است."
+ },
+ "9902": {
+  "ex": "Her parents wanted her to be well educated.",
+  "exfa": "والدینش می‌خواستند او خوب تحصیل‌کرده باشد."
+ },
+ "9906": {
+  "ex": "She proudly showed everyone her new diploma.",
+  "exfa": "او با غرور مدرک جدیدش را به همه نشان داد."
+ },
+ "9990": {
+  "ex": "Prices went up, and rents rose likewise.",
+  "exfa": "قیمت‌ها بالا رفت و اجاره‌ها هم به همین ترتیب افزایش یافت."
+ },
+ "10007": {
+  "ex": "She is a highly respected doctor in this city.",
+  "exfa": "او پزشکی بسیار محترم در این شهر است."
+ },
+ "10048": {
+  "ex": "Sales dropped dramatically after the price increase.",
+  "exfa": "پس از افزایش قیمت، فروش به‌طور چشمگیری افت کرد."
+ },
+ "10089": {
+  "ex": "You can take the bus, or alternatively, walk there.",
+  "exfa": "می‌توانی اتوبوس بگیری یا به‌جای آن پیاده بروی."
+ },
+ "10096": {
+  "ex": "She gently closed the door so the baby wouldn't wake up.",
+  "exfa": "او در را آرام بست تا بچه بیدار نشود."
+ },
+ "10109": {
+  "ex": "He couldn't justify spending so much money on a watch.",
+  "exfa": "او نتوانست خرج کردن این همه پول برای یک ساعت را توجیه کند."
+ },
+ "10176": {
+  "ex": "The road is temporarily closed for repairs.",
+  "exfa": "جاده موقتاً برای تعمیرات بسته است."
+ },
+ "10197": {
+  "ex": "The candidate received an endorsement from the local union.",
+  "exfa": "نامزد انتخابات از اتحادیه‌ی محلی تأیید و حمایت دریافت کرد."
+ },
+ "10228": {
+  "ex": "Please reply promptly so we can confirm the booking.",
+  "exfa": "لطفاً فوراً پاسخ دهید تا رزرو را تأیید کنیم."
+ },
+ "10281": {
+  "ex": "They made a verbal agreement without signing any paperwork.",
+  "exfa": "آن‌ها یک توافق شفاهی کردند بدون امضای هیچ مدرکی."
+ },
+ "10339": {
+  "ex": "The company offers real opportunities for career advancement.",
+  "exfa": "این شرکت فرصت‌های واقعی برای پیشرفت شغلی ارائه می‌دهد."
+ },
+ "10460": {
+  "ex": "Make sure the meat is sufficiently cooked before serving.",
+  "exfa": "مطمئن شوید گوشت پیش از سرو به‌اندازه‌ی کافی پخته شده است."
+ }
+}

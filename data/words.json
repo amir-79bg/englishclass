@@ -220,16 +220,16 @@
   "en": "argue",
   "fa": "بحث کردن",
   "cat": "talk",
-  "ex": "To argue well, you need patience.",
-  "exfa": "برای خوب بحث کردن، صبر لازم است."
+  "ex": "My brother and I always argue about the TV remote.",
+  "exfa": "من و برادرم همیشه بر سر کنترل تلویزیون بحث می‌کنیم."
  },
  {
   "i": 27,
   "en": "Army",
   "fa": "ارتش",
   "cat": "noun",
-  "ex": "Everything felt Army after the trip.",
-  "exfa": "بعد از سفر همه چیز ارتش به نظر می‌رسید."
+  "ex": "He joined the army right after high school.",
+  "exfa": "او درست بعد از دبیرستان به ارتش پیوست."
  },
  {
   "i": 28,
@@ -440,8 +440,8 @@
   "en": "bitter",
   "fa": "تلخ",
   "cat": "food",
-  "ex": "This room is too bitter for me.",
-  "exfa": "این اتاق برای من زیادی تلخ است."
+  "ex": "This coffee tastes too bitter for me.",
+  "exfa": "این قهوه برای من خیلی تلخ است."
  },
  {
   "i": 54,
@@ -672,8 +672,8 @@
   "en": "capacity",
   "fa": "ظرفیت",
   "cat": "noun",
-  "ex": "This room is too capacity for me.",
-  "exfa": "این اتاق برای من زیادی ظرفیت است."
+  "ex": "The stadium has a capacity of fifty thousand seats.",
+  "exfa": "این ورزشگاه ظرفیت پنجاه هزار صندلی دارد."
  },
  {
   "i": 82,
@@ -744,8 +744,8 @@
   "en": "chase",
   "fa": "تعقیب کردن",
   "cat": "verb",
-  "ex": "To chase well, you need patience.",
-  "exfa": "برای خوب تعقیب کردن، صبر لازم است."
+  "ex": "The dog chased the cat across the yard.",
+  "exfa": "سگ گربه را در حیاط تعقیب کرد."
  },
  {
   "i": 91,
@@ -884,8 +884,8 @@
   "en": "collect",
   "fa": "جمع کردن",
   "cat": "verb",
-  "ex": "It is not easy to collect every day.",
-  "exfa": "هر روز جمع کردن آسان نیست."
+  "ex": "My son likes to collect old coins.",
+  "exfa": "پسرم دوست دارد سکه‌های قدیمی جمع کند."
  },
  {
   "i": 108,
@@ -964,8 +964,8 @@
   "en": "completely",
   "fa": "کاملاً",
   "cat": "adv",
-  "ex": "She completely finished the work.",
-  "exfa": "او کاملاً کار را تمام کرد.",
+  "ex": "He completely forgot about the meeting today.",
+  "exfa": "او کاملاً جلسه‌ی امروز را فراموش کرد.",
   "syn": [
    "totally",
    "entirely"
@@ -976,8 +976,8 @@
   "en": "compromise",
   "fa": "مصالحه",
   "cat": "verb",
-  "ex": "To compromise well, you need patience.",
-  "exfa": "برای خوب مصالحه، صبر لازم است."
+  "ex": "The two managers compromised to settle the dispute.",
+  "exfa": "دو مدیر برای حل اختلاف مصالحه کردند."
  },
  {
   "i": 119,
@@ -1028,8 +1028,8 @@
   "en": "constantly",
   "fa": "پیوسته",
   "cat": "adv",
-  "ex": "He answered constantly.",
-  "exfa": "او پیوسته جواب داد."
+  "ex": "My phone kept ringing constantly all morning.",
+  "exfa": "تلفنم تمام صبح پیوسته زنگ می‌خورد."
  },
  {
   "i": 125,
@@ -1052,8 +1052,8 @@
   "en": "convenient",
   "fa": "راحت / مناسب",
   "cat": "adj",
-  "ex": "Everything felt convenient after the trip.",
-  "exfa": "بعد از سفر همه چیز مناسب به نظر می‌رسید."
+  "ex": "It's more convenient to shop online than in stores.",
+  "exfa": "خرید آنلاین از خرید در فروشگاه راحت‌تر است."
  },
  {
   "i": 128,
@@ -1068,8 +1068,8 @@
   "en": "cook",
   "fa": "آشپزی کردن",
   "cat": "food",
-  "ex": "I like to cook in the morning.",
-  "exfa": "آشپز در صبح را دوست دارم."
+  "ex": "My father likes to cook dinner on weekends.",
+  "exfa": "پدرم دوست دارد آخر هفته‌ها شام آشپزی کند."
  },
  {
   "i": 130,
@@ -1132,8 +1132,8 @@
   "en": "creativity",
   "fa": "خلاقیت",
   "cat": "noun",
-  "ex": "This room is too creativity for me.",
-  "exfa": "این اتاق برای من زیادی خلاقیت است."
+  "ex": "This job requires a lot of creativity.",
+  "exfa": "این شغل به خلاقیت زیادی نیاز دارد."
  },
  {
   "i": 138,
@@ -1148,8 +1148,8 @@
   "en": "critical",
   "fa": "بحرانی",
   "cat": "adj",
-  "ex": "Everything felt critical after the trip.",
-  "exfa": "بعد از سفر همه چیز بحرانی به نظر می‌رسید."
+  "ex": "The patient is in critical condition after the accident.",
+  "exfa": "بیمار بعد از تصادف در وضعیت بحرانی است."
  },
  {
   "i": 140,
@@ -1172,8 +1172,8 @@
   "en": "currently",
   "fa": "در حال حاضر",
   "cat": "adv",
-  "ex": "They spoke currently about the problem.",
-  "exfa": "در حال حاضر درباره‌ی مشکل حرف زدند."
+  "ex": "She is currently working on a new project.",
+  "exfa": "او در حال حاضر روی یک پروژه‌ی جدید کار می‌کند."
  },
  {
   "i": 143,
@@ -1352,8 +1352,8 @@
   "en": "different",
   "fa": "متفاوت",
   "cat": "adj",
-  "ex": "The weather was very different yesterday.",
-  "exfa": "دیروز هوا خیلی متفاوت بود.",
+  "ex": "Their two houses are completely different.",
+  "exfa": "خانه‌های آن دو کاملاً متفاوت است.",
   "syn": [
    "distinct",
    "unusual"
@@ -1480,8 +1480,8 @@
   "en": "dreadful",
   "fa": "وحشتناک",
   "cat": "feeling",
-  "ex": "Everything felt dreadful after the trip.",
-  "exfa": "بعد از سفر همه چیز وحشتناک به نظر می‌رسید."
+  "ex": "We had dreadful weather during our entire vacation.",
+  "exfa": "در تمام تعطیلاتمان هوا وحشتناک بود."
  },
  {
   "i": 180,
@@ -1564,8 +1564,8 @@
   "en": "efficient",
   "fa": "کارآمد",
   "cat": "adj",
-  "ex": "This room is too efficient for me.",
-  "exfa": "این اتاق برای من زیادی کارآمد است."
+  "ex": "The new system makes our work more efficient.",
+  "exfa": "سیستم جدید کار ما را کارآمدتر می‌کند."
  },
  {
   "i": 190,
@@ -1628,8 +1628,8 @@
   "en": "enjoyable",
   "fa": "لذت‌بخش",
   "cat": "adj",
-  "ex": "This room is too enjoyable for me.",
-  "exfa": "این اتاق برای من زیادی لذت‌بخش است."
+  "ex": "We had an enjoyable evening at the concert.",
+  "exfa": "شب لذت‌بخشی را در کنسرت گذراندیم."
  },
  {
   "i": 198,
@@ -1652,16 +1652,16 @@
   "en": "especially",
   "fa": "مخصوصاً",
   "cat": "adv",
-  "ex": "He answered especially.",
-  "exfa": "او مخصوصاً جواب داد."
+  "ex": "I love fruit, especially strawberries.",
+  "exfa": "من میوه دوست دارم، مخصوصاً توت‌فرنگی."
  },
  {
   "i": 201,
   "en": "essential",
   "fa": "ضروری",
   "cat": "adj",
-  "ex": "This room is too essential for me.",
-  "exfa": "این اتاق برای من زیادی ضروری است."
+  "ex": "Clean water is essential for good health.",
+  "exfa": "آب تمیز برای سلامتی ضروری است."
  },
  {
   "i": 202,
@@ -1700,8 +1700,8 @@
   "en": "express",
   "fa": "ابراز کردن",
   "cat": "verb",
-  "ex": "To express well, you need patience.",
-  "exfa": "برای خوب ابراز کردن، صبر لازم است."
+  "ex": "It's hard for him to express his feelings.",
+  "exfa": "برایش سخت است که احساساتش را ابراز کند."
  },
  {
   "i": 207,
@@ -1724,8 +1724,8 @@
   "en": "facial",
   "fa": "مربوط به صورت",
   "cat": "body",
-  "ex": "This room is too facial for me.",
-  "exfa": "این اتاق برای من زیادی پوستصورت است."
+  "ex": "The camera can recognize people using facial features.",
+  "exfa": "دوربین می‌تواند افراد را با استفاده از ویژگی‌های صورت تشخیص دهد."
  },
  {
   "i": 210,
@@ -1908,8 +1908,8 @@
   "en": "formal",
   "fa": "رسمی",
   "cat": "adj",
-  "ex": "Everything felt formal after the trip.",
-  "exfa": "بعد از سفر همه چیز رسمی به نظر می‌رسید."
+  "ex": "You should wear formal clothes to the interview.",
+  "exfa": "باید برای مصاحبه لباس رسمی بپوشی."
  },
  {
   "i": 232,
@@ -1988,16 +1988,16 @@
   "en": "gallery",
   "fa": "گالری",
   "cat": "place",
-  "ex": "This room is too gallery for me.",
-  "exfa": "این اتاق برای من زیادی گالری است."
+  "ex": "We spent the afternoon at an art gallery.",
+  "exfa": "بعدازظهر را در یک گالری هنری گذراندیم."
  },
  {
   "i": 242,
   "en": "generally",
   "fa": "معمولاً",
   "cat": "time",
-  "ex": "They spoke generally about the problem.",
-  "exfa": "معمولاً درباره‌ی مشکل حرف زدند."
+  "ex": "Generally, prices rise a little every year.",
+  "exfa": "معمولاً قیمت‌ها هر سال کمی افزایش می‌یابند."
  },
  {
   "i": 243,
@@ -2332,8 +2332,8 @@
   "en": "honestly",
   "fa": "صادقانه",
   "cat": "talk",
-  "ex": "He answered honestly.",
-  "exfa": "او صادقانه جواب داد."
+  "ex": "Honestly, I don't think the plan will work.",
+  "exfa": "صادقانه بگویم، فکر نمی‌کنم این نقشه جواب دهد."
  },
  {
   "i": 285,
@@ -2448,16 +2448,16 @@
   "en": "increasingly",
   "fa": "به‌طور فزاینده",
   "cat": "adv",
-  "ex": "They spoke increasingly about the problem.",
-  "exfa": "به‌طور فزاینده درباره‌ی مشکل حرف زدند."
+  "ex": "Solar power is becoming increasingly popular worldwide.",
+  "exfa": "انرژی خورشیدی به‌طور فزاینده در سراسر جهان محبوب می‌شود."
  },
  {
   "i": 299,
   "en": "independent",
   "fa": "مستقل",
   "cat": "adj",
-  "ex": "Everything felt independent after the trip.",
-  "exfa": "بعد از سفر همه چیز مستقل به نظر می‌رسید."
+  "ex": "She moved out and became financially independent.",
+  "exfa": "او از خانه رفت و از نظر مالی مستقل شد."
  },
  {
   "i": 300,
@@ -2472,8 +2472,8 @@
   "en": "informal",
   "fa": "غیررسمی",
   "cat": "adj",
-  "ex": "This room is too informal for me.",
-  "exfa": "این اتاق برای من زیادی غیررسمی است."
+  "ex": "The meeting was quite informal, with everyone in jeans.",
+  "exfa": "جلسه کاملاً غیررسمی بود و همه شلوار جین پوشیده بودند."
  },
  {
   "i": 302,
@@ -3052,8 +3052,8 @@
   "en": "motivated",
   "fa": "باانگیزه",
   "cat": "verb",
-  "ex": "It is not easy to motivated every day.",
-  "exfa": "هر روز باانگیزه آسان نیست."
+  "ex": "She stays motivated by setting small daily goals.",
+  "exfa": "او با تعیین اهداف کوچک روزانه باانگیزه می‌ماند."
  },
  {
   "i": 372,
@@ -3100,8 +3100,8 @@
   "en": "musical",
   "fa": "موزیکال",
   "cat": "adj",
-  "ex": "This room is too musical for me.",
-  "exfa": "این اتاق برای من زیادی موزیکال است."
+  "ex": "She has a lot of musical talent.",
+  "exfa": "او استعداد موزیکال زیادی دارد."
  },
  {
   "i": 378,
@@ -3352,8 +3352,8 @@
   "en": "organize",
   "fa": "سازماندهی کردن",
   "cat": "verb",
-  "ex": "It is not easy to organize every day.",
-  "exfa": "هر روز سازماندهی کردن آسان نیست."
+  "ex": "We need to organize the files before the meeting.",
+  "exfa": "باید قبل از جلسه پرونده‌ها را سازماندهی کنیم."
  },
  {
   "i": 408,
@@ -3448,8 +3448,8 @@
   "en": "paternal",
   "fa": "پدری",
   "cat": "adj",
-  "ex": "Everything felt paternal after the trip.",
-  "exfa": "بعد از سفر همه چیز پدری به نظر می‌رسید."
+  "ex": "He inherited the house through his paternal grandfather.",
+  "exfa": "او خانه را از پدربزرگ پدری‌اش به ارث برد."
  },
  {
   "i": 420,
@@ -3516,8 +3516,8 @@
   "en": "perform",
   "fa": "اجرا کردن",
   "cat": "verb",
-  "ex": "It is not easy to perform every day.",
-  "exfa": "هر روز اجرا کردن آسان نیست."
+  "ex": "The band will perform live at the festival.",
+  "exfa": "این گروه در جشنواره به‌صورت زنده اجرا می‌کند."
  },
  {
   "i": 428,
@@ -3684,8 +3684,8 @@
   "en": "prepare",
   "fa": "آماده کردن",
   "cat": "verb",
-  "ex": "It is not easy to prepare every day.",
-  "exfa": "هر روز آماده کردن آسان نیست."
+  "ex": "I need to prepare dinner before the guests arrive.",
+  "exfa": "باید قبل از رسیدن مهمان‌ها شام را آماده کنم."
  },
  {
   "i": 448,
@@ -3716,8 +3716,8 @@
   "en": "private",
   "fa": "خصوصی",
   "cat": "noun",
-  "ex": "Everything felt private after the trip.",
-  "exfa": "بعد از سفر همه چیز خصوصی به نظر می‌رسید."
+  "ex": "This is a private conversation between us.",
+  "exfa": "این یک گفتگوی خصوصی بین ماست."
  },
  {
   "i": 452,
@@ -3776,8 +3776,8 @@
   "en": "prove",
   "fa": "ثابت کردن",
   "cat": "verb",
-  "ex": "To prove well, you need patience.",
-  "exfa": "برای خوب ثابت کردن، صبر لازم است."
+  "ex": "She worked hard to prove her theory correct.",
+  "exfa": "او سخت تلاش کرد تا نظریه‌اش را ثابت کند."
  },
  {
   "i": 459,
@@ -3844,8 +3844,8 @@
   "en": "realize",
   "fa": "فهمیدن",
   "cat": "verb",
-  "ex": "To realize well, you need patience.",
-  "exfa": "برای خوب فهمیدن، صبر لازم است."
+  "ex": "I didn't realize how late it was.",
+  "exfa": "متوجه نشدم که چقدر دیر وقت است."
  },
  {
   "i": 467,
@@ -3900,8 +3900,8 @@
   "en": "relative",
   "fa": "خویشاوند",
   "cat": "people",
-  "ex": "This room is too relative for me.",
-  "exfa": "این اتاق برای من زیادی خویشاوند است."
+  "ex": "She stayed with a relative during the holidays.",
+  "exfa": "او در تعطیلات نزد یکی از خویشاوندانش ماند."
  },
  {
   "i": 474,
@@ -4336,8 +4336,8 @@
   "en": "smart",
   "fa": "باهوش",
   "cat": "noun",
-  "ex": "Everything felt smart after the trip.",
-  "exfa": "بعد از سفر همه چیز باهوش به نظر می‌رسید."
+  "ex": "My little sister is very smart for her age.",
+  "exfa": "خواهر کوچکم برای سنش خیلی باهوش است."
  },
  {
   "i": 528,
@@ -4368,8 +4368,8 @@
   "en": "sociable",
   "fa": "اجتماعی",
   "cat": "people",
-  "ex": "Everything felt sociable after the trip.",
-  "exfa": "بعد از سفر همه چیز اجتماعی به نظر می‌رسید."
+  "ex": "My brother is very sociable and makes friends easily.",
+  "exfa": "برادرم خیلی اجتماعی است و به راحتی دوست پیدا می‌کند."
  },
  {
   "i": 532,
@@ -4416,8 +4416,8 @@
   "en": "spell",
   "fa": "هجی کردن",
   "cat": "verb",
-  "ex": "I like to spell in the morning.",
-  "exfa": "هجی کردن در صبح را دوست دارم."
+  "ex": "Can you spell your last name for me?",
+  "exfa": "می‌توانی نام خانوادگی‌ات را برایم هجی کنی؟"
  },
  {
   "i": 538,
@@ -4448,8 +4448,8 @@
   "en": "stability",
   "fa": "پایداری",
   "cat": "noun",
-  "ex": "This room is too stability for me.",
-  "exfa": "این اتاق برای من زیادی پایداری است."
+  "ex": "The country needs political stability to attract investors.",
+  "exfa": "این کشور برای جذب سرمایه‌گذاران به پایداری سیاسی نیاز دارد."
  },
  {
   "i": 542,
@@ -4512,8 +4512,8 @@
   "en": "suddenly",
   "fa": "ناگهان",
   "cat": "adv",
-  "ex": "She suddenly finished the work.",
-  "exfa": "او ناگهان کار را تمام کرد."
+  "ex": "The lights suddenly went out during the storm.",
+  "exfa": "چراغ‌ها ناگهان در طول طوفان خاموش شدند."
  },
  {
   "i": 550,
@@ -4528,8 +4528,8 @@
   "en": "suitable",
   "fa": "مناسب",
   "cat": "adj",
-  "ex": "Everything felt suitable after the trip.",
-  "exfa": "بعد از سفر همه چیز مناسب به نظر می‌رسید."
+  "ex": "This movie isn't suitable for young children.",
+  "exfa": "این فیلم برای بچه‌های کوچک مناسب نیست."
  },
  {
   "i": 552,
@@ -4816,8 +4816,8 @@
   "en": "translate",
   "fa": "ترجمه کردن",
   "cat": "verb",
-  "ex": "It is not easy to translate every day.",
-  "exfa": "هر روز ترجمه کردن آسان نیست."
+  "ex": "Can you translate this letter into English?",
+  "exfa": "می‌توانی این نامه را به انگلیسی ترجمه کنی؟"
  },
  {
   "i": 588,
@@ -4932,8 +4932,8 @@
   "en": "unattractive",
   "fa": "غیرجذاب",
   "cat": "adj",
-  "ex": "This room is too unattractive for me.",
-  "exfa": "این اتاق برای من زیادی غیرجذاب است."
+  "ex": "The job offer seemed unattractive because of the low salary.",
+  "exfa": "پیشنهاد شغلی به خاطر حقوق پایین غیرجذاب به نظر می‌رسید."
  },
  {
   "i": 602,
@@ -4948,8 +4948,8 @@
   "en": "unforgettable",
   "fa": "فراموش‌نشدنی",
   "cat": "adj",
-  "ex": "Everything felt unforgettable after the trip.",
-  "exfa": "بعد از سفر همه چیز فراموشنشدنی به نظر می‌رسید."
+  "ex": "Our trip to the mountains was unforgettable.",
+  "exfa": "سفرمان به کوهستان فراموش‌نشدنی بود."
  },
  {
   "i": 604,
@@ -5060,8 +5060,8 @@
   "en": "violent",
   "fa": "خشن",
   "cat": "adj",
-  "ex": "This room is too violent for me.",
-  "exfa": "این اتاق برای من زیادی خشن است."
+  "ex": "The movie contains some violent scenes.",
+  "exfa": "این فیلم چند صحنه‌ی خشن دارد."
  },
  {
   "i": 618,
@@ -5364,8 +5364,8 @@
   "en": "survival",
   "fa": "بقا / زنده ماندن",
   "cat": "noun",
-  "ex": "Everything felt survival after the trip.",
-  "exfa": "بعد از سفر همه چیز بقا به نظر می‌رسید."
+  "ex": "Clean water is essential for the survival of wildlife.",
+  "exfa": "آب تمیز برای بقای حیات وحش ضروری است."
  },
  {
   "i": 656,
@@ -5620,8 +5620,8 @@
   "en": "considerably",
   "fa": "به‌طور قابل توجهی",
   "cat": "adv",
-  "ex": "I considerably drink tea at night.",
-  "exfa": "شب‌ها به‌طور قابل توجهی چای می‌نوشم."
+  "ex": "Prices have risen considerably over the past year.",
+  "exfa": "قیمت‌ها در سال گذشته به‌طور قابل توجهی افزایش یافته‌اند."
  },
  {
   "i": 688,
@@ -5636,8 +5636,8 @@
   "en": "contemporary",
   "fa": "معاصر / مدرن",
   "cat": "adj",
-  "ex": "This room is too contemporary for me.",
-  "exfa": "این اتاق برای من زیادی معاصر است."
+  "ex": "The museum displays both classical and contemporary art.",
+  "exfa": "موزه هم آثار کلاسیک و هم آثار معاصر را به نمایش می‌گذارد."
  },
  {
   "i": 690,
@@ -5684,8 +5684,8 @@
   "en": "slightly",
   "fa": "کمی",
   "cat": "adv",
-  "ex": "I slightly drink tea at night.",
-  "exfa": "شب‌ها کمی چای می‌نوشم."
+  "ex": "The temperature dropped slightly overnight.",
+  "exfa": "دما در طول شب کمی کاهش یافت."
  },
  {
   "i": 696,
@@ -5776,8 +5776,8 @@
   "en": "discover",
   "fa": "کشف کردن",
   "cat": "verb",
-  "ex": "I like to discover in the morning.",
-  "exfa": "کشف کردن در صبح را دوست دارم."
+  "ex": "Scientists discovered a new type of frog in the forest.",
+  "exfa": "دانشمندان نوع جدیدی از قورباغه را در جنگل کشف کردند."
  },
  {
   "i": 706,
@@ -5920,8 +5920,8 @@
   "en": "notorious",
   "fa": "بدنام",
   "cat": "adj",
-  "ex": "Everything felt notorious after the trip.",
-  "exfa": "بعد از سفر همه چیز بدنام به نظر می‌رسید."
+  "ex": "The city is notorious for its heavy traffic.",
+  "exfa": "این شهر به خاطر ترافیک سنگینش بدنام است."
  },
  {
   "i": 724,
@@ -5968,8 +5968,8 @@
   "en": "poisonous",
   "fa": "سمی",
   "cat": "adj",
-  "ex": "This room is too poisonous for me.",
-  "exfa": "این اتاق برای من زیادی سمی است."
+  "ex": "Some mushrooms in the forest are poisonous.",
+  "exfa": "برخی قارچ‌های جنگل سمی هستند."
  },
  {
   "i": 730,
@@ -5984,8 +5984,8 @@
   "en": "compulsory",
   "fa": "اجباری",
   "cat": "adj",
-  "ex": "Everything felt compulsory after the trip.",
-  "exfa": "بعد از سفر همه چیز اجباری به نظر می‌رسید."
+  "ex": "Wearing a seatbelt is compulsory in this country.",
+  "exfa": "بستن کمربند ایمنی در این کشور اجباری است."
  },
  {
   "i": 732,
@@ -6096,8 +6096,8 @@
   "en": "ambitious",
   "fa": "جاه‌طلب",
   "cat": "adj",
-  "ex": "This room is too ambitious for me.",
-  "exfa": "این اتاق برای من زیادی جاهطلب است."
+  "ex": "She is ambitious and wants to become a manager.",
+  "exfa": "او جاه‌طلب است و می‌خواهد مدیر شود."
  },
  {
   "i": 746,
@@ -6128,8 +6128,8 @@
   "en": "curious",
   "fa": "کنجکاو",
   "cat": "adj",
-  "ex": "This room is too curious for me.",
-  "exfa": "این اتاق برای من زیادی کنجکاو است."
+  "ex": "The child was curious about how the toy worked.",
+  "exfa": "بچه کنجکاو بود که اسباب‌بازی چطور کار می‌کند."
  },
  {
   "i": 750,
@@ -6160,8 +6160,8 @@
   "en": "fascinated",
   "fa": "مجذوب",
   "cat": "feeling",
-  "ex": "I like to fascinated in the morning.",
-  "exfa": "مجذوب در صبح را دوست دارم."
+  "ex": "The children were fascinated by the magic show.",
+  "exfa": "بچه‌ها مجذوب نمایش شعبده‌بازی شده بودند."
  },
  {
   "i": 754,
@@ -6196,8 +6196,8 @@
   "en": "impatient",
   "fa": "بی‌صبر",
   "cat": "adj",
-  "ex": "This room is too impatient for me.",
-  "exfa": "این اتاق برای من زیادی بی‌صبر است."
+  "ex": "The children grew impatient waiting for the bus.",
+  "exfa": "بچه‌ها در انتظار اتوبوس بی‌صبر شدند."
  },
  {
   "i": 758,
@@ -6232,8 +6232,8 @@
   "en": "pessimistic",
   "fa": "بدبین",
   "cat": "adj",
-  "ex": "This room is too pessimistic for me.",
-  "exfa": "این اتاق برای من زیادی بدبین است."
+  "ex": "He's quite pessimistic about the economy this year.",
+  "exfa": "او درباره‌ی اقتصاد امسال کاملاً بدبین است."
  },
  {
   "i": 762,
@@ -6248,8 +6248,8 @@
   "en": "resilient",
   "fa": "تاب‌آور",
   "cat": "adj",
-  "ex": "Everything felt resilient after the trip.",
-  "exfa": "بعد از سفر همه چیز تابآور به نظر می‌رسید."
+  "ex": "Children are often more resilient than we expect after hard times.",
+  "exfa": "بچه‌ها اغلب بعد از دوران سخت تاب‌آورتر از چیزی هستند که انتظار داریم."
  },
  {
   "i": 764,
@@ -6264,8 +6264,8 @@
   "en": "trustworthy",
   "fa": "قابل اعتماد",
   "cat": "adj",
-  "ex": "This room is too trustworthy for me.",
-  "exfa": "این اتاق برای من زیادی قابل اعتماد است."
+  "ex": "She is a trustworthy friend who keeps secrets.",
+  "exfa": "او دوستی قابل‌اعتماد است که راز نگه می‌دارد."
  },
  {
   "i": 766,
@@ -6280,8 +6280,8 @@
   "en": "cheerful",
   "fa": "شاد",
   "cat": "feeling",
-  "ex": "Everything felt cheerful after the trip.",
-  "exfa": "بعد از سفر همه چیز شاد به نظر می‌رسید."
+  "ex": "She always greets us with a cheerful smile.",
+  "exfa": "او همیشه با لبخندی شاد به ما خوش‌آمد می‌گوید."
  },
  {
   "i": 768,
@@ -6296,8 +6296,8 @@
   "en": "energetic",
   "fa": "پرانرژی",
   "cat": "adj",
-  "ex": "This room is too energetic for me.",
-  "exfa": "این اتاق برای من زیادی پرانرژی است."
+  "ex": "My little brother is always energetic in the morning.",
+  "exfa": "برادر کوچکم همیشه صبح‌ها پرانرژی است."
  },
  {
   "i": 770,
@@ -6353,8 +6353,8 @@
   "en": "sensible",
   "fa": "منطقی",
   "cat": "adj",
-  "ex": "Everything felt sensible after the trip.",
-  "exfa": "بعد از سفر همه چیز منطقی به نظر می‌رسید."
+  "ex": "It's more sensible to save some money each month.",
+  "exfa": "منطقی‌تر است هر ماه مقداری پول پس‌انداز کنیم."
  },
  {
   "i": 776,
@@ -6513,8 +6513,8 @@
   "en": "ingredient",
   "fa": "ماده‌ی تشکیل‌دهنده",
   "cat": "food",
-  "ex": "Everything felt ingredient after the trip.",
-  "exfa": "بعد از سفر همه چیز ماده تشکیلدهنده به نظر می‌رسید."
+  "ex": "Flour is the main ingredient in bread.",
+  "exfa": "آرد ماده‌ی اصلی تشکیل‌دهنده‌ی نان است."
  },
  {
   "i": 796,
@@ -6561,8 +6561,8 @@
   "en": "nutritious",
   "fa": "مغذی",
   "cat": "adj",
-  "ex": "This room is too nutritious for me.",
-  "exfa": "این اتاق برای من زیادی مغذی است."
+  "ex": "Eggs are a cheap and nutritious food.",
+  "exfa": "تخم‌مرغ غذایی ارزان و مغذی است."
  },
  {
   "i": 802,
@@ -6838,8 +6838,8 @@
   "en": "discovery",
   "fa": "کشف",
   "cat": "noun",
-  "ex": "Everything felt discovery after the trip.",
-  "exfa": "بعد از سفر همه چیز کشف به نظر می‌رسید."
+  "ex": "The scientist made an important discovery about the disease.",
+  "exfa": "دانشمند کشف مهمی درباره‌ی این بیماری کرد."
  },
  {
   "i": 836,
@@ -6950,8 +6950,8 @@
   "en": "scenic",
   "fa": "خوش‌منظره",
   "cat": "adj",
-  "ex": "This room is too scenic for me.",
-  "exfa": "این اتاق برای من زیادی خوشمنظره است."
+  "ex": "We took the scenic route along the coast.",
+  "exfa": "ما از مسیر خوش‌منظره‌ی کنار ساحل رفتیم."
  },
  {
   "i": 850,
@@ -6982,8 +6982,8 @@
   "en": "ancient",
   "fa": "باستانی",
   "cat": "adj",
-  "ex": "This room is too ancient for me.",
-  "exfa": "این اتاق برای من زیادی باستانی است."
+  "ex": "We visited an ancient castle during our trip.",
+  "exfa": "در سفرمان از یک قلعه‌ی باستانی بازدید کردیم."
  },
  {
   "i": 854,
@@ -7030,8 +7030,8 @@
   "en": "civilisation",
   "fa": "تمدن",
   "cat": "noun",
-  "ex": "It is not easy to civilisation every day.",
-  "exfa": "هر روز تمدن آسان نیست."
+  "ex": "Ancient Egypt was one of the earliest civilisations.",
+  "exfa": "مصر باستان یکی از نخستین تمدن‌ها بود."
  },
  {
   "i": 860,
@@ -7046,8 +7046,8 @@
   "en": "decay",
   "fa": "پوسیدن",
   "cat": "verb",
-  "ex": "I like to decay in the morning.",
-  "exfa": "پوسیدن در صبح را دوست دارم."
+  "ex": "Sugar can cause teeth to decay over time.",
+  "exfa": "قند می‌تواند باعث پوسیدن دندان‌ها در طول زمان شود."
  },
  {
   "i": 862,
@@ -7146,8 +7146,8 @@
   "en": "ritual",
   "fa": "آیینی",
   "cat": "adj",
-  "ex": "This room is too ritual for me.",
-  "exfa": "این اتاق برای من زیادی آیینی است."
+  "ex": "The tribe performs a ritual dance before every harvest.",
+  "exfa": "این قبیله پیش از هر برداشت محصول رقصی آیینی اجرا می‌کند."
  },
  {
   "i": 874,
@@ -7358,8 +7358,8 @@
   "en": "punish",
   "fa": "تنبیه کردن",
   "cat": "crime",
-  "ex": "It is not easy to punish every day.",
-  "exfa": "هر روز تنبیه کردن آسان نیست."
+  "ex": "The teacher punished the students for cheating.",
+  "exfa": "معلم دانش‌آموزان را به‌خاطر تقلب تنبیه کرد."
  },
  {
   "i": 900,
@@ -7406,8 +7406,8 @@
   "en": "unwanted",
   "fa": "ناخواسته",
   "cat": "adj",
-  "ex": "I like to unwanted in the morning.",
-  "exfa": "ناخواسته در صبح را دوست دارم."
+  "ex": "The medicine can cause unwanted side effects.",
+  "exfa": "این دارو می‌تواند عوارض جانبی ناخواسته ایجاد کند."
  },
  {
   "i": 906,
@@ -7694,8 +7694,8 @@
   "en": "accountant",
   "fa": "حسابدار",
   "cat": "work",
-  "ex": "This room is too accountant for me.",
-  "exfa": "این اتاق برای من زیادی حسابدار است."
+  "ex": "The accountant checked all the company's records.",
+  "exfa": "حسابدار تمام مدارک شرکت را بررسی کرد."
  },
  {
   "i": 942,
@@ -7906,8 +7906,8 @@
   "en": "complain",
   "fa": "شکایت کردن",
   "cat": "talk",
-  "ex": "It is not easy to complain every day.",
-  "exfa": "هر روز شکایت کردن آسان نیست."
+  "ex": "Customers often complain about slow service.",
+  "exfa": "مشتری‌ها اغلب از خدمات کند شکایت می‌کنند."
  },
  {
   "i": 968,
@@ -7922,16 +7922,16 @@
   "en": "enjoy",
   "fa": "لذت بردن",
   "cat": "verb",
-  "ex": "I like to enjoy in the morning.",
-  "exfa": "لذت بردن در صبح را دوست دارم."
+  "ex": "I really enjoy spending time with my family.",
+  "exfa": "من واقعاً از گذراندن وقت با خانواده‌ام لذت می‌برم."
  },
  {
   "i": 970,
   "en": "organise",
   "fa": "سازماندهی کردن",
   "cat": "verb",
-  "ex": "To organise well, you need patience.",
-  "exfa": "برای خوب سازماندهی کردن، صبر لازم است."
+  "ex": "She helped organise the school trip last year.",
+  "exfa": "او سال گذشته در سازماندهی سفر مدرسه کمک کرد."
  },
  {
   "i": 971,
@@ -7954,16 +7954,16 @@
   "en": "solve",
   "fa": "حل کردن",
   "cat": "verb",
-  "ex": "I like to solve in the morning.",
-  "exfa": "حل کردن در صبح را دوست دارم."
+  "ex": "Can you help me solve this math problem?",
+  "exfa": "می‌توانی کمکم کنی این مسئله‌ی ریاضی را حل کنم؟"
  },
  {
   "i": 974,
   "en": "admire",
   "fa": "تحسین کردن",
   "cat": "verb",
-  "ex": "To admire well, you need patience.",
-  "exfa": "برای خوب تحسین کردن، صبر لازم است."
+  "ex": "I really admire how hard she works.",
+  "exfa": "من واقعاً برای تلاش زیادش او را تحسین می‌کنم."
  },
  {
   "i": 975,
@@ -7986,8 +7986,8 @@
   "en": "allow",
   "fa": "اجازه دادن",
   "cat": "verb",
-  "ex": "I like to allow in the morning.",
-  "exfa": "اجازه دادن در صبح را دوست دارم."
+  "ex": "My parents don't allow me to stay out late.",
+  "exfa": "والدینم اجازه نمی‌دهند دیر وقت بیرون بمانم."
  },
  {
   "i": 978,
@@ -8018,8 +8018,8 @@
   "en": "belong",
   "fa": "متعلق بودن",
   "cat": "verb",
-  "ex": "I like to belong in the morning.",
-  "exfa": "متعلق بودن در صبح را دوست دارم."
+  "ex": "This book doesn't belong to me.",
+  "exfa": "این کتاب متعلق به من نیست."
  },
  {
   "i": 982,
@@ -8034,8 +8034,8 @@
   "en": "bother",
   "fa": "اذیت کردن",
   "cat": "verb",
-  "ex": "It is not easy to bother every day.",
-  "exfa": "هر روز اذیت کردن آسان نیست."
+  "ex": "Loud music at night really bothers my neighbors.",
+  "exfa": "موسیقی بلند شب همسایه‌هایم را واقعاً اذیت می‌کند."
  },
  {
   "i": 984,
@@ -8050,8 +8050,8 @@
   "en": "calculate",
   "fa": "محاسبه کردن",
   "cat": "verb",
-  "ex": "I like to calculate in the morning.",
-  "exfa": "محاسبه کردن در صبح را دوست دارم."
+  "ex": "Let me calculate the total cost for you.",
+  "exfa": "بگذار هزینه‌ی کل را برایت محاسبه کنم."
  },
  {
   "i": 986,
@@ -8066,8 +8066,8 @@
   "en": "celebrate",
   "fa": "جشن گرفتن",
   "cat": "verb",
-  "ex": "It is not easy to celebrate every day.",
-  "exfa": "هر روز جشن گرفتن آسان نیست."
+  "ex": "We celebrate my sister's birthday every June.",
+  "exfa": "ما هر ژوئن تولد خواهرم را جشن می‌گیریم."
  },
  {
   "i": 988,
@@ -8103,8 +8103,8 @@
   "en": "compete",
   "fa": "رقابت کردن",
   "cat": "verb",
-  "ex": "It is not easy to compete every day.",
-  "exfa": "هر روز رقابت کردن آسان نیست."
+  "ex": "Runners from many countries compete in the marathon.",
+  "exfa": "دوندگانی از کشورهای مختلف در ماراتن رقابت می‌کنند."
  },
  {
   "i": 992,
@@ -8127,8 +8127,8 @@
   "en": "confirm",
   "fa": "تأیید کردن",
   "cat": "verb",
-  "ex": "To confirm well, you need patience.",
-  "exfa": "برای خوب تأیید کردن، صبر لازم است."
+  "ex": "Please confirm your appointment by email.",
+  "exfa": "لطفاً وقت ملاقاتت را از طریق ایمیل تأیید کن."
  },
  {
   "i": 995,
@@ -8167,8 +8167,8 @@
   "en": "create",
   "fa": "خلق کردن",
   "cat": "verb",
-  "ex": "It is not easy to create every day.",
-  "exfa": "هر روز خلق کردن آسان نیست."
+  "ex": "Artists create beautiful paintings from simple colors.",
+  "exfa": "هنرمندان از رنگ‌های ساده نقاشی‌های زیبا خلق می‌کنند."
  },
  {
   "i": 1000,
@@ -8267,8 +8267,8 @@
   "en": "disappear",
   "fa": "ناپدید شدن",
   "cat": "verb",
-  "ex": "It is not easy to disappear every day.",
-  "exfa": "هر روز ناپدید شدن آسان نیست."
+  "ex": "The magician made the coin disappear.",
+  "exfa": "شعبده‌باز سکه را ناپدید کرد."
  },
  {
   "i": 1012,
@@ -8331,8 +8331,8 @@
   "en": "drag",
   "fa": "کشیدن",
   "cat": "verb",
-  "ex": "It is not easy to drag every day.",
-  "exfa": "هر روز کشیدن آسان نیست."
+  "ex": "He dragged the heavy box across the floor.",
+  "exfa": "او جعبه‌ی سنگین را روی زمین کشید."
  },
  {
   "i": 1020,
@@ -8395,8 +8395,8 @@
   "en": "establish",
   "fa": "تأسیس کردن",
   "cat": "verb",
-  "ex": "Everything felt establish after the trip.",
-  "exfa": "بعد از سفر همه چیز تأسیس کردن به نظر می‌رسید."
+  "ex": "The company was established in 1990.",
+  "exfa": "این شرکت در سال ۱۹۹۰ تأسیس شد."
  },
  {
   "i": 1028,
@@ -8427,8 +8427,8 @@
   "en": "examine",
   "fa": "بررسی کردن",
   "cat": "verb",
-  "ex": "It is not easy to examine every day.",
-  "exfa": "هر روز بررسی کردن آسان نیست."
+  "ex": "The doctor examined the patient's throat carefully.",
+  "exfa": "پزشک گلوی بیمار را با دقت بررسی کرد."
  },
  {
   "i": 1032,
@@ -8451,8 +8451,8 @@
   "en": "exist",
   "fa": "وجود داشتن",
   "cat": "verb",
-  "ex": "To exist well, you need patience.",
-  "exfa": "برای خوب وجود داشتن، صبر لازم است."
+  "ex": "Do you think aliens really exist?",
+  "exfa": "فکر می‌کنی موجودات فضایی واقعاً وجود دارند؟"
  },
  {
   "i": 1035,
@@ -8491,8 +8491,8 @@
   "en": "approximately",
   "fa": "تقریباً",
   "cat": "adv",
-  "ex": "I approximately drink tea at night.",
-  "exfa": "شب‌ها تقریباً چای می‌نوشم."
+  "ex": "The trip takes approximately two hours.",
+  "exfa": "این سفر تقریباً دو ساعت طول می‌کشد."
  },
  {
   "i": 1040,
@@ -8507,8 +8507,8 @@
   "en": "dangerous",
   "fa": "خطرناک",
   "cat": "adj",
-  "ex": "This room is too dangerous for me.",
-  "exfa": "این اتاق برای من زیادی خطرناک است."
+  "ex": "Swimming in that river is very dangerous.",
+  "exfa": "شنا کردن در آن رودخانه خیلی خطرناک است."
  },
  {
   "i": 1042,
@@ -8539,8 +8539,8 @@
   "en": "excellent",
   "fa": "عالی",
   "cat": "adj",
-  "ex": "This room is too excellent for me.",
-  "exfa": "این اتاق برای من زیادی عالی است."
+  "ex": "Her English is excellent after two years of study.",
+  "exfa": "انگلیسی او بعد از دو سال تحصیل عالی است."
  },
  {
   "i": 1046,
@@ -8555,8 +8555,8 @@
   "en": "expensive",
   "fa": "گران",
   "cat": "money",
-  "ex": "Everything felt expensive after the trip.",
-  "exfa": "بعد از سفر همه چیز گران به نظر می‌رسید.",
+  "ex": "That restaurant is too expensive for students.",
+  "exfa": "آن رستوران برای دانشجوها خیلی گران است.",
   "syn": [
    "costly",
    "pricey"
@@ -8591,8 +8591,8 @@
   "en": "huge",
   "fa": "بزرگ",
   "cat": "adj",
-  "ex": "Everything felt huge after the trip.",
-  "exfa": "بعد از سفر همه چیز بزرگ به نظر می‌رسید."
+  "ex": "They live in a huge house near the lake.",
+  "exfa": "آن‌ها در خانه‌ای بزرگ نزدیک دریاچه زندگی می‌کنند."
  },
  {
   "i": 1052,
@@ -8627,8 +8627,8 @@
   "en": "impossible",
   "fa": "غیرممکن",
   "cat": "adj",
-  "ex": "Everything felt impossible after the trip.",
-  "exfa": "بعد از سفر همه چیز غیرممکن به نظر می‌رسید."
+  "ex": "It's impossible to finish this work in one day.",
+  "exfa": "تمام کردن این کار در یک روز غیرممکن است."
  },
  {
   "i": 1056,
@@ -8643,8 +8643,8 @@
   "en": "irresponsible",
   "fa": "غیرمسئول",
   "cat": "adj",
-  "ex": "This room is too irresponsible for me.",
-  "exfa": "این اتاق برای من زیادی غیرمسئول است."
+  "ex": "He was irresponsible when he left the children alone.",
+  "exfa": "او وقتی بچه‌ها را تنها گذاشت غیرمسئول بود."
  },
  {
   "i": 1058,
@@ -8659,8 +8659,8 @@
   "en": "mysterious",
   "fa": "مرموز",
   "cat": "adj",
-  "ex": "Everything felt mysterious after the trip.",
-  "exfa": "بعد از سفر همه چیز مرموز به نظر می‌رسید."
+  "ex": "A mysterious noise came from the old house.",
+  "exfa": "صدایی مرموز از خانه‌ی قدیمی به گوش رسید."
  },
  {
   "i": 1060,
@@ -8691,8 +8691,8 @@
   "en": "precious",
   "fa": "باارزش",
   "cat": "adj",
-  "ex": "Everything felt precious after the trip.",
-  "exfa": "بعد از سفر همه چیز باارزش به نظر می‌رسید."
+  "ex": "Time with family is precious to me.",
+  "exfa": "زمان با خانواده برای من باارزش است."
  },
  {
   "i": 1064,
@@ -8743,8 +8743,8 @@
   "en": "silly",
   "fa": "احمقانه",
   "cat": "adj",
-  "ex": "This room is too silly for me.",
-  "exfa": "این اتاق برای من زیادی احمقانه است."
+  "ex": "That was a silly mistake to make.",
+  "exfa": "آن یک اشتباه احمقانه بود."
  },
  {
   "i": 1070,
@@ -8775,8 +8775,8 @@
   "en": "superficial",
   "fa": "سطحی",
   "cat": "adj",
-  "ex": "This room is too superficial for me.",
-  "exfa": "این اتاق برای من زیادی سطحی است."
+  "ex": "His knowledge of the topic is only superficial.",
+  "exfa": "دانش او درباره‌ی این موضوع فقط سطحی است."
  },
  {
   "i": 1074,
@@ -8791,8 +8791,8 @@
   "en": "talented",
   "fa": "بااستعداد",
   "cat": "adj",
-  "ex": "It is not easy to talented every day.",
-  "exfa": "هر روز بااستعداد آسان نیست."
+  "ex": "She is a talented musician who plays three instruments.",
+  "exfa": "او نوازنده‌ای بااستعداد است که سه ساز می‌نوازد."
  },
  {
   "i": 1076,
@@ -8903,8 +8903,8 @@
   "en": "unreliable",
   "fa": "غیرقابل اعتماد",
   "cat": "adj",
-  "ex": "This room is too unreliable for me.",
-  "exfa": "این اتاق برای من زیادی غیرقابل اعتماد است."
+  "ex": "The old car became unreliable and often broke down.",
+  "exfa": "ماشین قدیمی غیرقابل اعتماد شده بود و اغلب خراب می‌شد."
  },
  {
   "i": 1090,
@@ -8919,8 +8919,8 @@
   "en": "unusual",
   "fa": "غیرعادی",
   "cat": "adj",
-  "ex": "Everything felt unusual after the trip.",
-  "exfa": "بعد از سفر همه چیز غیرعادی به نظر می‌رسید."
+  "ex": "It's unusual for him to be late.",
+  "exfa": "دیر کردن برای او غیرعادی است."
  },
  {
   "i": 1092,
@@ -9071,8 +9071,8 @@
   "en": "otherwise",
   "fa": "در غیر این صورت",
   "cat": "adv",
-  "ex": "To otherwise well, you need patience.",
-  "exfa": "برای خوب در غیر این صورت، صبر لازم است."
+  "ex": "Wear a coat, otherwise you'll get cold.",
+  "exfa": "کت بپوش، در غیر این صورت سردت می‌شود."
  },
  {
   "i": 1111,
@@ -9407,8 +9407,8 @@
   "en": "dress",
   "fa": "لباس",
   "cat": "clothes",
-  "ex": "It is not easy to dress every day.",
-  "exfa": "هر روز لباس آسان نیست."
+  "ex": "She wore a blue dress to the wedding.",
+  "exfa": "او یک لباس آبی به عروسی پوشید."
  },
  {
   "i": 1152,
@@ -9975,16 +9975,16 @@
   "en": "hockey",
   "fa": "هاکی",
   "cat": "sport",
-  "ex": "This room is too hockey for me.",
-  "exfa": "این اتاق برای من زیادی هاکی است."
+  "ex": "They play hockey on the ice every winter.",
+  "exfa": "آن‌ها هر زمستان روی یخ هاکی بازی می‌کنند."
  },
  {
   "i": 1222,
   "en": "match",
   "fa": "مسابقه",
   "cat": "sport",
-  "ex": "To match well, you need patience.",
-  "exfa": "برای خوب مسابقه، صبر لازم است."
+  "ex": "We watched the football match on TV last night.",
+  "exfa": "دیشب مسابقه‌ی فوتبال را از تلویزیون تماشا کردیم."
  },
  {
   "i": 1223,
@@ -10095,8 +10095,8 @@
   "en": "authority",
   "fa": "مقام / اختیار",
   "cat": "crime",
-  "ex": "Everything felt authority after the trip.",
-  "exfa": "بعد از سفر همه چیز مقام به نظر می‌رسید."
+  "ex": "The police have the authority to make arrests.",
+  "exfa": "پلیس اختیار دستگیر کردن افراد را دارد."
  },
  {
   "i": 1236,
@@ -10143,8 +10143,8 @@
   "en": "democracy",
   "fa": "دموکراسی",
   "cat": "noun",
-  "ex": "This room is too democracy for me.",
-  "exfa": "این اتاق برای من زیادی دموکراسی است."
+  "ex": "People vote for their leaders in a democracy.",
+  "exfa": "در یک دموکراسی، مردم برای رهبران خود رأی می‌دهند."
  },
  {
   "i": 1242,
@@ -10231,8 +10231,8 @@
   "en": "president",
   "fa": "رئیس‌جمهور",
   "cat": "work",
-  "ex": "Everything felt president after the trip.",
-  "exfa": "بعد از سفر همه چیز رئیس‌جمهور به نظر می‌رسید."
+  "ex": "The president gave a speech on television.",
+  "exfa": "رئیس‌جمهور در تلویزیون سخنرانی کرد."
  },
  {
   "i": 1252,
@@ -10428,8 +10428,8 @@
   "en": "invest",
   "fa": "سرمایه‌گذاری",
   "cat": "money",
-  "ex": "To invest well, you need patience.",
-  "exfa": "برای خوب سرمایه‌گذاری، صبر لازم است."
+  "ex": "They decided to invest in a small business.",
+  "exfa": "آن‌ها تصمیم گرفتند در یک کسب‌وکار کوچک سرمایه‌گذاری کنند."
  },
  {
   "i": 1275,
@@ -10552,8 +10552,8 @@
   "en": "natural",
   "fa": "طبیعی",
   "cat": "adj",
-  "ex": "This room is too natural for me.",
-  "exfa": "این اتاق برای من زیادی طبیعی است."
+  "ex": "It's natural to feel nervous before an exam.",
+  "exfa": "طبیعی است که قبل از امتحان احساس عصبی بودن کنی."
  },
  {
   "i": 1290,
@@ -11008,8 +11008,8 @@
   "en": "admit",
   "fa": "اعتراف کردن",
   "cat": "talk",
-  "ex": "I like to admit in the morning.",
-  "exfa": "اعتراف کردن در صبح را دوست دارم."
+  "ex": "He finally admitted that he made a mistake.",
+  "exfa": "او بالاخره اعتراف کرد که اشتباه کرده است."
  },
  {
   "i": 1346,
@@ -11024,8 +11024,8 @@
   "en": "afford",
   "fa": "توان مالی داشتن",
   "cat": "money",
-  "ex": "It is not easy to afford every day.",
-  "exfa": "هر روز توانایی پرداخت داشتن آسان نیست."
+  "ex": "We can't afford a new car this year.",
+  "exfa": "امسال توان مالی خرید ماشین نو را نداریم."
  },
  {
   "i": 1348,
@@ -11048,8 +11048,8 @@
   "en": "behave",
   "fa": "رفتار کردن",
   "cat": "people",
-  "ex": "To behave well, you need patience.",
-  "exfa": "برای خوب رفتار کردن، صبر لازم است."
+  "ex": "Children should behave politely at school.",
+  "exfa": "بچه‌ها باید در مدرسه مؤدبانه رفتار کنند."
  },
  {
   "i": 1351,
@@ -11248,8 +11248,8 @@
   "en": "diligent",
   "fa": "کوشا",
   "cat": "adj",
-  "ex": "Everything felt Diligent after the trip.",
-  "exfa": "بعد از سفر همه چیز کوشا به نظر می‌رسید."
+  "ex": "He is a diligent student who never misses class.",
+  "exfa": "او دانش‌آموزی کوشا است که هرگز کلاس را از دست نمی‌دهد."
  },
  {
   "i": 1376,
@@ -11312,8 +11312,8 @@
   "en": "nonchalant",
   "fa": "بی‌تفاوت",
   "cat": "adj",
-  "ex": "Everything felt Nonchalant after the trip.",
-  "exfa": "بعد از سفر همه چیز بی‌تفاوت به نظر می‌رسید."
+  "ex": "He stayed nonchalant even after losing the match.",
+  "exfa": "او حتی بعد از باختن مسابقه هم بی‌تفاوت ماند."
  },
  {
   "i": 1384,
@@ -11456,8 +11456,8 @@
   "en": "benevolent",
   "fa": "خیرخواه",
   "cat": "adj",
-  "ex": "This room is too Benevolent for me.",
-  "exfa": "این اتاق برای من زیادی خیرخواه است."
+  "ex": "The benevolent old man gave food to anyone who was hungry.",
+  "exfa": "آن پیرمرد خیرخواه به هر کسی که گرسنه بود غذا می‌داد."
  },
  {
   "i": 1402,
@@ -11504,8 +11504,8 @@
   "en": "hermetic",
   "fa": "دربسته / منزوی",
   "cat": "adj",
-  "ex": "Everything felt Hermetic after the trip.",
-  "exfa": "بعد از سفر همه چیز گوشه‌گیر به نظر می‌رسید."
+  "ex": "He lived a hermetic life, rarely speaking to his neighbors.",
+  "exfa": "او زندگی‌ای منزوی داشت و به‌ندرت با همسایه‌هایش حرف می‌زد."
  },
  {
   "i": 1408,
@@ -11552,8 +11552,8 @@
   "en": "narcissistic",
   "fa": "خودشیفته",
   "cat": "adj",
-  "ex": "This room is too Narcissistic for me.",
-  "exfa": "این اتاق برای من زیادی خودشیفته است."
+  "ex": "His narcissistic behavior made it hard to work with him.",
+  "exfa": "رفتار خودشیفته‌ی او کار کردن با او را سخت می‌کرد."
  },
  {
   "i": 1414,
@@ -11840,8 +11840,8 @@
   "en": "lethargic",
   "fa": "بی‌حال",
   "cat": "adj",
-  "ex": "This room is too Lethargic for me.",
-  "exfa": "این اتاق برای من زیادی بی‌حال است."
+  "ex": "The heat made everyone feel lethargic and sleepy.",
+  "exfa": "گرما همه را بی‌حال و خواب‌آلود کرده بود."
  },
  {
   "i": 1450,
@@ -11904,8 +11904,8 @@
   "en": "turbulent",
   "fa": "پرآشوب",
   "cat": "adj",
-  "ex": "This room is too Turbulent for me.",
-  "exfa": "این اتاق برای من زیادی پرآشوب است."
+  "ex": "The country went through a turbulent period after the war.",
+  "exfa": "کشور پس از جنگ دوره‌ای پرآشوب را پشت سر گذاشت."
  },
  {
   "i": 1458,
@@ -11952,8 +11952,8 @@
   "en": "compliant",
   "fa": "مطیع / مطابق با مقررات",
   "cat": "adj",
-  "ex": "Everything felt Compliant after the trip.",
-  "exfa": "بعد از سفر همه چیز مطیع به نظر می‌رسید."
+  "ex": "The factory must be compliant with safety regulations.",
+  "exfa": "کارخانه باید مطابق با مقررات ایمنی باشد."
  },
  {
   "i": 1464,
@@ -12224,8 +12224,8 @@
   "en": "hysterical",
   "fa": "دیوانه‌وار",
   "cat": "adj",
-  "ex": "This room is too Hysterical for me.",
-  "exfa": "این اتاق برای من زیادی دیوانهوار است."
+  "ex": "She became hysterical when she heard the news.",
+  "exfa": "وقتی خبر را شنید حالتی دیوانه‌وار پیدا کرد."
  },
  {
   "i": 1498,
@@ -12336,8 +12336,8 @@
   "en": "dutiful",
   "fa": "وظیفه‌شناس",
   "cat": "adj",
-  "ex": "Everything felt Dutiful after the trip.",
-  "exfa": "بعد از سفر همه چیز وظیفهشناس به نظر می‌رسید."
+  "ex": "As a dutiful son, he visits his parents every weekend.",
+  "exfa": "او به عنوان پسری وظیفه‌شناس هر آخر هفته والدینش را می‌بیند."
  },
  {
   "i": 1512,
@@ -12468,8 +12468,8 @@
   "en": "Worthy",
   "fa": "شایسته",
   "cat": "adj",
-  "ex": "Everything felt Worthy after the trip.",
-  "exfa": "بعد از سفر همه چیز شایسته به نظر می‌رسید."
+  "ex": "His effort was worthy of great praise.",
+  "exfa": "تلاش او شایسته‌ی تحسین فراوان بود."
  },
  {
   "i": 1528,
@@ -12665,8 +12665,8 @@
   "en": "palatable",
   "fa": "خوش‌طعم / قابل قبول",
   "cat": "adj",
-  "ex": "Everything felt Palatable after the trip.",
-  "exfa": "بعد از سفر همه چیز قابل قبول به نظر می‌رسید."
+  "ex": "The chef made the bitter vegetable more palatable with spices.",
+  "exfa": "سرآشپز با ادویه‌ها آن سبزی تلخ را خوش‌طعم‌تر کرد."
  },
  {
   "i": 1552,
@@ -12777,8 +12777,8 @@
   "en": "hearty",
   "fa": "مقوی",
   "cat": "adj",
-  "ex": "This room is too Hearty for me.",
-  "exfa": "این اتاق برای من زیادی مقوی است."
+  "ex": "We enjoyed a hearty breakfast before the hike.",
+  "exfa": "قبل از پیاده‌روی یک صبحانه‌ی مقوی خوردیم."
  },
  {
   "i": 1566,
@@ -13229,8 +13229,8 @@
   "en": "emulsify",
   "fa": "امولسیون کردن",
   "cat": "food",
-  "ex": "This room is too Emulsify for me.",
-  "exfa": "این اتاق برای من زیادی امولسیون کردن است."
+  "ex": "Whisk the oil and vinegar together to emulsify the dressing.",
+  "exfa": "روغن و سرکه را هم بزنید تا سس امولسیون شود."
  },
  {
   "i": 1622,
@@ -14109,8 +14109,8 @@
   "en": "deficiency",
   "fa": "کمبود",
   "cat": "health",
-  "ex": "Everything felt Deficiency after the trip.",
-  "exfa": "بعد از سفر همه چیز کمبود به نظر می‌رسید."
+  "ex": "A vitamin D deficiency can weaken your bones.",
+  "exfa": "کمبود ویتامین D می‌تواند استخوان‌ها را ضعیف کند."
  },
  {
   "i": 1732,
@@ -14861,8 +14861,8 @@
   "en": "Tour",
   "fa": "تور",
   "cat": "travel",
-  "ex": "I like to Tour in the morning.",
-  "exfa": "تور در صبح را دوست دارم."
+  "ex": "We booked a guided tour of the old city.",
+  "exfa": "ما یک تور با راهنما از شهر قدیمی رزرو کردیم."
  },
  {
   "i": 1826,
@@ -15125,8 +15125,8 @@
   "en": "endangered",
   "fa": "در خطر انقراض",
   "cat": "verb",
-  "ex": "To Endangered well, you need patience.",
-  "exfa": "برای خوب در خطر انقراض، صبر لازم است."
+  "ex": "Tigers are an endangered species.",
+  "exfa": "ببرها گونه‌ای در خطر انقراض هستند."
  },
  {
   "i": 1859,
@@ -15597,8 +15597,8 @@
   "en": "alternative",
   "fa": "جایگزین",
   "cat": "adj",
-  "ex": "This room is too Alternative for me.",
-  "exfa": "این اتاق برای من زیادی جایگزین است."
+  "ex": "Cycling is a healthy alternative to driving.",
+  "exfa": "دوچرخه‌سواری جایگزین سالمی برای رانندگی است."
  },
  {
   "i": 1918,
@@ -15901,8 +15901,8 @@
   "en": "anthropology",
   "fa": "انسان‌شناسی",
   "cat": "school",
-  "ex": "Everything felt Anthropology after the trip.",
-  "exfa": "بعد از سفر همه چیز انسانشناسی به نظر می‌رسید."
+  "ex": "She is studying anthropology to understand different cultures.",
+  "exfa": "او انسان‌شناسی می‌خواند تا فرهنگ‌های مختلف را بشناسد."
  },
  {
   "i": 1956,
@@ -15933,8 +15933,8 @@
   "en": "pottery",
   "fa": "سفال",
   "cat": "noun",
-  "ex": "Everything felt Pottery after the trip.",
-  "exfa": "بعد از سفر همه چیز سفال به نظر می‌رسید."
+  "ex": "She learned to make pottery at the workshop.",
+  "exfa": "او در کارگاه یاد گرفت سفال بسازد."
  },
  {
   "i": 1960,
@@ -16045,8 +16045,8 @@
   "en": "civilization",
   "fa": "تمدن",
   "cat": "noun",
-  "ex": "I like to Civilization in the morning.",
-  "exfa": "تمدن در صبح را دوست دارم."
+  "ex": "The museum shows the history of human civilization.",
+  "exfa": "موزه تاریخ تمدن بشری را نشان می‌دهد."
  },
  {
   "i": 1974,
@@ -16061,8 +16061,8 @@
   "en": "dynasty",
   "fa": "سلسله",
   "cat": "noun",
-  "ex": "Everything felt Dynasty after the trip.",
-  "exfa": "بعد از سفر همه چیز سلسله به نظر می‌رسید."
+  "ex": "The Ming Dynasty ruled China for centuries.",
+  "exfa": "سلسله‌ی مینگ قرن‌ها بر چین حکومت کرد."
  },
  {
   "i": 1976,
@@ -16077,8 +16077,8 @@
   "en": "Republic",
   "fa": "جمهوری",
   "cat": "noun",
-  "ex": "This room is too Republic for me.",
-  "exfa": "این اتاق برای من زیادی جمهوری است."
+  "ex": "France has been a republic since 1792.",
+  "exfa": "فرانسه از سال ۱۷۹۲ یک جمهوری بوده است."
  },
  {
   "i": 1978,
@@ -16109,8 +16109,8 @@
   "en": "treaty",
   "fa": "معاهده",
   "cat": "noun",
-  "ex": "This room is too Treaty for me.",
-  "exfa": "این اتاق برای من زیادی معاهده است."
+  "ex": "The two countries signed a peace treaty last month.",
+  "exfa": "دو کشور ماه گذشته یک معاهده‌ی صلح امضا کردند."
  },
  {
   "i": 1982,
@@ -16189,8 +16189,8 @@
   "en": "Merchant",
   "fa": "بازرگان",
   "cat": "work",
-  "ex": "Everything felt Merchant after the trip.",
-  "exfa": "بعد از سفر همه چیز بازرگان به نظر می‌رسید."
+  "ex": "The merchant sold spices from distant countries.",
+  "exfa": "بازرگان ادویه‌هایی از کشورهای دور می‌فروخت."
  },
  {
   "i": 1992,
@@ -16605,8 +16605,8 @@
   "en": "ceremony",
   "fa": "مراسم",
   "cat": "noun",
-  "ex": "Everything felt Ceremony after the trip.",
-  "exfa": "بعد از سفر همه چیز مراسم به نظر می‌رسید."
+  "ex": "We attended their wedding ceremony last weekend.",
+  "exfa": "آخر هفته‌ی گذشته در مراسم عروسی‌شان شرکت کردیم."
  },
  {
   "i": 2044,
@@ -16961,8 +16961,8 @@
   "en": "legacy",
   "fa": "میراث",
   "cat": "noun",
-  "ex": "Everything felt Legacy after the trip.",
-  "exfa": "بعد از سفر همه چیز میراث به نظر می‌رسید."
+  "ex": "The scientist left behind a lasting legacy of discoveries.",
+  "exfa": "آن دانشمند میراثی ماندگار از اکتشافات به جا گذاشت."
  },
  {
   "i": 2088,
@@ -16977,8 +16977,8 @@
   "en": "cultural",
   "fa": "فرهنگی",
   "cat": "adj",
-  "ex": "This room is too Cultural for me.",
-  "exfa": "این اتاق برای من زیادی فرهنگی است."
+  "ex": "The festival celebrates the region's cultural traditions.",
+  "exfa": "این جشنواره سنت‌های فرهنگی منطقه را جشن می‌گیرد."
  },
  {
   "i": 2090,
@@ -16993,8 +16993,8 @@
   "en": "Dance",
   "fa": "رقص",
   "cat": "music",
-  "ex": "It is not easy to Dance every day.",
-  "exfa": "هر روز رقص آسان نیست."
+  "ex": "They take a dance class every Friday night.",
+  "exfa": "آن‌ها هر جمعه شب کلاس رقص می‌روند."
  },
  {
   "i": 2092,
@@ -17317,8 +17317,8 @@
   "en": "have",
   "fa": "داشتن",
   "cat": "verb",
-  "ex": "It is not easy to have every day.",
-  "exfa": "هر روز داشتن آسان نیست."
+  "ex": "Do you have a pen I could borrow?",
+  "exfa": "آیا خودکاری داری که بتوانم قرض بگیرم؟"
  },
  {
   "i": 2132,
@@ -17381,8 +17381,8 @@
   "en": "search",
   "fa": "جست‌وجو کردن",
   "cat": "verb",
-  "ex": "It is not easy to search every day.",
-  "exfa": "هر روز جست‌وجو کردن آسان نیست."
+  "ex": "I searched everywhere for my keys this morning.",
+  "exfa": "امروز صبح همه‌جا دنبال کلیدهایم گشتم."
  },
  {
   "i": 2140,
@@ -17933,8 +17933,8 @@
   "en": "support",
   "fa": "پشتیبانی / حمایت کردن",
   "cat": "verb",
-  "ex": "I like to support in the morning.",
-  "exfa": "پشتیبانی در صبح را دوست دارم."
+  "ex": "My family always supports my decisions.",
+  "exfa": "خانواده‌ام همیشه از تصمیم‌هایم حمایت می‌کند."
  },
  {
   "i": 2206,
@@ -18401,8 +18401,8 @@
   "en": "travel",
   "fa": "سفر / مسافرت",
   "cat": "travel",
-  "ex": "It is not easy to travel every day.",
-  "exfa": "هر روز سفر آسان نیست."
+  "ex": "We travel to my grandparents' house every summer.",
+  "exfa": "ما هر تابستان به خانه‌ی پدربزرگ و مادربزرگم سفر می‌کنیم."
  },
  {
   "i": 2260,
@@ -18713,8 +18713,8 @@
   "en": "check",
   "fa": "بررسی کردن / چک",
   "cat": "verb",
-  "ex": "It is not easy to check every day.",
-  "exfa": "هر روز بررسی کردن آسان نیست."
+  "ex": "Can you check my homework before class?",
+  "exfa": "می‌توانی قبل از کلاس تکالیفم را بررسی کنی؟"
  },
  {
   "i": 2296,
@@ -19309,8 +19309,8 @@
   "en": "previous",
   "fa": "قبلی",
   "cat": "adj",
-  "ex": "This room is too previous for me.",
-  "exfa": "این اتاق برای من زیادی قبلی است."
+  "ex": "In my previous job, I worked as a nurse.",
+  "exfa": "در شغل قبلی‌ام، به‌عنوان پرستار کار می‌کردم."
  },
  {
   "i": 2366,
@@ -19401,8 +19401,8 @@
   "en": "department",
   "fa": "بخش / وزارت",
   "cat": "work",
-  "ex": "Everything felt department after the trip.",
-  "exfa": "بعد از سفر همه چیز بخش به نظر می‌رسید."
+  "ex": "She works in the marketing department of the company.",
+  "exfa": "او در بخش بازاریابی شرکت کار می‌کند."
  },
  {
   "i": 2376,
@@ -19497,8 +19497,8 @@
   "en": "content",
   "fa": "محتوا / راضی",
   "cat": "adj",
-  "ex": "Everything felt content after the trip.",
-  "exfa": "بعد از سفر همه چیز محتوا به نظر می‌رسید."
+  "ex": "She felt content after finishing the marathon.",
+  "exfa": "او بعد از تمام کردن ماراتن احساس رضایت کرد."
  },
  {
   "i": 2388,
@@ -19561,8 +19561,8 @@
   "en": "include",
   "fa": "شامل بودن",
   "cat": "verb",
-  "ex": "It is not easy to include every day.",
-  "exfa": "هر روز شامل بودن آسان نیست."
+  "ex": "The price includes breakfast and dinner.",
+  "exfa": "این قیمت شامل صبحانه و شام می‌شود."
  },
  {
   "i": 2396,
@@ -19625,8 +19625,8 @@
   "en": "press",
   "fa": "فشار دادن / مطبوعات",
   "cat": "verb",
-  "ex": "It is not easy to press every day.",
-  "exfa": "هر روز فشار دادن آسان نیست."
+  "ex": "Press the button to start the machine.",
+  "exfa": "برای روشن کردن دستگاه دکمه را فشار بده."
  },
  {
   "i": 2404,
@@ -19649,8 +19649,8 @@
   "en": "print",
   "fa": "چاپ کردن",
   "cat": "verb",
-  "ex": "To print well, you need patience.",
-  "exfa": "برای خوب چاپ کردن، صبر لازم است."
+  "ex": "Can you print this document for me?",
+  "exfa": "می‌توانی این سند را برایم چاپ کنی؟"
  },
  {
   "i": 2407,
@@ -19717,8 +19717,8 @@
   "en": "join",
   "fa": "پیوستن",
   "cat": "verb",
-  "ex": "To join well, you need patience.",
-  "exfa": "برای خوب پیوستن، صبر لازم است."
+  "ex": "Would you like to join us for dinner?",
+  "exfa": "دوست داری برای شام به ما بپیوندی؟"
  },
  {
   "i": 2415,
@@ -19749,8 +19749,8 @@
   "en": "advanced",
   "fa": "پیشرفته",
   "cat": "verb",
-  "ex": "To advanced well, you need patience.",
-  "exfa": "برای خوب پیشرفته، صبر لازم است."
+  "ex": "She is taking an advanced English course this year.",
+  "exfa": "او امسال یک دوره‌ی پیشرفته‌ی زبان انگلیسی می‌گذراند."
  },
  {
   "i": 2419,
@@ -19825,8 +19825,8 @@
   "en": "select",
   "fa": "انتخاب کردن",
   "cat": "verb",
-  "ex": "It is not easy to select every day.",
-  "exfa": "هر روز انتخاب کردن آسان نیست."
+  "ex": "Please select your favorite color from the list.",
+  "exfa": "لطفاً رنگ موردعلاقه‌ات را از فهرست انتخاب کن."
  },
  {
   "i": 2428,
@@ -19957,8 +19957,8 @@
   "en": "start",
   "fa": "شروع کردن",
   "cat": "verb",
-  "ex": "To start well, you need patience.",
-  "exfa": "برای خوب شروع کردن، صبر لازم است.",
+  "ex": "The class will start in five minutes.",
+  "exfa": "کلاس تا پنج دقیقه‌ی دیگر شروع می‌شود.",
   "syn": [
    "begin",
    "commence"
@@ -20025,8 +20025,8 @@
   "en": "yes",
   "fa": "بله",
   "cat": "noun",
-  "ex": "He answered yes to every question.",
-  "exfa": "او به هر سؤالی بله جواب داد."
+  "ex": "She said yes when he asked her to marry him.",
+  "exfa": "او وقتی از او خواستگاری کرد گفت بله."
  },
  {
   "i": 2450,
@@ -20269,8 +20269,8 @@
   "en": "comment",
   "fa": "نظر / توضیح دادن",
   "cat": "talk",
-  "ex": "Everything felt comment after the trip.",
-  "exfa": "بعد از سفر همه چیز نظر به نظر می‌رسید."
+  "ex": "He left a helpful comment on my essay.",
+  "exfa": "او روی مقاله‌ی من نظری مفید نوشت."
  },
  {
   "i": 2480,
@@ -20625,8 +20625,8 @@
   "en": "additional",
   "fa": "اضافی",
   "cat": "adj",
-  "ex": "This room is too additional for me.",
-  "exfa": "این اتاق برای من زیادی اضافی است."
+  "ex": "I need additional time to finish this report.",
+  "exfa": "برای تمام کردن این گزارش به زمان اضافی نیاز دارم."
  },
  {
   "i": 2522,
@@ -21602,8 +21602,8 @@
   "en": "drive",
   "fa": "رانندگی / انگیزه",
   "cat": "car",
-  "ex": "It is not easy to drive every day.",
-  "exfa": "هر روز رانندگی آسان نیست."
+  "ex": "He drives to work every morning.",
+  "exfa": "او هر روز صبح رانندگی می‌کند و به سر کار می‌رود."
  },
  {
   "i": 2636,
@@ -21618,8 +21618,8 @@
   "en": "several",
   "fa": "چندین",
   "cat": "adj",
-  "ex": "This room is too several for me.",
-  "exfa": "این اتاق برای من زیادی چندین است."
+  "ex": "I have called her several times today.",
+  "exfa": "امروز چندین بار به او زنگ زدم."
  },
  {
   "i": 2638,
@@ -21834,8 +21834,8 @@
   "en": "official",
   "fa": "رسمی / مسئول",
   "cat": "adj",
-  "ex": "This room is too official for me.",
-  "exfa": "این اتاق برای من زیادی رسمی است."
+  "ex": "The official announcement will come out tomorrow.",
+  "exfa": "اعلامیه‌ی رسمی فردا منتشر می‌شود."
  },
  {
   "i": 2662,
@@ -22134,8 +22134,8 @@
   "en": "federal",
   "fa": "فدرال / دولتی",
   "cat": "adj",
-  "ex": "This room is too federal for me.",
-  "exfa": "این اتاق برای من زیادی فدرال است."
+  "ex": "Federal law requires companies to report large transactions.",
+  "exfa": "قانون فدرال شرکت‌ها را ملزم به گزارش تراکنش‌های بزرگ می‌کند."
  },
  {
   "i": 2698,
@@ -22350,8 +22350,8 @@
   "en": "usually",
   "fa": "معمولاً",
   "cat": "time",
-  "ex": "I usually drink tea at night.",
-  "exfa": "شب‌ها معمولاً چای می‌نوشم."
+  "ex": "I usually walk to school with my friends.",
+  "exfa": "من معمولاً با دوستانم پیاده به مدرسه می‌روم."
  },
  {
   "i": 2724,
@@ -22754,8 +22754,8 @@
   "en": "receive",
   "fa": "دریافت کردن / گرفتن",
   "cat": "verb",
-  "ex": "I like to receive in the morning.",
-  "exfa": "دریافت کردن در صبح را دوست دارم."
+  "ex": "I received a letter from my old friend today.",
+  "exfa": "امروز نامه‌ای از دوست قدیمی‌ام دریافت کردم."
  },
  {
   "i": 2774,
@@ -22806,8 +22806,8 @@
   "en": "wide",
   "fa": "گسترده / پهن",
   "cat": "adj",
-  "ex": "Everything felt wide after the trip.",
-  "exfa": "بعد از سفر همه چیز گسترده به نظر می‌رسید."
+  "ex": "The river is very wide near the bridge.",
+  "exfa": "رودخانه نزدیک پل خیلی پهن است."
  },
  {
   "i": 2780,
@@ -23084,8 +23084,8 @@
   "en": "active",
   "fa": "فعال",
   "cat": "adj",
-  "ex": "Everything felt active after the trip.",
-  "exfa": "بعد از سفر همه چیز فعال به نظر می‌رسید."
+  "ex": "My grandfather stays active by walking every day.",
+  "exfa": "پدربزرگم با پیاده‌روی روزانه فعال می‌ماند."
  },
  {
   "i": 2812,
@@ -23100,8 +23100,8 @@
   "en": "practice",
   "fa": "تمرین / عمل",
   "cat": "verb",
-  "ex": "I like to practice in the morning.",
-  "exfa": "تمرین در صبح را دوست دارم."
+  "ex": "She practices the piano every afternoon.",
+  "exfa": "او هر بعدازظهر پیانو تمرین می‌کند."
  },
  {
   "i": 2814,
@@ -23521,8 +23521,8 @@
   "en": "copy",
   "fa": "کپی / نسخه",
   "cat": "verb",
-  "ex": "It is not easy to copy every day.",
-  "exfa": "هر روز کپی آسان نیست."
+  "ex": "Please copy this page for the meeting.",
+  "exfa": "لطفاً این صفحه را برای جلسه کپی کن."
  },
  {
   "i": 2864,
@@ -23553,8 +23553,8 @@
   "en": "force",
   "fa": "مجبور کردن / نیرو",
   "cat": "verb",
-  "ex": "It is not easy to force every day.",
-  "exfa": "هر روز نیرو آسان نیست."
+  "ex": "Don't force your little sister to share her toys.",
+  "exfa": "خواهر کوچکت را مجبور نکن اسباب‌بازی‌هایش را به اشتراک بگذارد."
  },
  {
   "i": 2868,
@@ -23637,8 +23637,8 @@
   "en": "regional",
   "fa": "منطقه‌ای / محلی",
   "cat": "adj",
-  "ex": "This room is too regional for me.",
-  "exfa": "این اتاق برای من زیادی منطقه‌ای است."
+  "ex": "The team won the regional championship this year.",
+  "exfa": "تیم امسال قهرمانی منطقه‌ای را برد."
  },
  {
   "i": 2878,
@@ -23773,8 +23773,8 @@
   "en": "continue",
   "fa": "ادامه دادن",
   "cat": "verb",
-  "ex": "I like to continue in the morning.",
-  "exfa": "ادامه دادن در صبح را دوست دارم."
+  "ex": "Let's stop here and continue the lesson tomorrow.",
+  "exfa": "بیا اینجا متوقف شویم و فردا درس را ادامه دهیم."
  },
  {
   "i": 2894,
@@ -23837,8 +23837,8 @@
   "en": "effective",
   "fa": "مؤثر",
   "cat": "adj",
-  "ex": "This room is too effective for me.",
-  "exfa": "این اتاق برای من زیادی مؤثر است."
+  "ex": "This medicine is very effective against headaches.",
+  "exfa": "این دارو برای سردرد بسیار مؤثر است."
  },
  {
   "i": 2902,
@@ -23917,8 +23917,8 @@
   "en": "cross",
   "fa": "عبور کردن / متقاطع",
   "cat": "verb",
-  "ex": "It is not easy to cross every day.",
-  "exfa": "هر روز عبور کردن آسان نیست."
+  "ex": "Look both ways before you cross the street.",
+  "exfa": "قبل از عبور از خیابان به هر دو طرف نگاه کن."
  },
  {
   "i": 2912,
@@ -24041,8 +24041,8 @@
   "en": "supply",
   "fa": "تأمین / عرضه",
   "cat": "verb",
-  "ex": "I like to supply in the morning.",
-  "exfa": "تأمین در صبح را دوست دارم."
+  "ex": "They supply fresh bread to local shops every morning.",
+  "exfa": "آن‌ها هر صبح نان تازه به مغازه‌های محلی می‌رسانند."
  },
  {
   "i": 2926,
@@ -24221,8 +24221,8 @@
   "en": "rental",
   "fa": "اجاره‌ای",
   "cat": "adj",
-  "ex": "Everything felt rental after the trip.",
-  "exfa": "بعد از سفر همه چیز اجاره‌ای به نظر می‌رسید."
+  "ex": "We picked up our rental car at the airport.",
+  "exfa": "ماشین اجاره‌ای‌مان را از فرودگاه تحویل گرفتیم."
  },
  {
   "i": 2948,
@@ -24317,8 +24317,8 @@
   "en": "cable",
   "fa": "کابل / سیم",
   "cat": "tech",
-  "ex": "Everything felt cable after the trip.",
-  "exfa": "بعد از سفر همه چیز کابل به نظر می‌رسید."
+  "ex": "Plug the cable into the back of the computer.",
+  "exfa": "کابل را به پشت کامپیوتر وصل کن."
  },
  {
   "i": 2960,
@@ -24433,8 +24433,8 @@
   "en": "capital",
   "fa": "پایتخت / سرمایه",
   "cat": "adj",
-  "ex": "This room is too capital for me.",
-  "exfa": "این اتاق برای من زیادی پایتخت است."
+  "ex": "Paris is the capital of France.",
+  "exfa": "پاریس پایتخت فرانسه است."
  },
  {
   "i": 2974,
@@ -24581,8 +24581,8 @@
   "en": "foreign",
   "fa": "خارجی",
   "cat": "adj",
-  "ex": "Everything felt foreign after the trip.",
-  "exfa": "بعد از سفر همه چیز خارجی به نظر می‌رسید."
+  "ex": "She wants to learn a foreign language next year.",
+  "exfa": "او می‌خواهد سال بعد یک زبان خارجی یاد بگیرد."
  },
  {
   "i": 2992,
@@ -24817,8 +24817,8 @@
   "en": "industrial",
   "fa": "صنعتی",
   "cat": "adj",
-  "ex": "Everything felt industrial after the trip.",
-  "exfa": "بعد از سفر همه چیز صنعتی به نظر می‌رسید."
+  "ex": "The city grew fast during the industrial revolution.",
+  "exfa": "شهر در دوران انقلاب صنعتی سریع رشد کرد."
  },
  {
   "i": 3020,
@@ -25137,8 +25137,8 @@
   "en": "happy",
   "fa": "خوشحال / شاد",
   "cat": "feeling",
-  "ex": "He looked happy after the meeting.",
-  "exfa": "بعد از جلسه خوشحال به نظر می‌رسید.",
+  "ex": "The children looked happy when they saw the puppy.",
+  "exfa": "بچه‌ها وقتی توله‌سگ را دیدند خوشحال به نظر رسیدند.",
   "syn": [
    "glad",
    "pleased",
@@ -25174,8 +25174,8 @@
   "en": "developed",
   "fa": "توسعه یافته / پیشرفته",
   "cat": "verb",
-  "ex": "To developed well, you need patience.",
-  "exfa": "برای خوب توسعه یافته، صبر لازم است."
+  "ex": "Japan is a highly developed country.",
+  "exfa": "ژاپن کشوری بسیار توسعه‌یافته است."
  },
  {
   "i": 3063,
@@ -25234,8 +25234,8 @@
   "en": "feed",
   "fa": "غذا دادن / خوراک",
   "cat": "animal",
-  "ex": "I like to feed in the morning.",
-  "exfa": "غذا دادن در صبح را دوست دارم."
+  "ex": "She feeds the cat every morning before school.",
+  "exfa": "او هر روز صبح قبل از مدرسه به گربه غذا می‌دهد."
  },
  {
   "i": 3070,
@@ -25354,8 +25354,8 @@
   "en": "recently",
   "fa": "اخیراً / به تازگی",
   "cat": "time",
-  "ex": "He answered recently.",
-  "exfa": "او اخیراً جواب داد."
+  "ex": "I recently moved to a new city.",
+  "exfa": "من اخیراً به شهر جدیدی نقل‌مکان کردم."
  },
  {
   "i": 3085,
@@ -25610,8 +25610,8 @@
   "en": "perfect",
   "fa": "بی‌نقص / کامل",
   "cat": "noun",
-  "ex": "Everything felt perfect after the trip.",
-  "exfa": "بعد از سفر همه چیز بی‌نقص به نظر می‌رسید.",
+  "ex": "Her English pronunciation is almost perfect.",
+  "exfa": "تلفظ انگلیسی او تقریباً بی‌نقص است.",
   "syn": [
    "flawless",
    "ideal"
@@ -25646,8 +25646,8 @@
   "en": "classic",
   "fa": "کلاسیک / سنتی",
   "cat": "adj",
-  "ex": "Everything felt classic after the trip.",
-  "exfa": "بعد از سفر همه چیز کلاسیک به نظر می‌رسید."
+  "ex": "This is a classic recipe my grandmother used.",
+  "exfa": "این یک دستور غذای کلاسیک است که مادربزرگم استفاده می‌کرد."
  },
  {
   "i": 3120,
@@ -25734,8 +25734,8 @@
   "en": "involved",
   "fa": "درگیر / مرتبط",
   "cat": "verb",
-  "ex": "To involved well, you need patience.",
-  "exfa": "برای خوب درگیر، صبر لازم است."
+  "ex": "Many volunteers got involved in the cleanup project.",
+  "exfa": "بسیاری از داوطلبان در پروژه‌ی پاکسازی درگیر شدند."
  },
  {
   "i": 3131,
@@ -25970,8 +25970,8 @@
   "en": "directly",
   "fa": "مستقیم",
   "cat": "adv",
-  "ex": "I directly drink tea at night.",
-  "exfa": "شب‌ها مستقیم چای می‌نوشم."
+  "ex": "Please contact the manager directly with questions.",
+  "exfa": "لطفاً برای سؤالات مستقیماً با مدیر تماس بگیر."
  },
  {
   "i": 3160,
@@ -26254,8 +26254,8 @@
   "en": "enterprise",
   "fa": "شرکت / کسب‌وکار",
   "cat": "work",
-  "ex": "To enterprise well, you need patience.",
-  "exfa": "برای خوب شرکت، صبر لازم است."
+  "ex": "He started a small enterprise selling handmade furniture.",
+  "exfa": "او یک شرکت کوچک برای فروش مبلمان دست‌ساز راه انداخت."
  },
  {
   "i": 3195,
@@ -26282,8 +26282,8 @@
   "en": "educational",
   "fa": "آموزشی / تربیتی",
   "cat": "adj",
-  "ex": "This room is too educational for me.",
-  "exfa": "این اتاق برای من زیادی آموزشی است."
+  "ex": "This museum offers many educational programs for kids.",
+  "exfa": "این موزه برنامه‌های آموزشی زیادی برای بچه‌ها ارائه می‌دهد."
  },
  {
   "i": 3198,
@@ -26298,8 +26298,8 @@
   "en": "metal",
   "fa": "فلزی / فلز",
   "cat": "adj",
-  "ex": "Everything felt metal after the trip.",
-  "exfa": "بعد از سفر همه چیز فلز به نظر می‌رسید."
+  "ex": "The bridge is made of strong metal beams.",
+  "exfa": "پل از تیرهای فلزی محکم ساخته شده است."
  },
  {
   "i": 3200,
@@ -26370,8 +26370,8 @@
   "en": "likely",
   "fa": "احتمالی / محتمل",
   "cat": "adv",
-  "ex": "He answered likely.",
-  "exfa": "او احتمالی جواب داد."
+  "ex": "It's likely to rain later this afternoon.",
+  "exfa": "احتمالاً بعدازظهر باران می‌بارد."
  },
  {
   "i": 3209,
@@ -26586,8 +26586,8 @@
   "en": "expected",
   "fa": "مورد انتظار / پیش‌بینی شده",
   "cat": "verb",
-  "ex": "It is not easy to expected every day.",
-  "exfa": "هر روز مورد انتظار آسان نیست."
+  "ex": "The train's expected arrival time is nine o'clock.",
+  "exfa": "زمان مورد انتظار ورود قطار ساعت نه است."
  },
  {
   "i": 3236,
@@ -26618,8 +26618,8 @@
   "en": "pacific",
   "fa": "آرام / صلح‌جو",
   "cat": "adj",
-  "ex": "Everything felt pacific after the trip.",
-  "exfa": "بعد از سفر همه چیز آرام به نظر می‌رسید."
+  "ex": "The two neighbors reached a pacific agreement after their argument.",
+  "exfa": "دو همسایه بعد از دعوایشان به توافقی صلح‌جویانه رسیدند."
  },
  {
   "i": 3240,
@@ -26698,16 +26698,16 @@
   "en": "proposed",
   "fa": "پیشنهادی / مطرح شده",
   "cat": "verb",
-  "ex": "I like to proposed in the morning.",
-  "exfa": "پیشنهادی در صبح را دوست دارم."
+  "ex": "The proposed budget cuts worried many employees.",
+  "exfa": "کاهش بودجه‌ی پیشنهادی بسیاری از کارمندان را نگران کرد."
  },
  {
   "i": 3250,
   "en": "require",
   "fa": "نیاز دارد / لازم است",
   "cat": "verb",
-  "ex": "To require well, you need patience.",
-  "exfa": "برای خوب نیاز دارد، صبر لازم است."
+  "ex": "This job requires excellent communication skills.",
+  "exfa": "این شغل به مهارت‌های ارتباطی عالی نیاز دارد."
  },
  {
   "i": 3251,
@@ -26902,8 +26902,8 @@
   "en": "pack",
   "fa": "بسته / دسته",
   "cat": "verb",
-  "ex": "To pack well, you need patience.",
-  "exfa": "برای خوب بسته، صبر لازم است."
+  "ex": "I bought a pack of chewing gum at the store.",
+  "exfa": "یک بسته آدامس از فروشگاه خریدم."
  },
  {
   "i": 3275,
@@ -26926,8 +26926,8 @@
   "en": "internal",
   "fa": "داخلی",
   "cat": "adj",
-  "ex": "This room is too internal for me.",
-  "exfa": "این اتاق برای من زیادی داخلی است."
+  "ex": "The company has strict internal rules for staff.",
+  "exfa": "این شرکت قوانین داخلی سختگیرانه‌ای برای کارکنان دارد."
  },
  {
   "i": 3278,
@@ -26966,8 +26966,8 @@
   "en": "detailed",
   "fa": "مفصل / دقیق",
   "cat": "verb",
-  "ex": "To detailed well, you need patience.",
-  "exfa": "برای خوب مفصل، صبر لازم است."
+  "ex": "She gave a detailed explanation of the accident.",
+  "exfa": "او توضیحی مفصل درباره‌ی حادثه ارائه داد."
  },
  {
   "i": 3283,
@@ -27382,8 +27382,8 @@
   "en": "external",
   "fa": "خارجی / بیرونی",
   "cat": "adj",
-  "ex": "This room is too external for me.",
-  "exfa": "این اتاق برای من زیادی خارجی است."
+  "ex": "The company hired an external auditor to check its accounts.",
+  "exfa": "شرکت یک حسابرس خارجی برای بررسی حساب‌هایش استخدام کرد."
  },
  {
   "i": 3334,
@@ -27510,8 +27510,8 @@
   "en": "manual",
   "fa": "دستی / کتاب راهنما",
   "cat": "adj",
-  "ex": "This room is too manual for me.",
-  "exfa": "این اتاق برای من زیادی دستی است."
+  "ex": "The car has a manual gearbox instead of automatic.",
+  "exfa": "این ماشین به جای اتوماتیک، گیربکس دستی دارد."
  },
  {
   "i": 3350,
@@ -27735,8 +27735,8 @@
   "en": "fully",
   "fa": "کاملاً / به‌طور کامل",
   "cat": "adv",
-  "ex": "I fully drink tea at night.",
-  "exfa": "شب‌ها کاملاً چای می‌نوشم."
+  "ex": "I don't fully understand this grammar rule.",
+  "exfa": "این قانون گرامری را کاملاً نمی‌فهمم."
  },
  {
   "i": 3376,
@@ -28203,8 +28203,8 @@
   "en": "flow",
   "fa": "جریان / روند",
   "cat": "verb",
-  "ex": "To flow well, you need patience.",
-  "exfa": "برای خوب جریان، صبر لازم است."
+  "ex": "The river flows quickly after heavy rain.",
+  "exfa": "رودخانه بعد از باران شدید تند جریان می‌یابد."
  },
  {
   "i": 3431,
@@ -28283,8 +28283,8 @@
   "en": "monthly",
   "fa": "ماهیانه",
   "cat": "time",
-  "ex": "He answered monthly.",
-  "exfa": "او ماهیانه جواب داد."
+  "ex": "She pays her rent on a monthly basis.",
+  "exfa": "او اجاره‌اش را به‌صورت ماهیانه پرداخت می‌کند."
  },
  {
   "i": 3441,
@@ -28431,8 +28431,8 @@
   "en": "begin",
   "fa": "شروع کردن",
   "cat": "verb",
-  "ex": "To begin well, you need patience.",
-  "exfa": "برای خوب شروع کردن، صبر لازم است."
+  "ex": "The movie will begin at eight o'clock.",
+  "exfa": "فیلم ساعت هشت شروع می‌شود."
  },
  {
   "i": 3459,
@@ -28455,16 +28455,16 @@
   "en": "royal",
   "fa": "سلطنتی / شاهانه",
   "cat": "adj",
-  "ex": "This room is too royal for me.",
-  "exfa": "این اتاق برای من زیادی سلطنتی است."
+  "ex": "The royal family lives in a huge palace.",
+  "exfa": "خانواده‌ی سلطنتی در یک کاخ بزرگ زندگی می‌کند."
  },
  {
   "i": 3462,
   "en": "switch",
   "fa": "کلید / تغییر دادن",
   "cat": "noun",
-  "ex": "To switch well, you need patience.",
-  "exfa": "برای خوب کلید، صبر لازم است."
+  "ex": "She switched jobs to work closer to home.",
+  "exfa": "او شغلش را عوض کرد تا نزدیک‌تر به خانه کار کند."
  },
  {
   "i": 3463,
@@ -28567,8 +28567,8 @@
   "en": "weekly",
   "fa": "هفتگی / هر هفته",
   "cat": "time",
-  "ex": "I weekly drink tea at night.",
-  "exfa": "شب‌ها هفتگی چای می‌نوشم."
+  "ex": "We have a weekly meeting every Monday morning.",
+  "exfa": "ما هر دوشنبه صبح یک جلسه‌ی هفتگی داریم."
  },
  {
   "i": 3476,
@@ -29027,8 +29027,8 @@
   "en": "clinical",
   "fa": "بالینی / کلینیکی",
   "cat": "adj",
-  "ex": "Everything felt clinical after the trip.",
-  "exfa": "بعد از سفر همه چیز بالینی به نظر می‌رسید."
+  "ex": "The new drug is still in clinical trials.",
+  "exfa": "داروی جدید هنوز در مرحله‌ی آزمایش‌های بالینی است."
  },
  {
   "i": 3532,
@@ -29059,8 +29059,8 @@
   "en": "highly",
   "fa": "بسیار / به شدت",
   "cat": "adv",
-  "ex": "I highly drink tea at night.",
-  "exfa": "شب‌ها بسیار چای می‌نوشم."
+  "ex": "This restaurant is highly recommended by locals.",
+  "exfa": "این رستوران به‌شدت مورد توصیه‌ی اهالی محلی است."
  },
  {
   "i": 3536,
@@ -29139,8 +29139,8 @@
   "en": "scientific",
   "fa": "علمی",
   "cat": "adj",
-  "ex": "This room is too scientific for me.",
-  "exfa": "این اتاق برای من زیادی علمی است."
+  "ex": "The magazine publishes new scientific discoveries every month.",
+  "exfa": "این مجله هر ماه کشفیات علمی جدید منتشر می‌کند."
  },
  {
   "i": 3546,
@@ -29211,8 +29211,8 @@
   "en": "particularly",
   "fa": "خصوصاً / به‌ویژه",
   "cat": "adv",
-  "ex": "They spoke particularly about the problem.",
-  "exfa": "خصوصاً درباره‌ی مشکل حرف زدند."
+  "ex": "I particularly enjoyed the last chapter of the book.",
+  "exfa": "به‌ویژه از فصل آخر کتاب لذت بردم."
  },
  {
   "i": 3555,
@@ -29431,8 +29431,8 @@
   "en": "recommend",
   "fa": "توصیه کردن / پیشنهاد",
   "cat": "verb",
-  "ex": "I like to recommend in the morning.",
-  "exfa": "توصیه کردن در صبح را دوست دارم."
+  "ex": "I recommend this restaurant for its pasta.",
+  "exfa": "این رستوران را برای پاستایش توصیه می‌کنم."
  },
  {
   "i": 3582,
@@ -29655,8 +29655,8 @@
   "en": "quickly",
   "fa": "سریع / به‌سرعت",
   "cat": "adv",
-  "ex": "She quickly finished the work.",
-  "exfa": "او سریع کار را تمام کرد.",
+  "ex": "The bus arrived quickly, so we didn't wait long.",
+  "exfa": "اتوبوس سریع رسید، پس زیاد منتظر نماندیم.",
   "syn": [
    "rapidly",
    "swiftly"
@@ -29707,8 +29707,8 @@
   "en": "heat",
   "fa": "گرم کردن / گرما",
   "cat": "verb",
-  "ex": "It is not easy to heat every day.",
-  "exfa": "هر روز گرما آسان نیست."
+  "ex": "Please heat the soup before you serve it.",
+  "exfa": "لطفاً قبل از سرو کردن سوپ را گرم کن."
  },
  {
   "i": 3616,
@@ -29755,8 +29755,8 @@
   "en": "chemical",
   "fa": "شیمیایی / ماده شیمیایی",
   "cat": "adj",
-  "ex": "This room is too chemical for me.",
-  "exfa": "این اتاق برای من زیادی شیمیایی است."
+  "ex": "The factory uses several chemical products.",
+  "exfa": "کارخانه از چند محصول شیمیایی استفاده می‌کند."
  },
  {
   "i": 3622,
@@ -29803,8 +29803,8 @@
   "en": "enable",
   "fa": "فعال کردن / قادر کردن",
   "cat": "verb",
-  "ex": "Everything felt enable after the trip.",
-  "exfa": "بعد از سفر همه چیز فعال کردن به نظر می‌رسید."
+  "ex": "This app enables users to track their spending.",
+  "exfa": "این اپلیکیشن کاربران را قادر می‌سازد هزینه‌هایشان را پیگیری کنند."
  },
  {
   "i": 3628,
@@ -29947,8 +29947,8 @@
   "en": "walk",
   "fa": "راه رفتن / پیاده‌روی",
   "cat": "verb",
-  "ex": "I like to walk in the morning.",
-  "exfa": "راه رفتن در صبح را دوست دارم."
+  "ex": "We walk to the market together every Saturday.",
+  "exfa": "ما هر شنبه با هم پیاده تا بازار می‌رویم."
  },
  {
   "i": 3646,
@@ -30144,8 +30144,8 @@
   "en": "pick",
   "fa": "انتخاب کردن / چیدن",
   "cat": "verb",
-  "ex": "I like to pick in the morning.",
-  "exfa": "انتخاب کردن در صبح را دوست دارم."
+  "ex": "Let's pick a movie to watch tonight.",
+  "exfa": "بیا امشب یک فیلم برای تماشا انتخاب کنیم."
  },
  {
   "i": 3670,
@@ -30796,8 +30796,8 @@
   "en": "magic",
   "fa": "جادو",
   "cat": "adj",
-  "ex": "This room is too magic for me.",
-  "exfa": "این اتاق برای من زیادی جادو است."
+  "ex": "The children watched the magic show with wide eyes.",
+  "exfa": "بچه‌ها با چشمانی گشاد نمایش جادو را تماشا کردند."
  },
  {
   "i": 3750,
@@ -31068,8 +31068,8 @@
   "en": "identify",
   "fa": "شناسایی کردن",
   "cat": "verb",
-  "ex": "To identify well, you need patience.",
-  "exfa": "برای خوب شناسایی کردن، صبر لازم است."
+  "ex": "Police asked witnesses to identify the suspect.",
+  "exfa": "پلیس از شاهدان خواست مظنون را شناسایی کنند."
  },
  {
   "i": 3783,
@@ -31324,8 +31324,8 @@
   "en": "automatically",
   "fa": "به‌طور خودکار / خودبه‌خود",
   "cat": "adv",
-  "ex": "They spoke automatically about the problem.",
-  "exfa": "خودکار درباره‌ی مشکل حرف زدند."
+  "ex": "The lights automatically turn off at midnight.",
+  "exfa": "چراغ‌ها نیمه‌شب به‌طور خودکار خاموش می‌شوند."
  },
  {
   "i": 3815,
@@ -31412,8 +31412,8 @@
   "en": "approval",
   "fa": "تأیید / موافقت",
   "cat": "noun",
-  "ex": "This room is too approval for me.",
-  "exfa": "این اتاق برای من زیادی تأیید است."
+  "ex": "The project needs approval from the manager.",
+  "exfa": "این پروژه نیاز به تأیید مدیر دارد."
  },
  {
   "i": 3826,
@@ -31492,8 +31492,8 @@
   "en": "equal",
   "fa": "برابر / مساوی",
   "cat": "adj",
-  "ex": "Everything felt equal after the trip.",
-  "exfa": "بعد از سفر همه چیز برابر به نظر می‌رسید."
+  "ex": "Everyone deserves equal treatment under the law.",
+  "exfa": "همه سزاوار رفتار برابر در برابر قانون هستند."
  },
  {
   "i": 3836,
@@ -31572,8 +31572,8 @@
   "en": "advertisement",
   "fa": "آگهی / تبلیغ",
   "cat": "noun",
-  "ex": "This room is too advertisement for me.",
-  "exfa": "این اتاق برای من زیادی آگهی است."
+  "ex": "I saw an advertisement for a new phone on TV.",
+  "exfa": "یک آگهی برای یک گوشی جدید در تلویزیون دیدم."
  },
  {
   "i": 3846,
@@ -31748,8 +31748,8 @@
   "en": "portable",
   "fa": "حمل‌پذیر / قابل حمل",
   "cat": "adj",
-  "ex": "Everything felt portable after the trip.",
-  "exfa": "بعد از سفر همه چیز حمل‌پذیر به نظر می‌رسید."
+  "ex": "She bought a portable speaker to take on trips.",
+  "exfa": "او یک بلندگوی قابل حمل برای سفرها خرید."
  },
  {
   "i": 3868,
@@ -31764,8 +31764,8 @@
   "en": "electrical",
   "fa": "الکتریکی / برقی",
   "cat": "adj",
-  "ex": "This room is too electrical for me.",
-  "exfa": "این اتاق برای من زیادی الکتریکی است."
+  "ex": "An electrical fault caused the fire in the house.",
+  "exfa": "یک نقص الکتریکی باعث آتش‌سوزی در خانه شد."
  },
  {
   "i": 3870,
@@ -31928,16 +31928,16 @@
   "en": "delete",
   "fa": "حذف / پاک کردن",
   "cat": "tech",
-  "ex": "I like to delete in the morning.",
-  "exfa": "حذف در صبح را دوست دارم."
+  "ex": "I accidentally deleted an important file.",
+  "exfa": "به‌طور تصادفی یک فایل مهم را حذف کردم."
  },
  {
   "i": 3890,
   "en": "assembly",
   "fa": "مجمع / گردهمایی",
   "cat": "noun",
-  "ex": "They spoke assembly about the problem.",
-  "exfa": "مجمعیه درباره‌ی مشکل حرف زدند."
+  "ex": "All students gathered in the hall for the morning assembly.",
+  "exfa": "همه‌ی دانش‌آموزان برای گردهمایی صبحگاهی در سالن جمع شدند."
  },
  {
   "i": 3891,
@@ -32248,8 +32248,8 @@
   "en": "graphic",
   "fa": "گرافیکی / تصویری",
   "cat": "adj",
-  "ex": "This room is too graphic for me.",
-  "exfa": "این اتاق برای من زیادی گرافیکی است."
+  "ex": "She designed the graphic for the new poster.",
+  "exfa": "او طرح گرافیکی پوستر جدید را طراحی کرد."
  },
  {
   "i": 3930,
@@ -32312,8 +32312,8 @@
   "en": "anonymous",
   "fa": "ناشناس / بی‌نام",
   "cat": "adj",
-  "ex": "This room is too anonymous for me.",
-  "exfa": "این اتاق برای من زیادی نام‌نهاد است."
+  "ex": "The donor chose to remain anonymous.",
+  "exfa": "اهداکننده ترجیح داد ناشناس بماند."
  },
  {
   "i": 3938,
@@ -32480,8 +32480,8 @@
   "en": "clearly",
   "fa": "به وضوح / روشن",
   "cat": "adv",
-  "ex": "They spoke clearly about the problem.",
-  "exfa": "به وضوح درباره‌ی مشکل حرف زدند.",
+  "ex": "Please speak more clearly so I can understand you.",
+  "exfa": "لطفاً واضح‌تر صحبت کن تا بتوانم بفهمم.",
   "syn": [
    "plainly",
    "distinctly"
@@ -32600,8 +32600,8 @@
   "en": "frequently",
   "fa": "بیش‌تر اوقات / مرتب",
   "cat": "adv",
-  "ex": "He answered frequently.",
-  "exfa": "او بیش‌تر اوقات جواب داد."
+  "ex": "Trains run frequently between the two cities.",
+  "exfa": "قطارها مرتب بین این دو شهر رفت‌وآمد می‌کنند."
  },
  {
   "i": 3973,
@@ -32656,8 +32656,8 @@
   "en": "bear",
   "fa": "خرس / تحمل کردن",
   "cat": "animal",
-  "ex": "It is not easy to bear every day.",
-  "exfa": "هر روز خرس آسان نیست."
+  "ex": "A brown bear walked out of the forest.",
+  "exfa": "یک خرس قهوه‌ای از جنگل بیرون آمد."
  },
  {
   "i": 3980,
@@ -32772,8 +32772,8 @@
   "en": "exactly",
   "fa": "دقیقاً / عیناً",
   "cat": "adv",
-  "ex": "She exactly finished the work.",
-  "exfa": "او دقیقاً کار را تمام کرد."
+  "ex": "I don't know exactly what time the movie starts.",
+  "exfa": "دقیقاً نمی‌دانم فیلم چه ساعتی شروع می‌شود."
  },
  {
   "i": 3994,
@@ -32812,16 +32812,16 @@
   "en": "nearly",
   "fa": "تقریباً / نزدیک",
   "cat": "adv",
-  "ex": "They spoke nearly about the problem.",
-  "exfa": "تقریباً درباره‌ی مشکل حرف زدند."
+  "ex": "We are nearly at the airport now.",
+  "exfa": "الان تقریباً به فرودگاه رسیده‌ایم."
  },
  {
   "i": 3999,
   "en": "eligible",
   "fa": "واجد شرایط / مناسب",
   "cat": "adj",
-  "ex": "Everything felt eligible after the trip.",
-  "exfa": "بعد از سفر همه چیز واجد شرایط به نظر می‌رسید."
+  "ex": "Only students over eighteen are eligible for the scholarship.",
+  "exfa": "فقط دانش‌آموزان بالای هجده سال واجد شرایط بورسیه هستند."
  },
  {
   "i": 4000,
@@ -33116,8 +33116,8 @@
   "en": "editorial",
   "fa": "سرمقاله",
   "cat": "adj",
-  "ex": "Everything felt editorial after the trip.",
-  "exfa": "بعد از سفر همه چیز سرمقاله به نظر می‌رسید."
+  "ex": "The newspaper's editorial criticized the new tax policy.",
+  "exfa": "سرمقاله‌ی روزنامه از سیاست مالیاتی جدید انتقاد کرد."
  },
  {
   "i": 4036,
@@ -33200,8 +33200,8 @@
   "en": "replacement",
   "fa": "جایگزین / تعویض",
   "cat": "noun",
-  "ex": "This room is too replacement for me.",
-  "exfa": "این اتاق برای من زیادی جایگزین است."
+  "ex": "The company found a replacement for the broken part quickly.",
+  "exfa": "شرکت به سرعت جایگزینی برای قطعه‌ی شکسته پیدا کرد."
  },
  {
   "i": 4046,
@@ -33216,8 +33216,8 @@
   "en": "strategic",
   "fa": "استراتژیک / راهبردی",
   "cat": "adj",
-  "ex": "Everything felt strategic after the trip.",
-  "exfa": "بعد از سفر همه چیز استراتژیک به نظر می‌رسید."
+  "ex": "The company made a strategic decision to expand abroad.",
+  "exfa": "شرکت تصمیمی استراتژیک برای گسترش در خارج گرفت."
  },
  {
   "i": 4048,
@@ -33248,8 +33248,8 @@
   "en": "cent",
   "fa": "سنت / یک صدم",
   "cat": "noun",
-  "ex": "Everything felt cent after the trip.",
-  "exfa": "بعد از سفر همه چیز سنت به نظر می‌رسید."
+  "ex": "The candy costs only fifty cents.",
+  "exfa": "آن آب‌نبات فقط پنجاه سنت قیمت دارد."
  },
  {
   "i": 4052,
@@ -33272,8 +33272,8 @@
   "en": "fight",
   "fa": "جنگیدن / دعوا کردن",
   "cat": "verb",
-  "ex": "To fight well, you need patience.",
-  "exfa": "برای خوب جنگ، صبر لازم است."
+  "ex": "The two brothers often fight over the remote control.",
+  "exfa": "آن دو برادر اغلب بر سر کنترل تلویزیون دعوا می‌کنند."
  },
  {
   "i": 4055,
@@ -33332,8 +33332,8 @@
   "en": "obtain",
   "fa": "به دست آوردن / کسب کردن",
   "cat": "verb",
-  "ex": "I like to obtain in the morning.",
-  "exfa": "به دست آوردن در صبح را دوست دارم."
+  "ex": "You need a visa to obtain a work permit.",
+  "exfa": "برای به‌دست‌آوردن مجوز کار به ویزا نیاز داری."
  },
  {
   "i": 4062,
@@ -33396,8 +33396,8 @@
   "en": "roll",
   "fa": "رول / غلتاندن",
   "cat": "verb",
-  "ex": "I like to roll in the morning.",
-  "exfa": "رول در صبح را دوست دارم."
+  "ex": "The ball rolled down the hill and into the street.",
+  "exfa": "توپ از تپه غلتید و به خیابان رسید."
  },
  {
   "i": 4070,
@@ -33460,8 +33460,8 @@
   "en": "negative",
   "fa": "منفی",
   "cat": "adj",
-  "ex": "This room is too negative for me.",
-  "exfa": "این اتاق برای من زیادی منفی است."
+  "ex": "Try not to think about things in a negative way.",
+  "exfa": "سعی کن به چیزها منفی فکر نکنی."
  },
  {
   "i": 4078,
@@ -33604,8 +33604,8 @@
   "en": "proposal",
   "fa": "پیشنهاد",
   "cat": "noun",
-  "ex": "Everything felt proposal after the trip.",
-  "exfa": "بعد از سفر همه چیز پیشنهاد به نظر می‌رسید."
+  "ex": "The committee accepted the new proposal.",
+  "exfa": "کمیته پیشنهاد جدید را پذیرفت."
  },
  {
   "i": 4096,
@@ -33860,8 +33860,8 @@
   "en": "wear",
   "fa": "پوشیدن / به تن کردن",
   "cat": "clothes",
-  "ex": "It is not easy to wear every day.",
-  "exfa": "هر روز پوشیدن آسان نیست."
+  "ex": "You should wear a coat, it's cold outside.",
+  "exfa": "باید یک پالتو بپوشی، بیرون سرد است."
  },
  {
   "i": 4128,
@@ -33908,8 +33908,8 @@
   "en": "representative",
   "fa": "نماینده / عامل",
   "cat": "adj",
-  "ex": "This room is too representative for me.",
-  "exfa": "این اتاق برای من زیادی نماینده است."
+  "ex": "A sales representative called about our order.",
+  "exfa": "یک نماینده‌ی فروش درباره‌ی سفارش ما تماس گرفت."
  },
  {
   "i": 4134,
@@ -34089,8 +34089,8 @@
   "en": "removed",
   "fa": "حذف شد / برداشته شد",
   "cat": "verb",
-  "ex": "To removed well, you need patience.",
-  "exfa": "برای خوب برداشت، صبر لازم است."
+  "ex": "The stain was completely removed after washing.",
+  "exfa": "لکه پس از شست‌وشو کاملاً برداشته شد."
  },
  {
   "i": 4155,
@@ -34309,8 +34309,8 @@
   "en": "dynamic",
   "fa": "پویا / متحرک",
   "cat": "adj",
-  "ex": "This room is too dynamic for me.",
-  "exfa": "این اتاق برای من زیادی پویا است."
+  "ex": "She has a dynamic personality that energizes the whole team.",
+  "exfa": "او شخصیتی پویا دارد که به کل تیم انرژی می‌دهد."
  },
  {
   "i": 4182,
@@ -34417,8 +34417,8 @@
   "en": "originally",
   "fa": "در ابتدا / در اصل",
   "cat": "adv",
-  "ex": "They spoke originally about the problem.",
-  "exfa": "در ابتدا درباره‌ی مشکل حرف زدند."
+  "ex": "The house was originally built in the 1920s.",
+  "exfa": "این خانه در اصل در دهه‌ی ۱۹۲۰ ساخته شده بود."
  },
  {
   "i": 4195,
@@ -34685,8 +34685,8 @@
   "en": "instant",
   "fa": "لحظه / فوری",
   "cat": "adj",
-  "ex": "Everything felt instant after the trip.",
-  "exfa": "بعد از سفر همه چیز لحظه به نظر می‌رسید."
+  "ex": "I usually drink instant coffee in the morning.",
+  "exfa": "من معمولاً صبح‌ها قهوه‌ی فوری می‌نوشم."
  },
  {
   "i": 4228,
@@ -34701,8 +34701,8 @@
   "en": "automatic",
   "fa": "خودکار / اتوماتیک",
   "cat": "adj",
-  "ex": "This room is too automatic for me.",
-  "exfa": "این اتاق برای من زیادی خودکار است."
+  "ex": "This is an automatic door that opens by itself.",
+  "exfa": "این یک در خودکار است که خودش باز می‌شود."
  },
  {
   "i": 4230,
@@ -34845,8 +34845,8 @@
   "en": "manner",
   "fa": "شیوه / روش",
   "cat": "noun",
-  "ex": "He answered the question in a polite manner.",
-  "exfa": "او با شیوه‌ای مؤدبانه به سؤال پاسخ داد."
+  "ex": "She always speaks to customers in a friendly manner.",
+  "exfa": "او همیشه با مشتری‌ها با شیوه‌ای دوستانه صحبت می‌کند."
  },
  {
   "i": 4248,
@@ -35009,8 +35009,8 @@
   "en": "principal",
   "fa": "مدیر / اصلی",
   "cat": "adj",
-  "ex": "Everything felt principal after the trip.",
-  "exfa": "بعد از سفر همه چیز مدیر به نظر می‌رسید."
+  "ex": "The principal called a meeting for all the teachers.",
+  "exfa": "مدیر مدرسه جلسه‌ای برای همه‌ی معلم‌ها تشکیل داد."
  },
  {
   "i": 4268,
@@ -35077,8 +35077,8 @@
   "en": "appeal",
   "fa": "جذابیت / درخواست",
   "cat": "noun",
-  "ex": "Everything felt appeal after the trip.",
-  "exfa": "بعد از سفر همه چیز تقاضا به نظر می‌رسید."
+  "ex": "The old town has a special appeal for tourists.",
+  "exfa": "شهر قدیمی برای گردشگران جذابیت خاصی دارد."
  },
  {
   "i": 4276,
@@ -35101,8 +35101,8 @@
   "en": "previously",
   "fa": "قبلاً",
   "cat": "adv",
-  "ex": "They spoke previously about the problem.",
-  "exfa": "قبلاً درباره‌ی مشکل حرف زدند."
+  "ex": "He had previously worked as a teacher before joining our team.",
+  "exfa": "او قبلاً به عنوان معلم کار می‌کرد پیش از اینکه به تیم ما بپیوندد."
  },
  {
   "i": 4279,
@@ -35133,8 +35133,8 @@
   "en": "beat",
   "fa": "شکست دادن / ضرب",
   "cat": "verb",
-  "ex": "To beat well, you need patience.",
-  "exfa": "برای خوب شکست دادن، صبر لازم است."
+  "ex": "Our team beat theirs by two goals.",
+  "exfa": "تیم ما تیم آن‌ها را با دو گل شکست داد."
  },
  {
   "i": 4283,
@@ -35229,8 +35229,8 @@
   "en": "improved",
   "fa": "بهتر شد / بهبود یافت",
   "cat": "verb",
-  "ex": "I like to improved in the morning.",
-  "exfa": "بهتر شد در صبح را دوست دارم."
+  "ex": "His English has improved a lot since he moved abroad.",
+  "exfa": "انگلیسی او از وقتی به خارج رفته خیلی بهبود یافته است."
  },
  {
   "i": 4294,
@@ -35441,8 +35441,8 @@
   "en": "certainly",
   "fa": "مطمئناً / قطعاً",
   "cat": "adv",
-  "ex": "I certainly drink tea at night.",
-  "exfa": "شب‌ها مطمئناً چای می‌نوشم."
+  "ex": "I will certainly call you back tomorrow.",
+  "exfa": "من فردا مطمئناً به شما زنگ می‌زنم."
  },
  {
   "i": 4320,
@@ -35569,8 +35569,8 @@
   "en": "mostly",
   "fa": "بیشتر / عموماً",
   "cat": "adv",
-  "ex": "I mostly drink tea at night.",
-  "exfa": "شب‌ها بیشتر چای می‌نوشم."
+  "ex": "We mostly eat rice and vegetables at home.",
+  "exfa": "ما در خانه بیشتر برنج و سبزیجات می‌خوریم."
  },
  {
   "i": 4336,
@@ -35749,8 +35749,8 @@
   "en": "serial",
   "fa": "پیاپی / سریالی",
   "cat": "adj",
-  "ex": "This room is too serial for me.",
-  "exfa": "این اتاق برای من زیادی پیاپی است."
+  "ex": "Police finally caught the serial burglar last night.",
+  "exfa": "پلیس بالاخره دیشب دزد سریالی را دستگیر کرد."
  },
  {
   "i": 4358,
@@ -35845,8 +35845,8 @@
   "en": "permit",
   "fa": "اجازه دادن / مجوز",
   "cat": "verb",
-  "ex": "I like to permit in the morning.",
-  "exfa": "اجازه دادن در صبح را دوست دارم."
+  "ex": "You need a permit to build here.",
+  "exfa": "برای ساخت‌وساز اینجا به مجوز نیاز داری."
  },
  {
   "i": 4370,
@@ -35957,8 +35957,8 @@
   "en": "specifically",
   "fa": "خصوصاً / دقیقاً",
   "cat": "adv",
-  "ex": "I specifically drink tea at night.",
-  "exfa": "شب‌ها خصوصاً چای می‌نوشم."
+  "ex": "This course was designed specifically for beginners.",
+  "exfa": "این دوره مخصوصاً برای مبتدیان طراحی شده است."
  },
  {
   "i": 4384,
@@ -35989,8 +35989,8 @@
   "en": "represent",
   "fa": "نمایندگی کردن",
   "cat": "verb",
-  "ex": "Everything felt represent after the trip.",
-  "exfa": "بعد از سفر همه چیز نمایندگی کردن به نظر می‌رسید."
+  "ex": "She will represent our school in the competition.",
+  "exfa": "او در مسابقه نماینده‌ی مدرسه‌ی ما خواهد بود."
  },
  {
   "i": 4388,
@@ -36005,8 +36005,8 @@
   "en": "ideal",
   "fa": "ایده‌آل / بهترین",
   "cat": "adj",
-  "ex": "This room is too ideal for me.",
-  "exfa": "این اتاق برای من زیادی ایده‌آل است."
+  "ex": "This apartment is ideal for a small family.",
+  "exfa": "این آپارتمان برای یک خانواده‌ی کوچک ایده‌آل است."
  },
  {
   "i": 4390,
@@ -36509,8 +36509,8 @@
   "en": "attempt",
   "fa": "تلاش",
   "cat": "verb",
-  "ex": "It is not easy to attempt every day.",
-  "exfa": "هر روز تلاش آسان نیست."
+  "ex": "She made another attempt to pass the driving test.",
+  "exfa": "او یک تلاش دیگر برای قبول شدن در آزمون رانندگی کرد."
  },
  {
   "i": 4452,
@@ -36785,8 +36785,8 @@
   "en": "kill",
   "fa": "کشتن / قتل",
   "cat": "crime",
-  "ex": "I like to kill in the morning.",
-  "exfa": "کشتن در صبح را دوست دارم."
+  "ex": "The article says pollution can kill many animals.",
+  "exfa": "این مقاله می‌گوید آلودگی می‌تواند بسیاری از حیوانات را بکشد."
  },
  {
   "i": 4486,
@@ -36977,8 +36977,8 @@
   "en": "spread",
   "fa": "پخش کردن / گسترش",
   "cat": "verb",
-  "ex": "I like to spread in the morning.",
-  "exfa": "پخش کردن در صبح را دوست دارم."
+  "ex": "News of the accident spread quickly through town.",
+  "exfa": "خبر تصادف سریع در شهر پخش شد."
  },
  {
   "i": 4510,
@@ -37089,8 +37089,8 @@
   "en": "experienced",
   "fa": "باتجربه / مجرب",
   "cat": "work",
-  "ex": "It is not easy to experienced every day.",
-  "exfa": "هر روز تجربه‌کار آسان نیست."
+  "ex": "We hired an experienced teacher for the class.",
+  "exfa": "ما یک معلم باتجربه برای کلاس استخدام کردیم."
  },
  {
   "i": 4524,
@@ -37169,8 +37169,8 @@
   "en": "totally",
   "fa": "کاملاً",
   "cat": "adv",
-  "ex": "She totally finished the work.",
-  "exfa": "او کاملاً کار را تمام کرد."
+  "ex": "I totally agree with your plan.",
+  "exfa": "کاملاً با نقشه‌ات موافقم."
  },
  {
   "i": 4534,
@@ -37305,8 +37305,8 @@
   "en": "extremely",
   "fa": "بسیار / فوق‌العاده",
   "cat": "adv",
-  "ex": "They spoke extremely about the problem.",
-  "exfa": "بسیار درباره‌ی مشکل حرف زدند."
+  "ex": "The exam was extremely difficult this year.",
+  "exfa": "امسال امتحان بسیار سخت بود."
  },
  {
   "i": 4551,
@@ -37649,8 +37649,8 @@
   "en": "unlimited",
   "fa": "نامحدود / بی‌نهایت",
   "cat": "adj",
-  "ex": "I like to unlimited in the morning.",
-  "exfa": "نامحدود در صبح را دوست دارم."
+  "ex": "The new phone plan offers unlimited data.",
+  "exfa": "طرح جدید تلفن همراه اینترنت نامحدود ارائه می‌دهد."
  },
  {
   "i": 4594,
@@ -37721,8 +37721,8 @@
   "en": "wave",
   "fa": "موج / تکان دادن",
   "cat": "nature",
-  "ex": "To wave well, you need patience.",
-  "exfa": "برای خوب موج، صبر لازم است."
+  "ex": "A big wave knocked the surfer off his board.",
+  "exfa": "یک موج بزرگ موج‌سوار را از تخته‌اش انداخت."
  },
  {
   "i": 4603,
@@ -38166,8 +38166,8 @@
   "en": "attached",
   "fa": "متصل / وابسته",
   "cat": "verb",
-  "ex": "I like to attached in the morning.",
-  "exfa": "متصل در صبح را دوست دارم."
+  "ex": "Please find the report attached to this email.",
+  "exfa": "لطفاً گزارش پیوست‌شده به این ایمیل را ببینید."
  },
  {
   "i": 4658,
@@ -38182,8 +38182,8 @@
   "en": "disabled",
   "fa": "ناتوان / معلول",
   "cat": "adj",
-  "ex": "It is not easy to disabled every day.",
-  "exfa": "هر روز ناتوان آسان نیست."
+  "ex": "The building has a ramp for disabled visitors.",
+  "exfa": "این ساختمان برای بازدیدکنندگان معلول یک سطح شیب‌دار دارد."
  },
  {
   "i": 4660,
@@ -38262,8 +38262,8 @@
   "en": "adopted",
   "fa": "فرزندخوانده / پذیرفته شده",
   "cat": "verb",
-  "ex": "I like to adopted in the morning.",
-  "exfa": "فرزند خوانده در صبح را دوست دارم."
+  "ex": "They adopted a baby girl from a nearby orphanage.",
+  "exfa": "آن‌ها یک دختر بچه را از یتیم‌خانه‌ای نزدیک به فرزندی پذیرفتند."
  },
  {
   "i": 4670,
@@ -38342,8 +38342,8 @@
   "en": "constant",
   "fa": "ثابت / دائم",
   "cat": "adj",
-  "ex": "Everything felt constant after the trip.",
-  "exfa": "بعد از سفر همه چیز ثابت به نظر می‌رسید."
+  "ex": "The constant noise from the street kept me awake.",
+  "exfa": "سر و صدای دائم خیابان نگذاشت بخوابم."
  },
  {
   "i": 4680,
@@ -38438,8 +38438,8 @@
   "en": "wonder",
   "fa": "متعجب شدن / تعجب",
   "cat": "verb",
-  "ex": "It is not easy to wonder every day.",
-  "exfa": "هر روز تعجب آسان نیست."
+  "ex": "I often wonder what my life would be like abroad.",
+  "exfa": "من اغلب به این فکر می‌کنم که زندگی‌ام در خارج از کشور چطور می‌بود."
  },
  {
   "i": 4692,
@@ -38630,8 +38630,8 @@
   "en": "replace",
   "fa": "جایگزین کردن",
   "cat": "verb",
-  "ex": "It is not easy to replace every day.",
-  "exfa": "هر روز جایگزین کردن آسان نیست."
+  "ex": "We need to replace the broken window.",
+  "exfa": "باید پنجره‌ی شکسته را جایگزین کنیم."
  },
  {
   "i": 4716,
@@ -38726,8 +38726,8 @@
   "en": "objective",
   "fa": "هدف / عینی",
   "cat": "adj",
-  "ex": "Everything felt objective after the trip.",
-  "exfa": "بعد از سفر همه چیز هدف به نظر می‌رسید."
+  "ex": "Our main objective is to increase sales.",
+  "exfa": "هدف اصلی ما افزایش فروش است."
  },
  {
   "i": 4728,
@@ -38822,8 +38822,8 @@
   "en": "slide",
   "fa": "لغزش / اسلاید",
   "cat": "verb",
-  "ex": "It is not easy to slide every day.",
-  "exfa": "هر روز لغزش آسان نیست."
+  "ex": "The kids love to slide down the hill on their sleds.",
+  "exfa": "بچه‌ها عاشق سر خوردن از تپه با سورتمه هستند."
  },
  {
   "i": 4740,
@@ -38934,8 +38934,8 @@
   "en": "lock",
   "fa": "قفل / قفل کردن",
   "cat": "house",
-  "ex": "I like to lock in the morning.",
-  "exfa": "قفل در صبح را دوست دارم."
+  "ex": "Don't forget to lock the door before you leave.",
+  "exfa": "یادت نرود قبل از رفتن در را قفل کنی."
  },
  {
   "i": 4754,
@@ -39211,8 +39211,8 @@
   "en": "initiative",
   "fa": "ابتکار / طرح",
   "cat": "adj",
-  "ex": "Everything felt initiative after the trip.",
-  "exfa": "بعد از سفر همه چیز ابتکار به نظر می‌رسید."
+  "ex": "The city launched a new initiative to reduce plastic waste.",
+  "exfa": "شهرداری طرحی جدید برای کاهش زباله‌های پلاستیکی راه‌اندازی کرد."
  },
  {
   "i": 4788,
@@ -39327,8 +39327,8 @@
   "en": "modify",
   "fa": "تغییر دادن / اصلاح کردن",
   "cat": "verb",
-  "ex": "I like to modify in the morning.",
-  "exfa": "تغییر دادن در صبح را دوست دارم."
+  "ex": "You can modify the settings at any time.",
+  "exfa": "هر وقت بخواهی می‌توانی تنظیمات را تغییر دهی."
  },
  {
   "i": 4802,
@@ -39351,8 +39351,8 @@
   "en": "truly",
   "fa": "واقعاً / به‌راستی",
   "cat": "adv",
-  "ex": "He answered truly.",
-  "exfa": "او واقعاً جواب داد."
+  "ex": "I am truly grateful for your help.",
+  "exfa": "من واقعاً از کمکت سپاسگزارم."
  },
  {
   "i": 4805,
@@ -39375,8 +39375,8 @@
   "en": "extensive",
   "fa": "گسترده / وسیع",
   "cat": "adj",
-  "ex": "Everything felt extensive after the trip.",
-  "exfa": "بعد از سفر همه چیز گسترده به نظر می‌رسید."
+  "ex": "The fire caused extensive damage to the building.",
+  "exfa": "آتش‌سوزی خسارت گسترده‌ای به ساختمان وارد کرد."
  },
  {
   "i": 4808,
@@ -39679,8 +39679,8 @@
   "en": "terminal",
   "fa": "پایانه / مرگبار",
   "cat": "adj",
-  "ex": "This room is too terminal for me.",
-  "exfa": "این اتاق برای من زیادی پایانه است."
+  "ex": "We waited for the bus at the terminal.",
+  "exfa": "ما در پایانه منتظر اتوبوس بودیم."
  },
  {
   "i": 4846,
@@ -39771,8 +39771,8 @@
   "en": "properly",
   "fa": "به درستی / صحیح",
   "cat": "adv",
-  "ex": "He answered properly.",
-  "exfa": "او به درستی جواب داد."
+  "ex": "Make sure the door is properly closed.",
+  "exfa": "مطمئن شو در به‌درستی بسته شده است."
  },
  {
   "i": 4857,
@@ -39827,8 +39827,8 @@
   "en": "newly",
   "fa": "به تازگی / جدیداً",
   "cat": "adv",
-  "ex": "I newly drink tea at night.",
-  "exfa": "شب‌ها به تازگی چای می‌نوشم."
+  "ex": "The newly married couple moved to a new city.",
+  "exfa": "زوج تازه‌ازدواج‌کرده به شهری جدید نقل مکان کردند."
  },
  {
   "i": 4864,
@@ -39939,8 +39939,8 @@
   "en": "consent",
   "fa": "رضایت / موافقت",
   "cat": "noun",
-  "ex": "This room is too consent for me.",
-  "exfa": "این اتاق برای من زیادی رضایت است."
+  "ex": "The doctor asked for her consent before the surgery.",
+  "exfa": "پزشک پیش از عمل جراحی رضایت او را خواست."
  },
  {
   "i": 4878,
@@ -40099,8 +40099,8 @@
   "en": "typical",
   "fa": "معمولی / نمونه‌ای",
   "cat": "adj",
-  "ex": "This room is too typical for me.",
-  "exfa": "این اتاق برای من زیادی معمولی است."
+  "ex": "A typical school day starts at eight o'clock.",
+  "exfa": "یک روز معمولی مدرسه ساعت هشت شروع می‌شود."
  },
  {
   "i": 4898,
@@ -40215,8 +40215,8 @@
   "en": "sufficient",
   "fa": "کافی",
   "cat": "adj",
-  "ex": "Everything felt sufficient after the trip.",
-  "exfa": "بعد از سفر همه چیز کافی به نظر می‌رسید."
+  "ex": "We don't have sufficient evidence to prove it.",
+  "exfa": "ما مدارک کافی برای اثبات آن نداریم."
  },
  {
   "i": 4912,
@@ -40463,8 +40463,8 @@
   "en": "merchandise",
   "fa": "کالا / تجارت",
   "cat": "verb",
-  "ex": "To merchandise well, you need patience.",
-  "exfa": "برای خوب کالا، صبر لازم است."
+  "ex": "The store sells official team merchandise like shirts and caps.",
+  "exfa": "این فروشگاه کالای رسمی تیم مانند تی‌شرت و کلاه می‌فروشد."
  },
  {
   "i": 4943,
@@ -40503,8 +40503,8 @@
   "en": "memorial",
   "fa": "یادبود / بنای یادبود",
   "cat": "place",
-  "ex": "Everything felt memorial after the trip.",
-  "exfa": "بعد از سفر همه چیز یادبود به نظر می‌رسید."
+  "ex": "Visitors leave flowers at the war memorial every year.",
+  "exfa": "بازدیدکنندگان هر سال گل‌هایی در بنای یادبود جنگ می‌گذارند."
  },
  {
   "i": 4948,
@@ -40599,8 +40599,8 @@
   "en": "biological",
   "fa": "زیستی / بیولوژیکی",
   "cat": "adj",
-  "ex": "Everything felt biological after the trip.",
-  "exfa": "بعد از سفر همه چیز زیستی به نظر می‌رسید."
+  "ex": "She finally met her biological father last year.",
+  "exfa": "او سال گذشته بالاخره پدر زیستی خود را ملاقات کرد."
  },
  {
   "i": 4960,
@@ -40711,8 +40711,8 @@
   "en": "pregnant",
   "fa": "باردار",
   "cat": "adj",
-  "ex": "This room is too pregnant for me.",
-  "exfa": "این اتاق برای من زیادی باردار است."
+  "ex": "My sister is pregnant with her first baby.",
+  "exfa": "خواهرم برای اولین بار باردار است."
  },
  {
   "i": 4974,
@@ -40799,16 +40799,16 @@
   "en": "normally",
   "fa": "معمولاً / عادتاً",
   "cat": "adv",
-  "ex": "He answered normally.",
-  "exfa": "او معمولاً جواب داد."
+  "ex": "I normally wake up at seven o'clock.",
+  "exfa": "من معمولاً ساعت هفت بیدار می‌شوم."
  },
  {
   "i": 4985,
   "en": "spiritual",
   "fa": "روحانی / معنوی",
   "cat": "adj",
-  "ex": "This room is too spiritual for me.",
-  "exfa": "این اتاق برای من زیادی روحانی است."
+  "ex": "Meditation gives her a sense of spiritual peace.",
+  "exfa": "مدیتیشن به او حس آرامش معنوی می‌دهد."
  },
  {
   "i": 4986,
@@ -40919,8 +40919,8 @@
   "en": "flexible",
   "fa": "انعطاف‌پذیر",
   "cat": "adj",
-  "ex": "Everything felt flexible after the trip.",
-  "exfa": "بعد از سفر همه چیز انعطاف‌پذیر به نظر می‌رسید."
+  "ex": "My boss lets me keep flexible working hours.",
+  "exfa": "رئیسم اجازه می‌دهد ساعات کاری انعطاف‌پذیر داشته باشم."
  },
  {
   "i": 5000,
@@ -40951,16 +40951,16 @@
   "en": "numerous",
   "fa": "بسیار / متعدد",
   "cat": "adj",
-  "ex": "Everything felt numerous after the trip.",
-  "exfa": "بعد از سفر همه چیز بسیار به نظر می‌رسید."
+  "ex": "She has won numerous awards for her research.",
+  "exfa": "او جوایز متعددی برای پژوهش‌هایش برده است."
  },
  {
   "i": 5004,
   "en": "relatively",
   "fa": "نسبتاً / تقریباً",
   "cat": "adv",
-  "ex": "He answered relatively.",
-  "exfa": "او نسبتاً جواب داد."
+  "ex": "The test was relatively easy compared to last time.",
+  "exfa": "امتحان نسبت به دفعه‌ی قبل نسبتاً آسان بود."
  },
  {
   "i": 5005,
@@ -41063,8 +41063,8 @@
   "en": "intellectual",
   "fa": "فکری / ذهنی",
   "cat": "adj",
-  "ex": "This room is too intellectual for me.",
-  "exfa": "این اتاق برای من زیادی فکری است."
+  "ex": "The novel raises deep intellectual questions about identity.",
+  "exfa": "این رمان پرسش‌های فکری عمیقی درباره‌ی هویت مطرح می‌کند."
  },
  {
   "i": 5018,
@@ -41115,8 +41115,8 @@
   "en": "magnetic",
   "fa": "مغناطیسی",
   "cat": "adj",
-  "ex": "Everything felt magnetic after the trip.",
-  "exfa": "بعد از سفر همه چیز مغناطیسی به نظر می‌رسید."
+  "ex": "The compass needle points north because of the magnetic field.",
+  "exfa": "عقربه‌ی قطب‌نما به خاطر میدان مغناطیسی به سمت شمال اشاره می‌کند."
  },
  {
   "i": 5024,
@@ -41139,8 +41139,8 @@
   "en": "effectively",
   "fa": "به‌طور مؤثر / عملاً",
   "cat": "adv",
-  "ex": "They spoke effectively about the problem.",
-  "exfa": "مؤثر درباره‌ی مشکل حرف زدند."
+  "ex": "The new medicine treats the infection effectively.",
+  "exfa": "داروی جدید عفونت را به‌طور مؤثر درمان می‌کند."
  },
  {
   "i": 5027,
@@ -41355,8 +41355,8 @@
   "en": "dependent",
   "fa": "وابسته / تابع",
   "cat": "adj",
-  "ex": "This room is too dependent for me.",
-  "exfa": "این اتاق برای من زیادی وابسته است."
+  "ex": "Young children are completely dependent on their parents.",
+  "exfa": "کودکان خردسال کاملاً به والدینشان وابسته‌اند."
  },
  {
   "i": 5054,
@@ -41999,8 +41999,8 @@
   "en": "typically",
   "fa": "معمولاً / عموماً",
   "cat": "adv",
-  "ex": "She typically finished the work.",
-  "exfa": "او معمولاً کار را تمام کرد."
+  "ex": "Meetings typically last about an hour.",
+  "exfa": "جلسات معمولاً حدود یک ساعت طول می‌کشند."
  },
  {
   "i": 5134,
@@ -42047,8 +42047,8 @@
   "en": "smooth",
   "fa": "صاف / ملایم",
   "cat": "noun",
-  "ex": "Everything felt smooth after the trip.",
-  "exfa": "بعد از سفر همه چیز صاف به نظر می‌رسید."
+  "ex": "The new road is smooth and easy to drive on.",
+  "exfa": "جاده‌ی جدید صاف و برای رانندگی راحت است."
  },
  {
   "i": 5140,
@@ -42143,8 +42143,8 @@
   "en": "consultant",
   "fa": "مشاور / کارشناس",
   "cat": "work",
-  "ex": "Everything felt consultant after the trip.",
-  "exfa": "بعد از سفر همه چیز مشاور به نظر می‌رسید."
+  "ex": "They hired a consultant to improve their marketing strategy.",
+  "exfa": "آن‌ها یک مشاور برای بهبود استراتژی بازاریابی خود استخدام کردند."
  },
  {
   "i": 5152,
@@ -42371,8 +42371,8 @@
   "en": "hundred",
   "fa": "صد",
   "cat": "noun",
-  "ex": "It is not easy to hundred every day.",
-  "exfa": "هر روز صد آسان نیست."
+  "ex": "There were about a hundred people at the concert.",
+  "exfa": "حدود صد نفر در کنسرت بودند."
  },
  {
   "i": 5180,
@@ -42715,8 +42715,8 @@
   "en": "successfully",
   "fa": "با موفقیت",
   "cat": "adv",
-  "ex": "They spoke successfully about the problem.",
-  "exfa": "با موفقیت درباره‌ی مشکل حرف زدند."
+  "ex": "He successfully finished the marathon this year.",
+  "exfa": "او امسال با موفقیت ماراتن را تمام کرد."
  },
  {
   "i": 5223,
@@ -42771,8 +42771,8 @@
   "en": "primarily",
   "fa": "عمدتاً / اولاً",
   "cat": "adv",
-  "ex": "She primarily finished the work.",
-  "exfa": "او عمدتاً کار را تمام کرد."
+  "ex": "The course is primarily designed for beginners.",
+  "exfa": "این دوره عمدتاً برای مبتدیان طراحی شده است."
  },
  {
   "i": 5230,
@@ -42867,8 +42867,8 @@
   "en": "organized",
   "fa": "سازمان‌یافته / منظم",
   "cat": "verb",
-  "ex": "I like to organized in the morning.",
-  "exfa": "سازمان‌یافته در صبح را دوست دارم."
+  "ex": "Our team is well organized this semester.",
+  "exfa": "تیم ما این ترم خیلی سازمان‌یافته است."
  },
  {
   "i": 5242,
@@ -43095,8 +43095,8 @@
   "en": "innovative",
   "fa": "نوآورانه / خلاقانه",
   "cat": "adj",
-  "ex": "This room is too innovative for me.",
-  "exfa": "این اتاق برای من زیادی نوآورانه است."
+  "ex": "The startup is known for its innovative approach to recycling.",
+  "exfa": "این استارتاپ به خاطر رویکرد نوآورانه‌اش در بازیافت شناخته شده است."
  },
  {
   "i": 5270,
@@ -43351,8 +43351,8 @@
   "en": "settlement",
   "fa": "استقرار / تسویه",
   "cat": "noun",
-  "ex": "This room is too settlement for me.",
-  "exfa": "این اتاق برای من زیادی حل است."
+  "ex": "The two companies reached a settlement out of court.",
+  "exfa": "دو شرکت خارج از دادگاه به توافق رسیدند."
  },
  {
   "i": 5302,
@@ -43451,8 +43451,8 @@
   "en": "imagine",
   "fa": "تصور کردن / خیال کردن",
   "cat": "verb",
-  "ex": "I like to imagine in the morning.",
-  "exfa": "تصور کردن در صبح را دوست دارم."
+  "ex": "Can you imagine living without a phone?",
+  "exfa": "می‌توانی زندگی بدون تلفن را تصور کنی؟"
  },
  {
   "i": 5314,
@@ -43807,8 +43807,8 @@
   "en": "giant",
   "fa": "غول / بزرگ",
   "cat": "adj",
-  "ex": "This room is too giant for me.",
-  "exfa": "این اتاق برای من زیادی غول است."
+  "ex": "A giant wave crashed onto the shore.",
+  "exfa": "یک موج غول‌آسا به ساحل برخورد کرد."
  },
  {
   "i": 5358,
@@ -44143,8 +44143,8 @@
   "en": "unfortunately",
   "fa": "متأسفانه / بدبختانه",
   "cat": "adv",
-  "ex": "I unfortunately drink tea at night.",
-  "exfa": "شب‌ها متأسفانه چای می‌نوشم."
+  "ex": "Unfortunately, the flight was cancelled due to the storm.",
+  "exfa": "متأسفانه پرواز به‌خاطر طوفان لغو شد."
  },
  {
   "i": 5400,
@@ -44339,16 +44339,16 @@
   "en": "comic",
   "fa": "خنده‌دار / کمیک",
   "cat": "adj",
-  "ex": "Everything felt comic after the trip.",
-  "exfa": "بعد از سفر همه چیز خنده دار به نظر می‌رسید."
+  "ex": "He read his favorite comic book all weekend.",
+  "exfa": "او تمام آخر هفته کتاب کمیک مورد علاقه‌اش را خواند."
  },
  {
   "i": 5424,
   "en": "carefully",
   "fa": "با دقت / با احتیاط",
   "cat": "adv",
-  "ex": "He answered carefully.",
-  "exfa": "او با دقت جواب داد."
+  "ex": "Please read the instructions carefully.",
+  "exfa": "لطفاً دستورالعمل‌ها را با دقت بخوان."
  },
  {
   "i": 5425,
@@ -44491,8 +44491,8 @@
   "en": "smoke",
   "fa": "دود / سیگار کشیدن",
   "cat": "noun",
-  "ex": "To smoke well, you need patience.",
-  "exfa": "برای خوب دود، صبر لازم است."
+  "ex": "Thick smoke rose from the burning building.",
+  "exfa": "دود غلیظی از ساختمان در حال سوختن بلند شد."
  },
  {
   "i": 5443,
@@ -44627,8 +44627,8 @@
   "en": "strongly",
   "fa": "به شدت / محکم",
   "cat": "adv",
-  "ex": "I strongly drink tea at night.",
-  "exfa": "شب‌ها قوی‌انه چای می‌نوشم."
+  "ex": "I strongly disagree with that decision.",
+  "exfa": "من شدیداً با آن تصمیم مخالفم."
  },
  {
   "i": 5460,
@@ -44831,16 +44831,16 @@
   "en": "mainly",
   "fa": "عمدتاً / بیشتر",
   "cat": "adv",
-  "ex": "He answered mainly.",
-  "exfa": "او عمدتاً جواب داد."
+  "ex": "The book is mainly about her childhood in Iran.",
+  "exfa": "این کتاب عمدتاً درباره‌ی کودکی او در ایران است."
  },
  {
   "i": 5485,
   "en": "ethnic",
   "fa": "قومی / نژادی",
   "cat": "adj",
-  "ex": "This room is too ethnic for me.",
-  "exfa": "این اتاق برای من زیادی مربوط به قوم است."
+  "ex": "The city is known for its diverse ethnic communities.",
+  "exfa": "این شهر به خاطر جوامع قومی متنوعش شناخته شده است."
  },
  {
   "i": 5486,
@@ -44855,8 +44855,8 @@
   "en": "parliament",
   "fa": "پارلمان / مجلس",
   "cat": "crime",
-  "ex": "Everything felt parliament after the trip.",
-  "exfa": "بعد از سفر همه چیز پارلمان به نظر می‌رسید."
+  "ex": "The new law was passed by parliament last week.",
+  "exfa": "قانون جدید هفته‌ی گذشته توسط پارلمان تصویب شد."
  },
  {
   "i": 5488,
@@ -45375,8 +45375,8 @@
   "en": "tropical",
   "fa": "حاره‌ای / گرمسیری",
   "cat": "adj",
-  "ex": "Everything felt tropical after the trip.",
-  "exfa": "بعد از سفر همه چیز حاره‌ای به نظر می‌رسید."
+  "ex": "Bananas grow well in tropical climates.",
+  "exfa": "موز در آب‌وهوای گرمسیری خوب رشد می‌کند."
  },
  {
   "i": 5552,
@@ -45535,8 +45535,8 @@
   "en": "mutual",
   "fa": "متقابل / دوطرفه",
   "cat": "adj",
-  "ex": "Everything felt mutual after the trip.",
-  "exfa": "بعد از سفر همه چیز متقابل به نظر می‌رسید."
+  "ex": "Their friendship is built on mutual respect.",
+  "exfa": "دوستی آن‌ها بر پایه‌ی احترام متقابل است."
  },
  {
   "i": 5572,
@@ -45551,8 +45551,8 @@
   "en": "necessarily",
   "fa": "لزوماً / ضروری",
   "cat": "adv",
-  "ex": "She necessarily finished the work.",
-  "exfa": "او لزوماً کار را تمام کرد."
+  "ex": "Being expensive doesn't necessarily mean it's better.",
+  "exfa": "گران بودن لزوماً به معنای بهتر بودن نیست."
  },
  {
   "i": 5574,
@@ -45599,8 +45599,8 @@
   "en": "apparently",
   "fa": "ظاهراً / به نظر می‌رسد",
   "cat": "adv",
-  "ex": "I apparently drink tea at night.",
-  "exfa": "شب‌ها ظاهراً چای می‌نوشم."
+  "ex": "Apparently, the train was late again this morning.",
+  "exfa": "ظاهراً قطار امروز صبح دوباره دیر رسید."
  },
  {
   "i": 5580,
@@ -45695,8 +45695,8 @@
   "en": "visible",
   "fa": "قابل مشاهده / نمایان",
   "cat": "adj",
-  "ex": "Everything felt visible after the trip.",
-  "exfa": "بعد از سفر همه چیز دیدنی به نظر می‌رسید."
+  "ex": "The mountain was clearly visible from our window.",
+  "exfa": "کوه به‌وضوح از پنجره‌ی ما قابل‌مشاهده بود."
  },
  {
   "i": 5592,
@@ -45759,8 +45759,8 @@
   "en": "obviously",
   "fa": "بوضوح / آشکارا",
   "cat": "adv",
-  "ex": "I obviously drink tea at night.",
-  "exfa": "شب‌ها بوضوح چای می‌نوشم."
+  "ex": "Obviously, he forgot about our meeting today.",
+  "exfa": "به‌وضوح، او جلسه‌ی امروز ما را فراموش کرد."
  },
  {
   "i": 5600,
@@ -45839,8 +45839,8 @@
   "en": "fundamental",
   "fa": "بنیادی / اساسی",
   "cat": "adj",
-  "ex": "This room is too fundamental for me.",
-  "exfa": "این اتاق برای من زیادی بنیادی است."
+  "ex": "Trust is fundamental to any good relationship.",
+  "exfa": "اعتماد برای هر رابطه‌ی خوبی بنیادی است."
  },
  {
   "i": 5610,
@@ -45855,8 +45855,8 @@
   "en": "escape",
   "fa": "فرار کردن / گریختن",
   "cat": "verb",
-  "ex": "It is not easy to escape every day.",
-  "exfa": "هر روز فرار آسان نیست."
+  "ex": "The prisoners tried to escape at night.",
+  "exfa": "زندانی‌ها شب سعی کردند فرار کنند."
  },
  {
   "i": 5612,
@@ -45887,8 +45887,8 @@
   "en": "substantial",
   "fa": "قابل‌توجه / بزرگ",
   "cat": "adj",
-  "ex": "Everything felt substantial after the trip.",
-  "exfa": "بعد از سفر همه چیز قابل‌توجه به نظر می‌رسید."
+  "ex": "The company reported a substantial increase in profits.",
+  "exfa": "شرکت افزایش قابل‌توجهی در سود گزارش داد."
  },
  {
   "i": 5616,
@@ -46331,16 +46331,16 @@
   "en": "crash",
   "fa": "سقوط / تصادم",
   "cat": "car",
-  "ex": "To crash well, you need patience.",
-  "exfa": "برای خوب سقوط، صبر لازم است."
+  "ex": "The car crashed into a tree in the storm.",
+  "exfa": "ماشین در طوفان با یک درخت تصادف کرد."
  },
  {
   "i": 5671,
   "en": "lift",
   "fa": "بالا بردن / آسانسور",
   "cat": "verb",
-  "ex": "It is not easy to lift every day.",
-  "exfa": "هر روز بالا بردن آسان نیست."
+  "ex": "Can you help me lift this heavy box?",
+  "exfa": "می‌توانی کمکم کنی این جعبه‌ی سنگین را بلند کنم؟"
  },
  {
   "i": 5672,
@@ -46515,8 +46515,8 @@
   "en": "involvement",
   "fa": "درگیری / دخالت",
   "cat": "noun",
-  "ex": "This room is too involvement for me.",
-  "exfa": "این اتاق برای من زیادی درگیری است."
+  "ex": "His involvement in the project was minimal.",
+  "exfa": "درگیری او در پروژه بسیار کم بود."
  },
  {
   "i": 5694,
@@ -46823,8 +46823,8 @@
   "en": "entirely",
   "fa": "کاملاً / تماماً",
   "cat": "adv",
-  "ex": "I entirely drink tea at night.",
-  "exfa": "شب‌ها کاملاً چای می‌نوشم."
+  "ex": "The decision is entirely up to you.",
+  "exfa": "این تصمیم کاملاً به خودت بستگی دارد."
  },
  {
   "i": 5732,
@@ -46931,8 +46931,8 @@
   "en": "closely",
   "fa": "از نزدیک / با دقت",
   "cat": "adv",
-  "ex": "He answered closely.",
-  "exfa": "او نزدیک جواب داد."
+  "ex": "Doctors closely monitor the patient's condition.",
+  "exfa": "پزشکان وضعیت بیمار را از نزدیک زیر نظر دارند."
  },
  {
   "i": 5745,
@@ -46955,8 +46955,8 @@
   "en": "seriously",
   "fa": "جداً / به‌طور جدی",
   "cat": "adv",
-  "ex": "I seriously drink tea at night.",
-  "exfa": "شب‌ها جدی‌تر چای می‌نوشم."
+  "ex": "You should take your health seriously.",
+  "exfa": "باید سلامتی‌ات را جدی بگیری."
  },
  {
   "i": 5748,
@@ -47051,8 +47051,8 @@
   "en": "conservative",
   "fa": "محافظه‌کار",
   "cat": "adj",
-  "ex": "Everything felt conservative after the trip.",
-  "exfa": "بعد از سفر همه چیز محافظه‌کار به نظر می‌رسید."
+  "ex": "My parents are quite conservative about spending money.",
+  "exfa": "پدر و مادرم درباره‌ی خرج کردن پول محافظه‌کار هستند."
  },
  {
   "i": 5760,
@@ -47387,8 +47387,8 @@
   "en": "surprise",
   "fa": "تعجب / شگفتی",
   "cat": "feeling",
-  "ex": "I like to surprise in the morning.",
-  "exfa": "تعجب در صبح را دوست دارم."
+  "ex": "The party was a big surprise for my mom.",
+  "exfa": "مهمانی یک شگفتی بزرگ برای مادرم بود."
  },
  {
   "i": 5802,
@@ -47403,8 +47403,8 @@
   "en": "partial",
   "fa": "جزئی / نیمه",
   "cat": "adj",
-  "ex": "Everything felt partial after the trip.",
-  "exfa": "بعد از سفر همه چیز جزئی به نظر می‌رسید."
+  "ex": "The company offered only a partial refund.",
+  "exfa": "شرکت فقط بازپرداخت جزئی ارائه داد."
  },
  {
   "i": 5804,
@@ -47531,8 +47531,8 @@
   "en": "glad",
   "fa": "خوشحال",
   "cat": "feeling",
-  "ex": "Everything felt glad after the trip.",
-  "exfa": "بعد از سفر همه چیز خوشحال به نظر می‌رسید."
+  "ex": "I am glad you could come to the party.",
+  "exfa": "خوشحالم که توانستی به مهمانی بیایی."
  },
  {
   "i": 5820,
@@ -47803,8 +47803,8 @@
   "en": "personally",
   "fa": "شخصاً / به‌طور شخصی",
   "cat": "adv",
-  "ex": "She personally finished the work.",
-  "exfa": "او شخصی کار را تمام کرد."
+  "ex": "Personally, I prefer tea over coffee.",
+  "exfa": "شخصاً، چای را به قهوه ترجیح می‌دهم."
  },
  {
   "i": 5854,
@@ -47979,8 +47979,8 @@
   "en": "publish",
   "fa": "منتشر کردن / چاپ کردن",
   "cat": "verb",
-  "ex": "Everything felt publish after the trip.",
-  "exfa": "بعد از سفر همه چیز منتشر کردن به نظر می‌رسید."
+  "ex": "The author will publish her new book next month.",
+  "exfa": "نویسنده کتاب جدیدش را ماه بعد منتشر می‌کند."
  },
  {
   "i": 5876,
@@ -48107,8 +48107,8 @@
   "en": "athletic",
   "fa": "ورزشی",
   "cat": "adj",
-  "ex": "Everything felt athletic after the trip.",
-  "exfa": "بعد از سفر همه چیز ورزشی به نظر می‌رسید."
+  "ex": "He has an athletic build from years of training.",
+  "exfa": "او به خاطر سال‌ها تمرین اندامی ورزشی دارد."
  },
  {
   "i": 5892,
@@ -48147,16 +48147,16 @@
   "en": "fairly",
   "fa": "عادلانه / نسبتاً",
   "cat": "adv",
-  "ex": "He answered fairly.",
-  "exfa": "او عادلانه جواب داد."
+  "ex": "The teacher tries to treat all students fairly.",
+  "exfa": "معلم سعی می‌کند با همه‌ی دانش‌آموزان عادلانه رفتار کند."
  },
  {
   "i": 5897,
   "en": "coastal",
   "fa": "ساحلی / دریایی",
   "cat": "adj",
-  "ex": "This room is too coastal for me.",
-  "exfa": "این اتاق برای من زیادی ساحلی است."
+  "ex": "Many tourists visit the coastal towns in summer.",
+  "exfa": "بسیاری از گردشگران تابستان از شهرهای ساحلی بازدید می‌کنند."
  },
  {
   "i": 5898,
@@ -48171,8 +48171,8 @@
   "en": "intelligent",
   "fa": "هوشمند / باهوش",
   "cat": "adj",
-  "ex": "Everything felt intelligent after the trip.",
-  "exfa": "بعد از سفر همه چیز هوشمند به نظر می‌رسید."
+  "ex": "Dolphins are known to be very intelligent animals.",
+  "exfa": "دلفین‌ها به‌عنوان حیوانات بسیار باهوش شناخته می‌شوند."
  },
  {
   "i": 5900,
@@ -48267,8 +48267,8 @@
   "en": "regardless",
   "fa": "صرف‌نظر / به‌هرحال",
   "cat": "adj",
-  "ex": "Everything felt regardless after the trip.",
-  "exfa": "بعد از سفر همه چیز صرف‌نظر به نظر می‌رسید."
+  "ex": "We will finish the project on time, regardless of the cost.",
+  "exfa": "ما پروژه را سر وقت تمام می‌کنیم، صرف‌نظر از هزینه."
  },
  {
   "i": 5912,
@@ -48651,8 +48651,8 @@
   "en": "lovely",
   "fa": "دوست‌داشتنی / زیبا",
   "cat": "feeling",
-  "ex": "Everything felt lovely after the trip.",
-  "exfa": "بعد از سفر همه چیز دوست‌داشتنی به نظر می‌رسید."
+  "ex": "We had a lovely evening by the lake.",
+  "exfa": "ما یک عصر دوست‌داشتنی کنار دریاچه داشتیم."
  },
  {
   "i": 5960,
@@ -48755,8 +48755,8 @@
   "en": "regularly",
   "fa": "به‌طور منظم / مرتباً",
   "cat": "adv",
-  "ex": "He answered regularly.",
-  "exfa": "او منظم جواب داد."
+  "ex": "You should exercise regularly to stay healthy.",
+  "exfa": "برای سالم ماندن باید به‌طور منظم ورزش کنی."
  },
  {
   "i": 5973,
@@ -49247,8 +49247,8 @@
   "en": "incident",
   "fa": "حادثه / رویداد",
   "cat": "adj",
-  "ex": "This room is too incident for me.",
-  "exfa": "این اتاق برای من زیادی حادثه است."
+  "ex": "The police reported a minor incident downtown.",
+  "exfa": "پلیس یک حادثه‌ی کوچک در مرکز شهر گزارش داد."
  },
  {
   "i": 6034,
@@ -49651,8 +49651,8 @@
   "en": "divided",
   "fa": "تقسیم / جدا",
   "cat": "verb",
-  "ex": "It is not easy to divided every day.",
-  "exfa": "هر روز تقسیم آسان نیست."
+  "ex": "The class was divided into four small groups.",
+  "exfa": "کلاس به چهار گروه کوچک تقسیم شد."
  },
  {
   "i": 6084,
@@ -49699,8 +49699,8 @@
   "en": "correctly",
   "fa": "به‌درستی / صحیح",
   "cat": "adv",
-  "ex": "She correctly finished the work.",
-  "exfa": "او به‌درستی کار را تمام کرد."
+  "ex": "Did I spell your name correctly?",
+  "exfa": "آیا اسمت را درست هجی کردم؟"
  },
  {
   "i": 6090,
@@ -49803,8 +49803,8 @@
   "en": "pleased",
   "fa": "خشنود / راضی",
   "cat": "verb",
-  "ex": "To pleased well, you need patience.",
-  "exfa": "برای خوب خشنود، صبر لازم است."
+  "ex": "My teacher was pleased with my test results.",
+  "exfa": "معلمم از نتیجه‌ی امتحانم راضی بود."
  },
  {
   "i": 6103,
@@ -49819,8 +49819,8 @@
   "en": "widely",
   "fa": "به‌طور گسترده / فراگیر",
   "cat": "adv",
-  "ex": "He answered widely.",
-  "exfa": "او به‌گسترده‌ای جواب داد."
+  "ex": "This app is widely used by students around the world.",
+  "exfa": "این اپلیکیشن به‌طور گسترده توسط دانش‌آموزان سراسر جهان استفاده می‌شود."
  },
  {
   "i": 6105,
@@ -49867,8 +49867,8 @@
   "en": "paradise",
   "fa": "بهشت",
   "cat": "noun",
-  "ex": "To paradise well, you need patience.",
-  "exfa": "برای خوب بهشت، صبر لازم است."
+  "ex": "The island felt like paradise to the tourists.",
+  "exfa": "این جزیره برای گردشگران شبیه بهشت بود."
  },
  {
   "i": 6111,
@@ -49987,8 +49987,8 @@
   "en": "geographic",
   "fa": "جغرافیایی",
   "cat": "adj",
-  "ex": "This room is too geographic for me.",
-  "exfa": "این اتاق برای من زیادی جغرافیایی است."
+  "ex": "The map shows the geographic boundaries of each country.",
+  "exfa": "نقشه مرزهای جغرافیایی هر کشور را نشان می‌دهد."
  },
  {
   "i": 6126,
@@ -50327,8 +50327,8 @@
   "en": "kick",
   "fa": "لگد / ضربه پا",
   "cat": "sport",
-  "ex": "It is not easy to kick every day.",
-  "exfa": "هر روز لگد آسان نیست."
+  "ex": "The player kicked the ball into the goal.",
+  "exfa": "بازیکن توپ را با لگد به داخل دروازه زد."
  },
  {
   "i": 6168,
@@ -50471,8 +50471,8 @@
   "en": "slip",
   "fa": "لغزیدن / لباس زیر",
   "cat": "verb",
-  "ex": "I like to slip in the morning.",
-  "exfa": "لغزیدن در صبح را دوست دارم."
+  "ex": "She slipped on the wet floor and fell.",
+  "exfa": "او روی زمین خیس لغزید و افتاد."
  },
  {
   "i": 6186,
@@ -50535,8 +50535,8 @@
   "en": "comply",
   "fa": "تطابق داشتن / تبعیت کردن",
   "cat": "verb",
-  "ex": "She comply finished the work.",
-  "exfa": "او تطابق داشتن کار را تمام کرد."
+  "ex": "All employees must comply with the new dress code.",
+  "exfa": "همه‌ی کارمندان باید از قانون جدید پوشش تبعیت کنند."
  },
  {
   "i": 6194,
@@ -50919,8 +50919,8 @@
   "en": "shoot",
   "fa": "شلیک کردن / رشد کردن",
   "cat": "verb",
-  "ex": "I like to shoot in the morning.",
-  "exfa": "شلیک کردن در صبح را دوست دارم."
+  "ex": "The hunter tried to shoot the deer.",
+  "exfa": "شکارچی سعی کرد به گوزن شلیک کند."
  },
  {
   "i": 6242,
@@ -51571,8 +51571,8 @@
   "en": "basically",
   "fa": "اساساً / در اصل",
   "cat": "adv",
-  "ex": "They spoke basically about the problem.",
-  "exfa": "اساساً درباره‌ی مشکل حرف زدند."
+  "ex": "Basically, we need more time to finish the project.",
+  "exfa": "اساساً ما برای تمام کردن پروژه به زمان بیشتری نیاز داریم."
  },
  {
   "i": 6323,
@@ -51691,8 +51691,8 @@
   "en": "animated",
   "fa": "متحرک",
   "cat": "verb",
-  "ex": "I like to animated in the morning.",
-  "exfa": "متحرک در صبح را دوست دارم."
+  "ex": "Kids love watching animated movies on weekends.",
+  "exfa": "بچه‌ها تماشای فیلم‌های متحرک را در آخر هفته دوست دارند."
  },
  {
   "i": 6338,
@@ -51723,8 +51723,8 @@
   "en": "adjustment",
   "fa": "تنظیم / سازگاری",
   "cat": "noun",
-  "ex": "This room is too adjustment for me.",
-  "exfa": "این اتاق برای من زیادی تنظیم است."
+  "ex": "Moving to a new country requires a lot of adjustment.",
+  "exfa": "مهاجرت به کشوری جدید به سازگاری زیادی نیاز دارد."
  },
  {
   "i": 6342,
@@ -52655,8 +52655,8 @@
   "en": "rapidly",
   "fa": "سریع / تندی",
   "cat": "adv",
-  "ex": "She rapidly finished the work.",
-  "exfa": "او سریع کار را تمام کرد."
+  "ex": "The company's sales grew rapidly last year.",
+  "exfa": "فروش شرکت سال گذشته به‌سرعت رشد کرد."
  },
  {
   "i": 6458,
@@ -52855,8 +52855,8 @@
   "en": "wrap",
   "fa": "پیچیدن / بسته‌بندی",
   "cat": "verb",
-  "ex": "To wrap well, you need patience.",
-  "exfa": "برای خوب پیچیدن، صبر لازم است."
+  "ex": "She wrapped the gift in colorful paper.",
+  "exfa": "او هدیه را در کاغذ رنگی پیچید."
  },
  {
   "i": 6483,
@@ -53155,8 +53155,8 @@
   "en": "alphabetical",
   "fa": "الفبایی",
   "cat": "adj",
-  "ex": "Everything felt alphabetical after the trip.",
-  "exfa": "بعد از سفر همه چیز الفبایی به نظر می‌رسید."
+  "ex": "The names in the list are arranged in alphabetical order.",
+  "exfa": "نام‌ها در فهرست به ترتیب الفبایی چیده شده‌اند."
  },
  {
   "i": 6520,
@@ -53219,8 +53219,8 @@
   "en": "shut",
   "fa": "بستن / تعطیل کردن",
   "cat": "verb",
-  "ex": "It is not easy to shut every day.",
-  "exfa": "هر روز بستن آسان نیست."
+  "ex": "Please shut the window, it's getting cold.",
+  "exfa": "لطفاً پنجره را ببند، دارد سرد می‌شود."
  },
  {
   "i": 6528,
@@ -53307,8 +53307,8 @@
   "en": "greatly",
   "fa": "بسیار / خیلی",
   "cat": "adv",
-  "ex": "They spoke greatly about the problem.",
-  "exfa": "بسیار درباره‌ی مشکل حرف زدند."
+  "ex": "Her health has greatly improved since the surgery.",
+  "exfa": "سلامتی او از زمان جراحی بسیار بهتر شده است."
  },
  {
   "i": 6539,
@@ -53339,8 +53339,8 @@
   "en": "commonly",
   "fa": "معمولاً / عادتاً",
   "cat": "adv",
-  "ex": "They spoke commonly about the problem.",
-  "exfa": "معمولاً درباره‌ی مشکل حرف زدند."
+  "ex": "This herb is commonly used in Italian cooking.",
+  "exfa": "این گیاه معمولاً در آشپزی ایتالیایی استفاده می‌شود."
  },
  {
   "i": 6543,
@@ -53435,16 +53435,16 @@
   "en": "largely",
   "fa": "عمدتاً / بیشتر",
   "cat": "adv",
-  "ex": "They spoke largely about the problem.",
-  "exfa": "عمدتاً درباره‌ی مشکل حرف زدند."
+  "ex": "The delay was largely due to bad weather.",
+  "exfa": "تأخیر عمدتاً به خاطر هوای بد بود."
  },
  {
   "i": 6555,
   "en": "pleasant",
   "fa": "دلنشین / خوشایند",
   "cat": "adj",
-  "ex": "Everything felt pleasant after the trip.",
-  "exfa": "بعد از سفر همه چیز دلنشین به نظر می‌رسید."
+  "ex": "We had a pleasant walk along the beach.",
+  "exfa": "یک قدم‌زدن دلنشین کنار ساحل داشتیم."
  },
  {
   "i": 6556,
@@ -53511,8 +53511,8 @@
   "en": "engagement",
   "fa": "نامزدی / تعهد",
   "cat": "noun",
-  "ex": "Everything felt engagement after the trip.",
-  "exfa": "بعد از سفر همه چیز نامزدی به نظر می‌رسید."
+  "ex": "They announced their engagement at a family dinner.",
+  "exfa": "آن‌ها نامزدی خود را در یک شام خانوادگی اعلام کردند."
  },
  {
   "i": 6564,
@@ -53527,8 +53527,8 @@
   "en": "rough",
   "fa": "ناهموار / خشن",
   "cat": "noun",
-  "ex": "This room is too rough for me.",
-  "exfa": "این اتاق برای من زیادی ناهموار است."
+  "ex": "The road became rough after leaving the village.",
+  "exfa": "جاده بعد از خروج از روستا ناهموار شد."
  },
  {
   "i": 6566,
@@ -53631,8 +53631,8 @@
   "en": "merely",
   "fa": "صرفاً",
   "cat": "adv",
-  "ex": "They spoke merely about the problem.",
-  "exfa": "صرفاً درباره‌ی مشکل حرف زدند."
+  "ex": "It was merely a misunderstanding between friends.",
+  "exfa": "این صرفاً یک سوءتفاهم بین دوستان بود."
  },
  {
   "i": 6579,
@@ -53695,8 +53695,8 @@
   "en": "stretch",
   "fa": "کشش / امتداد",
   "cat": "sport",
-  "ex": "To stretch well, you need patience.",
-  "exfa": "برای خوب کشش، صبر لازم است."
+  "ex": "I stretch my legs before every morning run.",
+  "exfa": "قبل از هر دویدن صبحگاهی پاهایم را کش می‌دهم."
  },
  {
   "i": 6587,
@@ -54060,8 +54060,8 @@
   "en": "proceed",
   "fa": "پیش رفتن / ادامه دادن",
   "cat": "verb",
-  "ex": "It is not easy to proceed every day.",
-  "exfa": "هر روز پیش رفتن آسان نیست."
+  "ex": "Let's proceed to the next item on the agenda.",
+  "exfa": "بیایید به مورد بعدی دستور جلسه ادامه دهیم."
  },
  {
   "i": 6632,
@@ -54528,8 +54528,8 @@
   "en": "hazardous",
   "fa": "خطرناک / ریسک‌آمیز",
   "cat": "adj",
-  "ex": "This room is too hazardous for me.",
-  "exfa": "این اتاق برای من زیادی خطرناک است."
+  "ex": "Workers must wear masks near hazardous chemicals.",
+  "exfa": "کارگران باید نزدیک مواد شیمیایی خطرناک ماسک بزنند."
  },
  {
   "i": 6690,
@@ -54608,8 +54608,8 @@
   "en": "hang",
   "fa": "آویزان کردن / دار زدن",
   "cat": "verb",
-  "ex": "It is not easy to hang every day.",
-  "exfa": "هر روز آویزان کردن آسان نیست."
+  "ex": "Please hang your coat behind the door.",
+  "exfa": "لطفاً کتت را پشت در آویزان کن."
  },
  {
   "i": 6700,
@@ -54864,8 +54864,8 @@
   "en": "logical",
   "fa": "منطقی",
   "cat": "adj",
-  "ex": "Everything felt logical after the trip.",
-  "exfa": "بعد از سفر همه چیز منطقی به نظر می‌رسید."
+  "ex": "His explanation seemed very logical to me.",
+  "exfa": "توضیح او برایم خیلی منطقی به نظر رسید."
  },
  {
   "i": 6732,
@@ -55200,8 +55200,8 @@
   "en": "initially",
   "fa": "در ابتدا / اولیه",
   "cat": "adv",
-  "ex": "She initially finished the work.",
-  "exfa": "او در ابتدا کار را تمام کرد."
+  "ex": "Initially, the plan seemed too expensive.",
+  "exfa": "در ابتدا، این نقشه خیلی گران به نظر می‌رسید."
  },
  {
   "i": 6774,
@@ -55692,8 +55692,8 @@
   "en": "perfectly",
   "fa": "به‌طور کامل / درست",
   "cat": "adv",
-  "ex": "They spoke perfectly about the problem.",
-  "exfa": "بطور کامل درباره‌ی مشکل حرف زدند."
+  "ex": "The new shoes fit her perfectly.",
+  "exfa": "کفش‌های جدید کاملاً اندازه‌ی او بودند."
  },
  {
   "i": 6835,
@@ -55708,8 +55708,8 @@
   "en": "instantly",
   "fa": "فوری / بی‌درنگ",
   "cat": "adv",
-  "ex": "He answered instantly.",
-  "exfa": "او فوری جواب داد."
+  "ex": "I recognized her voice instantly on the phone.",
+  "exfa": "صدایش را فوراً پشت تلفن شناختم."
  },
  {
   "i": 6837,
@@ -55916,8 +55916,8 @@
   "en": "struggle",
   "fa": "مبارزه / تلاش",
   "cat": "verb",
-  "ex": "To struggle well, you need patience.",
-  "exfa": "برای خوب مبارزه، صبر لازم است."
+  "ex": "He struggled to find a job after graduation.",
+  "exfa": "او بعد از فارغ‌التحصیلی برای پیدا کردن کار تلاش کرد."
  },
  {
   "i": 6863,
@@ -55940,8 +55940,8 @@
   "en": "neutral",
   "fa": "بی‌طرف / خنثی",
   "cat": "adj",
-  "ex": "This room is too neutral for me.",
-  "exfa": "این اتاق برای من زیادی بی‌طرف است."
+  "ex": "Switzerland stayed neutral during the war.",
+  "exfa": "سوئیس در طول جنگ بی‌طرف ماند."
  },
  {
   "i": 6866,
@@ -55972,8 +55972,8 @@
   "en": "prospective",
   "fa": "احتمالی / بالقوه",
   "cat": "adj",
-  "ex": "This room is too prospective for me.",
-  "exfa": "این اتاق برای من زیادی احتمالی است."
+  "ex": "The agent showed the house to several prospective buyers.",
+  "exfa": "مشاور املاک خانه را به چند خریدار بالقوه نشان داد."
  },
  {
   "i": 6870,
@@ -56020,8 +56020,8 @@
   "en": "equally",
   "fa": "برابر / یکسان",
   "cat": "adv",
-  "ex": "I equally drink tea at night.",
-  "exfa": "شب‌ها برابر چای می‌نوشم."
+  "ex": "The profits were divided equally among the partners.",
+  "exfa": "سود به‌طور برابر بین شرکا تقسیم شد."
  },
  {
   "i": 6876,
@@ -56108,8 +56108,8 @@
   "en": "naturally",
   "fa": "طبیعتاً / به‌طور طبیعی",
   "cat": "adv",
-  "ex": "They spoke naturally about the problem.",
-  "exfa": "طبیعتاً درباره‌ی مشکل حرف زدند."
+  "ex": "She is naturally good at solving problems.",
+  "exfa": "او به‌طور طبیعی در حل مسئله مهارت دارد."
  },
  {
   "i": 6887,
@@ -56212,8 +56212,8 @@
   "en": "potentially",
   "fa": "احتمالاً / شاید",
   "cat": "adv",
-  "ex": "I potentially drink tea at night.",
-  "exfa": "شب‌ها احتمالاً چای می‌نوشم."
+  "ex": "The chemical is potentially dangerous if inhaled.",
+  "exfa": "این ماده شیمیایی در صورت استنشاق احتمالاً خطرناک است."
  },
  {
   "i": 6900,
@@ -56244,8 +56244,8 @@
   "en": "inclusive",
   "fa": "شامل / فراگیر",
   "cat": "adj",
-  "ex": "Everything felt inclusive after the trip.",
-  "exfa": "بعد از سفر همه چیز شامل به نظر می‌رسید."
+  "ex": "The school promotes an inclusive environment for all students.",
+  "exfa": "مدرسه محیطی فراگیر برای همه‌ی دانش‌آموزان ترویج می‌کند."
  },
  {
   "i": 6904,
@@ -56596,8 +56596,8 @@
   "en": "frequent",
   "fa": "مکرر / بار‌ها",
   "cat": "adj",
-  "ex": "Everything felt frequent after the trip.",
-  "exfa": "بعد از سفر همه چیز مکرر به نظر می‌رسید."
+  "ex": "He is a frequent visitor to this cafe.",
+  "exfa": "او مشتری مکرر این کافه است."
  },
  {
   "i": 6948,
@@ -56852,8 +56852,8 @@
   "en": "hopefully",
   "fa": "خوشبختانه / امیدوارم که",
   "cat": "adv",
-  "ex": "I hopefully drink tea at night.",
-  "exfa": "شب‌ها امیدواری که چای می‌نوشم."
+  "ex": "Hopefully, the weather will be sunny tomorrow.",
+  "exfa": "امیدوارم فردا هوا آفتابی باشد."
  },
  {
   "i": 6980,
@@ -57012,8 +57012,8 @@
   "en": "grill",
   "fa": "کباب‌پز / بازجویی کردن",
   "cat": "food",
-  "ex": "It is not easy to grill every day.",
-  "exfa": "هر روز شامل‌پز آسان نیست."
+  "ex": "We grilled fish and vegetables in the backyard.",
+  "exfa": "ما در حیاط پشتی ماهی و سبزیجات را کباب کردیم."
  },
  {
   "i": 7000,
@@ -57172,8 +57172,8 @@
   "en": "virtually",
   "fa": "عملاً / تقریباً",
   "cat": "adv",
-  "ex": "I virtually drink tea at night.",
-  "exfa": "شب‌ها عملاً چای می‌نوشم."
+  "ex": "The two designs are virtually identical.",
+  "exfa": "این دو طرح عملاً یکسان هستند."
  },
  {
   "i": 7020,
@@ -57252,8 +57252,8 @@
   "en": "formerly",
   "fa": "پیشتر / قبلاً",
   "cat": "adv",
-  "ex": "She formerly finished the work.",
-  "exfa": "او پیشتر کار را تمام کرد."
+  "ex": "This building was formerly a hospital.",
+  "exfa": "این ساختمان پیشتر یک بیمارستان بود."
  },
  {
   "i": 7030,
@@ -57308,8 +57308,8 @@
   "en": "strictly",
   "fa": "به‌شدت / سخت‌گیرانه",
   "cat": "adv",
-  "ex": "He answered strictly.",
-  "exfa": "او به‌شدت جواب داد."
+  "ex": "Smoking is strictly forbidden inside the building.",
+  "exfa": "سیگار کشیدن داخل ساختمان به‌شدت ممنوع است."
  },
  {
   "i": 7037,
@@ -57369,8 +57369,8 @@
   "en": "elegant",
   "fa": "زیبا / شیک",
   "cat": "adj",
-  "ex": "Everything felt elegant after the trip.",
-  "exfa": "بعد از سفر همه چیز زیبا به نظر می‌رسید."
+  "ex": "She wore an elegant black dress to the wedding.",
+  "exfa": "او لباسی شیک و مشکی به عروسی پوشید."
  },
  {
   "i": 7044,
@@ -57521,8 +57521,8 @@
   "en": "similarly",
   "fa": "به‌طور مشابه / به همان شکل",
   "cat": "adv",
-  "ex": "They spoke similarly about the problem.",
-  "exfa": "به‌طور مشابه درباره‌ی مشکل حرف زدند."
+  "ex": "Similarly, the second experiment gave the same result.",
+  "exfa": "به‌طور مشابه، آزمایش دوم هم همان نتیجه را داد."
  },
  {
   "i": 7063,
@@ -57741,8 +57741,8 @@
   "en": "interval",
   "fa": "فاصله / وقفه",
   "cat": "time",
-  "ex": "This room is too interval for me.",
-  "exfa": "این اتاق برای من زیادی فاصله است."
+  "ex": "There is a short interval between the two acts.",
+  "exfa": "بین دو پرده یک وقفه‌ی کوتاه وجود دارد."
  },
  {
   "i": 7090,
@@ -57985,8 +57985,8 @@
   "en": "atomic",
   "fa": "اتمی / هسته‌ای",
   "cat": "adj",
-  "ex": "Everything felt atomic after the trip.",
-  "exfa": "بعد از سفر همه چیز اتمی به نظر می‌رسید."
+  "ex": "The country built its first atomic power plant.",
+  "exfa": "این کشور اولین نیروگاه اتمی خود را ساخت."
  },
  {
   "i": 7120,
@@ -58161,8 +58161,8 @@
   "en": "deviant",
   "fa": "منحرف / نابهنجار",
   "cat": "adj",
-  "ex": "This room is too deviant for me.",
-  "exfa": "این اتاق برای من زیادی منحرف است."
+  "ex": "The therapist studies deviant behavior in teenagers.",
+  "exfa": "این درمانگر رفتار منحرف در نوجوانان را بررسی می‌کند."
  },
  {
   "i": 7142,
@@ -58737,8 +58737,8 @@
   "en": "slim",
   "fa": "لاغر / نازک",
   "cat": "adj",
-  "ex": "This room is too slim for me.",
-  "exfa": "این اتاق برای من زیادی لاغر است."
+  "ex": "He became slim after months of exercise.",
+  "exfa": "او بعد از ماه‌ها ورزش لاغر شد."
  },
  {
   "i": 7214,
@@ -58857,8 +58857,8 @@
   "en": "occasionally",
   "fa": "گاه به گاه / بعضی اوقات",
   "cat": "adv",
-  "ex": "He answered occasionally.",
-  "exfa": "او گاه به گاه جواب داد."
+  "ex": "I occasionally eat fast food on weekends.",
+  "exfa": "من گاه به گاه در آخر هفته فست‌فود می‌خورم."
  },
  {
   "i": 7229,
@@ -59105,8 +59105,8 @@
   "en": "timely",
   "fa": "به‌موقع",
   "cat": "time",
-  "ex": "I timely drink tea at night.",
-  "exfa": "شب‌ها به موقع چای می‌نوشم."
+  "ex": "Thanks to the timely warning, everyone left safely.",
+  "exfa": "به‌لطف هشدار به‌موقع، همه با امنیت بیرون رفتند."
  },
  {
   "i": 7260,
@@ -59281,8 +59281,8 @@
   "en": "exceptional",
   "fa": "استثنایی / فوق‌العاده",
   "cat": "adj",
-  "ex": "This room is too exceptional for me.",
-  "exfa": "این اتاق برای من زیادی استثنایی است."
+  "ex": "The chef prepared an exceptional meal for the guests.",
+  "exfa": "سرآشپز غذایی استثنایی برای مهمانان آماده کرد."
  },
  {
   "i": 7282,
@@ -59318,8 +59318,8 @@
   "en": "spatial",
   "fa": "فضایی / مکانی",
   "cat": "adj",
-  "ex": "This room is too spatial for me.",
-  "exfa": "این اتاق برای من زیادی مربوط به فضا است."
+  "ex": "The game improves children's spatial awareness and coordination.",
+  "exfa": "این بازی آگاهی فضایی و هماهنگی کودکان را بهبود می‌بخشد."
  },
  {
   "i": 7286,
@@ -59358,8 +59358,8 @@
   "en": "annually",
   "fa": "سالانه",
   "cat": "time",
-  "ex": "They spoke annually about the problem.",
-  "exfa": "سالانه درباره‌ی مشکل حرف زدند."
+  "ex": "The company holds a big meeting annually.",
+  "exfa": "شرکت هر سال یک جلسه‌ی بزرگ برگزار می‌کند."
  },
  {
   "i": 7291,
@@ -59478,8 +59478,8 @@
   "en": "unavailable",
   "fa": "در دسترس نیست",
   "cat": "adj",
-  "ex": "This room is too unavailable for me.",
-  "exfa": "این اتاق برای من زیادی در دسترس نیست است."
+  "ex": "The doctor is unavailable until next Monday.",
+  "exfa": "دکتر تا دوشنبه‌ی آینده در دسترس نیست."
  },
  {
   "i": 7306,
@@ -59542,16 +59542,16 @@
   "en": "fold",
   "fa": "تا کردن",
   "cat": "verb",
-  "ex": "I like to fold in the morning.",
-  "exfa": "تا کردن در صبح را دوست دارم."
+  "ex": "She folded the laundry and put it away.",
+  "exfa": "او لباس‌ها را تا کرد و جمع کرد."
  },
  {
   "i": 7314,
   "en": "essentially",
   "fa": "اساساً / در واقع",
   "cat": "adv",
-  "ex": "They spoke essentially about the problem.",
-  "exfa": "اساساً درباره‌ی مشکل حرف زدند."
+  "ex": "The two plans are essentially the same.",
+  "exfa": "این دو برنامه اساساً یکسان هستند."
  },
  {
   "i": 7315,
@@ -59574,8 +59574,8 @@
   "en": "qualify",
   "fa": "واجد شرایط بودن / صلاحیت داشتن",
   "cat": "verb",
-  "ex": "I like to qualify in the morning.",
-  "exfa": "واجد شرایط بودن در صبح را دوست دارم."
+  "ex": "You need a degree to qualify for this job.",
+  "exfa": "برای واجدشرایط بودن این شغل به مدرک نیاز داری."
  },
  {
   "i": 7318,
@@ -59830,8 +59830,8 @@
   "en": "isolated",
   "fa": "منزوی / جدا شده",
   "cat": "verb",
-  "ex": "I like to isolated in the morning.",
-  "exfa": "منزوی در صبح را دوست دارم."
+  "ex": "The village is isolated, with no roads leading to it.",
+  "exfa": "این روستا منزوی است و هیچ جاده‌ای به آن نمی‌رسد."
  },
  {
   "i": 7350,
@@ -60166,8 +60166,8 @@
   "en": "bend",
   "fa": "خم کردن / پیچ",
   "cat": "verb",
-  "ex": "It is not easy to bend every day.",
-  "exfa": "هر روز خم کردن آسان نیست."
+  "ex": "Bend your knees before you lift the box.",
+  "exfa": "قبل از بلند کردن جعبه زانوهایت را خم کن."
  },
  {
   "i": 7392,
@@ -60326,8 +60326,8 @@
   "en": "olive",
   "fa": "زیتون / رنگ زیتونی",
   "cat": "food",
-  "ex": "Everything felt olive after the trip.",
-  "exfa": "بعد از سفر همه چیز زیتون به نظر می‌رسید."
+  "ex": "She drizzled olive oil over the fresh salad.",
+  "exfa": "او روغن زیتون را روی سالاد تازه ریخت."
  },
  {
   "i": 7412,
@@ -60690,8 +60690,8 @@
   "en": "separately",
   "fa": "جداگانه / به‌طور جداگانه",
   "cat": "adv",
-  "ex": "He answered separately.",
-  "exfa": "او جداگانه جواب داد."
+  "ex": "We paid for our meals separately at the restaurant.",
+  "exfa": "ما هزینه‌ی غذایمان را در رستوران جداگانه پرداختیم."
  },
  {
   "i": 7457,
@@ -60746,8 +60746,8 @@
   "en": "participant",
   "fa": "شرکت‌کننده / فرد شرکت‌کننده",
   "cat": "people",
-  "ex": "Everything felt participant after the trip.",
-  "exfa": "بعد از سفر همه چیز شرکت‌کننده به نظر می‌رسید."
+  "ex": "Every participant received a certificate at the end.",
+  "exfa": "هر شرکت‌کننده در پایان یک گواهی دریافت کرد."
  },
  {
   "i": 7464,
@@ -60954,8 +60954,8 @@
   "en": "provincial",
   "fa": "استانی / کوته‌فکر",
   "cat": "adj",
-  "ex": "This room is too provincial for me.",
-  "exfa": "این اتاق برای من زیادی استانی است."
+  "ex": "His provincial attitude made him resistant to new ideas.",
+  "exfa": "نگرش کوته‌فکرانه‌ی او باعث می‌شد در برابر ایده‌های جدید مقاومت کند."
  },
  {
   "i": 7490,
@@ -60986,8 +60986,8 @@
   "en": "rely",
   "fa": "تکیه کردن / وابسته بودن",
   "cat": "verb",
-  "ex": "I like to rely in the morning.",
-  "exfa": "تکیه کردن در صبح را دوست دارم."
+  "ex": "Farmers rely on rain for their crops.",
+  "exfa": "کشاورزان برای محصولاتشان به باران تکیه می‌کنند."
  },
  {
   "i": 7494,
@@ -61114,8 +61114,8 @@
   "en": "sophisticated",
   "fa": "پیچیده / باریک‌بین",
   "cat": "verb",
-  "ex": "I like to sophisticated in the morning.",
-  "exfa": "پیچیده در صبح را دوست دارم."
+  "ex": "The software uses a sophisticated algorithm to detect fraud.",
+  "exfa": "این نرم‌افزار از الگوریتمی پیچیده برای شناسایی تقلب استفاده می‌کند."
  },
  {
   "i": 7510,
@@ -61231,8 +61231,8 @@
   "en": "toxic",
   "fa": "سمی / زهرآلود",
   "cat": "adj",
-  "ex": "Everything felt toxic after the trip.",
-  "exfa": "بعد از سفر همه چیز سمی به نظر می‌رسید."
+  "ex": "The factory was fined for dumping toxic waste into the river.",
+  "exfa": "کارخانه به خاطر ریختن زباله‌های سمی در رودخانه جریمه شد."
  },
  {
   "i": 7524,
@@ -61327,8 +61327,8 @@
   "en": "joke",
   "fa": "شوخی / لطیفه",
   "cat": "talk",
-  "ex": "It is not easy to joke every day.",
-  "exfa": "هر روز شوخی آسان نیست."
+  "ex": "He told a joke that made everyone laugh.",
+  "exfa": "او شوخی‌ای گفت که همه را خنداند."
  },
  {
   "i": 7536,
@@ -61643,8 +61643,8 @@
   "en": "accordingly",
   "fa": "بر این اساس / در نتیجه",
   "cat": "adv",
-  "ex": "They spoke accordingly about the problem.",
-  "exfa": "بر این اساس درباره‌ی مشکل حرف زدند."
+  "ex": "The plan changed, so we adjusted our schedule accordingly.",
+  "exfa": "برنامه تغییر کرد، پس برنامه‌ی زمانی خود را بر این اساس تنظیم کردیم."
  },
  {
   "i": 7575,
@@ -62083,8 +62083,8 @@
   "en": "integral",
   "fa": "جدایی‌ناپذیر / انتگرال",
   "cat": "adj",
-  "ex": "This room is too integral for me.",
-  "exfa": "این اتاق برای من زیادی انتگرال است."
+  "ex": "Trust is an integral part of any partnership.",
+  "exfa": "اعتماد بخشی جدایی‌ناپذیر از هر همکاری‌ای است."
  },
  {
   "i": 7630,
@@ -62099,8 +62099,8 @@
   "en": "relax",
   "fa": "استراحت کردن / آرام شدن",
   "cat": "verb",
-  "ex": "It is not easy to relax every day.",
-  "exfa": "هر روز استراحت کردن آسان نیست."
+  "ex": "I like to relax on the couch after work.",
+  "exfa": "من دوست دارم بعد از کار روی مبل استراحت کنم."
  },
  {
   "i": 7632,
@@ -62147,8 +62147,8 @@
   "en": "hardly",
   "fa": "به‌سختی / به‌زحمت",
   "cat": "adv",
-  "ex": "She hardly finished the work.",
-  "exfa": "او به‌سختی کار را تمام کرد.",
+  "ex": "I hardly slept last night because of the noise.",
+  "exfa": "دیشب به‌خاطر سر و صدا به‌سختی خوابیدم.",
   "syn": [
    "barely",
    "scarcely"
@@ -62263,8 +62263,8 @@
   "en": "coral",
   "fa": "مرجان",
   "cat": "adj",
-  "ex": "Everything felt coral after the trip.",
-  "exfa": "بعد از سفر همه چیز مرجان به نظر می‌رسید."
+  "ex": "Divers came to see the colorful coral near the reef.",
+  "exfa": "غواصان برای دیدن مرجان‌های رنگارنگ نزدیک صخره آمدند."
  },
  {
   "i": 7652,
@@ -62559,16 +62559,16 @@
   "en": "additionally",
   "fa": "علاوه بر این",
   "cat": "adv",
-  "ex": "He answered additionally.",
-  "exfa": "او علاوه بر این جواب داد."
+  "ex": "The house has three bedrooms; additionally, it has a garage.",
+  "exfa": "این خانه سه اتاق خواب دارد؛ علاوه بر این، یک گاراژ هم دارد."
  },
  {
   "i": 7689,
   "en": "suffer",
   "fa": "رنج کشیدن / تحمل",
   "cat": "verb",
-  "ex": "I like to suffer in the morning.",
-  "exfa": "رنج کشیدن در صبح را دوست دارم."
+  "ex": "Many people suffer from allergies in spring.",
+  "exfa": "بسیاری از افراد در بهار از آلرژی رنج می‌برند."
  },
  {
   "i": 7690,
@@ -62759,8 +62759,8 @@
   "en": "decorative",
   "fa": "تزیینی",
   "cat": "adj",
-  "ex": "This room is too decorative for me.",
-  "exfa": "این اتاق برای من زیادی تزیینی است."
+  "ex": "The pillows on the sofa are purely decorative.",
+  "exfa": "کوسن‌های روی مبل صرفاً تزیینی هستند."
  },
  {
   "i": 7714,
@@ -63287,8 +63287,8 @@
   "en": "pray",
   "fa": "دعا کردن",
   "cat": "verb",
-  "ex": "It is not easy to pray every day.",
-  "exfa": "هر روز دعا کردن آسان نیست."
+  "ex": "My grandmother prays every morning before breakfast.",
+  "exfa": "مادربزرگم هر روز صبح قبل از صبحانه دعا می‌کند."
  },
  {
   "i": 7780,
@@ -63359,8 +63359,8 @@
   "en": "reasonably",
   "fa": "معقولانه / نسبتاً",
   "cat": "adv",
-  "ex": "He answered reasonably.",
-  "exfa": "او معقولانه جواب داد."
+  "ex": "The hotel rooms are reasonably priced for the location.",
+  "exfa": "قیمت اتاق‌های هتل با توجه به موقعیت مکانی معقولانه است."
  },
  {
   "i": 7789,
@@ -63415,8 +63415,8 @@
   "en": "radical",
   "fa": "انقلابی / ریشه‌ای",
   "cat": "adj",
-  "ex": "Everything felt radical after the trip.",
-  "exfa": "بعد از سفر همه چیز انقلابی به نظر می‌رسید."
+  "ex": "The company made radical changes to survive the crisis.",
+  "exfa": "شرکت برای عبور از بحران تغییراتی ریشه‌ای انجام داد."
  },
  {
   "i": 7796,
@@ -63519,8 +63519,8 @@
   "en": "elderly",
   "fa": "مسن / پیر",
   "cat": "adj",
-  "ex": "He answered elderly.",
-  "exfa": "او مسن جواب داد."
+  "ex": "We should offer our seat to elderly passengers.",
+  "exfa": "باید صندلی‌مان را به مسافران مسن بدهیم."
  },
  {
   "i": 7809,
@@ -63631,8 +63631,8 @@
   "en": "exclusively",
   "fa": "فقط / منحصراً",
   "cat": "adv",
-  "ex": "They spoke exclusively about the problem.",
-  "exfa": "فقط درباره‌ی مشکل حرف زدند."
+  "ex": "This gym is used exclusively by hotel guests.",
+  "exfa": "این باشگاه فقط توسط مهمانان هتل استفاده می‌شود."
  },
  {
   "i": 7823,
@@ -63927,8 +63927,8 @@
   "en": "actively",
   "fa": "به‌طور فعال",
   "cat": "adv",
-  "ex": "I actively drink tea at night.",
-  "exfa": "شب‌ها به‌طور فعال چای می‌نوشم."
+  "ex": "She is actively looking for a new job.",
+  "exfa": "او به‌طور فعال به دنبال شغل جدید است."
  },
  {
   "i": 7860,
@@ -64007,8 +64007,8 @@
   "en": "injured",
   "fa": "آسیب‌دیده / زخمی",
   "cat": "verb",
-  "ex": "I like to injured in the morning.",
-  "exfa": "آسیب‌دیده در صبح را دوست دارم."
+  "ex": "Two passengers were injured in the car accident.",
+  "exfa": "دو مسافر در تصادف رانندگی آسیب دیدند."
  },
  {
   "i": 7870,
@@ -64111,8 +64111,8 @@
   "en": "unlikely",
   "fa": "غیرمحتمل",
   "cat": "adj",
-  "ex": "They spoke unlikely about the problem.",
-  "exfa": "غیرمحتمل درباره‌ی مشکل حرف زدند."
+  "ex": "It's unlikely to rain this weekend.",
+  "exfa": "بعید است این آخر هفته باران بیاید."
  },
  {
   "i": 7883,
@@ -64215,8 +64215,8 @@
   "en": "rarely",
   "fa": "به ندرت",
   "cat": "time",
-  "ex": "I rarely drink tea at night.",
-  "exfa": "شب‌ها به ندرت چای می‌نوشم.",
+  "ex": "I rarely stay up past midnight.",
+  "exfa": "به‌ندرت تا بعد از نیمه‌شب بیدار می‌مانم.",
   "syn": [
    "seldom",
    "hardly ever"
@@ -64235,8 +64235,8 @@
   "en": "infected",
   "fa": "آلوده",
   "cat": "verb",
-  "ex": "I like to infected in the morning.",
-  "exfa": "آلوده در صبح را دوست دارم."
+  "ex": "The wound became infected because it wasn't cleaned properly.",
+  "exfa": "زخم چون درست تمیز نشده بود آلوده شد."
  },
  {
   "i": 7898,
@@ -64523,8 +64523,8 @@
   "en": "survive",
   "fa": "زنده ماندن",
   "cat": "verb",
-  "ex": "I like to survive in the morning.",
-  "exfa": "زنده ماندن در صبح را دوست دارم."
+  "ex": "It's amazing that anyone survived that crash.",
+  "exfa": "شگفت‌آور است که کسی از آن تصادف زنده ماند."
  },
  {
   "i": 7934,
@@ -64587,8 +64587,8 @@
   "en": "canal",
   "fa": "کانال / نهر",
   "cat": "noun",
-  "ex": "This room is too canal for me.",
-  "exfa": "این اتاق برای من زیادی کانال است."
+  "ex": "Boats travel along the canal to the city.",
+  "exfa": "قایق‌ها از طریق کانال به شهر می‌روند."
  },
  {
   "i": 7942,
@@ -65115,16 +65115,16 @@
   "en": "publicly",
   "fa": "علنی / به‌طور عمومی",
   "cat": "adv",
-  "ex": "I publicly drink tea at night.",
-  "exfa": "شب‌ها علنی چای می‌نوشم."
+  "ex": "The company publicly apologized for the mistake.",
+  "exfa": "شرکت علناً بابت اشتباه عذرخواهی کرد."
  },
  {
   "i": 8008,
   "en": "hourly",
   "fa": "ساعتی / هر ساعت",
   "cat": "time",
-  "ex": "He answered hourly.",
-  "exfa": "او ساعتی جواب داد."
+  "ex": "She is paid an hourly wage of fifteen dollars.",
+  "exfa": "او دستمزد ساعتی پانزده دلاری دریافت می‌کند."
  },
  {
   "i": 8009,
@@ -65211,16 +65211,16 @@
   "en": "incentive",
   "fa": "انگیزه / تشویق",
   "cat": "noun",
-  "ex": "Everything felt incentive after the trip.",
-  "exfa": "بعد از سفر همه چیز انگیزه به نظر می‌رسید."
+  "ex": "The company offers a bonus as an incentive to work harder.",
+  "exfa": "شرکت پاداشی به عنوان انگیزه برای کار بیشتر ارائه می‌دهد."
  },
  {
   "i": 8020,
   "en": "butterfly",
   "fa": "پروانه",
   "cat": "animal",
-  "ex": "He answered butterfly.",
-  "exfa": "او پروانه جواب داد."
+  "ex": "A yellow butterfly landed on the flower.",
+  "exfa": "یک پروانه‌ی زرد روی گل نشست."
  },
  {
   "i": 8021,
@@ -65243,8 +65243,8 @@
   "en": "heavily",
   "fa": "به شدت / خیلی",
   "cat": "adv",
-  "ex": "I heavily drink tea at night.",
-  "exfa": "شب‌ها سنگین چای می‌نوشم."
+  "ex": "It rained heavily all weekend.",
+  "exfa": "تمام آخر هفته باران به شدت بارید."
  },
  {
   "i": 8024,
@@ -65335,8 +65335,8 @@
   "en": "sink",
   "fa": "سینک / غرق شدن",
   "cat": "house",
-  "ex": "To sink well, you need patience.",
-  "exfa": "برای خوب سینک، صبر لازم است."
+  "ex": "Wash the dishes and leave them in the sink.",
+  "exfa": "ظرف‌ها را بشور و در سینک بگذار."
  },
  {
   "i": 8035,
@@ -65367,8 +65367,8 @@
   "en": "devoted",
   "fa": "وقف شده / مخلصانه",
   "cat": "verb",
-  "ex": "To devoted well, you need patience.",
-  "exfa": "برای خوب وقف شده، صبر لازم است."
+  "ex": "He is completely devoted to his family.",
+  "exfa": "او کاملاً وقف خانواده‌اش شده است."
  },
  {
   "i": 8039,
@@ -65455,8 +65455,8 @@
   "en": "naval",
   "fa": "نظامی دریایی",
   "cat": "adj",
-  "ex": "This room is too naval for me.",
-  "exfa": "این اتاق برای من زیادی دریایی است."
+  "ex": "The country built a new naval base on the coast.",
+  "exfa": "این کشور یک پایگاه نظامی دریایی جدید در ساحل ساخت."
  },
  {
   "i": 8050,
@@ -65543,8 +65543,8 @@
   "en": "shortly",
   "fa": "به زودی / مختصراً",
   "cat": "adv",
-  "ex": "He answered shortly.",
-  "exfa": "او به زودی جواب داد."
+  "ex": "The train will arrive shortly.",
+  "exfa": "قطار به‌زودی می‌رسد."
  },
  {
   "i": 8061,
@@ -66015,8 +66015,8 @@
   "en": "substantially",
   "fa": "به‌طور قابل‌توجه",
   "cat": "adv",
-  "ex": "I substantially drink tea at night.",
-  "exfa": "شب‌ها به‌طور قابل‌توجه چای می‌نوشم."
+  "ex": "The new policy substantially reduced traffic accidents.",
+  "exfa": "سیاست جدید تصادفات رانندگی را به‌طور قابل‌توجهی کاهش داد."
  },
  {
   "i": 8120,
@@ -66291,8 +66291,8 @@
   "en": "gorgeous",
   "fa": "زیبا / دلربا",
   "cat": "adj",
-  "ex": "This room is too gorgeous for me.",
-  "exfa": "این اتاق برای من زیادی زیبا است."
+  "ex": "The sunset over the mountains looked gorgeous.",
+  "exfa": "غروب آفتاب روی کوه‌ها بسیار زیبا به نظر می‌رسید."
  },
  {
   "i": 8154,
@@ -66435,8 +66435,8 @@
   "en": "transparent",
   "fa": "شفاف",
   "cat": "adj",
-  "ex": "Everything felt transparent after the trip.",
-  "exfa": "بعد از سفر همه چیز شفاف به نظر می‌رسید."
+  "ex": "The government promised to be more transparent about its spending.",
+  "exfa": "دولت وعده داد درباره‌ی هزینه‌هایش شفاف‌تر باشد."
  },
  {
   "i": 8172,
@@ -66583,8 +66583,8 @@
   "en": "vocational",
   "fa": "حرفه‌ای / مهارتی",
   "cat": "adj",
-  "ex": "This room is too vocational for me.",
-  "exfa": "این اتاق برای من زیادی حرفه‌ای است."
+  "ex": "He chose vocational training instead of going to university.",
+  "exfa": "او به جای دانشگاه، آموزش حرفه‌ای را انتخاب کرد."
  },
  {
   "i": 8190,
@@ -66775,8 +66775,8 @@
   "en": "distinguished",
   "fa": "برجسته / معروف",
   "cat": "verb",
-  "ex": "I like to distinguished in the morning.",
-  "exfa": "برجسته در صبح را دوست دارم."
+  "ex": "She is a distinguished professor of physics.",
+  "exfa": "او استادی برجسته در رشته‌ی فیزیک است."
  },
  {
   "i": 8214,
@@ -67159,8 +67159,8 @@
   "en": "artistic",
   "fa": "هنری",
   "cat": "adj",
-  "ex": "This room is too artistic for me.",
-  "exfa": "این اتاق برای من زیادی هنری است."
+  "ex": "She has an artistic talent for painting.",
+  "exfa": "او استعداد هنری برای نقاشی دارد."
  },
  {
   "i": 8262,
@@ -67255,8 +67255,8 @@
   "en": "precise",
   "fa": "دقیق / مشخص",
   "cat": "adj",
-  "ex": "I like to precise in the morning.",
-  "exfa": "دقیق در صبح را دوست دارم."
+  "ex": "I need the precise time of the meeting.",
+  "exfa": "به زمان دقیق جلسه نیاز دارم."
  },
  {
   "i": 8274,
@@ -67351,8 +67351,8 @@
   "en": "gather",
   "fa": "جمع کردن / گرد آمدن",
   "cat": "verb",
-  "ex": "I like to gather in the morning.",
-  "exfa": "جمع کردن در صبح را دوست دارم."
+  "ex": "We gather around the table for dinner every night.",
+  "exfa": "ما هر شب دور میز برای شام جمع می‌شویم."
  },
  {
   "i": 8286,
@@ -67679,8 +67679,8 @@
   "en": "grab",
   "fa": "گرفتن / چنگ زدن",
   "cat": "verb",
-  "ex": "To grab well, you need patience.",
-  "exfa": "برای خوب گرفتن، صبر لازم است."
+  "ex": "He grabbed his coat and ran outside.",
+  "exfa": "او کتش را برداشت و بیرون دوید."
  },
  {
   "i": 8327,
@@ -67719,8 +67719,8 @@
   "en": "disable",
   "fa": "غیرفعال کردن / ناتوان کردن",
   "cat": "verb",
-  "ex": "Everything felt disable after the trip.",
-  "exfa": "بعد از سفر همه چیز غیرفعال کردن به نظر می‌رسید."
+  "ex": "You can disable notifications in the settings menu.",
+  "exfa": "می‌توانی اعلان‌ها را در منوی تنظیمات غیرفعال کنی."
  },
  {
   "i": 8332,
@@ -67735,8 +67735,8 @@
   "en": "succeed",
   "fa": "موفق شدن / کامیاب شدن",
   "cat": "verb",
-  "ex": "I like to succeed in the morning.",
-  "exfa": "موفق شدن در صبح را دوست دارم."
+  "ex": "She worked hard and finally succeeded in her exams.",
+  "exfa": "او سخت تلاش کرد و بالاخره در امتحاناتش موفق شد."
  },
  {
   "i": 8334,
@@ -67935,8 +67935,8 @@
   "en": "observe",
   "fa": "مشاهده کردن / رعایت کردن",
   "cat": "verb",
-  "ex": "To observe well, you need patience.",
-  "exfa": "برای خوب مشاهده کردن، صبر لازم است."
+  "ex": "Scientists observed the birds' behavior for weeks.",
+  "exfa": "دانشمندان هفته‌ها رفتار پرندگان را مشاهده کردند."
  },
  {
   "i": 8359,
@@ -67991,8 +67991,8 @@
   "en": "simultaneously",
   "fa": "به‌طور همزمان",
   "cat": "adv",
-  "ex": "She simultaneously finished the work.",
-  "exfa": "او به‌طور همزمان کار را تمام کرد."
+  "ex": "She can type and talk on the phone simultaneously.",
+  "exfa": "او می‌تواند هم‌زمان تایپ کند و با تلفن صحبت کند."
  },
  {
   "i": 8366,
@@ -68087,8 +68087,8 @@
   "en": "officially",
   "fa": "به‌طور رسمی",
   "cat": "adv",
-  "ex": "She officially finished the work.",
-  "exfa": "او به‌طور رسمی کار را تمام کرد."
+  "ex": "The new bridge was officially opened last week.",
+  "exfa": "پل جدید هفته‌ی گذشته به‌طور رسمی افتتاح شد."
  },
  {
   "i": 8378,
@@ -68199,8 +68199,8 @@
   "en": "safely",
   "fa": "به‌طور ایمن",
   "cat": "adv",
-  "ex": "I safely drink tea at night.",
-  "exfa": "شب‌ها به‌طور ایمن چای می‌نوشم."
+  "ex": "Please drive safely in the rain.",
+  "exfa": "لطفاً در باران با احتیاط رانندگی کن."
  },
  {
   "i": 8392,
@@ -68247,8 +68247,8 @@
   "en": "durable",
   "fa": "پایدار / بادوام",
   "cat": "adj",
-  "ex": "This room is too durable for me.",
-  "exfa": "این اتاق برای من زیادی پایدار است."
+  "ex": "These hiking boots are durable enough to last for years.",
+  "exfa": "این پوتین‌های کوهنوردی به قدری بادوام هستند که سال‌ها دوام می‌آورند."
  },
  {
   "i": 8398,
@@ -68447,8 +68447,8 @@
   "en": "independently",
   "fa": "به‌طور مستقل / آزادانه",
   "cat": "adv",
-  "ex": "They spoke independently about the problem.",
-  "exfa": "به‌طور مستقل درباره‌ی مشکل حرف زدند."
+  "ex": "The two teams worked independently on the same project.",
+  "exfa": "دو تیم به‌طور مستقل روی همان پروژه کار کردند."
  },
  {
   "i": 8423,
@@ -68476,8 +68476,8 @@
   "en": "scratch",
   "fa": "خراش / از صفر شروع کردن",
   "cat": "verb",
-  "ex": "I like to scratch in the morning.",
-  "exfa": "خراش در صبح را دوست دارم."
+  "ex": "The cat scratched the sofa with its claws.",
+  "exfa": "گربه با چنگال‌هایش روی مبل خراش انداخت."
  },
  {
   "i": 8426,
@@ -69644,8 +69644,8 @@
   "en": "testament",
   "fa": "وصیت‌نامه / گواه",
   "cat": "noun",
-  "ex": "Everything felt testament after the trip.",
-  "exfa": "بعد از سفر همه چیز وصیت به نظر می‌رسید."
+  "ex": "Her success is a testament to years of hard work.",
+  "exfa": "موفقیت او گواهی بر سال‌ها تلاش سخت است."
  },
  {
   "i": 8572,
@@ -69660,8 +69660,8 @@
   "en": "dominant",
   "fa": "غالب / مسلط",
   "cat": "adj",
-  "ex": "This room is too dominant for me.",
-  "exfa": "این اتاق برای من زیادی غالب است."
+  "ex": "English is the dominant language in international business.",
+  "exfa": "انگلیسی زبان غالب در تجارت بین‌المللی است."
  },
  {
   "i": 8574,
@@ -69724,8 +69724,8 @@
   "en": "minimize",
   "fa": "کم کردن / کاهش دادن",
   "cat": "verb",
-  "ex": "I like to minimize in the morning.",
-  "exfa": "کم کردن در صبح را دوست دارم."
+  "ex": "We should minimize waste to protect the environment.",
+  "exfa": "باید برای حفظ محیط‌زیست ضایعات را کاهش دهیم."
  },
  {
   "i": 8582,
@@ -70292,8 +70292,8 @@
   "en": "literally",
   "fa": "به معنای واقعی",
   "cat": "adv",
-  "ex": "He answered literally.",
-  "exfa": "او به معنای واقعی جواب داد."
+  "ex": "I was so tired I literally fell asleep at my desk.",
+  "exfa": "آنقدر خسته بودم که به معنای واقعی کلمه پشت میزم خوابم برد."
  },
  {
   "i": 8653,
@@ -70316,8 +70316,8 @@
   "en": "ecological",
   "fa": "مربوط به محیط زیست",
   "cat": "adj",
-  "ex": "Everything felt ecological after the trip.",
-  "exfa": "بعد از سفر همه چیز مربوط به محیط زیست به نظر می‌رسید."
+  "ex": "Cutting down forests causes serious ecological damage.",
+  "exfa": "قطع جنگل‌ها آسیب جدی به محیط‌زیست وارد می‌کند."
  },
  {
   "i": 8656,
@@ -70332,8 +70332,8 @@
   "en": "oval",
   "fa": "بیضی‌شکل",
   "cat": "adj",
-  "ex": "This room is too oval for me.",
-  "exfa": "این اتاق برای من زیادی بیضی‌شکل است."
+  "ex": "The table in the dining room is oval, not round.",
+  "exfa": "میز اتاق ناهارخوری بیضی‌شکل است، نه گرد."
  },
  {
   "i": 8658,
@@ -70736,8 +70736,8 @@
   "en": "eternal",
   "fa": "ابدی / جاودان",
   "cat": "adj",
-  "ex": "Everything felt eternal after the trip.",
-  "exfa": "بعد از سفر همه چیز ابدی به نظر می‌رسید."
+  "ex": "The couple promised each other eternal love.",
+  "exfa": "زوج به هم عشق ابدی قول دادند."
  },
  {
   "i": 8708,
@@ -70768,8 +70768,8 @@
   "en": "aboriginal",
   "fa": "بومی / اصیل",
   "cat": "adj",
-  "ex": "Everything felt aboriginal after the trip.",
-  "exfa": "بعد از سفر همه چیز بومی به نظر می‌رسید."
+  "ex": "Aboriginal art often tells ancient stories of the land.",
+  "exfa": "هنر بومی اغلب داستان‌های باستانی سرزمین را روایت می‌کند."
  },
  {
   "i": 8712,
@@ -70800,8 +70800,8 @@
   "en": "productive",
   "fa": "پرثمر / مولد",
   "cat": "adj",
-  "ex": "Everything felt productive after the trip.",
-  "exfa": "بعد از سفر همه چیز پرثمر به نظر می‌رسید."
+  "ex": "I feel most productive early in the morning.",
+  "exfa": "بیشترین بازدهی را صبح زود دارم."
  },
  {
   "i": 8716,
@@ -70912,8 +70912,8 @@
   "en": "varied",
   "fa": "متنوع / مختلف",
   "cat": "verb",
-  "ex": "I like to varied in the morning.",
-  "exfa": "متنوع در صبح را دوست دارم."
+  "ex": "The menu offers a varied selection of dishes.",
+  "exfa": "منو انتخابی متنوع از غذاها ارائه می‌دهد."
  },
  {
   "i": 8730,
@@ -71200,8 +71200,8 @@
   "en": "lyric",
   "fa": "متن ترانه / غنایی",
   "cat": "adj",
-  "ex": "This room is too lyric for me.",
-  "exfa": "این اتاق برای من زیادی متن ترانه است."
+  "ex": "I can't remember the first lyric of that song.",
+  "exfa": "اولین بیت آن ترانه را یادم نمی‌آید."
  },
  {
   "i": 8766,
@@ -71652,8 +71652,8 @@
   "en": "characteristic",
   "fa": "ویژگی / خصوصیت",
   "cat": "adj",
-  "ex": "This room is too characteristic for me.",
-  "exfa": "این اتاق برای من زیادی ویژگی است."
+  "ex": "Patience is a key characteristic of good teachers.",
+  "exfa": "صبر یکی از ویژگی‌های مهم معلمان خوب است."
  },
  {
   "i": 8822,
@@ -71708,8 +71708,8 @@
   "en": "consequently",
   "fa": "در نتیجه / بنابراین",
   "cat": "adv",
-  "ex": "He answered consequently.",
-  "exfa": "او در نتیجه جواب داد."
+  "ex": "It rained all night; consequently, the game was cancelled.",
+  "exfa": "تمام شب باران بارید؛ در نتیجه، بازی لغو شد."
  },
  {
   "i": 8829,
@@ -71764,8 +71764,8 @@
   "en": "narrative",
   "fa": "روایت / داستان",
   "cat": "adj",
-  "ex": "Everything felt narrative after the trip.",
-  "exfa": "بعد از سفر همه چیز روایت به نظر می‌رسید."
+  "ex": "The book follows a young girl's narrative of war.",
+  "exfa": "این کتاب روایت یک دختر جوان از جنگ را دنبال می‌کند."
  },
  {
   "i": 8836,
@@ -71988,8 +71988,8 @@
   "en": "shake",
   "fa": "لرزش / تکان",
   "cat": "verb",
-  "ex": "It is not easy to shake every day.",
-  "exfa": "هر روز لرزش آسان نیست."
+  "ex": "Shake the bottle before you open it.",
+  "exfa": "قبل از باز کردن بطری آن را تکان بده."
  },
  {
   "i": 8864,
@@ -72060,8 +72060,8 @@
   "en": "freely",
   "fa": "آزادانه",
   "cat": "adv",
-  "ex": "He answered freely.",
-  "exfa": "او آزادانه جواب داد."
+  "ex": "People can express their opinions freely here.",
+  "exfa": "مردم اینجا می‌توانند آزادانه نظراتشان را بیان کنند."
  },
  {
   "i": 8873,
@@ -72148,8 +72148,8 @@
   "en": "readily",
   "fa": "به‌آسانی / فوری",
   "cat": "adv",
-  "ex": "I readily drink tea at night.",
-  "exfa": "شب‌ها به‌آسانی چای می‌نوشم."
+  "ex": "Fresh vegetables are readily available at the local market.",
+  "exfa": "سبزیجات تازه به‌آسانی در بازار محلی در دسترس هستند."
  },
  {
   "i": 8884,
@@ -72228,8 +72228,8 @@
   "en": "legally",
   "fa": "به‌طور قانونی / قانونی",
   "cat": "crime",
-  "ex": "She legally finished the work.",
-  "exfa": "او به‌طور قانونی کار را تمام کرد."
+  "ex": "You must be eighteen to buy alcohol legally.",
+  "exfa": "برای خرید قانونی الکل باید هجده سال داشته باشی."
  },
  {
   "i": 8894,
@@ -72332,8 +72332,8 @@
   "en": "briefly",
   "fa": "به اختصار / کوتاهی",
   "cat": "adv",
-  "ex": "They spoke briefly about the problem.",
-  "exfa": "به اختصار درباره‌ی مشکل حرف زدند."
+  "ex": "She briefly explained the new rules.",
+  "exfa": "او قوانین جدید را به‌اختصار توضیح داد."
  },
  {
   "i": 8907,
@@ -72428,8 +72428,8 @@
   "en": "barely",
   "fa": "به سختی / به‌زحمت",
   "cat": "adv",
-  "ex": "They spoke barely about the problem.",
-  "exfa": "به سختی درباره‌ی مشکل حرف زدند."
+  "ex": "I barely finished the exam in time.",
+  "exfa": "به سختی امتحان را به موقع تمام کردم."
  },
  {
   "i": 8919,
@@ -73112,8 +73112,8 @@
   "en": "surround",
   "fa": "احاطه کردن / دور زدن",
   "cat": "verb",
-  "ex": "It is not easy to surround every day.",
-  "exfa": "هر روز احاطه کردن آسان نیست."
+  "ex": "Tall mountains surround the small village.",
+  "exfa": "کوه‌های بلند روستای کوچک را احاطه کرده‌اند."
  },
  {
   "i": 9004,
@@ -73288,8 +73288,8 @@
   "en": "carnival",
   "fa": "جشن / کارناوال",
   "cat": "noun",
-  "ex": "This room is too carnival for me.",
-  "exfa": "این اتاق برای من زیادی جشن است."
+  "ex": "The whole town celebrates the carnival with music and costumes.",
+  "exfa": "تمام شهر کارناوال را با موسیقی و لباس‌های عجیب جشن می‌گیرد."
  },
  {
   "i": 9026,
@@ -73328,16 +73328,16 @@
   "en": "physically",
   "fa": "به‌صورت جسمانی",
   "cat": "adv",
-  "ex": "They spoke physically about the problem.",
-  "exfa": "به‌صورت جسمانی درباره‌ی مشکل حرف زدند."
+  "ex": "The job is physically demanding, so you need to be fit.",
+  "exfa": "این شغل از نظر جسمانی سخت است، پس باید آماده باشی."
  },
  {
   "i": 9031,
   "en": "divide",
   "fa": "تقسیم کردن",
   "cat": "verb",
-  "ex": "It is not easy to divide every day.",
-  "exfa": "هر روز تقسیم کردن آسان نیست."
+  "ex": "We divided the pizza into eight slices.",
+  "exfa": "پیتزا را به هشت تکه تقسیم کردیم."
  },
  {
   "i": 9032,
@@ -73400,8 +73400,8 @@
   "en": "deserve",
   "fa": "شایسته بودن",
   "cat": "verb",
-  "ex": "It is not easy to deserve every day.",
-  "exfa": "هر روز شایسته بودن آسان نیست."
+  "ex": "She worked hard and deserves this promotion.",
+  "exfa": "او سخت تلاش کرد و شایسته‌ی این ترفیع است."
  },
  {
   "i": 9040,
@@ -73560,8 +73560,8 @@
   "en": "accurately",
   "fa": "با دقت / درست",
   "cat": "adv",
-  "ex": "I accurately drink tea at night.",
-  "exfa": "شب‌ها با دقت چای می‌نوشم."
+  "ex": "Please fill out the form accurately.",
+  "exfa": "لطفاً فرم را با دقت پر کن."
  },
  {
   "i": 9060,
@@ -73832,8 +73832,8 @@
   "en": "thoroughly",
   "fa": "کاملاً / دقیقاً",
   "cat": "adv",
-  "ex": "She thoroughly finished the work.",
-  "exfa": "او کاملاً کار را تمام کرد."
+  "ex": "She thoroughly cleaned the kitchen before the guests arrived.",
+  "exfa": "او پیش از رسیدن مهمانان آشپزخانه را کاملاً تمیز کرد."
  },
  {
   "i": 9094,
@@ -73944,8 +73944,8 @@
   "en": "dare",
   "fa": "جرئت کردن / چالش",
   "cat": "verb",
-  "ex": "It is not easy to dare every day.",
-  "exfa": "هر روز جرئت کردن آسان نیست."
+  "ex": "I didn't dare to speak in front of the class.",
+  "exfa": "جرئت نکردم جلوی کلاس صحبت کنم."
  },
  {
   "i": 9108,
@@ -74008,8 +74008,8 @@
   "en": "systematic",
   "fa": "سازمان‌یافته / روش‌مند",
   "cat": "adj",
-  "ex": "Everything felt systematic after the trip.",
-  "exfa": "بعد از سفر همه چیز سازمان‌یافته به نظر می‌رسید."
+  "ex": "The team took a systematic approach to solve the problem.",
+  "exfa": "تیم رویکردی سازمان‌یافته برای حل مشکل در پیش گرفت."
  },
  {
   "i": 9116,
@@ -74264,8 +74264,8 @@
   "en": "wicked",
   "fa": "شرور / بدجنس",
   "cat": "adj",
-  "ex": "It is not easy to wicked every day.",
-  "exfa": "هر روز شرور آسان نیست."
+  "ex": "The wicked stepmother locked the girl in a tower.",
+  "exfa": "نامادری شرور، دختر را در برجی حبس کرد."
  },
  {
   "i": 9148,
@@ -74392,8 +74392,8 @@
   "en": "impressed",
   "fa": "تحت تأثیر قرار دادن",
   "cat": "verb",
-  "ex": "It is not easy to impressed every day.",
-  "exfa": "هر روز متأثر کردن آسان نیست."
+  "ex": "The teacher was impressed by her essay.",
+  "exfa": "معلم تحت تأثیر انشای او قرار گرفت."
  },
  {
   "i": 9164,
@@ -74536,8 +74536,8 @@
   "en": "twisted",
   "fa": "پیچ‌خورده / کج",
   "cat": "verb",
-  "ex": "I like to twisted in the morning.",
-  "exfa": "پیچ‌خورده در صبح را دوست دارم."
+  "ex": "She twisted her ankle while running on the trail.",
+  "exfa": "او هنگام دویدن در مسیر، مچ پایش پیچ خورد."
  },
  {
   "i": 9182,
@@ -74648,8 +74648,8 @@
   "en": "prominent",
   "fa": "برجسته / نمایان",
   "cat": "adj",
-  "ex": "Everything felt prominent after the trip.",
-  "exfa": "بعد از سفر همه چیز برجسته به نظر می‌رسید."
+  "ex": "She is a prominent scientist in her field.",
+  "exfa": "او دانشمندی برجسته در رشته‌ی خودش است."
  },
  {
   "i": 9196,
@@ -74744,8 +74744,8 @@
   "en": "lean",
   "fa": "لاغر / متکی",
   "cat": "verb",
-  "ex": "It is not easy to lean every day.",
-  "exfa": "هر روز لاغر آسان نیست."
+  "ex": "She leaned against the wall to rest.",
+  "exfa": "او برای استراحت به دیوار تکیه داد."
  },
  {
   "i": 9208,
@@ -74776,8 +74776,8 @@
   "en": "occasional",
   "fa": "گاهگاهی / مناسبتی",
   "cat": "adj",
-  "ex": "Everything felt occasional after the trip.",
-  "exfa": "بعد از سفر همه چیز گاهگاهی به نظر می‌رسید."
+  "ex": "We enjoy an occasional trip to the coast.",
+  "exfa": "ما گاه‌گاهی از یک سفر به سواحل لذت می‌بریم."
  },
  {
   "i": 9212,
@@ -75048,8 +75048,8 @@
   "en": "informative",
   "fa": "آموزنده / مفید",
   "cat": "adj",
-  "ex": "This room is too informative for me.",
-  "exfa": "این اتاق برای من زیادی آموزنده است."
+  "ex": "The documentary was informative about climate change.",
+  "exfa": "این مستند درباره‌ی تغییرات اقلیمی آموزنده بود."
  },
  {
   "i": 9246,
@@ -75112,8 +75112,8 @@
   "en": "abandoned",
   "fa": "رها شده / متروک",
   "cat": "verb",
-  "ex": "I like to abandoned in the morning.",
-  "exfa": "رها شده در صبح را دوست دارم."
+  "ex": "The old factory has stood abandoned for decades.",
+  "exfa": "کارخانه‌ی قدیمی سال‌هاست رها شده باقی مانده است."
  },
  {
   "i": 9254,
@@ -75176,8 +75176,8 @@
   "en": "complement",
   "fa": "مکمل / تکمیل کردن",
   "cat": "noun",
-  "ex": "This room is too complement for me.",
-  "exfa": "این اتاق برای من زیادی متمم است."
+  "ex": "This scarf really complements your blue coat.",
+  "exfa": "این شال واقعاً مکمل کت آبی توست."
  },
  {
   "i": 9262,
@@ -75824,8 +75824,8 @@
   "en": "precisely",
   "fa": "دقیقاً / درست",
   "cat": "adv",
-  "ex": "They spoke precisely about the problem.",
-  "exfa": "دقیقاً درباره‌ی مشکل حرف زدند."
+  "ex": "The meeting starts at precisely nine o'clock.",
+  "exfa": "جلسه دقیقاً ساعت نه شروع می‌شود."
  },
  {
   "i": 9343,
@@ -75888,8 +75888,8 @@
   "en": "steal",
   "fa": "دزدی کردن",
   "cat": "crime",
-  "ex": "To steal well, you need patience.",
-  "exfa": "برای خوب دزدی کردن، صبر لازم است."
+  "ex": "Someone tried to steal my bike last night.",
+  "exfa": "دیشب کسی سعی کرد دوچرخه‌ام را بدزدد."
  },
  {
   "i": 9351,
@@ -76072,8 +76072,8 @@
   "en": "homeless",
   "fa": "بی‌خانمان / بی‌سرپناه",
   "cat": "adj",
-  "ex": "This room is too homeless for me.",
-  "exfa": "این اتاق برای من زیادی بی‌خانه است."
+  "ex": "The shelter provides food for homeless people.",
+  "exfa": "این پناهگاه برای افراد بی‌خانمان غذا فراهم می‌کند."
  },
  {
   "i": 9374,
@@ -76336,8 +76336,8 @@
   "en": "dressed",
   "fa": "پوشیده",
   "cat": "clothes",
-  "ex": "To dressed well, you need patience.",
-  "exfa": "برای خوب پوشیده، صبر لازم است."
+  "ex": "She got dressed quickly and ran to catch the bus.",
+  "exfa": "او سریع لباس پوشید و برای رسیدن به اتوبوس دوید."
  },
  {
   "i": 9407,
@@ -76568,8 +76568,8 @@
   "en": "tremendous",
   "fa": "بسیار بزرگ / فوق العاده",
   "cat": "adj",
-  "ex": "Everything felt tremendous after the trip.",
-  "exfa": "بعد از سفر همه چیز بسیار بزرگ به نظر می‌رسید."
+  "ex": "The team put in a tremendous amount of effort.",
+  "exfa": "تیم تلاش فوق‌العاده زیادی انجام داد."
  },
  {
   "i": 9436,
@@ -76732,8 +76732,8 @@
   "en": "elephant",
   "fa": "فیل",
   "cat": "animal",
-  "ex": "Everything felt elephant after the trip.",
-  "exfa": "بعد از سفر همه چیز فیل به نظر می‌رسید."
+  "ex": "An elephant used its trunk to grab the branch.",
+  "exfa": "یک فیل با خرطومش شاخه را گرفت."
  },
  {
   "i": 9456,
@@ -76772,8 +76772,8 @@
   "en": "internationally",
   "fa": "بین‌المللی",
   "cat": "adv",
-  "ex": "He answered internationally.",
-  "exfa": "او بین‌المللی جواب داد."
+  "ex": "Her music is known internationally.",
+  "exfa": "موسیقی او در سطح بین‌المللی شناخته شده است."
  },
  {
   "i": 9461,
@@ -77060,8 +77060,8 @@
   "en": "specially",
   "fa": "خصوصاً / مخصوصاً",
   "cat": "adv",
-  "ex": "He answered specially.",
-  "exfa": "او خصوصاً جواب داد."
+  "ex": "This cake was specially made for her birthday.",
+  "exfa": "این کیک مخصوصاً برای تولدش درست شده بود."
  },
  {
   "i": 9497,
@@ -77108,8 +77108,8 @@
   "en": "bite",
   "fa": "گاز گرفتن / نیش",
   "cat": "verb",
-  "ex": "To bite well, you need patience.",
-  "exfa": "برای خوب گاز گرفتن، صبر لازم است."
+  "ex": "The dog tried to bite the mailman.",
+  "exfa": "سگ سعی کرد پستچی را گاز بگیرد."
  },
  {
   "i": 9503,
@@ -77148,8 +77148,8 @@
   "en": "infectious",
   "fa": "واگیردار / عفونی",
   "cat": "adj",
-  "ex": "Everything felt infectious after the trip.",
-  "exfa": "بعد از سفر همه چیز واگیردار به نظر می‌رسید."
+  "ex": "The disease is highly infectious and spreads quickly.",
+  "exfa": "این بیماری بسیار واگیردار است و سریع پخش می‌شود."
  },
  {
   "i": 9508,
@@ -77276,8 +77276,8 @@
   "en": "accent",
   "fa": "لهجه / تاکید",
   "cat": "talk",
-  "ex": "Everything felt accent after the trip.",
-  "exfa": "بعد از سفر همه چیز لهجه به نظر می‌رسید."
+  "ex": "She speaks English with a strong French accent.",
+  "exfa": "او انگلیسی را با لهجه‌ی غلیظ فرانسوی صحبت می‌کند."
  },
  {
   "i": 9524,
@@ -77516,8 +77516,8 @@
   "en": "organised",
   "fa": "سازمان‌یافته / تنظیم شده",
   "cat": "verb",
-  "ex": "I like to organised in the morning.",
-  "exfa": "سازمان یافته در صبح را دوست دارم."
+  "ex": "His desk is always neat and organised.",
+  "exfa": "میز او همیشه مرتب و سازمان‌یافته است."
  },
  {
   "i": 9554,
@@ -78332,8 +78332,8 @@
   "en": "competent",
   "fa": "توانمند / شایسته",
   "cat": "adj",
-  "ex": "Everything felt competent after the trip.",
-  "exfa": "بعد از سفر همه چیز توانمند به نظر می‌رسید."
+  "ex": "We need a competent manager who can handle pressure.",
+  "exfa": "به مدیری توانمند نیاز داریم که بتواند فشار را تحمل کند."
  },
  {
   "i": 9656,
@@ -78436,8 +78436,8 @@
   "en": "gradually",
   "fa": "به‌تدریج / آهسته",
   "cat": "adv",
-  "ex": "He answered gradually.",
-  "exfa": "او به‌تدریج جواب داد."
+  "ex": "The sky gradually turned dark as the storm came.",
+  "exfa": "با آمدن طوفان آسمان به‌تدریج تاریک شد."
  },
  {
   "i": 9669,
@@ -78460,8 +78460,8 @@
   "en": "desirable",
   "fa": "مطلوب / دلخواه",
   "cat": "adj",
-  "ex": "Everything felt desirable after the trip.",
-  "exfa": "بعد از سفر همه چیز مطلوب به نظر می‌رسید."
+  "ex": "A quiet neighborhood is highly desirable for families.",
+  "exfa": "محله‌ای آرام برای خانواده‌ها بسیار مطلوب است."
  },
  {
   "i": 9672,
@@ -78508,8 +78508,8 @@
   "en": "garlic",
   "fa": "سیر",
   "cat": "food",
-  "ex": "This room is too garlic for me.",
-  "exfa": "این اتاق برای من زیادی سیر است."
+  "ex": "Add some garlic to the sauce for more flavor.",
+  "exfa": "برای طعم بهتر کمی سیر به سس اضافه کن."
  },
  {
   "i": 9678,
@@ -78524,8 +78524,8 @@
   "en": "shine",
   "fa": "درخشیدن / تابیدن",
   "cat": "verb",
-  "ex": "It is not easy to shine every day.",
-  "exfa": "هر روز درخشش آسان نیست."
+  "ex": "The sun shines brightly every summer morning.",
+  "exfa": "هر صبح تابستان خورشید به‌شدت می‌درخشد."
  },
  {
   "i": 9680,
@@ -78896,8 +78896,8 @@
   "en": "magical",
   "fa": "جادویی / شگفت‌انگیز",
   "cat": "adj",
-  "ex": "This room is too magical for me.",
-  "exfa": "این اتاق برای من زیادی جادویی است."
+  "ex": "The children believed the forest was magical.",
+  "exfa": "بچه‌ها فکر می‌کردند جنگل جادویی است."
  },
  {
   "i": 9726,
@@ -79184,8 +79184,8 @@
   "en": "importantly",
   "fa": "به‌طور مهم",
   "cat": "adv",
-  "ex": "She importantly finished the work.",
-  "exfa": "او به‌طور مهم کار را تمام کرد."
+  "ex": "Most importantly, remember to bring your passport.",
+  "exfa": "از همه مهم‌تر، یادت باشد پاسپورتت را بیاوری."
  },
  {
   "i": 9762,
@@ -79616,8 +79616,8 @@
   "en": "deadly",
   "fa": "کشنده",
   "cat": "adv",
-  "ex": "I deadly drink tea at night.",
-  "exfa": "شب‌ها کشنده چای می‌نوشم."
+  "ex": "The virus can be deadly for elderly patients.",
+  "exfa": "این ویروس می‌تواند برای بیماران سالخورده کشنده باشد."
  },
  {
   "i": 9816,
@@ -80312,8 +80312,8 @@
   "en": "educated",
   "fa": "تحصیل‌کرده / آموزش‌دیده",
   "cat": "school",
-  "ex": "To educated well, you need patience.",
-  "exfa": "برای خوب تحصیل‌کرده، صبر لازم است."
+  "ex": "Her parents wanted her to be well educated.",
+  "exfa": "والدینش می‌خواستند او خوب تحصیل‌کرده باشد."
  },
  {
   "i": 9903,
@@ -80344,8 +80344,8 @@
   "en": "proudly",
   "fa": "با غرور",
   "cat": "feeling",
-  "ex": "They spoke proudly about the problem.",
-  "exfa": "با غرور درباره‌ی مشکل حرف زدند."
+  "ex": "She proudly showed everyone her new diploma.",
+  "exfa": "او با غرور مدرک جدیدش را به همه نشان داد."
  },
  {
   "i": 9907,
@@ -80664,8 +80664,8 @@
   "en": "continuously",
   "fa": "مستمر / پیوسته",
   "cat": "adv",
-  "ex": "They spoke continuously about the problem.",
-  "exfa": "مستمر درباره‌ی مشکل حرف زدند."
+  "ex": "The machine ran continuously for ten hours.",
+  "exfa": "دستگاه به‌طور مستمر ده ساعت کار کرد."
  },
  {
   "i": 9947,
@@ -80720,8 +80720,8 @@
   "en": "tear",
   "fa": "اشک / پاره کردن",
   "cat": "verb",
-  "ex": "I like to tear in the morning.",
-  "exfa": "اشک در صبح را دوست دارم."
+  "ex": "A tear rolled down her cheek during the movie.",
+  "exfa": "در حین فیلم یک اشک روی گونه‌اش چکید."
  },
  {
   "i": 9954,
@@ -80832,8 +80832,8 @@
   "en": "painful",
   "fa": "دردناک",
   "cat": "adj",
-  "ex": "Everything felt painful after the trip.",
-  "exfa": "بعد از سفر همه چیز دردناک به نظر می‌رسید."
+  "ex": "The injury was painful for several days.",
+  "exfa": "این آسیب چند روزی دردناک بود."
  },
  {
   "i": 9968,
@@ -80968,8 +80968,8 @@
   "en": "lately",
   "fa": "اخیراً / به تازگی",
   "cat": "time",
-  "ex": "He answered lately.",
-  "exfa": "او اخیراً جواب داد."
+  "ex": "I haven't seen him around lately.",
+  "exfa": "اخیراً او را ندیده‌ام."
  },
  {
   "i": 9985,
@@ -81016,8 +81016,8 @@
   "en": "likewise",
   "fa": "همچنین / به همین ترتیب",
   "cat": "adv",
-  "ex": "To likewise well, you need patience.",
-  "exfa": "برای خوب همچنین، صبر لازم است."
+  "ex": "Prices went up, and rents rose likewise.",
+  "exfa": "قیمت‌ها بالا رفت و اجاره‌ها هم به همین ترتیب افزایش یافت."
  },
  {
   "i": 9991,
@@ -81152,8 +81152,8 @@
   "en": "respected",
   "fa": "محترم / معتبر",
   "cat": "verb",
-  "ex": "It is not easy to respected every day.",
-  "exfa": "هر روز محترم آسان نیست."
+  "ex": "She is a highly respected doctor in this city.",
+  "exfa": "او پزشکی بسیار محترم در این شهر است."
  },
  {
   "i": 10008,
@@ -81336,8 +81336,8 @@
   "en": "freeze",
   "fa": "یخ زدن / متوقف کردن",
   "cat": "verb",
-  "ex": "To freeze well, you need patience.",
-  "exfa": "برای خوب یخ زدن، صبر لازم است."
+  "ex": "The lake will freeze if the weather stays cold.",
+  "exfa": "اگر هوا سرد بماند دریاچه یخ می‌زند."
  },
  {
   "i": 10031,
@@ -81484,8 +81484,8 @@
   "en": "dramatically",
   "fa": "به‌طور چشمگیر / دراماتیک",
   "cat": "adv",
-  "ex": "He answered dramatically.",
-  "exfa": "او به‌طور درخشان جواب داد."
+  "ex": "Sales dropped dramatically after the price increase.",
+  "exfa": "پس از افزایش قیمت، فروش به‌طور چشمگیری افت کرد."
  },
  {
   "i": 10049,
@@ -81816,8 +81816,8 @@
   "en": "alternatively",
   "fa": "به‌جای آن / به‌طور دیگر",
   "cat": "adv",
-  "ex": "She alternatively finished the work.",
-  "exfa": "او به‌جای آن کار را تمام کرد."
+  "ex": "You can take the bus, or alternatively, walk there.",
+  "exfa": "می‌توانی اتوبوس بگیری یا به‌جای آن پیاده بروی."
  },
  {
   "i": 10090,
@@ -81872,8 +81872,8 @@
   "en": "gently",
   "fa": "آرام / ملایم",
   "cat": "adv",
-  "ex": "He answered gently.",
-  "exfa": "او آرام جواب داد."
+  "ex": "She gently closed the door so the baby wouldn't wake up.",
+  "exfa": "او در را آرام بست تا بچه بیدار نشود."
  },
  {
   "i": 10097,
@@ -81912,8 +81912,8 @@
   "en": "controversial",
   "fa": "بحث‌برانگیز / جنجالی",
   "cat": "adj",
-  "ex": "This room is too controversial for me.",
-  "exfa": "این اتاق برای من زیادی بحث‌برانگیز است."
+  "ex": "The new law is quite controversial among voters.",
+  "exfa": "قانون جدید در میان رأی‌دهندگان بسیار بحث‌برانگیز است."
  },
  {
   "i": 10102,
@@ -81976,8 +81976,8 @@
   "en": "justify",
   "fa": "توجیه کردن",
   "cat": "verb",
-  "ex": "I like to justify in the morning.",
-  "exfa": "توجیه کردن در صبح را دوست دارم."
+  "ex": "He couldn't justify spending so much money on a watch.",
+  "exfa": "او نتوانست خرج کردن این همه پول برای یک ساعت را توجیه کند."
  },
  {
   "i": 10110,
@@ -82136,8 +82136,8 @@
   "en": "picnic",
   "fa": "پیک‌نیک",
   "cat": "noun",
-  "ex": "This room is too picnic for me.",
-  "exfa": "این اتاق برای من زیادی پیک‌نیک است."
+  "ex": "We had a picnic in the park on Sunday.",
+  "exfa": "یکشنبه در پارک پیک‌نیک داشتیم."
  },
  {
   "i": 10130,
@@ -82344,8 +82344,8 @@
   "en": "endless",
   "fa": "بی‌پایان / نامحدود",
   "cat": "adj",
-  "ex": "Everything felt endless after the trip.",
-  "exfa": "بعد از سفر همه چیز بی‌پایان به نظر می‌رسید."
+  "ex": "The desert seemed like an endless sea of sand.",
+  "exfa": "بیابان مثل دریایی بی‌پایان از شن به نظر می‌رسید."
  },
  {
   "i": 10156,
@@ -82512,8 +82512,8 @@
   "en": "temporarily",
   "fa": "موقتاً / برای مدتی",
   "cat": "adv",
-  "ex": "He answered temporarily.",
-  "exfa": "او موقتاً جواب داد."
+  "ex": "The road is temporarily closed for repairs.",
+  "exfa": "جاده موقتاً برای تعمیرات بسته است."
  },
  {
   "i": 10177,
@@ -82648,8 +82648,8 @@
   "en": "detective",
   "fa": "کاراگاه / بازپرس",
   "cat": "crime",
-  "ex": "This room is too detective for me.",
-  "exfa": "این اتاق برای من زیادی کاراگاه است."
+  "ex": "The detective questioned every witness at the scene.",
+  "exfa": "کاراگاه از تمام شاهدان صحنه بازجویی کرد."
  },
  {
   "i": 10194,
@@ -82680,8 +82680,8 @@
   "en": "endorsement",
   "fa": "تأیید / حمایت",
   "cat": "noun",
-  "ex": "This room is too endorsement for me.",
-  "exfa": "این اتاق برای من زیادی تأیید است."
+  "ex": "The candidate received an endorsement from the local union.",
+  "exfa": "نامزد انتخابات از اتحادیه‌ی محلی تأیید و حمایت دریافت کرد."
  },
  {
   "i": 10198,
@@ -82928,8 +82928,8 @@
   "en": "promptly",
   "fa": "فوری / بدون تأخیر",
   "cat": "adv",
-  "ex": "He answered promptly.",
-  "exfa": "او فوری جواب داد."
+  "ex": "Please reply promptly so we can confirm the booking.",
+  "exfa": "لطفاً فوراً پاسخ دهید تا رزرو را تأیید کنیم."
  },
  {
   "i": 10229,
@@ -83136,8 +83136,8 @@
   "en": "badly",
   "fa": "بد / به شدت",
   "cat": "adv",
-  "ex": "They spoke badly about the problem.",
-  "exfa": "بد درباره‌ی مشکل حرف زدند."
+  "ex": "He played badly in the last two games.",
+  "exfa": "او در دو بازی آخر بد بازی کرد."
  },
  {
   "i": 10255,
@@ -83176,8 +83176,8 @@
   "en": "continually",
   "fa": "مدام / پیوسته",
   "cat": "adv",
-  "ex": "I continually drink tea at night.",
-  "exfa": "شب‌ها مدام چای می‌نوشم."
+  "ex": "He continually interrupts people during meetings.",
+  "exfa": "او مدام در جلسات حرف بقیه را قطع می‌کند."
  },
  {
   "i": 10260,
@@ -83352,8 +83352,8 @@
   "en": "verbal",
   "fa": "لفظی / شفاهی",
   "cat": "adj",
-  "ex": "This room is too verbal for me.",
-  "exfa": "این اتاق برای من زیادی لفظی است."
+  "ex": "They made a verbal agreement without signing any paperwork.",
+  "exfa": "آن‌ها یک توافق شفاهی کردند بدون امضای هیچ مدرکی."
  },
  {
   "i": 10282,
@@ -83816,8 +83816,8 @@
   "en": "advancement",
   "fa": "پیشرفت / ترقی",
   "cat": "noun",
-  "ex": "Everything felt advancement after the trip.",
-  "exfa": "بعد از سفر همه چیز پیشرفت به نظر می‌رسید."
+  "ex": "The company offers real opportunities for career advancement.",
+  "exfa": "این شرکت فرصت‌های واقعی برای پیشرفت شغلی ارائه می‌دهد."
  },
  {
   "i": 10340,
@@ -84420,8 +84420,8 @@
   "en": "burst",
   "fa": "ترکیدن",
   "cat": "verb",
-  "ex": "To burst well, you need patience.",
-  "exfa": "برای خوب ترکیدن، صبر لازم است."
+  "ex": "The balloon burst with a loud pop.",
+  "exfa": "بادکنک با صدای بلندی ترکید."
  },
  {
   "i": 10415,
@@ -84788,8 +84788,8 @@
   "en": "sufficiently",
   "fa": "کافی / به‌اندازه‌کافی",
   "cat": "adv",
-  "ex": "He answered sufficiently.",
-  "exfa": "او کافی جواب داد."
+  "ex": "Make sure the meat is sufficiently cooked before serving.",
+  "exfa": "مطمئن شوید گوشت پیش از سرو به‌اندازه‌ی کافی پخته شده است."
  },
  {
   "i": 10461,
@@ -85200,8 +85200,8 @@
   "en": "bent",
   "fa": "خمیده / خم",
   "cat": "adj",
-  "ex": "Everything felt bent after the trip.",
-  "exfa": "بعد از سفر همه چیز خمیده به نظر می‌رسید."
+  "ex": "The old fence was bent from the storm.",
+  "exfa": "حصار قدیمی از طوفان خم شده بود."
  },
  {
   "i": 10512,
