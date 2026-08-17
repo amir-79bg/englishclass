@@ -36,6 +36,23 @@ const level = arg('--level');
 
 // The template shapes that still dominate the catalog. Kept here rather than in
 // an agent prompt so the tool and the reviewer agree on what "broken" means.
+//
+// DO NOT TRUST THIS LIST TO BE COMPLETE. It was, twice. The first eight below
+// were taken from docs/dictionary-audit.md §F2 and used to declare every level
+// "100% clean" — but the audit only enumerated its top-20 shapes, and a second,
+// more natural-sounding generation of templates sat in the long tail and passed
+// straight through the filter. A gloss auditor reading B2/C1/C2 noticed them by
+// eye. To find the real set, do not grep for known shapes; count repeats:
+//
+//   node -e 'const {readBundle,readLevels,readWords}=require("./tools/bundle");
+//     const b=readBundle(),lv=readLevels(b),W=readWords(b);const m=new Map();
+//     [...new Set(Object.values(lv).flat())].forEach(i=>{const w=W[i];if(!w.ex)return;
+//     const k=w.ex.toLowerCase().split(String(w.en).toLowerCase().split(" ")[0]).join("~");
+//     m.set(k,(m.get(k)||0)+1)});
+//     [...m].filter(([,n])=>n>=3).sort((a,b)=>b[1]-a[1]).slice(0,20).forEach(([k,n])=>console.log(n,k))'
+//
+// Any shape reused three or more times across distinct headwords is a template,
+// whatever it sounds like. Add it here when one turns up.
 const TEMPLATES = [
   /^do you remember that .+\?$/i,
   /^i need a new .+ for my work\.$/i,
@@ -44,7 +61,17 @@ const TEMPLATES = [
   /^the .+ changed everything for us\.$/i,
   /^the weather was very .+ yesterday\.$/i,
   /^learning to .+ takes time and practice\.$/i,
-  /^he looked .+ after the meeting\.$/i
+  /^he looked .+ after the meeting\.$/i,
+  // Second generation, found 2026-08-18 — 562 taught words across nine shapes.
+  /^everything felt .+ after the trip\.$/i,
+  /^this room is too .+ for me\.$/i,
+  /^it is not easy to .+ every day\.$/i,
+  /^i like to .+ in the morning\.$/i,
+  /^to .+ well, you need patience\.$/i,
+  /^he answered .+\.$/i,
+  /^they spoke .+ about the problem\.$/i,
+  /^i .+ drink tea at night\.$/i,
+  /^she .+ finished the work\.$/i
 ];
 
 const words = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'words.json'), 'utf8'));
