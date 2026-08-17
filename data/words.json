@@ -112,8 +112,8 @@
   "en": "air conditioning",
   "fa": "کولر",
   "cat": "house",
-  "ex": "In this situation we usually say \"air conditioning\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «کولر»."
+  "ex": "Turn on the air conditioning; it's too hot in here.",
+  "exfa": "کولر را روشن کن؛ اینجا خیلی گرم است."
  },
  {
   "i": 14,
@@ -557,7 +557,7 @@
   "fa": "نفس‌گیر",
   "cat": "adj",
   "ex": "The view from the mountain was absolutely breathtaking.",
-  "exfa": "یک ساعت درباره‌ی نفس‌گیر حرف زدیم."
+  "exfa": "منظرهٔ کوه واقعاً نفس‌گیر بود."
  },
  {
   "i": 68,
@@ -720,8 +720,8 @@
   "en": "CD player",
   "fa": "سی‌دی پلیر",
   "cat": "phrase",
-  "ex": "He said, \"CD player\".",
-  "exfa": "او گفت: «سیدی پلیر»."
+  "ex": "My old CD player still works fine.",
+  "exfa": "سی‌دی پلیر قدیمی من هنوز خوب کار می‌کند."
  },
  {
   "i": 88,
@@ -861,7 +861,7 @@
   "fa": "بالا رفتن",
   "cat": "sport",
   "ex": "We plan to climb the mountain this weekend.",
-  "exfa": "بالا رفتن زمان و تمرین می‌خواهد."
+  "exfa": "قصد داریم این آخر هفته از کوه بالا برویم."
  },
  {
   "i": 105,
@@ -1013,7 +1013,7 @@
   "fa": "با اعتمادبه‌نفس",
   "cat": "feeling",
   "ex": "She felt confident before the job interview.",
-  "exfa": "یک ساعت درباره‌ی با اعتمادبه‌نفس حرف زدیم."
+  "exfa": "او قبل از مصاحبهٔ شغلی احساس اعتمادبه‌نفس می‌کرد."
  },
  {
   "i": 123,
@@ -1496,8 +1496,8 @@
   "en": "driver's license",
   "fa": "گواهینامه رانندگی",
   "cat": "car",
-  "ex": "In this situation we usually say \"driver's license\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «گواهینامه رانندگی»."
+  "ex": "I finally got my driver's license last week.",
+  "exfa": "بالاخره هفتهٔ پیش گواهینامه رانندگی‌ام را گرفتم."
  },
  {
   "i": 182,
@@ -2357,7 +2357,7 @@
   "fa": "خانه‌دار",
   "cat": "people",
   "ex": "She was a housewife for twenty years before starting her business.",
-  "exfa": "یک ساعت درباره‌ی خانه‌دار حرف زدیم."
+  "exfa": "او بیست سال خانه‌دار بود، پیش از آنکه کسب‌وکارش را شروع کند."
  },
  {
   "i": 288,
@@ -2397,7 +2397,7 @@
   "fa": "نادیده گرفتن",
   "cat": "verb",
   "ex": "Please don't ignore my messages.",
-  "exfa": "نادیده گرفتن زمان و تمرین می‌خواهد."
+  "exfa": "لطفاً پیام‌های من را نادیده نگیر."
  },
  {
   "i": 293,
@@ -2649,7 +2649,7 @@
   "fa": "آب‌میوه",
   "cat": "food",
   "ex": "I drink orange juice every morning.",
-  "exfa": "یک ساعت درباره‌ی آب‌میوه حرف زدیم."
+  "exfa": "من هر روز صبح آب‌میوهٔ پرتقال می‌خورم."
  },
  {
   "i": 323,
@@ -3625,15 +3625,15 @@
   "fa": "لوله‌کش",
   "cat": "work",
   "ex": "We called a plumber to fix the leaking pipe.",
-  "exfa": "این لوله‌کش برای من خیلی مهم است."
+  "exfa": "برای تعمیر لولهٔ نشتی، یک لوله‌کش خبر کردیم."
  },
  {
   "i": 441,
   "en": "police officer",
   "fa": "افسر پلیس",
   "cat": "crime",
-  "ex": "He said, \"police officer\".",
-  "exfa": "او گفت: «افسر پلیس»."
+  "ex": "The police officer helped us find our way.",
+  "exfa": "افسر پلیس به ما کمک کرد راه را پیدا کنیم."
  },
  {
   "i": 442,
@@ -4217,7 +4217,7 @@
   "fa": "بالا انداختن شانه",
   "cat": "body",
   "ex": "She shrugged when I asked why she was late.",
-  "exfa": "یک ساعت درباره‌ی بالا انداختن شانه حرف زدیم."
+  "exfa": "وقتی پرسیدم چرا دیر کرده، شانه‌هایش را بالا انداخت."
  },
  {
   "i": 513,
@@ -4464,8 +4464,8 @@
   "en": "steering wheel",
   "fa": "فرمان",
   "cat": "car",
-  "ex": "He said, \"steering wheel\".",
-  "exfa": "او گفت: «فرمان»."
+  "ex": "She gripped the steering wheel tightly in the storm.",
+  "exfa": "او در طوفان فرمان را محکم گرفت."
  },
  {
   "i": 544,
@@ -4601,7 +4601,7 @@
   "fa": "بی‌مزه",
   "cat": "adj",
   "ex": "The soup was completely tasteless without salt.",
-  "exfa": "دیروز هوا خیلی بی‌مزه بود."
+  "exfa": "سوپ بدون نمک کاملاً بی‌مزه بود."
  },
  {
   "i": 561,
@@ -4681,7 +4681,7 @@
   "fa": "هیجان‌انگیز",
   "cat": "adj",
   "ex": "The roller coaster ride was absolutely thrilling.",
-  "exfa": "این هیجان‌انگیز برای من خیلی مهم است."
+  "exfa": "سوار شدن روی ترن هوایی واقعاً هیجان‌انگیز بود."
  },
  {
   "i": 571,
@@ -4808,8 +4808,8 @@
   "en": "traffic light",
   "fa": "چراغ راهنمایی",
   "cat": "car",
-  "ex": "In this situation we usually say \"traffic light\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «چراغ راهنمایی»."
+  "ex": "Stop at the traffic light before you turn.",
+  "exfa": "قبل از پیچیدن، پشت چراغ راهنمایی بایست."
  },
  {
   "i": 587,
@@ -4825,7 +4825,7 @@
   "fa": "حمل‌ونقل",
   "cat": "noun",
   "ex": "Public transportation here is cheap and reliable.",
-  "exfa": "آن حمل‌ونقل را یادت هست؟"
+  "exfa": "حمل‌ونقل عمومی اینجا ارزان و قابل‌اعتماد است."
  },
  {
   "i": 589,
@@ -5221,7 +5221,7 @@
   "fa": "می‌خواستم",
   "cat": "verb",
   "ex": "I would like a cup of tea, please.",
-  "exfa": "یک ساعت درباره‌ی می‌خواستم حرف زدیم."
+  "exfa": "لطفاً یک فنجان چای می‌خواستم."
  },
  {
   "i": 638,
@@ -5501,7 +5501,7 @@
   "fa": "شگفت‌زده",
   "cat": "feeling",
   "ex": "I was amazed by how fast she learned French.",
-  "exfa": "یک ساعت درباره‌ی شگفت‌زده حرف زدیم."
+  "exfa": "از اینکه او چقدر سریع فرانسه یاد گرفت، شگفت‌زده شدم."
  },
  {
   "i": 673,
@@ -5889,7 +5889,7 @@
   "fa": "سخت‌گیرانه",
   "cat": "adj",
   "ex": "My manager is very demanding and expects perfect work.",
-  "exfa": "آن سخت‌گیرانه همه چیز را برای ما عوض کرد."
+  "exfa": "مدیر من خیلی سخت‌گیر است و کار بی‌نقص می‌خواهد."
  },
  {
   "i": 720,
@@ -6521,8 +6521,8 @@
   "en": "junk food",
   "fa": "غذای ناسالم",
   "cat": "food",
-  "ex": "In this situation we usually say \"junk food\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «غذای ناسالم»."
+  "ex": "Eating too much junk food can harm your health.",
+  "exfa": "خوردن زیاد غذای ناسالم می‌تواند به سلامتی آسیب بزند."
  },
  {
   "i": 797,
@@ -7299,7 +7299,7 @@
   "fa": "بی‌گناه",
   "cat": "crime",
   "ex": "The court found him innocent of the crime.",
-  "exfa": "یک ساعت درباره‌ی بی‌گناه حرف زدیم."
+  "exfa": "دادگاه او را از آن جرم بی‌گناه اعلام کرد."
  },
  {
   "i": 893,
@@ -7511,7 +7511,7 @@
   "fa": "نرم‌افزار",
   "cat": "tech",
   "ex": "This software helps you edit photos easily.",
-  "exfa": "آن نرم‌افزار را یادت هست؟"
+  "exfa": "این نرم‌افزار به شما کمک می‌کند عکس‌ها را راحت ویرایش کنید."
  },
  {
   "i": 919,
@@ -7566,8 +7566,8 @@
   "en": "art",
   "fa": "هنر",
   "cat": "noun",
-  "ex": "She studies art at the university.",
-  "exfa": "او در دانشگاه هنر می‌خواند."
+  "ex": "Art is my favorite subject at school.",
+  "exfa": "هنر درس مورد علاقهٔ من در مدرسه است."
  },
  {
   "i": 926,
@@ -7591,7 +7591,7 @@
   "fa": "هیجان‌انگیز",
   "cat": "movie",
   "ex": "I stayed up all night reading that thriller.",
-  "exfa": "آن هیجان‌انگیز را یادت هست؟"
+  "exfa": "من تمام شب را بیدار ماندم و آن کتاب هیجان‌انگیز را خواندم."
  },
  {
   "i": 929,
@@ -7915,7 +7915,7 @@
   "fa": "در نظر گرفتن",
   "cat": "verb",
   "ex": "Please consider my offer before you decide.",
-  "exfa": "در نظر گرفتن زمان و تمرین می‌خواهد."
+  "exfa": "لطفاً قبل از تصمیم‌گیری پیشنهاد من را در نظر بگیر."
  },
  {
   "i": 969,
@@ -7971,7 +7971,7 @@
   "fa": "پذیرفتن",
   "cat": "verb",
   "ex": "They decided to adopt a dog from the shelter.",
-  "exfa": "این پذیرفتن برای من خیلی مهم است."
+  "exfa": "آن‌ها تصمیم گرفتند یک سگ را از پناهگاه حیوانات بپذیرند."
  },
  {
   "i": 976,
@@ -8120,7 +8120,7 @@
   "fa": "نتیجه گرفتن",
   "cat": "verb",
   "ex": "The judge concluded that the man was innocent.",
-  "exfa": "آن نتیجه گرفتن را یادت هست؟"
+  "exfa": "قاضی نتیجه گرفت که آن مرد بی‌گناه است."
  },
  {
   "i": 994,
@@ -8420,7 +8420,7 @@
   "fa": "تکامل یافتن",
   "cat": "verb",
   "ex": "Languages evolve slowly over hundreds of years.",
-  "exfa": "این تکامل یافتن برای من خیلی مهم است."
+  "exfa": "زبان‌ها طی صدها سال به‌آرامی تکامل می‌یابند."
  },
  {
   "i": 1031,
@@ -8436,7 +8436,7 @@
   "fa": "فراتر رفتن",
   "cat": "verb",
   "ex": "The final cost will likely exceed our budget.",
-  "exfa": "فراتر رفتن زمان و تمرین می‌خواهد."
+  "exfa": "هزینهٔ نهایی احتمالاً از بودجهٔ ما فراتر می‌رود."
  },
  {
   "i": 1033,
@@ -8484,7 +8484,7 @@
   "fa": "شگفت‌انگیز",
   "cat": "adj",
   "ex": "The view from the top was absolutely amazing.",
-  "exfa": "آن شگفت‌انگیز را یادت هست؟"
+  "exfa": "منظره از بالا واقعاً شگفت‌انگیز بود."
  },
  {
   "i": 1039,
@@ -8548,7 +8548,7 @@
   "fa": "هیجان‌انگیز",
   "cat": "adj",
   "ex": "The movie was really exciting.",
-  "exfa": "برای کارم یک هیجان‌انگیز تازه لازم دارم."
+  "exfa": "آن فیلم واقعاً هیجان‌انگیز بود."
  },
  {
   "i": 1047,
@@ -10396,8 +10396,8 @@
   "en": "finance",
   "fa": "امور مالی",
   "cat": "money",
-  "ex": "She studies finance at university.",
-  "exfa": "او در دانشگاه امور مالی می‌خواند."
+  "ex": "She works in finance for a large bank.",
+  "exfa": "او در بخش امور مالی یک بانک بزرگ کار می‌کند."
  },
  {
   "i": 1271,
@@ -10521,7 +10521,7 @@
   "fa": "آب‌وهوا",
   "cat": "nature",
   "ex": "The climate here is warm and dry all year.",
-  "exfa": "این آب‌وهوا برای من خیلی مهم است."
+  "exfa": "آب‌وهوای اینجا تمام سال گرم و خشک است."
  },
  {
   "i": 1286,
@@ -10536,8 +10536,8 @@
   "en": "global warming",
   "fa": "گرمایش جهانی",
   "cat": "phrase",
-  "ex": "He said, \"global warming\".",
-  "exfa": "او گفت: «گرمایش جهانی»."
+  "ex": "Scientists warn that global warming is speeding up.",
+  "exfa": "دانشمندان هشدار می‌دهند که گرمایش جهانی سرعت گرفته است."
  },
  {
   "i": 1288,
@@ -11273,7 +11273,7 @@
   "fa": "غم‌انگیز",
   "cat": "adj",
   "ex": "The doctor's expression was grim as he shared the news.",
-  "exfa": "آن غم‌انگیز را یادت هست؟"
+  "exfa": "حالت چهرهٔ دکتر وقتی خبر را می‌داد، غم‌انگیز بود."
  },
  {
   "i": 1379,
@@ -12121,7 +12121,7 @@
   "fa": "نخبه‌گرا",
   "cat": "people",
   "ex": "Critics called the private club elitist and out of touch.",
-  "exfa": "آن نخبه‌گرا همه چیز را برای ما عوض کرد."
+  "exfa": "منتقدان آن باشگاه خصوصی را نخبه‌گرا و دور از واقعیت خواندند."
  },
  {
   "i": 1485,
@@ -14670,7 +14670,7 @@
   "fa": "دوچرخه‌سواری",
   "cat": "sport",
   "ex": "Cycling is a great way to stay fit.",
-  "exfa": "برای کارم یک دوچرخه‌سواری تازه لازم دارم."
+  "exfa": "دوچرخه‌سواری راه خوبی برای تناسب اندام است."
  },
  {
   "i": 1802,
@@ -15389,8 +15389,8 @@
   "en": "Carbon footprint",
   "fa": "ردپای کربن",
   "cat": "phrase",
-  "ex": "In this situation we usually say \"Carbon footprint\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «ردپای کربن»."
+  "ex": "Riding a bike reduces your carbon footprint.",
+  "exfa": "دوچرخه‌سواری ردپای کربن شما را کم می‌کند."
  },
  {
   "i": 1892,
@@ -15461,8 +15461,8 @@
   "en": "climate change",
   "fa": "تغییر آب‌وهوا",
   "cat": "nature",
-  "ex": "In this situation we usually say \"Climate change\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «تغییر آب‌وهوا»."
+  "ex": "Climate change is causing more extreme storms.",
+  "exfa": "تغییر آب‌وهوا باعث طوفان‌های شدیدتر می‌شود."
  },
  {
   "i": 1901,
@@ -15485,8 +15485,8 @@
   "en": "Carbon dioxide",
   "fa": "دیاکسید کربن",
   "cat": "phrase",
-  "ex": "In this situation we usually say \"Carbon dioxide\".",
-  "exfa": "در این موقعیت معمولاً می‌گوییم «دیاکسید کربن»."
+  "ex": "Plants absorb carbon dioxide from the air.",
+  "exfa": "گیاهان دی‌اکسید کربن را از هوا جذب می‌کنند."
  },
  {
   "i": 1904,
@@ -18974,7 +18974,7 @@
   "fa": "کامپیوتر",
   "cat": "tech",
   "ex": "I do my homework on the computer.",
-  "exfa": "برای کارم یک کامپیوتر تازه لازم دارم."
+  "exfa": "من تکالیفم را روی کامپیوتر انجام می‌دهم."
  },
  {
   "i": 2327,
@@ -22952,7 +22952,7 @@
   "fa": "هیچ‌کدام",
   "cat": "noun",
   "ex": "I asked several friends, but none of them could come.",
-  "exfa": "این هیچ‌کدام برای من خیلی مهم است."
+  "exfa": "از چند تا از دوستانم پرسیدم، ولی هیچ‌کدام نتوانستند بیایند."
  },
  {
   "i": 2796,
@@ -23694,7 +23694,7 @@
   "fa": "مؤسسه / بنیاد",
   "cat": "noun",
   "ex": "He studies at a technical institute downtown.",
-  "exfa": "آن مؤسسه را یادت هست؟"
+  "exfa": "او در یک مؤسسهٔ فنی در مرکز شهر درس می‌خواند."
  },
  {
   "i": 2884,
@@ -26079,7 +26079,7 @@
   "fa": "تلاش کردن / کوشش",
   "cat": "verb",
   "ex": "Trying to fix the printer myself only made things worse.",
-  "exfa": "یک ساعت درباره‌ی تلاش کردن حرف زدیم."
+  "exfa": "تلاش برای تعمیر پرینتر به‌تنهایی فقط اوضاع را بدتر کرد."
  },
  {
   "i": 3173,
@@ -26490,8 +26490,8 @@
   "en": "photography",
   "fa": "عکاسی",
   "cat": "noun",
-  "ex": "She studies photography at college.",
-  "exfa": "او در دانشگاه عکاسی می‌خواند."
+  "ex": "He bought a new camera to practice photography.",
+  "exfa": "او یک دوربین جدید خرید تا عکاسی تمرین کند."
  },
  {
   "i": 3224,
@@ -26635,7 +26635,7 @@
   "fa": "فیلتر / صافی",
   "cat": "noun",
   "ex": "Change the water filter every three months.",
-  "exfa": "برای کارم یک فیلتر تازه لازم دارم."
+  "exfa": "فیلتر آب را هر سه ماه یک‌بار عوض کن."
  },
  {
   "i": 3242,
@@ -26863,7 +26863,7 @@
   "fa": "مأموریت",
   "cat": "noun",
   "ex": "The team's mission is to help homeless families.",
-  "exfa": "آن مأموریت همه چیز را برای ما عوض کرد."
+  "exfa": "مأموریت این تیم کمک به خانواده‌های بی‌خانمان است."
  },
  {
   "i": 3270,
@@ -28796,7 +28796,7 @@
   "fa": "تأسیسات / امکانات",
   "cat": "noun",
   "ex": "The gym has a swimming facility for members.",
-  "exfa": "آن تأسیسات را یادت هست؟"
+  "exfa": "این باشگاه برای اعضا امکانات شنا دارد."
  },
  {
   "i": 3504,
@@ -29292,7 +29292,7 @@
   "fa": "پوستر",
   "cat": "noun",
   "ex": "He hung a poster of his favorite band.",
-  "exfa": "آن پوستر همه چیز را برای ما عوض کرد."
+  "exfa": "او پوستر گروه موسیقی موردعلاقه‌اش را آویزان کرد."
  },
  {
   "i": 3565,
@@ -31813,7 +31813,7 @@
   "fa": "تئاتر / سالن نمایش",
   "cat": "movie",
   "ex": "The actors rehearsed at the theatre all day.",
-  "exfa": "این تئاتر برای من خیلی مهم است."
+  "exfa": "بازیگران تمام روز را در تئاتر تمرین کردند."
  },
  {
   "i": 3876,
@@ -33493,7 +33493,7 @@
   "fa": "تئاتر",
   "cat": "movie",
   "ex": "We watched a new movie at the theater.",
-  "exfa": "برای کارم یک تئاتر تازه لازم دارم."
+  "exfa": "ما یک فیلم جدید را در تئاتر تماشا کردیم."
  },
  {
   "i": 4082,
@@ -35886,7 +35886,7 @@
   "fa": "نسخهٔ پزشک / دستور",
   "cat": "noun",
   "ex": "The doctor wrote a prescription for antibiotics.",
-  "exfa": "آن نسخهٔ پزشک همه چیز را برای ما عوض کرد."
+  "exfa": "دکتر یک نسخه برای آنتی‌بیوتیک نوشت."
  },
  {
   "i": 4375,
@@ -37194,7 +37194,7 @@
   "fa": "نشان دادن / اشاره کردن",
   "cat": "verb",
   "ex": "The red light indicates the machine is off.",
-  "exfa": "برای کارم یک نشان دادن تازه لازم دارم."
+  "exfa": "چراغ قرمز نشان می‌دهد که دستگاه خاموش است."
  },
  {
   "i": 4537,
@@ -38010,7 +38010,7 @@
   "fa": "تأمین‌کننده",
   "cat": "work",
   "ex": "The factory changed its supplier of raw materials.",
-  "exfa": "آن تأمین‌کننده را یادت هست؟"
+  "exfa": "کارخانه تأمین‌کنندهٔ مواد اولیهٔ خود را عوض کرد."
  },
  {
   "i": 4639,
@@ -38575,7 +38575,7 @@
   "fa": "هیچ‌کدام / نه این نه آن",
   "cat": "general",
   "ex": "Neither of us wanted to cook dinner that night.",
-  "exfa": "آن هیچ‌کدام را یادت هست؟"
+  "exfa": "هیچ‌کدام از ما آن شب نمی‌خواست شام درست کند."
  },
  {
   "i": 4709,
@@ -38895,7 +38895,7 @@
   "fa": "پارامتر / معیار",
   "cat": "noun",
   "ex": "The teacher set clear parameters for the group project.",
-  "exfa": "آن پارامتر را یادت هست؟"
+  "exfa": "معلم معیارهای روشنی برای پروژهٔ گروهی تعیین کرد."
  },
  {
   "i": 4749,
@@ -40320,7 +40320,7 @@
   "fa": "اندازه‌گیری",
   "cat": "noun",
   "ex": "Take an accurate measurement before you cut the wood.",
-  "exfa": "دیروز هوا خیلی اندازه‌گیری بود."
+  "exfa": "قبل از بریدن چوب، یک اندازه‌گیری دقیق انجام بده."
  },
  {
   "i": 4925,
@@ -43468,7 +43468,7 @@
   "fa": "گرم کردن / حرارت",
   "cat": "noun",
   "ex": "We turned on the heating because it's cold.",
-  "exfa": "این گرم کردن برای من خیلی مهم است."
+  "exfa": "چون هوا سرد است، سیستم گرمایش را روشن کردیم."
  },
  {
   "i": 5316,
@@ -44316,7 +44316,7 @@
   "fa": "شماره‌گیری / صفحه",
   "cat": "tech",
   "ex": "Turn the dial to set the temperature.",
-  "exfa": "دیروز هوا خیلی شماره‌گیری بود."
+  "exfa": "صفحهٔ تنظیم را بچرخان تا دما را تنظیم کنی."
  },
  {
   "i": 5421,
@@ -46620,7 +46620,7 @@
   "fa": "غلت خوردن / موج‌دار",
   "cat": "noun",
   "ex": "The car went rolling down the steep hill.",
-  "exfa": "برای کارم یک غلت خوردن تازه لازم دارم."
+  "exfa": "ماشین غلت‌زنان از سرازیری تند پایین رفت."
  },
  {
   "i": 5707,
@@ -47836,7 +47836,7 @@
   "fa": "جمله / حکم",
   "cat": "talk",
   "ex": "Write a sentence using the new word.",
-  "exfa": "یک ساعت درباره‌ی جمله حرف زدیم."
+  "exfa": "با کلمهٔ جدید یک جمله بنویس."
  },
  {
   "i": 5858,
@@ -47972,7 +47972,7 @@
   "fa": "جست‌وجو / تلاش",
   "cat": "noun",
   "ex": "Her quest for the perfect recipe took years.",
-  "exfa": "آن جست‌وجو همه چیز را برای ما عوض کرد."
+  "exfa": "جست‌وجوی او برای یافتن دستور غذای کامل، سال‌ها طول کشید."
  },
  {
   "i": 5875,
@@ -52132,7 +52132,7 @@
   "fa": "تأیید / تصدیق",
   "cat": "noun",
   "ex": "I received a confirmation email for my order.",
-  "exfa": "یک ساعت درباره‌ی تأیید حرف زدیم."
+  "exfa": "برای سفارشم یک ایمیل تأیید دریافت کردم."
  },
  {
   "i": 6393,
@@ -53004,7 +53004,7 @@
   "fa": "ارکستر",
   "cat": "music",
   "ex": "The orchestra played a beautiful symphony.",
-  "exfa": "این ارکستر برای من خیلی مهم است."
+  "exfa": "ارکستر یک سمفونی زیبا نواخت."
  },
  {
   "i": 6501,
@@ -55452,8 +55452,8 @@
   "en": "astronomy",
   "fa": "ستاره‌شناسی",
   "cat": "noun",
-  "ex": "She studies astronomy at the university.",
-  "exfa": "او در دانشگاه ستاره‌شناسی می‌خواند."
+  "ex": "He reads about astronomy every night before bed.",
+  "exfa": "او هر شب قبل از خواب دربارهٔ ستاره‌شناسی مطالعه می‌کند."
  },
  {
   "i": 6805,
@@ -59311,7 +59311,7 @@
   "fa": "در حالی که / همان‌طور که",
   "cat": "noun",
   "ex": "She studied abroad whilst working part-time.",
-  "exfa": "آن در حالی که همه چیز را برای ما عوض کرد."
+  "exfa": "او در حالی که پاره‌وقت کار می‌کرد، در خارج از کشور درس خواند."
  },
  {
   "i": 7285,
@@ -59935,7 +59935,7 @@
   "fa": "گفت‌وگو",
   "cat": "noun",
   "ex": "The movie has very natural dialog.",
-  "exfa": "یک ساعت درباره‌ی گفت‌وگو حرف زدیم."
+  "exfa": "گفت‌وگوهای این فیلم خیلی طبیعی است."
  },
  {
   "i": 7363,
@@ -70285,7 +70285,7 @@
   "fa": "میدان جنگ",
   "cat": "place",
   "ex": "Thousands of soldiers died on that battlefield.",
-  "exfa": "برای کارم یک میدان جنگ تازه لازم دارم."
+  "exfa": "هزاران سرباز در آن میدان جنگ کشته شدند."
  },
  {
   "i": 8652,
@@ -76577,7 +76577,7 @@
   "fa": "رأی دادن / رأی",
   "cat": "noun",
   "ex": "Voters marked their choice on the ballot.",
-  "exfa": "برای کارم یک رأی دادن تازه لازم دارم."
+  "exfa": "رأی‌دهندگان انتخاب خود را روی برگهٔ رأی علامت زدند."
  },
  {
   "i": 9437,
@@ -77437,7 +77437,7 @@
   "fa": "ادغام شرکت‌ها",
   "cat": "noun",
   "ex": "The merger created the largest bank in the country.",
-  "exfa": "آن ادغام شرکت‌ها را یادت هست؟"
+  "exfa": "این ادغام شرکت‌ها بزرگ‌ترین بانک کشور را ایجاد کرد."
  },
  {
   "i": 9544,
@@ -79729,7 +79729,7 @@
   "fa": "محروم کردن",
   "cat": "noun",
   "ex": "His exclusion from the team upset his teammates.",
-  "exfa": "آن محروم کردن همه چیز را برای ما عوض کرد."
+  "exfa": "محروم شدنش از تیم، هم‌تیمی‌هایش را ناراحت کرد."
  },
  {
   "i": 9830,
