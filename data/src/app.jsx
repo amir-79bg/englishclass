@@ -6,6 +6,11 @@ const LOCAL_BACKUP_KIND = 'vocabLocalBackupV2';
 const MODES = [
   { mode: 'flash',  name: 'کارت واژه',     desc: 'ببین، بشنو، معنی را به یاد بیاور و به خودت نمره بده', icon: 'ph ph-cards' },
   { mode: 'mcq',    name: 'چهارگزینه‌ای', desc: 'لغت انگلیسی را می‌بینی، معنی درست را انتخاب کن', icon: 'ph ph-list-checks' },
+  // LEG-003 — Initial Learning Turn C (fa->en retrieval). Same 4-option MCQ
+  // rendering path as 'mcq' above, just the reverse direction: reuses
+  // buildOptions()/the options template unchanged, only prompt/option source
+  // differs (see modeFor()/renderVals()).
+  { mode: 'fa2en',  name: 'بازیابی',       desc: 'معنی فارسی را می‌بینی، واژهٔ انگلیسی درست را انتخاب کن', icon: 'ph ph-arrows-left-right' },
   { mode: 'type',   name: 'نوشتاری',      desc: 'از روی معنی فارسی، املای انگلیسی را بنویس', icon: 'ph ph-keyboard' },
   { mode: 'listen', name: 'شنیداری',      desc: 'فقط صدا را می‌شنوی و لغت را می‌نویسی', icon: 'ph ph-ear' },
   { mode: 'cloze',  name: 'در جمله',      desc: 'جای خالی یک جمله‌ی واقعی را پر کن', icon: 'ph ph-text-aa' }
@@ -22,6 +27,10 @@ const QUIZ_EVERY = 300, QUIZ_LEN = 20, PASS = 0.7;
 // knowledge is the stronger signal at the top (Shiotsu & Weir), which is
 // exactly where a word-only test struggles to tell adjacent levels apart.
 const PLACEMENT_LEN = 9, PLACEMENT_PASS = 6 / 9, PLACEMENT_VOCAB_N = 6, PLACEMENT_GRAM_N = 3;
+// LEG-007 — per-dimension pass bars used only for the split vocab/grammar
+// report (docs/placement-test-methodology.md §6.1/§8.5). The combined
+// PLACEMENT_PASS above still decides which levels the ladder tests, unchanged.
+const PLACEMENT_VOCAB_PASS = 4 / 6, PLACEMENT_GRAM_PASS = 2 / 3;
 // The one thing placement genuinely cannot get from data/words.json: a small,
 // hand-checked, actually CEFR-appropriate word per level. VOCAB_ORDER has no
 // real difficulty signal past the ~1,800 words that appear in the app's own
@@ -449,8 +458,34 @@ const HUBS = {
 // Module-level twins of the per-method helpers, for the hub and section cards.
 const cardBtn = c => 'display:flex;align-items:center;gap:11px;padding:13px 13px;border-radius:12px;background:rgba(233,233,237,.03);border:1px solid ' + c + '3d;cursor:pointer;width:100%;text-align:right';
 const iconSq = c => 'flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:' + c + '1f;border:1px solid ' + c + '44;color:' + c + ';font-size:18px';
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], PER_LEVEL = 5, MAX_NEW = 5, MAX_REVIEWS = 15;
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], PER_LEVEL = 5, MAX_NEW = 8, MAX_REVIEWS = 15;
 const LEVEL_SHARE = [0.08, 0.11, 0.15, 0.19, 0.22, 0.25];
+// LEG-002 — Level -> Unit -> Lesson curriculum position. This sits above the
+// existing round/band system without changing LEVEL_SHARE or levelSpans():
+// a "level" is still exactly the same LEVEL_SHARE band a round's band()
+// already pointed at. LESSON_SIZE (8 new words/lesson) is an already-agreed
+// product decision, not derived here. UNIT_LESSONS=10 (80 words/unit) is
+// this task's own call: it lands close to a typical printed-coursebook unit
+// (60-100 headwords) and keeps the unit count per level in a browsable
+// range (11 units for A1's 842 words, up to 33 for C2's ~2,630) — a smaller
+// N would multiply units without adding real structure, a much larger N
+// would make "unit" nearly synonymous with "level" for A1.
+const LESSON_SIZE = 8, UNIT_LESSONS = 10;
+// LEG-003 — same-session Initial Learning for brand-new words (see
+// vocab_session_v1 below). A word gets exactly 3 turns this session, spread
+// apart so it never repeats back-to-back: introduce (A) -> recognition MCQ
+// en->fa (B) -> retrieval MCQ fa->en (C). Gaps are expanding (Karpicke &
+// Roediger 2007) and jittered within a range, not fixed, so spacing never
+// feels mechanical; the MIN/MAX pairs below bracket the "roughly 2-4 cards,
+// then 4-7 cards" the product spec asked for, centered near 3 and 5.
+const IL_GAP_B_MIN = 2, IL_GAP_B_MAX = 4;
+const IL_GAP_C_MIN = 4, IL_GAP_C_MAX = 7;
+// A wrong Turn B/C answer never shows "دوباره" (LEG-001's pattern stays
+// removed here) — it silently re-queues the same turn a few cards later.
+const IL_RETRY_GAP_MIN = 3, IL_RETRY_GAP_MAX = 5;
+// Wrong on the same turn this many times in one session -> stop retrying and
+// mark the word 'unfinished' for this lesson (see ilAdvance()).
+const IL_MAX_FAILS = 3;
 function levelSpans(total) {
   const out = []; let acc = 0;
   for (let i = 0; i < LEVELS.length; i++) {
@@ -715,7 +750,7 @@ class Component extends DCLogic {
   tracks() {
     const srn = this.srCounts();
     const d = this.state && this.state.data;
-    const qs = this.queueStats(d ? d.round : 1, this.W.length);
+    const qs = this.queueStats(d, this.W.length);
     const gi = this.gramItems();
     const gDone = this.gramDoneCount();
     const gStarted = this.gramStartedCount();
@@ -724,7 +759,14 @@ class Component extends DCLogic {
     // always resolves to lesson one of A1 for anyone who hasn't touched
     // grammar yet, no matter what level they were placed into. Lower levels
     // remain visitable (gramLevelUnlocked), just not the default landing spot.
-    const gBand = this.band((d && d.round) || 1);
+    // LEG-008 — use state.gLv (the grammar-specific level LEG-007 split out
+    // from vocabulary), not d.round's vocab band: a learner placed at strong
+    // vocab but weaker grammar would otherwise have this "continue" shortcut
+    // push them into grammar lessons matched to their vocab level, silently
+    // undoing the whole point of the split. Only fall back to the vocab band
+    // when gLv was never set at all (a learner who hasn't touched placement
+    // or grammar yet), matching the original pre-split behaviour for that case.
+    const gBand = Math.max(0, LEVELS.indexOf(this.state.gLv || this.levelOf((d && d.round) || 1)));
     const gNext = gi.find(x => !this.gramStats(x.les).complete && LEVELS.indexOf(x.lv) >= gBand)
       || gi.find(x => !this.gramStats(x.les).complete);
     const wi = this.writeItems();
@@ -746,7 +788,7 @@ class Component extends DCLogic {
         sub: srn.introduced + ' آشناشده · ' + srn.learning + ' در حال یادگیری · ' + srn.known + ' بلد',
         next: qs.due || qs.fresh ? 'شروع جلسهٔ امروز' : 'مرورهای امروز تمام شده',
         go: () => {
-          if (!d || !d.order.length || d.pos >= d.order.length) this.nextRound();
+          if (!d || !d.order.length || d.pos >= d.order.length) this.nextLesson();
           else this.setState({ screen: 'study' }, () => this.prepare());
         } },
 
@@ -821,13 +863,10 @@ class Component extends DCLogic {
     r[7] = rating === 1 ? .9 : (rating === 3 ? 1.1 : 1);
     sr[i] = r; this.srSave();
   }
-  // Only a word's FIRST answer of the day counts. The in-session re-show after
-  // a wrong answer must never advance the criterion, or the count inflates.
-  srMark(i, ok, mode, rating) {
-    const day = currentDayNo();
-    const sr = this.srLoad();
-    const r = sr[i] || [0, 0, 0, 0, 1, 1, day, 1];
-    if (r[2] === day) return false;
+  // The actual scoring math (base_gap/ease table), factored out of srMark()
+  // unchanged so LEG-003's srCompleteInitialLearning() below can apply it
+  // twice in one day without duplicating — or drifting from — this logic.
+  _srApplyOutcome(r, ok, mode, rating, day) {
     const MASK = { mcq: 1, type: 2, cloze: 2, listen: 4, flash: 8 };
     if (ok) {
       r[0] = r[0] + 1; r[5] = Math.min(4, Math.max(1, r[5] || 1) + 1);
@@ -842,9 +881,36 @@ class Component extends DCLogic {
     }
     if (!r[1]) r[1] = day;
     r[2] = day; r[4] = 1;
+  }
+  // Only a word's FIRST answer of the day counts. The in-session re-show after
+  // a wrong answer must never advance the criterion, or the count inflates.
+  srMark(i, ok, mode, rating) {
+    const day = currentDayNo();
+    const sr = this.srLoad();
+    const r = sr[i] || [0, 0, 0, 0, 1, 1, day, 1];
+    if (r[2] === day) return false;
+    this._srApplyOutcome(r, ok, mode, rating, day);
     sr[i] = r;
     this.srSave();
     return true;
+  }
+  // LEG-003 — the one place Initial Learning writes to vocab_sr_v1: a word
+  // enters long-term SRS only once, the moment its Turn C (retrieval) really
+  // succeeds. Turn A/B never call this. srIntroduce() seeds the record, then
+  // _srApplyOutcome() (srMark()'s own math, unchanged) is applied twice back
+  // to back — Turn B's recognition pass, then Turn C's retrieval pass — as
+  // this word's real first two SRS data points, bypassing srMark()'s "one
+  // advance per day" guard on purpose, since both legitimately happened
+  // today in the same session.
+  srCompleteInitialLearning(i) {
+    const day = currentDayNo();
+    this.srIntroduce(i, 2);
+    const sr = this.srLoad();
+    const r = sr[i];
+    this._srApplyOutcome(r, true, 'mcq', 2, day); // Turn B: en->fa recognition
+    this._srApplyOutcome(r, true, 'mcq', 2, day); // Turn C: fa->en retrieval
+    sr[i] = r;
+    this.srSave();
   }
   // «بلد»: three correct answers, on three different days, at least one of them
   // produced by the learner, and at least a week between the first and the last.
@@ -887,6 +953,53 @@ class Component extends DCLogic {
     sr.__seeded = 1;
     this._sr = sr;
     this.srSave();
+  }
+
+  // ---- Initial Learning — session-scoped, separate from vocab_sr_v1 (LEG-003) ----
+  // vocab_session_v1 = { day, words: { <wordIndex>: { turn: 'A'|'B'|'C'|'done'|'unfinished', fails } } }
+  // Deliberately its own key: vocab_sr_v1 is long-term SRS truth and
+  // vocab_app_v1 is session position/stats, neither should carry a value
+  // that is only meaningful for "today" and is fine to discard on a new day.
+  ilLoad() {
+    if (!this._il) {
+      let raw = null;
+      try { raw = JSON.parse(localStorage.getItem('vocab_session_v1') || 'null'); } catch (e) { raw = null; }
+      const day = currentDayNo();
+      this._il = (raw && raw.day === day && raw.words) ? raw : { day: day, words: {} };
+    }
+    return this._il;
+  }
+  ilSave() { try { localStorage.setItem('vocab_session_v1', JSON.stringify(this._il || { day: currentDayNo(), words: {} })); } catch (e) {} }
+  // Which Initial-Learning turn (if any) is currently active for word i.
+  // null once the word finished (turn 'done', already in vocab_sr_v1) or was
+  // abandoned this session (turn 'unfinished') — modeFor() then falls back
+  // to the normal SRS-phase ladder untouched.
+  ilTurnFor(i) {
+    const rec = this.ilLoad().words[i];
+    if (!rec || rec.turn === 'done' || rec.turn === 'unfinished') return null;
+    return rec.turn;
+  }
+  // Any word introduced this session whose 3-turn sequence has not yet
+  // finished (or failed out). Used only to delay the "goal reached" screen
+  // (point 2) so a word's Turn B/C is never silently abandoned mid-sequence —
+  // never to change srMark()/srDue() themselves.
+  ilHasPending() {
+    const words = this.ilLoad().words || {};
+    return Object.keys(words).some(k => {
+      const t = words[k].turn;
+      return t === 'A' || t === 'B' || t === 'C';
+    });
+  }
+  // Insert word i's next turn `min`-`max` cards ahead of the card just
+  // answered, clamped to the current queue length — the exact same "requeue
+  // a few cards later" pattern advance() already used for a wrong review
+  // answer, just with a wider/jittered gap so the same word never comes back
+  // adjacent, or even close, to its previous turn.
+  ilSchedule(d, i, min, max) {
+    const span = Math.max(0, max - min);
+    const gap = min + (span ? Math.floor(mulberry(i * 2654435761 + d.pos)() * (span + 1)) : 0);
+    const at = Math.min(d.pos + gap, d.order.length);
+    d.order = d.order.slice(0, at).concat([i], d.order.slice(at));
   }
 
   hubCards(screen) {
@@ -1231,28 +1344,102 @@ class Component extends DCLogic {
   toggleStar(i) { this.set(d => { if (!d.starred) d.starred = {}; if (d.starred[i]) delete d.starred[i]; else d.starred[i] = 1; }); }
   starCount() { const d = this.state.data; return d && d.starred ? Object.keys(d.starred).length : 0; }
   goStars() { this.setState({ screen: 'browse', catFilter: this.state.catFilter === '__star' ? 'all' : '__star', limit: 60, query: '', dictTrResult: null, dictTrErr: '', wordMoreEn: null }); }
-  blank(n) { return { v5: 1, v6: 1, v7: 1, starred: {}, wordCount: n, round: 1, pos: 0, order: this.chunkOrder(1, n), mastered: {}, seen: 0, correct: 0, wrong: 0, days: {}, dayStats: {}, goal: 20, streak: 1, lastDay: today(), quizzes: {} }; }
+  blank(n) {
+    const d = { v5: 1, v6: 1, v7: 1, starred: {}, wordCount: n, round: 1, level: LEVELS[0], unit: 1, lesson: 1, pos: 0, order: [], mastered: {}, seen: 0, correct: 0, wrong: 0, days: {}, dayStats: {}, goal: 20, streak: 1, lastDay: today(), quizzes: {} };
+    d.order = this.chunkOrder(d, n);
+    return d;
+  }
   band(r) { return Math.floor((r - 1) / PER_LEVEL); }
   levelOf(r) { return LEVELS[Math.min(this.band(r), LEVELS.length - 1)]; }
-  chunkOrder(r, n) {
+  // d.round only ever takes the form band*PER_LEVEL+1 anywhere it is written
+  // (blank(), nextLesson(), applyPlacement()) — the (r-1)%PER_LEVEL!=0 branch
+  // in chunkOrder() below is legacy/dead in the shipped app. So the round
+  // value that keeps every existing band()/levelOf()/chunkOrder() call site
+  // (and the many out-of-scope gramLevelUnlocked/sbLevelUnlocked/
+  // lsLevelUnlocked/dcLevelUnlocked-style reads of d.round elsewhere) working
+  // unchanged is fully determined by the level alone.
+  roundForLevel(L) { return Math.max(0, LEVELS.indexOf(L)) * PER_LEVEL + 1; }
+  // ---- Level -> Unit -> Lesson position (LEG-002) ----
+  // A level's words, in canonical VOCAB_ORDER, chopped into fixed LESSON_SIZE
+  // chunks and then into fixed UNIT_LESSONS groups of lessons. No new data is
+  // added to data/words.json — this is purely a runtime grouping of the
+  // existing per-level slice levelSpans()/chunkOrder() already compute.
+  lessonsInLevel(L) { return Math.max(1, Math.ceil((this.levelSize(L) || 0) / LESSON_SIZE)); }
+  unitsInLevel(L) { return Math.max(1, Math.ceil(this.lessonsInLevel(L) / UNIT_LESSONS)); }
+  lessonsInUnit(L, unit) {
+    const total = this.lessonsInLevel(L), startLesson0 = (Math.max(1, unit) - 1) * UNIT_LESSONS;
+    return Math.max(1, Math.min(UNIT_LESSONS, total - startLesson0));
+  }
+  // The (up to) LESSON_SIZE word indices that make up one specific lesson.
+  lessonWordsOf(L, unit, lesson) {
+    const n = this.W.length;
+    const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, i) => i)).filter(i => i < n);
+    const spans = levelSpans(ord.length), li = LEVELS.indexOf(L);
+    const sp = li >= 0 ? spans[li] : null; if (!sp) return [];
+    const bandWords = ord.slice(sp[0], sp[0] + sp[1]);
+    const lessonIdx0 = (Math.max(1, unit) - 1) * UNIT_LESSONS + (Math.max(1, lesson) - 1);
+    const start = lessonIdx0 * LESSON_SIZE;
+    return bandWords.slice(start, start + LESSON_SIZE);
+  }
+  // Inverse lookup: where does word i live? Used by anything that needs a
+  // single word's curriculum position rather than a whole lesson's roster.
+  wordPosition(i) {
+    const n = this.W.length;
+    const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, k) => k)).filter(k => k < n);
+    const spans = levelSpans(ord.length);
+    for (let li = 0; li < spans.length; li++) {
+      const sp = spans[li], rank = ord.slice(sp[0], sp[0] + sp[1]).indexOf(i);
+      if (rank >= 0) {
+        const lessonIdx0 = Math.floor(rank / LESSON_SIZE);
+        return { level: LEVELS[li], unit: Math.floor(lessonIdx0 / UNIT_LESSONS) + 1, lesson: (lessonIdx0 % UNIT_LESSONS) + 1, order: rank % LESSON_SIZE };
+      }
+    }
+    return null;
+  }
+  // Same "any never-introduced word left" freshness check queueStats() does
+  // for a whole level band (read-only against vocab_sr_v1 via srRec — the SR
+  // schema/scheduling itself is untouched), scoped down to one lesson.
+  lessonStats(L, unit, lesson) {
+    const words = this.lessonWordsOf(L, unit, lesson);
+    return { total: words.length, fresh: words.filter(i => { const x = this.srRec(i); return !x || !x[4]; }).length };
+  }
+  // LEG-003 — takes the whole `d` (not just d.round) so new words can be
+  // sourced from the learner's current lesson (LEG-002) instead of the whole
+  // level band. Review sourcing below is completely untouched.
+  chunkOrder(d, n) {
     n = n || this.W.length;
+    const r = d.round;
     const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, i) => i)).filter(i => i < n);
     if (!ord.length) return [];
     const spans = levelSpans(ord.length);
-    const sp = spans[Math.min(this.band(r), spans.length - 1)] || [0, ord.length];
-    let sl = ord.slice(sp[0], sp[0] + sp[1]);
-    if (!sl.length) sl = ord.slice();
-    if ((r - 1) % PER_LEVEL > 0) sl = shuffled(sl, r * 4177);
     // Reviews first. Nakata & Webb 2016: with a fixed card budget, spacing
     // matters and set size barely does — so due words get first claim and new
     // words fill what is left. New words are capped so the review load can
     // stabilise instead of compounding.
     const day = currentDayNo();
+    // LEG-006 — when more words are due than MAX_REVIEWS can fit, prioritise
+    // struggling words over merely-more-overdue ones. weaknessBonus is
+    // deliberately small (capped ~5.75) next to a real overdue backlog: it
+    // only reorders words whose overdue amounts are already close, so a
+    // genuinely stale word is never displaced by a weak-but-recent one.
+    const weaknessBonus = i => {
+      const rec = this.srRec(i);
+      const successes = rec ? (rec[0] || 0) : 0;
+      const ease = rec ? (rec[7] || 1) : 1;
+      return Math.max(0, 3 - successes) * 1.5 + Math.max(0, 1 - ease) * 5;
+    };
+    const duePriority = i => (day - (this.srRec(i)[6] || 0)) + weaknessBonus(i);
     const due = ord.filter(i => this.srDue(i, day))
-      .sort((a, b) => (this.srRec(a)[6] || 0) - (this.srRec(b)[6] || 0))
+      .sort((a, b) => duePriority(b) - duePriority(a))
       .slice(0, MAX_REVIEWS);
-    const isFresh = i => { const x = this.srRec(i); return !x || !x[4]; };
-    let fresh = sl.filter(isFresh).slice(0, MAX_NEW);
+    // A word already mid Initial-Learning (or abandoned as 'unfinished') this
+    // session must never be redrawn as if it were a brand-new word — it
+    // already has (or had) its own turn A/B/C card scheduled by ilSchedule().
+    const il = this.ilLoad();
+    const isFresh = i => { const x = this.srRec(i); if (x && x[4]) return false; return !il.words[i]; };
+    // LEG-003 point 2: new words come from the current LESSON_SIZE-word
+    // lesson specifically, not the whole level band chunkOrder() used before.
+    let fresh = this.lessonWordsOf(d.level, d.unit, d.lesson).filter(isFresh).slice(0, MAX_NEW);
     // srDue() is false for any word that was never introduced, so once the
     // round advances past a band (placement or manual level change),
     // chunkOrder() would otherwise never draw new words from that band again
@@ -1269,6 +1456,14 @@ class Component extends DCLogic {
         if (lowerFresh.length) { fresh.push(shuffled(lowerFresh, r * 977 + b)[0]); break; }
       }
     }
+    // Every word about to enter the queue as new material gets an Initial-
+    // Learning record right away (turn 'A'), so isFresh() above never draws
+    // it a second time this session and modeFor() recognises it once shown.
+    if (fresh.length) {
+      let changed = false;
+      fresh.forEach(i => { if (!il.words[i]) { il.words[i] = { turn: 'A', fails: 0 }; changed = true; } });
+      if (changed) this.ilSave();
+    }
     // Three reviews, then one new word. A backlog can no longer hide all new
     // material, and a session remains a calm, predictable twenty cards.
     const out = [], reviews = due.slice(), news = fresh.slice();
@@ -1279,14 +1474,17 @@ class Component extends DCLogic {
     }
     return Array.from(new Set(out));
   }
-  queueStats(r, n) {
+  // d may be null/undefined at the very first paint, before load() runs.
+  queueStats(d, n) {
     n = n || this.W.length;
     const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, i) => i)).filter(i => i < n);
-    const spans = levelSpans(ord.length), sp = spans[Math.min(this.band(r), spans.length - 1)] || [0, ord.length];
-    const bandWords = ord.slice(sp[0], sp[0] + sp[1]);
+    const level = (d && d.level) || LEVELS[0], unit = (d && d.unit) || 1, lesson = (d && d.lesson) || 1;
     return {
       due: ord.filter(i => this.srDue(i, currentDayNo())).length,
-      fresh: bandWords.filter(i => { const x = this.srRec(i); return !x || !x[4]; }).length
+      // LEG-003: mirrors chunkOrder()'s new-word source — the current lesson,
+      // not the whole level band — so the home screen's "X تازه" preview
+      // matches what a session will actually draw.
+      fresh: this.lessonStats(level, unit, lesson).fresh
     };
   }
   levelStats(r, n) {
@@ -1318,6 +1516,28 @@ class Component extends DCLogic {
     let d = null;
     try { d = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
     if (!d || !Array.isArray(d.order) || !d.order.length) d = this.blank(n);
+    // LEG-002 backward-compat migration — additive, same convention as
+    // srLoad()'s vocab_sr_v1 field-fill: an existing user's save has
+    // `d.round` but not the new `{level, unit, lesson}` fields yet. Derive
+    // level from the OLD round with the exact band() math nextRound() and
+    // chunkOrder() always used, so the level does not jump. round only ever
+    // encoded band*PER_LEVEL+1 in the shipped app (see roundForLevel()) —
+    // it never carried a sub-level position — so there is no historical
+    // unit/lesson to recover; the learner resumes at unit 1, lesson 1 of
+    // their derived level. Nothing they already know is lost: which words
+    // are introduced/due still lives entirely in vocab_sr_v1, untouched.
+    if (d && !d.level) {
+      const legacyRound = (typeof d.round === 'number' && d.round > 0) ? d.round : 1;
+      d.level = this.levelOf(legacyRound);
+      d.unit = 1;
+      d.lesson = 1;
+      d.round = this.roundForLevel(d.level);
+      // Persist the migrated shape immediately, same as srLoad() saving as
+      // soon as it fills in a missing additive field — otherwise a user who
+      // closes the tab without interacting keeps re-deriving from the old
+      // `round` on every load instead of the migration actually landing.
+      this.save(d);
+    }
     const t = today();
     const newDay = d.lastDay !== t;
     if (newDay) {
@@ -1338,12 +1558,12 @@ class Component extends DCLogic {
     if (!d.goal) d.goal = 20;
     if (n && (!d.v7 || newDay)) {
       d.v5 = 1; d.v6 = 1; d.v7 = 1;
-      d.order = this.chunkOrder(d.round, n);
+      d.order = this.chunkOrder(d, n);
       d.pos = 0;
       d.wordCount = n; this.save(d);
     } else if (n && d.wordCount !== n) {
       const wasPos = d.pos || 0;
-      d.order = this.chunkOrder(d.round, n);
+      d.order = this.chunkOrder(d, n);
       d.pos = Math.max(0, Math.min(wasPos, d.order.length));
       d.wordCount = n; this.save(d);
     }
@@ -1457,6 +1677,15 @@ class Component extends DCLogic {
   }
   modeFor(w) {
     if (!w) return 'flash';
+    // LEG-003 — a word mid Initial Learning this session takes priority over
+    // the normal SRS-phase ladder below: turn A is the introduction (flash),
+    // turn B the en->fa recognition MCQ, turn C the fa->en retrieval MCQ.
+    // Once the word finishes (or is abandoned as 'unfinished'), ilTurnFor()
+    // returns null and this falls straight through to the untouched ladder.
+    const ilTurn = this.ilTurnFor(w.i);
+    if (ilTurn === 'A') return 'flash';
+    if (ilTurn === 'B') return 'mcq';
+    if (ilTurn === 'C') return 'fa2en';
     const rec = this.srRec(w.i), st = this.srStage(w.i);
     if (!rec || !rec[4] || st === 0) return 'flash';
     if (st === 1) return 'mcq';
@@ -1487,30 +1716,130 @@ class Component extends DCLogic {
 
 
 
+  // LEG-005 — distractor candidates are picked from a tiered "plausible
+  // confusion" pool instead of a flat random draw over the 10,524-word
+  // catalog. Tiers fall through in priority order (each only runs if the
+  // previous ones together didn't reach 3 distractors) so a random garbage
+  // option is now the last resort, not the default:
+  //   1. words already seen this session (vocab_session_v1 + cards already
+  //      shown in d.order up to d.pos) — keeps working memory active.
+  //   2. words from the same lesson, or up to 2 lessons before it in the
+  //      same unit/level (wordPosition()/lessonWordsOf(), from LEG-002).
+  //   3. words the learner has struggled with — not yet srKnown() and with
+  //      a low success count (srRec()[0]), i.e. the existing SRS data's own
+  //      definition of "weak", not a new one.
+  //   4. words from the same category (w.cat) — same part of speech is a
+  //      cheap, deliberately-chosen proxy for "plausible confusion" in an
+  //      offline app with no embeddings/semantic-similarity infrastructure.
+  //   5. fallback: today's old random-over-catalog behaviour, unchanged.
+  // Quality filters apply to every candidate in every tier: no identical/
+  // near-identical Persian gloss (an unanswerable duplicate-meaning
+  // distractor is worse than a random one), no picking the same word twice,
+  // and no near-duplicate English headword (e.g. a plural/inflection of the
+  // same word) unless nothing else is left after tier 5 — that last case is
+  // handled by a final relaxed pass so a question is never short an option.
   buildOptions() {
     const w = this.current(); if (!w) return [];
     const mode = this.mode();
-    const r = mulberry(w.i * 7919 + this.state.data.round);
+    const d = this.state.data;
+    const r = mulberry(w.i * 7919 + d.round);
     const withFa = this.W.filter(x => x.fa);
-    const sameCat = withFa.filter(x => x.cat === w.cat && x.i !== w.i);
-    const src = sameCat.length >= 6 ? sameCat : withFa;
     // Distractors must differ from the answer by the text SHOWN, not just by
     // index: 883 words share a gloss with another word in the same category, so
     // index-only dedupe put two identical options on screen, one marked wrong.
-    const shown = x => (mode === 'cloze' ? x.en : x.fa);
-    const taken = [shown(w)];
+    const shown = x => (mode === 'cloze' || mode === 'fa2en' ? x.en : x.fa);
+    // Near-duplicate checks reuse the app's existing text-normalisation
+    // helpers (searchNorm for Persian, norm for English) rather than adding
+    // new ones.
+    const faNear = fa => {
+      const a = searchNorm(fa), b = searchNorm(w.fa);
+      return !!a && !!b && (a === b || a.indexOf(b) >= 0 || b.indexOf(a) >= 0);
+    };
+    const enNear = en => {
+      const a = norm(en), b = norm(w.en);
+      if (!a || !b) return false;
+      if (a === b) return true;
+      const s = a.length <= b.length ? a : b, l = a.length <= b.length ? b : a;
+      return l.indexOf(s) === 0 && (l.length - s.length) <= 3;
+    };
+    const takenIdx = new Set([w.i]);
+    const takenShown = new Set([shown(w)]);
     const pool = [];
-    let guard = 0;
-    while (pool.length < 3 && guard++ < 200) {
-      const c = src[Math.floor(r() * src.length)];
-      if (c && c.i !== w.i && taken.indexOf(shown(c)) < 0) { pool.push(c); taken.push(shown(c)); }
+    const add = (c, allowEnNear) => {
+      if (pool.length >= 3 || !c || !c.fa) return;
+      if (takenIdx.has(c.i) || takenShown.has(shown(c))) return;
+      if (faNear(c.fa)) return;
+      if (!allowEnNear && enNear(c.en)) return;
+      pool.push(c); takenIdx.add(c.i); takenShown.add(shown(c));
+    };
+
+    // Tier 1 — this session's words: already-shown cards in the current
+    // queue plus any word Initial Learning (LEG-003) has touched today.
+    if (pool.length < 3) {
+      const sessionIdx = new Set();
+      (d.order || []).slice(0, d.pos).forEach(i => sessionIdx.add(i));
+      Object.keys(this.ilLoad().words || {}).forEach(k => sessionIdx.add(Number(k)));
+      sessionIdx.delete(w.i);
+      shuffled(Array.from(sessionIdx), w.i + 101).forEach(i => add(this.W[i]));
     }
+
+    // Tier 2 — same lesson, then up to two lessons before it in the same
+    // unit/level (falling back across a unit boundary via lessonsInUnit()).
+    if (pool.length < 3) {
+      const pos = this.wordPosition(w.i);
+      if (pos) {
+        let cand = this.lessonWordsOf(pos.level, pos.unit, pos.lesson);
+        let unit = pos.unit, lesson = pos.lesson;
+        for (let back = 0; back < 2 && unit >= 1; back++) {
+          lesson -= 1;
+          if (lesson < 1) { unit -= 1; if (unit < 1) break; lesson = this.lessonsInUnit(pos.level, unit); }
+          cand = cand.concat(this.lessonWordsOf(pos.level, unit, lesson));
+        }
+        shuffled(cand, w.i + 103).forEach(i => add(this.W[i]));
+      }
+    }
+
+    // Tier 3 — words the learner has struggled with: not yet srKnown(), with
+    // a low success count in their own SRS record. Iterates vocab_sr_v1's own
+    // (small) keyset, not the full 10,524-word catalog.
+    if (pool.length < 3) {
+      const sr = this.srLoad();
+      const weak = Object.keys(sr)
+        .filter(k => Array.isArray(sr[k]) && sr[k][4] && (sr[k][0] || 0) <= 1 && !this.srKnown(Number(k)))
+        .map(Number);
+      shuffled(weak, w.i + 107).forEach(i => add(this.W[i]));
+    }
+
+    const sameCat = withFa.filter(x => x.cat === w.cat && x.i !== w.i);
+    // Tier 4 — same category (part of speech is a cheap proxy for plausible
+    // confusion; no semantic-similarity infra exists in this offline app).
+    if (pool.length < 3) shuffled(sameCat, w.i + 109).forEach(c => add(c));
+
+    // Tier 5 — fallback: the original random-over-catalog behaviour.
+    const src = sameCat.length >= 6 ? sameCat : withFa;
+    if (pool.length < 3) {
+      let guard = 0;
+      while (pool.length < 3 && guard++ < 200) add(src[Math.floor(r() * src.length)]);
+    }
+    // Last resort so a question is never rendered short an option: relax the
+    // English-near-duplicate guard only (the Persian-gloss guard never
+    // relaxes — a duplicate-meaning option is unanswerable, not just easy).
+    if (pool.length < 3) {
+      let guard = 0;
+      while (pool.length < 3 && guard++ < 200) add(src[Math.floor(r() * src.length)], true);
+    }
+
     return shuffled(pool.concat([w]), w.i + 13).map(x => ({ i: x.i, label: shown(x), correct: x.i === w.i }));
   }
   prepare() {
     const mode = this.mode();
-    const st = { showBack: false, picked: null, typed: '', checked: false, correct: null, options: [], msText: '', msErr: '', msOpen: false, editEn: null };
-    if (mode === 'mcq' || mode === 'cloze') st.options = this.buildOptions();
+    const cur = this.current();
+    // Turn A is shown fully revealed from the start — no "نمایش معنی" gate,
+    // just the single "ادامه" continue button (point 1): English word, IPA,
+    // audio, Persian meaning, example sentence and translation together.
+    const ilTurn = cur ? this.ilTurnFor(cur.i) : null;
+    const st = { showBack: ilTurn === 'A', picked: null, typed: '', checked: false, correct: null, options: [], msText: '', msErr: '', msOpen: false, editEn: null };
+    if (mode === 'mcq' || mode === 'cloze' || mode === 'fa2en') st.options = this.buildOptions();
     this.setState(st, () => {
       const w = this.current();
       if (mode === 'listen' && w) setTimeout(() => this.speakWord(w.en), 300);
@@ -1549,28 +1878,127 @@ class Component extends DCLogic {
       }
       d.days[today()] = (d.days[today()] || 0) + 1;
       d.pos = d.pos + 1;
-    }, { justKnown: justKnown ? w.en : '' }, () => {
-      const d = this.state.data;
-      const goal = d.goal || 20, doneToday = d.days[today()] || 0;
-      if (doneToday === goal) {
-        return this.setState({ screen: 'result', result: { kind: 'goal' } });
-      }
-      if (d.pos >= d.order.length) return this.setState({ screen: 'result', result: { kind: 'round' } });
-      const mile = Math.floor(d.seen / QUIZ_EVERY);
-      if (mile > 0 && d.seen % QUIZ_EVERY === 0 && !d.quizzes['seen:' + mile]) return this.startQuiz(mile);
-      this.prepare();
-    });
+    }, { justKnown: justKnown ? w.en : '' }, () => this.afterCard());
   }
-  nextRound() {
+  // LEG-003 — the shared "what happens after any card is answered" tail,
+  // used by both advance() (existing reviews/flash) and ilAdvance() (the new
+  // Initial-Learning turns). Soft daily goal (point 2): the old hard
+  // "صف فعلی تمام شد" (kind:'round') stop is now a last resort behind
+  // extendQueue() — an exhausted queue tries to pull in more reviews/the
+  // next lesson's new words first, as long as today's goal is not yet met.
+  // The goal screen itself is delayed (never skipped) while a word
+  // introduced this session still has a Turn B/C pending, so it is never
+  // silently abandoned mid-sequence — see ilHasPending().
+  afterCard() {
+    const d = this.state.data;
+    const goal = d.goal || 20, doneToday = d.days[today()] || 0;
+    if (doneToday >= goal && !this.ilHasPending()) {
+      return this.setState({ screen: 'result', result: { kind: 'goal' } });
+    }
+    if (d.pos >= d.order.length) {
+      if (doneToday < goal) return this.extendQueue(() => this.afterCard());
+      // Safety net only: ilHasPending() being true above already proved the
+      // queue cannot be exhausted (any pending turn keeps d.order ahead of
+      // d.pos), so in practice this is unreachable — kept in case that
+      // invariant is ever broken by a future change.
+      return this.setState({ screen: 'result', result: { kind: 'round' } });
+    }
+    const mile = Math.floor(d.seen / QUIZ_EVERY);
+    if (mile > 0 && d.seen % QUIZ_EVERY === 0 && !d.quizzes['seen:' + mile]) return this.startQuiz(mile);
+    this.prepare();
+  }
+  // LEG-003 — Initial Learning turn completion. Deliberately not advance():
+  // Turn A/B never touch vocab_sr_v1 (see srCompleteInitialLearning, called
+  // only on a correct Turn C); a wrong Turn B/C never shows "دوباره" (point
+  // 3) — it silently reschedules the same turn a few cards later instead,
+  // up to IL_MAX_FAILS times before the word is marked 'unfinished' for this
+  // lesson (point 4).
+  ilAdvance(turn, wasCorrect) {
+    const w = this.current(); if (!w) return;
+    const il = this.ilLoad();
+    const rec = il.words[w.i] || (il.words[w.i] = { turn: turn, fails: 0 });
+    let gapMin = 0, gapMax = 0, reschedule = false;
+    if (turn === 'A') {
+      rec.turn = 'B'; rec.fails = 0;
+      gapMin = IL_GAP_B_MIN; gapMax = IL_GAP_B_MAX; reschedule = true;
+    } else if (turn === 'B' || turn === 'C') {
+      if (wasCorrect) {
+        if (turn === 'B') { rec.turn = 'C'; rec.fails = 0; gapMin = IL_GAP_C_MIN; gapMax = IL_GAP_C_MAX; reschedule = true; }
+        else { this.srCompleteInitialLearning(w.i); rec.turn = 'done'; }
+      } else {
+        rec.fails = (rec.fails || 0) + 1;
+        if (rec.fails >= IL_MAX_FAILS) { rec.turn = 'unfinished'; }
+        else { gapMin = IL_RETRY_GAP_MIN; gapMax = IL_RETRY_GAP_MAX; reschedule = true; }
+      }
+    }
+    this.ilSave();
+    this.set(d => {
+      const stats = d.dayStats[today()] || (d.dayStats[today()] = { introduced: 0, correct: 0, wrong: 0 });
+      if (turn === 'A') stats.introduced++;
+      else {
+        d.seen++;
+        if (wasCorrect) { d.correct++; stats.correct++; d.mastered[w.i] = (d.mastered[w.i] || 0) + 1; }
+        else { d.wrong++; stats.wrong++; }
+      }
+      if (reschedule) this.ilSchedule(d, w.i, gapMin, gapMax);
+      d.days[today()] = (d.days[today()] || 0) + 1;
+      d.pos = d.pos + 1;
+    }, { justKnown: '' }, () => this.afterCard());
+  }
+  // LEG-002 — replaces nextRound(). Advances lesson -> unit -> level exactly
+  // like a textbook's table of contents, using the same "no fresh words left
+  // in the current queue" trigger nextRound() used, just scoped to the
+  // current LESSON_SIZE-word lesson instead of the whole level band (which
+  // word actually gets shown when is still chunkOrder()'s job, unchanged —
+  // that is session-engine scope, not this task's).
+  // Factored out of nextLesson() so LEG-003's extendQueue() can reuse the
+  // exact same "advance lesson -> unit -> level" trigger and math, instead
+  // of a second copy that could drift from this one.
+  advanceLessonIfDone(d) {
+    const stats = this.lessonStats(d.level, d.unit, d.lesson);
+    if (!stats.fresh) return;
+    const lessonsInUnit = this.lessonsInUnit(d.level, d.unit);
+    if (d.lesson < lessonsInUnit) {
+      d.lesson += 1;
+    } else {
+      const unitsInLvl = this.unitsInLevel(d.level), li = LEVELS.indexOf(d.level);
+      if (d.unit < unitsInLvl) { d.unit += 1; d.lesson = 1; }
+      else if (li < LEVELS.length - 1) { d.level = LEVELS[li + 1]; d.unit = 1; d.lesson = 1; }
+      // else: last lesson of the last unit of the last level with nothing
+      // fresh left anywhere — hold position, same as nextRound() never
+      // advancing band past the final level.
+    }
+    d.round = this.roundForLevel(d.level);
+  }
+  nextLesson() {
     const n = this.W.length;
     this.set(d => {
-      const qs = this.queueStats(d.round, n);
-      if (!qs.fresh && this.band(d.round) < LEVELS.length - 1) d.round = (this.band(d.round) + 1) * PER_LEVEL + 1;
+      this.advanceLessonIfDone(d);
       d.pos = 0; d.wordCount = n;
-      d.order = this.chunkOrder(d.round, n);
+      d.order = this.chunkOrder(d, n);
     }, { screen: 'study', result: null }, () => {
       if (!this.state.data.order.length) this.setState({ screen: 'result', result: { kind: 'empty' } });
       else this.prepare();
+    });
+  }
+  // LEG-003 point 2 — soft daily goal. Instead of ending the session the
+  // moment d.order runs out (the old "صف فعلی تمام شد" / kind:'round'
+  // screen), APPEND more cards (more due reviews once the day rolls over
+  // enough, and/or the next lesson's new words) onto the existing d.order
+  // and keep d.pos where it is. Appending rather than replacing is what
+  // keeps any Initial-Learning turn already spliced into d.order intact.
+  extendQueue(done) {
+    const n = this.W.length;
+    let grew = false;
+    this.set(d => {
+      const before = d.order.length;
+      this.advanceLessonIfDone(d);
+      const more = this.chunkOrder(d, n).filter(i => d.order.indexOf(i) < 0);
+      if (more.length) d.order = d.order.concat(more);
+      grew = d.order.length > before;
+    }, {}, () => {
+      if (!grew) return this.setState({ screen: 'result', result: { kind: 'empty' } });
+      done();
     });
   }
 
@@ -1660,12 +2088,19 @@ class Component extends DCLogic {
     const seed = Date.now() ^ Math.floor(Math.random() * 1e9);
     const qs = this.placementQs('A1', seed);
     if (!qs.length) return;
-    this.setState({ screen: 'placement', placement: { level: 'A1', li: 0, seed, qs, k: 0, picked: null, right: 0, results: [] } });
+    this.setState({ screen: 'placement', placement: { level: 'A1', li: 0, seed, qs, k: 0, picked: null, right: 0, vocabRight: 0, gramRight: 0, results: [] } });
   }
   placementPick(oi) {
     const p = this.state.placement; if (!p || p.picked != null) return;
-    const opt = p.qs[p.k].opts[oi];
-    this.setState({ placement: Object.assign({}, p, { picked: oi, right: p.right + (opt.correct ? 1 : 0) }) });
+    const q = p.qs[p.k], opt = q.opts[oi], correct = !!opt.correct;
+    // LEG-007: keep the combined right-count (still drives the existing
+    // per-level ladder below, unchanged) but also tally vocab/grammar items
+    // separately, since q.kind already tells them apart and that is the only
+    // thing the split scoring in placementAdvance() needs.
+    const patch = { picked: oi, right: p.right + (correct ? 1 : 0) };
+    if (q.kind === 'vocab') patch.vocabRight = (p.vocabRight || 0) + (correct ? 1 : 0);
+    else patch.gramRight = (p.gramRight || 0) + (correct ? 1 : 0);
+    this.setState({ placement: Object.assign({}, p, patch) });
   }
   placementAdvance() {
     const p = this.state.placement; if (!p || p.picked == null) return;
@@ -1674,25 +2109,68 @@ class Component extends DCLogic {
       return;
     }
     const total = p.qs.length, score = total ? p.right / total : 0;
-    const results = p.results.concat([{ level: p.level, right: p.right, total }]);
+    const vocabTotal = p.qs.filter(q => q.kind === 'vocab').length;
+    const gramTotal = p.qs.filter(q => q.kind === 'gram').length;
+    const results = p.results.concat([{
+      level: p.level, right: p.right, total,
+      vocabRight: p.vocabRight || 0, vocabTotal,
+      gramRight: p.gramRight || 0, gramTotal
+    }]);
     const nextLi = p.li + 1;
     if (score >= PLACEMENT_PASS && nextLi < LEVELS.length) {
       const qs = this.placementQs(LEVELS[nextLi], p.seed + nextLi * 613);
       if (qs.length) {
-        this.setState({ placement: { level: LEVELS[nextLi], li: nextLi, seed: p.seed, qs, k: 0, picked: null, right: 0, results } });
+        this.setState({ placement: { level: LEVELS[nextLi], li: nextLi, seed: p.seed, qs, k: 0, picked: null, right: 0, vocabRight: 0, gramRight: 0, results } });
         return;
       }
     }
+    // LEG-007 — docs/placement-test-methodology.md §6.1/§8.5: report two
+    // independent dimensions instead of one combined finalLevel. Each is
+    // "the highest tested level that passed on that dimension's own accuracy"
+    // — still bounded to the levels the combined ladder actually administered
+    // (it never re-tests a level once the ladder stops), exactly like the
+    // old finalLevel was. finalLevel itself is kept only for the existing
+    // per-level pass/fail breakdown display, which still reflects the
+    // combined ladder rule that decided which levels got tested.
     const finalLevel = results.filter(x => x.total && x.right / x.total >= PLACEMENT_PASS).map(x => x.level).pop() || 'A1';
-    this.setState({ placement: Object.assign({}, p, { results, done: true, finalLevel }) });
+    const finalVocabLevel = results.filter(x => x.vocabTotal && x.vocabRight / x.vocabTotal >= PLACEMENT_VOCAB_PASS).map(x => x.level).pop() || 'A1';
+    const finalGramLevel = results.filter(x => x.gramTotal && x.gramRight / x.gramTotal >= PLACEMENT_GRAM_PASS).map(x => x.level).pop() || 'A1';
+    this.setState({ placement: Object.assign({}, p, { results, done: true, finalLevel, finalVocabLevel, finalGramLevel, overrideLevel: null }) });
+  }
+  // A manual, always-available correction to the recommended split (methodology
+  // doc §6.2/§8.3/§8.4 "place low, report a range, always offer an override",
+  // adapted without the full θ/SE range machinery: here it is simply a level
+  // the learner can pick instead of the two computed dimensions). Picking the
+  // already-selected level again clears the override and returns to the
+  // computed recommendation. A manual choice is a single deliberate decision,
+  // not a second measurement, so it applies uniformly to every section below
+  // rather than being split/minned like the computed result is.
+  placementSetOverride(L) {
+    const p = this.state.placement; if (!p || !p.done) return;
+    this.setState({ placement: Object.assign({}, p, { overrideLevel: p.overrideLevel === L ? null : L }) });
   }
   applyPlacement() {
-    const p = this.state.placement; if (!p || !p.finalLevel) return;
-    const n = this.W.length, li = LEVELS.indexOf(p.finalLevel);
+    const p = this.state.placement; if (!p || !p.finalVocabLevel || !p.finalGramLevel) return;
+    const n = this.W.length;
+    const li = L => Math.max(0, LEVELS.indexOf(L));
+    // LEG-007 — docs/placement-test-methodology.md §8.5's table, adapted to
+    // this app's already-implemented sequential 9-item ladder (no θ/SE
+    // estimator, that is explicitly out of scope): vocabulary and grammar are
+    // the only two dimensions this test actually collected evidence for, so
+    // they drive d.level (+ d.round mirror) and gLv/sbLv independently.
+    // Listening, discussion, jobs and free practice get no direct evidence —
+    // they are placed at min(vocab, structure) rather than either number
+    // alone, so the app never implies a measurement it did not make. A
+    // manual override (placementSetOverride) is a single explicit choice and
+    // applies the same way everywhere, superseding both computed dimensions.
+    const vocabLevel = p.overrideLevel || p.finalVocabLevel;
+    const structLevel = p.overrideLevel || p.finalGramLevel;
+    const conservLevel = LEVELS[Math.min(li(vocabLevel), li(structLevel))];
     this.set(d => {
-      d.round = li * PER_LEVEL + 1;
+      d.level = vocabLevel; d.unit = 1; d.lesson = 1;
+      d.round = this.roundForLevel(vocabLevel);
       d.pos = 0;
-      d.order = this.chunkOrder(d.round, n);
+      d.order = this.chunkOrder(d, n);
     }, {
       screen: 'study', placement: null,
       // d.round alone unlocks every section (each *LevelUnlocked() now checks
@@ -1700,8 +2178,8 @@ class Component extends DCLogic {
       // remember their own last-viewed level in state — overwrite those too,
       // or a section visited earlier this session would keep showing its old
       // level instead of picking up the placement result.
-      gLv: p.finalLevel, sbLv: p.finalLevel, lsLv: p.finalLevel, dLv: p.finalLevel,
-      jobLevel: p.finalLevel, practiceLv: p.finalLevel
+      gLv: structLevel, sbLv: structLevel, lsLv: conservLevel, dLv: conservLevel,
+      jobLevel: conservLevel, practiceLv: conservLevel
     }, () => {
       if (!this.state.data.order.length) this.setState({ screen: 'home' });
       else this.prepare();
@@ -3585,9 +4063,17 @@ class Component extends DCLogic {
     };
 
     const isCloze = mode === 'cloze';
+    const isFa2en = mode === 'fa2en';
+    // fa2en (LEG-003 Turn C) reuses the exact same rendering as mcq/cloze —
+    // options grid, picked/correct marking, everything below — only the
+    // prompt direction and option source differ (see buildOptions()).
+    const isMcqLike = mode === 'mcq' || isCloze || isFa2en;
     const sent = this.exampleOk(w) ? { s: w.ex, fa: w.exfa || '' } : null;
-    const answered = mode === 'flash' ? s.showBack : ((mode === 'mcq' || isCloze) ? s.picked != null : s.checked);
+    const answered = mode === 'flash' ? s.showBack : (isMcqLike ? s.picked != null : s.checked);
     const myS = this.mySent[w.en];
+    // LEG-003: which Initial-Learning turn (if any) is driving the current
+    // card. null for every normal/already-tracked word — untouched below.
+    const ilTurn = this.ilTurnFor(w.i);
     let promptText = w.en, promptHint = 'معنی را به یاد بیاور', ltr = true;
     if (mode === 'mcq') promptHint = 'معنی درست را انتخاب کن';
     if (mode === 'type') { promptText = faShown; promptHint = 'املای انگلیسی را بنویس'; ltr = false; }
@@ -3596,13 +4082,14 @@ class Component extends DCLogic {
       if (sent) { promptText = this.clozeBlank(w).replace(/~/g, '_____'); promptHint = 'کدام لغت جای خالی می‌نشیند؟'; }
       else { promptText = faShown; promptHint = 'معادل انگلیسی را انتخاب کن'; ltr = false; }
     }
+    if (isFa2en) { promptText = faShown; promptHint = 'معادل انگلیسی را انتخاب کن'; ltr = false; }
     const promptStyle = ltr
       ? 'font-family:Inter,sans-serif;font-size:' + (isCloze ? '20px' : '34px') + ';font-weight:600;letter-spacing:-.02em;direction:ltr;line-height:1.4'
       : 'font-size:28px;font-weight:500;line-height:1.5';
 
     const options = (s.options || []).map((o, i) => ({
       n: String(i + 1), label: o.label, numStyle: numS, style: optS(o.correct, i === s.picked, s.picked),
-      textStyle: 'flex:1;' + (isCloze ? 'font-family:Inter,sans-serif;direction:ltr;text-align:left;' : ''),
+      textStyle: 'flex:1;' + ((isCloze || isFa2en) ? 'font-family:Inter,sans-serif;direction:ltr;text-align:left;' : ''),
       mark: s.picked == null ? '' : (o.correct ? 'ph-fill ph-check-circle' : (i === s.picked ? 'ph-fill ph-x-circle' : '')),
       markStyle: 'font-size:16px;flex:none',
       pick: () => { if (this.state.picked != null) return; this.setState({ picked: i, showBack: true }); if (isCloze) this.speakWord(w.en); }
@@ -3616,14 +4103,21 @@ class Component extends DCLogic {
     const continueStyle = btn('rgba(143,217,193,.11)', 'rgba(143,217,193,.62)', '#8fd9c1');
     const againAction = { label: 'دوباره', sub: 'در همین جلسه', icon: 'ph ph-arrow-counter-clockwise', style: btn('rgba(217,143,143,.08)', 'rgba(217,143,143,.45)', '#d98f8f'), go: () => this.advance(false, 0) };
     const continueAction = { label: 'ادامه', sub: this.intervalLabel(w, 2), icon: 'ph ph-check', style: continueStyle, go: () => this.advance(true, 2) };
+    // LEG-003 point 3 — Initial-Learning Turn B/C never show "دوباره", right
+    // or wrong: the scheduler (ilAdvance) silently reschedules a wrong turn
+    // a few cards later on its own, invisible to the user beyond the card
+    // reappearing. A single neutral "ادامه" is the only action either way.
+    const ilContinueAction = ok => ({ label: 'ادامه', icon: 'ph ph-check', style: continueStyle, go: () => this.ilAdvance(ilTurn, ok) });
     const actions = [];
     if (mode === 'flash') {
       if (!s.showBack) actions.push({ label: 'نمایش معنی', icon: 'ph ph-eye', style: btn('rgba(145,132,217,.12)', accent, accent), go: () => this.setState({ showBack: true }) });
+      else if (ilTurn === 'A') actions.push({ label: 'ادامه', icon: 'ph ph-check', style: continueStyle, go: () => this.ilAdvance('A', true) });
       else { actions.push(continueAction); actions.push(againAction); }
-    } else if (mode === 'mcq' || isCloze) {
+    } else if (isMcqLike) {
       if (s.picked != null) {
         const ok = !!s.options[s.picked].correct;
-        actions.push(ok ? continueAction : againAction);
+        if (ilTurn === 'B' || ilTurn === 'C') actions.push(ilContinueAction(ok));
+        else actions.push(ok ? continueAction : againAction);
       }
     } else if (!s.checked) actions.push({ label: 'بررسی', icon: 'ph ph-check', style: btn('rgba(145,132,217,.12)', accent, accent), go: () => this.check() });
     else actions.push(s.correct ? continueAction : againAction);
@@ -3648,7 +4142,8 @@ class Component extends DCLogic {
     const pl = s.placement;
     let plPrompt = '', plHint = 'معنی فارسی کدام است؟', plPromptStyle = 'font-family:Inter,sans-serif;font-size:30px;font-weight:600;direction:ltr;letter-spacing:-.02em',
       plOptions = [], plPos = '', plBarStyle = 'height:100%;width:0%;background:#84c5d9',
-      plLevelLabel = '', plBreakdown = [], plResultTitle = '', plResultDesc = '', plShowWhy = false, plWhy = '';
+      plLevelLabel = '', plBreakdown = [], plResultTitle = '', plResultDesc = '', plShowWhy = false, plWhy = '',
+      plOverrideChips = [], plApplyLabel = 'شروع تمرین از این سطح';
     if (pl) {
       plLevelLabel = 'در حال آزمون سطح ' + pl.level;
       if (!pl.done) {
@@ -3669,16 +4164,42 @@ class Component extends DCLogic {
           markStyle: 'font-size:16px;flex:none', pick: () => this.placementPick(i)
         }));
       } else {
+        // LEG-007 — report per-item-type accuracy per level, not just the
+        // combined pass/fail the ladder used to decide which levels to test.
         plBreakdown = pl.results.map(r => {
           const passed = r.total > 0 && r.right / r.total >= PLACEMENT_PASS;
           return {
-            level: r.level, label: r.level + ' · ' + r.right + ' از ' + r.total,
+            level: r.level, label: r.level + ' · واژگان ' + r.vocabRight + '/' + r.vocabTotal + ' · دستور ' + r.gramRight + '/' + r.gramTotal,
             passedIcon: passed ? 'ph-fill ph-check-circle' : 'ph-fill ph-x-circle',
             passedStyle: 'font-size:15px;color:' + (passed ? '#8fd9c1' : '#d98f8f')
           };
         });
-        plResultTitle = 'سطح تو: ' + pl.finalLevel;
-        plResultDesc = 'از این به بعد واژگان، دستور زبان، جمله‌سازی، شنیدن و گفت‌وگو همه از همین سطح شروع می‌شوند. پیشرفت و واژه‌هایی که قبلاً دیده‌ای دست‌نخورده می‌مانند.';
+        const li = L => Math.max(0, LEVELS.indexOf(L));
+        const conservLevel = LEVELS[Math.min(li(pl.finalVocabLevel), li(pl.finalGramLevel))];
+        // Manual override chips (methodology doc §6.2/§8.3/§8.4 "always offer
+        // an override", the simple non-statistical version this task scopes):
+        // always visible on the result screen, never buried behind a menu.
+        plOverrideChips = LEVELS.map(L => {
+          const on = pl.overrideLevel === L;
+          return {
+            label: L, active: on,
+            style: 'display:flex;align-items:center;gap:4px;padding:6px 13px;border-radius:99px;font-size:12px;font-family:Inter,sans-serif;cursor:pointer;background:' + (on ? 'rgba(224,164,88,.16)' : 'rgba(233,233,237,.03)') + ';border:1px solid ' + (on ? '#e0a458' : 'rgba(233,233,237,.42)') + ';color:' + (on ? '#e0a458' : 'rgba(233,233,237,.65)'),
+            pick: () => this.placementSetOverride(L)
+          };
+        });
+        if (pl.overrideLevel) {
+          plResultTitle = 'شروع از سطح ' + pl.overrideLevel + ' (انتخاب خودت)';
+          plResultDesc = 'این سطح را خودت انتخاب کردی؛ واژگان، دستور زبان، جمله‌سازی، شنیدن، گفت‌وگو و بخش مشاغل همه از همین سطح شروع می‌شوند. پیشرفت و واژه‌هایی که قبلاً دیده‌ای دست‌نخورده می‌مانند.';
+          plApplyLabel = 'شروع از سطح ' + pl.overrideLevel;
+        } else {
+          // Reframed as a recommended starting point with a range across two
+          // measured dimensions, not one flat "level" assertion — the test
+          // only ever measured vocabulary and grammar, so it says so instead
+          // of implying it measured listening/discussion/jobs too.
+          plResultTitle = 'نقطه‌ی شروع پیشنهادی — واژگان ' + pl.finalVocabLevel + ' · دستور ' + pl.finalGramLevel;
+          plResultDesc = 'این یک پیشنهاد است، نه نمره‌ی قطعی. واژه‌ها از سطح ' + pl.finalVocabLevel + ' و دستور زبان/جمله‌سازی از سطح ' + pl.finalGramLevel + ' شروع می‌شود. این آزمون شنیدن و گفت‌وگو را مستقیم نسنجیده، برای همین آن‌ها و بخش مشاغل با احتیاط از سطح ' + conservLevel + ' شروع می‌شوند. اگر حس می‌کنی سطح دیگری مناسب‌تر است، از پایین انتخابش کن — پیشرفت و واژه‌هایی که قبلاً دیده‌ای دست‌نخورده می‌مانند.';
+          plApplyLabel = 'شروع از سطح‌های پیشنهادی';
+        }
       }
     }
 
@@ -3693,7 +4214,7 @@ class Component extends DCLogic {
       resultTitle = (d.goal || 20) + ' کارت مرور شد';
       resultDesc = dayStats.introduced + ' واژهٔ تازه · ' + dayStats.correct + ' پاسخ درست · ' + dayStats.wrong + ' پاسخ نیازمند مرور. اگر می‌خواهی همین‌جا بس کن، یا ادامه بده.';
       resultActions = [
-        { label: '۲۰ کارت دیگر', style: btn('rgba(143,217,193,.14)', '#8fd9c1', '#8fd9c1'), go: () => this.set(dd => { dd.goal = (dd.goal || 20) + 20; }, { screen: 'study', result: null }, () => this.state.data.pos >= this.state.data.order.length ? this.nextRound() : this.prepare()) },
+        { label: '۲۰ کارت دیگر', style: btn('rgba(143,217,193,.14)', '#8fd9c1', '#8fd9c1'), go: () => this.set(dd => { dd.goal = (dd.goal || 20) + 20; }, { screen: 'study', result: null }, () => this.state.data.pos >= this.state.data.order.length ? this.nextLesson() : this.prepare()) },
         { label: 'بازگشت به خانه', style: btn('transparent', 'rgba(233,233,237,.42)', 'rgba(233,233,237,.75)'), go: () => this.setState({ screen: 'home', result: null }) }
       ];
     } else if (res.kind === 'quiz') {
@@ -3713,7 +4234,7 @@ class Component extends DCLogic {
       resultTitle = 'صف فعلی تمام شد';
       resultDesc = stats.introduced + ' واژهٔ تازه دیدی و ' + (stats.correct + stats.wrong) + ' مرور انجام دادی. پاسخ‌های سخت و اشتباه طبق زمان‌بندی دوباره برمی‌گردند.';
       resultActions = [
-        { label: 'ادامهٔ جلسه', style: btn('rgba(145,132,217,.12)', '#9184d9', '#b3a9e6'), go: () => this.nextRound() },
+        { label: 'ادامهٔ جلسه', style: btn('rgba(145,132,217,.12)', '#9184d9', '#b3a9e6'), go: () => this.nextLesson() },
         { label: 'بعداً', style: btn('transparent', 'rgba(233,233,237,.16)', 'rgba(233,233,237,.75)'), go: () => this.setState({ screen: 'home' }) }
       ];
     } else if (res.kind === 'empty') {
@@ -3794,7 +4315,7 @@ class Component extends DCLogic {
         style: 'display:flex;align-items:center;justify-content:center;gap:5px;padding:8px 9px;border-radius:8px;background:' + (on ? 'rgba(145,132,217,.14)' : 'transparent') + ';border:1px solid ' + (on ? 'rgba(145,132,217,.55)' : 'rgba(233,233,237,.12)') + ';color:' + (on ? '#c8bef1' : 'rgba(233,233,237,.58)') + ';font-size:10.5px',
         pick: () => this.setState({ dictSort: o.key, limit: 60, dictToolsOpen: false }) };
     });
-    const qstats = this.queueStats(d.round, total);
+    const qstats = this.queueStats(d, total);
     const lvstats = this.levelStats(d.round, total);
     const levelPctRaw = lvstats.total ? Math.min(100, (lvstats.introduced / lvstats.total) * 100) : 0;
     const rawWordPhase = this.srKnown(w.i) ? 4 : Math.min(3, this.srStage(w.i));
@@ -3855,7 +4376,12 @@ class Component extends DCLogic {
         return { en: j.en, fa: j.fa, group: j.group, icon: j.icon,
           style: 'display:flex;align-items:center;gap:11px;width:100%;text-align:right;padding:14px 13px;border-radius:0;background:transparent;border:0;border-bottom:1px solid rgba(233,233,237,.065)',
           iconStyle: 'flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:' + c + '18;border:1px solid ' + c + '3d;color:' + c + ';font-size:18px',
-          open: () => this.setState({ screen: 'jobdetail', job: j, jobLevel: 'A1' }) };
+          // LEG-008 — do not reset jobLevel to A1 on open: it discarded
+          // whatever level placement (LEG-007) or a previous jobLevelChips
+          // pick had already set. jobLv (line ~4321) already falls back to
+          // 'A1' when state.jobLevel is genuinely unset, so nothing here
+          // needs a forced default.
+          open: () => this.setState({ screen: 'jobdetail', job: j }) };
       }),
       jobTitle: job.en,
       jobTitleFa: job.fa,
@@ -3882,7 +4408,7 @@ class Component extends DCLogic {
       goBrowse: () => this.setState({ screen: 'browse', limit: 60 }),
       startStudy: () => {
         this.remember('study', 'واژه‌ها · جلسهٔ مرور', qstats.due + ' مرور موعددار · ' + Math.min(MAX_NEW, qstats.fresh) + ' تازه');
-        if (!d.order.length || d.pos >= d.order.length) this.nextRound();
+        if (!d.order.length || d.pos >= d.order.length) this.nextLesson();
         else this.setState({ screen: 'study' }, () => this.prepare());
       },
       startLabel: d.pos > 0 && d.pos < d.order.length ? 'ادامهٔ جلسه از کارت ' + (d.pos + 1) : 'شروع جلسهٔ امروز',
@@ -3956,14 +4482,11 @@ class Component extends DCLogic {
       promptText, promptHint, promptStyle,
       speak: () => this.speakWord(w.en), speakSlow: () => this.speakWord(w.en, 0.55),
       showAnswer: answered,
-      cardEditing: s.editEn === w.en, cardNotEditing: s.editEn !== w.en,
       editVal: s.editVal, onEditVal: e => this.setState({ editVal: e.target.value }),
       editKey: e => { if (e.key === 'Enter') this.editSave(); if (e.key === 'Escape') this.setState({ editEn: null, editVal: '' }); },
       editSave: () => this.editSave(),
       editCancel: () => this.setState({ editEn: null, editVal: '' }),
-      editStart: () => this.editStart(w.en, w.fa),
-      editInputStyle: 'flex:1;padding:9px 12px;border-radius:9px;background:rgba(233,233,237,.05);border:1px solid rgba(145,132,217,.5);color:#e9e9ed;font-size:15px;outline:none;text-align:center',
-      hasOptions: (mode === 'mcq' || isCloze) && options.length > 0, options,
+      hasOptions: isMcqLike && options.length > 0, options,
       hasInput: mode === 'type' || mode === 'listen',
       typed: s.typed,
       onType: e => this.setState({ typed: e.target.value }),
@@ -4018,7 +4541,7 @@ class Component extends DCLogic {
       hasMsErr: !!s.msErr, msErr: s.msErr,
       sentenceEn: sent ? sent.s : '', sentenceFa: sent ? sent.fa : '', hasSentenceFa: !!(sent && sent.fa),
       actions,
-      hintLine: answered ? '' : (mode === 'flash' ? 'دکمهٔ «نمایش معنی» را بزن' : (mode === 'mcq' || isCloze ? 'گزینه‌ی درست را انتخاب کن' : 'Enter = بررسی')),
+      hintLine: answered ? '' : (mode === 'flash' ? 'دکمهٔ «نمایش معنی» را بزن' : (isMcqLike ? 'گزینه‌ی درست را انتخاب کن' : 'Enter = بررسی')),
       nextQuizIn: String(Math.max(0, nextMile - d.seen)),
 
       qPrompt, qHint, qOptions, quizPos, quizBarStyle, qPromptStyle,
@@ -4033,7 +4556,7 @@ class Component extends DCLogic {
       plNext: () => this.placementAdvance(),
       plNextLabel: pl && pl.k + 1 >= pl.qs.length ? 'دیدن نتیجه' : 'سؤال بعدی',
       plNextStyle: btn('transparent', pl && pl.picked != null ? '#84c5d9' : 'rgba(233,233,237,.42)', pl && pl.picked != null ? '#84c5d9' : 'rgba(233,233,237,.55)'),
-      plResultTitle, plResultDesc, plBreakdown,
+      plResultTitle, plResultDesc, plBreakdown, plOverrideChips, plApplyLabel,
       plApply: () => this.applyPlacement(),
 
       resultTitle, resultDesc, resultIcon, resultActions,
