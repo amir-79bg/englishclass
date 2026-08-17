@@ -56,8 +56,8 @@
   "en": "adventure",
   "fa": "ماجراجویی",
   "cat": "noun",
-  "ex": "I need a new adventure for my work.",
-  "exfa": "برای کارم یک ماجراجویی تازه لازم دارم."
+  "ex": "We had an amazing adventure in the mountains.",
+  "exfa": "ما یک ماجراجویی فوق‌العاده در کوهستان داشتیم."
  },
  {
   "i": 7,
@@ -136,8 +136,8 @@
   "en": "airplane",
   "fa": "هواپیما",
   "cat": "travel",
-  "ex": "I need a new airplane for my work.",
-  "exfa": "برای کارم یک هواپیما تازه لازم دارم."
+  "ex": "We took an airplane to visit my grandmother.",
+  "exfa": "ما با هواپیما به دیدن مادربزرگم رفتیم."
  },
  {
   "i": 17,
@@ -172,16 +172,16 @@
   "en": "annoying",
   "fa": "آزاردهنده",
   "cat": "feeling",
-  "ex": "This annoying is very important to me.",
-  "exfa": "این آزاردهنده برای من خیلی مهم است."
+  "ex": "That noisy neighbor is really annoying.",
+  "exfa": "آن همسایه‌ی پرسروصدا واقعاً آزاردهنده است."
  },
  {
   "i": 21,
   "en": "appearance",
   "fa": "ظاهر",
   "cat": "body",
-  "ex": "I need a new appearance for my work.",
-  "exfa": "برای کارم یک ظاهر تازه لازم دارم."
+  "ex": "Her appearance changed a lot after the haircut.",
+  "exfa": "ظاهرش بعد از کوتاه کردن مو خیلی تغییر کرد."
  },
  {
   "i": 22,
@@ -284,8 +284,8 @@
   "en": "attractive",
   "fa": "جذاب",
   "cat": "body",
-  "ex": "He looked attractive after the meeting.",
-  "exfa": "بعد از جلسه جذاب به نظر می‌رسید."
+  "ex": "He has a warm, attractive smile.",
+  "exfa": "او لبخند گرم و جذابی دارد."
  },
  {
   "i": 35,
@@ -376,16 +376,16 @@
   "en": "beauty",
   "fa": "زیبایی",
   "cat": "body",
-  "ex": "This beauty is very important to me.",
-  "exfa": "این زیبایی برای من خیلی مهم است."
+  "ex": "Everyone admired the beauty of the mountains.",
+  "exfa": "همه زیبایی کوه‌ها را تحسین کردند."
  },
  {
   "i": 46,
   "en": "behavior",
   "fa": "رفتار",
   "cat": "people",
-  "ex": "I need a new behavior for my work.",
-  "exfa": "برای کارم یک رفتار تازه لازم دارم."
+  "ex": "The teacher praised his good behavior in class.",
+  "exfa": "معلم رفتار خوب او را در کلاس تحسین کرد."
  },
  {
   "i": 47,
@@ -416,8 +416,8 @@
   "en": "bike",
   "fa": "دوچرخه",
   "cat": "car",
-  "ex": "This bike is very important to me.",
-  "exfa": "این دوچرخه برای من خیلی مهم است."
+  "ex": "Let's ride our bikes to the park.",
+  "exfa": "بیا با دوچرخه‌هایمان به پارک برویم."
  },
  {
   "i": 51,
@@ -432,8 +432,8 @@
   "en": "biscuit",
   "fa": "بیسکویت",
   "cat": "food",
-  "ex": "We talked about the biscuit for an hour.",
-  "exfa": "یک ساعت درباره‌ی بیسکویت حرف زدیم."
+  "ex": "She dipped the biscuit into her tea.",
+  "exfa": "او بیسکویت را در چایش زد."
  },
  {
   "i": 53,
@@ -464,8 +464,8 @@
   "en": "board",
   "fa": "تخته",
   "cat": "house",
-  "ex": "I need a new board for my work.",
-  "exfa": "برای کارم یک تخته تازه لازم دارم."
+  "ex": "The teacher wrote the answer on the board.",
+  "exfa": "معلم جواب را روی تخته نوشت."
  },
  {
   "i": 57,
@@ -624,8 +624,8 @@
   "en": "butter",
   "fa": "کره",
   "cat": "food",
-  "ex": "This butter is very important to me.",
-  "exfa": "این کره برای من خیلی مهم است."
+  "ex": "She spread butter on her toast.",
+  "exfa": "او روی نان تست کره مالید."
  },
  {
   "i": 76,
@@ -680,8 +680,8 @@
   "en": "captain",
   "fa": "کاپیتان",
   "cat": "work",
-  "ex": "We talked about the captain for an hour.",
-  "exfa": "یک ساعت درباره‌ی کاپیتان حرف زدیم."
+  "ex": "The captain led the team to victory.",
+  "exfa": "کاپیتان تیم را به سمت پیروزی هدایت کرد."
  },
  {
   "i": 83,
@@ -784,8 +784,8 @@
   "en": "childhood",
   "fa": "دوران کودکی",
   "cat": "time",
-  "ex": "This childhood is very important to me.",
-  "exfa": "این دوران کودکی برای من خیلی مهم است."
+  "ex": "She spent her childhood in a small village.",
+  "exfa": "او دوران کودکی‌اش را در یک روستای کوچک گذراند."
  },
  {
   "i": 96,
@@ -836,8 +836,8 @@
   "en": "cleaner",
   "fa": "نظافتچی",
   "cat": "house",
-  "ex": "I need a new cleaner for my work.",
-  "exfa": "برای کارم یک نظافتچی تازه لازم دارم."
+  "ex": "The cleaner comes to our office twice a week.",
+  "exfa": "نظافتچی هفته‌ای دو بار به دفتر ما می‌آید."
  },
  {
   "i": 102,
@@ -860,7 +860,7 @@
   "en": "climb",
   "fa": "بالا رفتن",
   "cat": "sport",
-  "ex": "Learning to climb takes time and practice.",
+  "ex": "We plan to climb the mountain this weekend.",
   "exfa": "بالا رفتن زمان و تمرین می‌خواهد."
  },
  {
@@ -908,8 +908,8 @@
   "en": "comfortable",
   "fa": "راحت",
   "cat": "adj",
-  "ex": "He looked comfortable after the meeting.",
-  "exfa": "بعد از جلسه راحت به نظر می‌رسید."
+  "ex": "These shoes are very comfortable for walking.",
+  "exfa": "این کفش‌ها برای پیاده‌روی خیلی راحت هستند."
  },
  {
   "i": 111,
@@ -956,8 +956,8 @@
   "en": "complete",
   "fa": "کامل",
   "cat": "verb",
-  "ex": "Learning to complete takes time and practice.",
-  "exfa": "کامل زمان و تمرین می‌خواهد."
+  "ex": "Please complete the form before you leave.",
+  "exfa": "لطفاً قبل از رفتن فرم را کامل کن."
  },
  {
   "i": 117,
@@ -996,8 +996,8 @@
   "en": "condition",
   "fa": "شرایط",
   "cat": "noun",
-  "ex": "This condition is very important to me.",
-  "exfa": "این شرایط برای من خیلی مهم است."
+  "ex": "The car is in excellent condition.",
+  "exfa": "ماشین شرایط عالی‌ای دارد."
  },
  {
   "i": 121,
@@ -1012,7 +1012,7 @@
   "en": "confident",
   "fa": "با اعتمادبه‌نفس",
   "cat": "feeling",
-  "ex": "We talked about the confident for an hour.",
+  "ex": "She felt confident before the job interview.",
   "exfa": "یک ساعت درباره‌ی با اعتمادبه‌نفس حرف زدیم."
  },
  {
@@ -1116,16 +1116,16 @@
   "en": "cream",
   "fa": "کرم",
   "cat": "food",
-  "ex": "This cream is very important to me.",
-  "exfa": "این کرم برای من خیلی مهم است."
+  "ex": "She put cream in her coffee.",
+  "exfa": "او در قهوه‌اش کرم ریخت."
  },
  {
   "i": 136,
   "en": "creative",
   "fa": "خلاق",
   "cat": "adj",
-  "ex": "The weather was very creative yesterday.",
-  "exfa": "دیروز هوا خیلی خلاق بود."
+  "ex": "She's very creative when it comes to art.",
+  "exfa": "او در زمینه‌ی هنر خیلی خلاق است."
  },
  {
   "i": 137,
@@ -1328,8 +1328,8 @@
   "en": "dessert",
   "fa": "دسر",
   "cat": "food",
-  "ex": "I need a new dessert for my work.",
-  "exfa": "برای کارم یک دسر تازه لازم دارم."
+  "ex": "We ordered chocolate cake for dessert.",
+  "exfa": "ما کیک شکلاتی برای دسر سفارش دادیم."
  },
  {
   "i": 162,
@@ -1376,8 +1376,8 @@
   "en": "director",
   "fa": "کارگردان",
   "cat": "movie",
-  "ex": "I need a new director for my work.",
-  "exfa": "برای کارم یک کارگردان تازه لازم دارم."
+  "ex": "The director praised the actors after the show.",
+  "exfa": "کارگردان بعد از نمایش بازیگران را تحسین کرد."
  },
  {
   "i": 167,
@@ -1456,16 +1456,16 @@
   "en": "download",
   "fa": "دانلود کردن",
   "cat": "tech",
-  "ex": "I need a new download for my work.",
-  "exfa": "برای کارم یک دانلود کردن تازه لازم دارم."
+  "ex": "I need to download this app for class.",
+  "exfa": "باید این اپلیکیشن را برای کلاس دانلود کنم."
  },
  {
   "i": 177,
   "en": "downtown",
   "fa": "مرکز شهر",
   "cat": "place",
-  "ex": "We talked about the downtown for an hour.",
-  "exfa": "یک ساعت درباره‌ی مرکز شهر حرف زدیم."
+  "ex": "We're meeting for lunch downtown.",
+  "exfa": "ما برای ناهار در مرکز شهر همدیگر را می‌بینیم."
  },
  {
   "i": 178,
@@ -1488,8 +1488,8 @@
   "en": "driver",
   "fa": "راننده",
   "cat": "car",
-  "ex": "This driver is very important to me.",
-  "exfa": "این راننده برای من خیلی مهم است."
+  "ex": "The bus driver waved at the children.",
+  "exfa": "راننده اتوبوس برای بچه‌ها دست تکان داد."
  },
  {
   "i": 181,
@@ -1612,8 +1612,8 @@
   "en": "engineer",
   "fa": "مهندس",
   "cat": "work",
-  "ex": "This engineer is very important to me.",
-  "exfa": "این مهندس برای من خیلی مهم است."
+  "ex": "She works as an engineer at a big company.",
+  "exfa": "او در یک شرکت بزرگ به عنوان مهندس کار می‌کند."
  },
  {
   "i": 196,
@@ -1684,8 +1684,8 @@
   "en": "exchange",
   "fa": "مبادله کردن",
   "cat": "money",
-  "ex": "The exchange changed everything for us.",
-  "exfa": "آن مبادله کردن همه چیز را برای ما عوض کرد."
+  "ex": "Can I exchange this shirt for a bigger size?",
+  "exfa": "می‌توانم این پیراهن را با یک سایز بزرگ‌تر مبادله کنم؟"
  },
  {
   "i": 205,
@@ -1732,8 +1732,8 @@
   "en": "familiar",
   "fa": "آشنا",
   "cat": "people",
-  "ex": "This familiar is very important to me.",
-  "exfa": "این آشنا برای من خیلی مهم است."
+  "ex": "This song sounds familiar to me.",
+  "exfa": "این آهنگ برایم آشنا به نظر می‌رسد."
  },
  {
   "i": 211,
@@ -1748,16 +1748,16 @@
   "en": "farmer",
   "fa": "کشاورز",
   "cat": "work",
-  "ex": "We talked about the farmer for an hour.",
-  "exfa": "یک ساعت درباره‌ی کشاورز حرف زدیم."
+  "ex": "The farmer grows corn and wheat.",
+  "exfa": "کشاورز ذرت و گندم می‌کارد."
  },
  {
   "i": 213,
   "en": "fascinating",
   "fa": "جذاب",
   "cat": "adj",
-  "ex": "Do you remember that fascinating?",
-  "exfa": "آن جذاب را یادت هست؟"
+  "ex": "The documentary about space was fascinating.",
+  "exfa": "مستند درباره‌ی فضا خیلی جذاب بود."
  },
  {
   "i": 214,
@@ -1788,8 +1788,8 @@
   "en": "field",
   "fa": "مزرعه / زمین",
   "cat": "noun",
-  "ex": "We talked about the field for an hour.",
-  "exfa": "یک ساعت درباره‌ی مزرعه حرف زدیم."
+  "ex": "The children played soccer in the field.",
+  "exfa": "بچه‌ها در زمین فوتبال بازی کردند."
  },
  {
   "i": 218,
@@ -1948,8 +1948,8 @@
   "en": "frightening",
   "fa": "ترسناک",
   "cat": "feeling",
-  "ex": "I need a new frightening for my work.",
-  "exfa": "برای کارم یک ترسناک تازه لازم دارم."
+  "ex": "The storm was a frightening experience for us.",
+  "exfa": "طوفان یک تجربه‌ی ترسناک برای ما بود."
  },
  {
   "i": 237,
@@ -1972,16 +1972,16 @@
   "en": "furniture",
   "fa": "مبلمان",
   "cat": "house",
-  "ex": "The furniture changed everything for us.",
-  "exfa": "آن مبلمان همه چیز را برای ما عوض کرد."
+  "ex": "We bought new furniture for the living room.",
+  "exfa": "ما مبلمان جدید برای اتاق نشیمن خریدیم."
  },
  {
   "i": 240,
   "en": "future",
   "fa": "آینده",
   "cat": "time",
-  "ex": "This future is very important to me.",
-  "exfa": "این آینده برای من خیلی مهم است."
+  "ex": "I often think about my future career.",
+  "exfa": "من اغلب درباره آینده شغلی‌ام فکر می‌کنم."
  },
  {
   "i": 241,
@@ -2076,16 +2076,16 @@
   "en": "grandfather",
   "fa": "پدربزرگ",
   "cat": "people",
-  "ex": "We talked about the grandfather for an hour.",
-  "exfa": "یک ساعت درباره‌ی پدربزرگ حرف زدیم."
+  "ex": "My grandfather tells great stories.",
+  "exfa": "پدربزرگم داستان‌های عالی تعریف می‌کند."
  },
  {
   "i": 253,
   "en": "grass",
   "fa": "چمن",
   "cat": "nature",
-  "ex": "Do you remember that grass?",
-  "exfa": "آن چمن را یادت هست؟"
+  "ex": "The children played on the green grass.",
+  "exfa": "بچه‌ها روی چمن سبز بازی کردند."
  },
  {
   "i": 254,
@@ -2140,8 +2140,8 @@
   "en": "guess",
   "fa": "حدس زدن",
   "cat": "verb",
-  "ex": "Learning to guess takes time and practice.",
-  "exfa": "حدس زدن زمان و تمرین می‌خواهد."
+  "ex": "Can you guess how old I am?",
+  "exfa": "می‌تونی حدس بزنی چند سالمه؟"
  },
  {
   "i": 261,
@@ -2236,8 +2236,8 @@
   "en": "hello",
   "fa": "سلام",
   "cat": "noun",
-  "ex": "We talked about the hello for an hour.",
-  "exfa": "یک ساعت درباره‌ی سالم حرف زدیم."
+  "ex": "She waved and said hello to us.",
+  "exfa": "او دست تکان داد و به ما سلام گفت."
  },
  {
   "i": 273,
@@ -2260,8 +2260,8 @@
   "en": "hi",
   "fa": "سلام (خودمانی)",
   "cat": "noun",
-  "ex": "This hi is very important to me.",
-  "exfa": "این سالم (خودمانی) برای من خیلی مهم است."
+  "ex": "He said hi to everyone at the door.",
+  "exfa": "او دم در به همه گفت سلام."
  },
  {
   "i": 276,
@@ -2308,8 +2308,8 @@
   "en": "history",
   "fa": "تاریخچه",
   "cat": "school",
-  "ex": "I need a new history for my work.",
-  "exfa": "برای کارم یک تاریخچه تازه لازم دارم."
+  "ex": "We are learning about ancient history in class.",
+  "exfa": "ما در کلاس درباره تاریخ باستان یاد می‌گیریم."
  },
  {
   "i": 282,
@@ -2348,8 +2348,8 @@
   "en": "horror",
   "fa": "ترسناک",
   "cat": "feeling",
-  "ex": "I need a new horror for my work.",
-  "exfa": "برای کارم یک ترسناک تازه لازم دارم."
+  "ex": "She watched a horror movie alone last night.",
+  "exfa": "او دیشب یک فیلم ترسناک را تنها تماشا کرد."
  },
  {
   "i": 287,
@@ -2364,8 +2364,8 @@
   "en": "how",
   "fa": "چطور",
   "cat": "adv",
-  "ex": "Do you remember that how?",
-  "exfa": "آن چطور را یادت هست؟"
+  "ex": "How do you make this soup?",
+  "exfa": "این سوپ را چطور درست می‌کنی؟"
  },
  {
   "i": 289,
@@ -2564,16 +2564,16 @@
   "en": "invent",
   "fa": "اختراع کردن",
   "cat": "verb",
-  "ex": "Learning to invent takes time and practice.",
-  "exfa": "اختراع کردن زمان و تمرین می‌خواهد."
+  "ex": "It took years of hard work to invent the telephone.",
+  "exfa": "اختراع تلفن سال‌ها کار سخت لازم داشت."
  },
  {
   "i": 313,
   "en": "invention",
   "fa": "اختراع",
   "cat": "noun",
-  "ex": "Do you remember that invention?",
-  "exfa": "آن اختراع را یادت هست؟"
+  "ex": "The wheel is one of the greatest inventions.",
+  "exfa": "چرخ یکی از بزرگ‌ترین اختراعات است."
  },
  {
   "i": 314,
@@ -2648,7 +2648,7 @@
   "en": "juice",
   "fa": "آب‌میوه",
   "cat": "food",
-  "ex": "We talked about the juice for an hour.",
+  "ex": "I drink orange juice every morning.",
   "exfa": "یک ساعت درباره‌ی آب‌میوه حرف زدیم."
  },
  {
@@ -2828,8 +2828,8 @@
   "en": "magazine",
   "fa": "مجله",
   "cat": "noun",
-  "ex": "The magazine changed everything for us.",
-  "exfa": "آن مجله همه چیز را برای ما عوض کرد."
+  "ex": "She is reading a magazine on the sofa.",
+  "exfa": "او روی مبل مشغول خواندن یک مجله است."
  },
  {
   "i": 345,
@@ -2928,8 +2928,8 @@
   "en": "maybe",
   "fa": "شاید",
   "cat": "adv",
-  "ex": "I need a new maybe for my work.",
-  "exfa": "برای کارم یک شاید تازه لازم دارم."
+  "ex": "Maybe we can go to the park later.",
+  "exfa": "شاید بتوانیم بعداً به پارک برویم."
  },
  {
   "i": 357,
@@ -3060,8 +3060,8 @@
   "en": "mountain",
   "fa": "کوه",
   "cat": "nature",
-  "ex": "We talked about the mountain for an hour.",
-  "exfa": "یک ساعت درباره‌ی کوه حرف زدیم."
+  "ex": "We climbed a tall mountain last summer.",
+  "exfa": "تابستان پیش از یک کوه بلند بالا رفتیم."
  },
  {
   "i": 373,
@@ -3092,8 +3092,8 @@
   "en": "musician",
   "fa": "موسیقیدان",
   "cat": "music",
-  "ex": "I need a new musician for my work.",
-  "exfa": "برای کارم یک موسیقیدان تازه لازم دارم."
+  "ex": "My brother is a talented musician.",
+  "exfa": "برادرم یک موسیقیدان بااستعداد است."
  },
  {
   "i": 377,
@@ -3108,8 +3108,8 @@
   "en": "must",
   "fa": "باید",
   "cat": "verb",
-  "ex": "Do you remember that must?",
-  "exfa": "آن باید را یادت هست؟"
+  "ex": "You must wear a seatbelt in the car.",
+  "exfa": "باید در ماشین کمربند ایمنی ببندی."
  },
  {
   "i": 379,
@@ -3140,8 +3140,8 @@
   "en": "nationality",
   "fa": "ملیت",
   "cat": "noun",
-  "ex": "He looked nationality after the meeting.",
-  "exfa": "بعد از جلسه ملیت به نظر می‌رسید."
+  "ex": "What is your nationality?",
+  "exfa": "ملیت تو چیست؟"
  },
  {
   "i": 383,
@@ -3180,8 +3180,8 @@
   "en": "newspaper",
   "fa": "روزنامه",
   "cat": "noun",
-  "ex": "We talked about the newspaper for an hour.",
-  "exfa": "یک ساعت درباره‌ی روزنامه حرف زدیم."
+  "ex": "My father reads the newspaper every morning.",
+  "exfa": "پدرم هر روز صبح روزنامه می‌خواند."
  },
  {
   "i": 388,
@@ -3284,8 +3284,8 @@
   "en": "officer",
   "fa": "افسر",
   "cat": "crime",
-  "ex": "The officer changed everything for us.",
-  "exfa": "آن افسر همه چیز را برای ما عوض کرد."
+  "ex": "The police officer stopped the car.",
+  "exfa": "افسر پلیس ماشین را متوقف کرد."
  },
  {
   "i": 400,
@@ -3336,8 +3336,8 @@
   "en": "or",
   "fa": "یا",
   "cat": "general",
-  "ex": "This or is very important to me.",
-  "exfa": "این یا برای من خیلی مهم است."
+  "ex": "Do you want tea or coffee?",
+  "exfa": "چای می‌خواهی یا قهوه؟"
  },
  {
   "i": 406,
@@ -3400,8 +3400,8 @@
   "en": "painting",
   "fa": "نقاشی",
   "cat": "noun",
-  "ex": "Do you remember that painting?",
-  "exfa": "آن نقاشی را یادت هست؟"
+  "ex": "This painting shows a quiet village.",
+  "exfa": "این نقاشی یک روستای آرام را نشان می‌دهد."
  },
  {
   "i": 414,
@@ -3416,8 +3416,8 @@
   "en": "paragraph",
   "fa": "پاراگراف",
   "cat": "noun",
-  "ex": "This paragraph is very important to me.",
-  "exfa": "این پاراگراف برای من خیلی مهم است."
+  "ex": "Write a short paragraph about your family.",
+  "exfa": "درباره‌ی خانواده‌ات یک پاراگراف کوتاه بنویس."
  },
  {
   "i": 416,
@@ -3492,8 +3492,8 @@
   "en": "pencil",
   "fa": "مداد",
   "cat": "school",
-  "ex": "The pencil changed everything for us.",
-  "exfa": "آن مداد همه چیز را برای ما عوض کرد."
+  "ex": "I wrote the answer with a pencil.",
+  "exfa": "من جواب را با مداد نوشتم."
  },
  {
   "i": 425,
@@ -3808,8 +3808,8 @@
   "en": "rainy",
   "fa": "بارانی",
   "cat": "weather",
-  "ex": "We talked about the rainy for an hour.",
-  "exfa": "یک ساعت درباره‌ی بارانی حرف زدیم."
+  "ex": "It's too rainy to go outside today.",
+  "exfa": "امروز هوا بیش از حد بارانی است که بیرون برویم."
  },
  {
   "i": 463,
@@ -4024,8 +4024,8 @@
   "en": "ruler",
   "fa": "خطکش",
   "cat": "school",
-  "ex": "Do you remember that ruler?",
-  "exfa": "آن خطکش را یادت هست؟"
+  "ex": "Use a ruler to draw a straight line.",
+  "exfa": "برای کشیدن خط صاف از خط‌کش استفاده کن."
  },
  {
   "i": 489,
@@ -4064,8 +4064,8 @@
   "en": "sandwich",
   "fa": "ساندویچ",
   "cat": "food",
-  "ex": "Do you remember that sandwich?",
-  "exfa": "آن ساندویچ را یادت هست؟"
+  "ex": "He made a sandwich with cheese and ham.",
+  "exfa": "او یک ساندویچ با پنیر و ژامبون درست کرد."
  },
  {
   "i": 494,
@@ -4488,8 +4488,8 @@
   "en": "strong",
   "fa": "قوی",
   "cat": "adj",
-  "ex": "He looked strong after the meeting.",
-  "exfa": "بعد از جلسه قوی به نظر می‌رسید."
+  "ex": "He is strong enough to carry the box.",
+  "exfa": "او به اندازه‌ی کافی قوی است که جعبه را حمل کند."
  },
  {
   "i": 547,
@@ -4504,8 +4504,8 @@
   "en": "subway",
   "fa": "مترو",
   "cat": "car",
-  "ex": "Do you remember that subway?",
-  "exfa": "آن مترو را یادت هست؟"
+  "ex": "We took the subway to get downtown.",
+  "exfa": "ما با مترو به مرکز شهر رفتیم."
  },
  {
   "i": 549,
@@ -4568,8 +4568,8 @@
   "en": "sweet",
   "fa": "شیرین",
   "cat": "food",
-  "ex": "The weather was very sweet yesterday.",
-  "exfa": "دیروز هوا خیلی شیرین بود."
+  "ex": "This cake tastes very sweet.",
+  "exfa": "این کیک خیلی شیرین است."
  },
  {
   "i": 557,
@@ -4760,8 +4760,8 @@
   "en": "tooth",
   "fa": "دندان",
   "cat": "body",
-  "ex": "This tooth is very important to me.",
-  "exfa": "این دندان برای من خیلی مهم است."
+  "ex": "I have a toothache in my back tooth.",
+  "exfa": "دندان عقبم درد می‌کند."
  },
  {
   "i": 581,
@@ -4792,16 +4792,16 @@
   "en": "towel",
   "fa": "حوله",
   "cat": "noun",
-  "ex": "The towel changed everything for us.",
-  "exfa": "آن حوله همه چیز را برای ما عوض کرد."
+  "ex": "Dry your hands with this towel.",
+  "exfa": "دست‌هایت را با این حوله خشک کن."
  },
  {
   "i": 585,
   "en": "tower",
   "fa": "برج",
   "cat": "place",
-  "ex": "This tower is very important to me.",
-  "exfa": "این برج برای من خیلی مهم است."
+  "ex": "You can see the whole city from the tower.",
+  "exfa": "از بالای برج می‌توانی کل شهر را ببینی."
  },
  {
   "i": 586,
@@ -4988,8 +4988,8 @@
   "en": "vacation",
   "fa": "تعطیلات",
   "cat": "travel",
-  "ex": "Do you remember that vacation?",
-  "exfa": "آن تعطیلات را یادت هست؟"
+  "ex": "We are going to Spain for vacation.",
+  "exfa": "ما برای تعطیلات به اسپانیا می‌رویم."
  },
  {
   "i": 609,
@@ -5148,8 +5148,8 @@
   "en": "welcome",
   "fa": "خوش آمدید",
   "cat": "noun",
-  "ex": "Do you remember that welcome?",
-  "exfa": "آن خوش آمدید را یادت هست؟"
+  "ex": "Welcome to our new home!",
+  "exfa": "به خانه‌ی جدید ما خوش آمدید!"
  },
  {
   "i": 629,
@@ -5220,7 +5220,7 @@
   "en": "would",
   "fa": "می‌خواستم",
   "cat": "verb",
-  "ex": "We talked about the would for an hour.",
+  "ex": "I would like a cup of tea, please.",
   "exfa": "یک ساعت درباره‌ی می‌خواستم حرف زدیم."
  },
  {
@@ -5228,8 +5228,8 @@
   "en": "writer",
   "fa": "نویسنده",
   "cat": "work",
-  "ex": "Do you remember that writer?",
-  "exfa": "آن نویسنده را یادت هست؟"
+  "ex": "She is a famous writer of children's books.",
+  "exfa": "او یک نویسنده‌ی معروف کتاب‌های کودکان است."
  },
  {
   "i": 639,
@@ -5564,8 +5564,8 @@
   "en": "jewellery",
   "fa": "جواهرات",
   "cat": "clothes",
-  "ex": "The weather was very jewellery yesterday.",
-  "exfa": "دیروز هوا خیلی جواهرات بود."
+  "ex": "She wore beautiful jewellery to the wedding.",
+  "exfa": "او جواهرات زیبایی به عروسی زد."
  },
  {
   "i": 681,
@@ -5748,8 +5748,8 @@
   "en": "vegetable",
   "fa": "سبزیجات",
   "cat": "food",
-  "ex": "We talked about the vegetable for an hour.",
-  "exfa": "یک ساعت درباره‌ی سبزیجات حرف زدیم."
+  "ex": "Carrots are my favorite vegetable.",
+  "exfa": "هویج سبزی موردعلاقه‌ی من است."
  },
  {
   "i": 703,
@@ -5824,8 +5824,8 @@
   "en": "coast",
   "fa": "ساحل",
   "cat": "travel",
-  "ex": "I need a new coast for my work.",
-  "exfa": "برای کارم یک ساحل تازه لازم دارم."
+  "ex": "We drove along the coast all afternoon.",
+  "exfa": "ما تمام بعدازظهر را در امتداد ساحل رانندگی کردیم."
  },
  {
   "i": 712,
@@ -6168,8 +6168,8 @@
   "en": "grateful",
   "fa": "سپاسگزار",
   "cat": "feeling",
-  "ex": "He looked grateful after the meeting.",
-  "exfa": "بعد از جلسه سپاسگزار به نظر می‌رسید."
+  "ex": "I'm grateful for all your help.",
+  "exfa": "من بابت تمام کمک‌هایت سپاسگزارم."
  },
  {
   "i": 755,
@@ -6272,8 +6272,8 @@
   "en": "brave",
   "fa": "شجاع",
   "cat": "noun",
-  "ex": "He looked brave after the meeting.",
-  "exfa": "بعد از جلسه شجاع به نظر می‌رسید."
+  "ex": "The brave firefighter ran into the burning house.",
+  "exfa": "آن آتش‌نشان شجاع به داخل خانه‌ی در حال سوختن دوید."
  },
  {
   "i": 767,
@@ -6393,8 +6393,8 @@
   "en": "barbecue",
   "fa": "کباب",
   "cat": "food",
-  "ex": "This barbecue is very important to me.",
-  "exfa": "این کباب برای من خیلی مهم است."
+  "ex": "We had a barbecue in the backyard on Saturday.",
+  "exfa": "ما شنبه یک مهمانی کباب در حیاط پشتی داشتیم."
  },
  {
   "i": 781,
@@ -6457,8 +6457,8 @@
   "en": "dish",
   "fa": "غذا",
   "cat": "food",
-  "ex": "The weather was very dish yesterday.",
-  "exfa": "دیروز هوا خیلی غذا بود."
+  "ex": "This is my favorite dish at the restaurant.",
+  "exfa": "این غذای مورد علاقه من در رستوران است."
  },
  {
   "i": 789,
@@ -6745,16 +6745,16 @@
   "en": "airport",
   "fa": "فرودگاه",
   "cat": "travel",
-  "ex": "The airport changed everything for us.",
-  "exfa": "آن فرودگاه همه چیز را برای ما عوض کرد."
+  "ex": "My flight leaves from the airport at noon.",
+  "exfa": "پرواز من ظهر از فرودگاه حرکت می‌کند."
  },
  {
   "i": 825,
   "en": "beach",
   "fa": "ساحل",
   "cat": "travel",
-  "ex": "This beach is very important to me.",
-  "exfa": "این ساحل برای من خیلی مهم است."
+  "ex": "We spent the whole day at the beach.",
+  "exfa": "ما تمام روز را در ساحل گذراندیم."
  },
  {
   "i": 826,
@@ -6814,8 +6814,8 @@
   "en": "cruise",
   "fa": "کروز",
   "cat": "travel",
-  "ex": "We talked about the cruise for an hour.",
-  "exfa": "یک ساعت درباره‌ی کروز حرف زدیم."
+  "ex": "They went on a cruise around the Mediterranean.",
+  "exfa": "آن‌ها یک سفر دریایی دور مدیترانه رفتند."
  },
  {
   "i": 833,
@@ -6870,8 +6870,8 @@
   "en": "forest",
   "fa": "جنگل",
   "cat": "nature",
-  "ex": "The forest changed everything for us.",
-  "exfa": "آن جنگل همه چیز را برای ما عوض کرد."
+  "ex": "We went hiking in the forest last weekend.",
+  "exfa": "آخر هفته‌ی پیش در جنگل پیاده‌روی رفتیم."
  },
  {
   "i": 840,
@@ -6902,8 +6902,8 @@
   "en": "landscape",
   "fa": "منظره",
   "cat": "nature",
-  "ex": "Do you remember that landscape?",
-  "exfa": "آن منظره را یادت هست؟"
+  "ex": "The painting shows a beautiful mountain landscape.",
+  "exfa": "نقاشی یک منظره‌ی زیبای کوهستانی را نشان می‌دهد."
  },
  {
   "i": 844,
@@ -6926,8 +6926,8 @@
   "en": "pollution",
   "fa": "آلودگی",
   "cat": "nature",
-  "ex": "I need a new pollution for my work.",
-  "exfa": "برای کارم یک آلودگی تازه لازم دارم."
+  "ex": "Air pollution is a big problem in this city.",
+  "exfa": "آلودگی هوا مشکل بزرگی در این شهر است."
  },
  {
   "i": 847,
@@ -7178,16 +7178,16 @@
   "en": "stone",
   "fa": "سنگ",
   "cat": "nature",
-  "ex": "We talked about the stone for an hour.",
-  "exfa": "یک ساعت درباره‌ی سنگ حرف زدیم."
+  "ex": "She threw a small stone into the lake.",
+  "exfa": "او یک سنگ کوچک به دریاچه انداخت."
  },
  {
   "i": 878,
   "en": "temple",
   "fa": "معبد",
   "cat": "place",
-  "ex": "Do you remember that temple?",
-  "exfa": "آن معبد را یادت هست؟"
+  "ex": "Visitors take off their shoes before entering the temple.",
+  "exfa": "بازدیدکنندگان قبل از ورود به معبد کفش‌هایشان را درمی‌آورند."
  },
  {
   "i": 879,
@@ -7266,8 +7266,8 @@
   "en": "court",
   "fa": "دادگاه",
   "cat": "crime",
-  "ex": "Do you remember that court?",
-  "exfa": "آن دادگاه را یادت هست؟"
+  "ex": "The case will go to court next month.",
+  "exfa": "این پرونده ماه آینده به دادگاه می‌رود."
  },
  {
   "i": 889,
@@ -7462,8 +7462,8 @@
   "en": "internet",
   "fa": "اینترنت",
   "cat": "tech",
-  "ex": "We talked about the internet for an hour.",
-  "exfa": "یک ساعت درباره‌ی اینترنت حرف زدیم."
+  "ex": "We use the internet to find information.",
+  "exfa": "ما از اینترنت برای پیدا کردن اطلاعات استفاده می‌کنیم."
  },
  {
   "i": 913,
@@ -7494,8 +7494,8 @@
   "en": "programme",
   "fa": "برنامه",
   "cat": "noun",
-  "ex": "I need a new programme for my work.",
-  "exfa": "برای کارم یک برنامه تازه لازم دارم."
+  "ex": "We watched an interesting programme on TV.",
+  "exfa": "ما یک برنامه‌ی جالب در تلویزیون تماشا کردیم."
  },
  {
   "i": 917,
@@ -7914,7 +7914,7 @@
   "en": "consider",
   "fa": "در نظر گرفتن",
   "cat": "verb",
-  "ex": "Learning to consider takes time and practice.",
+  "ex": "Please consider my offer before you decide.",
   "exfa": "در نظر گرفتن زمان و تمرین می‌خواهد."
  },
  {
@@ -7994,8 +7994,8 @@
   "en": "apologise",
   "fa": "عذرخواهی کردن",
   "cat": "talk",
-  "ex": "Do you remember that apologise?",
-  "exfa": "آن عذرخواهی کردن را یادت هست؟"
+  "ex": "He apologised for being late to the meeting.",
+  "exfa": "او بابت دیر رسیدن به جلسه عذرخواهی کرد."
  },
  {
   "i": 979,
@@ -8042,8 +8042,8 @@
   "en": "breathe",
   "fa": "نفس کشیدن",
   "cat": "body",
-  "ex": "Learning to breathe takes time and practice.",
-  "exfa": "نفس کشیدن زمان و تمرین می‌خواهد."
+  "ex": "Take a moment to breathe deeply.",
+  "exfa": "یک لحظه وقت بگذار و عمیق نفس بکش."
  },
  {
   "i": 985,
@@ -8074,8 +8074,8 @@
   "en": "challenge",
   "fa": "به چالش کشیدن",
   "cat": "noun",
-  "ex": "Do you remember that challenge?",
-  "exfa": "آن به چالش کشیدن را یادت هست؟"
+  "ex": "Learning a new language is a real challenge.",
+  "exfa": "یادگیری یک زبان جدید واقعاً یک چالش است."
  },
  {
   "i": 989,
@@ -8111,8 +8111,8 @@
   "en": "concentrate",
   "fa": "تمرکز کردن",
   "cat": "noun",
-  "ex": "We talked about the concentrate for an hour.",
-  "exfa": "یک ساعت درباره‌ی تمرکز کردن حرف زدیم."
+  "ex": "I need silence to concentrate on my work.",
+  "exfa": "برای تمرکز کردن روی کارم به سکوت نیاز دارم."
  },
  {
   "i": 993,
@@ -8135,8 +8135,8 @@
   "en": "confuse",
   "fa": "گیج کردن",
   "cat": "verb",
-  "ex": "This confuse is very important to me.",
-  "exfa": "این گیج کردن برای من خیلی مهم است."
+  "ex": "Too many rules can confuse new students.",
+  "exfa": "قوانین زیاد می‌تواند دانش‌آموزان جدید را گیج کند."
  },
  {
   "i": 996,
@@ -8275,16 +8275,16 @@
   "en": "discuss",
   "fa": "بحث کردن",
   "cat": "talk",
-  "ex": "Learning to discuss takes time and practice.",
-  "exfa": "بحث کردن زمان و تمرین می‌خواهد."
+  "ex": "We need to discuss this problem together.",
+  "exfa": "باید این مشکل را با هم بحث کنیم."
  },
  {
   "i": 1013,
   "en": "display",
   "fa": "نمایش دادن",
   "cat": "verb",
-  "ex": "Do you remember that display?",
-  "exfa": "آن نمایش دادن را یادت هست؟"
+  "ex": "The store will display new products this week.",
+  "exfa": "فروشگاه این هفته محصولات جدید را به نمایش می‌گذارد."
  },
  {
   "i": 1014,
@@ -8307,8 +8307,8 @@
   "en": "disturb",
   "fa": "مزاحم شدن",
   "cat": "verb",
-  "ex": "Learning to disturb takes time and practice.",
-  "exfa": "مزاحم شدن زمان و تمرین می‌خواهد."
+  "ex": "Please don't disturb me while I'm working.",
+  "exfa": "لطفاً وقتی کار می‌کنم مزاحمم نشو."
  },
  {
   "i": 1017,
@@ -8371,8 +8371,8 @@
   "en": "encourage",
   "fa": "تشویق کردن",
   "cat": "verb",
-  "ex": "Learning to encourage takes time and practice.",
-  "exfa": "تشویق کردن زمان و تمرین می‌خواهد."
+  "ex": "Her teacher encouraged her to keep painting.",
+  "exfa": "معلمش او را تشویق کرد که به نقاشی ادامه دهد."
  },
  {
   "i": 1025,
@@ -8531,8 +8531,8 @@
   "en": "enormous",
   "fa": "عظیم",
   "cat": "adj",
-  "ex": "The weather was very enormous yesterday.",
-  "exfa": "دیروز هوا خیلی عظیم بود."
+  "ex": "The house has an enormous garden.",
+  "exfa": "خانه یک باغ عظیم دارد."
  },
  {
   "i": 1045,
@@ -8547,7 +8547,7 @@
   "en": "exciting",
   "fa": "هیجان‌انگیز",
   "cat": "adj",
-  "ex": "I need a new exciting for my work.",
+  "ex": "The movie was really exciting.",
   "exfa": "برای کارم یک هیجان‌انگیز تازه لازم دارم."
  },
  {
@@ -8583,8 +8583,8 @@
   "en": "helpful",
   "fa": "مفید",
   "cat": "adj",
-  "ex": "He looked helpful after the meeting.",
-  "exfa": "بعد از جلسه مفید به نظر می‌رسید."
+  "ex": "The staff at the hotel were very helpful.",
+  "exfa": "کارکنان هتل خیلی کمک‌کننده بودند."
  },
  {
   "i": 1051,
@@ -8607,8 +8607,8 @@
   "en": "illegal",
   "fa": "غیرقانونی",
   "cat": "crime",
-  "ex": "Do you remember that illegal?",
-  "exfa": "آن غیرقانونی را یادت هست؟"
+  "ex": "It's illegal to park here.",
+  "exfa": "پارک کردن اینجا غیرقانونی است."
  },
  {
   "i": 1054,
@@ -8651,8 +8651,8 @@
   "en": "lucky",
   "fa": "خوششانس",
   "cat": "adj",
-  "ex": "He looked lucky after the meeting.",
-  "exfa": "بعد از جلسه خوششانس به نظر می‌رسید."
+  "ex": "I feel very lucky today.",
+  "exfa": "امروز خیلی احساس خوش‌شانسی می‌کنم."
  },
  {
   "i": 1059,
@@ -8975,8 +8975,8 @@
   "en": "as",
   "fa": "همانطور که",
   "cat": "noun",
-  "ex": "Do you remember that as?",
-  "exfa": "آن همانطور که را یادت هست؟"
+  "ex": "He smiled as he opened the gift.",
+  "exfa": "او همانطور که هدیه را باز می‌کرد لبخند زد."
  },
  {
   "i": 1099,
@@ -8991,8 +8991,8 @@
   "en": "besides",
   "fa": "علاوه بر این",
   "cat": "adv",
-  "ex": "This besides is very important to me.",
-  "exfa": "این علاوه بر این برای من خیلی مهم است."
+  "ex": "Besides, it's too late to change our plans.",
+  "exfa": "علاوه بر این، برای تغییر برنامه‌هایمان خیلی دیر است."
  },
  {
   "i": 1101,
@@ -9119,16 +9119,16 @@
   "en": "yet",
   "fa": "با این حال",
   "cat": "adv",
-  "ex": "I need a new yet for my work.",
-  "exfa": "برای کارم یک با این حال تازه لازم دارم."
+  "ex": "I haven't finished my homework yet.",
+  "exfa": "هنوز تکالیفم را تمام نکرده‌ام."
  },
  {
   "i": 1117,
   "en": "bookcase",
   "fa": "قفسه کتاب",
   "cat": "house",
-  "ex": "We talked about the bookcase for an hour.",
-  "exfa": "یک ساعت درباره‌ی قفسه کتاب حرف زدیم."
+  "ex": "He built a wooden bookcase for his study.",
+  "exfa": "او یک قفسه‌ی کتاب چوبی برای اتاق مطالعه‌اش ساخت."
  },
  {
   "i": 1118,
@@ -9167,16 +9167,16 @@
   "en": "cooker",
   "fa": "اجاق گاز",
   "cat": "food",
-  "ex": "We talked about the cooker for an hour.",
-  "exfa": "یک ساعت درباره‌ی اجاق گاز حرف زدیم."
+  "ex": "She left the rice in the cooker.",
+  "exfa": "او برنج را در اجاق گاز گذاشت."
  },
  {
   "i": 1123,
   "en": "cupboard",
   "fa": "کابینت",
   "cat": "noun",
-  "ex": "Do you remember that cupboard?",
-  "exfa": "آن کابینت را یادت هست؟"
+  "ex": "The plates are in the kitchen cupboard.",
+  "exfa": "بشقاب‌ها در کابینت آشپزخانه هستند."
  },
  {
   "i": 1124,
@@ -9207,8 +9207,8 @@
   "en": "drawer",
   "fa": "کشو",
   "cat": "house",
-  "ex": "We talked about the drawer for an hour.",
-  "exfa": "یک ساعت درباره‌ی کشو حرف زدیم."
+  "ex": "She keeps her socks in the top drawer.",
+  "exfa": "او جوراب‌هایش را در کشوی بالایی نگه می‌دارد."
  },
  {
   "i": 1128,
@@ -9319,8 +9319,8 @@
   "en": "belt",
   "fa": "کمربند",
   "cat": "clothes",
-  "ex": "I need a new belt for my work.",
-  "exfa": "برای کارم یک کمربند تازه لازم دارم."
+  "ex": "He tightened his belt after losing weight.",
+  "exfa": "او بعد از لاغر شدن کمربندش را تنگ‌تر کرد."
  },
  {
   "i": 1142,
@@ -9447,16 +9447,16 @@
   "en": "hat",
   "fa": "کلاه",
   "cat": "clothes",
-  "ex": "I need a new hat for my work.",
-  "exfa": "برای کارم یک کلاه تازه لازم دارم."
+  "ex": "He wore a red hat to the party.",
+  "exfa": "او یک کلاه قرمز به مهمانی زد."
  },
  {
   "i": 1157,
   "en": "jacket",
   "fa": "کت",
   "cat": "clothes",
-  "ex": "We talked about the jacket for an hour.",
-  "exfa": "یک ساعت درباره‌ی کت حرف زدیم."
+  "ex": "He wore a warm jacket in winter.",
+  "exfa": "او در زمستان یک کت گرم پوشید."
  },
  {
   "i": 1158,
@@ -9559,8 +9559,8 @@
   "en": "skirt",
   "fa": "دامن",
   "cat": "clothes",
-  "ex": "This skirt is very important to me.",
-  "exfa": "این دامن برای من خیلی مهم است."
+  "ex": "She wore a long blue skirt.",
+  "exfa": "او یک دامن آبی بلند پوشیده بود."
  },
  {
   "i": 1171,
@@ -9599,16 +9599,16 @@
   "en": "trousers",
   "fa": "شلوار",
   "cat": "clothes",
-  "ex": "This trousers is very important to me.",
-  "exfa": "این شلوار برای من خیلی مهم است."
+  "ex": "He ironed his trousers before work.",
+  "exfa": "او قبل از رفتن سر کار شلوارش را اتو کرد."
  },
  {
   "i": 1176,
   "en": "T-shirt",
   "fa": "تیشرت",
   "cat": "noun",
-  "ex": "I need a new T-shirt for my work.",
-  "exfa": "برای کارم یک تیشرت تازه لازم دارم."
+  "ex": "He wore a red T-shirt to school.",
+  "exfa": "او یک تی‌شرت قرمز به مدرسه پوشید."
  },
  {
   "i": 1177,
@@ -9671,8 +9671,8 @@
   "en": "college",
   "fa": "کالج",
   "cat": "school",
-  "ex": "The college changed everything for us.",
-  "exfa": "آن کالج همه چیز را برای ما عوض کرد."
+  "ex": "She started college last September.",
+  "exfa": "او سپتامبر گذشته وارد کالج شد."
  },
  {
   "i": 1185,
@@ -9723,8 +9723,8 @@
   "en": "graduate",
   "fa": "فارغ‌التحصیل شدن",
   "cat": "school",
-  "ex": "This graduate is very important to me.",
-  "exfa": "این فارغ‌التحصیل شدن برای من خیلی مهم است."
+  "ex": "She will graduate from university next year.",
+  "exfa": "او سال آینده از دانشگاه فارغ‌التحصیل می‌شود."
  },
  {
   "i": 1191,
@@ -9747,8 +9747,8 @@
   "en": "library",
   "fa": "کتابخانه",
   "cat": "school",
-  "ex": "Do you remember that library?",
-  "exfa": "آن کتابخانه را یادت هست؟"
+  "ex": "I borrowed two books from the library.",
+  "exfa": "من دو کتاب از کتابخانه قرض گرفتم."
  },
  {
   "i": 1194,
@@ -9763,8 +9763,8 @@
   "en": "notebook",
   "fa": "دفتر",
   "cat": "school",
-  "ex": "This notebook is very important to me.",
-  "exfa": "این دفتر برای من خیلی مهم است."
+  "ex": "I write my homework in this notebook.",
+  "exfa": "من تکالیفم را در این دفتر می‌نویسم."
  },
  {
   "i": 1196,
@@ -9779,8 +9779,8 @@
   "en": "paper",
   "fa": "کاغذ",
   "cat": "noun",
-  "ex": "We talked about the paper for an hour.",
-  "exfa": "یک ساعت درباره‌ی کاغذ حرف زدیم."
+  "ex": "Please write your name on this paper.",
+  "exfa": "لطفاً اسمت را روی این کاغذ بنویس."
  },
  {
   "i": 1198,
@@ -9879,24 +9879,24 @@
   "en": "athlete",
   "fa": "ورزشکار",
   "cat": "sport",
-  "ex": "The athlete changed everything for us.",
-  "exfa": "آن ورزشکار همه چیز را برای ما عوض کرد."
+  "ex": "The young athlete trains every morning before school.",
+  "exfa": "آن ورزشکار جوان هر روز صبح قبل از مدرسه تمرین می‌کند."
  },
  {
   "i": 1210,
   "en": "ball",
   "fa": "توپ",
   "cat": "noun",
-  "ex": "This ball is very important to me.",
-  "exfa": "این توپ برای من خیلی مهم است."
+  "ex": "The boy kicked the ball into the goal.",
+  "exfa": "پسر توپ را به داخل دروازه شوت کرد."
  },
  {
   "i": 1211,
   "en": "baseball",
   "fa": "بیسبال",
   "cat": "noun",
-  "ex": "I need a new baseball for my work.",
-  "exfa": "برای کارم یک بیسبال تازه لازم دارم."
+  "ex": "The kids play baseball in the park.",
+  "exfa": "بچه‌ها در پارک بیسبال بازی می‌کنند."
  },
  {
   "i": 1212,
@@ -9919,8 +9919,8 @@
   "en": "competition",
   "fa": "مسابقه",
   "cat": "noun",
-  "ex": "The competition changed everything for us.",
-  "exfa": "آن مسابقه همه چیز را برای ما عوض کرد."
+  "ex": "She won first place in the singing competition.",
+  "exfa": "او مقام اول را در مسابقه‌ی آواز خوانی برد."
  },
  {
   "i": 1215,
@@ -9967,8 +9967,8 @@
   "en": "hobby",
   "fa": "سرگرمی",
   "cat": "noun",
-  "ex": "The weather was very hobby yesterday.",
-  "exfa": "دیروز هوا خیلی سرگرمی بود."
+  "ex": "Reading books is my favorite hobby.",
+  "exfa": "کتاب خواندن سرگرمی مورد علاقه من است."
  },
  {
   "i": 1221,
@@ -10035,8 +10035,8 @@
   "en": "swim",
   "fa": "شنا کردن",
   "cat": "sport",
-  "ex": "Learning to swim takes time and practice.",
-  "exfa": "شنا کردن زمان و تمرین می‌خواهد."
+  "ex": "We swim in the lake every summer.",
+  "exfa": "ما هر تابستان در دریاچه شنا می‌کنیم."
  },
  {
   "i": 1229,
@@ -10055,8 +10055,8 @@
   "en": "tennis",
   "fa": "تنیس",
   "cat": "sport",
-  "ex": "This tennis is very important to me.",
-  "exfa": "این تنیس برای من خیلی مهم است."
+  "ex": "We play tennis every Saturday morning.",
+  "exfa": "ما هر شنبه صبح تنیس بازی می‌کنیم."
  },
  {
   "i": 1231,
@@ -10071,8 +10071,8 @@
   "en": "volleyball",
   "fa": "والیبال",
   "cat": "sport",
-  "ex": "We talked about the volleyball for an hour.",
-  "exfa": "یک ساعت درباره‌ی والیبال حرف زدیم."
+  "ex": "We play volleyball on the beach every summer.",
+  "exfa": "ما هر تابستان کنار ساحل والیبال بازی می‌کنیم."
  },
  {
   "i": 1233,
@@ -10111,8 +10111,8 @@
   "en": "citizen",
   "fa": "شهروند",
   "cat": "people",
-  "ex": "We talked about the citizen for an hour.",
-  "exfa": "یک ساعت درباره‌ی شهروند حرف زدیم."
+  "ex": "Every citizen has the right to vote.",
+  "exfa": "هر شهروندی حق رأی دادن دارد."
  },
  {
   "i": 1238,
@@ -10179,8 +10179,8 @@
   "en": "leader",
   "fa": "رهبر",
   "cat": "noun",
-  "ex": "This leader is very important to me.",
-  "exfa": "این رهبر برای من خیلی مهم است."
+  "ex": "She is a strong leader for our team.",
+  "exfa": "او رهبر قدرتمندی برای تیم ماست."
  },
  {
   "i": 1246,
@@ -10332,16 +10332,16 @@
   "en": "company",
   "fa": "شرکت",
   "cat": "work",
-  "ex": "We talked about the company for an hour.",
-  "exfa": "یک ساعت درباره‌ی شرکت حرف زدیم."
+  "ex": "She started her own company two years ago.",
+  "exfa": "او دو سال پیش شرکت خودش را راه انداخت."
  },
  {
   "i": 1263,
   "en": "credit",
   "fa": "اعتبار",
   "cat": "money",
-  "ex": "Do you remember that credit?",
-  "exfa": "آن اعتبار را یادت هست؟"
+  "ex": "He bought the ticket on credit.",
+  "exfa": "او بلیت را به‌صورت اعتباری خرید."
  },
  {
   "i": 1264,
@@ -10688,16 +10688,16 @@
   "en": "cousin",
   "fa": "پسرعمو",
   "cat": "people",
-  "ex": "I need a new cousin for my work.",
-  "exfa": "برای کارم یک پسرعمو تازه لازم دارم."
+  "ex": "My cousin is visiting us this weekend.",
+  "exfa": "پسرعمویم این آخر هفته به ما سر می‌زند."
  },
  {
   "i": 1307,
   "en": "daughter",
   "fa": "دختر",
   "cat": "people",
-  "ex": "We talked about the daughter for an hour.",
-  "exfa": "یک ساعت درباره‌ی دختر حرف زدیم."
+  "ex": "Their daughter just started high school.",
+  "exfa": "دختر آنها تازه دبیرستان را شروع کرده است."
  },
  {
   "i": 1308,
@@ -10712,16 +10712,16 @@
   "en": "grandmother",
   "fa": "مادربزرگ",
   "cat": "people",
-  "ex": "The grandmother changed everything for us.",
-  "exfa": "آن مادربزرگ همه چیز را برای ما عوض کرد."
+  "ex": "My grandmother bakes bread every Friday.",
+  "exfa": "مادربزرگم هر جمعه نان می‌پزد."
  },
  {
   "i": 1310,
   "en": "husband",
   "fa": "شوهر",
   "cat": "people",
-  "ex": "This husband is very important to me.",
-  "exfa": "این شوهر برای من خیلی مهم است."
+  "ex": "Her husband cooks dinner every night.",
+  "exfa": "شوهرش هر شب شام درست می‌کند."
  },
  {
   "i": 1311,
@@ -10748,8 +10748,8 @@
   "en": "neighbour",
   "fa": "همسایه",
   "cat": "people",
-  "ex": "Do you remember that neighbour?",
-  "exfa": "آن همسایه را یادت هست؟"
+  "ex": "My neighbour borrowed a ladder from me.",
+  "exfa": "همسایه‌ام یک نردبان از من قرض گرفت."
  },
  {
   "i": 1314,
@@ -10772,8 +10772,8 @@
   "en": "parent",
   "fa": "والدین",
   "cat": "people",
-  "ex": "I need a new parent for my work.",
-  "exfa": "برای کارم یک والدین تازه لازم دارم."
+  "ex": "Each parent signed the school form.",
+  "exfa": "هر یک از والدین فرم مدرسه را امضا کرد."
  },
  {
   "i": 1317,
@@ -10816,8 +10816,8 @@
   "en": "wife",
   "fa": "همسر",
   "cat": "people",
-  "ex": "I need a new wife for my work.",
-  "exfa": "برای کارم یک همسر تازه لازم دارم."
+  "ex": "His wife works as a doctor.",
+  "exfa": "همسرش پزشک است."
  },
  {
   "i": 1322,
@@ -10832,8 +10832,8 @@
   "en": "century",
   "fa": "قرن",
   "cat": "time",
-  "ex": "Do you remember that century?",
-  "exfa": "آن قرن را یادت هست؟"
+  "ex": "This building was built in the eighteenth century.",
+  "exfa": "این ساختمان در قرن هجدهم ساخته شده است."
  },
  {
   "i": 1324,
@@ -12376,8 +12376,8 @@
   "en": "just",
   "fa": "عادل",
   "cat": "adj",
-  "ex": "I need a new Just for my work.",
-  "exfa": "برای کارم یک عادل تازه لازم دارم."
+  "ex": "The judge tried to be just and fair.",
+  "exfa": "قاضی سعی کرد عادل و منصف باشد."
  },
  {
   "i": 1517,
@@ -14661,15 +14661,15 @@
   "en": "climbing",
   "fa": "صعود",
   "cat": "sport",
-  "ex": "This Climbing is very important to me.",
-  "exfa": "این صعود برای من خیلی مهم است."
+  "ex": "Rock climbing is his favorite weekend activity.",
+  "exfa": "سنگ‌نوردی فعالیت مورد علاقه‌ی او در آخر هفته است."
  },
  {
   "i": 1801,
   "en": "cycling",
   "fa": "دوچرخه‌سواری",
   "cat": "sport",
-  "ex": "I need a new Cycling for my work.",
+  "ex": "Cycling is a great way to stay fit.",
   "exfa": "برای کارم یک دوچرخه‌سواری تازه لازم دارم."
  },
  {
@@ -14741,8 +14741,8 @@
   "en": "exhibition",
   "fa": "نمایشگاه",
   "cat": "movie",
-  "ex": "This Exhibition is very important to me.",
-  "exfa": "این نمایشگاه برای من خیلی مهم است."
+  "ex": "We visited an art exhibition on Sunday.",
+  "exfa": "ما یکشنبه از یک نمایشگاه هنری بازدید کردیم."
  },
  {
   "i": 1811,
@@ -14757,16 +14757,16 @@
   "en": "Castle",
   "fa": "قلعه",
   "cat": "place",
-  "ex": "We talked about the Castle for an hour.",
-  "exfa": "یک ساعت درباره‌ی قلعه حرف زدیم."
+  "ex": "We visited an old castle on the hill.",
+  "exfa": "ما از یک قلعه‌ی قدیمی روی تپه بازدید کردیم."
  },
  {
   "i": 1813,
   "en": "Palace",
   "fa": "کاخ",
   "cat": "place",
-  "ex": "Do you remember that Palace?",
-  "exfa": "آن کاخ را یادت هست؟"
+  "ex": "Tourists visit the palace every day.",
+  "exfa": "گردشگران هر روز از کاخ بازدید می‌کنند."
  },
  {
   "i": 1814,
@@ -15045,8 +15045,8 @@
   "en": "Hill",
   "fa": "تپه",
   "cat": "nature",
-  "ex": "Do you remember that Hill?",
-  "exfa": "آن تپه را یادت هست؟"
+  "ex": "We walked up the hill to see the view.",
+  "exfa": "ما از تپه بالا رفتیم تا منظره را ببینیم."
  },
  {
   "i": 1849,
@@ -15805,8 +15805,8 @@
   "en": "COP",
   "fa": "کنفرانس تغییر اقلیم",
   "cat": "nature",
-  "ex": "Do you remember that COP?",
-  "exfa": "آن کنفرانس تغییر اقلیم را یادت هست؟"
+  "ex": "World leaders spoke about climate change at COP.",
+  "exfa": "رهبران جهان در کنفرانس تغییر اقلیم درباره تغییرات آب‌وهوا صحبت کردند."
  },
  {
   "i": 1944,
@@ -15909,8 +15909,8 @@
   "en": "dig",
   "fa": "حفاری",
   "cat": "verb",
-  "ex": "Learning to Dig takes time and practice.",
-  "exfa": "حفاری زمان و تمرین می‌خواهد."
+  "ex": "The dog likes to dig holes in the yard.",
+  "exfa": "سگ دوست دارد در حیاط چاله حفر کند."
  },
  {
   "i": 1957,
@@ -15941,8 +15941,8 @@
   "en": "Coin",
   "fa": "سکه",
   "cat": "money",
-  "ex": "This Coin is very important to me.",
-  "exfa": "این سکه برای من خیلی مهم است."
+  "ex": "He found an old coin in the garden.",
+  "exfa": "او یک سکه‌ی قدیمی در باغ پیدا کرد."
  },
  {
   "i": 1961,
@@ -16101,8 +16101,8 @@
   "en": "Independence",
   "fa": "استقلال",
   "cat": "noun",
-  "ex": "This Independence is very important to me.",
-  "exfa": "این استقلال برای من خیلی مهم است."
+  "ex": "The country celebrates Independence Day every July.",
+  "exfa": "این کشور هر جولای روز استقلال را جشن می‌گیرد."
  },
  {
   "i": 1981,
@@ -16117,8 +16117,8 @@
   "en": "War",
   "fa": "جنگ",
   "cat": "noun",
-  "ex": "We talked about the War for an hour.",
-  "exfa": "یک ساعت درباره‌ی جنگ حرف زدیم."
+  "ex": "The war lasted for many years.",
+  "exfa": "جنگ سال‌های زیادی طول کشید."
  },
  {
   "i": 1983,
@@ -16133,8 +16133,8 @@
   "en": "King",
   "fa": "پادشاه",
   "cat": "noun",
-  "ex": "The King changed everything for us.",
-  "exfa": "آن پادشاه همه چیز را برای ما عوض کرد."
+  "ex": "The king ruled the country for forty years.",
+  "exfa": "پادشاه چهل سال بر کشور حکومت کرد."
  },
  {
   "i": 1985,
@@ -16341,8 +16341,8 @@
   "en": "custom",
   "fa": "رسم",
   "cat": "noun",
-  "ex": "This Custom is very important to me.",
-  "exfa": "این رسم برای من خیلی مهم است."
+  "ex": "It's a local custom to remove your shoes indoors.",
+  "exfa": "درآوردن کفش داخل خانه یک رسم محلی است."
  },
  {
   "i": 2011,
@@ -16397,8 +16397,8 @@
   "en": "gender",
   "fa": "جنسیت",
   "cat": "noun",
-  "ex": "We talked about the Gender for an hour.",
-  "exfa": "یک ساعت درباره‌ی جنسیت حرف زدیم."
+  "ex": "The form asks for your name and gender.",
+  "exfa": "فرم نام و جنسیت تو را می‌پرسد."
  },
  {
   "i": 2018,
@@ -16613,8 +16613,8 @@
   "en": "festival",
   "fa": "جشنواره",
   "cat": "time",
-  "ex": "The weather was very Festival yesterday.",
-  "exfa": "دیروز هوا خیلی جشنواره بود."
+  "ex": "We went to a fun festival last weekend.",
+  "exfa": "ما آخر هفته قبل به یک جشنواره باحال رفتیم."
  },
  {
   "i": 2045,
@@ -17009,8 +17009,8 @@
   "en": "architecture",
   "fa": "معماری",
   "cat": "work",
-  "ex": "Do you remember that Architecture?",
-  "exfa": "آن معماری را یادت هست؟"
+  "ex": "He studied architecture at university for five years.",
+  "exfa": "او پنج سال در دانشگاه معماری خواند."
  },
  {
   "i": 2094,
@@ -17229,80 +17229,80 @@
   "en": "and",
   "fa": "و",
   "cat": "general",
-  "ex": "This and is very important to me.",
-  "exfa": "این و برای من خیلی مهم است."
+  "ex": "I like tea and coffee.",
+  "exfa": "من چای و قهوه را دوست دارم."
  },
  {
   "i": 2121,
   "en": "for",
   "fa": "برای",
   "cat": "general",
-  "ex": "I need a new for for my work.",
-  "exfa": "برای کارم یک برای تازه لازم دارم."
+  "ex": "This gift is for you.",
+  "exfa": "این هدیه برای توست."
  },
  {
   "i": 2122,
   "en": "that",
   "fa": "که / آن",
   "cat": "general",
-  "ex": "We talked about the that for an hour.",
-  "exfa": "یک ساعت درباره‌ی که حرف زدیم."
+  "ex": "That book on the table is mine.",
+  "exfa": "آن کتاب روی میز مال من است."
  },
  {
   "i": 2123,
   "en": "this",
   "fa": "این",
   "cat": "general",
-  "ex": "Do you remember that this?",
-  "exfa": "آن این را یادت هست؟"
+  "ex": "This is my favorite song.",
+  "exfa": "این آهنگ موردعلاقه‌ی من است."
  },
  {
   "i": 2124,
   "en": "with",
   "fa": "با",
   "cat": "general",
-  "ex": "The with changed everything for us.",
-  "exfa": "آن با همه چیز را برای ما عوض کرد."
+  "ex": "I went to the mall with my friend.",
+  "exfa": "من با دوستم به مرکز خرید رفتم."
  },
  {
   "i": 2125,
   "en": "you",
   "fa": "تو / شما",
   "cat": "general",
-  "ex": "This you is very important to me.",
-  "exfa": "این تو برای من خیلی مهم است."
+  "ex": "You look very happy today.",
+  "exfa": "امروز خیلی خوشحال به نظر می‌رسی."
  },
  {
   "i": 2126,
   "en": "not",
   "fa": "نه / نیست",
   "cat": "adv",
-  "ex": "I need a new not for my work.",
-  "exfa": "برای کارم یک نه تازه لازم دارم."
+  "ex": "I am not hungry right now.",
+  "exfa": "من الان گرسنه نیستم."
  },
  {
   "i": 2127,
   "en": "are",
   "fa": "هستند",
   "cat": "verb",
-  "ex": "We talked about the are for an hour.",
-  "exfa": "یک ساعت درباره‌ی هستند حرف زدیم."
+  "ex": "They are my best friends.",
+  "exfa": "آنها بهترین دوستان من هستند."
  },
  {
   "i": 2128,
   "en": "from",
   "fa": "از",
   "cat": "general",
-  "ex": "Do you remember that from?",
-  "exfa": "آن از را یادت هست؟"
+  "ex": "She comes from Iran.",
+  "exfa": "او از ایران می‌آید."
  },
  {
   "i": 2129,
   "en": "your",
   "fa": "مالِ تو / شما",
   "cat": "general",
-  "ex": "The your changed everything for us.",
-  "exfa": "آن مالِ تو همه چیز را برای ما عوض کرد."
+  "ex": "Is this your phone on the table?",
+  "exfa": "این تلفن روی میز مال توست؟"
  },
  {
   "i": 2130,
@@ -17341,16 +17341,16 @@
   "en": "was",
   "fa": "بود",
   "cat": "verb",
-  "ex": "The was changed everything for us.",
-  "exfa": "آن بود همه چیز را برای ما عوض کرد."
+  "ex": "She was tired after the long trip.",
+  "exfa": "او بعد از سفر طولانی خسته بود."
  },
  {
   "i": 2135,
   "en": "will",
   "fa": "خواهد / اراده",
   "cat": "verb",
-  "ex": "This will is very important to me.",
-  "exfa": "این خواهد برای من خیلی مهم است."
+  "ex": "I will call you tomorrow morning.",
+  "exfa": "فردا صبح به تو زنگ خواهم زد."
  },
  {
   "i": 2136,
@@ -17373,8 +17373,8 @@
   "en": "has",
   "fa": "دارد",
   "cat": "verb",
-  "ex": "Do you remember that has?",
-  "exfa": "آن دارد را یادت هست؟"
+  "ex": "She has a new phone.",
+  "exfa": "او یک گوشی جدید دارد."
  },
  {
   "i": 2139,
@@ -17397,16 +17397,16 @@
   "en": "but",
   "fa": "اما",
   "cat": "general",
-  "ex": "I need a new but for my work.",
-  "exfa": "برای کارم یک اما تازه لازم دارم."
+  "ex": "I like tea, but not coffee.",
+  "exfa": "من چای را دوست دارم، اما قهوه را نه."
  },
  {
   "i": 2142,
   "en": "our",
   "fa": "مالِ ما",
   "cat": "general",
-  "ex": "We talked about the our for an hour.",
-  "exfa": "یک ساعت درباره‌ی مالِ ما حرف زدیم."
+  "ex": "Our house is near the school.",
+  "exfa": "خانه‌ی ما نزدیک مدرسه است."
  },
  {
   "i": 2143,
@@ -17437,40 +17437,40 @@
   "en": "they",
   "fa": "آن‌ها",
   "cat": "general",
-  "ex": "I need a new they for my work.",
-  "exfa": "برای کارم یک آن‌ها تازه لازم دارم."
+  "ex": "They live next door to us.",
+  "exfa": "آن‌ها همسایه‌ی دیوار به دیوار ما هستند."
  },
  {
   "i": 2147,
   "en": "may",
   "fa": "ممکن است / مه",
   "cat": "verb",
-  "ex": "We talked about the may for an hour.",
-  "exfa": "یک ساعت درباره‌ی ممکن است حرف زدیم."
+  "ex": "It may rain later today.",
+  "exfa": "ممکن است بعداً امروز باران ببارد."
  },
  {
   "i": 2148,
   "en": "what",
   "fa": "چه",
   "cat": "general",
-  "ex": "Do you remember that what?",
-  "exfa": "آن چه را یادت هست؟"
+  "ex": "What is your favorite color?",
+  "exfa": "رنگ موردعلاقه‌ات چیست؟"
  },
  {
   "i": 2149,
   "en": "which",
   "fa": "کدام",
   "cat": "general",
-  "ex": "The which changed everything for us.",
-  "exfa": "آن کدام همه چیز را برای ما عوض کرد."
+  "ex": "Which color do you like best?",
+  "exfa": "کدام رنگ را بیشتر دوست داری؟"
  },
  {
   "i": 2150,
   "en": "their",
   "fa": "مالِ آن‌ها",
   "cat": "general",
-  "ex": "This their is very important to me.",
-  "exfa": "این مالِ آن‌ها برای من خیلی مهم است."
+  "ex": "The children left their toys on the floor.",
+  "exfa": "بچه‌ها اسباب‌بازی‌های خودشان را روی زمین گذاشتند."
  },
  {
   "i": 2151,
@@ -17521,32 +17521,32 @@
   "en": "only",
   "fa": "فقط",
   "cat": "adv",
-  "ex": "I need a new only for my work.",
-  "exfa": "برای کارم یک فقط تازه لازم دارم."
+  "ex": "I only have five dollars left.",
+  "exfa": "من فقط پنج دلار باقی مانده دارم."
  },
  {
   "i": 2157,
   "en": "his",
   "fa": "مالِ او (مرد)",
   "cat": "general",
-  "ex": "We talked about the his for an hour.",
-  "exfa": "یک ساعت درباره‌ی مالِ او (مرد) حرف زدیم."
+  "ex": "This is his bag, not mine.",
+  "exfa": "این کیف اوست، نه مال من."
  },
  {
   "i": 2158,
   "en": "when",
   "fa": "وقتی که / کِی",
   "cat": "adv",
-  "ex": "Do you remember that when?",
-  "exfa": "آن وقتی که را یادت هست؟"
+  "ex": "When does the movie start?",
+  "exfa": "فیلم کِی شروع می‌شود؟"
  },
  {
   "i": 2159,
   "en": "contact",
   "fa": "تماس گرفتن",
   "cat": "noun",
-  "ex": "The contact changed everything for us.",
-  "exfa": "آن تماس گرفتن همه چیز را برای ما عوض کرد."
+  "ex": "Please keep in contact while you're traveling.",
+  "exfa": "لطفاً در طول سفرت در تماس باش."
  },
  {
   "i": 2160,
@@ -17561,8 +17561,8 @@
   "en": "who",
   "fa": "چه کسی",
   "cat": "general",
-  "ex": "I need a new who for my work.",
-  "exfa": "برای کارم یک چه کسی تازه لازم دارم."
+  "ex": "Who is that man near the door?",
+  "exfa": "آن مرد کنار در چه کسی است؟"
  },
  {
   "i": 2162,
@@ -17577,8 +17577,8 @@
   "en": "also",
   "fa": "همچنین",
   "cat": "adv",
-  "ex": "Do you remember that also?",
-  "exfa": "آن همچنین را یادت هست؟"
+  "ex": "She likes tea, and she also likes coffee.",
+  "exfa": "او چای را دوست دارد و قهوه را هم دوست دارد."
  },
  {
   "i": 2164,
@@ -17621,16 +17621,16 @@
   "en": "been",
   "fa": "بوده",
   "cat": "verb",
-  "ex": "Do you remember that been?",
-  "exfa": "آن بوده را یادت هست؟"
+  "ex": "Have you ever been to Italy?",
+  "exfa": "تا حالا به ایتالیا رفته‌ای؟"
  },
  {
   "i": 2169,
   "en": "were",
   "fa": "بودند",
   "cat": "verb",
-  "ex": "The were changed everything for us.",
-  "exfa": "آن بودند همه چیز را برای ما عوض کرد."
+  "ex": "They were happy to see us.",
+  "exfa": "آن‌ها از دیدن ما خوشحال بودند."
  },
  {
   "i": 2170,
@@ -17653,24 +17653,24 @@
   "en": "these",
   "fa": "این‌ها",
   "cat": "general",
-  "ex": "We talked about the these for an hour.",
-  "exfa": "یک ساعت درباره‌ی این‌ها حرف زدیم."
+  "ex": "These shoes are too small for me.",
+  "exfa": "این کفش‌ها برایم خیلی کوچک هستند."
  },
  {
   "i": 2173,
   "en": "click",
   "fa": "کلیک کردن",
   "cat": "tech",
-  "ex": "Do you remember that click?",
-  "exfa": "آن کلیک کردن را یادت هست؟"
+  "ex": "Click the button to open the file.",
+  "exfa": "برای باز کردن فایل روی دکمه کلیک کن."
  },
  {
   "i": 2174,
   "en": "its",
   "fa": "مالِ آن",
   "cat": "general",
-  "ex": "The its changed everything for us.",
-  "exfa": "آن مالِ آن همه چیز را برای ما عوض کرد."
+  "ex": "The dog wagged its tail happily.",
+  "exfa": "سگ با خوشحالی دمش را تکان داد."
  },
  {
   "i": 2175,
@@ -17697,8 +17697,8 @@
   "en": "than",
   "fa": "از (مقایسه)",
   "cat": "general",
-  "ex": "We talked about the than for an hour.",
-  "exfa": "یک ساعت درباره‌ی از (مقایسه) حرف زدیم."
+  "ex": "My sister is taller than me.",
+  "exfa": "خواهرم از من قدبلندتر است."
  },
  {
   "i": 2178,
@@ -17741,8 +17741,8 @@
   "en": "had",
   "fa": "داشت",
   "cat": "verb",
-  "ex": "We talked about the had for an hour.",
-  "exfa": "یک ساعت درباره‌ی داشت حرف زدیم."
+  "ex": "I had a dog when I was young.",
+  "exfa": "وقتی بچه بودم یک سگ داشتم."
  },
  {
   "i": 2183,
@@ -17757,16 +17757,16 @@
   "en": "over",
   "fa": "روی / بیش از",
   "cat": "general",
-  "ex": "The over changed everything for us.",
-  "exfa": "آن روی همه چیز را برای ما عوض کرد."
+  "ex": "The bird flew over the lake.",
+  "exfa": "پرنده روی دریاچه پرواز کرد."
  },
  {
   "i": 2185,
   "en": "into",
   "fa": "به داخل",
   "cat": "general",
-  "ex": "This into is very important to me.",
-  "exfa": "این به داخل برای من خیلی مهم است."
+  "ex": "The cat jumped into the box.",
+  "exfa": "گربه به داخل جعبه پرید."
  },
  {
   "i": 2186,
@@ -17853,16 +17853,16 @@
   "en": "them",
   "fa": "آن‌ها را",
   "cat": "general",
-  "ex": "This them is very important to me.",
-  "exfa": "این آن‌ها را برای من خیلی مهم است."
+  "ex": "I saw them at the park yesterday.",
+  "exfa": "دیروز آن‌ها را در پارک دیدم."
  },
  {
   "i": 2196,
   "en": "should",
   "fa": "باید",
   "cat": "verb",
-  "ex": "I need a new should for my work.",
-  "exfa": "برای کارم یک باید تازه لازم دارم."
+  "ex": "You should drink more water every day.",
+  "exfa": "باید هر روز آب بیشتری بنوشی."
  },
  {
   "i": 2197,
@@ -17893,8 +17893,8 @@
   "en": "her",
   "fa": "مالِ او (زن)",
   "cat": "general",
-  "ex": "This her is very important to me.",
-  "exfa": "این مالِ او (زن) برای من خیلی مهم است."
+  "ex": "I borrowed her umbrella yesterday.",
+  "exfa": "دیروز چترش را قرض گرفتم."
  },
  {
   "i": 2201,
@@ -17941,8 +17941,8 @@
   "en": "message",
   "fa": "پیام",
   "cat": "talk",
-  "ex": "I need a new message for my work.",
-  "exfa": "برای کارم یک پیام تازه لازم دارم."
+  "ex": "Can you send me a quick message?",
+  "exfa": "می‌شود یک پیام کوتاه برایم بفرستی؟"
  },
  {
   "i": 2207,
@@ -17965,8 +17965,8 @@
   "en": "then",
   "fa": "سپس",
   "cat": "time",
-  "ex": "The then changed everything for us.",
-  "exfa": "آن سپس همه چیز را برای ما عوض کرد."
+  "ex": "We finished dinner, and then we watched TV.",
+  "exfa": "شام را تمام کردیم و سپس تلویزیون دیدیم."
  },
  {
   "i": 2210,
@@ -17981,8 +17981,8 @@
   "en": "video",
   "fa": "ویدیو",
   "cat": "tech",
-  "ex": "I need a new video for my work.",
-  "exfa": "برای کارم یک ویدیو تازه لازم دارم."
+  "ex": "She uploaded a funny video online.",
+  "exfa": "او یک ویدیوی خنده‌دار آنلاین گذاشت."
  },
  {
   "i": 2212,
@@ -18001,8 +18001,8 @@
   "en": "where",
   "fa": "کجا",
   "cat": "adv",
-  "ex": "Do you remember that where?",
-  "exfa": "آن کجا را یادت هست؟"
+  "ex": "Where do you live now?",
+  "exfa": "الان کجا زندگی می‌کنی؟"
  },
  {
   "i": 2214,
@@ -18061,8 +18061,8 @@
   "en": "she",
   "fa": "او (زن)",
   "cat": "general",
-  "ex": "This she is very important to me.",
-  "exfa": "این او (زن) برای من خیلی مهم است."
+  "ex": "She works at a hospital near here.",
+  "exfa": "او در یک بیمارستان نزدیک اینجا کار می‌کند."
  },
  {
   "i": 2221,
@@ -18093,8 +18093,8 @@
   "en": "very",
   "fa": "خیلی",
   "cat": "adv",
-  "ex": "The very changed everything for us.",
-  "exfa": "آن خیلی همه چیز را برای ما عوض کرد."
+  "ex": "This coffee is very hot.",
+  "exfa": "این قهوه خیلی داغ است."
  },
  {
   "i": 2225,
@@ -18173,8 +18173,8 @@
   "en": "does",
   "fa": "انجام می‌دهد",
   "cat": "verb",
-  "ex": "Do you remember that does?",
-  "exfa": "آن انجام می‌دهد را یادت هست؟"
+  "ex": "He does his homework every day.",
+  "exfa": "او هر روز تکالیفش را انجام می‌دهد."
  },
  {
   "i": 2234,
@@ -18193,8 +18193,8 @@
   "en": "under",
   "fa": "زیر",
   "cat": "general",
-  "ex": "This under is very important to me.",
-  "exfa": "این زیر برای من خیلی مهم است."
+  "ex": "The cat is sleeping under the table.",
+  "exfa": "گربه زیر میز خوابیده است."
  },
  {
   "i": 2236,
@@ -18209,8 +18209,8 @@
   "en": "january",
   "fa": "ژانویه",
   "cat": "time",
-  "ex": "We talked about the january for an hour.",
-  "exfa": "یک ساعت درباره‌ی ژانویه حرف زدیم."
+  "ex": "January is the first month of the year.",
+  "exfa": "ژانویه اولین ماه سال است."
  },
  {
   "i": 2238,
@@ -18253,8 +18253,8 @@
   "en": "program",
   "fa": "برنامه",
   "cat": "tech",
-  "ex": "We talked about the program for an hour.",
-  "exfa": "یک ساعت درباره‌ی برنامه حرف زدیم."
+  "ex": "I installed a new program on my computer.",
+  "exfa": "من یک برنامه‌ی جدید روی کامپیوترم نصب کردم."
  },
  {
   "i": 2243,
@@ -18325,8 +18325,8 @@
   "en": "could",
   "fa": "می‌توانست",
   "cat": "verb",
-  "ex": "This could is very important to me.",
-  "exfa": "این می‌توانست برای من خیلی مهم است."
+  "ex": "I could not sleep last night.",
+  "exfa": "دیشب نتوانستم بخوابم."
  },
  {
   "i": 2251,
@@ -18377,24 +18377,24 @@
   "en": "international",
   "fa": "بین‌المللی",
   "cat": "adj",
-  "ex": "The weather was very international yesterday.",
-  "exfa": "دیروز هوا خیلی بین‌المللی بود."
+  "ex": "She works for an international company.",
+  "exfa": "او برای یک شرکت بین‌المللی کار می‌کند."
  },
  {
   "i": 2257,
   "en": "center",
   "fa": "مرکز",
   "cat": "noun",
-  "ex": "We talked about the center for an hour.",
-  "exfa": "یک ساعت درباره‌ی مرکز حرف زدیم."
+  "ex": "The shopping center is close to my house.",
+  "exfa": "مرکز خرید نزدیک خانه‌ی من است."
  },
  {
   "i": 2258,
   "en": "store",
   "fa": "فروشگاه / ذخیره کردن",
   "cat": "place",
-  "ex": "Do you remember that store?",
-  "exfa": "آن فروشگاه را یادت هست؟"
+  "ex": "I bought some milk at the store.",
+  "exfa": "من از فروشگاه کمی شیر خریدم."
  },
  {
   "i": 2259,
@@ -18505,8 +18505,8 @@
   "en": "did",
   "fa": "انجام داد",
   "cat": "verb",
-  "ex": "I need a new did for my work.",
-  "exfa": "برای کارم یک انجام داد تازه لازم دارم."
+  "ex": "She did her homework yesterday.",
+  "exfa": "او دیروز تکالیفش را انجام داد."
  },
  {
   "i": 2272,
@@ -18529,8 +18529,8 @@
   "en": "those",
   "fa": "آن‌ها",
   "cat": "general",
-  "ex": "The those changed everything for us.",
-  "exfa": "آن آن‌ها همه چیز را برای ما عوض کرد."
+  "ex": "Those birds fly south every winter.",
+  "exfa": "آن پرنده‌ها هر زمستان به سمت جنوب پرواز می‌کنند."
  },
  {
   "i": 2275,
@@ -18697,8 +18697,8 @@
   "en": "even",
   "fa": "حتی / زوج",
   "cat": "adv",
-  "ex": "Do you remember that even?",
-  "exfa": "آن حتی را یادت هست؟"
+  "ex": "Even my little brother can solve this puzzle.",
+  "exfa": "حتی برادر کوچکم هم می‌تواند این پازل را حل کند."
  },
  {
   "i": 2294,
@@ -18721,8 +18721,8 @@
   "en": "special",
   "fa": "ویژه",
   "cat": "adj",
-  "ex": "The weather was very special yesterday.",
-  "exfa": "دیروز هوا خیلی ویژه بود."
+  "ex": "Today is a special day for our family.",
+  "exfa": "امروز روز ویژه‌ای برای خانواده‌ی ماست."
  },
  {
   "i": 2297,
@@ -18745,8 +18745,8 @@
   "en": "being",
   "fa": "بودن / موجود",
   "cat": "noun",
-  "ex": "The being changed everything for us.",
-  "exfa": "آن بودن همه چیز را برای ما عوض کرد."
+  "ex": "Every human being deserves respect.",
+  "exfa": "هر موجود انسانی سزاوار احترام است."
  },
  {
   "i": 2300,
@@ -18841,8 +18841,8 @@
   "en": "section",
   "fa": "بخش",
   "cat": "noun",
-  "ex": "I need a new section for my work.",
-  "exfa": "برای کارم یک بخش تازه لازم دارم."
+  "ex": "You can find milk in the dairy section.",
+  "exfa": "شیر را می‌توانی در بخش لبنیات پیدا کنی."
  },
  {
   "i": 2312,
@@ -18973,7 +18973,7 @@
   "en": "computer",
   "fa": "کامپیوتر",
   "cat": "tech",
-  "ex": "I need a new computer for my work.",
+  "ex": "I do my homework on the computer.",
   "exfa": "برای کارم یک کامپیوتر تازه لازم دارم."
  },
  {
@@ -19029,16 +19029,16 @@
   "en": "following",
   "fa": "زیر / پیرو",
   "cat": "noun",
-  "ex": "We talked about the following for an hour.",
-  "exfa": "یک ساعت درباره‌ی زیر حرف زدیم."
+  "ex": "Please read the following instructions carefully.",
+  "exfa": "لطفاً دستورالعمل‌های زیر را با دقت بخوان."
  },
  {
   "i": 2333,
   "en": "him",
   "fa": "او را (مرد)",
   "cat": "general",
-  "ex": "Do you remember that him?",
-  "exfa": "آن او را (مرد) را یادت هست؟"
+  "ex": "I saw him at the party last night.",
+  "exfa": "دیشب او را در مهمانی دیدم."
  },
  {
   "i": 2334,
@@ -19149,8 +19149,8 @@
   "en": "personal",
   "fa": "شخصی",
   "cat": "adj",
-  "ex": "He looked personal after the meeting.",
-  "exfa": "بعد از جلسه شخصی به نظر می‌رسید."
+  "ex": "That is a personal question, please don't ask.",
+  "exfa": "این یک سؤال شخصی است، لطفاً نپرس."
  },
  {
   "i": 2347,
@@ -19417,8 +19417,8 @@
   "en": "description",
   "fa": "توضیح / شرح",
   "cat": "noun",
-  "ex": "We talked about the description for an hour.",
-  "exfa": "یک ساعت درباره‌ی توضیح حرف زدیم."
+  "ex": "Write a short description of your job.",
+  "exfa": "یک توضیح کوتاه از شغلت بنویس."
  },
  {
   "i": 2378,
@@ -19441,8 +19441,8 @@
   "en": "why",
   "fa": "چرا",
   "cat": "adv",
-  "ex": "This why is very important to me.",
-  "exfa": "این چرا برای من خیلی مهم است."
+  "ex": "Why are you so quiet today?",
+  "exfa": "چرا امروز اینقدر ساکتی؟"
  },
  {
   "i": 2381,
@@ -19465,8 +19465,8 @@
   "en": "still",
   "fa": "هنوز / ساکن",
   "cat": "adv",
-  "ex": "Do you remember that still?",
-  "exfa": "آن هنوز را یادت هست؟"
+  "ex": "He is still sleeping in his room.",
+  "exfa": "او هنوز در اتاقش خواب است."
  },
  {
   "i": 2384,
@@ -19545,8 +19545,8 @@
   "en": "december",
   "fa": "دسامبر",
   "cat": "time",
-  "ex": "Do you remember that december?",
-  "exfa": "آن دسامبر را یادت هست؟"
+  "ex": "It gets very cold in December.",
+  "exfa": "در دسامبر هوا خیلی سرد می‌شود."
  },
  {
   "i": 2394,
@@ -19617,8 +19617,8 @@
   "en": "author",
   "fa": "نویسنده",
   "cat": "work",
-  "ex": "We talked about the author for an hour.",
-  "exfa": "یک ساعت درباره‌ی نویسنده حرف زدیم."
+  "ex": "The author signed copies of her new book.",
+  "exfa": "نویسنده نسخه‌های کتاب جدیدش را امضا کرد."
  },
  {
   "i": 2403,
@@ -19701,8 +19701,8 @@
   "en": "too",
   "fa": "همچنین / بیش از حد",
   "cat": "adv",
-  "ex": "We talked about the too for an hour.",
-  "exfa": "یک ساعت درباره‌ی همچنین حرف زدیم."
+  "ex": "I want to come too.",
+  "exfa": "من هم می‌خواهم بیایم."
  },
  {
   "i": 2413,
@@ -19725,8 +19725,8 @@
   "en": "science",
   "fa": "علم",
   "cat": "school",
-  "ex": "This science is very important to me.",
-  "exfa": "این علم برای من خیلی مهم است."
+  "ex": "She loves learning about science at school.",
+  "exfa": "او عاشق یادگیری علم در مدرسه است."
  },
  {
   "i": 2416,
@@ -19877,8 +19877,8 @@
   "en": "note",
   "fa": "یادداشت / توجه",
   "cat": "noun",
-  "ex": "Do you remember that note?",
-  "exfa": "آن یادداشت را یادت هست؟"
+  "ex": "She left a note on the fridge.",
+  "exfa": "او یک یادداشت روی یخچال گذاشت."
  },
  {
   "i": 2434,
@@ -19921,16 +19921,16 @@
   "en": "october",
   "fa": "اکتبر",
   "cat": "time",
-  "ex": "Do you remember that october?",
-  "exfa": "آن اکتبر را یادت هست؟"
+  "ex": "School starts again in October.",
+  "exfa": "مدرسه دوباره در اکتبر شروع می‌شود."
  },
  {
   "i": 2439,
   "en": "november",
   "fa": "نوامبر",
   "cat": "time",
-  "ex": "The november changed everything for us.",
-  "exfa": "آن نوامبر همه چیز را برای ما عوض کرد."
+  "ex": "My birthday is in November.",
+  "exfa": "تولد من در نوامبر است."
  },
  {
   "i": 2440,
@@ -20025,8 +20025,8 @@
   "en": "yes",
   "fa": "بله",
   "cat": "noun",
-  "ex": "The yes changed everything for us.",
-  "exfa": "آن بله همه چیز را برای ما عوض کرد."
+  "ex": "He answered yes to every question.",
+  "exfa": "او به هر سؤالی بله جواب داد."
  },
  {
   "i": 2450,
@@ -20073,8 +20073,8 @@
   "en": "september",
   "fa": "سپتامبر",
   "cat": "time",
-  "ex": "This september is very important to me.",
-  "exfa": "این سپتامبر برای من خیلی مهم است."
+  "ex": "The new school year starts in September.",
+  "exfa": "سال تحصیلی جدید در سپتامبر شروع می‌شود."
  },
  {
   "i": 2456,
@@ -20229,16 +20229,16 @@
   "en": "april",
   "fa": "آوریل",
   "cat": "time",
-  "ex": "The april changed everything for us.",
-  "exfa": "آن آوریل همه چیز را برای ما عوض کرد."
+  "ex": "We often travel in April.",
+  "exfa": "ما معمولاً در آوریل سفر می‌کنیم."
  },
  {
   "i": 2475,
   "en": "never",
   "fa": "هرگز",
   "cat": "time",
-  "ex": "This never is very important to me.",
-  "exfa": "این هرگز برای من خیلی مهم است."
+  "ex": "I never eat breakfast before school.",
+  "exfa": "من هرگز قبل از مدرسه صبحانه نمی‌خورم."
  },
  {
   "i": 2476,
@@ -20261,8 +20261,8 @@
   "en": "topic",
   "fa": "موضوع",
   "cat": "noun",
-  "ex": "He looked topic after the meeting.",
-  "exfa": "بعد از جلسه موضوع به نظر می‌رسید."
+  "ex": "Let's change the topic of our conversation.",
+  "exfa": "بیا موضوع صحبتمان را عوض کنیم."
  },
  {
   "i": 2479,
@@ -20305,8 +20305,8 @@
   "en": "against",
   "fa": "علیه / در مقابل",
   "cat": "noun",
-  "ex": "Do you remember that against?",
-  "exfa": "آن علیه را یادت هست؟"
+  "ex": "Our team played against the strongest school.",
+  "exfa": "تیم ما مقابل قوی‌ترین مدرسه بازی کرد."
  },
  {
   "i": 2484,
@@ -20329,16 +20329,16 @@
   "en": "below",
   "fa": "زیر / پایین",
   "cat": "adv",
-  "ex": "I need a new below for my work.",
-  "exfa": "برای کارم یک زیر تازه لازم دارم."
+  "ex": "The fish swam below the boat.",
+  "exfa": "ماهی زیر قایق شنا کرد."
  },
  {
   "i": 2487,
   "en": "mobile",
   "fa": "تلفن همراه / متحرک",
   "cat": "tech",
-  "ex": "We talked about the mobile for an hour.",
-  "exfa": "یک ساعت درباره‌ی تلفن همراه حرف زدیم."
+  "ex": "I left my mobile at home today.",
+  "exfa": "امروز موبایلم را خانه جا گذاشتم."
  },
  {
   "i": 2488,
@@ -20421,8 +20421,8 @@
   "en": "above",
   "fa": "بالا / فوق",
   "cat": "noun",
-  "ex": "We talked about the above for an hour.",
-  "exfa": "یک ساعت درباره‌ی بالا حرف زدیم."
+  "ex": "The plane flew above the clouds.",
+  "exfa": "هواپیما بالای ابرها پرواز کرد."
  },
  {
   "i": 2498,
@@ -20501,8 +20501,8 @@
   "en": "august",
   "fa": "آگوست / باشکوه",
   "cat": "time",
-  "ex": "I need a new august for my work.",
-  "exfa": "برای کارم یک آگوست تازه لازم دارم."
+  "ex": "Her birthday is in August.",
+  "exfa": "تولد او در آگوست است."
  },
  {
   "i": 2507,
@@ -20577,8 +20577,8 @@
   "en": "east",
   "fa": "شرق",
   "cat": "noun",
-  "ex": "This east is very important to me.",
-  "exfa": "این شرق برای من خیلی مهم است."
+  "ex": "The sun rises in the east.",
+  "exfa": "خورشید از شرق طلوع می‌کند."
  },
  {
   "i": 2516,
@@ -20601,8 +20601,8 @@
   "en": "club",
   "fa": "باشگاه",
   "cat": "noun",
-  "ex": "Do you remember that club?",
-  "exfa": "آن باشگاه را یادت هست؟"
+  "ex": "He joined a chess club at school.",
+  "exfa": "او در مدرسه به باشگاه شطرنج پیوست."
  },
  {
   "i": 2519,
@@ -20657,8 +20657,8 @@
   "en": "gift",
   "fa": "هدیه",
   "cat": "noun",
-  "ex": "This gift is very important to me.",
-  "exfa": "این هدیه برای من خیلی مهم است."
+  "ex": "She opened her birthday gift excitedly.",
+  "exfa": "او با هیجان هدیه تولدش را باز کرد."
  },
  {
   "i": 2526,
@@ -20749,8 +20749,8 @@
   "en": "february",
   "fa": "فوریه",
   "cat": "time",
-  "ex": "I need a new february for my work.",
-  "exfa": "برای کارم یک فوریه تازه لازم دارم."
+  "ex": "February is a short month.",
+  "exfa": "فوریه ماه کوتاهی است."
  },
  {
   "i": 2537,
@@ -20773,8 +20773,8 @@
   "en": "audio",
   "fa": "صوتی",
   "cat": "tech",
-  "ex": "The audio changed everything for us.",
-  "exfa": "آن صوتی همه چیز را برای ما عوض کرد."
+  "ex": "The audio quality of this video is poor.",
+  "exfa": "کیفیت صوتی این ویدیو ضعیف است."
  },
  {
   "i": 2540,
@@ -20941,8 +20941,8 @@
   "en": "star",
   "fa": "ستاره / فیلم‌ستان",
   "cat": "nature",
-  "ex": "The star changed everything for us.",
-  "exfa": "آن ستاره همه چیز را برای ما عوض کرد."
+  "ex": "You can see many stars in the night sky.",
+  "exfa": "شب‌ها می‌توانی ستاره‌های زیادی در آسمان ببینی."
  },
  {
   "i": 2560,
@@ -21066,8 +21066,8 @@
   "en": "share",
   "fa": "سهم / به اشتراک گذاردن",
   "cat": "verb",
-  "ex": "Learning to share takes time and practice.",
-  "exfa": "سهم زمان و تمرین می‌خواهد."
+  "ex": "Please share your snack with your sister.",
+  "exfa": "لطفاً تنقلاتت را با خواهرت به اشتراک بگذار."
  },
  {
   "i": 2573,
@@ -21278,8 +21278,8 @@
   "en": "radio",
   "fa": "رادیو",
   "cat": "noun",
-  "ex": "Do you remember that radio?",
-  "exfa": "آن رادیو را یادت هست؟"
+  "ex": "I listen to the radio while driving.",
+  "exfa": "من هنگام رانندگی به رادیو گوش می‌دهم."
  },
  {
   "i": 2599,
@@ -21302,8 +21302,8 @@
   "en": "color",
   "fa": "رنگ",
   "cat": "noun",
-  "ex": "I need a new color for my work.",
-  "exfa": "برای کارم یک رنگ تازه لازم دارم."
+  "ex": "What is your favorite color?",
+  "exfa": "رنگ مورد علاقه‌ات چیست؟"
  },
  {
   "i": 2602,
@@ -21350,8 +21350,8 @@
   "en": "discussion",
   "fa": "بحث / گفت‌وگو",
   "cat": "talk",
-  "ex": "We talked about the discussion for an hour.",
-  "exfa": "یک ساعت درباره‌ی بحث حرف زدیم."
+  "ex": "We had a long discussion about the project.",
+  "exfa": "ما یک بحث طولانی درباره‌ی پروژه داشتیم."
  },
  {
   "i": 2608,
@@ -21510,8 +21510,8 @@
   "en": "association",
   "fa": "انجمن / سازمان",
   "cat": "noun",
-  "ex": "This association is very important to me.",
-  "exfa": "این انجمن برای من خیلی مهم است."
+  "ex": "She joined a local sports association last year.",
+  "exfa": "او سال گذشته به یک انجمن ورزشی محلی پیوست."
  },
  {
   "i": 2626,
@@ -21650,8 +21650,8 @@
   "en": "collection",
   "fa": "مجموعه / جمع‌آوری",
   "cat": "noun",
-  "ex": "I need a new collection for my work.",
-  "exfa": "برای کارم یک مجموعه تازه لازم دارم."
+  "ex": "He has a large collection of old coins.",
+  "exfa": "او یک مجموعه بزرگ از سکه‌های قدیمی دارد."
  },
  {
   "i": 2642,
@@ -21798,8 +21798,8 @@
   "en": "period",
   "fa": "دوره / مدت",
   "cat": "time",
-  "ex": "We talked about the period for an hour.",
-  "exfa": "یک ساعت درباره‌ی دوره حرف زدیم."
+  "ex": "The class period lasts fifty minutes.",
+  "exfa": "هر دوره‌ی کلاس پنجاه دقیقه طول می‌کشد."
  },
  {
   "i": 2658,
@@ -21850,24 +21850,24 @@
   "en": "land",
   "fa": "سرزمین / زمین",
   "cat": "noun",
-  "ex": "Do you remember that land?",
-  "exfa": "آن سرزمین را یادت هست؟"
+  "ex": "They bought a piece of land near the river.",
+  "exfa": "آن‌ها یک قطعه زمین نزدیک رودخانه خریدند."
  },
  {
   "i": 2664,
   "en": "average",
   "fa": "میانگین / معمول",
   "cat": "noun",
-  "ex": "The average changed everything for us.",
-  "exfa": "آن میانگین همه چیز را برای ما عوض کرد."
+  "ex": "The average temperature in July is thirty degrees.",
+  "exfa": "میانگین دما در تیرماه سی درجه است."
  },
  {
   "i": 2665,
   "en": "done",
   "fa": "انجام شده / تمام",
   "cat": "adj",
-  "ex": "This done is very important to me.",
-  "exfa": "این انجام شده برای من خیلی مهم است."
+  "ex": "Is your homework done yet?",
+  "exfa": "تکالیفت تمام شده؟"
  },
  {
   "i": 2666,
@@ -21930,8 +21930,8 @@
   "en": "calendar",
   "fa": "تقویم",
   "cat": "time",
-  "ex": "Do you remember that calendar?",
-  "exfa": "آن تقویم را یادت هست؟"
+  "ex": "I marked the meeting on my calendar.",
+  "exfa": "من جلسه را روی تقویمم علامت زدم."
  },
  {
   "i": 2674,
@@ -21998,8 +21998,8 @@
   "en": "ever",
   "fa": "تا به حال / هرگز",
   "cat": "adv",
-  "ex": "I need a new ever for my work.",
-  "exfa": "برای کارم یک تا به حال تازه لازم دارم."
+  "ex": "Have you ever tried Persian food?",
+  "exfa": "تا به حال غذای ایرانی خورده‌ای؟"
  },
  {
   "i": 2682,
@@ -22054,8 +22054,8 @@
   "en": "either",
   "fa": "هر یک / یکی",
   "cat": "general",
-  "ex": "Do you remember that either?",
-  "exfa": "آن هر یک را یادت هست؟"
+  "ex": "You can choose either color for the wall.",
+  "exfa": "می‌توانی هر کدام از رنگ‌ها را برای دیوار انتخاب کنی."
  },
  {
   "i": 2689,
@@ -22158,16 +22158,16 @@
   "en": "final",
   "fa": "نهایی / آخری",
   "cat": "adj",
-  "ex": "The weather was very final yesterday.",
-  "exfa": "دیروز هوا خیلی نهایی بود."
+  "ex": "This is the final chance to sign up.",
+  "exfa": "این آخرین فرصت برای ثبت‌نام است."
  },
  {
   "i": 2701,
   "en": "adult",
   "fa": "بزرگسال",
   "cat": "people",
-  "ex": "I need a new adult for my work.",
-  "exfa": "برای کارم یک بزرگسال تازه لازم دارم."
+  "ex": "This movie is only suitable for adults.",
+  "exfa": "این فیلم فقط برای بزرگسالان مناسب است."
  },
  {
   "i": 2702,
@@ -22242,8 +22242,8 @@
   "en": "else",
   "fa": "دیگری / وگرنه",
   "cat": "adv",
-  "ex": "This else is very important to me.",
-  "exfa": "این دیگری برای من خیلی مهم است."
+  "ex": "Is there anything else you need?",
+  "exfa": "آیا چیز دیگری لازم داری؟"
  },
  {
   "i": 2711,
@@ -22402,8 +22402,8 @@
   "en": "function",
   "fa": "عملکرد / کارکرد",
   "cat": "noun",
-  "ex": "The function changed everything for us.",
-  "exfa": "آن عملکرد همه چیز را برای ما عوض کرد."
+  "ex": "The main function of the heart is to pump blood.",
+  "exfa": "عملکرد اصلی قلب پمپاژ خون است."
  },
  {
   "i": 2730,
@@ -22626,8 +22626,8 @@
   "en": "town",
   "fa": "شهر / شهرک",
   "cat": "place",
-  "ex": "We talked about the town for an hour.",
-  "exfa": "یک ساعت درباره‌ی شهر حرف زدیم."
+  "ex": "We drove to a small town nearby.",
+  "exfa": "ما به یک شهر کوچک نزدیک رفتیم."
  },
  {
   "i": 2758,
@@ -22642,8 +22642,8 @@
   "en": "advertising",
   "fa": "تبلیغات / آگهی",
   "cat": "noun",
-  "ex": "The advertising changed everything for us.",
-  "exfa": "آن تبلیغات همه چیز را برای ما عوض کرد."
+  "ex": "She works in advertising for a big company.",
+  "exfa": "او در بخش تبلیغات یک شرکت بزرگ کار می‌کند."
  },
  {
   "i": 2760,
@@ -22682,16 +22682,16 @@
   "en": "knowledge",
   "fa": "دانش / علم",
   "cat": "school",
-  "ex": "The knowledge changed everything for us.",
-  "exfa": "آن دانش همه چیز را برای ما عوض کرد."
+  "ex": "He has deep knowledge of history.",
+  "exfa": "او دانش عمیقی از تاریخ دارد."
  },
  {
   "i": 2765,
   "en": "error",
   "fa": "خطا / اشتباه",
   "cat": "noun",
-  "ex": "This error is very important to me.",
-  "exfa": "این خطا برای من خیلی مهم است."
+  "ex": "There's a small error in this report.",
+  "exfa": "یک خطای کوچک در این گزارش وجود دارد."
  },
  {
   "i": 2766,
@@ -22746,8 +22746,8 @@
   "en": "clear",
   "fa": "صاف / واضح",
   "cat": "noun",
-  "ex": "The weather was very clear yesterday.",
-  "exfa": "دیروز هوا خیلی واضح بود."
+  "ex": "The instructions were clear and easy to follow.",
+  "exfa": "دستورالعمل‌ها واضح و ساده برای پیروی بودند."
  },
  {
   "i": 2773,
@@ -22778,8 +22778,8 @@
   "en": "chapter",
   "fa": "فصل / باب",
   "cat": "noun",
-  "ex": "I need a new chapter for my work.",
-  "exfa": "برای کارم یک فصل تازه لازم دارم."
+  "ex": "I finished the first chapter of the book last night.",
+  "exfa": "من دیشب فصل اول کتاب را تمام کردم."
  },
  {
   "i": 2777,
@@ -22907,8 +22907,8 @@
   "en": "step",
   "fa": "قدم / گام",
   "cat": "noun",
-  "ex": "This step is very important to me.",
-  "exfa": "این قدم برای من خیلی مهم است."
+  "ex": "Watch your step on the wet floor.",
+  "exfa": "روی زمین خیس مواظب قدم‌هایت باش."
  },
  {
   "i": 2791,
@@ -23052,8 +23052,8 @@
   "en": "church",
   "fa": "کلیسا / کنیسه",
   "cat": "place",
-  "ex": "We talked about the church for an hour.",
-  "exfa": "یک ساعت درباره‌ی کلیسا حرف زدیم."
+  "ex": "They go to church every Sunday.",
+  "exfa": "آنها هر یکشنبه به کلیسا می‌روند."
  },
  {
   "i": 2808,
@@ -23116,8 +23116,8 @@
   "en": "figure",
   "fa": "عدد / شکل",
   "cat": "noun",
-  "ex": "This figure is very important to me.",
-  "exfa": "این عدد برای من خیلی مهم است."
+  "ex": "Sales figures went up last quarter.",
+  "exfa": "ارقام فروش در فصل گذشته بالا رفت."
  },
  {
   "i": 2816,
@@ -23176,8 +23176,8 @@
   "en": "among",
   "fa": "میان / بین",
   "cat": "noun",
-  "ex": "We talked about the among for an hour.",
-  "exfa": "یک ساعت درباره‌ی میان حرف زدیم."
+  "ex": "She felt safe among her close friends.",
+  "exfa": "او در میان دوستان نزدیکش احساس امنیت می‌کرد."
  },
  {
   "i": 2823,
@@ -23232,8 +23232,8 @@
   "en": "brand",
   "fa": "برند / نام تجاری",
   "cat": "noun",
-  "ex": "The brand changed everything for us.",
-  "exfa": "آن برند همه چیز را برای ما عوض کرد."
+  "ex": "This is my favorite brand of shoes.",
+  "exfa": "این برند مورد علاقه‌ی من برای کفش است."
  },
  {
   "i": 2830,
@@ -23337,16 +23337,16 @@
   "en": "kingdom",
   "fa": "پادشاهی / مملکت",
   "cat": "noun",
-  "ex": "I need a new kingdom for my work.",
-  "exfa": "برای کارم یک پادشاهی تازه لازم دارم."
+  "ex": "The kingdom was ruled by a wise queen.",
+  "exfa": "آن پادشاهی توسط یک ملکه‌ی خردمند اداره می‌شد."
  },
  {
   "i": 2842,
   "en": "base",
   "fa": "پایه / بنیاد",
   "cat": "noun",
-  "ex": "We talked about the base for an hour.",
-  "exfa": "یک ساعت درباره‌ی پایه حرف زدیم."
+  "ex": "The lamp has a heavy metal base.",
+  "exfa": "چراغ یک پایه‌ی فلزی سنگین دارد."
  },
  {
   "i": 2843,
@@ -23489,8 +23489,8 @@
   "en": "agency",
   "fa": "آژانس / نمایندگی",
   "cat": "noun",
-  "ex": "The agency changed everything for us.",
-  "exfa": "آن آژانس همه چیز را برای ما عوض کرد."
+  "ex": "We booked our trip through a travel agency.",
+  "exfa": "ما سفرمان را از طریق یک آژانس مسافرتی رزرو کردیم."
  },
  {
   "i": 2860,
@@ -23513,8 +23513,8 @@
   "en": "activity",
   "fa": "فعالیت",
   "cat": "noun",
-  "ex": "We talked about the activity for an hour.",
-  "exfa": "یک ساعت درباره‌ی فعالیت حرف زدیم."
+  "ex": "Swimming is my favorite outdoor activity.",
+  "exfa": "شنا فعالیت مورد علاقه من در فضای باز است."
  },
  {
   "i": 2863,
@@ -23529,8 +23529,8 @@
   "en": "drug",
   "fa": "دارو / موادمخدر",
   "cat": "health",
-  "ex": "The drug changed everything for us.",
-  "exfa": "آن دارو همه چیز را برای ما عوض کرد."
+  "ex": "The doctor prescribed a new drug for her pain.",
+  "exfa": "دکتر یک داروی جدید برای دردش تجویز کرد."
  },
  {
   "i": 2865,
@@ -23629,8 +23629,8 @@
   "en": "album",
   "fa": "آلبوم / کلکسیون",
   "cat": "music",
-  "ex": "I need a new album for my work.",
-  "exfa": "برای کارم یک آلبوم تازه لازم دارم."
+  "ex": "She released a new music album last week.",
+  "exfa": "او هفته پیش یک آلبوم موسیقی جدید منتشر کرد."
  },
  {
   "i": 2877,
@@ -23717,8 +23717,8 @@
   "en": "double",
   "fa": "دوبل / دو برابر",
   "cat": "noun",
-  "ex": "I need a new double for my work.",
-  "exfa": "برای کارم یک دوبل تازه لازم دارم."
+  "ex": "I'll have a double espresso, please.",
+  "exfa": "لطفاً یک اسپرسو دوبل می‌خواهم."
  },
  {
   "i": 2887,
@@ -23821,8 +23821,8 @@
   "en": "anything",
   "fa": "هر چیز / چیزی",
   "cat": "noun",
-  "ex": "The anything changed everything for us.",
-  "exfa": "آن هر چیز همه چیز را برای ما عوض کرد."
+  "ex": "Do you need anything from the store?",
+  "exfa": "چیزی از مغازه لازم داری؟"
  },
  {
   "i": 2900,
@@ -24021,8 +24021,8 @@
   "en": "addition",
   "fa": "افزودن / جمع",
   "cat": "noun",
-  "ex": "Do you remember that addition?",
-  "exfa": "آن افزودن را یادت هست؟"
+  "ex": "Addition is one of the first things kids learn in math.",
+  "exfa": "جمع یکی از اولین چیزهایی است که بچه‌ها در ریاضی یاد می‌گیرند."
  },
  {
   "i": 2924,
@@ -24057,8 +24057,8 @@
   "en": "certain",
   "fa": "مطمئن / معین",
   "cat": "adj",
-  "ex": "We talked about the certain for an hour.",
-  "exfa": "یک ساعت درباره‌ی مطمئن حرف زدیم."
+  "ex": "I'm certain that she will pass the exam.",
+  "exfa": "من مطمئنم که او امتحان را قبول می‌شود."
  },
  {
   "i": 2928,
@@ -24097,8 +24097,8 @@
   "en": "jewelry",
   "fa": "جواهرات / زیورآلات",
   "cat": "clothes",
-  "ex": "We talked about the jewelry for an hour.",
-  "exfa": "یک ساعت درباره‌ی جواهرات حرف زدیم."
+  "ex": "He bought jewelry for his wife's birthday.",
+  "exfa": "او برای تولد همسرش جواهرات خرید."
  },
  {
   "i": 2933,
@@ -24185,8 +24185,8 @@
   "en": "bush",
   "fa": "بوته",
   "cat": "nature",
-  "ex": "Do you remember that bush?",
-  "exfa": "آن بوته را یادت هست؟"
+  "ex": "The cat hid behind a small bush.",
+  "exfa": "گربه پشت یک بوته‌ی کوچک پنهان شد."
  },
  {
   "i": 2944,
@@ -24485,8 +24485,8 @@
   "en": "saturday",
   "fa": "شنبه",
   "cat": "time",
-  "ex": "The saturday changed everything for us.",
-  "exfa": "آن شنبه همه چیز را برای ما عوض کرد."
+  "ex": "We usually go shopping on Saturday.",
+  "exfa": "ما معمولاً شنبه‌ها خرید می‌رویم."
  },
  {
   "i": 2980,
@@ -24509,8 +24509,8 @@
   "en": "band",
   "fa": "گروه / باند",
   "cat": "music",
-  "ex": "We talked about the band for an hour.",
-  "exfa": "یک ساعت درباره‌ی گروه حرف زدیم."
+  "ex": "The band played our favorite song.",
+  "exfa": "آن گروه آهنگ مورد علاقه ما را نواخت."
  },
  {
   "i": 2983,
@@ -24565,8 +24565,8 @@
   "en": "thursday",
   "fa": "پنج‌شنبه",
   "cat": "time",
-  "ex": "The thursday changed everything for us.",
-  "exfa": "آن پنج‌شنبه همه چیز را برای ما عوض کرد."
+  "ex": "We have a test next Thursday.",
+  "exfa": "پنج‌شنبه‌ی آینده امتحان داریم."
  },
  {
   "i": 2990,
@@ -24649,8 +24649,8 @@
   "en": "wednesday",
   "fa": "چهارشنبه",
   "cat": "time",
-  "ex": "The wednesday changed everything for us.",
-  "exfa": "آن چهارشنبه همه چیز را برای ما عوض کرد."
+  "ex": "The meeting is scheduled for Wednesday.",
+  "exfa": "جلسه برای چهارشنبه برنامه‌ریزی شده است."
  },
  {
   "i": 3000,
@@ -24681,8 +24681,8 @@
   "en": "button",
   "fa": "دکمه",
   "cat": "clothes",
-  "ex": "Do you remember that button?",
-  "exfa": "آن دکمه را یادت هست؟"
+  "ex": "He lost a button from his shirt.",
+  "exfa": "او یک دکمه از پیراهنش را گم کرد."
  },
  {
   "i": 3004,
@@ -24713,8 +24713,8 @@
   "en": "super",
   "fa": "بسیار خوب / فوق‌العاده",
   "cat": "noun",
-  "ex": "We talked about the super for an hour.",
-  "exfa": "یک ساعت درباره‌ی بسیار خوب حرف زدیم."
+  "ex": "The movie was super, we loved it.",
+  "exfa": "فیلم فوق‌العاده بود، ما عاشقش شدیم."
  },
  {
   "i": 3008,
@@ -24801,8 +24801,8 @@
   "en": "editor",
   "fa": "سردبیر / ویرایشگر",
   "cat": "noun",
-  "ex": "We talked about the editor for an hour.",
-  "exfa": "یک ساعت درباره‌ی سردبیر حرف زدیم."
+  "ex": "She works as an editor for a news magazine.",
+  "exfa": "او به‌عنوان سردبیر یک مجله‌ی خبری کار می‌کند."
  },
  {
   "i": 3018,
@@ -24889,8 +24889,8 @@
   "en": "female",
   "fa": "زن / ماده",
   "cat": "noun",
-  "ex": "Do you remember that female?",
-  "exfa": "آن زن را یادت هست؟"
+  "ex": "The zoo has a new female lion.",
+  "exfa": "باغ‌وحش یک شیر ماده‌ی جدید دارد."
  },
  {
   "i": 3029,
@@ -25005,8 +25005,8 @@
   "en": "communication",
   "fa": "ارتباط",
   "cat": "noun",
-  "ex": "We talked about the communication for an hour.",
-  "exfa": "یک ساعت درباره‌ی ارتباط حرف زدیم."
+  "ex": "Good communication is important in every relationship.",
+  "exfa": "ارتباط خوب در هر رابطه‌ای مهم است."
  },
  {
   "i": 3043,
@@ -25021,8 +25021,8 @@
   "en": "feature",
   "fa": "ویژگی / امکان",
   "cat": "noun",
-  "ex": "The feature changed everything for us.",
-  "exfa": "آن ویژگی همه چیز را برای ما عوض کرد."
+  "ex": "This phone has a great camera feature.",
+  "exfa": "این گوشی یک ویژگی دوربین عالی دارد."
  },
  {
   "i": 3045,
@@ -25158,8 +25158,8 @@
   "en": "smith",
   "fa": "آهنگر / نام خانوادگی",
   "cat": "noun",
-  "ex": "This smith is very important to me.",
-  "exfa": "این آهنگر برای من خیلی مهم است."
+  "ex": "The village smith made iron tools.",
+  "exfa": "آهنگر روستا ابزارهای آهنی می‌ساخت."
  },
  {
   "i": 3061,
@@ -25198,8 +25198,8 @@
   "en": "survey",
   "fa": "نظرسنجی / بررسی",
   "cat": "noun",
-  "ex": "This survey is very important to me.",
-  "exfa": "این نظرسنجی برای من خیلی مهم است."
+  "ex": "The school did a survey about lunch food.",
+  "exfa": "مدرسه یک نظرسنجی درباره‌ی غذای ناهار انجام داد."
  },
  {
   "i": 3066,
@@ -25214,8 +25214,8 @@
   "en": "telephone",
   "fa": "تلفن",
   "cat": "noun",
-  "ex": "We talked about the telephone for an hour.",
-  "exfa": "یک ساعت درباره‌ی تلفن حرف زدیم."
+  "ex": "The telephone rang during dinner.",
+  "exfa": "تلفن هنگام شام زنگ خورد."
  },
  {
   "i": 3068,
@@ -25298,8 +25298,8 @@
   "en": "station",
   "fa": "ایستگاه / پایگاه",
   "cat": "noun",
-  "ex": "We talked about the station for an hour.",
-  "exfa": "یک ساعت درباره‌ی ایستگاه حرف زدیم."
+  "ex": "Meet me at the train station at noon.",
+  "exfa": "ظهر در ایستگاه قطار من را ببین."
  },
  {
   "i": 3078,
@@ -25322,8 +25322,8 @@
   "en": "favorite",
   "fa": "مورد علاقه / محبوب",
   "cat": "noun",
-  "ex": "This favorite is very important to me.",
-  "exfa": "این مورد علاقه برای من خیلی مهم است."
+  "ex": "Pizza is my favorite food.",
+  "exfa": "پیتزا غذای مورد علاقه من است."
  },
  {
   "i": 3081,
@@ -25402,8 +25402,8 @@
   "en": "blood",
   "fa": "خون",
   "cat": "body",
-  "ex": "This blood is very important to me.",
-  "exfa": "این خون برای من خیلی مهم است."
+  "ex": "The doctor took a sample of my blood.",
+  "exfa": "دکتر یک نمونه از خونم گرفت."
  },
  {
   "i": 3091,
@@ -25482,8 +25482,8 @@
   "en": "earth",
   "fa": "زمین / خاک",
   "cat": "nature",
-  "ex": "The earth changed everything for us.",
-  "exfa": "آن زمین همه چیز را برای ما عوض کرد."
+  "ex": "The Earth takes a year to circle the sun.",
+  "exfa": "زمین یک سال طول می‌کشد تا دور خورشید بچرخد."
  },
  {
   "i": 3100,
@@ -25578,8 +25578,8 @@
   "en": "ship",
   "fa": "کشتی / ارسال",
   "cat": "noun",
-  "ex": "I need a new ship for my work.",
-  "exfa": "برای کارم یک کشتی تازه لازم دارم."
+  "ex": "The ship sailed across the ocean.",
+  "exfa": "کشتی از میان اقیانوس عبور کرد."
  },
  {
   "i": 3112,
@@ -25686,8 +25686,8 @@
   "en": "award",
   "fa": "جایزه / پاداش",
   "cat": "movie",
-  "ex": "The award changed everything for us.",
-  "exfa": "آن جایزه همه چیز را برای ما عوض کرد."
+  "ex": "She won an award for best actress.",
+  "exfa": "او جایزه‌ی بهترین بازیگر زن را برد."
  },
  {
   "i": 3125,
@@ -25702,8 +25702,8 @@
   "en": "tree",
   "fa": "درخت",
   "cat": "nature",
-  "ex": "I need a new tree for my work.",
-  "exfa": "برای کارم یک درخت تازه لازم دارم."
+  "ex": "A bird built its nest in the tree.",
+  "exfa": "یک پرنده لانه‌اش را روی درخت ساخت."
  },
  {
   "i": 3127,
@@ -25742,8 +25742,8 @@
   "en": "extra",
   "fa": "اضافی",
   "cat": "noun",
-  "ex": "I need a new extra for my work.",
-  "exfa": "برای کارم یک اضافی تازه لازم دارم."
+  "ex": "Can I have an extra blanket, please?",
+  "exfa": "می‌توانم لطفاً یک پتوی اضافی داشته باشم؟"
  },
  {
   "i": 3132,
@@ -25838,8 +25838,8 @@
   "en": "boy",
   "fa": "پسر",
   "cat": "people",
-  "ex": "Do you remember that boy?",
-  "exfa": "آن پسر را یادت هست؟"
+  "ex": "The little boy is playing with his dog.",
+  "exfa": "پسر کوچک با سگش بازی می‌کند."
  },
  {
   "i": 3144,
@@ -26142,8 +26142,8 @@
   "en": "agent",
   "fa": "نماینده / عامل",
   "cat": "noun",
-  "ex": "The weather was very agent yesterday.",
-  "exfa": "دیروز هوا خیلی نماینده بود."
+  "ex": "The travel agent found us a cheap flight.",
+  "exfa": "نماینده‌ی مسافرتی یک پرواز ارزان برای ما پیدا کرد."
  },
  {
   "i": 3181,
@@ -26594,16 +26594,16 @@
   "en": "ring",
   "fa": "حلقه / زنگ",
   "cat": "clothes",
-  "ex": "Learning to ring takes time and practice.",
-  "exfa": "حلقه زمان و تمرین می‌خواهد."
+  "ex": "He gave her a gold ring for her birthday.",
+  "exfa": "او برای تولدش یک حلقه‌ی طلا به او هدیه داد."
  },
  {
   "i": 3237,
   "en": "grade",
   "fa": "نمره / درجه",
   "cat": "school",
-  "ex": "We talked about the grade for an hour.",
-  "exfa": "یک ساعت درباره‌ی نمره حرف زدیم."
+  "ex": "She got a good grade on her test.",
+  "exfa": "او در امتحانش نمره خوبی گرفت."
  },
  {
   "i": 3238,
@@ -26782,8 +26782,8 @@
   "en": "pool",
   "fa": "استخر / جمع‌آوری",
   "cat": "noun",
-  "ex": "The pool changed everything for us.",
-  "exfa": "آن استخر همه چیز را برای ما عوض کرد."
+  "ex": "The kids are swimming in the pool.",
+  "exfa": "بچه‌ها در استخر شنا می‌کنند."
  },
  {
   "i": 3260,
@@ -26798,8 +26798,8 @@
   "en": "partner",
   "fa": "شریک / همراه",
   "cat": "people",
-  "ex": "I need a new partner for my work.",
-  "exfa": "برای کارم یک شریک تازه لازم دارم."
+  "ex": "She talked to her business partner about the plan.",
+  "exfa": "او درباره‌ی نقشه با شریک تجاری‌اش صحبت کرد."
  },
  {
   "i": 3262,
@@ -26998,8 +26998,8 @@
   "en": "background",
   "fa": "پس‌زمینه / سابقه",
   "cat": "noun",
-  "ex": "I need a new background for my work.",
-  "exfa": "برای کارم یک پس‌زمینه تازه لازم دارم."
+  "ex": "He has a strong background in mathematics.",
+  "exfa": "او سابقه‌ی قوی‌ای در ریاضیات دارد."
  },
  {
   "i": 3287,
@@ -27014,16 +27014,16 @@
   "en": "except",
   "fa": "به جز / مگر",
   "cat": "general",
-  "ex": "Do you remember that except?",
-  "exfa": "آن به جز را یادت هست؟"
+  "ex": "Everyone can come to the party except children.",
+  "exfa": "همه می‌توانند به مهمانی بیایند به‌جز بچه‌ها."
  },
  {
   "i": 3289,
   "en": "character",
   "fa": "شخصیت / کاراکتر",
   "cat": "movie",
-  "ex": "The character changed everything for us.",
-  "exfa": "آن شخصیت همه چیز را برای ما عوض کرد."
+  "ex": "My favorite character in the movie is the dragon.",
+  "exfa": "شخصیت مورد علاقه من در فیلم اژدها است."
  },
  {
   "i": 3290,
@@ -27038,8 +27038,8 @@
   "en": "ability",
   "fa": "توانایی / صلاحیت",
   "cat": "noun",
-  "ex": "I need a new ability for my work.",
-  "exfa": "برای کارم یک توانایی تازه لازم دارم."
+  "ex": "She has the ability to solve hard problems.",
+  "exfa": "او توانایی حل مسائل سخت را دارد."
  },
  {
   "i": 3292,
@@ -27078,8 +27078,8 @@
   "en": "pretty",
   "fa": "زیبا / خوشگل",
   "cat": "adj",
-  "ex": "The weather was very pretty yesterday.",
-  "exfa": "دیروز هوا خیلی زیبا بود."
+  "ex": "The garden looked pretty in the spring.",
+  "exfa": "باغ در بهار زیبا به نظر می‌رسید."
  },
  {
   "i": 3297,
@@ -27142,8 +27142,8 @@
   "en": "battery",
   "fa": "باتری / ضرب و شتم",
   "cat": "tech",
-  "ex": "The battery changed everything for us.",
-  "exfa": "آن باتری همه چیز را برای ما عوض کرد."
+  "ex": "My phone battery dies too quickly.",
+  "exfa": "باتری گوشی من خیلی سریع تمام می‌شود."
  },
  {
   "i": 3305,
@@ -27310,8 +27310,8 @@
   "en": "reader",
   "fa": "خواننده",
   "cat": "noun",
-  "ex": "The reader changed everything for us.",
-  "exfa": "آن خواننده همه چیز را برای ما عوض کرد."
+  "ex": "He reads slowly because he is a careful reader.",
+  "exfa": "او آهسته می‌خواند، چون خواننده‌ی دقیقی است."
  },
  {
   "i": 3325,
@@ -27390,8 +27390,8 @@
   "en": "apple",
   "fa": "سیب",
   "cat": "food",
-  "ex": "The apple changed everything for us.",
-  "exfa": "آن سیب همه چیز را برای ما عوض کرد."
+  "ex": "She ate a red apple for lunch.",
+  "exfa": "او یک سیب قرمز برای ناهار خورد."
  },
  {
   "i": 3335,
@@ -27478,8 +27478,8 @@
   "en": "host",
   "fa": "میزبان / صاحب‌خانه",
   "cat": "noun",
-  "ex": "This host is very important to me.",
-  "exfa": "این میزبان برای من خیلی مهم است."
+  "ex": "The host welcomed all the guests warmly.",
+  "exfa": "میزبان همه‌ی مهمانان را با گرمی خوش‌آمد گفت."
  },
  {
   "i": 3346,
@@ -27518,8 +27518,8 @@
   "en": "block",
   "fa": "بلوک / مسدود کردن",
   "cat": "noun",
-  "ex": "This block is very important to me.",
-  "exfa": "این بلوک برای من خیلی مهم است."
+  "ex": "We walked two blocks to the store.",
+  "exfa": "ما دو بلوک تا مغازه پیاده رفتیم."
  },
  {
   "i": 3351,
@@ -27619,8 +27619,8 @@
   "en": "beginning",
   "fa": "آغاز / شروع",
   "cat": "noun",
-  "ex": "I need a new beginning for my work.",
-  "exfa": "برای کارم یک آغاز تازه لازم دارم."
+  "ex": "The beginning of the movie was a bit slow.",
+  "exfa": "آغاز فیلم کمی کند بود."
  },
  {
   "i": 3362,
@@ -27743,8 +27743,8 @@
   "en": "electric",
   "fa": "الکتریکی / برقی",
   "cat": "adj",
-  "ex": "The weather was very electric yesterday.",
-  "exfa": "دیروز هوا خیلی الکتریکی بود."
+  "ex": "We bought a new electric car.",
+  "exfa": "ما یک ماشین برقی جدید خریدیم."
  },
  {
   "i": 3377,
@@ -27787,8 +27787,8 @@
   "en": "dead",
   "fa": "مرده / بی‌جان",
   "cat": "noun",
-  "ex": "I need a new dead for my work.",
-  "exfa": "برای کارم یک مرده تازه لازم دارم."
+  "ex": "The old tree in the yard is dead.",
+  "exfa": "درخت قدیمی در حیاط مرده است."
  },
  {
   "i": 3382,
@@ -27871,8 +27871,8 @@
   "en": "farm",
   "fa": "مزرعه",
   "cat": "noun",
-  "ex": "I need a new farm for my work.",
-  "exfa": "برای کارم یک مزرعه تازه لازم دارم."
+  "ex": "My grandparents live on a farm.",
+  "exfa": "پدربزرگ و مادربزرگم در یک مزرعه زندگی می‌کنند."
  },
  {
   "i": 3392,
@@ -27893,9 +27893,9 @@
  {
   "i": 3394,
   "en": "campus",
-  "fa": "پردهٔ دانشگاه",
+  "fa": "محوطهٔ دانشگاه",
   "cat": "school",
-  "ex": "The campus changed everything for us.",
+  "ex": "Students often study together on campus.",
   "exfa": "آن پردهٔ دانشگاه همه چیز را برای ما عوض کرد."
  },
  {
@@ -27975,8 +27975,8 @@
   "en": "fiction",
   "fa": "داستان / خیال",
   "cat": "noun",
-  "ex": "The fiction changed everything for us.",
-  "exfa": "آن داستان همه چیز را برای ما عوض کرد."
+  "ex": "She mostly reads science fiction novels.",
+  "exfa": "او بیشتر رمان‌های علمی‌تخیلی می‌خواند."
  },
  {
   "i": 3405,
@@ -28019,8 +28019,8 @@
   "en": "beyond",
   "fa": "فراتر از",
   "cat": "general",
-  "ex": "The beyond changed everything for us.",
-  "exfa": "آن فراتر از همه چیز را برای ما عوض کرد."
+  "ex": "The view stretched far beyond the hills.",
+  "exfa": "منظره تا فراتر از تپه‌ها ادامه داشت."
  },
  {
   "i": 3410,
@@ -28151,8 +28151,8 @@
   "en": "cat",
   "fa": "گربه",
   "cat": "animal",
-  "ex": "The cat changed everything for us.",
-  "exfa": "آن گربه همه چیز را برای ما عوض کرد."
+  "ex": "My cat sleeps on the sofa all day.",
+  "exfa": "گربه من تمام روز روی مبل می‌خوابد."
  },
  {
   "i": 3425,
@@ -28291,8 +28291,8 @@
   "en": "frame",
   "fa": "قاب / چهارچوب",
   "cat": "noun",
-  "ex": "I need a new frame for my work.",
-  "exfa": "برای کارم یک قاب تازه لازم دارم."
+  "ex": "She put the photo in a wooden frame.",
+  "exfa": "او عکس را در یک قاب چوبی گذاشت."
  },
  {
   "i": 3442,
@@ -28549,10 +28549,10 @@
  {
   "i": 3473,
   "en": "basket",
-  "fa": "سبد / سلسله",
+  "fa": "سبد",
   "cat": "noun",
-  "ex": "Do you remember that basket?",
-  "exfa": "آن سبد را یادت هست؟"
+  "ex": "She carried the fruit in a woven basket.",
+  "exfa": "او میوه‌ها را در یک سبد حصیری حمل می‌کرد."
  },
  {
   "i": 3474,
@@ -28771,8 +28771,8 @@
   "en": "jump",
   "fa": "پرش / جست",
   "cat": "sport",
-  "ex": "Learning to jump takes time and practice.",
-  "exfa": "پرش زمان و تمرین می‌خواهد."
+  "ex": "The kids love to jump on the trampoline.",
+  "exfa": "بچه‌ها عاشق پریدن روی ترامپولین هستند."
  },
  {
   "i": 3501,
@@ -28899,8 +28899,8 @@
   "en": "whose",
   "fa": "متعلق به چه کسی",
   "cat": "general",
-  "ex": "I need a new whose for my work.",
-  "exfa": "برای کارم یک متعلق به چه کسی تازه لازم دارم."
+  "ex": "Whose bag is this on the chair?",
+  "exfa": "این کیف روی صندلی مال چه کسی است؟"
  },
  {
   "i": 3517,
@@ -28915,8 +28915,8 @@
   "en": "couple",
   "fa": "زوج / چند",
   "cat": "people",
-  "ex": "Do you remember that couple?",
-  "exfa": "آن زوج را یادت هست؟"
+  "ex": "A young couple moved in next door.",
+  "exfa": "یک زوج جوان به خانه‌ی کناری نقل مکان کردند."
  },
  {
   "i": 3519,
@@ -28963,8 +28963,8 @@
   "en": "listen",
   "fa": "گوش دادن",
   "cat": "verb",
-  "ex": "Learning to listen takes time and practice.",
-  "exfa": "گوش دادن زمان و تمرین می‌خواهد."
+  "ex": "Please listen carefully to the instructions.",
+  "exfa": "لطفاً با دقت به دستورالعمل‌ها گوش بده."
  },
  {
   "i": 3525,
@@ -29003,8 +29003,8 @@
   "en": "successful",
   "fa": "موفق / کامیاب",
   "cat": "adj",
-  "ex": "The weather was very successful yesterday.",
-  "exfa": "دیروز هوا خیلی موفق بود."
+  "ex": "Her new business became very successful.",
+  "exfa": "کسب‌وکار جدیدش خیلی موفق شد."
  },
  {
   "i": 3529,
@@ -29083,8 +29083,8 @@
   "en": "emergency",
   "fa": "اضطرار / وضعیت اضطراری",
   "cat": "health",
-  "ex": "Do you remember that emergency?",
-  "exfa": "آن اضطرار را یادت هست؟"
+  "ex": "Call this number in case of an emergency.",
+  "exfa": "در صورت وضعیت اضطراری با این شماره تماس بگیر."
  },
  {
   "i": 3539,
@@ -29291,7 +29291,7 @@
   "en": "poster",
   "fa": "پوستر / اعلان دیواری",
   "cat": "noun",
-  "ex": "The poster changed everything for us.",
+  "ex": "He hung a poster of his favorite band.",
   "exfa": "آن پوستر همه چیز را برای ما عوض کرد."
  },
  {
@@ -29339,8 +29339,8 @@
   "en": "pink",
   "fa": "صورتی",
   "cat": "noun",
-  "ex": "This pink is very important to me.",
-  "exfa": "این صورتی برای من خیلی مهم است."
+  "ex": "She painted her room pink.",
+  "exfa": "او اتاقش را صورتی رنگ کرد."
  },
  {
   "i": 3571,
@@ -29471,8 +29471,8 @@
   "en": "dictionary",
   "fa": "فرهنگ‌لغت",
   "cat": "noun",
-  "ex": "I need a new dictionary for my work.",
-  "exfa": "برای کارم یک فرهنگ‌لغت تازه لازم دارم."
+  "ex": "I looked up the word in a dictionary.",
+  "exfa": "من آن کلمه را در فرهنگ‌لغت جستجو کردم."
  },
  {
   "i": 3587,
@@ -29511,8 +29511,8 @@
   "en": "fishing",
   "fa": "ماهی‌گیری / صید",
   "cat": "sport",
-  "ex": "I need a new fishing for my work.",
-  "exfa": "برای کارم یک ماهی‌گیری تازه لازم دارم."
+  "ex": "We went fishing at the lake yesterday.",
+  "exfa": "ما دیروز برای ماهی‌گیری به دریاچه رفتیم."
  },
  {
   "i": 3592,
@@ -29567,8 +29567,8 @@
   "en": "context",
   "fa": "متن / بافت",
   "cat": "noun",
-  "ex": "Do you remember that context?",
-  "exfa": "آن متن را یادت هست؟"
+  "ex": "You need more context to understand the joke.",
+  "exfa": "برای فهمیدن این جوک به بافت بیشتری نیاز داری."
  },
  {
   "i": 3599,
@@ -29731,8 +29731,8 @@
   "en": "generation",
   "fa": "نسل / تولید",
   "cat": "people",
-  "ex": "Do you remember that generation?",
-  "exfa": "آن نسل را یادت هست؟"
+  "ex": "This tradition has passed through many generations.",
+  "exfa": "این سنت از میان چندین نسل عبور کرده است."
  },
  {
   "i": 3619,
@@ -29779,8 +29779,8 @@
   "en": "himself",
   "fa": "خودش / خود",
   "cat": "noun",
-  "ex": "The himself changed everything for us.",
-  "exfa": "آن خودش همه چیز را برای ما عوض کرد."
+  "ex": "He fixed the car himself.",
+  "exfa": "او خودش ماشین را تعمیر کرد."
  },
  {
   "i": 3625,
@@ -29843,8 +29843,8 @@
   "en": "diamond",
   "fa": "الماس",
   "cat": "noun",
-  "ex": "We talked about the diamond for an hour.",
-  "exfa": "یک ساعت درباره‌ی الماس حرف زدیم."
+  "ex": "He proposed with a diamond ring.",
+  "exfa": "او با یک انگشتر الماس خواستگاری کرد."
  },
  {
   "i": 3633,
@@ -30011,8 +30011,8 @@
   "en": "pocket",
   "fa": "جیب / کیسه کوچک",
   "cat": "clothes",
-  "ex": "Do you remember that pocket?",
-  "exfa": "آن جیب را یادت هست؟"
+  "ex": "He put his keys in his pocket.",
+  "exfa": "او کلیدهایش را در جیبش گذاشت."
  },
  {
   "i": 3654,
@@ -30400,8 +30400,8 @@
   "en": "labor",
   "fa": "کار / نیروی کار",
   "cat": "work",
-  "ex": "I need a new labor for my work.",
-  "exfa": "برای کارم یک کار تازه لازم دارم."
+  "ex": "The factory needs more cheap labor.",
+  "exfa": "کارخانه به نیروی کار ارزان‌تری نیاز دارد."
  },
  {
   "i": 3702,
@@ -30592,8 +30592,8 @@
   "en": "orange",
   "fa": "نارنجی / پرتقال",
   "cat": "food",
-  "ex": "The orange changed everything for us.",
-  "exfa": "آن نارنجی همه چیز را برای ما عوض کرد."
+  "ex": "She peeled an orange for breakfast.",
+  "exfa": "او برای صبحانه یک پرتقال پوست کند."
  },
  {
   "i": 3725,
@@ -30632,8 +30632,8 @@
   "en": "guitar",
   "fa": "گیتار",
   "cat": "music",
-  "ex": "The guitar changed everything for us.",
-  "exfa": "آن گیتار همه چیز را برای ما عوض کرد."
+  "ex": "He plays guitar in a local band.",
+  "exfa": "او در یک گروه محلی گیتار می‌زند."
  },
  {
   "i": 3730,
@@ -30884,8 +30884,8 @@
   "en": "corner",
   "fa": "گوشه / کنج",
   "cat": "noun",
-  "ex": "The corner changed everything for us.",
-  "exfa": "آن گوشه همه چیز را برای ما عوض کرد."
+  "ex": "The store is on the corner of the street.",
+  "exfa": "مغازه گوشه خیابان است."
  },
  {
   "i": 3760,
@@ -30964,8 +30964,8 @@
   "en": "quarter",
   "fa": "ربع / سه‌ماهه",
   "cat": "noun",
-  "ex": "The quarter changed everything for us.",
-  "exfa": "آن ربع همه چیز را برای ما عوض کرد."
+  "ex": "It's a quarter past six.",
+  "exfa": "ساعت شش و ربع است."
  },
  {
   "i": 3770,
@@ -31052,8 +31052,8 @@
   "en": "chain",
   "fa": "زنجیر / سلسله",
   "cat": "noun",
-  "ex": "This chain is very important to me.",
-  "exfa": "این زنجیر برای من خیلی مهم است."
+  "ex": "She wore a gold chain around her neck.",
+  "exfa": "او یک زنجیر طلا به گردنش انداخته بود."
  },
  {
   "i": 3781,
@@ -31170,18 +31170,18 @@
  {
   "i": 3795,
   "en": "inch",
-  "fa": "اینچ / فشار دادن",
+  "fa": "اینچ / آرام‌آرام حرکت کردن",
   "cat": "noun",
-  "ex": "This inch is very important to me.",
-  "exfa": "این اینچ برای من خیلی مهم است."
+  "ex": "The screen is six inches wide.",
+  "exfa": "صفحه شش اینچ عرض دارد."
  },
  {
   "i": 3796,
   "en": "attack",
   "fa": "حمله / حمله کردن",
   "cat": "verb",
-  "ex": "Learning to attack takes time and practice.",
-  "exfa": "حمله زمان و تمرین می‌خواهد."
+  "ex": "The dog will attack if you get too close.",
+  "exfa": "اگر خیلی نزدیک شوی، سگ حمله می‌کند."
  },
  {
   "i": 3797,
@@ -31300,16 +31300,16 @@
   "en": "dollar",
   "fa": "دلار",
   "cat": "money",
-  "ex": "I need a new dollar for my work.",
-  "exfa": "برای کارم یک دلار تازه لازم دارم."
+  "ex": "The book costs ten dollars.",
+  "exfa": "این کتاب ده دلار قیمت دارد."
  },
  {
   "i": 3812,
   "en": "camp",
   "fa": "اردو / کمپ",
   "cat": "noun",
-  "ex": "We talked about the camp for an hour.",
-  "exfa": "یک ساعت درباره‌ی اردو حرف زدیم."
+  "ex": "The kids went to summer camp last week.",
+  "exfa": "بچه‌ها هفته پیش به اردوی تابستانی رفتند."
  },
  {
   "i": 3813,
@@ -31372,8 +31372,8 @@
   "en": "fill",
   "fa": "پر کردن / پر شدن",
   "cat": "verb",
-  "ex": "Learning to fill takes time and practice.",
-  "exfa": "پر کردن زمان و تمرین می‌خواهد."
+  "ex": "Please fill the glass with water.",
+  "exfa": "لطفاً لیوان را با آب پر کن."
  },
  {
   "i": 3821,
@@ -31428,8 +31428,8 @@
   "en": "chart",
   "fa": "نمودار / نقشه",
   "cat": "noun",
-  "ex": "We talked about the chart for an hour.",
-  "exfa": "یک ساعت درباره‌ی نمودار حرف زدیم."
+  "ex": "The chart shows sales for the last five years.",
+  "exfa": "نمودار فروش پنج سال گذشته را نشان می‌دهد."
  },
  {
   "i": 3828,
@@ -31548,8 +31548,8 @@
   "en": "assistant",
   "fa": "دستیار / کمک",
   "cat": "adj",
-  "ex": "He looked assistant after the meeting.",
-  "exfa": "بعد از جلسه دستیار به نظر می‌رسید."
+  "ex": "My assistant scheduled all my meetings this week.",
+  "exfa": "دستیارم همه‌ی جلسات این هفته‌ام را برنامه‌ریزی کرد."
  },
  {
   "i": 3843,
@@ -31684,8 +31684,8 @@
   "en": "golden",
   "fa": "طلایی / درخشان",
   "cat": "adj",
-  "ex": "The golden changed everything for us.",
-  "exfa": "آن طلایی همه چیز را برای ما عوض کرد."
+  "ex": "The sunset painted the sky golden.",
+  "exfa": "غروب آفتاب آسمان را طلایی کرد."
  },
  {
   "i": 3860,
@@ -31812,7 +31812,7 @@
   "en": "theatre",
   "fa": "تئاتر / سالن تماشا",
   "cat": "movie",
-  "ex": "This theatre is very important to me.",
+  "ex": "The actors rehearsed at the theatre all day.",
   "exfa": "این تئاتر برای من خیلی مهم است."
  },
  {
@@ -31952,8 +31952,8 @@
   "en": "mouse",
   "fa": "موش / ماوس",
   "cat": "tech",
-  "ex": "We talked about the mouse for an hour.",
-  "exfa": "یک ساعت درباره‌ی موش حرف زدیم."
+  "ex": "My mouse stopped working this morning.",
+  "exfa": "ماوس من امروز صبح از کار افتاد."
  },
  {
   "i": 3893,
@@ -32016,16 +32016,16 @@
   "en": "false",
   "fa": "دروغ / غلط",
   "cat": "adj",
-  "ex": "The weather was very false yesterday.",
-  "exfa": "دیروز هوا خیلی دروغ بود."
+  "ex": "That statement is completely false.",
+  "exfa": "آن جمله کاملاً غلط است."
  },
  {
   "i": 3901,
   "en": "flower",
   "fa": "گل",
   "cat": "nature",
-  "ex": "I need a new flower for my work.",
-  "exfa": "برای کارم یک گل تازه لازم دارم."
+  "ex": "She picked a flower from the garden.",
+  "exfa": "او یک گل از باغچه چید."
  },
  {
   "i": 3902,
@@ -32168,8 +32168,8 @@
   "en": "flag",
   "fa": "پرچم / علم",
   "cat": "noun",
-  "ex": "The flag changed everything for us.",
-  "exfa": "آن پرچم همه چیز را برای ما عوض کرد."
+  "ex": "The flag was flying above the building.",
+  "exfa": "پرچم بالای ساختمان در اهتزاز بود."
  },
  {
   "i": 3920,
@@ -32192,8 +32192,8 @@
   "en": "advantage",
   "fa": "مزیت / سود",
   "cat": "noun",
-  "ex": "We talked about the advantage for an hour.",
-  "exfa": "یک ساعت درباره‌ی مزیت حرف زدیم."
+  "ex": "Speaking two languages gives you a big advantage.",
+  "exfa": "به دو زبان صحبت کردن یک مزیت بزرگ برایت است."
  },
  {
   "i": 3923,
@@ -32256,8 +32256,8 @@
   "en": "atom",
   "fa": "اتم / ذره",
   "cat": "noun",
-  "ex": "This atom is very important to me.",
-  "exfa": "این اتم برای من خیلی مهم است."
+  "ex": "An atom is the smallest unit of matter.",
+  "exfa": "اتم کوچک‌ترین واحد ماده است."
  },
  {
   "i": 3931,
@@ -32328,8 +32328,8 @@
   "en": "straight",
   "fa": "صاف / راست",
   "cat": "noun",
-  "ex": "The straight changed everything for us.",
-  "exfa": "آن صاف همه چیز را برای ما عوض کرد."
+  "ex": "Walk straight and turn left at the corner.",
+  "exfa": "مستقیم برو و سر پیچ به چپ بپیچ."
  },
  {
   "i": 3940,
@@ -32576,8 +32576,8 @@
   "en": "truck",
   "fa": "کامیون / تریلی",
   "cat": "car",
-  "ex": "The truck changed everything for us.",
-  "exfa": "آن کامیون همه چیز را برای ما عوض کرد."
+  "ex": "The truck delivered furniture to our house.",
+  "exfa": "کامیون مبلمان را به خانه‌ی ما تحویل داد."
  },
  {
   "i": 3970,
@@ -32708,8 +32708,8 @@
   "en": "lack",
   "fa": "کمبود / فقدان",
   "cat": "noun",
-  "ex": "This lack is very important to me.",
-  "exfa": "این کمبود برای من خیلی مهم است."
+  "ex": "The project failed due to a lack of money.",
+  "exfa": "پروژه به‌خاطر کمبود پول شکست خورد."
  },
  {
   "i": 3986,
@@ -33004,8 +33004,8 @@
   "en": "frank",
   "fa": "صریح / بی‌پرده",
   "cat": "noun",
-  "ex": "I need a new frank for my work.",
-  "exfa": "برای کارم یک صریح تازه لازم دارم."
+  "ex": "To be frank, I don't like this plan.",
+  "exfa": "صادقانه بگویم، این نقشه را دوست ندارم."
  },
  {
   "i": 4022,
@@ -33028,8 +33028,8 @@
   "en": "blow",
   "fa": "دمیدن / ضربه",
   "cat": "verb",
-  "ex": "Learning to blow takes time and practice.",
-  "exfa": "دمیدن زمان و تمرین می‌خواهد."
+  "ex": "Please blow out the candles now.",
+  "exfa": "لطفاً الان شمع‌ها را فوت کن."
  },
  {
   "i": 4025,
@@ -33124,8 +33124,8 @@
   "en": "expression",
   "fa": "بیان / اظهار",
   "cat": "noun",
-  "ex": "I need a new expression for my work.",
-  "exfa": "برای کارم یک بیان تازه لازم دارم."
+  "ex": "Her face had a worried expression.",
+  "exfa": "روی صورتش یک حالت نگران بود."
  },
  {
   "i": 4037,
@@ -33280,8 +33280,8 @@
   "en": "apartment",
   "fa": "آپارتمان / خانه",
   "cat": "house",
-  "ex": "This apartment is very important to me.",
-  "exfa": "این آپارتمان برای من خیلی مهم است."
+  "ex": "They just moved into a small apartment downtown.",
+  "exfa": "آن‌ها به‌تازگی به یک آپارتمان کوچک در مرکز شهر نقل مکان کردند."
  },
  {
   "i": 4056,
@@ -33436,8 +33436,8 @@
   "en": "bath",
   "fa": "حمام / غسل",
   "cat": "noun",
-  "ex": "The bath changed everything for us.",
-  "exfa": "آن حمام همه چیز را برای ما عوض کرد."
+  "ex": "She gave the baby a warm bath.",
+  "exfa": "او به نوزاد یک حمام گرم داد."
  },
  {
   "i": 4075,
@@ -33492,7 +33492,7 @@
   "en": "theater",
   "fa": "تئاتر / سینما",
   "cat": "movie",
-  "ex": "I need a new theater for my work.",
+  "ex": "We watched a new movie at the theater.",
   "exfa": "برای کارم یک تئاتر تازه لازم دارم."
  },
  {
@@ -33644,8 +33644,8 @@
   "en": "birthday",
   "fa": "روز تولد",
   "cat": "time",
-  "ex": "This birthday is very important to me.",
-  "exfa": "این روز تولد برای من خیلی مهم است."
+  "ex": "Today is my sister's birthday.",
+  "exfa": "امروز تولد خواهرم است."
  },
  {
   "i": 4101,
@@ -33668,8 +33668,8 @@
   "en": "banking",
   "fa": "بانکی / خدمات بانک",
   "cat": "money",
-  "ex": "Do you remember that banking?",
-  "exfa": "آن بانکی را یادت هست؟"
+  "ex": "She works in the banking industry.",
+  "exfa": "او در صنعت بانکی کار می‌کند."
  },
  {
   "i": 4104,
@@ -33984,8 +33984,8 @@
   "en": "mom",
   "fa": "مادر",
   "cat": "people",
-  "ex": "We talked about the mom for an hour.",
-  "exfa": "یک ساعت درباره‌ی مادر حرف زدیم."
+  "ex": "My mom cooks dinner every night.",
+  "exfa": "مادرم هر شب شام درست می‌کند."
  },
  {
   "i": 4143,
@@ -34229,8 +34229,8 @@
   "en": "hunter",
   "fa": "شکارچی",
   "cat": "noun",
-  "ex": "I need a new hunter for my work.",
-  "exfa": "برای کارم یک شکارچی تازه لازم دارم."
+  "ex": "The hunter followed the deer's tracks.",
+  "exfa": "شکارچی رد پای گوزن را دنبال کرد."
  },
  {
   "i": 4172,
@@ -34245,8 +34245,8 @@
   "en": "lady",
   "fa": "خانم",
   "cat": "people",
-  "ex": "Do you remember that lady?",
-  "exfa": "آن خانم را یادت هست؟"
+  "ex": "A kind lady helped me find my way.",
+  "exfa": "یک خانم مهربان به من کمک کرد راهم را پیدا کنم."
  },
  {
   "i": 4174,
@@ -34261,8 +34261,8 @@
   "en": "chairman",
   "fa": "رئیس",
   "cat": "work",
-  "ex": "This chairman is very important to me.",
-  "exfa": "این رئیس برای من خیلی مهم است."
+  "ex": "The chairman opened the meeting with a short speech.",
+  "exfa": "رئیس هیئت‌مدیره جلسه را با یک سخنرانی کوتاه شروع کرد."
  },
  {
   "i": 4176,
@@ -34517,8 +34517,8 @@
   "en": "junior",
   "fa": "جوان‌تر / کمتر ارشد",
   "cat": "people",
-  "ex": "I need a new junior for my work.",
-  "exfa": "برای کارم یک جوان‌تر تازه لازم دارم."
+  "ex": "She's a junior manager at the bank.",
+  "exfa": "او یک مدیر سطح پایین‌تر در بانک است."
  },
  {
   "i": 4207,
@@ -34589,8 +34589,8 @@
   "en": "mine",
   "fa": "معدن / مال من",
   "cat": "noun",
-  "ex": "This mine is very important to me.",
-  "exfa": "این معدن برای من خیلی مهم است."
+  "ex": "This book is mine, not yours.",
+  "exfa": "این کتاب مال من است، نه مال تو."
  },
  {
   "i": 4216,
@@ -34645,16 +34645,16 @@
   "en": "soccer",
   "fa": "فوتبال",
   "cat": "sport",
-  "ex": "We talked about the soccer for an hour.",
-  "exfa": "یک ساعت درباره‌ی فوتبال حرف زدیم."
+  "ex": "The kids play soccer in the park.",
+  "exfa": "بچه‌ها در پارک فوتبال بازی می‌کنند."
  },
  {
   "i": 4223,
   "en": "math",
   "fa": "ریاضیات",
   "cat": "school",
-  "ex": "Do you remember that math?",
-  "exfa": "آن ریاضیات را یادت هست؟"
+  "ex": "I have math class every Monday.",
+  "exfa": "من هر دوشنبه کلاس ریاضی دارم."
  },
  {
   "i": 4224,
@@ -34789,8 +34789,8 @@
   "en": "ahead",
   "fa": "جلو / پیش",
   "cat": "adv",
-  "ex": "This ahead is very important to me.",
-  "exfa": "این جلو برای من خیلی مهم است."
+  "ex": "Look ahead before you cross the street.",
+  "exfa": "قبل از عبور از خیابان جلوی خودت را نگاه کن."
  },
  {
   "i": 4241,
@@ -35085,8 +35085,8 @@
   "en": "bonus",
   "fa": "پاداش / جایزه",
   "cat": "noun",
-  "ex": "I need a new bonus for my work.",
-  "exfa": "برای کارم یک پاداش تازه لازم دارم."
+  "ex": "Employees got a bonus at the end of the year.",
+  "exfa": "کارمندان در پایان سال یک پاداش گرفتند."
  },
  {
   "i": 4277,
@@ -35449,8 +35449,8 @@
   "en": "indeed",
   "fa": "واقعاً / درست است",
   "cat": "adv",
-  "ex": "Learning to indeed takes time and practice.",
-  "exfa": "واقعاً زمان و تمرین می‌خواهد."
+  "ex": "It was, indeed, a beautiful wedding.",
+  "exfa": "واقعاً، یک عروسی زیبا بود."
  },
  {
   "i": 4321,
@@ -35585,8 +35585,8 @@
   "en": "spot",
   "fa": "نقطه / لکه",
   "cat": "noun",
-  "ex": "We talked about the spot for an hour.",
-  "exfa": "یک ساعت درباره‌ی نقطه حرف زدیم."
+  "ex": "We found a quiet spot near the river.",
+  "exfa": "ما یک جای آرام نزدیک رودخانه پیدا کردیم."
  },
  {
   "i": 4338,
@@ -35781,8 +35781,8 @@
   "en": "influence",
   "fa": "تأثیر / نفوذ",
   "cat": "noun",
-  "ex": "I need a new influence for my work.",
-  "exfa": "برای کارم یک تأثیر تازه لازم دارم."
+  "ex": "Her parents had a big influence on her career.",
+  "exfa": "والدینش تأثیر بزرگی روی شغلش داشتند."
  },
  {
   "i": 4362,
@@ -35805,8 +35805,8 @@
   "en": "importance",
   "fa": "اهمیت / عظمت",
   "cat": "noun",
-  "ex": "The importance changed everything for us.",
-  "exfa": "آن اهمیت همه چیز را برای ما عوض کرد."
+  "ex": "Teachers stress the importance of reading daily.",
+  "exfa": "معلم‌ها بر اهمیت مطالعه‌ی روزانه تأکید می‌کنند."
  },
  {
   "i": 4365,
@@ -35893,8 +35893,8 @@
   "en": "bedroom",
   "fa": "اتاق خواب",
   "cat": "house",
-  "ex": "This bedroom is very important to me.",
-  "exfa": "این اتاق خواب برای من خیلی مهم است."
+  "ex": "My bedroom has a big window.",
+  "exfa": "اتاق خواب من یک پنجره بزرگ دارد."
  },
  {
   "i": 4376,
@@ -35917,8 +35917,8 @@
   "en": "hole",
   "fa": "سوراخ",
   "cat": "noun",
-  "ex": "Do you remember that hole?",
-  "exfa": "آن سوراخ را یادت هست؟"
+  "ex": "There is a small hole in my sock.",
+  "exfa": "یک سوراخ کوچک در جورابم هست."
  },
  {
   "i": 4379,
@@ -35933,8 +35933,8 @@
   "en": "ride",
   "fa": "سوار شدن / سفر",
   "cat": "verb",
-  "ex": "Learning to ride takes time and practice.",
-  "exfa": "سوار شدن زمان و تمرین می‌خواهد."
+  "ex": "I ride my bicycle to school every day.",
+  "exfa": "من هر روز با دوچرخه‌ام به مدرسه می‌روم."
  },
  {
   "i": 4381,
@@ -36301,8 +36301,8 @@
   "en": "euro",
   "fa": "یورو",
   "cat": "money",
-  "ex": "This euro is very important to me.",
-  "exfa": "این یورو برای من خیلی مهم است."
+  "ex": "The ticket costs about fifty euros.",
+  "exfa": "بلیت حدود پنجاه یورو قیمت دارد."
  },
  {
   "i": 4426,
@@ -36349,8 +36349,8 @@
   "en": "cap",
   "fa": "کلاه / درپوش",
   "cat": "clothes",
-  "ex": "I need a new cap for my work.",
-  "exfa": "برای کارم یک کلاه تازه لازم دارم."
+  "ex": "He wore a blue cap to the game.",
+  "exfa": "او یک کلاه آبی به بازی زد."
  },
  {
   "i": 4432,
@@ -36413,8 +36413,8 @@
   "en": "wheel",
   "fa": "چرخ",
   "cat": "car",
-  "ex": "The wheel changed everything for us.",
-  "exfa": "آن چرخ همه چیز را برای ما عوض کرد."
+  "ex": "One wheel of the bike is flat.",
+  "exfa": "یکی از چرخ‌های دوچرخه پنچر است."
  },
  {
   "i": 4440,
@@ -36477,8 +36477,8 @@
   "en": "angel",
   "fa": "فرشته",
   "cat": "noun",
-  "ex": "We talked about the angel for an hour.",
-  "exfa": "یک ساعت درباره‌ی فرشته حرف زدیم."
+  "ex": "In the story, an angel saves the child.",
+  "exfa": "در داستان، یک فرشته کودک را نجات می‌دهد."
  },
  {
   "i": 4448,
@@ -36777,8 +36777,8 @@
   "en": "lane",
   "fa": "خیابان کوچک / راهرو",
   "cat": "noun",
-  "ex": "The lane changed everything for us.",
-  "exfa": "آن خیابان کوچک همه چیز را برای ما عوض کرد."
+  "ex": "Turn right into the narrow lane.",
+  "exfa": "به سمت راست به آن خیابان کوچک بپیچ."
  },
  {
   "i": 4485,
@@ -36905,8 +36905,8 @@
   "en": "concern",
   "fa": "نگرانی / مربوط بودن",
   "cat": "noun",
-  "ex": "This concern is very important to me.",
-  "exfa": "این نگرانی برای من خیلی مهم است."
+  "ex": "Pollution is a growing concern in the city.",
+  "exfa": "آلودگی یک نگرانی رو به رشد در شهر است."
  },
  {
   "i": 4501,
@@ -36985,8 +36985,8 @@
   "en": "coach",
   "fa": "مربی / اتوبوس",
   "cat": "sport",
-  "ex": "This coach is very important to me.",
-  "exfa": "این مربی برای من خیلی مهم است."
+  "ex": "Our soccer coach trains us every Tuesday.",
+  "exfa": "مربی فوتبال ما هر سه‌شنبه به ما تمرین می‌دهد."
  },
  {
   "i": 4511,
@@ -37017,8 +37017,8 @@
   "en": "audience",
   "fa": "مخاطبین / تماشاگران",
   "cat": "movie",
-  "ex": "The audience changed everything for us.",
-  "exfa": "آن مخاطبین همه چیز را برای ما عوض کرد."
+  "ex": "The audience clapped loudly after the show.",
+  "exfa": "تماشاگران بعد از نمایش با صدای بلند دست زدند."
  },
  {
   "i": 4515,
@@ -37193,7 +37193,7 @@
   "en": "indicate",
   "fa": "نشان دادن / اشاره",
   "cat": "verb",
-  "ex": "I need a new indicate for my work.",
+  "ex": "The red light indicates the machine is off.",
   "exfa": "برای کارم یک نشان دادن تازه لازم دارم."
  },
  {
@@ -37201,8 +37201,8 @@
   "en": "blonde",
   "fa": "بلوند / طلایی",
   "cat": "noun",
-  "ex": "We talked about the blonde for an hour.",
-  "exfa": "یک ساعت درباره‌ی بلوند حرف زدیم."
+  "ex": "Her hair turned blonde after the summer sun.",
+  "exfa": "موهایش بعد از آفتاب تابستان بلوند شد."
  },
  {
   "i": 4538,
@@ -37433,8 +37433,8 @@
   "en": "anyway",
   "fa": "به‌هر‌حال",
   "cat": "adv",
-  "ex": "I need a new anyway for my work.",
-  "exfa": "برای کارم یک به‌هر‌حال تازه لازم دارم."
+  "ex": "It was raining, but we went out anyway.",
+  "exfa": "باران می‌بارید، ولی به‌هرحال بیرون رفتیم."
  },
  {
   "i": 4567,
@@ -37497,8 +37497,8 @@
   "en": "prince",
   "fa": "شاهزاده",
   "cat": "people",
-  "ex": "The prince changed everything for us.",
-  "exfa": "آن شاهزاده همه چیز را برای ما عوض کرد."
+  "ex": "The prince will become king one day.",
+  "exfa": "شاهزاده روزی پادشاه خواهد شد."
  },
  {
   "i": 4575,
@@ -37521,8 +37521,8 @@
   "en": "anywhere",
   "fa": "هر‌جا",
   "cat": "adv",
-  "ex": "We talked about the anywhere for an hour.",
-  "exfa": "یک ساعت درباره‌ی هر‌جا حرف زدیم."
+  "ex": "You can sit anywhere you like.",
+  "exfa": "می‌توانی هرجا که دوست داری بنشینی."
  },
  {
   "i": 4578,
@@ -37609,8 +37609,8 @@
   "en": "elementary",
   "fa": "ابتدایی / پایه‌ای",
   "cat": "adj",
-  "ex": "Do you remember that elementary?",
-  "exfa": "آن ابتدایی را یادت هست؟"
+  "ex": "My son goes to elementary school.",
+  "exfa": "پسرم به مدرسه ابتدایی می‌رود."
  },
  {
   "i": 4589,
@@ -37825,8 +37825,8 @@
   "en": "highway",
   "fa": "جاده اصلی",
   "cat": "car",
-  "ex": "This highway is very important to me.",
-  "exfa": "این جاده اصلی برای من خیلی مهم است."
+  "ex": "We drove for hours on the highway.",
+  "exfa": "ما ساعت‌ها در جاده‌ی اصلی رانندگی کردیم."
  },
  {
   "i": 4616,
@@ -37977,8 +37977,8 @@
   "en": "chocolate",
   "fa": "شکلات",
   "cat": "food",
-  "ex": "The chocolate changed everything for us.",
-  "exfa": "آن شکلات همه چیز را برای ما عوض کرد."
+  "ex": "She gave me a box of chocolate.",
+  "exfa": "او یک جعبه شکلات به من داد."
  },
  {
   "i": 4635,
@@ -38222,8 +38222,8 @@
   "en": "concert",
   "fa": "کنسرت",
   "cat": "music",
-  "ex": "The concert changed everything for us.",
-  "exfa": "آن کنسرت همه چیز را برای ما عوض کرد."
+  "ex": "We saw an amazing concert last night.",
+  "exfa": "ما دیشب یک کنسرت فوق‌العاده دیدیم."
  },
  {
   "i": 4665,
@@ -38358,8 +38358,8 @@
   "en": "mouth",
   "fa": "دهان",
   "cat": "body",
-  "ex": "I need a new mouth for my work.",
-  "exfa": "برای کارم یک دهان تازه لازم دارم."
+  "ex": "Open your mouth and say ah.",
+  "exfa": "دهانت را باز کن و بگو آه."
  },
  {
   "i": 4682,
@@ -39019,8 +39019,8 @@
   "en": "bowl",
   "fa": "کاسه / کپ",
   "cat": "food",
-  "ex": "Do you remember that bowl?",
-  "exfa": "آن کاسه را یادت هست؟"
+  "ex": "He ate a bowl of soup for lunch.",
+  "exfa": "او یک کاسه سوپ برای ناهار خورد."
  },
  {
   "i": 4764,
@@ -39155,8 +39155,8 @@
   "en": "paint",
   "fa": "رنگ / نقاشی کردن",
   "cat": "verb",
-  "ex": "Learning to paint takes time and practice.",
-  "exfa": "رنگ زمان و تمرین می‌خواهد."
+  "ex": "She likes to paint pictures of flowers.",
+  "exfa": "او دوست دارد تابلوهای گل نقاشی کند."
  },
  {
   "i": 4781,
@@ -39559,8 +39559,8 @@
   "en": "gray",
   "fa": "خاکستری",
   "cat": "noun",
-  "ex": "This gray is very important to me.",
-  "exfa": "این خاکستری برای من خیلی مهم است."
+  "ex": "The sky turned gray before the storm.",
+  "exfa": "آسمان قبل از طوفان خاکستری شد."
  },
  {
   "i": 4831,
@@ -39663,16 +39663,16 @@
   "en": "labour",
   "fa": "کار / رنج",
   "cat": "noun",
-  "ex": "Do you remember that labour?",
-  "exfa": "آن کار را یادت هست؟"
+  "ex": "Farming requires hard physical labour.",
+  "exfa": "کشاورزی به کار سخت جسمی نیاز دارد."
  },
  {
   "i": 4844,
   "en": "hate",
   "fa": "نفرت / متنفر بودن",
   "cat": "feeling",
-  "ex": "Learning to hate takes time and practice.",
-  "exfa": "نفرت زمان و تمرین می‌خواهد."
+  "ex": "I hate waking up early on weekends.",
+  "exfa": "من از زود بیدار شدن در آخر هفته‌ها متنفرم."
  },
  {
   "i": 4845,
@@ -39971,8 +39971,8 @@
   "en": "contest",
   "fa": "مسابقه / معترض شدن",
   "cat": "noun",
-  "ex": "I need a new contest for my work.",
-  "exfa": "برای کارم یک مسابقه تازه لازم دارم."
+  "ex": "She won first place in the art contest.",
+  "exfa": "او در مسابقه هنری مقام اول را برد."
  },
  {
   "i": 4882,
@@ -40107,8 +40107,8 @@
   "en": "yours",
   "fa": "مال تو / تملک شما",
   "cat": "general",
-  "ex": "Do you remember that yours?",
-  "exfa": "آن مال تو را یادت هست؟"
+  "ex": "This pen is yours, not mine.",
+  "exfa": "این خودکار مال توست، نه مال من."
  },
  {
   "i": 4899,
@@ -40207,8 +40207,8 @@
   "en": "dear",
   "fa": "گرامی / عزیز",
   "cat": "noun",
-  "ex": "This dear is very important to me.",
-  "exfa": "این گرامی برای من خیلی مهم است."
+  "ex": "Dear friend, thank you for your help.",
+  "exfa": "دوست عزیز، از کمکت متشکرم."
  },
  {
   "i": 4911,
@@ -40295,8 +40295,8 @@
   "en": "beer",
   "fa": "آبجو",
   "cat": "food",
-  "ex": "I need a new beer for my work.",
-  "exfa": "برای کارم یک آبجو تازه لازم دارم."
+  "ex": "He ordered a cold beer with his dinner.",
+  "exfa": "او با شامش یک آبجوی خنک سفارش داد."
  },
  {
   "i": 4922,
@@ -40327,8 +40327,8 @@
   "en": "swimming",
   "fa": "شنا",
   "cat": "sport",
-  "ex": "This swimming is very important to me.",
-  "exfa": "این شنا برای من خیلی مهم است."
+  "ex": "Swimming is her favorite sport.",
+  "exfa": "شنا ورزش موردعلاقه‌ی اوست."
  },
  {
   "i": 4926,
@@ -40431,8 +40431,8 @@
   "en": "classroom",
   "fa": "کلاس درس",
   "cat": "school",
-  "ex": "Do you remember that classroom?",
-  "exfa": "آن کلاس درس را یادت هست؟"
+  "ex": "Our classroom has twenty desks.",
+  "exfa": "کلاس درس ما بیست میز دارد."
  },
  {
   "i": 4939,
@@ -40567,8 +40567,8 @@
   "en": "drawing",
   "fa": "نقاشی / کشیدن",
   "cat": "noun",
-  "ex": "This drawing is very important to me.",
-  "exfa": "این نقاشی برای من خیلی مهم است."
+  "ex": "My daughter made a drawing of our house.",
+  "exfa": "دخترم یک نقاشی از خانه‌مان کشید."
  },
  {
   "i": 4956,
@@ -40751,8 +40751,8 @@
   "en": "bargain",
   "fa": "معامله ارزان / چانه‌زنی",
   "cat": "money",
-  "ex": "Do you remember that bargain?",
-  "exfa": "آن معامله ارزان را یادت هست؟"
+  "ex": "I found a real bargain at the market today.",
+  "exfa": "امروز در بازار یک معامله‌ی واقعاً ارزان پیدا کردم."
  },
  {
   "i": 4979,
@@ -41047,8 +41047,8 @@
   "en": "cartoon",
   "fa": "کارتون / انیمیشن",
   "cat": "movie",
-  "ex": "This cartoon is very important to me.",
-  "exfa": "این کارتون برای من خیلی مهم است."
+  "ex": "The kids love watching cartoons on Saturday morning.",
+  "exfa": "بچه‌ها دوست دارند صبح شنبه کارتون تماشا کنند."
  },
  {
   "i": 5016,
@@ -41235,8 +41235,8 @@
   "en": "piano",
   "fa": "پیانو",
   "cat": "music",
-  "ex": "Do you remember that piano?",
-  "exfa": "آن پیانو را یادت هست؟"
+  "ex": "She practices piano every afternoon.",
+  "exfa": "او هر بعدازظهر پیانو تمرین می‌کند."
  },
  {
   "i": 5039,
@@ -41539,8 +41539,8 @@
   "en": "teach",
   "fa": "یاد دادن / تدریس کردن",
   "cat": "school",
-  "ex": "Learning to teach takes time and practice.",
-  "exfa": "یاد دادن زمان و تمرین می‌خواهد."
+  "ex": "My father will teach me how to drive.",
+  "exfa": "پدرم به من یاد می‌دهد چطور رانندگی کنم."
  },
  {
   "i": 5077,
@@ -41767,8 +41767,8 @@
   "en": "folder",
   "fa": "پوشه / پوشه‌ی فایل",
   "cat": "tech",
-  "ex": "The folder changed everything for us.",
-  "exfa": "آن پوشه همه چیز را برای ما عوض کرد."
+  "ex": "Save the file in the correct folder.",
+  "exfa": "فایل را در پوشه‌ی درست ذخیره کن."
  },
  {
   "i": 5105,
@@ -41903,8 +41903,8 @@
   "en": "anniversary",
   "fa": "سالگرد / سال‌روز",
   "cat": "time",
-  "ex": "I need a new anniversary for my work.",
-  "exfa": "برای کارم یک سالگرد تازه لازم دارم."
+  "ex": "They celebrated their wedding anniversary at a nice restaurant.",
+  "exfa": "آن‌ها سالگرد ازدواجشان را در یک رستوران خوب جشن گرفتند."
  },
  {
   "i": 5122,
@@ -41943,8 +41943,8 @@
   "en": "accident",
   "fa": "حادثه / تصادف",
   "cat": "car",
-  "ex": "He looked accident after the meeting.",
-  "exfa": "بعد از جلسه حادثه به نظر می‌رسید."
+  "ex": "A car accident blocked the road this morning.",
+  "exfa": "یک تصادف رانندگی امروز صبح جاده را بست."
  },
  {
   "i": 5127,
@@ -42499,8 +42499,8 @@
   "en": "bathroom",
   "fa": "حمام / دستشویی",
   "cat": "house",
-  "ex": "This bathroom is very important to me.",
-  "exfa": "این حمام برای من خیلی مهم است."
+  "ex": "The bathroom is next to the kitchen.",
+  "exfa": "حمام کنار آشپزخانه است."
  },
  {
   "i": 5196,
@@ -42515,8 +42515,8 @@
   "en": "opera",
   "fa": "اپرا / موزیکال",
   "cat": "music",
-  "ex": "We talked about the opera for an hour.",
-  "exfa": "یک ساعت درباره‌ی اپرا حرف زدیم."
+  "ex": "We watched an opera at the theater.",
+  "exfa": "ما یک اپرا در تئاتر تماشا کردیم."
  },
  {
   "i": 5198,
@@ -42603,8 +42603,8 @@
   "en": "blank",
   "fa": "خالی / فارغ",
   "cat": "noun",
-  "ex": "Do you remember that blank?",
-  "exfa": "آن خالی را یادت هست؟"
+  "ex": "Please fill in the blank with your name.",
+  "exfa": "لطفاً جای خالی را با نامت پر کن."
  },
  {
   "i": 5209,
@@ -42675,8 +42675,8 @@
   "en": "aged",
   "fa": "سالخورده / کهن",
   "cat": "noun",
-  "ex": "We talked about the aged for an hour.",
-  "exfa": "یک ساعت درباره‌ی سالخورده حرف زدیم."
+  "ex": "The aged man walked slowly with his cane.",
+  "exfa": "آن مرد سالخورده با عصایش آهسته راه می‌رفت."
  },
  {
   "i": 5218,
@@ -42779,8 +42779,8 @@
   "en": "tight",
   "fa": "تنگ / محکم",
   "cat": "adj",
-  "ex": "This tight is very important to me.",
-  "exfa": "این تنگ برای من خیلی مهم است."
+  "ex": "These jeans feel too tight on me.",
+  "exfa": "این شلوار جین برایم خیلی تنگ است."
  },
  {
   "i": 5231,
@@ -42811,8 +42811,8 @@
   "en": "contrast",
   "fa": "تضاد / کنتراست",
   "cat": "noun",
-  "ex": "The contrast changed everything for us.",
-  "exfa": "آن تضاد همه چیز را برای ما عوض کرد."
+  "ex": "There's a big contrast between the two brothers.",
+  "exfa": "بین آن دو برادر تضاد بزرگی وجود دارد."
  },
  {
   "i": 5235,
@@ -42859,8 +42859,8 @@
   "en": "cute",
   "fa": "خوشگل / دوست‌داشتنی",
   "cat": "adj",
-  "ex": "This cute is very important to me.",
-  "exfa": "این خوشگل برای من خیلی مهم است."
+  "ex": "The puppy is so cute.",
+  "exfa": "آن توله‌سگ خیلی خوشگل است."
  },
  {
   "i": 5241,
@@ -42947,8 +42947,8 @@
   "en": "plane",
   "fa": "هواپیما / صاف",
   "cat": "noun",
-  "ex": "I need a new plane for my work.",
-  "exfa": "برای کارم یک هواپیما تازه لازم دارم."
+  "ex": "Our plane leaves at six in the morning.",
+  "exfa": "هواپیمای ما ساعت شش صبح پرواز می‌کند."
  },
  {
   "i": 5252,
@@ -43071,8 +43071,8 @@
   "en": "bottle",
   "fa": "بطری / خنثی کردن",
   "cat": "food",
-  "ex": "I need a new bottle for my work.",
-  "exfa": "برای کارم یک بطری تازه لازم دارم."
+  "ex": "She filled the bottle with cold water.",
+  "exfa": "او بطری را با آب سرد پر کرد."
  },
  {
   "i": 5267,
@@ -43135,16 +43135,16 @@
   "en": "meat",
   "fa": "گوشت",
   "cat": "food",
-  "ex": "The meat changed everything for us.",
-  "exfa": "آن گوشت همه چیز را برای ما عوض کرد."
+  "ex": "I don't eat meat on Fridays.",
+  "exfa": "من جمعه‌ها گوشت نمی‌خورم."
  },
  {
   "i": 5275,
   "en": "grace",
   "fa": "لطف / زیبایی",
   "cat": "noun",
-  "ex": "This grace is very important to me.",
-  "exfa": "این لطف برای من خیلی مهم است."
+  "ex": "She accepted the criticism with grace.",
+  "exfa": "او انتقاد را با ظرافت پذیرفت."
  },
  {
   "i": 5276,
@@ -43199,8 +43199,8 @@
   "en": "bone",
   "fa": "استخوان",
   "cat": "body",
-  "ex": "We talked about the bone for an hour.",
-  "exfa": "یک ساعت درباره‌ی استخوان حرف زدیم."
+  "ex": "The dog buried its bone in the yard.",
+  "exfa": "سگ استخوانش را در حیاط دفن کرد."
  },
  {
   "i": 5283,
@@ -43255,8 +43255,8 @@
   "en": "inner",
   "fa": "درونی / داخلی",
   "cat": "adj",
-  "ex": "The inner changed everything for us.",
-  "exfa": "آن درونی همه چیز را برای ما عوض کرد."
+  "ex": "Meditation helps you find inner peace.",
+  "exfa": "مدیتیشن به تو کمک می‌کند آرامش درونی پیدا کنی."
  },
  {
   "i": 5290,
@@ -43311,8 +43311,8 @@
   "en": "gate",
   "fa": "دروازه / درب",
   "cat": "noun",
-  "ex": "I need a new gate for my work.",
-  "exfa": "برای کارم یک دروازه تازه لازم دارم."
+  "ex": "Please close the gate when you leave.",
+  "exfa": "لطفاً وقتی می‌روی دروازه را ببند."
  },
  {
   "i": 5297,
@@ -43415,8 +43415,8 @@
   "en": "forever",
   "fa": "تا ابد / برای همیشه",
   "cat": "time",
-  "ex": "The forever changed everything for us.",
-  "exfa": "آن تا ابد همه چیز را برای ما عوض کرد."
+  "ex": "I will remember this trip forever.",
+  "exfa": "من این سفر را تا ابد به یاد خواهم داشت."
  },
  {
   "i": 5310,
@@ -43443,8 +43443,8 @@
   "en": "fantastic",
   "fa": "فوق‌العاده / شگفت‌انگیز",
   "cat": "adj",
-  "ex": "The weather was very fantastic yesterday.",
-  "exfa": "دیروز هوا خیلی فوق‌العاده بود."
+  "ex": "We had a fantastic time at the beach.",
+  "exfa": "ما یک وقت فوق‌العاده در ساحل داشتیم."
  },
  {
   "i": 5313,
@@ -43467,7 +43467,7 @@
   "en": "heating",
   "fa": "گرم کردن / حرارت",
   "cat": "noun",
-  "ex": "This heating is very important to me.",
+  "ex": "We turned on the heating because it's cold.",
   "exfa": "این گرم کردن برای من خیلی مهم است."
  },
  {
@@ -43483,8 +43483,8 @@
   "en": "neck",
   "fa": "گردن",
   "cat": "body",
-  "ex": "We talked about the neck for an hour.",
-  "exfa": "یک ساعت درباره‌ی گردن حرف زدیم."
+  "ex": "She wore a scarf around her neck.",
+  "exfa": "او یک شال دور گردنش پیچیده بود."
  },
  {
   "i": 5318,
@@ -44111,8 +44111,8 @@
   "en": "garage",
   "fa": "گاراژ / مکان پارک خودرو",
   "cat": "house",
-  "ex": "This garage is very important to me.",
-  "exfa": "این گاراژ برای من خیلی مهم است."
+  "ex": "He parks his car in the garage every night.",
+  "exfa": "او هر شب ماشینش را در گاراژ پارک می‌کند."
  },
  {
   "i": 5396,
@@ -44211,8 +44211,8 @@
   "en": "honor",
   "fa": "شرف / افتخار",
   "cat": "noun",
-  "ex": "We talked about the honor for an hour.",
-  "exfa": "یک ساعت درباره‌ی شرف حرف زدیم."
+  "ex": "It's a great honor to meet you.",
+  "exfa": "ملاقات با شما افتخار بزرگی است."
  },
  {
   "i": 5408,
@@ -44243,8 +44243,8 @@
   "en": "pants",
   "fa": "شلوار / نفس نفس زدن",
   "cat": "clothes",
-  "ex": "I need a new pants for my work.",
-  "exfa": "برای کارم یک شلوار تازه لازم دارم."
+  "ex": "He bought new pants for the party.",
+  "exfa": "او برای مهمانی شلوار نو خرید."
  },
  {
   "i": 5412,
@@ -44355,8 +44355,8 @@
   "en": "jet",
   "fa": "جت / هواپیمای سریع",
   "cat": "noun",
-  "ex": "This jet is very important to me.",
-  "exfa": "این جت برای من خیلی مهم است."
+  "ex": "The jet flew high above the clouds.",
+  "exfa": "آن جت بلندتر از ابرها پرواز کرد."
  },
  {
   "i": 5426,
@@ -44371,8 +44371,8 @@
   "en": "crown",
   "fa": "تاج / بهترین بخش",
   "cat": "noun",
-  "ex": "We talked about the crown for an hour.",
-  "exfa": "یک ساعت درباره‌ی تاج حرف زدیم."
+  "ex": "The queen wore a golden crown.",
+  "exfa": "ملکه یک تاج طلایی به سر داشت."
  },
  {
   "i": 5428,
@@ -44531,8 +44531,8 @@
   "en": "cake",
   "fa": "کیک / مالیدن",
   "cat": "food",
-  "ex": "We talked about the cake for an hour.",
-  "exfa": "یک ساعت درباره‌ی کیک حرف زدیم."
+  "ex": "She baked a chocolate cake for the party.",
+  "exfa": "او برای مهمانی یک کیک شکلاتی پخت."
  },
  {
   "i": 5448,
@@ -44635,8 +44635,8 @@
   "en": "cafe",
   "fa": "کافه / قهوه‌خانه",
   "cat": "place",
-  "ex": "This cafe is very important to me.",
-  "exfa": "این کافه برای من خیلی مهم است."
+  "ex": "We met at a small cafe downtown.",
+  "exfa": "ما در یک کافه کوچک در مرکز شهر همدیگر را دیدیم."
  },
  {
   "i": 5461,
@@ -44755,8 +44755,8 @@
   "en": "shoe",
   "fa": "کفش",
   "cat": "clothes",
-  "ex": "This shoe is very important to me.",
-  "exfa": "این کفش برای من خیلی مهم است."
+  "ex": "One of my shoes is missing.",
+  "exfa": "یکی از کفش‌هایم گم شده است."
  },
  {
   "i": 5476,
@@ -44863,8 +44863,8 @@
   "en": "actor",
   "fa": "بازیگر / فاعل",
   "cat": "movie",
-  "ex": "Do you remember that actor?",
-  "exfa": "آن بازیگر را یادت هست؟"
+  "ex": "My favorite actor stars in this new movie.",
+  "exfa": "بازیگر مورد علاقه من در این فیلم جدید بازی می‌کند."
  },
  {
   "i": 5489,
@@ -45199,8 +45199,8 @@
   "en": "worker",
   "fa": "کارگر / کارمند",
   "cat": "work",
-  "ex": "This worker is very important to me.",
-  "exfa": "این کارگر برای من خیلی مهم است."
+  "ex": "The worker fixed the broken pipe.",
+  "exfa": "کارگر لوله‌ی شکسته را تعمیر کرد."
  },
  {
   "i": 5531,
@@ -45455,8 +45455,8 @@
   "en": "purple",
   "fa": "بنفش",
   "cat": "noun",
-  "ex": "I need a new purple for my work.",
-  "exfa": "برای کارم یک بنفش تازه لازم دارم."
+  "ex": "She wore a purple dress to the party.",
+  "exfa": "او یک لباس بنفش به مهمانی پوشید."
  },
  {
   "i": 5562,
@@ -45575,8 +45575,8 @@
   "en": "skill",
   "fa": "مهارت / صلاحیت",
   "cat": "work",
-  "ex": "I need a new skill for my work.",
-  "exfa": "برای کارم یک مهارت تازه لازم دارم."
+  "ex": "Cooking is a useful skill to learn.",
+  "exfa": "آشپزی یک مهارت مفید برای یادگیری است."
  },
  {
   "i": 5577,
@@ -45591,8 +45591,8 @@
   "en": "everyday",
   "fa": "روزمره / هر روز",
   "cat": "adj",
-  "ex": "Do you remember that everyday?",
-  "exfa": "آن روزمره را یادت هست؟"
+  "ex": "Walking is part of my everyday routine.",
+  "exfa": "پیاده‌روی بخشی از روتین روزمره من است."
  },
  {
   "i": 5579,
@@ -45935,8 +45935,8 @@
   "en": "championship",
   "fa": "قهرمانی / مسابقات",
   "cat": "sport",
-  "ex": "I need a new championship for my work.",
-  "exfa": "برای کارم یک قهرمانی تازه لازم دارم."
+  "ex": "Our team won the national championship this year.",
+  "exfa": "تیم ما امسال قهرمانی ملی را برد."
  },
  {
   "i": 5622,
@@ -46243,8 +46243,8 @@
   "en": "okay",
   "fa": "خوب / تأیید",
   "cat": "noun",
-  "ex": "The okay changed everything for us.",
-  "exfa": "آن خوب همه چیز را برای ما عوض کرد."
+  "ex": "Is everything okay with you?",
+  "exfa": "همه چیز برایت خوب است؟"
  },
  {
   "i": 5660,
@@ -46467,8 +46467,8 @@
   "en": "princess",
   "fa": "شاهزاده خانم",
   "cat": "people",
-  "ex": "We talked about the princess for an hour.",
-  "exfa": "یک ساعت درباره‌ی شاهزاده خانم حرف زدیم."
+  "ex": "The princess lived in a tall castle.",
+  "exfa": "شاهزاده خانم در یک قلعه‌ی بلند زندگی می‌کرد."
  },
  {
   "i": 5688,
@@ -46523,8 +46523,8 @@
   "en": "dad",
   "fa": "پدر / آبا",
   "cat": "people",
-  "ex": "The dad changed everything for us.",
-  "exfa": "آن پدر همه چیز را برای ما عوض کرد."
+  "ex": "My dad cooks breakfast every morning.",
+  "exfa": "پدرم هر روز صبح صبحانه درست می‌کند."
  },
  {
   "i": 5695,
@@ -46799,8 +46799,8 @@
   "en": "dust",
   "fa": "گرد و غبار",
   "cat": "noun",
-  "ex": "Do you remember that dust?",
-  "exfa": "آن گرد و غبار را یادت هست؟"
+  "ex": "There's a thick layer of dust on the shelf.",
+  "exfa": "یک لایه‌ی ضخیم از گرد و غبار روی قفسه است."
  },
  {
   "i": 5729,
@@ -47003,8 +47003,8 @@
   "en": "ear",
   "fa": "گوش",
   "cat": "body",
-  "ex": "Do you remember that ear?",
-  "exfa": "آن گوش را یادت هست؟"
+  "ex": "She whispered the secret in his ear.",
+  "exfa": "او راز را در گوشش زمزمه کرد."
  },
  {
   "i": 5754,
@@ -47043,8 +47043,8 @@
   "en": "elsewhere",
   "fa": "جای دیگر",
   "cat": "adv",
-  "ex": "Do you remember that elsewhere?",
-  "exfa": "آن جای دیگر را یادت هست؟"
+  "ex": "If this shop is closed, we'll look elsewhere.",
+  "exfa": "اگر این مغازه بسته باشد، جای دیگری را نگاه می‌کنیم."
  },
  {
   "i": 5759,
@@ -47243,8 +47243,8 @@
   "en": "pizza",
   "fa": "پیتزا",
   "cat": "food",
-  "ex": "Do you remember that pizza?",
-  "exfa": "آن پیتزا را یادت هست؟"
+  "ex": "We ordered a large pizza for dinner.",
+  "exfa": "ما برای شام یک پیتزای بزرگ سفارش دادیم."
  },
  {
   "i": 5784,
@@ -47427,8 +47427,8 @@
   "en": "everybody",
   "fa": "همه / تمام",
   "cat": "noun",
-  "ex": "I need a new everybody for my work.",
-  "exfa": "برای کارم یک همه تازه لازم دارم."
+  "ex": "Everybody enjoyed the party last night.",
+  "exfa": "همه از مهمانی دیشب لذت بردند."
  },
  {
   "i": 5807,
@@ -47563,8 +47563,8 @@
   "en": "globe",
   "fa": "کره‌زمین / جهان",
   "cat": "noun",
-  "ex": "Do you remember that globe?",
-  "exfa": "آن کره‌زمین را یادت هست؟"
+  "ex": "Students found their country on the globe.",
+  "exfa": "دانش‌آموزان کشورشان را روی کره‌زمین پیدا کردند."
  },
  {
   "i": 5824,
@@ -47683,8 +47683,8 @@
   "en": "ghost",
   "fa": "شبح / روح",
   "cat": "noun",
-  "ex": "Do you remember that ghost?",
-  "exfa": "آن شبح را یادت هست؟"
+  "ex": "The kids told scary ghost stories.",
+  "exfa": "بچه‌ها داستان‌های ترسناک درباره شبح تعریف کردند."
  },
  {
   "i": 5839,
@@ -47763,8 +47763,8 @@
   "en": "reporter",
   "fa": "خبرنگار / گزارشگر",
   "cat": "work",
-  "ex": "Do you remember that reporter?",
-  "exfa": "آن خبرنگار را یادت هست؟"
+  "ex": "The reporter asked the mayor several questions.",
+  "exfa": "خبرنگار چند سؤال از شهردار پرسید."
  },
  {
   "i": 5849,
@@ -47779,8 +47779,8 @@
   "en": "cloudy",
   "fa": "ابری / تیره",
   "cat": "weather",
-  "ex": "He looked cloudy after the meeting.",
-  "exfa": "بعد از جلسه ابری به نظر می‌رسید."
+  "ex": "It was cloudy all afternoon today.",
+  "exfa": "امروز بعدازظهر هوا ابری بود."
  },
  {
   "i": 5851,
@@ -47835,7 +47835,7 @@
   "en": "sentence",
   "fa": "جمله / حکم",
   "cat": "talk",
-  "ex": "We talked about the sentence for an hour.",
+  "ex": "Write a sentence using the new word.",
   "exfa": "یک ساعت درباره‌ی جمله حرف زدیم."
  },
  {
@@ -47907,8 +47907,8 @@
   "en": "dancing",
   "fa": "رقصیدن / رقص",
   "cat": "music",
-  "ex": "I need a new dancing for my work.",
-  "exfa": "برای کارم یک رقصیدن تازه لازم دارم."
+  "ex": "They love dancing at weddings.",
+  "exfa": "آنها عاشق رقصیدن در عروسی‌ها هستند."
  },
  {
   "i": 5867,
@@ -48403,8 +48403,8 @@
   "en": "thick",
   "fa": "ضخیم / غلیظ",
   "cat": "noun",
-  "ex": "Do you remember that thick?",
-  "exfa": "آن ضخیم را یادت هست؟"
+  "ex": "The soup was too thick to drink.",
+  "exfa": "سوپ خیلی غلیظ بود که بنوشیم."
  },
  {
   "i": 5929,
@@ -48451,8 +48451,8 @@
   "en": "drum",
   "fa": "طبل / درام",
   "cat": "music",
-  "ex": "The drum changed everything for us.",
-  "exfa": "آن طبل همه چیز را برای ما عوض کرد."
+  "ex": "He plays the drum in a rock band.",
+  "exfa": "او در یک گروه راک طبل می‌زند."
  },
  {
   "i": 5935,
@@ -48691,8 +48691,8 @@
   "en": "smile",
   "fa": "لبخند / لبخند زدن",
   "cat": "verb",
-  "ex": "Learning to smile takes time and practice.",
-  "exfa": "لبخند زمان و تمرین می‌خواهد."
+  "ex": "She always smiles when she sees her dog.",
+  "exfa": "او همیشه وقتی سگش را می‌بیند لبخند می‌زند."
  },
  {
   "i": 5965,
@@ -48715,8 +48715,8 @@
   "en": "indoor",
   "fa": "داخل ساختمان",
   "cat": "adj",
-  "ex": "We talked about the indoor for an hour.",
-  "exfa": "یک ساعت درباره‌ی داخل ساختمان حرف زدیم."
+  "ex": "We have an indoor swimming pool at the gym.",
+  "exfa": "ما در باشگاه یک استخر سرپوشیده داریم."
  },
  {
   "i": 5968,
@@ -48731,8 +48731,8 @@
   "en": "armed",
   "fa": "مسلح / تسلیح شده",
   "cat": "adj",
-  "ex": "The armed changed everything for us.",
-  "exfa": "آن مسلح همه چیز را برای ما عوض کرد."
+  "ex": "Two armed police officers stood by the door.",
+  "exfa": "دو افسر پلیس مسلح کنار در ایستاده بودند."
  },
  {
   "i": 5970,
@@ -48883,8 +48883,8 @@
   "en": "candy",
   "fa": "آب‌نبات / شکلات",
   "cat": "food",
-  "ex": "Do you remember that candy?",
-  "exfa": "آن آب‌نبات را یادت هست؟"
+  "ex": "The children asked for candy at the store.",
+  "exfa": "بچه‌ها در مغازه آب‌نبات خواستند."
  },
  {
   "i": 5989,
@@ -48899,8 +48899,8 @@
   "en": "tiger",
   "fa": "ببر",
   "cat": "animal",
-  "ex": "This tiger is very important to me.",
-  "exfa": "این ببر برای من خیلی مهم است."
+  "ex": "The tiger hunts alone at night.",
+  "exfa": "ببر شب‌ها به تنهایی شکار می‌کند."
  },
  {
   "i": 5991,
@@ -49315,8 +49315,8 @@
   "en": "chest",
   "fa": "سینه / قفسه",
   "cat": "body",
-  "ex": "I need a new chest for my work.",
-  "exfa": "برای کارم یک سینه تازه لازم دارم."
+  "ex": "He felt a sharp pain in his chest.",
+  "exfa": "او یک درد تیز در قفسه‌ی سینه‌اش احساس کرد."
  },
  {
   "i": 6042,
@@ -49379,8 +49379,8 @@
   "en": "herself",
   "fa": "خود او / خودش",
   "cat": "noun",
-  "ex": "The herself changed everything for us.",
-  "exfa": "آن خود او همه چیز را برای ما عوض کرد."
+  "ex": "She made the cake herself.",
+  "exfa": "او کیک را خودش درست کرد."
  },
  {
   "i": 6050,
@@ -49571,8 +49571,8 @@
   "en": "sight",
   "fa": "دید / منظر",
   "cat": "noun",
-  "ex": "Do you remember that sight?",
-  "exfa": "آن دید را یادت هست؟"
+  "ex": "The mountain view was a beautiful sight.",
+  "exfa": "منظره‌ی کوه یک دیدنی زیبا بود."
  },
  {
   "i": 6074,
@@ -49811,8 +49811,8 @@
   "en": "danger",
   "fa": "خطر / تهدید",
   "cat": "noun",
-  "ex": "Do you remember that danger?",
-  "exfa": "آن خطر را یادت هست؟"
+  "ex": "The sign warned of danger ahead.",
+  "exfa": "تابلو از خطر پیش رو هشدار می‌داد."
  },
  {
   "i": 6104,
@@ -49915,8 +49915,8 @@
   "en": "leaf",
   "fa": "برگ",
   "cat": "nature",
-  "ex": "I need a new leaf for my work.",
-  "exfa": "برای کارم یک برگ تازه لازم دارم."
+  "ex": "A yellow leaf fell from the tree.",
+  "exfa": "یک برگ زرد از درخت افتاد."
  },
  {
   "i": 6117,
@@ -50783,8 +50783,8 @@
   "en": "egg",
   "fa": "تخم مرغ",
   "cat": "food",
-  "ex": "The egg changed everything for us.",
-  "exfa": "آن تخم مرغ همه چیز را برای ما عوض کرد."
+  "ex": "I had an egg for breakfast.",
+  "exfa": "من برای صبحانه یک تخم مرغ خوردم."
  },
  {
   "i": 6225,
@@ -51163,8 +51163,8 @@
   "en": "entrance",
   "fa": "ورودی / درگاه",
   "cat": "noun",
-  "ex": "I need a new entrance for my work.",
-  "exfa": "برای کارم یک ورودی تازه لازم دارم."
+  "ex": "Meet me at the entrance of the mall.",
+  "exfa": "در ورودی مرکز خرید من را ببین."
  },
  {
   "i": 6272,
@@ -51729,10 +51729,10 @@
  {
   "i": 6342,
   "en": "hero",
-  "fa": "قهرمان / ایل",
+  "fa": "قهرمان",
   "cat": "noun",
-  "ex": "We talked about the hero for an hour.",
-  "exfa": "یک ساعت درباره‌ی قهرمان حرف زدیم."
+  "ex": "The firefighter was called a hero.",
+  "exfa": "به آن آتش‌نشان قهرمان گفته شد."
  },
  {
   "i": 6343,
@@ -51763,8 +51763,8 @@
   "en": "attitude",
   "fa": "نگرش / حال و هوا",
   "cat": "noun",
-  "ex": "I need a new attitude for my work.",
-  "exfa": "برای کارم یک نگرش تازه لازم دارم."
+  "ex": "She always has a positive attitude at work.",
+  "exfa": "او همیشه نگرش مثبتی در محل کار دارد."
  },
  {
   "i": 6347,
@@ -52059,8 +52059,8 @@
   "en": "mrs",
   "fa": "خانم",
   "cat": "noun",
-  "ex": "Do you remember that mrs?",
-  "exfa": "آن خانم را یادت هست؟"
+  "ex": "Mrs Johnson teaches our English class.",
+  "exfa": "خانم جانسون کلاس انگلیسی ما را تدریس می‌کند."
  },
  {
   "i": 6384,
@@ -52075,8 +52075,8 @@
   "en": "convenience",
   "fa": "راحتی / سهولت",
   "cat": "noun",
-  "ex": "This convenience is very important to me.",
-  "exfa": "این راحتی برای من خیلی مهم است."
+  "ex": "I love the convenience of online shopping.",
+  "exfa": "من راحتی خرید آنلاین را دوست دارم."
  },
  {
   "i": 6386,
@@ -52315,8 +52315,8 @@
   "en": "shoulder",
   "fa": "شانه / تکیه دادن",
   "cat": "body",
-  "ex": "This shoulder is very important to me.",
-  "exfa": "این شانه برای من خیلی مهم است."
+  "ex": "He carried the bag on his shoulder.",
+  "exfa": "او کیف را روی شانه‌اش حمل کرد."
  },
  {
   "i": 6416,
@@ -52395,8 +52395,8 @@
   "en": "doll",
   "fa": "عروسک",
   "cat": "noun",
-  "ex": "This doll is very important to me.",
-  "exfa": "این عروسک برای من خیلی مهم است."
+  "ex": "The little girl carried her favorite doll.",
+  "exfa": "دختر کوچک عروسک مورد علاقه‌اش را حمل کرد."
  },
  {
   "i": 6426,
@@ -52727,8 +52727,8 @@
   "en": "clerk",
   "fa": "کارمند / منشی",
   "cat": "work",
-  "ex": "I need a new clerk for my work.",
-  "exfa": "برای کارم یک کارمند تازه لازم دارم."
+  "ex": "The clerk helped me find the right form.",
+  "exfa": "کارمند به من کمک کرد فرم درست را پیدا کنم."
  },
  {
   "i": 6467,
@@ -52799,8 +52799,8 @@
   "en": "jeans",
   "fa": "شلوار جین",
   "cat": "clothes",
-  "ex": "This jeans is very important to me.",
-  "exfa": "این شلوار جین برای من خیلی مهم است."
+  "ex": "She bought new jeans at the mall.",
+  "exfa": "او در پاساژ یک شلوار جین جدید خرید."
  },
  {
   "i": 6476,
@@ -52951,8 +52951,8 @@
   "en": "careful",
   "fa": "دقیق / احتیاط‌کننده",
   "cat": "adj",
-  "ex": "He looked careful after the meeting.",
-  "exfa": "بعد از جلسه دقیق به نظر می‌رسید."
+  "ex": "Please be careful when you cross the street.",
+  "exfa": "لطفاً وقتی از خیابان رد می‌شوی مراقب باش."
  },
  {
   "i": 6495,
@@ -53551,8 +53551,8 @@
   "en": "lion",
   "fa": "شیر",
   "cat": "animal",
-  "ex": "Do you remember that lion?",
-  "exfa": "آن شیر را یادت هست؟"
+  "ex": "The lion is the king of the jungle.",
+  "exfa": "شیر پادشاه جنگل است."
  },
  {
   "i": 6569,
@@ -53599,8 +53599,8 @@
   "en": "cookie",
   "fa": "کلوچه",
   "cat": "food",
-  "ex": "The cookie changed everything for us.",
-  "exfa": "آن کلوچه همه چیز را برای ما عوض کرد."
+  "ex": "He baked cookies for his classmates.",
+  "exfa": "او برای هم‌کلاسی‌هایش کلوچه پخت."
  },
  {
   "i": 6575,
@@ -53759,16 +53759,16 @@
   "en": "cricket",
   "fa": "کریکت",
   "cat": "sport",
-  "ex": "The cricket changed everything for us.",
-  "exfa": "آن کریکت همه چیز را برای ما عوض کرد."
+  "ex": "Cricket is very popular in India.",
+  "exfa": "کریکت در هند خیلی محبوب است."
  },
  {
   "i": 6595,
   "en": "beef",
   "fa": "گوشت گاو",
   "cat": "food",
-  "ex": "This beef is very important to me.",
-  "exfa": "این گوشت گاو برای من خیلی مهم است."
+  "ex": "We had beef and rice for dinner.",
+  "exfa": "ما برای شام گوشت گاو و برنج خوردیم."
  },
  {
   "i": 6596,
@@ -53871,8 +53871,8 @@
   "en": "crowd",
   "fa": "جمعیت / انبوه",
   "cat": "people",
-  "ex": "Do you remember that crowd?",
-  "exfa": "آن جمعیت را یادت هست؟"
+  "ex": "A large crowd gathered outside the stadium.",
+  "exfa": "جمعیت بزرگی بیرون از استادیوم جمع شدند."
  },
  {
   "i": 6609,
@@ -54076,8 +54076,8 @@
   "en": "knife",
   "fa": "چاقو",
   "cat": "food",
-  "ex": "Do you remember that knife?",
-  "exfa": "آن چاقو را یادت هست؟"
+  "ex": "He cut the bread with a sharp knife.",
+  "exfa": "او نان را با یک چاقوی تیز برید."
  },
  {
   "i": 6634,
@@ -54100,8 +54100,8 @@
   "en": "bookstore",
   "fa": "فروشگاه کتاب",
   "cat": "noun",
-  "ex": "I need a new bookstore for my work.",
-  "exfa": "برای کارم یک فروشگاه کتاب تازه لازم دارم."
+  "ex": "I bought this novel at the bookstore.",
+  "exfa": "من این رمان را از فروشگاه کتاب خریدم."
  },
  {
   "i": 6637,
@@ -54348,8 +54348,8 @@
   "en": "twelve",
   "fa": "دوازده",
   "cat": "noun",
-  "ex": "We talked about the twelve for an hour.",
-  "exfa": "یک ساعت درباره‌ی دوازده حرف زدیم."
+  "ex": "The class has twelve students this year.",
+  "exfa": "امسال کلاس دوازده دانش‌آموز دارد."
  },
  {
   "i": 6668,
@@ -54408,8 +54408,8 @@
   "en": "everywhere",
   "fa": "همه‌جا",
   "cat": "adv",
-  "ex": "The everywhere changed everything for us.",
-  "exfa": "آن همه‌جا همه چیز را برای ما عوض کرد."
+  "ex": "I looked everywhere for my keys.",
+  "exfa": "من همه‌جا دنبال کلیدهایم گشتم."
  },
  {
   "i": 6675,
@@ -55192,8 +55192,8 @@
   "en": "cassette",
   "fa": "کاست / فیلم کاست",
   "cat": "noun",
-  "ex": "We talked about the cassette for an hour.",
-  "exfa": "یک ساعت درباره‌ی کاست حرف زدیم."
+  "ex": "My dad still has old cassette tapes.",
+  "exfa": "پدرم هنوز نوارهای کاست قدیمی دارد."
  },
  {
   "i": 6773,
@@ -55288,8 +55288,8 @@
   "en": "fortune",
   "fa": "ثروت / سرنوشت",
   "cat": "money",
-  "ex": "The fortune changed everything for us.",
-  "exfa": "آن ثروت همه چیز را برای ما عوض کرد."
+  "ex": "He made a fortune selling houses.",
+  "exfa": "او با فروش خانه ثروتی به دست آورد."
  },
  {
   "i": 6785,
@@ -55556,8 +55556,8 @@
   "en": "killer",
   "fa": "قاتل / کشنده",
   "cat": "crime",
-  "ex": "We talked about the killer for an hour.",
-  "exfa": "یک ساعت درباره‌ی قاتل حرف زدیم."
+  "ex": "Police finally caught the killer.",
+  "exfa": "پلیس بالاخره قاتل را دستگیر کرد."
  },
  {
   "i": 6818,
@@ -55620,8 +55620,8 @@
   "en": "corn",
   "fa": "ذرت / غلات",
   "cat": "food",
-  "ex": "This corn is very important to me.",
-  "exfa": "این ذرت برای من خیلی مهم است."
+  "ex": "We grew corn in our garden this summer.",
+  "exfa": "ما این تابستان در باغچه‌مان ذرت کاشتیم."
  },
  {
   "i": 6826,
@@ -56028,8 +56028,8 @@
   "en": "artificial",
   "fa": "مصنوعی",
   "cat": "adj",
-  "ex": "The weather was very artificial yesterday.",
-  "exfa": "دیروز هوا خیلی مصنوعی بود."
+  "ex": "This drink contains no artificial colors.",
+  "exfa": "این نوشیدنی هیچ رنگ مصنوعی ندارد."
  },
  {
   "i": 6877,
@@ -56204,8 +56204,8 @@
   "en": "soup",
   "fa": "سوپ / آش",
   "cat": "food",
-  "ex": "Do you remember that soup?",
-  "exfa": "آن سوپ را یادت هست؟"
+  "ex": "My mom made hot soup for dinner.",
+  "exfa": "مادرم برای شام سوپ داغ درست کرد."
  },
  {
   "i": 6899,
@@ -56308,8 +56308,8 @@
   "en": "nose",
   "fa": "بینی",
   "cat": "body",
-  "ex": "I need a new nose for my work.",
-  "exfa": "برای کارم یک بینی تازه لازم دارم."
+  "ex": "My nose feels blocked when I have a cold.",
+  "exfa": "وقتی سرما می‌خورم بینی‌ام گرفته می‌شود."
  },
  {
   "i": 6912,
@@ -56332,8 +56332,8 @@
   "en": "anymore",
   "fa": "دیگر / بیشتر",
   "cat": "adv",
-  "ex": "The anymore changed everything for us.",
-  "exfa": "آن دیگر همه چیز را برای ما عوض کرد."
+  "ex": "I don't eat fast food anymore.",
+  "exfa": "من دیگر فست‌فود نمی‌خورم."
  },
  {
   "i": 6915,
@@ -56660,8 +56660,8 @@
   "en": "anybody",
   "fa": "هر کسی / کسی",
   "cat": "noun",
-  "ex": "This anybody is very important to me.",
-  "exfa": "این هر کسی برای من خیلی مهم است."
+  "ex": "Is anybody home right now?",
+  "exfa": "الان کسی خانه هست؟"
  },
  {
   "i": 6956,
@@ -56860,8 +56860,8 @@
   "en": "brilliant",
   "fa": "درخشان / عبقری",
   "cat": "adj",
-  "ex": "The weather was very brilliant yesterday.",
-  "exfa": "دیروز هوا خیلی درخشان بود."
+  "ex": "She came up with a brilliant idea for the project.",
+  "exfa": "او یک ایده‌ی درخشان برای پروژه پیدا کرد."
  },
  {
   "i": 6981,
@@ -57276,8 +57276,8 @@
   "en": "comparative",
   "fa": "مقایسه‌ای / نسبی",
   "cat": "adj",
-  "ex": "The weather was very comparative yesterday.",
-  "exfa": "دیروز هوا خیلی مقایسه‌ای بود."
+  "ex": "We did a comparative study of the two schools.",
+  "exfa": "ما یک مطالعه‌ی مقایسه‌ای بین دو مدرسه انجام دادیم."
  },
  {
   "i": 7033,
@@ -57901,8 +57901,8 @@
   "en": "monkey",
   "fa": "میمون",
   "cat": "animal",
-  "ex": "The monkey changed everything for us.",
-  "exfa": "آن میمون همه چیز را برای ما عوض کرد."
+  "ex": "The monkey climbed to the top of the tree.",
+  "exfa": "میمون از درخت بالا رفت."
  },
  {
   "i": 7110,
@@ -58329,8 +58329,8 @@
   "en": "celebration",
   "fa": "جشن / تجلیل",
   "cat": "noun",
-  "ex": "We talked about the celebration for an hour.",
-  "exfa": "یک ساعت درباره‌ی جشن حرف زدیم."
+  "ex": "Her birthday celebration was so much fun.",
+  "exfa": "جشن تولد او خیلی خوش گذشت."
  },
  {
   "i": 7163,
@@ -58553,8 +58553,8 @@
   "en": "cloth",
   "fa": "پارچه / قماش",
   "cat": "noun",
-  "ex": "This cloth is very important to me.",
-  "exfa": "این پارچه برای من خیلی مهم است."
+  "ex": "She wiped the table with a clean cloth.",
+  "exfa": "او میز را با یک پارچه تمیز پاک کرد."
  },
  {
   "i": 7191,
@@ -58993,8 +58993,8 @@
   "en": "toilet",
   "fa": "توالت / دستشویی",
   "cat": "house",
-  "ex": "This toilet is very important to me.",
-  "exfa": "این توالت برای من خیلی مهم است."
+  "ex": "Please clean the toilet before guests arrive.",
+  "exfa": "لطفاً قبل از رسیدن مهمان‌ها توالت را تمیز کن."
  },
  {
   "i": 7246,
@@ -59033,8 +59033,8 @@
   "en": "excited",
   "fa": "هیجان زده / برانگیخته",
   "cat": "feeling",
-  "ex": "He looked excited after the meeting.",
-  "exfa": "بعد از جلسه هیجان زده به نظر می‌رسید."
+  "ex": "She was excited about her birthday party.",
+  "exfa": "او برای مهمانی تولدش هیجان‌زده بود."
  },
  {
   "i": 7251,
@@ -60022,8 +60022,8 @@
   "en": "harvest",
   "fa": "برداشت / حصاد",
   "cat": "noun",
-  "ex": "Do you remember that harvest?",
-  "exfa": "آن برداشت را یادت هست؟"
+  "ex": "Farmers celebrate a good harvest every autumn.",
+  "exfa": "کشاورزان هر پاییز یک برداشت خوب را جشن می‌گیرند."
  },
  {
   "i": 7374,
@@ -60246,8 +60246,8 @@
   "en": "brake",
   "fa": "ترمز / متوقف کردن",
   "cat": "car",
-  "ex": "I need a new brake for my work.",
-  "exfa": "برای کارم یک ترمز تازه لازم دارم."
+  "ex": "She hit the brake to avoid the cat.",
+  "exfa": "او برای اجتناب از گربه ترمز زد."
  },
  {
   "i": 7402,
@@ -60382,8 +60382,8 @@
   "en": "clone",
   "fa": "کلون / کپی",
   "cat": "noun",
-  "ex": "Do you remember that clone?",
-  "exfa": "آن کلون را یادت هست؟"
+  "ex": "Scientists made a clone of the sheep.",
+  "exfa": "دانشمندان یک کلون از آن گوسفند ساختند."
  },
  {
   "i": 7419,
@@ -60634,8 +60634,8 @@
   "en": "daddy",
   "fa": "پدر / آبا",
   "cat": "people",
-  "ex": "The daddy changed everything for us.",
-  "exfa": "آن پدر همه چیز را برای ما عوض کرد."
+  "ex": "The little girl ran to hug her daddy.",
+  "exfa": "دختر کوچک دوید تا بابایش را بغل کند."
  },
  {
   "i": 7450,
@@ -60650,8 +60650,8 @@
   "en": "rabbit",
   "fa": "خرگوش",
   "cat": "animal",
-  "ex": "I need a new rabbit for my work.",
-  "exfa": "برای کارم یک خرگوش تازه لازم دارم."
+  "ex": "The rabbit hid behind the bushes.",
+  "exfa": "خرگوش پشت بوته‌ها پنهان شد."
  },
  {
   "i": 7452,
@@ -60802,8 +60802,8 @@
   "en": "friendship",
   "fa": "دوستی",
   "cat": "people",
-  "ex": "This friendship is very important to me.",
-  "exfa": "این دوستی برای من خیلی مهم است."
+  "ex": "Their friendship has lasted for twenty years.",
+  "exfa": "دوستی آن‌ها بیست سال دوام آورده است."
  },
  {
   "i": 7471,
@@ -60922,8 +60922,8 @@
   "en": "sunshine",
   "fa": "آفتاب",
   "cat": "noun",
-  "ex": "This sunshine is very important to me.",
-  "exfa": "این آفتاب برای من خیلی مهم است."
+  "ex": "The children played happily in the sunshine.",
+  "exfa": "بچه‌ها با خوشحالی زیر آفتاب بازی کردند."
  },
  {
   "i": 7486,
@@ -61066,8 +61066,8 @@
   "en": "adjust",
   "fa": "تنظیم کردن / سازگار کردن",
   "cat": "verb",
-  "ex": "Do you remember that adjust?",
-  "exfa": "آن تنظیم کردن را یادت هست؟"
+  "ex": "Please adjust the chair to fit your height.",
+  "exfa": "لطفاً صندلی را متناسب با قدت تنظیم کن."
  },
  {
   "i": 7504,
@@ -61499,8 +61499,8 @@
   "en": "bench",
   "fa": "نیمکت / صندلی",
   "cat": "noun",
-  "ex": "I need a new bench for my work.",
-  "exfa": "برای کارم یک نیمکت تازه لازم دارم."
+  "ex": "We sat on a bench and watched the sunset.",
+  "exfa": "ما روی یک نیمکت نشستیم و غروب را تماشا کردیم."
  },
  {
   "i": 7557,
@@ -61635,8 +61635,8 @@
   "en": "sheep",
   "fa": "گوسفند",
   "cat": "animal",
-  "ex": "Do you remember that sheep?",
-  "exfa": "آن گوسفند را یادت هست؟"
+  "ex": "The farmer keeps sheep on his land.",
+  "exfa": "کشاورز روی زمینش گوسفند نگه می‌دارد."
  },
  {
   "i": 7574,
@@ -61787,8 +61787,8 @@
   "en": "salad",
   "fa": "سالاد",
   "cat": "food",
-  "ex": "We talked about the salad for an hour.",
-  "exfa": "یک ساعت درباره‌ی سالاد حرف زدیم."
+  "ex": "I made a fresh salad for lunch.",
+  "exfa": "من برای ناهار یک سالاد تازه درست کردم."
  },
  {
   "i": 7593,
@@ -61891,8 +61891,8 @@
   "en": "poem",
   "fa": "شعر / قصیده",
   "cat": "noun",
-  "ex": "This poem is very important to me.",
-  "exfa": "این شعر برای من خیلی مهم است."
+  "ex": "She wrote a poem about the ocean.",
+  "exfa": "او یک شعر درباره‌ی اقیانوس نوشت."
  },
  {
   "i": 7606,
@@ -62175,16 +62175,16 @@
   "en": "composer",
   "fa": "آهنگساز",
   "cat": "music",
-  "ex": "This composer is very important to me.",
-  "exfa": "این آهنگساز برای من خیلی مهم است."
+  "ex": "Beethoven is a famous classical composer.",
+  "exfa": "بتهوون یک آهنگساز کلاسیک مشهور است."
  },
  {
   "i": 7641,
   "en": "bean",
   "fa": "لوبیا / دانه",
   "cat": "food",
-  "ex": "I need a new bean for my work.",
-  "exfa": "برای کارم یک لوبیا تازه لازم دارم."
+  "ex": "I added beans to the soup.",
+  "exfa": "من به سوپ لوبیا اضافه کردم."
  },
  {
   "i": 7642,
@@ -62271,8 +62271,8 @@
   "en": "float",
   "fa": "شناور بودن / تراوش کردن",
   "cat": "verb",
-  "ex": "Learning to float takes time and practice.",
-  "exfa": "شناور بودن زمان و تمرین می‌خواهد."
+  "ex": "Wood will float on water.",
+  "exfa": "چوب روی آب شناور می‌ماند."
  },
  {
   "i": 7653,
@@ -62407,8 +62407,8 @@
   "en": "fancy",
   "fa": "زیبا / پیچیده",
   "cat": "noun",
-  "ex": "The fancy changed everything for us.",
-  "exfa": "آن زیبا همه چیز را برای ما عوض کرد."
+  "ex": "We went to a fancy restaurant for our anniversary.",
+  "exfa": "ما برای سالگردمان به یک رستوران شیک رفتیم."
  },
  {
   "i": 7670,
@@ -62775,8 +62775,8 @@
   "en": "confused",
   "fa": "گیج / سردرگم",
   "cat": "feeling",
-  "ex": "This confused is very important to me.",
-  "exfa": "این گیج برای من خیلی مهم است."
+  "ex": "I was confused by the difficult instructions.",
+  "exfa": "من از دستورالعمل‌های سخت گیج شده بودم."
  },
  {
   "i": 7716,
@@ -62871,8 +62871,8 @@
   "en": "bride",
   "fa": "عروس",
   "cat": "people",
-  "ex": "We talked about the bride for an hour.",
-  "exfa": "یک ساعت درباره‌ی عروس حرف زدیم."
+  "ex": "The bride wore a beautiful white dress.",
+  "exfa": "عروس یک لباس سفید زیبا پوشیده بود."
  },
  {
   "i": 7728,
@@ -63127,8 +63127,8 @@
   "en": "scientist",
   "fa": "دانشمند / محقق",
   "cat": "work",
-  "ex": "The scientist changed everything for us.",
-  "exfa": "آن دانشمند همه چیز را برای ما عوض کرد."
+  "ex": "The scientist works in a big laboratory.",
+  "exfa": "دانشمند در یک آزمایشگاه بزرگ کار می‌کند."
  },
  {
   "i": 7760,
@@ -63207,8 +63207,8 @@
   "en": "fever",
   "fa": "تب / حرارت",
   "cat": "health",
-  "ex": "The fever changed everything for us.",
-  "exfa": "آن تب همه چیز را برای ما عوض کرد."
+  "ex": "He stayed home because he had a fever.",
+  "exfa": "او به خاطر تب داشتن در خانه ماند."
  },
  {
   "i": 7770,
@@ -63783,8 +63783,8 @@
   "en": "inspiration",
   "fa": "الهام / انگیزه",
   "cat": "noun",
-  "ex": "I need a new inspiration for my work.",
-  "exfa": "برای کارم یک الهام تازه لازم دارم."
+  "ex": "Nature is her main source of inspiration.",
+  "exfa": "طبیعت منبع اصلی الهام او است."
  },
  {
   "i": 7842,
@@ -63951,8 +63951,8 @@
   "en": "knee",
   "fa": "زانو",
   "cat": "body",
-  "ex": "We talked about the knee for an hour.",
-  "exfa": "یک ساعت درباره‌ی زانو حرف زدیم."
+  "ex": "She hurt her knee while running.",
+  "exfa": "او هنگام دویدن زانویش را زخمی کرد."
  },
  {
   "i": 7863,
@@ -64299,8 +64299,8 @@
   "en": "bicycle",
   "fa": "دوچرخه",
   "cat": "car",
-  "ex": "This bicycle is very important to me.",
-  "exfa": "این دوچرخه برای من خیلی مهم است."
+  "ex": "He rides his bicycle to school every day.",
+  "exfa": "او هر روز با دوچرخه‌اش به مدرسه می‌رود."
  },
  {
   "i": 7906,
@@ -64491,8 +64491,8 @@
   "en": "chess",
   "fa": "شطرنج",
   "cat": "noun",
-  "ex": "The chess changed everything for us.",
-  "exfa": "آن شطرنج همه چیز را برای ما عوض کرد."
+  "ex": "My grandfather taught me how to play chess.",
+  "exfa": "پدربزرگم به من یاد داد چطور شطرنج بازی کنم."
  },
  {
   "i": 7930,
@@ -64571,8 +64571,8 @@
   "en": "duck",
   "fa": "اردک / خم شدن",
   "cat": "animal",
-  "ex": "The duck changed everything for us.",
-  "exfa": "آن اردک همه چیز را برای ما عوض کرد."
+  "ex": "The children fed bread to the ducks.",
+  "exfa": "بچه‌ها به اردک‌ها نان دادند."
  },
  {
   "i": 7940,
@@ -64731,8 +64731,8 @@
   "en": "drill",
   "fa": "مته / تمرین",
   "cat": "noun",
-  "ex": "The drill changed everything for us.",
-  "exfa": "آن مته همه چیز را برای ما عوض کرد."
+  "ex": "He used a drill to hang the picture.",
+  "exfa": "او از یک مته برای آویزان کردن تابلو استفاده کرد."
  },
  {
   "i": 7960,
@@ -65767,16 +65767,16 @@
   "en": "frog",
   "fa": "قورباغه / حیوان دوزیستی",
   "cat": "animal",
-  "ex": "Do you remember that frog?",
-  "exfa": "آن قورباغه را یادت هست؟"
+  "ex": "The frog jumped into the pond.",
+  "exfa": "قورباغه به داخل برکه پرید."
  },
  {
   "i": 8089,
   "en": "grammar",
   "fa": "دستور زبان / گرامر",
   "cat": "school",
-  "ex": "The grammar changed everything for us.",
-  "exfa": "آن دستور زبان همه چیز را برای ما عوض کرد."
+  "ex": "We study grammar in every English class.",
+  "exfa": "ما در هر کلاس انگلیسی دستور زبان می‌خوانیم."
  },
  {
   "i": 8090,
@@ -65799,8 +65799,8 @@
   "en": "disagree",
   "fa": "مخالف بودن / ناموافق",
   "cat": "verb",
-  "ex": "Learning to disagree takes time and practice.",
-  "exfa": "مخالف بودن زمان و تمرین می‌خواهد."
+  "ex": "I disagree with your opinion on this.",
+  "exfa": "من با نظر تو در این مورد مخالفم."
  },
  {
   "i": 8093,
@@ -65999,8 +65999,8 @@
   "en": "happiness",
   "fa": "خوشی / سعادت",
   "cat": "feeling",
-  "ex": "We talked about the happiness for an hour.",
-  "exfa": "یک ساعت درباره‌ی خوشی حرف زدیم."
+  "ex": "Money can't buy true happiness.",
+  "exfa": "پول نمی‌تواند خوشبختی واقعی بخرد."
  },
  {
   "i": 8118,
@@ -66047,8 +66047,8 @@
   "en": "olympics",
   "fa": "المپیک / بازی‌های المپیک",
   "cat": "sport",
-  "ex": "Do you remember that olympics?",
-  "exfa": "آن المپیک را یادت هست؟"
+  "ex": "Many countries compete in the Olympics.",
+  "exfa": "کشورهای زیادی در المپیک شرکت می‌کنند."
  },
  {
   "i": 8124,
@@ -66087,8 +66087,8 @@
   "en": "ribbon",
   "fa": "روبان / نوار",
   "cat": "noun",
-  "ex": "Do you remember that ribbon?",
-  "exfa": "آن روبان را یادت هست؟"
+  "ex": "She tied a red ribbon in her hair.",
+  "exfa": "او یک روبان قرمز به مویش بست."
  },
  {
   "i": 8129,
@@ -66639,8 +66639,8 @@
   "en": "fork",
   "fa": "چنگال / منشعب شدن",
   "cat": "food",
-  "ex": "I need a new fork for my work.",
-  "exfa": "برای کارم یک چنگال تازه لازم دارم."
+  "ex": "Please pass me a fork and a knife.",
+  "exfa": "لطفاً یک چنگال و چاقو به من بده."
  },
  {
   "i": 8197,
@@ -66671,8 +66671,8 @@
   "en": "batch",
   "fa": "دسته / گروه",
   "cat": "noun",
-  "ex": "This batch is very important to me.",
-  "exfa": "این دسته برای من خیلی مهم است."
+  "ex": "She baked a fresh batch of cookies.",
+  "exfa": "او یک دسته‌ی تازه کلوچه پخت."
  },
  {
   "i": 8201,
@@ -66767,8 +66767,8 @@
   "en": "harmony",
   "fa": "هماهنگی / سازگاری",
   "cat": "noun",
-  "ex": "We talked about the harmony for an hour.",
-  "exfa": "یک ساعت درباره‌ی هماهنگی حرف زدیم."
+  "ex": "The colors in this room work in harmony.",
+  "exfa": "رنگ‌های این اتاق با هماهنگی کنار هم قرار گرفته‌اند."
  },
  {
   "i": 8213,
@@ -67727,8 +67727,8 @@
   "en": "snake",
   "fa": "مار",
   "cat": "animal",
-  "ex": "We talked about the snake for an hour.",
-  "exfa": "یک ساعت درباره‌ی مار حرف زدیم."
+  "ex": "The snake moved silently through the grass.",
+  "exfa": "مار بی‌صدا از میان علف‌ها حرکت کرد."
  },
  {
   "i": 8333,
@@ -67887,16 +67887,16 @@
   "en": "lonely",
   "fa": "تنها",
   "cat": "feeling",
-  "ex": "The weather was very lonely yesterday.",
-  "exfa": "دیروز هوا خیلی تنها بود."
+  "ex": "He felt lonely after his friends left.",
+  "exfa": "او بعد از رفتن دوستانش احساس تنهایی کرد."
  },
  {
   "i": 8353,
   "en": "fool",
   "fa": "احمق / فریب دادن",
   "cat": "people",
-  "ex": "Do you remember that fool?",
-  "exfa": "آن احمق را یادت هست؟"
+  "ex": "Don't act like a fool in front of your boss.",
+  "exfa": "جلوی رئیست مثل یک آدم احمق رفتار نکن."
  },
  {
   "i": 8354,
@@ -69068,8 +69068,8 @@
   "en": "belly",
   "fa": "شکم",
   "cat": "body",
-  "ex": "The belly changed everything for us.",
-  "exfa": "آن شکم همه چیز را برای ما عوض کرد."
+  "ex": "The baby has a round little belly.",
+  "exfa": "بچه شکم کوچک و گردی دارد."
  },
  {
   "i": 8500,
@@ -70364,8 +70364,8 @@
   "en": "cooler",
   "fa": "سرد‌تر / جعبه یخ",
   "cat": "noun",
-  "ex": "I need a new cooler for my work.",
-  "exfa": "برای کارم یک سرد‌تر تازه لازم دارم."
+  "ex": "We packed drinks in a cooler for the trip.",
+  "exfa": "ما نوشیدنی‌ها را برای سفر در یک جعبه‌یخ گذاشتیم."
  },
  {
   "i": 8662,
@@ -70548,8 +70548,8 @@
   "en": "envelope",
   "fa": "پاکت / پوشش",
   "cat": "noun",
-  "ex": "The envelope changed everything for us.",
-  "exfa": "آن پاکت همه چیز را برای ما عوض کرد."
+  "ex": "She sealed the letter in an envelope.",
+  "exfa": "او نامه را در یک پاکت مهر و موم کرد."
  },
  {
   "i": 8685,
@@ -70620,8 +70620,8 @@
   "en": "disco",
   "fa": "دیسکو / رقص",
   "cat": "noun",
-  "ex": "Do you remember that disco?",
-  "exfa": "آن دیسکو را یادت هست؟"
+  "ex": "We danced all night at the disco.",
+  "exfa": "ما تمام شب را در دیسکو رقصیدیم."
  },
  {
   "i": 8694,
@@ -71444,8 +71444,8 @@
   "en": "gentle",
   "fa": "ملایم / نرم",
   "cat": "adj",
-  "ex": "This gentle is very important to me.",
-  "exfa": "این ملایم برای من خیلی مهم است."
+  "ex": "She gave the baby a gentle touch.",
+  "exfa": "او با ملایمت کودک را لمس کرد."
  },
  {
   "i": 8796,
@@ -71636,8 +71636,8 @@
   "en": "cigarette",
   "fa": "سیگار",
   "cat": "noun",
-  "ex": "The cigarette changed everything for us.",
-  "exfa": "آن سیگار همه چیز را برای ما عوض کرد."
+  "ex": "He tried to quit smoking cigarettes last year.",
+  "exfa": "او سال گذشته سعی کرد سیگار کشیدن را ترک کند."
  },
  {
   "i": 8820,
@@ -71788,8 +71788,8 @@
   "en": "consist",
   "fa": "تشکیل شده / متشکل",
   "cat": "verb",
-  "ex": "Do you remember that consist?",
-  "exfa": "آن تشکیل شده را یادت هست؟"
+  "ex": "The team consists of ten players.",
+  "exfa": "تیم از ده بازیکن تشکیل شده است."
  },
  {
   "i": 8839,
@@ -72172,8 +72172,8 @@
   "en": "fence",
   "fa": "نرده / حصار",
   "cat": "noun",
-  "ex": "I need a new fence for my work.",
-  "exfa": "برای کارم یک نرده تازه لازم دارم."
+  "ex": "He built a wooden fence around the garden.",
+  "exfa": "او یک نرده‌ی چوبی دور باغ ساخت."
  },
  {
   "i": 8887,
@@ -72388,8 +72388,8 @@
   "en": "fighter",
   "fa": "جنگنده / مبارز",
   "cat": "noun",
-  "ex": "Do you remember that fighter?",
-  "exfa": "آن جنگنده را یادت هست؟"
+  "ex": "The fighter jet flew low over the city.",
+  "exfa": "هواپیمای جنگنده در ارتفاع پایین بر فراز شهر پرواز کرد."
  },
  {
   "i": 8914,
@@ -72716,8 +72716,8 @@
   "en": "balloon",
   "fa": "بادکنک / بالن",
   "cat": "noun",
-  "ex": "The balloon changed everything for us.",
-  "exfa": "آن بادکنک همه چیز را برای ما عوض کرد."
+  "ex": "The children filled the room with colorful balloons.",
+  "exfa": "بچه‌ها اتاق را پر از بادکنک‌های رنگی کردند."
  },
  {
   "i": 8955,
@@ -73456,8 +73456,8 @@
   "en": "garbage",
   "fa": "زباله",
   "cat": "noun",
-  "ex": "I need a new garbage for my work.",
-  "exfa": "برای کارم یک زباله تازه لازم دارم."
+  "ex": "Please take out the garbage tonight.",
+  "exfa": "لطفاً امشب زباله را بیرون ببر."
  },
  {
   "i": 9047,
@@ -73992,8 +73992,8 @@
   "en": "consequence",
   "fa": "نتیجه / پیامد",
   "cat": "noun",
-  "ex": "Do you remember that consequence?",
-  "exfa": "آن نتیجه را یادت هست؟"
+  "ex": "Every action has a consequence.",
+  "exfa": "هر کاری یک پیامد دارد."
  },
  {
   "i": 9114,
@@ -74344,8 +74344,8 @@
   "en": "junk",
   "fa": "زباله / فضولات",
   "cat": "noun",
-  "ex": "We talked about the junk for an hour.",
-  "exfa": "یک ساعت درباره‌ی زباله حرف زدیم."
+  "ex": "Clean out the junk in the garage.",
+  "exfa": "زباله‌های داخل گاراژ را تمیز کن."
  },
  {
   "i": 9158,
@@ -74712,8 +74712,8 @@
   "en": "fairy",
   "fa": "پری / جادویی",
   "cat": "people",
-  "ex": "Do you remember that fairy?",
-  "exfa": "آن پری را یادت هست؟"
+  "ex": "The story is about a magic fairy.",
+  "exfa": "داستان درباره یک پری جادویی است."
  },
  {
   "i": 9204,
@@ -74936,8 +74936,8 @@
   "en": "potato",
   "fa": "سیب زمینی",
   "cat": "food",
-  "ex": "I need a new potato for my work.",
-  "exfa": "برای کارم یک سیب زمینی تازه لازم دارم."
+  "ex": "She peeled a potato for the soup.",
+  "exfa": "او یک سیب‌زمینی برای سوپ پوست کند."
  },
  {
   "i": 9232,
@@ -75056,8 +75056,8 @@
   "en": "girlfriend",
   "fa": "دختر دوست",
   "cat": "people",
-  "ex": "I need a new girlfriend for my work.",
-  "exfa": "برای کارم یک دختر دوست تازه لازم دارم."
+  "ex": "He introduced his girlfriend to his parents.",
+  "exfa": "او دوست‌دخترش را به والدینش معرفی کرد."
  },
  {
   "i": 9247,
@@ -75072,8 +75072,8 @@
   "en": "cheque",
   "fa": "چک / سفته",
   "cat": "noun",
-  "ex": "Do you remember that cheque?",
-  "exfa": "آن چک را یادت هست؟"
+  "ex": "He paid the rent with a cheque.",
+  "exfa": "او اجاره را با چک پرداخت کرد."
  },
  {
   "i": 9249,
@@ -75144,8 +75144,8 @@
   "en": "merry",
   "fa": "شاد / خوشحال",
   "cat": "adj",
-  "ex": "We talked about the merry for an hour.",
-  "exfa": "یک ساعت درباره‌ی شاد حرف زدیم."
+  "ex": "Merry Christmas to you and your family!",
+  "exfa": "کریسمس شاد بر تو و خانواده‌ات!"
  },
  {
   "i": 9258,
@@ -77812,8 +77812,8 @@
   "en": "granny",
   "fa": "مادربزرگ / مادرشوهر",
   "cat": "noun",
-  "ex": "This granny is very important to me.",
-  "exfa": "این مادربزرگ برای من خیلی مهم است."
+  "ex": "My granny bakes the best cookies.",
+  "exfa": "مادربزرگم بهترین کلوچه‌ها را می‌پزد."
  },
  {
   "i": 9591,
@@ -78012,8 +78012,8 @@
   "en": "fare",
   "fa": "کرایه / غذا",
   "cat": "noun",
-  "ex": "This fare is very important to me.",
-  "exfa": "این کرایه برای من خیلی مهم است."
+  "ex": "The bus fare went up this month.",
+  "exfa": "کرایه‌ی اتوبوس این ماه بالا رفت."
  },
  {
   "i": 9616,
@@ -78792,8 +78792,8 @@
   "en": "champagne",
   "fa": "شامپاین / شراب فرانسوی",
   "cat": "food",
-  "ex": "We talked about the champagne for an hour.",
-  "exfa": "یک ساعت درباره‌ی شامپاین حرف زدیم."
+  "ex": "They opened a bottle of champagne to celebrate.",
+  "exfa": "آن‌ها یک بطری شامپاین برای جشن باز کردند."
  },
  {
   "i": 9713,
@@ -79312,8 +79312,8 @@
   "en": "beginner",
   "fa": "تازه‌کار / مبتدی",
   "cat": "people",
-  "ex": "We talked about the beginner for an hour.",
-  "exfa": "یک ساعت درباره‌ی تازه‌کار حرف زدیم."
+  "ex": "This yoga class is perfect for beginners.",
+  "exfa": "این کلاس یوگا برای مبتدی‌ها عالی است."
  },
  {
   "i": 9778,
@@ -79552,8 +79552,8 @@
   "en": "neighbor",
   "fa": "همسایه",
   "cat": "people",
-  "ex": "We talked about the neighbor for an hour.",
-  "exfa": "یک ساعت درباره‌ی همسایه حرف زدیم."
+  "ex": "Our neighbor waters our plants every day.",
+  "exfa": "همسایه‌مان هر روز به گیاهان ما آب می‌دهد."
  },
  {
   "i": 9808,
@@ -80472,8 +80472,8 @@
   "en": "tomato",
   "fa": "گوجه‌فرنگی",
   "cat": "food",
-  "ex": "We talked about the tomato for an hour.",
-  "exfa": "یک ساعت درباره‌ی گوجه‌فرنگی حرف زدیم."
+  "ex": "She cut a tomato for the salad.",
+  "exfa": "او یک گوجه‌فرنگی برای سالاد خرد کرد."
  },
  {
   "i": 9923,
@@ -81024,8 +81024,8 @@
   "en": "banana",
   "fa": "موز",
   "cat": "food",
-  "ex": "I need a new banana for my work.",
-  "exfa": "برای کارم یک موز تازه لازم دارم."
+  "ex": "He eats a banana every morning.",
+  "exfa": "او هر روز صبح یک موز می‌خورد."
  },
  {
   "i": 9992,
@@ -81176,8 +81176,8 @@
   "en": "affair",
   "fa": "امر / رابطه",
   "cat": "noun",
-  "ex": "This affair is very important to me.",
-  "exfa": "این امر برای من خیلی مهم است."
+  "ex": "Planning the wedding became a family affair.",
+  "exfa": "برنامه‌ریزی عروسی به یک امر خانوادگی تبدیل شد."
  },
  {
   "i": 10011,
@@ -81216,8 +81216,8 @@
   "en": "beside",
   "fa": "کنار / در کنار",
   "cat": "noun",
-  "ex": "This beside is very important to me.",
-  "exfa": "این کنار برای من خیلی مهم است."
+  "ex": "She sat beside her best friend.",
+  "exfa": "او کنار بهترین دوستش نشست."
  },
  {
   "i": 10016,
@@ -81928,8 +81928,8 @@
   "en": "bloom",
   "fa": "شکوفه / شکفتن",
   "cat": "noun",
-  "ex": "Do you remember that bloom?",
-  "exfa": "آن شکوفه را یادت هست؟"
+  "ex": "The roses bloom every spring in our garden.",
+  "exfa": "رزها هر بهار در باغ ما شکوفه می‌دهند."
  },
  {
   "i": 10104,
@@ -83128,8 +83128,8 @@
   "en": "hometown",
   "fa": "شهر پدری / محل تولد",
   "cat": "place",
-  "ex": "Do you remember that hometown?",
-  "exfa": "آن شهر پدری را یادت هست؟"
+  "ex": "I still miss my hometown a lot.",
+  "exfa": "هنوز خیلی دلم برای شهر پدری‌ام تنگ می‌شود."
  },
  {
   "i": 10254,
@@ -83680,8 +83680,8 @@
   "en": "awful",
   "fa": "وحشتناک / بسیار بد",
   "cat": "adj",
-  "ex": "He looked awful after the meeting.",
-  "exfa": "بعد از جلسه وحشتناک به نظر می‌رسید."
+  "ex": "The food at that restaurant was awful.",
+  "exfa": "غذای آن رستوران وحشتناک بود."
  },
  {
   "i": 10323,
@@ -83920,8 +83920,8 @@
   "en": "favour",
   "fa": "لطف / محاباه",
   "cat": "noun",
-  "ex": "We talked about the favour for an hour.",
-  "exfa": "یک ساعت درباره‌ی لطف حرف زدیم."
+  "ex": "Can you do me a favour and close the door?",
+  "exfa": "می‌توانی به من لطف کنی و در را ببندی؟"
  },
  {
   "i": 10353,
@@ -83968,8 +83968,8 @@
   "en": "inexpensive",
   "fa": "ارزان",
   "cat": "adj",
-  "ex": "He looked inexpensive after the meeting.",
-  "exfa": "بعد از جلسه ارزان به نظر می‌رسید."
+  "ex": "This restaurant serves good, inexpensive meals.",
+  "exfa": "این رستوران غذاهای خوب و ارزان سرو می‌کند."
  },
  {
   "i": 10359,
@@ -84040,8 +84040,8 @@
   "en": "creature",
   "fa": "موجود / جانور",
   "cat": "animal",
-  "ex": "We talked about the creature for an hour.",
-  "exfa": "یک ساعت درباره‌ی موجود حرف زدیم."
+  "ex": "The forest is full of strange creatures.",
+  "exfa": "جنگل پر از موجودات عجیب است."
  },
  {
   "i": 10368,
@@ -84272,8 +84272,8 @@
   "en": "flour",
   "fa": "آرد",
   "cat": "food",
-  "ex": "I need a new flour for my work.",
-  "exfa": "برای کارم یک آرد تازه لازم دارم."
+  "ex": "You need two cups of flour for this recipe.",
+  "exfa": "برای این دستور پخت به دو فنجان آرد نیاز داری."
  },
  {
   "i": 10397,
@@ -84812,8 +84812,8 @@
   "en": "bored",
   "fa": "خسته / بی‌علاقه",
   "cat": "feeling",
-  "ex": "Do you remember that bored?",
-  "exfa": "آن خسته را یادت هست؟"
+  "ex": "The children got bored during the long lecture.",
+  "exfa": "بچه‌ها در طول سخنرانی طولانی خسته شدند."
  },
  {
   "i": 10464,
@@ -84984,8 +84984,8 @@
   "en": "continent",
   "fa": "قاره",
   "cat": "adj",
-  "ex": "The weather was very continent yesterday.",
-  "exfa": "دیروز هوا خیلی قاره بود."
+  "ex": "Africa is the second largest continent.",
+  "exfa": "آفریقا دومین قاره‌ی بزرگ است."
  },
  {
   "i": 10485,

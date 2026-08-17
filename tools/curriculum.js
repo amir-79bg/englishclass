@@ -45,6 +45,20 @@ function levelIndex(cur, words) {
     // learner sees it, so it is checked again here rather than assumed.
     const w = words && words[e.i];
     if (words && (!w || String(w.en).toLowerCase().trim() !== e.en.toLowerCase())) return;
+    // Acronym/word collision. Headword matching is case-insensitive, which is
+    // right for `Hill` vs `hill` — same word, cosmetic capital — but wrong when
+    // the catalog entry is an ALL-CAPS acronym that merely spells a real word.
+    // Found live: CEFR-J teaches `cop` (police officer, A1, "Work and Jobs")
+    // and the catalog's `COP` is the climate conference, glossed
+    // «کنفرانس تغییر اقلیم». Nothing downstream could tell, so the app taught
+    // that "cop" means "climate conference". Treat these as unmatched: the
+    // catalog genuinely does not have the word, so it stays pending until real
+    // content exists rather than being faked from an unrelated entry.
+    if (w) {
+      const letters = String(w.en).replace(/[^A-Za-z]/g, '');
+      const isAcronym = letters.length >= 2 && letters === letters.toUpperCase();
+      if (isAcronym && e.en !== e.en.toUpperCase()) return;
+    }
     if (seen.has(e.i)) return;                   // one slot per word, ever
     seen.add(e.i);
     out[e.level].push(e.i);
