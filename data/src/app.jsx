@@ -852,21 +852,6 @@ class Component extends DCLogic {
     const r = this.srRec(i);
     return !!r && (r[8] === 1 || (r[0] >= 3 && (r[3] & 6) !== 0 && (r[2] - r[1]) >= 7));
   }
-  toggleKnown(i) {
-    const day = currentDayNo(), sr = this.srLoad();
-    const r = sr[i] || [0, 0, 0, 0, 1, 1, day, 1, 0];
-    if (r[8] === 1) {
-      r[8] = 0; r[6] = Math.min(Number(r[6]) || day, day);
-    } else {
-      r[4] = 1; r[5] = Math.max(4, Number(r[5]) || 0); r[8] = 1; r[6] = day + 60;
-    }
-    sr[i] = r; this.srSave();
-    // This rewrites the word's SRS stage, and modeFor() derives the card's
-    // drill mode from that same stage — so the card must be re-prepared or
-    // it keeps the previous mode's stale options/input with nothing fillable,
-    // "fixed" only by a reload that happens to rebuild the state from scratch.
-    this.prepare();
-  }
   // __seeded is a marker, not a word — skip anything that is not a record.
   srCounts() {
     const sr = this.srLoad();
@@ -3623,31 +3608,25 @@ class Component extends DCLogic {
       pick: () => { if (this.state.picked != null) return; this.setState({ picked: i, showBack: true }); if (isCloze) this.speakWord(w.en); }
     }));
 
-    const ratingStyles = {
-      1: btn('rgba(224,164,88,.11)', 'rgba(224,164,88,.6)', '#e0a458'),
-      2: btn('rgba(143,217,193,.11)', 'rgba(143,217,193,.62)', '#8fd9c1'),
-      3: btn('rgba(132,197,217,.11)', 'rgba(132,197,217,.62)', '#84c5d9')
-    };
-    const ratingLabels = { 1: 'سخت', 2: 'خوب', 3: 'آسان' };
-    const ratingIcons = { 1: 'ph ph-brain', 2: 'ph ph-check', 3: 'ph ph-rocket-launch' };
+    // No self-rating: level/mastery comes only from whether the exercise itself
+    // was answered correctly (see ARC-002, docs/architecture/user-state-model.md,
+    // D-011). A single neutral "continue" always advances with rating 2 — the
+    // former three-way easy/good/hard choice asked the learner to judge their
+    // own recall, which is unreliable and was explicitly rejected as a pattern.
+    const continueStyle = btn('rgba(143,217,193,.11)', 'rgba(143,217,193,.62)', '#8fd9c1');
+    const againAction = { label: 'دوباره', sub: 'در همین جلسه', icon: 'ph ph-arrow-counter-clockwise', style: btn('rgba(217,143,143,.08)', 'rgba(217,143,143,.45)', '#d98f8f'), go: () => this.advance(false, 0) };
+    const continueAction = { label: 'ادامه', sub: this.intervalLabel(w, 2), icon: 'ph ph-check', style: continueStyle, go: () => this.advance(true, 2) };
     const actions = [];
     if (mode === 'flash') {
       if (!s.showBack) actions.push({ label: 'نمایش معنی', icon: 'ph ph-eye', style: btn('rgba(145,132,217,.12)', accent, accent), go: () => this.setState({ showBack: true }) });
-      else {
-        actions.push({ label: 'آسان', sub: 'مرور دیرتر', icon: 'ph ph-rocket-launch', style: ratingStyles[3], go: () => this.advance(true, 3) });
-        actions.push({ label: 'خوب', sub: 'زمان معمول', icon: 'ph ph-check', style: ratingStyles[2], go: () => this.advance(true, 2) });
-        actions.push({ label: 'سخت', sub: 'مرور زودتر', icon: 'ph ph-brain', style: ratingStyles[1], go: () => this.advance(true, 1) });
-        actions.push({ label: 'دوباره', sub: 'در همین جلسه', icon: 'ph ph-arrow-counter-clockwise', style: btn('rgba(217,143,143,.08)', 'rgba(217,143,143,.45)', '#d98f8f'), go: () => this.advance(false, 0) });
-      }
+      else { actions.push(continueAction); actions.push(againAction); }
     } else if (mode === 'mcq' || isCloze) {
       if (s.picked != null) {
         const ok = !!s.options[s.picked].correct;
-        if (!ok) actions.push({ label: 'دوباره', sub: 'در همین جلسه', icon: 'ph ph-arrow-counter-clockwise', style: btn('rgba(217,143,143,.08)', 'rgba(217,143,143,.45)', '#d98f8f'), go: () => this.advance(false, 0) });
-        else [3, 2, 1].forEach(r => actions.push({ label: ratingLabels[r], sub: this.intervalLabel(w, r), icon: ratingIcons[r], style: ratingStyles[r], go: () => this.advance(true, r) }));
+        actions.push(ok ? continueAction : againAction);
       }
     } else if (!s.checked) actions.push({ label: 'بررسی', icon: 'ph ph-check', style: btn('rgba(145,132,217,.12)', accent, accent), go: () => this.check() });
-    else if (!s.correct) actions.push({ label: 'دوباره', sub: 'در همین جلسه', icon: 'ph ph-arrow-counter-clockwise', style: btn('rgba(217,143,143,.08)', 'rgba(217,143,143,.45)', '#d98f8f'), go: () => this.advance(false, 0) });
-    else [3, 2, 1].forEach(r => actions.push({ label: ratingLabels[r], sub: this.intervalLabel(w, r), icon: ratingIcons[r], style: ratingStyles[r], go: () => this.advance(true, r) }));
+    else actions.push(s.correct ? continueAction : againAction);
 
     const q = s.quiz;
     let qPrompt = '', qHint = '', qOptions = [], quizPos = '', quizBarStyle = 'height:100%;width:0%;background:#e0a458', qPromptStyle = 'font-size:26px;font-weight:500';
@@ -3835,10 +3814,6 @@ class Component extends DCLogic {
       cardStarStyle: 'display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:9px;font-size:12.5px;cursor:pointer;background:' + ((this.current() && (d.starred || {})[this.current().i]) ? 'rgba(224,164,88,.14)' : 'transparent') + ';border:1px solid ' + ((this.current() && (d.starred || {})[this.current().i]) ? '#e0a458' : 'rgba(233,233,237,.42)') + ';color:' + ((this.current() && (d.starred || {})[this.current().i]) ? '#e0a458' : 'rgba(233,233,237,.6)'),
       cardStarLabel: (this.current() && (d.starred || {})[this.current().i]) ? 'نشان‌دار' : 'نشان‌گذاری',
       cardStarGo: () => { const c = this.current(); if (c) this.toggleStar(c.i); },
-      cardKnownIcon: this.current() && this.srKnown(this.current().i) ? 'ph-fill ph-check-circle' : 'ph ph-check-circle',
-      cardKnownLabel: this.current() && this.srKnown(this.current().i) ? 'بلدم ✓' : 'بلدم',
-      cardKnownStyle: 'display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:9px;font-size:12.5px;cursor:pointer;background:' + (this.current() && this.srKnown(this.current().i) ? 'rgba(143,217,193,.14)' : 'transparent') + ';border:1px solid ' + (this.current() && this.srKnown(this.current().i) ? 'rgba(143,217,193,.65)' : 'rgba(143,217,193,.38)') + ';color:' + (this.current() && this.srKnown(this.current().i) ? '#8fd9c1' : 'rgba(143,217,193,.78)'),
-      cardKnownGo: () => { const c = this.current(); if (c) this.toggleKnown(c.i); },
       isHome: s.screen === 'home', isStudy: s.screen === 'study', isQuiz: s.screen === 'quiz', isResult: s.screen === 'result', isBrowse: s.screen === 'browse',
       isWords: s.screen === 'words', isJobs: s.screen === 'jobs', isJobDetail: s.screen === 'jobdetail' && !!s.job,
       isSettings: s.screen === 'settings',
@@ -4043,7 +4018,7 @@ class Component extends DCLogic {
       hasMsErr: !!s.msErr, msErr: s.msErr,
       sentenceEn: sent ? sent.s : '', sentenceFa: sent ? sent.fa : '', hasSentenceFa: !!(sent && sent.fa),
       actions,
-      hintLine: answered ? 'میزان یادآوری‌ات را انتخاب کن تا زمان مرور بعدی تنظیم شود' : (mode === 'flash' ? 'دکمهٔ «نمایش معنی» را بزن' : (mode === 'mcq' || isCloze ? 'گزینه‌ی درست را انتخاب کن' : 'Enter = بررسی · سپس «خوب»')),
+      hintLine: answered ? '' : (mode === 'flash' ? 'دکمهٔ «نمایش معنی» را بزن' : (mode === 'mcq' || isCloze ? 'گزینه‌ی درست را انتخاب کن' : 'Enter = بررسی')),
       nextQuizIn: String(Math.max(0, nextMile - d.seen)),
 
       qPrompt, qHint, qOptions, quizPos, quizBarStyle, qPromptStyle,
