@@ -10478,7 +10478,7 @@
  {
   "i": 1280,
   "en": "save",
-  "fa": "پس‌انداز کردن",
+  "fa": "پس‌انداز کردن / نجات دادن",
   "cat": "money",
   "ex": "I try to save some money every month.",
   "exfa": "هر ماه سعی می‌کنم مقداری پول پس‌انداز کنم."
@@ -17815,7 +17815,7 @@
  {
   "i": 2191,
   "en": "last",
-  "fa": "دوام آوردن / طول کشیدن",
+  "fa": "آخرین / دوام آوردن",
   "cat": "verb",
   "ex": "This battery can last a full day.",
   "exfa": "این باتری می‌تواند یک روز کامل دوام بیاورد."
@@ -18023,7 +18023,7 @@
  {
   "i": 2216,
   "en": "high",
-  "fa": "زیاد / بلند",
+  "fa": "بلند / بالا",
   "cat": "adj",
   "ex": "The prices here are too high.",
   "exfa": "قیمت‌ها اینجا خیلی بالا هستند.",
@@ -24307,7 +24307,7 @@
  {
   "i": 2958,
   "en": "move",
-  "fa": "نقل مکان / حرکت",
+  "fa": "حرکت کردن / نقل مکان کردن",
   "cat": "verb",
   "ex": "We're going to move to a bigger house.",
   "exfa": "می‌خواهیم به یک خانه‌ی بزرگ‌تر نقل مکان کنیم."
@@ -29289,7 +29289,7 @@
  {
   "i": 3564,
   "en": "poster",
-  "fa": "پوستر / اعلان دیواری",
+  "fa": "پوستر",
   "cat": "noun",
   "ex": "He hung a poster of his favorite band.",
   "exfa": "آن پوستر همه چیز را برای ما عوض کرد."
@@ -31322,7 +31322,7 @@
  {
   "i": 3814,
   "en": "automatically",
-  "fa": "خودکار / به‌طور خودکار",
+  "fa": "به‌طور خودکار / خودبه‌خود",
   "cat": "adv",
   "ex": "They spoke automatically about the problem.",
   "exfa": "خودکار درباره‌ی مشکل حرف زدند."
@@ -31810,7 +31810,7 @@
  {
   "i": 3875,
   "en": "theatre",
-  "fa": "تئاتر / سالن تماشا",
+  "fa": "تئاتر / سالن نمایش",
   "cat": "movie",
   "ex": "The actors rehearsed at the theatre all day.",
   "exfa": "این تئاتر برای من خیلی مهم است."
@@ -33490,7 +33490,7 @@
  {
   "i": 4081,
   "en": "theater",
-  "fa": "تئاتر / سینما",
+  "fa": "تئاتر",
   "cat": "movie",
   "ex": "We watched a new movie at the theater.",
   "exfa": "برای کارم یک تئاتر تازه لازم دارم."
@@ -37191,7 +37191,7 @@
  {
   "i": 4536,
   "en": "indicate",
-  "fa": "نشان دادن / اشاره",
+  "fa": "نشان دادن / اشاره کردن",
   "cat": "verb",
   "ex": "The red light indicates the machine is off.",
   "exfa": "برای کارم یک نشان دادن تازه لازم دارم."
@@ -37271,7 +37271,7 @@
  {
   "i": 4546,
   "en": "seek",
-  "fa": "جست‌وجو / تلاش",
+  "fa": "جستجو کردن / تلاش کردن",
   "cat": "noun",
   "ex": "Many people seek a better life abroad.",
   "exfa": "برای کارم یک جست‌وجو تازه لازم دارم."
@@ -42545,7 +42545,7 @@
  {
   "i": 5201,
   "en": "cinema",
-  "fa": "سینما / تئاتر فیلم",
+  "fa": "سینما",
   "cat": "movie",
   "ex": "There is a small cinema near the train station.",
   "exfa": "نزدیک ایستگاه قطار یک سینمای کوچک هست."
@@ -48753,7 +48753,7 @@
  {
   "i": 5972,
   "en": "regularly",
-  "fa": "منظم / به‌طور مرتب",
+  "fa": "به‌طور منظم / مرتباً",
   "cat": "adv",
   "ex": "He answered regularly.",
   "exfa": "او منظم جواب داد."
@@ -80238,7 +80238,7 @@
  {
   "i": 9893,
   "en": "skating",
-  "fa": "اسکیت / قورت زدن",
+  "fa": "اسکیت",
   "cat": "noun",
   "ex": "The children went skating on the frozen lake.",
   "exfa": "بچه‌ها روی دریاچه‌ی یخ‌زده اسکیت‌بازی کردند."
