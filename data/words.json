@@ -334,7 +334,7 @@
  {
   "i": 40,
   "en": "backpack",
-  "fa": "کولهپشتی",
+  "fa": "کوله‌پشتی",
   "cat": "travel",
   "ex": "She packed her backpack for the hiking trip.",
   "exfa": "او کوله‌پشتی‌اش را برای سفر پیاده‌روی بست."
@@ -342,7 +342,7 @@
  {
   "i": 41,
   "en": "backpacker",
-  "fa": "کولهپشتیگرد",
+  "fa": "کوله‌پشتی‌گرد",
   "cat": "travel",
   "ex": "The hostel was full of young backpackers.",
   "exfa": "هاستل پر از کوله‌پشتی‌گردهای جوان بود."
@@ -3882,7 +3882,7 @@
  {
   "i": 471,
   "en": "registration",
-  "fa": "مدارک",
+  "fa": "ثبت‌نام",
   "cat": "noun",
   "ex": "Registration for the course closes on Friday.",
   "exfa": "ثبت‌نام برای این دوره جمعه بسته می‌شود."
@@ -4078,10 +4078,10 @@
  {
   "i": 495,
   "en": "science fiction",
-  "fa": "تخیلی-علمی",
+  "fa": "علمی-تخیلی",
   "cat": "movie",
-  "ex": "He said, \"science fiction\".",
-  "exfa": "او گفت: «تخیلی-علمی»."
+  "ex": "She only reads science fiction novels.",
+  "exfa": "او فقط رمان علمی-تخیلی می‌خواند."
  },
  {
   "i": 496,
@@ -5434,7 +5434,7 @@
  {
   "i": 664,
   "en": "urge",
-  "fa": "اصرار / نیاز شدید درونی",
+  "fa": "میل شدید / اصرار",
   "cat": "noun",
   "ex": "I felt a sudden urge to call my sister.",
   "exfa": "ناگهان میل شدیدی پیدا کردم که به خواهرم زنگ بزنم."
@@ -6094,7 +6094,7 @@
  {
   "i": 745,
   "en": "ambitious",
-  "fa": "جاهطلب",
+  "fa": "جاه‌طلب",
   "cat": "adj",
   "ex": "This room is too ambitious for me.",
   "exfa": "این اتاق برای من زیادی جاهطلب است."
@@ -6511,7 +6511,7 @@
  {
   "i": 795,
   "en": "ingredient",
-  "fa": "ماده تشکیلدهنده",
+  "fa": "ماده‌ی تشکیل‌دهنده",
   "cat": "food",
   "ex": "Everything felt ingredient after the trip.",
   "exfa": "بعد از سفر همه چیز ماده تشکیلدهنده به نظر می‌رسید."
@@ -6735,10 +6735,10 @@
  {
   "i": 823,
   "en": "airline",
-  "fa": "خط هوایی",
+  "fa": "شرکت هواپیمایی",
   "cat": "travel",
   "ex": "Which airline are you flying with tomorrow?",
-  "exfa": "فردا با کدام خط هوایی پرواز می‌کنی؟"
+  "exfa": "فردا با کدام شرکت هواپیمایی پرواز می‌کنی؟"
  },
  {
   "i": 824,
@@ -6948,7 +6948,7 @@
  {
   "i": 849,
   "en": "scenic",
-  "fa": "خوشمنظره",
+  "fa": "خوش‌منظره",
   "cat": "adj",
   "ex": "This room is too scenic for me.",
   "exfa": "این اتاق برای من زیادی خوشمنظره است."
@@ -8573,7 +8573,7 @@
  {
   "i": 1049,
   "en": "fortunate",
-  "fa": "خوششانس",
+  "fa": "خوش‌شانس",
   "cat": "adj",
   "ex": "We were fortunate to find a table at the busy restaurant.",
   "exfa": "ما خوش‌شانس بودیم که در آن رستوران شلوغ میز پیدا کردیم."
@@ -10093,7 +10093,7 @@
  {
   "i": 1235,
   "en": "authority",
-  "fa": "مقام",
+  "fa": "مقام / اختیار",
   "cat": "crime",
   "ex": "Everything felt authority after the trip.",
   "exfa": "بعد از سفر همه چیز مقام به نظر می‌رسید."
@@ -10510,7 +10510,7 @@
  {
   "i": 1284,
   "en": "atmosphere",
-  "fa": "جو",
+  "fa": "جو / فضا",
   "cat": "noun",
   "ex": "The cafe has a cozy, relaxed atmosphere.",
   "exfa": "آن کافه فضای گرم و آرامی دارد."
@@ -11022,7 +11022,7 @@
  {
   "i": 1347,
   "en": "afford",
-  "fa": "توانایی پرداخت داشتن",
+  "fa": "توان مالی داشتن",
   "cat": "money",
   "ex": "It is not easy to afford every day.",
   "exfa": "هر روز توانایی پرداخت داشتن آسان نیست."
@@ -16531,7 +16531,7 @@
  {
   "i": 2034,
   "en": "Chief",
-  "fa": "رئیس قبیله",
+  "fa": "رئیس / سرکرده",
   "cat": "work",
   "ex": "The village chief welcomed the visitors warmly.",
   "exfa": "رئیس قبیله از مهمانان با گرمی استقبال کرد."
@@ -20015,7 +20015,7 @@
  {
   "i": 2448,
   "en": "provided",
-  "fa": "فراهم‌شده",
+  "fa": "به شرط اینکه / فراهم‌شده",
   "cat": "verb",
   "ex": "You can leave early, provided you finish your work.",
   "exfa": "می‌توانی زود بروی، به‌شرط اینکه کارت را تمام کنی."
@@ -20871,7 +20871,7 @@
  {
   "i": 2551,
   "en": "fax",
-  "fa": "فکس / نقل‌سند",
+  "fa": "فکس",
   "cat": "noun",
   "ex": "Please send the signed contract by fax or email.",
   "exfa": "لطفاً قرارداد امضاشده را با فکس یا ایمیل بفرستید."
@@ -21408,7 +21408,7 @@
  {
   "i": 2614,
   "en": "log",
-  "fa": "سجل / گزارش",
+  "fa": "دفتر ثبت / گزارش",
   "cat": "noun",
   "ex": "Keep a log of the hours you work each week.",
   "exfa": "از ساعت‌های کاری هر هفته‌ات یک دفتر ثبت نگه دار."
@@ -21516,7 +21516,7 @@
  {
   "i": 2626,
   "en": "able",
-  "fa": "توانایی / قادر",
+  "fa": "قادر / توانا",
   "cat": "adj",
   "ex": "She wasn't able to fix the printer alone.",
   "exfa": "او نتوانست به‌تنهایی پرینتر را درست کند."
@@ -23082,7 +23082,7 @@
  {
   "i": 2811,
   "en": "active",
-  "fa": "فعال / سرگرم",
+  "fa": "فعال",
   "cat": "adj",
   "ex": "Everything felt active after the trip.",
   "exfa": "بعد از سفر همه چیز فعال به نظر می‌رسید."
@@ -24603,7 +24603,7 @@
  {
   "i": 2994,
   "en": "channel",
-  "fa": "کانال / رودخانه",
+  "fa": "کانال / شبکه",
   "cat": "noun",
   "ex": "He changed the channel to watch the news.",
   "exfa": "او کانال را عوض کرد تا اخبار را ببیند."
@@ -25968,7 +25968,7 @@
  {
   "i": 3159,
   "en": "directly",
-  "fa": "مستقیم / براه‌راست",
+  "fa": "مستقیم",
   "cat": "adv",
   "ex": "I directly drink tea at night.",
   "exfa": "شب‌ها مستقیم چای می‌نوشم."
@@ -26304,7 +26304,7 @@
  {
   "i": 3200,
   "en": "positive",
-  "fa": "مثبت / مصیح",
+  "fa": "مثبت",
   "cat": "adj",
   "ex": "Try to stay positive even when things go wrong.",
   "exfa": "حتی وقتی اوضاع بد پیش می‌رود، سعی کن مثبت بمانی."
@@ -26328,7 +26328,7 @@
  {
   "i": 3203,
   "en": "abstract",
-  "fa": "انتزاعی / خلاصه",
+  "fa": "انتزاعی / چکیده",
   "cat": "noun",
   "ex": "Please read the abstract before the full paper.",
   "exfa": "لطفاً قبل از مقاله‌ی کامل، چکیده را بخوان."
@@ -26608,7 +26608,7 @@
  {
   "i": 3238,
   "en": "dating",
-  "fa": "قرار ملاقات / تاریخ‌گذاری",
+  "fa": "دوستیابی / قرار گذاشتن",
   "cat": "people",
   "ex": "They have been dating for almost a year.",
   "exfa": "آنها نزدیک به یک سال است که با هم قرار می‌گذارند."
@@ -27569,7 +27569,7 @@
  {
   "i": 3356,
   "en": "civil",
-  "fa": "شهروندی / مدنی",
+  "fa": "مدنی / داخلی",
   "cat": "adj",
   "ex": "The country is recovering from a long civil war.",
   "exfa": "کشور در حال بهبود از یک جنگ داخلی طولانی است."
@@ -27957,7 +27957,7 @@
  {
   "i": 3402,
   "en": "grant",
-  "fa": "دادن / بورس",
+  "fa": "کمک‌هزینه / بورس",
   "cat": "noun",
   "ex": "The university gave her a grant to continue her research.",
   "exfa": "دانشگاه به او یک بورس داد تا تحقیقش را ادامه دهد."
@@ -29273,7 +29273,7 @@
  {
   "i": 3562,
   "en": "oral",
-  "fa": "شفاهی / دهان",
+  "fa": "شفاهی / دهانی",
   "cat": "adj",
   "ex": "The students take an oral exam next week.",
   "exfa": "دانشجوها هفتهٔ آینده امتحان شفاهی می‌دهند."
@@ -29453,7 +29453,7 @@
  {
   "i": 3584,
   "en": "league",
-  "fa": "لیگ / جامعه",
+  "fa": "لیگ",
   "cat": "sport",
   "ex": "Our team finished second in the league this year.",
   "exfa": "تیم ما امسال در لیگ دوم شد."
@@ -30802,7 +30802,7 @@
  {
   "i": 3750,
   "en": "mount",
-  "fa": "صعود کردن / کوه",
+  "fa": "سوار شدن / کوه",
   "cat": "noun",
   "ex": "He struggled to mount the horse.",
   "exfa": "او با سختی سعی کرد سوار اسب شود."
@@ -31210,7 +31210,7 @@
  {
   "i": 3800,
   "en": "lab",
-  "fa": "آزمایشگاه / لوبیا‌تاریخی",
+  "fa": "آزمایشگاه",
   "cat": "noun",
   "ex": "The blood samples were sent to the lab yesterday.",
   "exfa": "نمونه‌های خون دیروز به آزمایشگاه فرستاده شد."
@@ -32110,7 +32110,7 @@
  {
   "i": 3912,
   "en": "promote",
-  "fa": "ترویج کرد / ارتقا دهد",
+  "fa": "ارتقا دادن / ترویج کردن",
   "cat": "verb",
   "ex": "The company plans to promote him to manager.",
   "exfa": "شرکت قصد دارد او را به مدیر ارتقا دهد."
@@ -32366,7 +32366,7 @@
  {
   "i": 3944,
   "en": "prepared",
-  "fa": "آماده‌کرد / آماده",
+  "fa": "آماده",
   "cat": "verb",
   "ex": "Make sure you are prepared for the exam tomorrow.",
   "exfa": "مطمئن شو برای امتحان فردا آماده‌ای."
@@ -32714,7 +32714,7 @@
  {
   "i": 3986,
   "en": "depth",
-  "fa": "عمق / ژرفای",
+  "fa": "عمق / ژرفا",
   "cat": "noun",
   "ex": "The pool has a depth of two meters.",
   "exfa": "استخر عمقی دو متری دارد."
@@ -33042,7 +33042,7 @@
  {
   "i": 4026,
   "en": "residential",
-  "fa": "مسکونی / سکونی",
+  "fa": "مسکونی",
   "cat": "adj",
   "ex": "They moved to a quiet residential area.",
   "exfa": "آن‌ها به یک منطقه‌ی مسکونی آرام نقل‌مکان کردند."
@@ -33158,7 +33158,7 @@
  {
   "i": 4040,
   "en": "wire",
-  "fa": "سیم / سیم‌پیام",
+  "fa": "سیم",
   "cat": "noun",
   "ex": "The electrician replaced the old wire behind the wall.",
   "exfa": "برق‌کار سیم قدیمی پشت دیوار را عوض کرد."
@@ -33826,7 +33826,7 @@
  {
   "i": 4123,
   "en": "doc",
-  "fa": "مختصر سند",
+  "fa": "سند",
   "cat": "noun",
   "ex": "Can you send me the doc before the meeting?",
   "exfa": "می‌توانی سند را قبل از جلسه برایم بفرستی؟"
@@ -34079,7 +34079,7 @@
  {
   "i": 4153,
   "en": "forecast",
-  "fa": "پیش‌بینی / نبوءت",
+  "fa": "پیش‌بینی",
   "cat": "weather",
   "ex": "The weather forecast says it will rain tomorrow.",
   "exfa": "پیش‌بینی هوا می‌گوید فردا باران می‌بارد."
@@ -34299,7 +34299,7 @@
  {
   "i": 4180,
   "en": "academy",
-  "fa": "آکادمی / دانشکده",
+  "fa": "آکادمی",
   "cat": "noun",
   "ex": "He trained at a football academy as a teenager.",
   "exfa": "او در نوجوانی در یک آکادمی فوتبال تمرین می‌کرد."
@@ -34439,7 +34439,7 @@
  {
   "i": 4197,
   "en": "philosophy",
-  "fa": "فلسفه / نظریه زندگی",
+  "fa": "فلسفه",
   "cat": "noun",
   "ex": "He studied philosophy in university for four years.",
   "exfa": "او چهار سال در دانشگاه فلسفه خواند."
@@ -35023,7 +35023,7 @@
  {
   "i": 4269,
   "en": "comfort",
-  "fa": "آرام / تسکین",
+  "fa": "آرامش / تسکین",
   "cat": "noun",
   "ex": "She found comfort in her mother's words.",
   "exfa": "او در حرف‌های مادرش آرامش پیدا کرد."
@@ -35075,7 +35075,7 @@
  {
   "i": 4275,
   "en": "appeal",
-  "fa": "تقاضا / جاذبه",
+  "fa": "جذابیت / درخواست",
   "cat": "noun",
   "ex": "Everything felt appeal after the trip.",
   "exfa": "بعد از سفر همه چیز تقاضا به نظر می‌رسید."
@@ -35527,7 +35527,7 @@
  {
   "i": 4330,
   "en": "hip",
-  "fa": "باسن / درون",
+  "fa": "لگن / باسن",
   "cat": "body",
   "ex": "She fell in the bathroom and broke her hip.",
   "exfa": "در حمام افتاد و استخوان لگنش شکست."
@@ -36847,7 +36847,7 @@
  {
   "i": 4493,
   "en": "conflict",
-  "fa": "تنازع / تضاد",
+  "fa": "تعارض / تضاد",
   "cat": "noun",
   "ex": "There was a conflict between the two departments.",
   "exfa": "بین آن دو بخش تعارضی وجود داشت."
@@ -37071,7 +37071,7 @@
  {
   "i": 4521,
   "en": "specialist",
-  "fa": "متخصص / فن‌بر",
+  "fa": "متخصص",
   "cat": "work",
   "ex": "She saw a heart specialist about her condition.",
   "exfa": "او برای وضعیتش به یک متخصص قلب مراجعه کرد."
@@ -37087,7 +37087,7 @@
  {
   "i": 4523,
   "en": "experienced",
-  "fa": "تجربه‌کار / مجرب",
+  "fa": "باتجربه / مجرب",
   "cat": "work",
   "ex": "It is not easy to experienced every day.",
   "exfa": "هر روز تجربه‌کار آسان نیست."
@@ -37167,7 +37167,7 @@
  {
   "i": 4533,
   "en": "totally",
-  "fa": "کاملاً / بطور‌کل",
+  "fa": "کاملاً",
   "cat": "adv",
   "ex": "She totally finished the work.",
   "exfa": "او کاملاً کار را تمام کرد."
@@ -37831,7 +37831,7 @@
  {
   "i": 4616,
   "en": "buddy",
-  "fa": "دوست، رفیق",
+  "fa": "دوست / رفیق",
   "cat": "people",
   "ex": "He's been my best buddy since school.",
   "exfa": "او از دوران مدرسه بهترین دوستم بوده است."
@@ -37895,7 +37895,7 @@
  {
   "i": 4624,
   "en": "celebrity",
-  "fa": "شهرت / مشهور",
+  "fa": "چهره‌ی مشهور / شهرت",
   "cat": "movie",
   "ex": "The celebrity signed autographs for her fans.",
   "exfa": "آن چهره‌ی مشهور برای طرفدارانش امضا داد."
@@ -37983,7 +37983,7 @@
  {
   "i": 4635,
   "en": "pub",
-  "fa": "میخانه، کافه",
+  "fa": "میخانه / کافه",
   "cat": "noun",
   "ex": "We had lunch at a pub by the river.",
   "exfa": "ناهار را در میخانه‌ای کنار رودخانه خوردیم."
@@ -37991,7 +37991,7 @@
  {
   "i": 4636,
   "en": "scope",
-  "fa": "دامنه / تلسکوپ",
+  "fa": "دامنه / حوزه",
   "cat": "noun",
   "ex": "The scope of the project is too wide.",
   "exfa": "دامنهٔ این پروژه بیش از حد گسترده است."
@@ -38836,7 +38836,7 @@
  {
   "i": 4741,
   "en": "volunteer",
-  "fa": "داوطلب / خود‌سپرد",
+  "fa": "داوطلب",
   "cat": "work",
   "ex": "She works as a volunteer at the animal shelter.",
   "exfa": "او به‌عنوان داوطلب در پناهگاه حیوانات کار می‌کند."
@@ -38860,7 +38860,7 @@
  {
   "i": 4744,
   "en": "democratic",
-  "fa": "دموکراتیک / مردم‌ساز",
+  "fa": "دموکراتیک / مردمی",
   "cat": "adj",
   "ex": "The country held its first democratic election.",
   "exfa": "کشور اولین انتخابات دموکراتیک خود را برگزار کرد."
@@ -38884,7 +38884,7 @@
  {
   "i": 4747,
   "en": "bound",
-  "fa": "مرز / محدود",
+  "fa": "ملزم / موظف",
   "cat": "noun",
   "ex": "Employees are legally bound to keep this secret.",
   "exfa": "کارمندان از نظر قانونی موظف به حفظ این راز هستند."
@@ -39461,7 +39461,7 @@
  {
   "i": 4818,
   "en": "lodge",
-  "fa": "کلبه / برگزیدن",
+  "fa": "کلبه / اقامتگاه",
   "cat": "noun",
   "ex": "We stayed in a mountain lodge for the weekend.",
   "exfa": "ما آخر هفته را در یک کلبه‌ی کوهستانی ماندیم."
@@ -40213,7 +40213,7 @@
  {
   "i": 4911,
   "en": "sufficient",
-  "fa": "کافی / کافه",
+  "fa": "کافی",
   "cat": "adj",
   "ex": "Everything felt sufficient after the trip.",
   "exfa": "بعد از سفر همه چیز کافی به نظر می‌رسید."
@@ -41153,7 +41153,7 @@
  {
   "i": 5028,
   "en": "crisis",
-  "fa": "بحران / فساد",
+  "fa": "بحران",
   "cat": "noun",
   "ex": "The country is facing an economic crisis.",
   "exfa": "کشور با یک بحران اقتصادی روبروست."
@@ -42257,7 +42257,7 @@
  {
   "i": 5165,
   "en": "antique",
-  "fa": "قدیمی / تاریخی",
+  "fa": "عتیقه / قدیمی",
   "cat": "noun",
   "ex": "This antique belonged to my grandmother.",
   "exfa": "این عتیقه متعلق به مادربزرگم بود."
@@ -42505,7 +42505,7 @@
  {
   "i": 5196,
   "en": "stable",
-  "fa": "پایدار / آخور",
+  "fa": "پایدار / اصطبل",
   "cat": "adj",
   "ex": "His condition is stable after the operation.",
   "exfa": "حال او بعد از عمل پایدار است."
@@ -43349,7 +43349,7 @@
  {
   "i": 5301,
   "en": "settlement",
-  "fa": "حل / توطین",
+  "fa": "استقرار / تسویه",
   "cat": "noun",
   "ex": "This room is too settlement for me.",
   "exfa": "این اتاق برای من زیادی حل است."
@@ -43489,7 +43489,7 @@
  {
   "i": 5318,
   "en": "wing",
-  "fa": "بال / فصیل",
+  "fa": "بال / جناح",
   "cat": "animal",
   "ex": "The bird's wing was injured in the storm.",
   "exfa": "بال آن پرنده در طوفان آسیب دید."
@@ -43561,7 +43561,7 @@
  {
   "i": 5327,
   "en": "commit",
-  "fa": "متعهد شدن / انجام دادن",
+  "fa": "متعهد شدن / مرتکب شدن",
   "cat": "verb",
   "ex": "I cannot commit to a class every single evening.",
   "exfa": "نمی‌توانم به کلاسی که هر شب باشد متعهد شوم."
@@ -43585,7 +43585,7 @@
  {
   "i": 5330,
   "en": "rail",
-  "fa": "ریل / دستکاری",
+  "fa": "ریل",
   "cat": "noun",
   "ex": "The train slowed down as it approached the rail junction.",
   "exfa": "قطار هنگام نزدیک شدن به تقاطع ریل سرعتش را کم کرد."
@@ -43701,7 +43701,7 @@
  {
   "i": 5344,
   "en": "animation",
-  "fa": "انیمیشن / تحریک",
+  "fa": "انیمیشن",
   "cat": "movie",
   "ex": "The children loved the animation in that movie.",
   "exfa": "بچه‌ها انیمیشن آن فیلم را دوست داشتند."
@@ -43765,7 +43765,7 @@
  {
   "i": 5352,
   "en": "disaster",
-  "fa": "فاجعه / بلیت",
+  "fa": "فاجعه",
   "cat": "noun",
   "ex": "The flood was the worst disaster in years.",
   "exfa": "سیل بدترین فاجعه‌ی سال‌های اخیر بود."
@@ -44165,7 +44165,7 @@
  {
   "i": 5402,
   "en": "attachment",
-  "fa": "وابستگی / پیوست",
+  "fa": "پیوست / وابستگی",
   "cat": "noun",
   "ex": "I forgot to open the attachment in her email.",
   "exfa": "یادم رفت پیوست ایمیل او را باز کنم."
@@ -44417,7 +44417,7 @@
  {
   "i": 5433,
   "en": "principle",
-  "fa": "اصل / نیت",
+  "fa": "اصل / قاعده",
   "cat": "noun",
   "ex": "Honesty is one of her most important principles.",
   "exfa": "صداقت یکی از مهم‌ترین اصول اوست."
@@ -44521,7 +44521,7 @@
  {
   "i": 5446,
   "en": "craft",
-  "fa": "هنر / صنعت / ماهرانه",
+  "fa": "صنعت دستی / هنر",
   "cat": "noun",
   "ex": "Pottery is a traditional craft in this village.",
   "exfa": "سفالگری یک صنعت سنتی در این روستاست."
@@ -44561,7 +44561,7 @@
  {
   "i": 5451,
   "en": "blind",
-  "fa": "کور / نابینا / شیرجه",
+  "fa": "نابینا / کور",
   "cat": "adj",
   "ex": "He has been blind since he was six.",
   "exfa": "او از شش سالگی نابینا بوده است."
@@ -45313,7 +45313,7 @@
  {
   "i": 5544,
   "en": "modem",
-  "fa": "مودم / دستگاه تبدیل",
+  "fa": "مودم",
   "cat": "noun",
   "ex": "Restart the modem if the internet stops working.",
   "exfa": "اگر اینترنت قطع شد، مودم را دوباره روشن کن."
@@ -45389,7 +45389,7 @@
  {
   "i": 5553,
   "en": "composition",
-  "fa": "ترکیب / نوشتار",
+  "fa": "ترکیب / انشا",
   "cat": "noun",
   "ex": "We had to write a composition about our summer.",
   "exfa": "باید درباره‌ی تابستانمان یک انشا می‌نوشتیم."
@@ -45693,7 +45693,7 @@
  {
   "i": 5591,
   "en": "visible",
-  "fa": "دیدنی / قابل رؤیت",
+  "fa": "قابل مشاهده / نمایان",
   "cat": "adj",
   "ex": "Everything felt visible after the trip.",
   "exfa": "بعد از سفر همه چیز دیدنی به نظر می‌رسید."
@@ -46249,7 +46249,7 @@
  {
   "i": 5660,
   "en": "emphasis",
-  "fa": "تأکید / لحن",
+  "fa": "تأکید",
   "cat": "noun",
   "ex": "The school places great emphasis on reading.",
   "exfa": "مدرسه تأکید زیادی روی خواندن دارد."
@@ -46265,7 +46265,7 @@
  {
   "i": 5662,
   "en": "aspect",
-  "fa": "جنبه / نوع",
+  "fa": "جنبه / وجه",
   "cat": "noun",
   "ex": "Cost is an important aspect of the decision.",
   "exfa": "هزینه یکی از جنبه‌های مهم این تصمیم است."
@@ -46649,7 +46649,7 @@
  {
   "i": 5710,
   "en": "establishment",
-  "fa": "تأسیس / مؤسسه",
+  "fa": "مؤسسه / تأسیس",
   "cat": "noun",
   "ex": "The new restaurant is a popular establishment downtown.",
   "exfa": "بعد از جلسه تأسیس به نظر می‌رسید."
@@ -46929,7 +46929,7 @@
  {
   "i": 5744,
   "en": "closely",
-  "fa": "نزدیک / به‌طور دقیق",
+  "fa": "از نزدیک / با دقت",
   "cat": "adv",
   "ex": "He answered closely.",
   "exfa": "او نزدیک جواب داد."
@@ -46937,7 +46937,7 @@
  {
   "i": 5745,
   "en": "radiation",
-  "fa": "تشعیع / پرتو",
+  "fa": "تشعشع / پرتو",
   "cat": "noun",
   "ex": "Too much radiation from the sun can harm your skin.",
   "exfa": "تشعشع زیاد خورشید می‌تواند به پوست آسیب بزند."
@@ -47025,7 +47025,7 @@
  {
   "i": 5756,
   "en": "baker",
-  "fa": "نانوای",
+  "fa": "نانوا",
   "cat": "food",
   "ex": "The baker starts work at four in the morning.",
   "exfa": "نانوا ساعت چهار صبح کارش را شروع می‌کند."
@@ -47105,7 +47105,7 @@
  {
   "i": 5766,
   "en": "ward",
-  "fa": "بخش / حفاظت",
+  "fa": "بخش",
   "cat": "noun",
   "ex": "She works as a nurse in the children's ward.",
   "exfa": "او به‌عنوان پرستار در بخش کودکان کار می‌کند."
@@ -47801,7 +47801,7 @@
  {
   "i": 5853,
   "en": "personally",
-  "fa": "شخصی / به تنهایی",
+  "fa": "شخصاً / به‌طور شخصی",
   "cat": "adv",
   "ex": "She personally finished the work.",
   "exfa": "او شخصی کار را تمام کرد."
@@ -47865,7 +47865,7 @@
  {
   "i": 5861,
   "en": "excellence",
-  "fa": "برتری / عالیت",
+  "fa": "برتری",
   "cat": "noun",
   "ex": "The school is known for academic excellence.",
   "exfa": "این مدرسه به‌خاطر برتری علمی معروف است."
@@ -47921,7 +47921,7 @@
  {
   "i": 5868,
   "en": "recognize",
-  "fa": "شناخت / تشخیص",
+  "fa": "شناختن / تشخیص دادن",
   "cat": "verb",
   "ex": "I almost didn't recognize you with short hair.",
   "exfa": "با موی کوتاه تقریباً نتوانستم تو را بشناسم."
@@ -48105,7 +48105,7 @@
  {
   "i": 5891,
   "en": "athletic",
-  "fa": "ورزشی / رزمنده",
+  "fa": "ورزشی",
   "cat": "adj",
   "ex": "Everything felt athletic after the trip.",
   "exfa": "بعد از سفر همه چیز ورزشی به نظر می‌رسید."
@@ -48481,7 +48481,7 @@
  {
   "i": 5938,
   "en": "builder",
-  "fa": "تعمیر‌کننده / سازنده",
+  "fa": "سازنده / بنا",
   "cat": "noun",
   "ex": "The builder finished the roof in two days.",
   "exfa": "سازنده سقف را در دو روز تمام کرد."
@@ -49149,7 +49149,7 @@
  {
   "i": 6021,
   "en": "pound",
-  "fa": "پاوند / کوبیدن",
+  "fa": "پوند / کوبیدن",
   "cat": "noun",
   "ex": "The price of the bag is fifty pounds.",
   "exfa": "قیمت این کیف پنجاه پوند است."
@@ -49441,7 +49441,7 @@
  {
   "i": 6057,
   "en": "minority",
-  "fa": "اقلیت / کمیت",
+  "fa": "اقلیت",
   "cat": "noun",
   "ex": "Only a small minority disagreed with the plan.",
   "exfa": "فقط یک اقلیت کوچک با این برنامه مخالف بود."
@@ -49745,7 +49745,7 @@
  {
   "i": 6095,
   "en": "geography",
-  "fa": "جغرافیا / شناخت زمین",
+  "fa": "جغرافیا",
   "cat": "noun",
   "ex": "We are learning about the geography of Africa.",
   "exfa": "ما داریم درباره‌ی جغرافیای آفریقا یاد می‌گیریم."
@@ -49865,7 +49865,7 @@
  {
   "i": 6110,
   "en": "paradise",
-  "fa": "بهشت / کشور خیال",
+  "fa": "بهشت",
   "cat": "noun",
   "ex": "To paradise well, you need patience.",
   "exfa": "برای خوب بهشت، صبر لازم است."
@@ -49977,7 +49977,7 @@
  {
   "i": 6124,
   "en": "overnight",
-  "fa": "شب‌تاب / یک‌شبه",
+  "fa": "یک‌شبه / شبانه",
   "cat": "adv",
   "ex": "The bread must rise overnight before baking.",
   "exfa": "نان باید یک‌شب قبل از پخت ور بیاید."
@@ -51689,7 +51689,7 @@
  {
   "i": 6337,
   "en": "animated",
-  "fa": "متحرک / زنده‌ه",
+  "fa": "متحرک",
   "cat": "verb",
   "ex": "I like to animated in the morning.",
   "exfa": "متحرک در صبح را دوست دارم."
@@ -52757,7 +52757,7 @@
  {
   "i": 6470,
   "en": "outline",
-  "fa": "طرح کلی / مخطط",
+  "fa": "طرح کلی",
   "cat": "noun",
   "ex": "She wrote a brief outline before starting the essay.",
   "exfa": "او قبل از شروع مقاله یک طرح کلی کوتاه نوشت."
@@ -53001,7 +53001,7 @@
  {
   "i": 6500,
   "en": "orchestra",
-  "fa": "ارکستر / سازمند",
+  "fa": "ارکستر",
   "cat": "music",
   "ex": "The orchestra played a beautiful symphony.",
   "exfa": "این ارکستر برای من خیلی مهم است."
@@ -53049,7 +53049,7 @@
  {
   "i": 6506,
   "en": "lottery",
-  "fa": "قرعه‌کشی / بختی",
+  "fa": "قرعه‌کشی",
   "cat": "noun",
   "ex": "He won a small prize in the lottery.",
   "exfa": "او در قرعه‌کشی جایزه‌ی کوچکی برد."
@@ -53449,7 +53449,7 @@
  {
   "i": 6556,
   "en": "announce",
-  "fa": "اطلاع رسانی کردن / خبر دادن",
+  "fa": "اعلام کردن / خبر دادن",
   "cat": "talk",
   "ex": "The teacher will announce the results tomorrow.",
   "exfa": "معلم فردا نتایج را اعلام خواهد کرد."
@@ -53501,10 +53501,10 @@
  {
   "i": 6562,
   "en": "arrow",
-  "fa": "تیر / فلش",
+  "fa": "پیکان / تیر",
   "cat": "noun",
   "ex": "Follow the arrow to find the exit.",
-  "exfa": "برای پیدا کردن خروجی، فلش را دنبال کن."
+  "exfa": "برای پیدا کردن خروجی، پیکان را دنبال کن."
  },
  {
   "i": 6563,
@@ -53645,7 +53645,7 @@
  {
   "i": 6580,
   "en": "arrangement",
-  "fa": "ترتیب / آرایش",
+  "fa": "ترتیب / تنظیم",
   "cat": "noun",
   "ex": "We made an arrangement to meet at noon.",
   "exfa": "ما ترتیبی دادیم که ظهر همدیگر را ببینیم."
@@ -55698,7 +55698,7 @@
  {
   "i": 6835,
   "en": "tin",
-  "fa": "قلع / فلزی نقره‌ای",
+  "fa": "قلع / حلبی",
   "cat": "noun",
   "ex": "Old roofs in the village are made of tin.",
   "exfa": "سقف‌های قدیمی روستا از حلبی ساخته شده‌اند."
@@ -56266,7 +56266,7 @@
  {
   "i": 6906,
   "en": "drunk",
-  "fa": "مست / نشه‌ور",
+  "fa": "مست",
   "cat": "people",
   "ex": "He was too drunk to drive home.",
   "exfa": "او آن‌قدر مست بود که نمی‌توانست تا خانه رانندگی کند."
@@ -56498,7 +56498,7 @@
  {
   "i": 6935,
   "en": "cod",
-  "fa": "ماهی شب‌تاب / کد",
+  "fa": "ماهی کاد",
   "cat": "food",
   "ex": "We ordered fried cod and chips for lunch.",
   "exfa": "برای ناهار ماهی کاد سرخ‌شده با سیب‌زمینی سفارش دادیم."
@@ -56602,7 +56602,7 @@
  {
   "i": 6948,
   "en": "trim",
-  "fa": "چیدمان / برش دادن",
+  "fa": "اصلاح / برش کوتاه",
   "cat": "noun",
   "ex": "The barber gave him a quick trim.",
   "exfa": "آرایشگر یک اصلاح سریع برایش انجام داد."
@@ -56850,7 +56850,7 @@
  {
   "i": 6979,
   "en": "hopefully",
-  "fa": "امیدواری که / شاید",
+  "fa": "خوشبختانه / امیدوارم که",
   "cat": "adv",
   "ex": "I hopefully drink tea at night.",
   "exfa": "شب‌ها امیدواری که چای می‌نوشم."
@@ -57010,7 +57010,7 @@
  {
   "i": 6999,
   "en": "grill",
-  "fa": "شامل‌پز / تشویق پرسش",
+  "fa": "کباب‌پز / بازجویی کردن",
   "cat": "food",
   "ex": "It is not easy to grill every day.",
   "exfa": "هر روز شامل‌پز آسان نیست."
@@ -57082,7 +57082,7 @@
  {
   "i": 7008,
   "en": "bull",
-  "fa": "گاو نر / دروغ",
+  "fa": "گاو نر",
   "cat": "animal",
   "ex": "The bull chased the farmer across the field.",
   "exfa": "گاو نر کشاورز را در سراسر مزرعه دنبال کرد."
@@ -57202,7 +57202,7 @@
  {
   "i": 7023,
   "en": "hanging",
-  "fa": "آویز / متعلق",
+  "fa": "آویز",
   "cat": "noun",
   "ex": "A hanging lamp lit the center of the room.",
   "exfa": "یک چراغ آویز وسط اتاق را روشن می‌کرد."
@@ -58503,7 +58503,7 @@
  {
   "i": 7184,
   "en": "offensive",
-  "fa": "هجومی / ناپسند",
+  "fa": "توهین‌آمیز / هجومی",
   "cat": "adj",
   "ex": "His joke was rude and offensive to many people.",
   "exfa": "شوخی او بی‌ادبانه و توهین‌آمیز برای خیلی‌ها بود."
@@ -58727,7 +58727,7 @@
  {
   "i": 7212,
   "en": "stylish",
-  "fa": "شیکی / خوش سلیقه",
+  "fa": "شیک / خوش‌سلیقه",
   "cat": "adj",
   "ex": "She always wears stylish clothes to work.",
   "exfa": "او همیشه لباس‌های شیک برای کار می‌پوشد."
@@ -58743,7 +58743,7 @@
  {
   "i": 7214,
   "en": "maple",
-  "fa": "افرا / درخت اقاقیا",
+  "fa": "درخت افرا",
   "cat": "nature",
   "ex": "The maple tree turns bright red in autumn.",
   "exfa": "درخت افرا در پاییز قرمز روشن می‌شود."
@@ -58823,7 +58823,7 @@
  {
   "i": 7224,
   "en": "pie",
-  "fa": "پای / تکه",
+  "fa": "پای",
   "cat": "food",
   "ex": "My grandmother baked an apple pie for dessert.",
   "exfa": "مادربزرگم برای دسر پای سیب پخت."
@@ -59103,7 +59103,7 @@
  {
   "i": 7259,
   "en": "timely",
-  "fa": "به موقع / سرسری",
+  "fa": "به‌موقع",
   "cat": "time",
   "ex": "I timely drink tea at night.",
   "exfa": "شب‌ها به موقع چای می‌نوشم."
@@ -59724,7 +59724,7 @@
  {
   "i": 7336,
   "en": "attach",
-  "fa": "الصاق کردن / پیوست کردن",
+  "fa": "پیوست کردن / وصل کردن",
   "cat": "verb",
   "ex": "Please attach your resume to the email.",
   "exfa": "لطفاً رزومه‌تان را به ایمیل پیوست کنید."
@@ -59860,7 +59860,7 @@
  {
   "i": 7353,
   "en": "divine",
-  "fa": "الهی / درمانی",
+  "fa": "الهی",
   "cat": "noun",
   "ex": "They believed the king had divine power.",
   "exfa": "آنها باور داشتند پادشاه قدرتی الهی دارد."
@@ -59876,7 +59876,7 @@
  {
   "i": 7355,
   "en": "approve",
-  "fa": "تصویب کردن / موافقت",
+  "fa": "تصویب کردن / موافقت کردن",
   "cat": "verb",
   "ex": "The manager approved my vacation request.",
   "exfa": "مدیر درخواست مرخصی‌ام را تصویب کرد."
@@ -59932,7 +59932,7 @@
  {
   "i": 7362,
   "en": "dialog",
-  "fa": "گفت‌وگو / حوار",
+  "fa": "گفت‌وگو",
   "cat": "noun",
   "ex": "The movie has very natural dialog.",
   "exfa": "یک ساعت درباره‌ی گفت‌وگو حرف زدیم."
@@ -59988,7 +59988,7 @@
  {
   "i": 7369,
   "en": "pole",
-  "fa": "قطب / الوار",
+  "fa": "تیر / قطب",
   "cat": "noun",
   "ex": "A tall flag pole stood in front of the school.",
   "exfa": "یک تیر پرچم بلند جلوی مدرسه ایستاده بود."
@@ -60640,7 +60640,7 @@
  {
   "i": 7450,
   "en": "ferry",
-  "fa": "کشتی عبور / پیمایش",
+  "fa": "کشتی مسافربری",
   "cat": "noun",
   "ex": "We took the ferry across the river.",
   "exfa": "ما با کشتی از رودخانه عبور کردیم."
@@ -60984,7 +60984,7 @@
  {
   "i": 7493,
   "en": "rely",
-  "fa": "تکیه کردن / وابسته",
+  "fa": "تکیه کردن / وابسته بودن",
   "cat": "verb",
   "ex": "I like to rely in the morning.",
   "exfa": "تکیه کردن در صبح را دوست دارم."
@@ -61104,7 +61104,7 @@
  {
   "i": 7508,
   "en": "filling",
-  "fa": "پر کردن / پوشش",
+  "fa": "پرکردگی / پوشش",
   "cat": "noun",
   "ex": "The dentist put a filling in my back tooth.",
   "exfa": "دندان‌پزشک یک پرکردگی در دندان عقب من گذاشت."
@@ -62197,7 +62197,7 @@
  {
   "i": 7643,
   "en": "absent",
-  "fa": "غایب / فقدان",
+  "fa": "غایب",
   "cat": "adj",
   "ex": "Two students were absent from class again today.",
   "exfa": "امروز هم دو دانش‌آموز در کلاس غایب بودند."
@@ -62685,7 +62685,7 @@
  {
   "i": 7704,
   "en": "chaos",
-  "fa": "بی نظمی / هرج و مرج",
+  "fa": "بی‌نظمی / هرج‌ومرج",
   "cat": "noun",
   "ex": "The power cut caused chaos in the city.",
   "exfa": "قطع برق در شهر باعث بی‌نظمی شد."
@@ -62736,7 +62736,7 @@
   "fa": "سگ‌آبی",
   "cat": "noun",
   "ex": "The beaver built a dam across the stream.",
-  "exfa": "سندیاب یک سد روی نهر ساخت."
+  "exfa": "سگ‌آبی یک سد روی نهر ساخت."
  },
  {
   "i": 7711,
@@ -63069,7 +63069,7 @@
  {
   "i": 7752,
   "en": "dramatic",
-  "fa": "درام‌گونه / چشمگیر",
+  "fa": "دراماتیک / چشمگیر",
   "cat": "adj",
   "ex": "There was a dramatic change in the weather.",
   "exfa": "تغییر چشمگیری در آب‌وهوا رخ داد."
@@ -63525,7 +63525,7 @@
  {
   "i": 7809,
   "en": "pit",
-  "fa": "چاله / دره",
+  "fa": "چاله / گودال",
   "cat": "noun",
   "ex": "The workers dug a deep pit for the new foundation.",
   "exfa": "کارگرها برای پی جدید گودال عمیقی کندند."
@@ -64321,7 +64321,7 @@
  {
   "i": 7908,
   "en": "arise",
-  "fa": "بر خاستن / پیدا شدن",
+  "fa": "پیش آمدن / به‌وجود آمدن",
   "cat": "verb",
   "ex": "Problems often arise when plans change suddenly.",
   "exfa": "وقتی برنامه‌ها ناگهان تغییر می‌کنند، اغلب مشکلاتی پیش می‌آید."
@@ -64705,7 +64705,7 @@
  {
   "i": 7956,
   "en": "dive",
-  "fa": "شنا کردن / فروچاله رفتن",
+  "fa": "شیرجه زدن / غواصی کردن",
   "cat": "verb",
   "ex": "She learned to dive off the high board.",
   "exfa": "او یاد گرفت از تخته‌ی بلند شیرجه بزند."
@@ -65357,7 +65357,7 @@
  {
   "i": 8037,
   "en": "invitation",
-  "fa": "دعوت / افتخار",
+  "fa": "دعوت‌نامه / دعوت",
   "cat": "noun",
   "ex": "I got an invitation to her wedding last week.",
   "exfa": "هفته‌ی پیش یک دعوت‌نامه برای عروسی او گرفتم."
@@ -65981,7 +65981,7 @@
  {
   "i": 8115,
   "en": "interact",
-  "fa": "با‌هم ارتباط گذاشتن",
+  "fa": "تعامل کردن / ارتباط برقرار کردن",
   "cat": "verb",
   "ex": "Children learn to interact with others at school.",
   "exfa": "بچه‌ها در مدرسه یاد می‌گیرند با دیگران ارتباط برقرار کنند."
@@ -67157,7 +67157,7 @@
  {
   "i": 8261,
   "en": "artistic",
-  "fa": "هنری / فنی",
+  "fa": "هنری",
   "cat": "adj",
   "ex": "This room is too artistic for me.",
   "exfa": "این اتاق برای من زیادی هنری است."
@@ -68357,7 +68357,7 @@
  {
   "i": 8411,
   "en": "transform",
-  "fa": "تبدیل می‌کند / دگرگون می‌کند",
+  "fa": "تبدیل کردن / دگرگون کردن",
   "cat": "verb",
   "ex": "New paint can transform an old room completely.",
   "exfa": "رنگ جدید می‌تواند یک اتاق قدیمی را کاملاً دگرگون کند."
@@ -68610,7 +68610,7 @@
  {
   "i": 8442,
   "en": "nasty",
-  "fa": "کثیف / ناپاک",
+  "fa": "ناخوشایند / کثیف",
   "cat": "adj",
   "ex": "The medicine has a nasty taste.",
   "exfa": "این دارو طعم بدی دارد."
@@ -68826,7 +68826,7 @@
  {
   "i": 8469,
   "en": "queue",
-  "fa": "صف / ترتیب",
+  "fa": "صف",
   "cat": "noun",
   "ex": "There was a long queue outside the cinema.",
   "exfa": "بیرون سینما یک صف طولانی بود."
@@ -69202,7 +69202,7 @@
  {
   "i": 8516,
   "en": "motivation",
-  "fa": "انگیزه / تحریک",
+  "fa": "انگیزه",
   "cat": "noun",
   "ex": "Money is not his only motivation for working hard.",
   "exfa": "پول تنها انگیزه‌ی او برای سخت کار کردن نیست."
@@ -70322,7 +70322,7 @@
  {
   "i": 8656,
   "en": "spice",
-  "fa": "ادویه / زیبایی",
+  "fa": "ادویه",
   "cat": "noun",
   "ex": "This curry has too much spice for me.",
   "exfa": "این خورش برای من خیلی ادویه دارد."
@@ -71302,7 +71302,7 @@
  {
   "i": 8778,
   "en": "dump",
-  "fa": "انداختن / زباله‌دان",
+  "fa": "زباله‌دان / دور انداختن",
   "cat": "noun",
   "ex": "They took the old furniture to the dump.",
   "exfa": "آنها وسایل قدیمی را به زباله‌دان بردند."
@@ -72058,7 +72058,7 @@
  {
   "i": 8872,
   "en": "freely",
-  "fa": "آزادانه / بی‌رابطه",
+  "fa": "آزادانه",
   "cat": "adv",
   "ex": "He answered freely.",
   "exfa": "او آزادانه جواب داد."
@@ -72098,7 +72098,7 @@
  {
   "i": 8877,
   "en": "fur",
-  "fa": "پوست حیوان / خز",
+  "fa": "خز / پوست",
   "cat": "animal",
   "ex": "Her winter coat is lined with soft rabbit fur.",
   "exfa": "آستر پالتوی زمستانی‌اش از خز نرم خرگوش است."
@@ -72306,7 +72306,7 @@
  {
   "i": 8903,
   "en": "remedy",
-  "fa": "درمان / توسل",
+  "fa": "درمان / راه‌حل",
   "cat": "noun",
   "ex": "Honey is a natural remedy for a sore throat.",
   "exfa": "عسل یک درمان طبیعی برای گلودرد است."
@@ -72426,7 +72426,7 @@
  {
   "i": 8918,
   "en": "barely",
-  "fa": "به سختی / تقریباً نه",
+  "fa": "به سختی / به‌زحمت",
   "cat": "adv",
   "ex": "They spoke barely about the problem.",
   "exfa": "به سختی درباره‌ی مشکل حرف زدند."
@@ -72530,7 +72530,7 @@
  {
   "i": 8931,
   "en": "marble",
-  "fa": "سنگ مر‌مر / مر‌مر",
+  "fa": "مرمر",
   "cat": "noun",
   "ex": "The floor of the palace is made of marble.",
   "exfa": "کف کاخ از سنگ مرمر ساخته شده است."
@@ -73238,7 +73238,7 @@
  {
   "i": 9019,
   "en": "patrol",
-  "fa": "گشتزنی / نیروی نگهبانی",
+  "fa": "گشت‌زنی / نیروی نگهبانی",
   "cat": "noun",
   "ex": "A police patrol drove through the neighborhood at night.",
   "exfa": "یک گشت پلیس شب در محله می‌گشت."
@@ -73662,7 +73662,7 @@
  {
   "i": 9072,
   "en": "barrel",
-  "fa": "بشکه / لول",
+  "fa": "بشکه",
   "cat": "noun",
   "ex": "The company stores oil in large barrels.",
   "exfa": "شرکت نفت را در بشکه‌های بزرگ نگه می‌دارد."
@@ -73798,7 +73798,7 @@
  {
   "i": 9089,
   "en": "jar",
-  "fa": "شیشه / تکان دادن",
+  "fa": "شیشه",
   "cat": "noun",
   "ex": "She keeps sugar in a glass jar on the shelf.",
   "exfa": "شکر را در یک شیشه روی قفسه نگه می‌دارد."
@@ -73878,7 +73878,7 @@
  {
   "i": 9099,
   "en": "questionnaire",
-  "fa": "پرسشنامه / نامه پرسش",
+  "fa": "پرسشنامه",
   "cat": "noun",
   "ex": "Please fill out this questionnaire before your visit.",
   "exfa": "لطفاً قبل از ویزیت این پرسشنامه را پر کنید."
@@ -75174,7 +75174,7 @@
  {
   "i": 9261,
   "en": "complement",
-  "fa": "متمم / تکمیل کردن",
+  "fa": "مکمل / تکمیل کردن",
   "cat": "noun",
   "ex": "This room is too complement for me.",
   "exfa": "این اتاق برای من زیادی متمم است."
@@ -76070,7 +76070,7 @@
  {
   "i": 9373,
   "en": "homeless",
-  "fa": "بی‌خانه / بی‌سرپناه",
+  "fa": "بی‌خانمان / بی‌سرپناه",
   "cat": "adj",
   "ex": "This room is too homeless for me.",
   "exfa": "این اتاق برای من زیادی بی‌خانه است."
@@ -76438,7 +76438,7 @@
  {
   "i": 9419,
   "en": "allowance",
-  "fa": "کمک هزینه / عدم مخالفت",
+  "fa": "پول‌توجیبی / کمک‌هزینه",
   "cat": "noun",
   "ex": "My parents give me a small allowance every week.",
   "exfa": "والدینم هر هفته مقدار کمی پول‌توجیبی به من می‌دهند."
@@ -77634,7 +77634,7 @@
  {
   "i": 9568,
   "en": "remark",
-  "fa": "نظر / تبصره",
+  "fa": "نظر",
   "cat": "noun",
   "ex": "She made a rude remark about his cooking.",
   "exfa": "او یک نظر بی‌ادبانه درباره‌ی آشپزی‌اش داد."
@@ -78370,7 +78370,7 @@
  {
   "i": 9660,
   "en": "mud",
-  "fa": "گل / مالش",
+  "fa": "گِل / لجن",
   "cat": "nature",
   "ex": "The children came home with mud on their boots.",
   "exfa": "بچه‌ها با چکمه‌هایی پر از گِل به خانه برگشتند."
@@ -78490,7 +78490,7 @@
  {
   "i": 9675,
   "en": "afterwards",
-  "fa": "بعداً / پس‌ازاین",
+  "fa": "بعداً / پس از آن",
   "cat": "adv",
   "ex": "We had dinner and went for a walk afterwards.",
   "exfa": "شام خوردیم و بعد از آن به پیاده‌روی رفتیم."
@@ -78538,7 +78538,7 @@
  {
   "i": 9681,
   "en": "explosion",
-  "fa": "انفجار / بمباران",
+  "fa": "انفجار",
   "cat": "noun",
   "ex": "The explosion could be heard from miles away.",
   "exfa": "صدای انفجار از کیلومترها دورتر شنیده می‌شد."
@@ -78774,7 +78774,7 @@
  {
   "i": 9710,
   "en": "distant",
-  "fa": "دور / فاصل‌دار",
+  "fa": "دور",
   "cat": "adj",
   "ex": "The mountains looked distant in the morning fog.",
   "exfa": "کوه‌ها در مه صبحگاهی دور به نظر می‌رسیدند."
@@ -80582,7 +80582,7 @@
  {
   "i": 9936,
   "en": "survivor",
-  "fa": "بازمانده / جان سالم به در برنده",
+  "fa": "بازمانده",
   "cat": "noun",
   "ex": "Only one survivor was found after the crash.",
   "exfa": "بعد از سانحه فقط یک بازمانده پیدا شد."
@@ -80830,7 +80830,7 @@
  {
   "i": 9967,
   "en": "painful",
-  "fa": "دردناک / تکلیف‌دهنده",
+  "fa": "دردناک",
   "cat": "adj",
   "ex": "Everything felt painful after the trip.",
   "exfa": "بعد از سفر همه چیز دردناک به نظر می‌رسید."
@@ -80902,7 +80902,7 @@
  {
   "i": 9976,
   "en": "nowhere",
-  "fa": "هیچ جا / بجایی",
+  "fa": "هیچ‌جا",
   "cat": "noun",
   "ex": "After the flood, the road led nowhere.",
   "exfa": "بعد از سیل، جاده به هیچ‌جا ختم نمی‌شد."
@@ -81390,7 +81390,7 @@
  {
   "i": 10037,
   "en": "moss",
-  "fa": "خزه / طحالب",
+  "fa": "خزه",
   "cat": "nature",
   "ex": "Green moss covered the old stone wall.",
   "exfa": "خزه‌ی سبز دیوار سنگی قدیمی را پوشانده بود."
@@ -81594,7 +81594,7 @@
  {
   "i": 10062,
   "en": "purse",
-  "fa": "کیف پول / تسه‌ی",
+  "fa": "کیف پول",
   "cat": "money",
   "ex": "She keeps her keys in her purse.",
   "exfa": "او کلیدهایش را در کیف پولش نگه می‌دارد."
@@ -81910,7 +81910,7 @@
  {
   "i": 10101,
   "en": "controversial",
-  "fa": "بحث‌برانگیز / مختلف‌فیه",
+  "fa": "بحث‌برانگیز / جنجالی",
   "cat": "adj",
   "ex": "This room is too controversial for me.",
   "exfa": "این اتاق برای من زیادی بحث‌برانگیز است."
@@ -82382,7 +82382,7 @@
  {
   "i": 10160,
   "en": "bacon",
-  "fa": "گوشت خوک",
+  "fa": "بیکن",
   "cat": "food",
   "ex": "He fried some bacon and eggs for breakfast.",
   "exfa": "او مقداری بیکن و تخم‌مرغ برای صبحانه سرخ کرد."
@@ -83246,7 +83246,7 @@
  {
   "i": 10268,
   "en": "jade",
-  "fa": "یشم (سنگ قیمتی)",
+  "fa": "سنگ یشم",
   "cat": "noun",
   "ex": "She wore a beautiful jade necklace.",
   "exfa": "او یک گردنبند زیبای یشم پوشیده بود."
@@ -83326,7 +83326,7 @@
  {
   "i": 10278,
   "en": "excitement",
-  "fa": "هیجان / تحریک",
+  "fa": "هیجان",
   "cat": "feeling",
   "ex": "There was a lot of excitement before the game.",
   "exfa": "قبل از بازی هیجان زیادی وجود داشت."
@@ -84302,7 +84302,7 @@
  {
   "i": 10400,
   "en": "sympathy",
-  "fa": "همدردی / تعاطف",
+  "fa": "همدردی",
   "cat": "noun",
   "ex": "She sent a card to express her sympathy.",
   "exfa": "او یک کارت فرستاد تا همدردی‌اش را ابراز کند."
