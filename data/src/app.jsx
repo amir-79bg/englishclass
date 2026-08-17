@@ -141,7 +141,7 @@ const CORE_VERBS = ['make', 'do', 'take', 'have', 'get', 'go', 'come', 'keep', '
 // گفتن» named two curricula rather than two things a learner wants to do.
 const NAV = [
   { screen: 'home', label: 'یادگیری', icon: 'ph ph-graduation-cap',
-    owns: ['study', 'quiz', 'result', 'sent', 'sbrun', 'gram', 'glesson', 'colloc', 'csrun', 'listen', 'ltext', 'disc', 'dses'] },
+    owns: ['lessons', 'study', 'quiz', 'result', 'sent', 'sbrun', 'gram', 'glesson', 'colloc', 'csrun', 'listen', 'ltext', 'disc', 'dses'] },
   { screen: 'browse', label: 'واژه‌نامه', icon: 'ph ph-magnifying-glass', owns: ['add'] },
   { screen: 'words', label: 'تمرین', icon: 'ph ph-game-controller', owns: ['exercise', 'game'] },
   { screen: 'jobs', label: 'شغل‌ها', icon: 'ph ph-briefcase', owns: ['jobdetail'] }
@@ -471,6 +471,11 @@ const LEVEL_SHARE = [0.08, 0.11, 0.15, 0.19, 0.22, 0.25];
 // N would multiply units without adding real structure, a much larger N
 // would make "unit" nearly synonymous with "level" for A1.
 const LESSON_SIZE = 8, UNIT_LESSONS = 10;
+// LEG-015 — bumped whenever the taught word sequence changes shape enough that
+// a stored {unit, lesson} cursor no longer names the same eight words. load()
+// resets only the cursor when this differs from the saved value; vocab_sr_v1 is
+// never touched, so nothing a learner actually learned is affected.
+const CURRICULUM_V = 2;
 // LEG-003 — same-session Initial Learning for brand-new words (see
 // vocab_session_v1 below). A word gets exactly 3 turns this session, spread
 // apart so it never repeats back-to-back: introduce (A) -> recognition MCQ
@@ -516,6 +521,10 @@ class Component extends DCLogic {
     this.BASE = (typeof window !== 'undefined' && window.VOCAB_WORDS) || [];
     this.CATS = (typeof window !== 'undefined' && window.VOCAB_CATS) || {};
     this.ORDER = (typeof window !== 'undefined' && window.VOCAB_ORDER) || null;
+    // LEG-015 — the taught CEFR curriculum (see levelWords()). Kept on the
+    // instance as well as read from window, so the late-arriving-data path
+    // below can refresh it without every caller reaching for a global.
+    this.LEVELWORDS = (typeof window !== 'undefined' && window.VOCAB_LEVELS) || null;
     this.custom = [];
     try { this.custom = JSON.parse(localStorage.getItem('vocab_custom') || '[]'); } catch (e) {}
     this.over = {};
@@ -786,11 +795,11 @@ class Component extends DCLogic {
         // studied. “Known” remains the stricter, separately labelled metric.
         done: srn.introduced, total: STAGES.core,
         sub: srn.introduced + ' آشناشده · ' + srn.learning + ' در حال یادگیری · ' + srn.known + ' بلد',
-        next: qs.due || qs.fresh ? 'شروع جلسهٔ امروز' : 'مرورهای امروز تمام شده',
-        go: () => {
-          if (!d || !d.order.length || d.pos >= d.order.length) this.nextLesson();
-          else this.setState({ screen: 'study' }, () => this.prepare());
-        } },
+        next: qs.due || qs.fresh ? 'دیدن فهرست درس‌ها' : 'مرورهای امروز تمام شده',
+        // LEG-009 — vocabulary now opens on the lesson browser, not straight
+        // into a continuous study queue; the learner picks a lesson there
+        // and "شروع تمرین" is what actually starts a session (startLessonPractice()).
+        go: () => this.setState({ screen: 'lessons' }) },
 
       { key: 'gram', label: 'دستور زبان', icon: 'ph-fill ph-book-open-text', color: '#b3a9e6',
         done: gDone, total: gi.length,
@@ -911,6 +920,48 @@ class Component extends DCLogic {
     this._srApplyOutcome(r, true, 'mcq', 2, day); // Turn C: fa->en retrieval
     sr[i] = r;
     this.srSave();
+  }
+  // LEG-011 — placement's "everything below the placed level is already
+  // done" bulk step. Same real Initial-Learning-completion path as
+  // srCompleteInitialLearning() above (introduce, rating 2, then two
+  // successful outcome applications standing in for Turn B/C) — reused
+  // exactly, field for field, per D-012 ("a mastered word is never
+  // permanently removed from review, only spaced further out"), so a
+  // bulk-skipped word gets the same real successes=2/dueDay a normally
+  // learned word gets and comes back into rotation on the same schedule if
+  // placement was wrong about it. The only difference from calling
+  // srCompleteInitialLearning() once per word is batching: this can be
+  // 1,000+ words for one placement, so it builds the whole vocab_sr_v1
+  // object in memory and calls srSave() once at the end instead of once per
+  // word (srIntroduce()'s own per-word save is deliberately not reused here
+  // for that reason — its record-seeding logic is inlined instead).
+  srBulkCompleteInitialLearning(indices) {
+    const day = currentDayNo(), sr = this.srLoad();
+    indices.forEach(i => {
+      const r = sr[i] || [0, 0, 0, 0, 0, 0, day, 1];
+      r[4] = 1; r[5] = 1; r[3] = r[3] | 8; r[6] = day; r[7] = 1; // srIntroduce(i, 2), inlined
+      this._srApplyOutcome(r, true, 'mcq', 2, day); // Turn B: en->fa recognition
+      this._srApplyOutcome(r, true, 'mcq', 2, day); // Turn C: fa->en retrieval
+      sr[i] = r;
+    });
+    this.srSave();
+  }
+  // All word indices in every level strictly below `vocabLevel`, in
+  // canonical lesson order — built the same way lessonBrowserVals() walks a
+  // level (unitsInLevel -> lessonsInUnit -> lessonWordsOf, all LEG-002,
+  // untouched) so this sees exactly the same lessons the lesson browser
+  // will later mark complete.
+  wordsBelowLevel(vocabLevel) {
+    const out = [];
+    for (let li = 0; li < LEVELS.indexOf(vocabLevel); li++) {
+      const L = LEVELS[li];
+      for (let u = 1; u <= this.unitsInLevel(L); u++) {
+        for (let les = 1; les <= this.lessonsInUnit(L, u); les++) {
+          out.push.apply(out, this.lessonWordsOf(L, u, les));
+        }
+      }
+    }
+    return out;
   }
   // «بلد»: three correct answers, on three different days, at least one of them
   // produced by the learner, and at least a week between the first and the last.
@@ -1359,12 +1410,29 @@ class Component extends DCLogic {
   // lsLevelUnlocked/dcLevelUnlocked-style reads of d.round elsewhere) working
   // unchanged is fully determined by the level alone.
   roundForLevel(L) { return Math.max(0, LEVELS.indexOf(L)) * PER_LEVEL + 1; }
-  // ---- Level -> Unit -> Lesson position (LEG-002) ----
-  // A level's words, in canonical VOCAB_ORDER, chopped into fixed LESSON_SIZE
-  // chunks and then into fixed UNIT_LESSONS groups of lessons. No new data is
-  // added to data/words.json — this is purely a runtime grouping of the
-  // existing per-level slice levelSpans()/chunkOrder() already compute.
-  lessonsInLevel(L) { return Math.max(1, Math.ceil((this.levelSize(L) || 0) / LESSON_SIZE)); }
+  // ---- Level -> Unit -> Lesson position (LEG-002, re-sourced by LEG-015) ----
+  // A level's words, chopped into fixed LESSON_SIZE lessons and UNIT_LESSONS
+  // units. The WORDS THEMSELVES now come from window.VOCAB_LEVELS — the real
+  // CEFR curriculum (data/curriculum.json, built by tools/build-curriculum.js
+  // from CEFR-J + Octanove) — instead of slicing VOCAB_ORDER by percentage.
+  //
+  // That slicing was indefensible and docs/dictionary-audit.md measured what it
+  // cost: VOCAB_ORDER is frequency-scored only for its first ~1,800 entries and
+  // sorted by WORD LENGTH after that, so the "advanced" bands filled with porn
+  // domains, brand names and scrape artifacts, five explicit terms were dealt in
+  // the A2 band, and 836 proper nouns polluted the drills. VOCAB_LEVELS contains
+  // only words an external, openly-licensed CEFR wordlist actually grades AND
+  // that have real Persian content in the catalog, so none of that is
+  // representable any more.
+  //
+  // VOCAB_ORDER is deliberately still used for review sourcing and search; it is
+  // only the TAUGHT sequence that moved.
+  levelWords(L) {
+    const src = (typeof window !== 'undefined' && window.VOCAB_LEVELS) || this.LEVELWORDS || null;
+    const a = src && src[L];
+    return Array.isArray(a) ? a : [];
+  }
+  lessonsInLevel(L) { return Math.max(1, Math.ceil(this.levelWords(L).length / LESSON_SIZE)); }
   unitsInLevel(L) { return Math.max(1, Math.ceil(this.lessonsInLevel(L) / UNIT_LESSONS)); }
   lessonsInUnit(L, unit) {
     const total = this.lessonsInLevel(L), startLesson0 = (Math.max(1, unit) - 1) * UNIT_LESSONS;
@@ -1372,29 +1440,36 @@ class Component extends DCLogic {
   }
   // The (up to) LESSON_SIZE word indices that make up one specific lesson.
   lessonWordsOf(L, unit, lesson) {
-    const n = this.W.length;
-    const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, i) => i)).filter(i => i < n);
-    const spans = levelSpans(ord.length), li = LEVELS.indexOf(L);
-    const sp = li >= 0 ? spans[li] : null; if (!sp) return [];
-    const bandWords = ord.slice(sp[0], sp[0] + sp[1]);
+    const band = this.levelWords(L);
     const lessonIdx0 = (Math.max(1, unit) - 1) * UNIT_LESSONS + (Math.max(1, lesson) - 1);
     const start = lessonIdx0 * LESSON_SIZE;
-    return bandWords.slice(start, start + LESSON_SIZE);
+    return band.slice(start, start + LESSON_SIZE);
   }
   // Inverse lookup: where does word i live? Used by anything that needs a
   // single word's curriculum position rather than a whole lesson's roster.
+  // Returns null for a word that is not taught at all (most of the catalog) —
+  // callers already treat null as "no curriculum position".
   wordPosition(i) {
-    const n = this.W.length;
-    const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, k) => k)).filter(k => k < n);
-    const spans = levelSpans(ord.length);
-    for (let li = 0; li < spans.length; li++) {
-      const sp = spans[li], rank = ord.slice(sp[0], sp[0] + sp[1]).indexOf(i);
+    for (let li = 0; li < LEVELS.length; li++) {
+      const rank = this.levelWords(LEVELS[li]).indexOf(i);
       if (rank >= 0) {
         const lessonIdx0 = Math.floor(rank / LESSON_SIZE);
         return { level: LEVELS[li], unit: Math.floor(lessonIdx0 / UNIT_LESSONS) + 1, lesson: (lessonIdx0 % UNIT_LESSONS) + 1, order: rank % LESSON_SIZE };
       }
     }
     return null;
+  }
+  // Every taught word, across every level — the pool anything learner-facing
+  // may draw from. Distractors use it so a word that is never taught can never
+  // appear as a wrong answer either (docs/dictionary-audit.md F1/F4: junk
+  // distractors do not make a drill harder, they make it falsely easy).
+  teachableSet() {
+    if (!this._teachable) {
+      const s = new Set();
+      LEVELS.forEach(L => this.levelWords(L).forEach(i => s.add(i)));
+      this._teachable = s;
+    }
+    return this._teachable;
   }
   // Same "any never-introduced word left" freshness check queueStats() does
   // for a whole level band (read-only against vocab_sr_v1 via srRec — the SR
@@ -1487,11 +1562,13 @@ class Component extends DCLogic {
       fresh: this.lessonStats(level, unit, lesson).fresh
     };
   }
+  // LEG-015 — "X of Y known at this level" now counts the level's real taught
+  // words, not the old percentage slice of VOCAB_ORDER. Before this, C2 claimed
+  // 2,630 words when it actually teaches 60, so the progress bar could never
+  // move and the number was simply untrue.
   levelStats(r, n) {
     n = n || this.W.length;
-    const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, i) => i)).filter(i => i < n);
-    const spans = levelSpans(ord.length), sp = spans[Math.min(this.band(r), spans.length - 1)] || [0, ord.length];
-    const words = ord.slice(sp[0], sp[0] + sp[1]);
+    const words = this.levelWords(this.levelOf(r));
     let introduced = 0, known = 0;
     words.forEach(i => {
       const rec = this.srRec(i);
@@ -1500,12 +1577,15 @@ class Component extends DCLogic {
     });
     return { total: words.length, introduced: introduced, known: known };
   }
-  levelSize(L) { const ord = (this.ORDER && this.ORDER.length ? this.ORDER : []).filter(i => i < this.W.length); const sp = levelSpans(ord.length || this.W.length)[LEVELS.indexOf(L)]; return sp ? sp[1] : 0; }
-  levelWordIndices(L) {
-    const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: this.W.length }, (_, i) => i)).filter(i => i < this.W.length);
-    const sp = levelSpans(ord.length)[Math.max(0, LEVELS.indexOf(L))] || [0, ord.length];
-    return new Set(ord.slice(sp[0], sp[0] + sp[1]));
-  }
+  // LEG-015 — how many words a level actually teaches. Now the real count of
+  // graded, content-bearing words in that level (VOCAB_LEVELS), not a
+  // percentage slice of the whole catalog. The numbers are smaller and honest:
+  // a level that says 160 has 160 teachable words, not 2,315 mostly-unusable ones.
+  levelSize(L) { return this.levelWords(L).length; }
+  // LEG-015 — the matching game's per-level pool. Same source as the taught
+  // sequence, so a word the course never teaches cannot turn up as a game tile
+  // either; before this it sliced VOCAB_ORDER and could deal a porn domain.
+  levelWordIndices(L) { return new Set(this.levelWords(L)); }
   practiceLevelUnlocked(L) {
     const at = LEVELS.indexOf(L); if (at <= 0) return true;
     const d = (this.state && this.state.data) || this.load();
@@ -1536,6 +1616,34 @@ class Component extends DCLogic {
       // soon as it fills in a missing additive field — otherwise a user who
       // closes the tab without interacting keeps re-deriving from the old
       // `round` on every load instead of the migration actually landing.
+      this.save(d);
+    }
+    // LEG-015 curriculum-switch migration. `d.unit`/`d.lesson` used to index a
+    // percentage slice of VOCAB_ORDER; they now index the real CEFR curriculum,
+    // so the same numbers name a COMPLETELY DIFFERENT set of eight words. A
+    // learner left mid-"unit 3 lesson 7" would silently resume in unrelated
+    // vocabulary.
+    //
+    // The level itself is still meaningful, so it is kept; only the position
+    // inside it resets. That costs nothing, because completion is not stored on
+    // the position — lessonStats() re-derives it from vocab_sr_v1, which is
+    // untouched. Any word they genuinely learned still has its SR record, so
+    // every lesson built from words they already know shows as complete
+    // immediately and the lesson browser lands them at the first real gap.
+    // NO SRS PROGRESS IS LOST OR REWRITTEN HERE — this only moves a cursor.
+    if (d && d.curriculumV !== CURRICULUM_V) {
+      d.curriculumV = CURRICULUM_V;
+      d.unit = 1;
+      d.lesson = 1;
+      // pos back to the start of whatever queue exists. d.order is deliberately
+      // LEFT ALONE even though it is now stale: the guard at the top of this
+      // function treats an empty order as a corrupt save and replaces the whole
+      // blob with blank(), which would wipe the learner's level, streak, goal
+      // and lifetime stats — the exact opposite of what this migration is for.
+      // The stale order is never shown: entering vocabulary lands on the lesson
+      // browser (LEG-009), and every route out of it goes through
+      // startLessonPractice(), which rebuilds d.order from the new curriculum.
+      d.pos = 0;
       this.save(d);
     }
     const t = today();
@@ -1613,7 +1721,7 @@ class Component extends DCLogic {
     if (!this.W.length) {
       this.iv = setInterval(() => {
         if (window.VOCAB_WORDS && window.VOCAB_WORDS.length) {
-          clearInterval(this.iv); this.BASE = window.VOCAB_WORDS; this.CATS = window.VOCAB_CATS || {}; this.ORDER = window.VOCAB_ORDER || null; this.rebuildW();
+          clearInterval(this.iv); this.BASE = window.VOCAB_WORDS; this.CATS = window.VOCAB_CATS || {}; this.ORDER = window.VOCAB_ORDER || null; this.LEVELWORDS = window.VOCAB_LEVELS || null; this._teachable = null; this.rebuildW();
           this.setState({ data: this.load(this.W.length) });
         }
       }, 150);
@@ -1743,7 +1851,18 @@ class Component extends DCLogic {
     const mode = this.mode();
     const d = this.state.data;
     const r = mulberry(w.i * 7919 + d.round);
-    const withFa = this.W.filter(x => x.fa);
+    // LEG-015 — candidates are drawn only from words the curriculum actually
+    // teaches. A word that is never taught must never appear as a wrong answer
+    // either: docs/dictionary-audit.md F1/F4 measured that junk distractors do
+    // not make a drill harder, they make it FALSELY EASY (the learner eliminates
+    // the obvious nonsense), so the SRS then records a success that was never
+    // earned and schedules the word further out. Custom user words (which have
+    // no curriculum entry but are real vocabulary the learner chose) stay
+    // eligible. Falls back to the old pool only if the curriculum is missing
+    // entirely, so an older bundle still renders four options.
+    const teachable = this.teachableSet();
+    const eligible = x => !!x.fa && (!teachable.size || teachable.has(x.i) || x.i >= this.BASE.length);
+    const withFa = this.W.filter(eligible);
     // Distractors must differ from the answer by the text SHOWN, not just by
     // index: 883 words share a gloss with another word in the same category, so
     // index-only dedupe put two identical options on screen, one marked wrong.
@@ -1767,6 +1886,12 @@ class Component extends DCLogic {
     const pool = [];
     const add = (c, allowEnNear) => {
       if (pool.length >= 3 || !c || !c.fa) return;
+      // The eligibility gate lives HERE rather than in each tier, because the
+      // tiers draw from different places (the session queue, lesson rosters,
+      // vocab_sr_v1's own keys, a category scan) and only this is common to all
+      // of them. Tier 3 in particular reads an existing learner's SR history,
+      // which can still contain words studied before the curriculum switch.
+      if (!eligible(c)) return;
       if (takenIdx.has(c.i) || takenShown.has(shown(c))) return;
       if (faNear(c.fa)) return;
       if (!allowEnNear && enNear(c.en)) return;
@@ -1882,27 +2007,24 @@ class Component extends DCLogic {
   }
   // LEG-003 — the shared "what happens after any card is answered" tail,
   // used by both advance() (existing reviews/flash) and ilAdvance() (the new
-  // Initial-Learning turns). Soft daily goal (point 2): the old hard
-  // "صف فعلی تمام شد" (kind:'round') stop is now a last resort behind
-  // extendQueue() — an exhausted queue tries to pull in more reviews/the
-  // next lesson's new words first, as long as today's goal is not yet met.
-  // The goal screen itself is delayed (never skipped) while a word
-  // introduced this session still has a Turn B/C pending, so it is never
-  // silently abandoned mid-sequence — see ilHasPending().
+  // Initial-Learning turns).
+  // LEG-009 — the old soft daily card-count goal (kind:'goal', "۲۰ کارت
+  // دیگر") is gone entirely: the product owner asked for it removed, not
+  // adjusted. A session now runs uninterrupted until the specific lesson the
+  // learner picked in the browser (startLessonPractice()) is actually
+  // finished — lessonStats().fresh === 0 is exactly LEG-002/003's existing
+  // "every word in this lesson finished Initial Learning and is in
+  // vocab_sr_v1" definition, reused verbatim, not reinvented. d.goal itself
+  // is left in the data shape (load() still defaults it) and still drives
+  // the passive "امروز X از Y" home-screen stat (renderVals() below) — only
+  // the interruption screen is gone; nothing ever increments d.goal anymore
+  // since the "۲۰ کارت دیگر" action that used to do that no longer exists.
   afterCard() {
     const d = this.state.data;
-    const goal = d.goal || 20, doneToday = d.days[today()] || 0;
-    if (doneToday >= goal && !this.ilHasPending()) {
-      return this.setState({ screen: 'result', result: { kind: 'goal' } });
+    if (this.lessonStats(d.level, d.unit, d.lesson).fresh === 0) {
+      return this.setState({ screen: 'result', result: { kind: 'lesson' } });
     }
-    if (d.pos >= d.order.length) {
-      if (doneToday < goal) return this.extendQueue(() => this.afterCard());
-      // Safety net only: ilHasPending() being true above already proved the
-      // queue cannot be exhausted (any pending turn keeps d.order ahead of
-      // d.pos), so in practice this is unreachable — kept in case that
-      // invariant is ever broken by a future change.
-      return this.setState({ screen: 'result', result: { kind: 'round' } });
-    }
+    if (d.pos >= d.order.length) return this.extendQueue(() => this.afterCard());
     const mile = Math.floor(d.seen / QUIZ_EVERY);
     if (mile > 0 && d.seen % QUIZ_EVERY === 0 && !d.quizzes['seen:' + mile]) return this.startQuiz(mile);
     this.prepare();
@@ -1970,6 +2092,14 @@ class Component extends DCLogic {
     }
     d.round = this.roundForLevel(d.level);
   }
+  // LEG-009 note: the redesigned flow (lesson browser + explicit
+  // startLessonPractice() below) no longer calls nextLesson() from live UI —
+  // every study session now starts from a learner's explicit lesson pick,
+  // never an automatic "whatever is next" jump. Left defined (unmodified)
+  // rather than deleted: advanceLessonIfDone() below still backs
+  // advanceLevel()'s explicit "go to the next level" action, and removing a
+  // still-correct, previously-verified (LEG-002) helper is a separate
+  // cleanup this task did not ask for.
   nextLesson() {
     const n = this.W.length;
     this.set(d => {
@@ -1981,18 +2111,60 @@ class Component extends DCLogic {
       else this.prepare();
     });
   }
-  // LEG-003 point 2 — soft daily goal. Instead of ending the session the
-  // moment d.order runs out (the old "صف فعلی تمام شد" / kind:'round'
-  // screen), APPEND more cards (more due reviews once the day rolls over
-  // enough, and/or the next lesson's new words) onto the existing d.order
-  // and keep d.pos where it is. Appending rather than replacing is what
-  // keeps any Initial-Learning turn already spliced into d.order intact.
+  // LEG-009 — explicit per-lesson practice start, chosen from the lesson
+  // browser. Replaces the old "goal reached" flow's implicit continuation:
+  // the learner always picks the exact (level, unit, lesson), the app never
+  // silently decides for them. If the chosen lesson is already the active
+  // one and mid-session (some cards still unanswered), resume it as-is
+  // instead of rebuilding d.order — a rebuild would drop any word already
+  // mid Initial-Learning (turn B/C already scheduled by ilSchedule() into
+  // the existing order), since chunkOrder()'s fresh-word filter (isFresh())
+  // deliberately skips any word that already has a vocab_session_v1 record.
+  startLessonPractice(L, unit, lesson) {
+    const cur = this.state.data;
+    if (cur.level === L && cur.unit === unit && cur.lesson === lesson && cur.order.length && cur.pos < cur.order.length) {
+      this.setState({ screen: 'study', result: null }, () => this.prepare());
+      return;
+    }
+    const n = this.W.length;
+    this.set(d => {
+      d.level = L; d.unit = unit; d.lesson = lesson;
+      d.round = this.roundForLevel(L);
+      d.pos = 0; d.wordCount = n;
+      d.order = this.chunkOrder(d, n);
+    }, { screen: 'study', result: null }, () => {
+      if (!this.state.data.order.length) this.setState({ screen: 'result', result: { kind: 'empty' } });
+      else this.prepare();
+    });
+  }
+  // LEG-009 — once every lesson of every unit in the current level is
+  // complete, the lesson browser has nothing left to offer; this is the one
+  // place a level actually advances now, and it is an explicit tap
+  // (lbAdvanceLevel in lessonBrowserVals()), never automatic. Reuses
+  // advanceLessonIfDone() (LEG-002) exactly as-is — that function already
+  // knows how to cascade lesson -> unit -> level when lessonStats().fresh
+  // is 0 for the current position, which is guaranteed true here.
+  advanceLevel() {
+    // LEG-010 — also drop the browser's level-tab selection back to "follow
+    // d.level" (null), so advancing lands the view on the newly-current
+    // level instead of leaving it stuck on the just-finished one.
+    this.set(d => { this.advanceLessonIfDone(d); }, { lbUnit: 0, lbLv: null });
+  }
+  // LEG-003 point 2 (superseded by LEG-009 — see afterCard()): APPEND more
+  // due reviews onto the existing d.order and keep d.pos where it is,
+  // instead of ending the session, when the queue runs dry but the active
+  // lesson (afterCard() already checked) is not yet complete. Appending
+  // rather than replacing is what keeps any Initial-Learning turn already
+  // spliced into d.order intact. No longer advances the lesson itself here
+  // (that was LEG-003's soft-goal auto-continue) — advanceLessonIfDone() is
+  // never called from this path anymore; afterCard() already returns the
+  // "این درس تمام شد" result the moment the active lesson finishes, before
+  // extendQueue() would ever run for it.
   extendQueue(done) {
     const n = this.W.length;
     let grew = false;
     this.set(d => {
       const before = d.order.length;
-      this.advanceLessonIfDone(d);
       const more = this.chunkOrder(d, n).filter(i => d.order.indexOf(i) < 0);
       if (more.length) d.order = d.order.concat(more);
       grew = d.order.length > before;
@@ -2166,6 +2338,16 @@ class Component extends DCLogic {
     const vocabLevel = p.overrideLevel || p.finalVocabLevel;
     const structLevel = p.overrideLevel || p.finalGramLevel;
     const conservLevel = LEVELS[Math.min(li(vocabLevel), li(structLevel))];
+    // LEG-011 — product owner: after placement, every level below the placed
+    // one must show as fully complete in the lesson browser (LEG-009/010),
+    // not just invisible/never-introduced. Bulk-complete Initial Learning for
+    // every word below vocabLevel in one batched vocab_sr_v1 write, before
+    // building the placed level's own (untouched, normal, locked-by-lesson)
+    // queue below. Applies identically whether vocabLevel came from the
+    // computed result or the manual override chip (both already collapse to
+    // the same `vocabLevel` above).
+    const belowWords = this.wordsBelowLevel(vocabLevel);
+    if (belowWords.length) this.srBulkCompleteInitialLearning(belowWords);
     this.set(d => {
       d.level = vocabLevel; d.unit = 1; d.lesson = 1;
       d.round = this.roundForLevel(vocabLevel);
@@ -2307,7 +2489,13 @@ class Component extends DCLogic {
   gameLevel(level, score, lives) {
     const gm = this.state.game; if (!gm) return;
     const levelWords = gm.lv ? this.levelWordIndices(gm.lv) : null;
-    const pool = this.W.filter(w => w.fa && (gm.cat === 'all' || w.cat === gm.cat) && (!levelWords || levelWords.has(w.i)));
+    // LEG-015 — an "all levels" game still has to stay inside the taught
+    // vocabulary; without this the category-only game drew from the whole
+    // 10,524-entry catalog, junk included.
+    const teachable = this.teachableSet();
+    const pool = this.W.filter(w => w.fa && (gm.cat === 'all' || w.cat === gm.cat)
+      && (!levelWords || levelWords.has(w.i))
+      && (!teachable.size || teachable.has(w.i) || w.i >= this.BASE.length));
     const pairs = shuffled(pool, (Date.now() % 99991) + level * 13).slice(0, 6);
     const tiles = shuffled(
       pairs.map((w, i) => ({ pair: i, label: w.en, en: true, state: '' })).concat(
@@ -4031,6 +4219,200 @@ class Component extends DCLogic {
     return out;
   }
 
+  // ---- Lesson browser (LEG-009, revised LEG-010) ----
+  // LEG-002 built lessonsInLevel()/unitsInLevel()/lessonsInUnit()/
+  // lessonWordsOf()/lessonStats() purely as backend grouping math — nothing
+  // ever showed a learner this Level -> Unit -> Lesson structure before now.
+  // Unlock/complete reuse lessonStats() exactly as LEG-002/LEG-003 already
+  // defined it (fresh === 0 means every word in the lesson finished Initial
+  // Learning and is in vocab_sr_v1) — no new "is this lesson done" rule.
+  //
+  // LEG-010 pulled the per-lesson unlock/complete/in-progress walk out into
+  // lessonProgress(L) below so both the browser's own rendering (grouped
+  // into units here) and the new "ادامهٔ تمرین" button's target lookup
+  // (lbContinueTarget()) share exactly one implementation of the lock rule
+  // — no risk of the two ever disagreeing about what is unlocked.
+  lessonProgress(L) {
+    const unitCount = this.unitsInLevel(L);
+    let prevComplete = true; // lesson 1 of unit 1 is always unlocked
+    const out = [];
+    for (let u = 1; u <= unitCount; u++) {
+      const lessonsCount = this.lessonsInUnit(L, u);
+      for (let les = 1; les <= lessonsCount; les++) {
+        const stats = this.lessonStats(L, u, les);
+        const complete = stats.total > 0 && stats.fresh === 0;
+        const unlocked = prevComplete;
+        const started = unlocked && stats.fresh > 0 && stats.fresh < stats.total;
+        out.push({ u: u, les: les, stats: stats, complete: complete, unlocked: unlocked, started: started });
+        prevComplete = complete;
+      }
+    }
+    return out;
+  }
+  // LEG-010 — resolves the single lesson "ادامهٔ تمرین" should jump into:
+  // the learner's actual active lesson (d.level/unit/lesson) if it is
+  // genuinely mid-way (some words introduced, not all — the same fresh>0 &&
+  // fresh<total reading lessonProgress() uses for "started"), otherwise the
+  // earliest unlocked, not-yet-complete lesson in their current level.
+  // Deliberately keyed off d.level (real progress), not state.lbLv (whichever
+  // level the tabs happen to be browsing) — this button is a fast path back
+  // into the learner's own progress, not into whatever they are currently
+  // looking at.
+  //
+  // Bug fix (reported after LEG-010 shipped): the original "next" search
+  // additionally required stats.fresh === stats.total ("completely
+  // untouched"), so any unlocked lesson that had partial-but-not-matching
+  // progress fell through the cracks and this whole function silently
+  // returned d.level/unit/lesson unchanged — even when that exact lesson was
+  // already fully complete. startLessonPractice() then rebuilt d.order for
+  // an already-finished lesson, chunkOrder() found no fresh words and no due
+  // reviews, and the learner landed on the "مرورهای امروز تمام شد" screen
+  // moments after tapping "ادامهٔ تمرین" on an account that very much still
+  // had lessons left. Any unlocked-and-not-complete lesson is a valid
+  // continue target — "untouched" was an unnecessarily narrow requirement.
+  lbContinueTarget() {
+    const d = this.state.data;
+    const cur = this.lessonStats(d.level, d.unit, d.lesson);
+    if (cur.total > 0 && cur.fresh > 0 && cur.fresh < cur.total) return { level: d.level, unit: d.unit, lesson: d.lesson };
+    const next = this.lessonProgress(d.level).find(x => x.unlocked && !x.complete);
+    return next ? { level: d.level, unit: next.u, lesson: next.les } : { level: d.level, unit: d.unit, lesson: d.lesson };
+  }
+  // Guarded like courseVals()/sentVals() etc.: the per-lesson loop below is
+  // real work (re-derives word position from VOCAB_ORDER for every lesson in
+  // the level), so it only runs while the screen is actually open.
+  lessonBrowserVals() {
+    const s = this.state;
+    const out = { isLessons: s.screen === 'lessons' };
+    if (!out.isLessons) return out;
+    const d = s.data;
+    const chip = (on, c) => 'display:flex;align-items:center;gap:5px;padding:7px 13px;border-radius:99px;font-size:12.5px;cursor:pointer;background:' + (on ? c + '24' : 'rgba(233,233,237,.03)') + ';border:1px solid ' + (on ? c + '77' : 'rgba(233,233,237,.42)') + ';color:' + (on ? c : 'rgba(233,233,237,.6)');
+    // LEG-010 point 2 — level tabs let the learner browse/practice any level
+    // they have already reached (index <= d.level's index), not just the one
+    // they are currently placed at; a tab beyond d.level stays locked and
+    // unclickable, same visual language as every other level-tab row in this
+    // app (sbLvChips/gramLvChips/lsLvChips/dLvChips). state.lbLv is which
+    // level the browser is currently *displaying*, defaulting to d.level on
+    // first entry — it never changes d.level itself, so it cannot be used to
+    // skip ahead into a level not yet reached.
+    const dLi = LEVELS.indexOf(d.level);
+    const viewLevel = (s.lbLv && LEVELS.indexOf(s.lbLv) >= 0 && LEVELS.indexOf(s.lbLv) <= dLi) ? s.lbLv : d.level;
+    const L = viewLevel;
+    out.lbLevelTabs = LEVELS.map(tabLevel => {
+      const unlocked = LEVELS.indexOf(tabLevel) <= dLi;
+      const active = tabLevel === viewLevel;
+      return {
+        label: tabLevel,
+        icon: unlocked ? (active ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key',
+        locked: !unlocked,
+        style: chip(active, '#9184d9') + (unlocked ? '' : ';opacity:.38;cursor:not-allowed'),
+        pick: () => { if (unlocked) this.setState({ lbLv: tabLevel, lbUnit: null }); }
+      };
+    });
+    // LEG-010 point 8 — one prominent, always-available way to jump straight
+    // into practice without expanding accordions. Reuses startLessonPractice()
+    // exactly as every per-lesson "شروع تمرین" button already does; this is
+    // just one more caller, not new session-start logic.
+    const cont = this.lbContinueTarget();
+    out.lbContinueLabel = 'ادامهٔ تمرین';
+    out.lbContinueSub = 'سطح ' + cont.level + ' · بخش ' + cont.unit + ' · درس ' + cont.lesson;
+    out.lbContinueGo = () => this.startLessonPractice(cont.level, cont.unit, cont.lesson);
+    const unitCount = this.unitsInLevel(L);
+    // Same accordion convention as the rest of the app (one section open at
+    // a time): default to the learner's current unit only while viewing
+    // their actual current level — a past level's unit numbers do not line
+    // up with d.unit, so default those to unit 1. 0/null means "nothing
+    // open" so tapping the already-open unit's header collapses it.
+    const defaultUnit = viewLevel === d.level ? (d.unit || 1) : 1;
+    const openUnit = s.lbUnit != null ? s.lbUnit : defaultUnit;
+    // LEG-010 point 6 — flattened from three nested bordered/backgrounded
+    // boxes (unit card > per-lesson bordered pill > per-word bordered chip)
+    // down to one: the unit card stays (it is the actual grouping, same
+    // weight as every other accordion in this app), lessons below it are
+    // plain rows separated by a hairline (matches the example-sentence rows
+    // in the grammar lesson screen), and words are plain inline text (matches
+    // the plain word list used elsewhere) instead of individually bordered
+    // pills. Locked state is now communicated by icon + dimmed opacity only,
+    // not by a whole extra box per row.
+    const lessonRowStyle = unlocked => 'display:flex;align-items:flex-start;gap:10px;padding:11px 2px;border-bottom:1px solid rgba(233,233,237,.06)' + (unlocked ? '' : ';opacity:.5');
+    const progress = this.lessonProgress(L);
+    const units = [];
+    for (let u = 1; u <= unitCount; u++) {
+      const lessonsCount = this.lessonsInUnit(L, u);
+      let unitComplete = 0;
+      const lessons = [];
+      for (let les = 1; les <= lessonsCount; les++) {
+        const p = progress.find(x => x.u === u && x.les === les);
+        const stats = p.stats, complete = p.complete, unlocked = p.unlocked, started = p.started;
+        if (complete) unitComplete++;
+        // LEG-010 point 3 — a locked lesson shows only its status and word
+        // count, never the words themselves; lessonWordsOf() is only called
+        // (and the array only built) once the lesson is actually unlocked,
+        // so nothing "spoils" vocabulary the learner has not earned yet.
+        const words = unlocked ? this.lessonWordsOf(L, u, les).map(i => ({ en: this.W[i].en, fa: this.W[i].fa || '—' })) : [];
+        const color = complete ? '#8fd9c1' : (started ? '#e0a458' : '#9184d9');
+        lessons.push({
+          n: les, complete: complete, locked: !unlocked, hasWords: unlocked && words.length > 0,
+          title: 'درس ' + les,
+          wordCountLabel: stats.total + ' واژه',
+          words: words,
+          statusLabel: complete ? 'کامل شد' : (started ? 'در حال یادگیری' : (unlocked ? 'باز — شروع‌نشده' : 'قفل')),
+          statusIcon: complete ? 'ph-fill ph-check-circle' : (unlocked ? (started ? 'ph-fill ph-clock-countdown' : 'ph ph-circle') : 'ph-fill ph-lock-key'),
+          statusColor: unlocked ? color : 'rgba(233,233,237,.32)',
+          rowStyle: lessonRowStyle(unlocked),
+          btnLabel: complete ? 'مرور دوباره' : 'شروع تمرین',
+          canStart: unlocked,
+          start: () => { if (unlocked) this.startLessonPractice(L, u, les); }
+        });
+      }
+      const unitLocked = lessons.length > 0 && lessons[0].locked;
+      const unitAllComplete = lessons.length > 0 && lessons.every(x => x.complete);
+      units.push({
+        n: u, title: 'بخش ' + u,
+        summary: unitComplete + ' از ' + lessonsCount + ' درس کامل',
+        icon: unitLocked ? 'ph-fill ph-lock-key' : (unitAllComplete ? 'ph-fill ph-check-circle' : 'ph ph-circle'),
+        iconColor: unitLocked ? 'rgba(233,233,237,.32)' : (unitAllComplete ? '#8fd9c1' : '#9184d9'),
+        locked: unitLocked,
+        // LEG-010 point 5 — the disclosure caret itself becomes the lock icon
+        // when the unit cannot be opened, instead of a caret that silently
+        // does nothing when tapped.
+        caretIcon: unitLocked ? 'ph-fill ph-lock-key' : 'ph ph-caret-down',
+        expanded: !unitLocked && u === openUnit,
+        caretStyle: unitLocked
+          ? 'font-size:14px;color:rgba(233,233,237,.32)'
+          : 'font-size:14px;color:rgba(233,233,237,.5);transition:transform .2s;transform:rotate(' + (u === openUnit ? 180 : 0) + 'deg)',
+        lockedHint: unitLocked ? 'با تمام‌شدن بخش قبلی باز می‌شود' : '',
+        lessons: lessons,
+        // LEG-010 point 4 — a locked unit's header click is a no-op; it can
+        // never reveal its lesson list (lockedHint above is the only
+        // feedback), matching the lesson-level lock which already refuses
+        // startLessonPractice() the same way.
+        toggle: () => { if (unitLocked) return; this.setState({ lbUnit: openUnit === u ? 0 : u }); }
+      });
+    }
+    // LEG-009 — prevComplete inside lessonProgress() ends up holding whether
+    // the very last lesson of the very last unit of this level is complete,
+    // i.e. whether the whole level is done. Without an explicit way forward
+    // here, a learner who actually finished every lesson of a level would be
+    // stuck looking at an all-complete list forever, since nothing else in
+    // the redesigned flow advances d.level automatically anymore (see
+    // nextLesson()'s comment). advanceLevel() reuses LEG-002's
+    // already-verified advanceLessonIfDone() cascade, just behind an
+    // explicit tap instead of a silent auto-continue. This banner only makes
+    // sense while viewing the learner's actual current level — a past,
+    // already-passed level always reads as "complete" and has no next level
+    // to advance into from here.
+    const li = LEVELS.indexOf(L);
+    out.lbLevel = L;
+    out.lbIntro = 'سطح ' + L + ' — هر درس ' + LESSON_SIZE + ' واژهٔ تازه دارد؛ درس بعدی وقتی باز می‌شود که همهٔ واژه‌های درس فعلی یادگیری اولیه‌شان تمام شده باشد.';
+    out.lbUnits = units;
+    out.lbLevelComplete = viewLevel === d.level && progress.length > 0 && progress[progress.length - 1].complete;
+    out.lbHasNextLevel = li >= 0 && li < LEVELS.length - 1;
+    out.lbNextLevel = li >= 0 ? LEVELS[Math.min(li + 1, LEVELS.length - 1)] : '';
+    out.lbAdvanceLevel = () => this.advanceLevel();
+    out.lbGoHome = () => this.setState({ screen: 'home' });
+    return out;
+  }
+
   renderVals() {
     const d = this.state.data, W = this.W, s = this.state;
     const ui = this.uiLoad();
@@ -4041,10 +4423,6 @@ class Component extends DCLogic {
     const accent = this.color(w);
     const pct = d.order.length ? Math.min(100, Math.round((d.pos / d.order.length) * 100)) : 0;
     const t = today();
-    // Result cards are built before the home/dashboard values below. Keep the
-    // day's summary here so reaching the daily goal cannot hit the temporal
-    // dead zone of a later const declaration.
-    const dayStats = (d.dayStats || {})[t] || { introduced: 0, correct: 0, wrong: 0 };
     const progressRaw = (done, total) => total ? Math.min(100, (done / total) * 100) : 0;
     const progressLabel = (done, total) => {
       const p = progressRaw(done, total);
@@ -4205,16 +4583,18 @@ class Component extends DCLogic {
 
     const res = s.result || {};
     let resultTitle = '', resultDesc = '', resultIcon = 'ph-fill ph-trophy', resultCol = '#e0a458', resultActions = [], missed = [];
-    // The app's main missing connection: finishing today's cards hands the
-    // learner to the next step of the same lesson, in a different section,
-    // instead of returning them to a menu.
-    if (res.kind === 'goal') {
+    // LEG-009 — replaces the removed kind:'goal' card-count interruption.
+    // Fires from afterCard() the moment the lesson the learner explicitly
+    // chose (lesson browser -> startLessonPractice()) is actually finished —
+    // never on a timer or a count, and never auto-continuing into the next
+    // lesson: the learner goes back to the browser and picks it themselves.
+    if (res.kind === 'lesson') {
       resultCol = '#8fd9c1';
-      resultIcon = 'ph-fill ph-check-circle';
-      resultTitle = (d.goal || 20) + ' کارت مرور شد';
-      resultDesc = dayStats.introduced + ' واژهٔ تازه · ' + dayStats.correct + ' پاسخ درست · ' + dayStats.wrong + ' پاسخ نیازمند مرور. اگر می‌خواهی همین‌جا بس کن، یا ادامه بده.';
+      resultIcon = 'ph-fill ph-seal-check';
+      resultTitle = 'این درس تمام شد';
+      resultDesc = 'هر ' + LESSON_SIZE + ' واژهٔ این درس را با موفقیت یاد گرفتی؛ حالا طبق زمان‌بندی مرور فاصله‌دار برمی‌گردند. درس بعدی الان در فهرست درس‌ها باز شده.';
       resultActions = [
-        { label: '۲۰ کارت دیگر', style: btn('rgba(143,217,193,.14)', '#8fd9c1', '#8fd9c1'), go: () => this.set(dd => { dd.goal = (dd.goal || 20) + 20; }, { screen: 'study', result: null }, () => this.state.data.pos >= this.state.data.order.length ? this.nextLesson() : this.prepare()) },
+        { label: 'بازگشت به فهرست درس‌ها', style: btn('rgba(143,217,193,.14)', '#8fd9c1', '#8fd9c1'), go: () => this.setState({ screen: 'lessons', result: null }) },
         { label: 'بازگشت به خانه', style: btn('transparent', 'rgba(233,233,237,.42)', 'rgba(233,233,237,.75)'), go: () => this.setState({ screen: 'home', result: null }) }
       ];
     } else if (res.kind === 'quiz') {
@@ -4228,14 +4608,6 @@ class Component extends DCLogic {
       resultActions = [
         { label: 'ادامه‌ی مرور', style: btn('rgba(145,132,217,.12)', '#9184d9', '#b3a9e6'), go: () => this.setState({ screen: 'study', result: null }, () => this.prepare()) },
         { label: res.passed ? 'بازگشت به خانه' : 'آزمون دوباره', style: btn('transparent', 'rgba(233,233,237,.16)', 'rgba(233,233,237,.75)'), go: () => res.passed ? this.setState({ screen: 'home', result: null }) : this.startQuiz(res.mile) }
-      ];
-    } else if (res.kind === 'round') {
-      const stats = (d.dayStats || {})[today()] || { introduced: 0, correct: 0, wrong: 0 };
-      resultTitle = 'صف فعلی تمام شد';
-      resultDesc = stats.introduced + ' واژهٔ تازه دیدی و ' + (stats.correct + stats.wrong) + ' مرور انجام دادی. پاسخ‌های سخت و اشتباه طبق زمان‌بندی دوباره برمی‌گردند.';
-      resultActions = [
-        { label: 'ادامهٔ جلسه', style: btn('rgba(145,132,217,.12)', '#9184d9', '#b3a9e6'), go: () => this.nextLesson() },
-        { label: 'بعداً', style: btn('transparent', 'rgba(233,233,237,.16)', 'rgba(233,233,237,.75)'), go: () => this.setState({ screen: 'home' }) }
       ];
     } else if (res.kind === 'empty') {
       resultCol = '#8fd9c1'; resultIcon = 'ph-fill ph-calendar-check';
@@ -4329,7 +4701,7 @@ class Component extends DCLogic {
     const jobTerms = jobLesson.terms.map((x, i) => Object.assign({}, x, { n: String(i + 1), color: jobColors[i % jobColors.length] }));
     const jobArticleParts = highlightedJobParts(jobLesson.text, jobTerms, jobColors);
 
-    const vals = Object.assign(this.exVals(), this.courseVals(), this.listenVals(), this.discVals(), this.sentVals(), {
+    const vals = Object.assign(this.exVals(), this.courseVals(), this.listenVals(), this.discVals(), this.sentVals(), this.lessonBrowserVals(), {
       totalWords: String(total), roundNum: String(d.round), roundName: info.name, streak: String(d.streak || 1),
       cardStarIcon: (this.current() && (d.starred || {})[this.current().i]) ? 'ph-fill ph-star' : 'ph ph-star',
       cardStarStyle: 'display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:9px;font-size:12.5px;cursor:pointer;background:' + ((this.current() && (d.starred || {})[this.current().i]) ? 'rgba(224,164,88,.14)' : 'transparent') + ';border:1px solid ' + ((this.current() && (d.starred || {})[this.current().i]) ? '#e0a458' : 'rgba(233,233,237,.42)') + ';color:' + ((this.current() && (d.starred || {})[this.current().i]) ? '#e0a458' : 'rgba(233,233,237,.6)'),
@@ -4648,11 +5020,20 @@ class Component extends DCLogic {
     // in four different places depending on which curriculum you were inside.
     const CRUMB = {
       home:     ['', '', null],
+      // LEG-010 — the lesson browser used to have no crumb at all (no way
+      // back to home through the header's back-navigation chrome), same
+      // pattern every other "یادگیری" sub-screen (gram/sent/colloc/listen/
+      // disc) already uses.
+      lessons:  ['واژه‌ها', '', 'home'],
       words:    ['', '', null],
       jobs:     ['', '', null],
       jobdetail:[s.job ? s.job.fa : 'جزئیات شغل', '', 'jobs'],
       settings: ['تنظیمات', '', 'home'],
-      study:    ['یادگیری · واژه‌ها', 'posLabel', 'home'],
+      // LEG-009 — a study session is now always entered from the lesson
+      // browser, so «بستن» falls back there (real navigation history via
+      // navBack() already does the right thing whenever it exists; this is
+      // only the static fallback for when it does not).
+      study:    ['یادگیری · واژه‌ها', 'posLabel', 'lessons'],
       quiz:     ['یادگیری · آزمون واژه', 'quizPos', 'home'],
       placement:['تعیین سطح', 'plPos', 'home'],
       result:   ['یادگیری · نتیجه', '', 'home'],

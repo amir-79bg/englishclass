@@ -96,4 +96,40 @@ function writeCats(b, cats) {
   if (JSON.stringify(readCats(b)) !== JSON.stringify(cats)) throw new Error('bundle: VOCAB_CATS write round-trip mismatch');
 }
 
-module.exports = { ROOT, HTML, VOCAB_UUID, readBundle, writeBundle, readAsset, writeAsset, readTemplate, writeTemplate, readWords, writeWords, readCats, writeCats };
+// window.VOCAB_LEVELS = { "A1": [i, ...], ... } — the TEACHABLE word indices of
+// each CEFR level, in curriculum order. Derived from data/curriculum.json by
+// tools/rebuild.js; see tools/build-curriculum.js for where the levels come
+// from and why the old VOCAB_ORDER slicing could not be trusted.
+//
+// Only indices ship, not the curriculum file: the app already has every word's
+// content in VOCAB_WORDS, so all this has to add is "which words are taught, at
+// what level, in what order" — ~25 KB of integers instead of a 1.4 MB copy.
+// Pending curriculum entries have no words.json row at all and are therefore
+// absent by construction, which is what keeps an unglossed word off a card.
+//
+// Unlike the three assignments above, this one may not exist yet in an older
+// bundle, so the writer appends it the first time rather than failing.
+const LEVELS_DECL = 'window.VOCAB_LEVELS = ';
+
+function readLevels(b) {
+  const js = readAsset(b, VOCAB_UUID);
+  if (js.indexOf('window.VOCAB_LEVELS') < 0) return null;
+  const { start, end } = assignmentRange(js, 'VOCAB_LEVELS', '{', '};');
+  return JSON.parse(js.slice(start, end + 1));
+}
+
+function writeLevels(b, levels) {
+  const js = readAsset(b, VOCAB_UUID);
+  const json = JSON.stringify(levels);
+  let next;
+  if (js.indexOf('window.VOCAB_LEVELS') < 0) {
+    next = js.replace(/\s*$/, '') + '\n' + LEVELS_DECL + json + ';\n';
+  } else {
+    const { start, end } = assignmentRange(js, 'VOCAB_LEVELS', '{', '};');
+    next = js.slice(0, start) + json + js.slice(end + 1);
+  }
+  writeAsset(b, VOCAB_UUID, next);
+  if (JSON.stringify(readLevels(b)) !== json) throw new Error('bundle: VOCAB_LEVELS write round-trip mismatch');
+}
+
+module.exports = { ROOT, HTML, VOCAB_UUID, readBundle, writeBundle, readAsset, writeAsset, readTemplate, writeTemplate, readWords, writeWords, readCats, writeCats, readLevels, writeLevels };

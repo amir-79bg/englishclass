@@ -2234,7 +2234,7 @@
  {
   "i": 272,
   "en": "hello",
-  "fa": "سالم",
+  "fa": "سلام",
   "cat": "noun",
   "ex": "We talked about the hello for an hour.",
   "exfa": "یک ساعت درباره‌ی سالم حرف زدیم."
@@ -2258,7 +2258,7 @@
  {
   "i": 275,
   "en": "hi",
-  "fa": "سالم (خودمانی)",
+  "fa": "سلام (خودمانی)",
   "cat": "noun",
   "ex": "This hi is very important to me.",
   "exfa": "این سالم (خودمانی) برای من خیلی مهم است."
@@ -3850,7 +3850,7 @@
  {
   "i": 467,
   "en": "rearview mirror",
-  "fa": "آینه وسط",
+  "fa": "آینهٔ عقب",
   "cat": "phrase",
   "ex": "\"rearview mirror\" is a very common expression in English.",
   "exfa": "«آینه وسط» عبارت خیلی رایجی در انگلیسی است."
@@ -5990,7 +5990,7 @@
  {
   "i": 732,
   "en": "journalist",
-  "fa": "روزنامهنگار",
+  "fa": "روزنامه‌نگار",
   "cat": "work",
   "ex": "We talked about the journalist for an hour.",
   "exfa": "یک ساعت درباره‌ی روزنامهنگار حرف زدیم."
@@ -11078,7 +11078,7 @@
  {
   "i": 1354,
   "en": "a",
-  "fa": "حرف اِی انگلیسی؛ یک",
+  "fa": "یک (حرف تعریف نامعین)",
   "cat": "general",
   "ex": "She ate a sandwich and drank a glass of water.",
   "exfa": "یک ساندویچ خورد و یک لیوان آب نوشید."
@@ -30514,7 +30514,7 @@
  {
   "i": 3715,
   "en": "cock",
-  "fa": "خروس / شاخ آب",
+  "fa": "خروس / شیر آب",
   "cat": "noun",
   "ex": "This cock is very important to me.",
   "exfa": "این خروس برای من خیلی مهم است."
@@ -36427,7 +36427,7 @@
  {
   "i": 4441,
   "en": "dick",
-  "fa": "کاسه / آلت",
+  "fa": "آلت مردانه (عامیانه)",
   "cat": "noun",
   "ex": "I need a new dick for my work.",
   "exfa": "برای کارم یک کاسه تازه لازم دارم."
@@ -44641,7 +44641,7 @@
  {
   "i": 5461,
   "en": "valentine",
-  "fa": "نام خاص / روز عشق",
+  "fa": "والنتاین / کارت روز عشق",
   "cat": "noun",
   "ex": "I need a new valentine for my work.",
   "exfa": "برای کارم یک نام خاص تازه لازم دارم."
@@ -47145,7 +47145,7 @@
  {
   "i": 5771,
   "en": "walker",
-  "fa": "پیاده رو / نام خاص",
+  "fa": "کسی که پیاده‌روی می‌کند",
   "cat": "noun",
   "ex": "I need a new walker for my work.",
   "exfa": "برای کارم یک پیاده رو تازه لازم دارم."
@@ -52717,7 +52717,7 @@
  {
   "i": 6465,
   "en": "fisting",
-  "fa": "مشت زدن",
+  "fa": "(اصطلاح جنسی رکیک)",
   "cat": "noun",
   "ex": "This fisting is very important to me.",
   "exfa": "این مشت زدن برای من خیلی مهم است."
@@ -67861,7 +67861,7 @@
  {
   "i": 8349,
   "en": "midwest",
-  "fa": "مایه‌وسط (آمریکا)",
+  "fa": "میانهٔ غربی (آمریکا)",
   "cat": "place",
   "ex": "The midwest changed everything for us.",
   "exfa": "آن مایه‌وسط (آمریکا) همه چیز را برای ما عوض کرد."
@@ -68165,7 +68165,7 @@
  {
   "i": 8387,
   "en": "playboy",
-  "fa": "پسر شیاطین / مجله پلی‌بوی",
+  "fa": "مجلهٔ پلی‌بوی / خوش‌گذران",
   "cat": "noun",
   "ex": "We talked about the playboy for an hour.",
   "exfa": "یک ساعت درباره‌ی پسر شیاطین حرف زدیم."
@@ -74750,7 +74750,7 @@
  {
   "i": 9208,
   "en": "bye",
-  "fa": "خدانافظ / وداع",
+  "fa": "خداحافظ / وداع",
   "cat": "noun",
   "ex": "She waved and said bye from the bus window.",
   "exfa": "از پنجره‌ی اتوبوس دست تکان داد و گفت «خداحافظ»."
@@ -79622,7 +79622,7 @@
  {
   "i": 9816,
   "en": "cunt",
-  "fa": "فحش بسیار فحش",
+  "fa": "(فحش بسیار رکیک)",
   "cat": "noun",
   "ex": "I need a new cunt for my work.",
   "exfa": "برای کارم یک فحش بسیار فحش تازه لازم دارم."
@@ -81054,7 +81054,7 @@
  {
   "i": 9995,
   "en": "stan",
-  "fa": "کشور / سرزمین",
+  "fa": "پسوند «ـستان» (سرزمین)",
   "cat": "noun",
   "ex": "This stan is very important to me.",
   "exfa": "این کشور برای من خیلی مهم است."
@@ -83238,7 +83238,7 @@
  {
   "i": 10267,
   "en": "creations",
-  "fa": "آفریش‌ها / خلقت‌ها",
+  "fa": "آفرینش‌ها / خلقت‌ها",
   "cat": "noun",
   "ex": "We talked about the creations for an hour.",
   "exfa": "یک ساعت درباره‌ی آفریش‌ها حرف زدیم."
