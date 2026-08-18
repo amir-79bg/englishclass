@@ -87145,7 +87145,7 @@
   "i": 10740,
   "en": "happily",
   "fa": "با خوشحالی",
-  "cat": "feeling",
+  "cat": "adv",
   "ex": "The children played happily in the garden all afternoon.",
   "exfa": "بچه‌ها تمام بعدازظهر با خوشحالی در باغ بازی کردند.",
   "syn": [
@@ -87550,7 +87550,7 @@
   "i": 10787,
   "en": "net",
   "fa": "تور",
-  "cat": "sport",
+  "cat": "general",
   "ex": "The fisherman pulled the net out of the water.",
   "exfa": "ماهیگیر تور را از آب بیرون کشید."
  },
@@ -88643,7 +88643,7 @@
  {
   "i": 10911,
   "en": "weigh",
-  "fa": "وزن داشتن",
+  "fa": "وزن کردن / وزن داشتن",
   "cat": "verb",
   "ex": "Can you weigh this bag for me?",
   "exfa": "می‌توانی این کیف را برای من وزن کنی؟",
@@ -121152,10 +121152,10 @@
  },
  {
   "i": 14563,
-  "en": "porten",
+  "en": "portent",
   "fa": "نشانه یا شگون (اغلب از رویدادی مهم یا شوم)",
   "cat": "general",
-  "ex": "The eerie silence over the harbor was taken as a porten of the storm to come.",
+  "ex": "The eerie silence over the harbor was taken as a portent of the storm to come.",
   "exfa": "سکوت هولناک بر فراز بندر به‌عنوان شگونی از طوفانی که در راه بود تلقی شد."
  },
  {
