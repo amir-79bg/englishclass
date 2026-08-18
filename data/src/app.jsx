@@ -491,6 +491,12 @@ const IL_RETRY_GAP_MIN = 3, IL_RETRY_GAP_MAX = 5;
 // Wrong on the same turn this many times in one session -> stop retrying and
 // mark the word 'unfinished' for this lesson (see ilAdvance()).
 const IL_MAX_FAILS = 3;
+// Same safety valve for the grammar/collocation drill's retry-to-criterion
+// (csNext()): without a cap, a learner with a genuine, persistent
+// misconception about one item would requeue it forever with no way out —
+// the exact "one stuck item blocks everything downstream" trap LEG-034
+// found and fixed for vocabulary, just reintroduced in a different engine.
+const CS_MAX_RETRY = 3;
 function levelSpans(total) {
   const out = []; let acc = 0;
   for (let i = 0; i < LEVELS.length; i++) {
@@ -745,12 +751,21 @@ class Component extends DCLogic {
     const drills = modes.map(m => ({ mode: m, score: this.csRecent('g_' + les.id + '_' + m) }));
     const prod = this.gramProduction(les);
     const steps = drills.concat([{ mode: 'produce', score: prod && typeof prod.score === 'number' ? prod.score : null }]);
-    const passed = steps.filter(x => x.score != null && x.score >= 70).length;
-    const attempted = steps.filter(x => x.score != null).length;
+    // Gate on FINISHING a step, not on a percentage. csNext() below now
+    // retries a wrong item in place until it is answered correctly instead
+    // of letting the drill end with it still wrong — so a completed step
+    // already means every item was eventually right at least once, and
+    // `score` is purely informational (first-attempt accuracy), never a
+    // pass/fail bar. The old ">= 70" cutoff swung between 60% and 100% real
+    // pass rate depending on whether a step had 3 items or 5 (product-owner
+    // finding, 2026-08-18) — completion is the only threshold that is the
+    // same for every step regardless of item count.
+    const passed = steps.filter(x => x.score != null).length;
+    const attempted = passed;
     const vals = steps.filter(x => x.score != null).map(x => x.score);
     return { steps, total: steps.length, passed, attempted, complete: passed === steps.length,
       avg: vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : null,
-      next: steps.find(x => x.score == null || x.score < 70) || null };
+      next: steps.find(x => x.score == null) || null };
   }
   gramDoneCount() { return this.gramItems().filter(x => this.gramStats(x.les).complete).length; }
   gramStartedCount() { return this.gramItems().filter(x => this.gramStats(x.les).attempted > 0).length; }
@@ -3286,7 +3301,7 @@ class Component extends DCLogic {
     const stats = this.gramStats(les), index = stats.steps.findIndex(x => x.mode === mode);
     const current = stats.next ? stats.steps.findIndex(x => x.mode === stats.next.mode) : stats.steps.length;
     if (!stats.complete && index > current) {
-      return this.setState({ gFlowNote: 'اول مرحلهٔ جاری را با حداقل ۷۰٪ تمام کن تا مرحلهٔ بعد باز شود.' });
+      return this.setState({ gFlowNote: 'اول مرحلهٔ جاری را تمام کن تا مرحلهٔ بعد باز شود.' });
     }
     if (mode === 'produce') {
       const saved = this.gramProduction(les);
@@ -3401,8 +3416,13 @@ class Component extends DCLogic {
   csStart(cfg) {
     if (!cfg || !cfg.items || !cfg.items.length) return;
     this.remember('csrun', cfg.kind === 'gram' ? 'دستور زبان' : 'ترکیب‌های رایج', cfg.title);
-    const st = { kind: cfg.kind, mode: cfg.mode, title: cfg.title, key: cfg.key, back: cfg.back, lv: cfg.lv || null, items: cfg.items,
-      pit: cfg.pit || [], use: cfg.use || '', lessonId: cfg.lessonId || '', step: cfg.step || '',
+    // _rid tags each item with its ORIGINAL position, stable across the
+    // requeues csNext() below performs — wrongIds is keyed on _rid, not on
+    // array index, since a requeued item's index changes as the set grows.
+    const items = cfg.items.map((it, i) => Object.assign({}, it, { _rid: i }));
+    const st = { kind: cfg.kind, mode: cfg.mode, title: cfg.title, key: cfg.key, back: cfg.back, lv: cfg.lv || null, items: items,
+      total0: cfg.items.length, wrongIds: [], failCounts: {},
+      pit: cfg.pit || [], formula: cfg.formula || '', use: cfg.use || '', lessonId: cfg.lessonId || '', step: cfg.step || '',
       k: 0, right: 0, picked: null, typed: '', checked: false, ok: false, done: false, pool: [], seq: [],
       lives: 3, score: 0, left: cfg.mode === 'game' ? 45 : 0, over: false, best: cfg.key ? this.csBest(cfg.key) : 0 };
     this.setState({ screen: 'csrun', cs: st }, () => { this.csPrep(); if (cfg.mode === 'game') this.csTick(); });
@@ -3496,13 +3516,36 @@ class Component extends DCLogic {
     this.csSet({ checked: true, ok, right: cs.right + (ok ? 1 : 0) });
     this.speakWord(it.chunks.join(' '));
   }
+  // Retry-to-criterion (product-owner call, 2026-08-18, from the grammar
+  // teaching-method research): a wrong answer used to just cost a point and
+  // move on, so "finishing" a drill and "actually knowing every item" were
+  // different things. Now a wrong item is requeued to the end of the SAME
+  // set instead — the set is not done until every item has been answered
+  // correctly at least once. `total0`/`wrongIds` (set in csStart()) track
+  // the ORIGINAL items so the score stays "% correct on the first try"
+  // (informational) even though `cs.items`/`cs.right` grow past the
+  // original count as retries get appended and answered.
   csNext() {
     const cs = this.state.cs; if (!cs || !cs.checked) return;
-    if (cs.k + 1 < cs.items.length) return this.csSet({ k: cs.k + 1 }, () => this.csPrep());
-    const pct = Math.round((cs.right / cs.items.length) * 100);
+    const it = cs.items[cs.k];
+    let items = cs.items, wrongIds = cs.wrongIds || [], failCounts = cs.failCounts || {};
+    if (!cs.ok) {
+      const rid = it._rid != null ? it._rid : cs.k;
+      if (wrongIds.indexOf(rid) < 0) wrongIds = wrongIds.concat([rid]);
+      const fails = (failCounts[rid] || 0) + 1;
+      failCounts = Object.assign({}, failCounts, { [rid]: fails });
+      // CS_MAX_RETRY caps how many times ONE item can send itself back —
+      // past that, a genuine misconception (not a slip) is more likely than
+      // luck fixing it, so stop requeueing and let the set finish; the item
+      // still counts against the score via wrongIds above.
+      if (fails < CS_MAX_RETRY) items = items.concat([it]);
+    }
+    if (cs.k + 1 < items.length) return this.csSet({ k: cs.k + 1, items, wrongIds, failCounts }, () => this.csPrep());
+    const total0 = cs.total0 || items.length;
+    const pct = Math.round(((total0 - wrongIds.length) / total0) * 100);
     if (cs.key) this.csSaveScore(cs.key, pct);
     this.addXp(cs.right * 6);
-    this.csSet({ done: true });
+    this.csSet({ items, wrongIds, failCounts, done: true });
   }
   csQuit() { clearInterval(this.csIv); const cs = this.state.cs; this.setState({ screen: this.navBack() || (cs && cs.back) || 'home', cs: null }); }
 
@@ -3514,10 +3557,11 @@ class Component extends DCLogic {
     const items = (map[mode] || []).slice();
     if (!items.length) return;
     this.csStart({ kind: 'gram', mode: mode === 'err' ? 'error' : mode, title: names[mode] + ' · ' + les.t,
-      // fill and order questions carry no per-item explanation, so the lesson's
-      // pitfalls are the only thing that can explain a wrong answer. They used
-      // to be reachable only on the lesson page the learner has already left.
-      key: 'g_' + les.id + '_' + mode, back: 'glesson', pit: les.pit || [], lessonId: les.id, step: mode,
+      // fill and order questions carry no per-item explanation, so the
+      // lesson's formula (first) and pitfalls (second) are the only things
+      // that can explain a wrong answer. They used to be reachable only on
+      // the lesson page the learner has already left.
+      key: 'g_' + les.id + '_' + mode, back: 'glesson', pit: les.pit || [], formula: (les.guide && les.guide.formula) || '', lessonId: les.id, step: mode,
       items: mode === 'choose' ? shuffled(items, Date.now() % 7919) : items });
   }
   gramGame(lv) {
@@ -3666,11 +3710,11 @@ class Component extends DCLogic {
       const stepIcons = { choose: 'ph ph-list-checks', fill: 'ph ph-pencil-line', order: 'ph ph-arrows-left-right', err: 'ph ph-wrench', produce: 'ph ph-pen-nib' };
       const currentIndex = st.next ? st.steps.findIndex(x => x.mode === st.next.mode) : st.steps.length;
       out.glSteps = st.steps.map((x, i) => {
-        const passed = x.score != null && x.score >= 70, current = i === currentIndex, locked = !st.complete && i > currentIndex;
-        return { n: String(i + 1), label: stepNames[x.mode], score: locked ? 'بعد از مرحلهٔ ' + (currentIndex + 1) + ' باز می‌شود' : (x.score == null ? (current ? 'مرحلهٔ جاری' : 'انجام‌نشده') : x.score + '٪'),
+        const passed = x.score != null, current = i === currentIndex, locked = !st.complete && i > currentIndex;
+        return { n: String(i + 1), label: stepNames[x.mode], score: locked ? 'بعد از مرحلهٔ ' + (currentIndex + 1) + ' باز می‌شود' : (x.score == null ? (current ? 'مرحلهٔ جاری' : 'انجام‌نشده') : x.score + '٪ از بار اول'),
           icon: locked ? 'ph-fill ph-lock-key' : (passed ? 'ph-fill ph-check' : stepIcons[x.mode]),
           style: 'display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:9px;background:' + (passed && !locked ? 'rgba(143,217,193,.08)' : (current ? 'rgba(145,132,217,.1)' : 'rgba(233,233,237,.018)')) + ';border:1px solid ' + (passed && !locked ? 'rgba(143,217,193,.32)' : (current ? 'rgba(145,132,217,.5)' : 'rgba(233,233,237,.07)')) + ';color:' + (passed && !locked ? '#8fd9c1' : (current ? '#b3a9e6' : 'rgba(233,233,237,.3)')) + ';cursor:' + (locked ? 'not-allowed' : 'pointer') + ';opacity:' + (locked ? '.7' : '1'),
-          go: locked ? (() => this.setState({ gFlowNote: 'اول مرحلهٔ ' + (currentIndex + 1) + ' را با حداقل ۷۰٪ تمام کن.' })) : (() => this.gramGoStep(les, x.mode)) };
+          go: locked ? (() => this.setState({ gFlowNote: 'اول مرحلهٔ ' + (currentIndex + 1) + ' را تمام کن.' })) : (() => this.gramGoStep(les, x.mode)) };
       });
       out.glHasFlowNote = !!s.gFlowNote; out.glFlowNote = s.gFlowNote || '';
       out.glNextLabel = st.next ? 'ادامهٔ مسیر · ' + stepNames[st.next.mode] : 'درس کامل شد';
@@ -3785,8 +3829,11 @@ class Component extends DCLogic {
       // The explanation is called "why" on choose/game items and "fa" on
       // error-hunt items. Gating on mode === 'choose' hid it from the grammar
       // game (whose items ARE choose items) and from every error-hunt question,
-      // where it is the only explanation the data has.
-      const why = it.why || (cs.mode === 'error' ? it.fa : '') || '';
+      // where it is the only explanation the data has. fill/order items carry
+      // no per-item explanation at all, so a wrong answer there falls back to
+      // the lesson's own formula card — the same rule shown on the lesson
+      // page — before the pitfalls list below as a second-line fallback.
+      const why = it.why || (cs.mode === 'error' ? it.fa : '') || (((cs.mode === 'fill' || cs.mode === 'order') && !cs.ok) ? cs.formula : '') || '';
       out.csHasWhy = !!why && (cs.picked != null || cs.checked);
       out.csWhy = why;
       // What the group's verb actually means — shown on the collocations hub,
@@ -3812,30 +3859,29 @@ class Component extends DCLogic {
       out.csOrderFbStyle = 'margin-top:9px;font-size:13px;font-family:Inter,sans-serif;line-height:1.7;' + (cs.checked ? 'direction:ltr;text-align:left;' : '') + 'color:' + (cs.checked ? (cs.ok ? '#8fd9c1' : '#d98f8f') : '#e0a458');
       out.csHasOrderFb = !!cs.checked || !!cs.orderNote;
       out.csNextGo = () => this.csNext();
-      out.csNextLabel = cs.k + 1 < cs.items.length ? 'بعدی' : 'پایان و نتیجه';
+      // A wrong answer always requeues (csNext() above), so there is always
+      // a next card after it even on what looks like the last known item —
+      // otherwise this button would promise "پایان و نتیجه" and then not end.
+      out.csNextLabel = (!cs.ok || cs.k + 1 < cs.items.length) ? 'بعدی' : 'پایان و نتیجه';
       out.csNextStyle = 'display:flex;align-items:center;gap:7px;padding:10px 18px;border-radius:9px;font-size:13px;font-weight:500;cursor:pointer;background:' + (cs.checked ? 'rgba(145,132,217,.14)' : 'transparent') + ';border:1px solid ' + (cs.checked ? '#9184d9' : 'rgba(233,233,237,.42)') + ';color:' + (cs.checked ? '#b3a9e6' : 'rgba(233,233,237,.55)');
-      const pct = Math.round((cs.right / cs.items.length) * 100);
-      out.csScoreTitle = cs.right + ' از ' + cs.items.length + ' درست';
-      // Collocation drills have no lesson to go back and read — that copy is
-      // grammar's, leaking through the shared runner.
-      const again = cs.kind === 'gram' ? 'اشکال ندارد؛ درس را یک بار بخوان و برگرد. ' : 'اشکال ندارد؛ یک بار دیگر همین گروه را تمرین کن. ';
-      out.csScoreDesc = (pct >= 70 ? 'خیلی خوب — این درس جا افتاده. ' : again) + (cs.right * 6) + ' امتیاز تجربه گرفتی.';
-      out.csResIconStyle = 'width:56px;height:56px;margin:0 auto;border-radius:16px;display:grid;place-items:center;font-size:28px;background:' + (pct >= 70 ? 'rgba(143,217,193,.12)' : 'rgba(224,164,88,.12)') + ';border:1px solid ' + (pct >= 70 ? 'rgba(143,217,193,.4)' : 'rgba(224,164,88,.4)') + ';color:' + (pct >= 70 ? '#8fd9c1' : '#e0a458');
-      // The primary action after a drill is the next activity, never a way
-      // back. Below 70% that is the same drill again; at or above it, the next
-      // step of today's lesson if this was it, otherwise the section hub.
-      const csPassed = pct >= 70;
+      // Retry-to-criterion (csNext() above) means reaching this screen at
+      // all already means every item was eventually answered correctly —
+      // there is no more "below 70%, do the whole drill over" outcome, so
+      // `pct` (first-try accuracy) is purely informational here, never a
+      // pass/fail gate, and the old "همین تمرین را دوباره بده" restart
+      // button is gone: there is nothing left to retry.
+      const total0 = cs.total0 || cs.items.length;
+      const wrongCount = (cs.wrongIds || []).length;
+      const pct = Math.round(((total0 - wrongCount) / total0) * 100);
+      out.csScoreTitle = (total0 - wrongCount) + ' از ' + total0 + ' از بار اول درست';
+      out.csScoreDesc = (wrongCount === 0 ? 'عالی — همه را از بار اول درست زدی. ' : 'این مرحله تمام شد؛ ' + wrongCount + ' مورد به تلاش دوباره نیاز داشت. ') + (cs.right * 6) + ' امتیاز تجربه گرفتی.';
+      out.csResIconStyle = 'width:56px;height:56px;margin:0 auto;border-radius:16px;display:grid;place-items:center;font-size:28px;background:rgba(143,217,193,.12);border:1px solid rgba(143,217,193,.4);color:#8fd9c1';
       const csNextIsLesson = cs.kind === 'gram' && !!cs.lessonId;
       const gramHit = csNextIsLesson ? this.grammarLessonById(cs.lessonId) : null;
       const nextGram = gramHit ? this.gramStats(gramHit.les).next : null;
       const nextGramNames = { choose: 'سنجش سریع', fill: 'جای خالی', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
-      out.csNextLabel2 = csPassed
-        ? (nextGram ? 'مرحلهٔ بعد · ' + nextGramNames[nextGram.mode] : 'بازگشت به درس')
-        : 'همین تمرین را دوباره بده';
-      out.csNextGo2 = csPassed
-        ? (csNextIsLesson ? (() => this.gramContinue(cs)) : (() => this.csQuit()))
-        : (() => this.csStart({ kind: cs.kind, mode: cs.mode, title: cs.title, key: cs.key, back: cs.back,
-          items: cs.items, pit: cs.pit, use: cs.use, lessonId: cs.lessonId, step: cs.step }));
+      out.csNextLabel2 = nextGram ? 'مرحلهٔ بعد · ' + nextGramNames[nextGram.mode] : 'بازگشت به درس';
+      out.csNextGo2 = csNextIsLesson ? (() => this.gramContinue(cs)) : (() => this.csQuit());
       out.csBackGo = () => this.csQuit();
       // game HUD
       out.csGameOverNow = !!cs.over;
