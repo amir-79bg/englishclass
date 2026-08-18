@@ -1479,7 +1479,26 @@ class Component extends DCLogic {
   // schema/scheduling itself is untouched), scoped down to one lesson.
   lessonStats(L, unit, lesson) {
     const words = this.lessonWordsOf(L, unit, lesson);
-    return { total: words.length, fresh: words.filter(i => { const x = this.srRec(i); return !x || !x[4]; }).length };
+    const il = this.ilLoad();
+    // A word that failed all IL_MAX_FAILS attempts today (ilAdvance() marks
+    // it 'unfinished') never gets srCompleteInitialLearning() called on it,
+    // so srRec(i)[4] never becomes true — without this check it would count
+    // as "fresh" forever, and since isFresh() in chunkOrder() already
+    // refuses to redraw a word with an il.words record, the lesson could
+    // never reach fresh===0 today. That deadlocked afterCard()'s lesson-
+    // complete transition AND lessonProgress()'s unlock cascade for every
+    // later lesson in the level, so one hard word answered wrong three
+    // times could strand a learner on "امروز تموم شد" for the rest of the
+    // day even with thousands of untouched words waiting. Treating an
+    // 'unfinished' word as resolved-for-today (not fresh) lets the lesson
+    // and level move on; il.words resets tomorrow (ilLoad(), day-scoped),
+    // so the word becomes drawable again the next time this lesson is open.
+    return { total: words.length, fresh: words.filter(i => {
+      const x = this.srRec(i);
+      if (x && x[4]) return false;
+      const ilRec = il.words[i];
+      return !(ilRec && ilRec.turn === 'unfinished');
+    }).length };
   }
   // LEG-003 — takes the whole `d` (not just d.round) so new words can be
   // sourced from the learner's current lesson (LEG-002) instead of the whole
