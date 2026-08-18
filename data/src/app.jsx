@@ -2103,6 +2103,21 @@ class Component extends DCLogic {
   // advanceLevel()'s explicit "go to the next level" action, and removing a
   // still-correct, previously-verified (LEG-002) helper is a separate
   // cleanup this task did not ask for.
+  // Scans forward from `fromLevel` (never backward — a learner is never
+  // dropped into content easier than what they are already placed at) for
+  // the first unlocked, not-yet-complete lesson, crossing level boundaries
+  // once a level's own lessons run out. Shared by nextLesson() and
+  // startLessonPractice() below so the "nothing left to study" dead end
+  // only fires when EVERY level through C2 is genuinely exhausted, not the
+  // moment one lesson (or one level) happens to already be fully introduced.
+  nextAvailableLesson(fromLevel) {
+    for (let li = LEVELS.indexOf(fromLevel); li < LEVELS.length; li++) {
+      const L = LEVELS[li];
+      const next = this.lessonProgress(L).find(x => x.unlocked && !x.complete);
+      if (next) return { level: L, unit: next.u, lesson: next.les };
+    }
+    return null;
+  }
   nextLesson() {
     const n = this.W.length;
     this.set(d => {
@@ -2113,12 +2128,14 @@ class Component extends DCLogic {
       // lesson advanceLessonIfDone() lands on can itself already be fully
       // introduced (e.g. it was studied from the lesson browser earlier),
       // so chunkOrder() comes back empty here too. Fall back to the next
-      // unlocked, not-yet-complete lesson in the level instead of sending
-      // the home screen's "شروع جلسهٔ امروز" straight to "امروز تموم شده".
+      // unlocked, not-yet-complete lesson — anywhere from here through C2 —
+      // instead of sending the home screen's "شروع جلسهٔ امروز" straight to
+      // "امروز تموم شده" while thousands of untouched words remain.
       if (!d.order.length) {
-        const next = this.lessonProgress(d.level).find(x => x.unlocked && !x.complete);
-        if (next && (next.u !== d.unit || next.les !== d.lesson)) {
-          d.unit = next.u; d.lesson = next.les;
+        const next = this.nextAvailableLesson(d.level);
+        if (next && (next.level !== d.level || next.unit !== d.unit || next.lesson !== d.lesson)) {
+          d.level = next.level; d.unit = next.unit; d.lesson = next.lesson;
+          d.round = this.roundForLevel(next.level);
           d.order = this.chunkOrder(d, n);
         }
       }
@@ -2150,14 +2167,16 @@ class Component extends DCLogic {
       d.order = this.chunkOrder(d, n);
       // Same bug lbContinueTarget() was patched for (see its comment above):
       // a lesson that is already fully introduced with nothing due yet
-      // yields an empty chunkOrder(), even though the level has plenty of
-      // untouched lessons left. Fall back to the next unlocked,
-      // not-yet-complete lesson in this level instead of stranding the
-      // learner on "مرورهای امروز تمام شده" moments after tapping a lesson.
+      // yields an empty chunkOrder(), even though the level (or a later one)
+      // has plenty of untouched lessons left. Fall back to the next
+      // unlocked, not-yet-complete lesson anywhere from here through C2
+      // instead of stranding the learner on "مرورهای امروز تمام شده" moments
+      // after tapping a lesson.
       if (!d.order.length) {
-        const next = this.lessonProgress(d.level).find(x => x.unlocked && !x.complete);
-        if (next && (next.u !== d.unit || next.les !== d.lesson)) {
-          d.unit = next.u; d.lesson = next.les;
+        const next = this.nextAvailableLesson(d.level);
+        if (next && (next.level !== d.level || next.unit !== d.unit || next.lesson !== d.lesson)) {
+          d.level = next.level; d.unit = next.unit; d.lesson = next.lesson;
+          d.round = this.roundForLevel(next.level);
           d.order = this.chunkOrder(d, n);
         }
       }
