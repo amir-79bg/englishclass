@@ -793,7 +793,10 @@ class Component extends DCLogic {
       { key: 'words', label: 'واژه‌ها', icon: 'ph-fill ph-cards', color: '#9184d9',
         // This bar is course coverage, so it moves the moment a word is first
         // studied. “Known” remains the stricter, separately labelled metric.
-        done: srn.introduced, total: STAGES.core,
+        // Target scales with progress the same way stageLabel/coverageTarget
+        // do below — a fixed STAGES.core (777) pins the bar at 100% forever
+        // for anyone who clears it in one placement-test bulk-write.
+        done: srn.introduced, total: srn.introduced < STAGES.core ? STAGES.core : (srn.introduced < STAGES.periphery ? STAGES.periphery : STAGES.total),
         sub: srn.introduced + ' آشناشده · ' + srn.learning + ' در حال یادگیری · ' + srn.known + ' بلد',
         next: qs.due || qs.fresh ? 'دیدن فهرست درس‌ها' : 'مرورهای امروز تمام شده',
         // LEG-009 — vocabulary now opens on the lesson browser, not straight
