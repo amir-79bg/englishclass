@@ -85298,5 +85298,333 @@
   "cat": "noun",
   "ex": "The plant's berries contain a dangerous poison.",
   "exfa": "میوه‌های این گیاه حاوی سمی خطرناک هستند."
+ },
+ {
+  "i": 10524,
+  "en": "'m",
+  "fa": "(مخفف «am») هستم",
+  "cat": "verb",
+  "ex": "I'm from Iran.",
+  "exfa": "من اهل ایران هستم."
+ },
+ {
+  "i": 10525,
+  "en": "'re",
+  "fa": "(مخفف «are») هستی؛ هستید؛ هستیم؛ هستند",
+  "cat": "verb",
+  "ex": "You're very kind.",
+  "exfa": "تو خیلی مهربانی."
+ },
+ {
+  "i": 10526,
+  "en": "'s",
+  "fa": "(مخفف «is») است",
+  "cat": "verb",
+  "ex": "She's a doctor.",
+  "exfa": "او پزشک است."
+ },
+ {
+  "i": 10527,
+  "en": "a.m.",
+  "fa": "صبح؛ قبل از ظهر (در بیان ساعت)",
+  "cat": "time",
+  "ex": "The train leaves at seven a.m.",
+  "exfa": "قطار ساعت هفت صبح حرکت می‌کند."
+ },
+ {
+  "i": 10528,
+  "en": "am",
+  "fa": "هستم (فعل ربطی to be برای «من»)",
+  "cat": "verb",
+  "ex": "I am happy today.",
+  "exfa": "من امروز خوشحالم."
+ },
+ {
+  "i": 10529,
+  "en": "an",
+  "fa": "یک (حرف تعریف نامعین، پیش از صدای مصوت)",
+  "cat": "general",
+  "ex": "She has an apple.",
+  "exfa": "او یک سیب دارد."
+ },
+ {
+  "i": 10530,
+  "en": "at",
+  "fa": "در؛ نزد (برای مکان یا زمان دقیق)",
+  "cat": "general",
+  "ex": "We are at home.",
+  "exfa": "ما در خانه هستیم."
+ },
+ {
+  "i": 10531,
+  "en": "be",
+  "fa": "بودن (فعل to be)",
+  "cat": "verb",
+  "ex": "You must be quiet in the library.",
+  "exfa": "باید در کتابخانه ساکت باشی."
+ },
+ {
+  "i": 10532,
+  "en": "by",
+  "fa": "کنار؛ توسط؛ با (وسیله)",
+  "cat": "general",
+  "ex": "Come and sit by me.",
+  "exfa": "بیا و کنار من بنشین."
+ },
+ {
+  "i": 10533,
+  "en": "do",
+  "fa": "انجام دادن؛ (فعل کمکی در پرسش و منفی)",
+  "cat": "verb",
+  "ex": "Do you like tea?",
+  "exfa": "چای دوست داری؟"
+ },
+ {
+  "i": 10534,
+  "en": "each other",
+  "fa": "یکدیگر؛ همدیگر",
+  "cat": "phrase",
+  "ex": "They love each other.",
+  "exfa": "آن‌ها یکدیگر را دوست دارند."
+ },
+ {
+  "i": 10535,
+  "en": "good afternoon",
+  "fa": "عصر بخیر",
+  "cat": "talk",
+  "ex": "Good afternoon, everyone!",
+  "exfa": "عصر همگی بخیر!"
+ },
+ {
+  "i": 10536,
+  "en": "good morning",
+  "fa": "صبح بخیر",
+  "cat": "talk",
+  "ex": "Good morning! Did you sleep well?",
+  "exfa": "صبح بخیر! خوب خوابیدی؟"
+ },
+ {
+  "i": 10537,
+  "en": "good night",
+  "fa": "شب بخیر",
+  "cat": "talk",
+  "ex": "Good night, see you tomorrow.",
+  "exfa": "شب بخیر، فردا می‌بینمت."
+ },
+ {
+  "i": 10538,
+  "en": "he",
+  "fa": "او (مذکر)",
+  "cat": "general",
+  "ex": "He is my brother.",
+  "exfa": "او برادر من است."
+ },
+ {
+  "i": 10539,
+  "en": "hers",
+  "fa": "مال او (مؤنث)",
+  "cat": "general",
+  "ex": "This bag is hers.",
+  "exfa": "این کیف مال اوست."
+ },
+ {
+  "i": 10540,
+  "en": "I",
+  "fa": "من",
+  "cat": "general",
+  "ex": "I live in Tehran.",
+  "exfa": "من در تهران زندگی می‌کنم."
+ },
+ {
+  "i": 10541,
+  "en": "if",
+  "fa": "اگر",
+  "cat": "general",
+  "ex": "If it rains, we will stay home.",
+  "exfa": "اگر باران ببارد، در خانه می‌مانیم."
+ },
+ {
+  "i": 10542,
+  "en": "in",
+  "fa": "در؛ داخل",
+  "cat": "general",
+  "ex": "The keys are in my bag.",
+  "exfa": "کلیدها داخل کیفم هستند."
+ },
+ {
+  "i": 10543,
+  "en": "is",
+  "fa": "است (فعل ربطی to be برای سوم‌شخص مفرد)",
+  "cat": "verb",
+  "ex": "This is my house.",
+  "exfa": "این خانه‌ی من است."
+ },
+ {
+  "i": 10544,
+  "en": "it",
+  "fa": "آن (برای اشیا و حیوانات)",
+  "cat": "general",
+  "ex": "Where is my phone? It is on the table.",
+  "exfa": "گوشی من کجاست؟ روی میز است."
+ },
+ {
+  "i": 10545,
+  "en": "me",
+  "fa": "من را؛ به من",
+  "cat": "general",
+  "ex": "Please call me tonight.",
+  "exfa": "لطفاً امشب به من زنگ بزن."
+ },
+ {
+  "i": 10546,
+  "en": "my",
+  "fa": "مال من؛ ...ام",
+  "cat": "general",
+  "ex": "My name is Sara.",
+  "exfa": "اسم من سارا است."
+ },
+ {
+  "i": 10547,
+  "en": "no",
+  "fa": "نه؛ هیچ",
+  "cat": "talk",
+  "ex": "No, thank you, I'm full.",
+  "exfa": "نه، ممنون، سیر هستم."
+ },
+ {
+  "i": 10548,
+  "en": "no one",
+  "fa": "هیچ‌کس",
+  "cat": "general",
+  "ex": "No one was at home.",
+  "exfa": "هیچ‌کس در خانه نبود."
+ },
+ {
+  "i": 10549,
+  "en": "o'clock",
+  "fa": "درست ...ساعت (در بیان ساعت گرد)",
+  "cat": "time",
+  "ex": "The meeting starts at six o'clock.",
+  "exfa": "جلسه ساعت شش شروع می‌شود."
+ },
+ {
+  "i": 10550,
+  "en": "of",
+  "fa": "از؛ مال (نشان‌دهنده‌ی تعلق)",
+  "cat": "general",
+  "ex": "This is the capital of Iran.",
+  "exfa": "این پایتخت ایران است."
+ },
+ {
+  "i": 10551,
+  "en": "OK",
+  "fa": "خوب؛ باشه؛ بی‌عیب",
+  "cat": "talk",
+  "ex": "Is everything OK?",
+  "exfa": "همه‌چیز خوبه؟"
+ },
+ {
+  "i": 10552,
+  "en": "on",
+  "fa": "روی؛ بر",
+  "cat": "general",
+  "ex": "The book is on the table.",
+  "exfa": "کتاب روی میز است."
+ },
+ {
+  "i": 10553,
+  "en": "out of",
+  "fa": "از داخل؛ خارج از",
+  "cat": "general",
+  "ex": "She walked out of the room.",
+  "exfa": "او از اتاق بیرون رفت."
+ },
+ {
+  "i": 10554,
+  "en": "p.m.",
+  "fa": "بعدازظهر؛ عصر (در بیان ساعت)",
+  "cat": "time",
+  "ex": "The shop closes at nine p.m.",
+  "exfa": "مغازه ساعت نه شب بسته می‌شود."
+ },
+ {
+  "i": 10555,
+  "en": "pardon",
+  "fa": "ببخشید؛ جانم؟ (هنگام نشنیدن حرف طرف)",
+  "cat": "talk",
+  "ex": "Pardon? Can you say that again?",
+  "exfa": "ببخشید؟ می‌شه دوباره بگی؟"
+ },
+ {
+  "i": 10556,
+  "en": "pm",
+  "fa": "بعدازظهر (مخفف p.m.)",
+  "cat": "time",
+  "ex": "I'll see you at 5 pm.",
+  "exfa": "ساعت پنج بعدازظهر می‌بینمت."
+ },
+ {
+  "i": 10557,
+  "en": "all right",
+  "fa": "خوب؛ راضی‌کننده؛ بی‌عیب",
+  "cat": "talk",
+  "ex": "Don't worry, everything will be all right.",
+  "exfa": "نگران نباش، همه‌چیز درست می‌شه."
+ },
+ {
+  "i": 10558,
+  "en": "alright",
+  "fa": "خوب؛ باشه (املای غیررسمی all right)",
+  "cat": "talk",
+  "ex": "Is it alright if I open the window?",
+  "exfa": "اشکالی نداره اگه پنجره رو باز کنم؟"
+ },
+ {
+  "i": 10559,
+  "en": "so",
+  "fa": "بنابراین؛ خیلی",
+  "cat": "general",
+  "ex": "I was tired, so I went to bed early.",
+  "exfa": "خسته بودم، بنابراین زود خوابیدم."
+ },
+ {
+  "i": 10560,
+  "en": "theirs",
+  "fa": "مال آن‌ها",
+  "cat": "general",
+  "ex": "That car is theirs.",
+  "exfa": "آن ماشین مال آن‌هاست."
+ },
+ {
+  "i": 10561,
+  "en": "to",
+  "fa": "به؛ (نشانه‌ی مصدر، پیش از فعل)",
+  "cat": "general",
+  "ex": "I want to go to school.",
+  "exfa": "می‌خواهم به مدرسه بروم."
+ },
+ {
+  "i": 10562,
+  "en": "up",
+  "fa": "بالا؛ به‌سمت بالا",
+  "cat": "general",
+  "ex": "Please stand up.",
+  "exfa": "لطفاً بایست."
+ },
+ {
+  "i": 10563,
+  "en": "us",
+  "fa": "ما را؛ به ما",
+  "cat": "general",
+  "ex": "Come with us.",
+  "exfa": "با ما بیا."
+ },
+ {
+  "i": 10564,
+  "en": "we",
+  "fa": "ما",
+  "cat": "general",
+  "ex": "We are friends.",
+  "exfa": "ما با هم دوست هستیم."
  }
 ]
