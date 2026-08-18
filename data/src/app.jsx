@@ -738,7 +738,15 @@ class Component extends DCLogic {
     return out;
   }
   gramModes(les) {
-    return ['choose', 'fill', 'order', 'err'].filter(m => {
+    // 'learn' comes first (the rule/example/pitfall reading a lesson used to
+    // show permanently alongside four drill buttons, now gated as its own
+    // step) and 'choose' moved LAST. Per the grammar teaching-method
+    // research: 'choose' is a 4-option discrimination task between
+    // confusable forms, which is the END state of knowing a form, not the
+    // entry point — the old first-position ordering put the hardest task
+    // first and mislabelled it "quick assessment".
+    return ['learn', 'fill', 'order', 'err', 'choose'].filter(m => {
+      if (m === 'learn') return true;
       const key = m === 'err' ? 'err' : m;
       return (les[key] || []).length > 0;
     });
@@ -3308,8 +3316,21 @@ class Component extends DCLogic {
       return this.setState({ screen: 'glesson', gLesson: les, gpText: (saved && saved.text) || '',
         gpResult: saved, gpErr: '', gpBusy: false, gpOpen: true, gFlowNote: '' });
     }
+    // 'learn' has no drill screen of its own — the rule/formula/example/
+    // pitfall content it gates is already laid out inline on this same
+    // page (below the step buttons). Landing here just means "make sure
+    // the learner is looking at that content", not opening anything new.
+    if (mode === 'learn') {
+      return this.setState({ screen: 'glesson', gLesson: les, gFlowNote: '' });
+    }
     if (this.state.gFlowNote) this.setState({ gFlowNote: '' });
     this.gramDrill(les, mode);
+  }
+  // Marks the 'learn' step done (score is binary — there is nothing to get
+  // wrong reading a rule) and unlocks 'fill', the first real drill.
+  gramMarkLearned(les) {
+    this.csSaveScore('g_' + les.id + '_learn', 100);
+    this.setState({ gFlowNote: '' });
   }
   gramContinue(cs) {
     const hit = this.grammarLessonById(cs && cs.lessonId);
@@ -3706,8 +3727,14 @@ class Component extends DCLogic {
       out.glEx = (les.ex || []).map(e => ({ en: e.en, fa: e.fa, say: () => this.speakWord(e.en) }));
       out.glPit = (les.pit || []).map(p => ({ bad: p.bad, good: p.good, fa: p.fa, faParts: this.grammarRich(p.fa), say: () => this.speakWord(p.good) }));
       out.glHasPit = (les.pit || []).length > 0;
-      const stepNames = { choose: 'سنجش سریع', fill: 'ساختار را بساز', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
-      const stepIcons = { choose: 'ph ph-list-checks', fill: 'ph ph-pencil-line', order: 'ph ph-arrows-left-right', err: 'ph ph-wrench', produce: 'ph ph-pen-nib' };
+      // The 'learn' step (rule/example/pitfall reading, above) has no drill
+      // of its own to pass/fail — a single explicit "فهمیدم" tap is what
+      // finishes it and unlocks 'fill'. Hidden once already done so a
+      // returning learner reviewing the lesson is not asked to re-confirm.
+      out.glLearnPending = !st.steps.some(x => x.mode === 'learn' && x.score != null);
+      out.glMarkLearnedGo = () => this.gramMarkLearned(les);
+      const stepNames = { learn: 'قاعده و مثال‌ها', choose: 'تشخیص گزینه‌ها', fill: 'ساختار را بساز', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
+      const stepIcons = { learn: 'ph ph-book-open-text', choose: 'ph ph-list-checks', fill: 'ph ph-pencil-line', order: 'ph ph-arrows-left-right', err: 'ph ph-wrench', produce: 'ph ph-pen-nib' };
       const currentIndex = st.next ? st.steps.findIndex(x => x.mode === st.next.mode) : st.steps.length;
       out.glSteps = st.steps.map((x, i) => {
         const passed = x.score != null, current = i === currentIndex, locked = !st.complete && i > currentIndex;
@@ -3725,7 +3752,7 @@ class Component extends DCLogic {
       const prodIndex = st.steps.findIndex(x => x.mode === 'produce');
       out.glProdLocked = !st.complete && currentIndex < prodIndex;
       out.glProdUnlocked = !out.glProdLocked;
-      out.glProdLockText = 'چهار مرحلهٔ قبلی را به‌ترتیب و با حداقل ۷۰٪ تمام کن تا این تمرین باز شود.';
+      out.glProdLockText = 'مرحله‌های قبلی را به‌ترتیب تمام کن تا این تمرین باز شود.';
       out.glProdTask = prod.task || 'با ساختار این درس یک جملهٔ شخصی بنویس.';
       out.glProdHint = prod.hint || '';
       out.glProdTaskParts = this.grammarRich(out.glProdTask);
@@ -3879,7 +3906,7 @@ class Component extends DCLogic {
       const csNextIsLesson = cs.kind === 'gram' && !!cs.lessonId;
       const gramHit = csNextIsLesson ? this.grammarLessonById(cs.lessonId) : null;
       const nextGram = gramHit ? this.gramStats(gramHit.les).next : null;
-      const nextGramNames = { choose: 'سنجش سریع', fill: 'جای خالی', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
+      const nextGramNames = { learn: 'قاعده و مثال‌ها', choose: 'تشخیص گزینه‌ها', fill: 'جای خالی', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
       out.csNextLabel2 = nextGram ? 'مرحلهٔ بعد · ' + nextGramNames[nextGram.mode] : 'بازگشت به درس';
       out.csNextGo2 = csNextIsLesson ? (() => this.gramContinue(cs)) : (() => this.csQuit());
       out.csBackGo = () => this.csQuit();

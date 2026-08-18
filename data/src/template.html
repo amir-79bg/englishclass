@@ -10928,8 +10928,14 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
       </div>
     </sc-if>
 
+    <sc-if value="{{ glLearnPending }}" hint-placeholder-val="{{ true }}">
+    <div style="margin-bottom:16px">
+      <button class="vbtn" sc-camel-on-click="{{ glMarkLearnedGo }}" style="width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;border-radius:11px;background:rgba(143,217,193,.12);border:1px solid #8fd9c1;color:#8fd9c1;font-size:13px;font-weight:500"><i class="ph-fill ph-check-circle"></i><span>فهمیدم — برو مرحلهٔ بعد</span></button>
+    </div>
+    </sc-if>
+
     <div style="margin-top:16px;padding:14px;border-radius:12px;background:rgba(224,164,88,.045);border:1px solid rgba(224,164,88,.24)">
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:7px"><div><div style="font-size:12.5px;font-weight:500;color:#e0a458"><i class="ph ph-pen-nib"></i> ۵ · جملهٔ خودم</div><div style="font-size:10.5px;color:rgba(233,233,237,.48);margin-top:2px">ساختار را در یک موقعیت واقعی به کار ببر</div></div></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:7px"><div><div style="font-size:12.5px;font-weight:500;color:#e0a458"><i class="ph ph-pen-nib"></i> آخرین مرحله · جملهٔ خودم</div><div style="font-size:10.5px;color:rgba(233,233,237,.48);margin-top:2px">ساختار را در یک موقعیت واقعی به کار ببر</div></div></div>
       <sc-if value="{{ glProdLocked }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:center;gap:9px;padding:12px;border-radius:9px;background:rgba(233,233,237,.025);border:1px dashed rgba(233,233,237,.16);color:rgba(233,233,237,.45);font-size:11.5px;line-height:1.9"><i class="ph-fill ph-lock-key" style="font-size:17px"></i><span>{{ glProdLockText }}</span></div></sc-if>
       <sc-if value="{{ glProdUnlocked }}" hint-placeholder-val="{{ false }}">
       <div style="font-size:12.5px;line-height:2.1;margin-bottom:4px"><sc-for list="{{ glProdTaskParts }}" as="p" hint-placeholder-count="3"><span style="{{ p.style }}">{{ p.text }}</span></sc-for></div>
