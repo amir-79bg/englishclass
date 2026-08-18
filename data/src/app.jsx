@@ -745,8 +745,15 @@ class Component extends DCLogic {
     // confusable forms, which is the END state of knowing a form, not the
     // entry point — the old first-position ordering put the hardest task
     // first and mislabelled it "quick assessment".
-    return ['learn', 'fill', 'order', 'err', 'choose'].filter(m => {
-      if (m === 'learn') return true;
+    // 'input' comes right after 'learn': structured input (VanPatten &
+    // Oikkenon — the gains in processing instruction come from the input
+    // activity, not the explanation itself) forces the learner to actually
+    // process the form to get a sentence's MEANING, before ever being asked
+    // to produce it. See gramBuildInputItems() for how its items are built
+    // from data that already exists (ex sentences + a contrast lesson or,
+    // failing that, this lesson's own pitfalls) — no new authored content.
+    return ['learn', 'input', 'fill', 'order', 'err', 'choose'].filter(m => {
+      if (m === 'learn' || m === 'input') return (les.ex || []).length > 0;
       const key = m === 'err' ? 'err' : m;
       return (les[key] || []).length > 0;
     });
@@ -3324,6 +3331,7 @@ class Component extends DCLogic {
       return this.setState({ screen: 'glesson', gLesson: les, gFlowNote: '' });
     }
     if (this.state.gFlowNote) this.setState({ gFlowNote: '' });
+    if (mode === 'input') return this.gramInputDrill(les);
     this.gramDrill(les, mode);
   }
   // Marks the 'learn' step done (score is binary — there is nothing to get
@@ -3571,6 +3579,40 @@ class Component extends DCLogic {
   csQuit() { clearInterval(this.csIv); const cs = this.state.cs; this.setState({ screen: this.navBack() || (cs && cs.back) || 'home', cs: null }); }
 
   // ---- grammar drill builders ----
+  // Structured input: meaning cannot be recovered without parsing the
+  // target form, which is what makes this different from 'choose' (a
+  // discrimination task between competing FORMS, no meaning involved).
+  // Prompt is a Persian sentence from this lesson's own examples; the two
+  // options are that sentence's real English translation vs a distractor —
+  // the matching example from the confusable CONTRAST lesson when one
+  // exists (les.contrast, set in data/curricula/grammar.js), otherwise a
+  // known wrong-form sentence from this lesson's own `pit`. Either way, no
+  // new content had to be authored — see grammar.js's `contrast` map
+  // comment for which lessons have a natural partner and why the rest do
+  // not need one.
+  gramBuildInputItems(les) {
+    const ex = les.ex || [];
+    if (!ex.length) return [];
+    const contrastHit = les.contrast ? this.grammarLessonById(les.contrast) : null;
+    const distractors = (contrastHit && (contrastHit.les.ex || []).length)
+      ? contrastHit.les.ex.map(e => e.en)
+      : (les.pit || []).map(p => p.bad);
+    if (!distractors.length) return [];
+    const seed = les.id.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+    const chosen = shuffled(ex, seed).slice(0, Math.min(4, ex.length));
+    return chosen.map((e, i) => {
+      const wrong = distractors[i % distractors.length];
+      const opts = shuffled([e.en, wrong], seed + i * 977 + 1);
+      return { q: e.fa, opts: opts, a: opts.indexOf(e.en) };
+    });
+  }
+  gramInputDrill(les) {
+    const items = this.gramBuildInputItems(les);
+    if (!items.length) return;
+    this.csStart({ kind: 'gram', mode: 'input', title: 'تشخیص معنی · ' + les.t,
+      key: 'g_' + les.id + '_input', back: 'glesson', formula: (les.guide && les.guide.formula) || '', lessonId: les.id, step: 'input',
+      items: items });
+  }
   gramDrill(les, mode) {
     const lv = this.state.gLv || 'A1';
     const names = { choose: 'چهارگزینه‌ای', fill: 'پر کردن جای خالی', err: 'پیدا کردن غلط', order: 'مرتب‌کردن جمله' };
@@ -3733,8 +3775,8 @@ class Component extends DCLogic {
       // returning learner reviewing the lesson is not asked to re-confirm.
       out.glLearnPending = !st.steps.some(x => x.mode === 'learn' && x.score != null);
       out.glMarkLearnedGo = () => this.gramMarkLearned(les);
-      const stepNames = { learn: 'قاعده و مثال‌ها', choose: 'تشخیص گزینه‌ها', fill: 'ساختار را بساز', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
-      const stepIcons = { learn: 'ph ph-book-open-text', choose: 'ph ph-list-checks', fill: 'ph ph-pencil-line', order: 'ph ph-arrows-left-right', err: 'ph ph-wrench', produce: 'ph ph-pen-nib' };
+      const stepNames = { learn: 'قاعده و مثال‌ها', input: 'تشخیص معنی', choose: 'تشخیص گزینه‌ها', fill: 'ساختار را بساز', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
+      const stepIcons = { learn: 'ph ph-book-open-text', input: 'ph ph-translate', choose: 'ph ph-list-checks', fill: 'ph ph-pencil-line', order: 'ph ph-arrows-left-right', err: 'ph ph-wrench', produce: 'ph ph-pen-nib' };
       const currentIndex = st.next ? st.steps.findIndex(x => x.mode === st.next.mode) : st.steps.length;
       out.glSteps = st.steps.map((x, i) => {
         const passed = x.score != null, current = i === currentIndex, locked = !st.complete && i > currentIndex;
@@ -3826,13 +3868,18 @@ class Component extends DCLogic {
       out.csBarStyle = 'height:100%;width:' + Math.round(((cs.k + (cs.done ? 1 : 0)) / cs.items.length) * 100) + '%;background:linear-gradient(90deg,#9184d9,#b3a9e6);transition:width .3s';
       out.csQuitGo = () => this.csQuit();
       out.csDone = !!cs.done; out.csRunning = !cs.done && !cs.over;
-      out.csIsChoose = cs.mode === 'choose' || cs.mode === 'game';
+      // 'input' items are shaped exactly like 'choose' items ({opts, a}) —
+      // structured input reuses the same discrimination UI, it is the
+      // MEANING-first prompt (Persian, not the target form) that makes it
+      // a different task, not different markup.
+      out.csIsChoose = cs.mode === 'choose' || cs.mode === 'game' || cs.mode === 'input';
       out.csIsFill = cs.mode === 'fill';
       out.csIsError = cs.mode === 'error';
       out.csIsOrder = cs.mode === 'order';
       // prompt
       let prompt = '', hint = '', ltr = true;
       if (cs.mode === 'choose' || cs.mode === 'game') { prompt = it.q || ''; hint = 'گزینه‌ی درست را انتخاب کن'; }
+      if (cs.mode === 'input') { prompt = it.q || ''; hint = 'کدام جمله همین معنی را می‌رساند؟'; ltr = false; }
       if (cs.mode === 'fill') { prompt = it.q || ''; hint = it.fa ? 'راهنما: ' + it.fa : 'جای خالی را پر کن'; }
       if (cs.mode === 'error') { prompt = it.s || ''; hint = 'این جمله یک غلط دارد — شکل درستش را بنویس'; }
       if (cs.mode === 'order') { prompt = it.fa || ''; hint = 'تکه‌ها را به ترتیب درست بچین'; ltr = false; }
@@ -3860,7 +3907,7 @@ class Component extends DCLogic {
       // no per-item explanation at all, so a wrong answer there falls back to
       // the lesson's own formula card — the same rule shown on the lesson
       // page — before the pitfalls list below as a second-line fallback.
-      const why = it.why || (cs.mode === 'error' ? it.fa : '') || (((cs.mode === 'fill' || cs.mode === 'order') && !cs.ok) ? cs.formula : '') || '';
+      const why = it.why || (cs.mode === 'error' ? it.fa : '') || (((cs.mode === 'fill' || cs.mode === 'order' || cs.mode === 'input') && !cs.ok) ? cs.formula : '') || '';
       out.csHasWhy = !!why && (cs.picked != null || cs.checked);
       out.csWhy = why;
       // What the group's verb actually means — shown on the collocations hub,
@@ -3906,7 +3953,7 @@ class Component extends DCLogic {
       const csNextIsLesson = cs.kind === 'gram' && !!cs.lessonId;
       const gramHit = csNextIsLesson ? this.grammarLessonById(cs.lessonId) : null;
       const nextGram = gramHit ? this.gramStats(gramHit.les).next : null;
-      const nextGramNames = { learn: 'قاعده و مثال‌ها', choose: 'تشخیص گزینه‌ها', fill: 'جای خالی', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
+      const nextGramNames = { learn: 'قاعده و مثال‌ها', input: 'تشخیص معنی', choose: 'تشخیص گزینه‌ها', fill: 'جای خالی', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
       out.csNextLabel2 = nextGram ? 'مرحلهٔ بعد · ' + nextGramNames[nextGram.mode] : 'بازگشت به درس';
       out.csNextGo2 = csNextIsLesson ? (() => this.gramContinue(cs)) : (() => this.csQuit());
       out.csBackGo = () => this.csQuit();

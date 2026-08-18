@@ -184,7 +184,23 @@ const guides = {
   c2_3:{formula:'موصولی معلوم → -ing · مجهول → past participle · کارِ زودتر → having + p.p',decision:'فاعل دو بخش یکی است و اطلاعات قابل‌کوتاه‌شدن است؟ reduced clause بساز.',memory:'فاعلِ پنهان باید همان فاعل جملهٔ اصلی باشد؛ وگرنه dangling modifier می‌سازی.',prod:{task:'دو کارِ پشت‌سرهم با یک فاعل را با Having + قسمت سوم به هم وصل کن.',hint:'Having finished …, I/he/she …',model:'Having finished the report, I sent it to my manager.',patterns:[{re:'^having\\s+\\w+(ed|en|wn|ne|nt|lt|t)\\b',label:'بخش کوتاه‌شده با Having + participle شروع شده'},{re:',\\s*(i|he|she|we|they)\\b',label:'فاعل جملهٔ اصلی روشن است'}]}}
 };
 
+// Which OTHER lesson's example sentences make the best wrong-option
+// distractor for THIS lesson's "کدام جمله معنی درست را می‌رساند؟" input
+// beat — the two forms Persian learners genuinely confuse (present simple
+// vs continuous, past simple vs present perfect, first vs second/third
+// conditional, full vs reduced relative clause). A lesson not listed here
+// has no natural single confusable partner (e.g. prepositions,
+// comparatives, causative have) — gramBuildInputItems() falls back to that
+// lesson's own `pit` entries as the distractor instead.
+const contrast = {
+  a1_1:'a1_2', a1_2:'a1_1',
+  a2_1:'b1_1', b1_1:'a2_1',
+  b1_2:'b2_1', b2_1:'b1_2', c2_1:'b2_1',
+  b2_3:'c2_3', c2_3:'b2_3'
+};
+
 Object.keys(window.GRAM).forEach(lv => window.GRAM[lv].forEach(lesson => {
   if (guides[lesson.id]) lesson.guide = guides[lesson.id];
+  if (contrast[lesson.id]) lesson.contrast = contrast[lesson.id];
 }));
 })();
