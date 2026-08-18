@@ -1533,6 +1533,33 @@ class Component extends DCLogic {
     // session must never be redrawn as if it were a brand-new word — it
     // already has (or had) its own turn A/B/C card scheduled by ilSchedule().
     const il = this.ilLoad();
+    // Bug fix (reported: a brand-new learner taking the placement test, then
+    // landing straight on "مرورهای امروز تمام شد" the moment they tried to
+    // actually start lesson 1 — reproduced end-to-end with Playwright).
+    // load() speculatively pre-computes d.order the instant the app first
+    // opens, and the stamping below marks every word it draws with an
+    // Initial-Learning turn:'A' record the moment it is DRAWN, not once it
+    // is actually shown. When d.order is then rebuilt from scratch before
+    // the learner has answered a single card (d.pos still 0) — e.g.
+    // applyPlacement() recomputing d.order for the very same untouched
+    // lesson right after the placement test — those turn:'A' stamps from
+    // the discarded first draw survive in vocab_session_v1. isFresh() below
+    // then treats the exact same words as "already mid Initial-Learning"
+    // and refuses to draw them again, so chunkOrder() returns empty even
+    // though every one of those words is still fully untouched. Since
+    // nothing was ever shown (d.pos === 0), any turn:'A'/fails:0 stamp for
+    // a word in the about-to-be-discarded d.order is an orphan of a draw
+    // the learner never saw — release it so the rebuild can draw the same
+    // words as genuinely fresh. A word already past turn 'A', or with a
+    // fail already recorded, was reached by a real card and stays put.
+    if (d.pos === 0 && d.order && d.order.length) {
+      let releasedAny = false;
+      d.order.forEach(i => {
+        const rec = il.words[i];
+        if (rec && rec.turn === 'A' && !rec.fails) { delete il.words[i]; releasedAny = true; }
+      });
+      if (releasedAny) this.ilSave();
+    }
     const isFresh = i => { const x = this.srRec(i); if (x && x[4]) return false; return !il.words[i]; };
     // LEG-003 point 2: new words come from the current LESSON_SIZE-word
     // lesson specifically, not the whole level band chunkOrder() used before.
@@ -2159,7 +2186,14 @@ class Component extends DCLogic {
         }
       }
     }, { screen: 'study', result: null }, () => {
-      if (!this.state.data.order.length) this.setState({ screen: 'result', result: { kind: 'empty' } });
+      // No more "امروز تموم شد" dead end here — see the kind:'empty' removal
+      // note above extendQueue() below for why. Every level through C2 was
+      // already searched by nextAvailableLesson() above; if d.order is
+      // STILL empty at this point every level really is exhausted for
+      // today, so there is nothing to study — quietly return to the lesson
+      // browser instead of interrupting with a page that has no action a
+      // learner can actually take beyond "go back".
+      if (!this.state.data.order.length) this.setState({ screen: 'lessons', result: null });
       else this.prepare();
     });
   }
@@ -2200,7 +2234,9 @@ class Component extends DCLogic {
         }
       }
     }, { screen: 'study', result: null }, () => {
-      if (!this.state.data.order.length) this.setState({ screen: 'result', result: { kind: 'empty' } });
+      // Same as nextLesson() above: no dead-end screen, ever. Land back on
+      // the lesson browser instead.
+      if (!this.state.data.order.length) this.setState({ screen: 'lessons', result: null });
       else this.prepare();
     });
   }
@@ -2227,6 +2263,17 @@ class Component extends DCLogic {
   // never called from this path anymore; afterCard() already returns the
   // "این درس تمام شد" result the moment the active lesson finishes, before
   // extendQueue() would ever run for it.
+  //
+  // Product owner call, 2026-08-18: the kind:'empty' "امروز تموم شد" result
+  // card is removed for good — every call site that used to show it (here,
+  // startLessonPractice(), nextLesson()) now falls back to the lesson
+  // browser silently instead. It kept resurfacing even after two rounds of
+  // root-cause fixes (LEG-032/033/034 shrank how OFTEN it fired but could
+  // never prove it to zero — extendQueue()'s dry-queue case in particular is
+  // a legitimate everyday state, not a bug, so patching root causes forever
+  // was the wrong strategy). A dead-end interruption page whose only action
+  // is "go back" has no reason to exist when the destination it names can
+  // just be the destination.
   extendQueue(done) {
     const n = this.W.length;
     let grew = false;
@@ -2236,7 +2283,7 @@ class Component extends DCLogic {
       if (more.length) d.order = d.order.concat(more);
       grew = d.order.length > before;
     }, {}, () => {
-      if (!grew) return this.setState({ screen: 'result', result: { kind: 'empty' } });
+      if (!grew) return this.setState({ screen: 'lessons', result: null });
       done();
     });
   }
@@ -4676,12 +4723,12 @@ class Component extends DCLogic {
         { label: 'ادامه‌ی مرور', style: btn('rgba(145,132,217,.12)', '#9184d9', '#b3a9e6'), go: () => this.setState({ screen: 'study', result: null }, () => this.prepare()) },
         { label: res.passed ? 'بازگشت به خانه' : 'آزمون دوباره', style: btn('transparent', 'rgba(233,233,237,.16)', 'rgba(233,233,237,.75)'), go: () => res.passed ? this.setState({ screen: 'home', result: null }) : this.startQuiz(res.mile) }
       ];
-    } else if (res.kind === 'empty') {
-      resultCol = '#8fd9c1'; resultIcon = 'ph-fill ph-calendar-check';
-      resultTitle = 'مرورهای امروز تمام شد';
-      resultDesc = 'فعلاً کارت موعدداری باقی نمانده است. فردا واژه‌ها در زمان مناسب دوباره برمی‌گردند.';
-      resultActions = [{ label: 'بازگشت به خانه', style: btn('rgba(143,217,193,.12)', '#8fd9c1', '#8fd9c1'), go: () => this.setState({ screen: 'home', result: null }) }];
     }
+    // kind:'empty' ("مرورهای امروز تمام شد") removed for good — see the
+    // comment above extendQueue() for why. Every former call site now
+    // routes straight to the lesson browser instead of rendering a result
+    // card here, so this branch has no caller left; kept out entirely
+    // rather than left as dead code that could get wired up again.
 
     const qy = (s.query || '').trim();
     const qlow = searchNorm(qy);
