@@ -2109,6 +2109,19 @@ class Component extends DCLogic {
       this.advanceLessonIfDone(d);
       d.pos = 0; d.wordCount = n;
       d.order = this.chunkOrder(d, n);
+      // Same empty-queue trap startLessonPractice() was patched for: the
+      // lesson advanceLessonIfDone() lands on can itself already be fully
+      // introduced (e.g. it was studied from the lesson browser earlier),
+      // so chunkOrder() comes back empty here too. Fall back to the next
+      // unlocked, not-yet-complete lesson in the level instead of sending
+      // the home screen's "شروع جلسهٔ امروز" straight to "امروز تموم شده".
+      if (!d.order.length) {
+        const next = this.lessonProgress(d.level).find(x => x.unlocked && !x.complete);
+        if (next && (next.u !== d.unit || next.les !== d.lesson)) {
+          d.unit = next.u; d.lesson = next.les;
+          d.order = this.chunkOrder(d, n);
+        }
+      }
     }, { screen: 'study', result: null }, () => {
       if (!this.state.data.order.length) this.setState({ screen: 'result', result: { kind: 'empty' } });
       else this.prepare();
