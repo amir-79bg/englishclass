@@ -85626,5 +85626,3044 @@
   "cat": "general",
   "ex": "We are friends.",
   "exfa": "ما با هم دوست هستیم."
+ },
+ {
+  "i": 10565,
+  "en": "aeroplane",
+  "fa": "هواپیما",
+  "cat": "travel",
+  "ex": "The aeroplane took off from the small airport.",
+  "exfa": "هواپیما از فرودگاه کوچک به هوا برخاست.",
+  "ipa": "/ˈeərəpleɪn/",
+  "syn": [
+   "airplane",
+   "plane"
+  ]
+ },
+ {
+  "i": 10566,
+  "en": "apron",
+  "fa": "پیش‌بند",
+  "cat": "clothes",
+  "ex": "My mother wore an apron in the kitchen.",
+  "exfa": "مادرم در آشپزخانه پیش‌بند پوشید.",
+  "ipa": "/ˈeɪprən/"
+ },
+ {
+  "i": 10567,
+  "en": "aunt",
+  "fa": "عمه / خاله",
+  "cat": "people",
+  "ex": "My aunt visited us last weekend.",
+  "exfa": "عمه‌ام آخر هفته‌ی گذشته به دیدن ما آمد."
+ },
+ {
+  "i": 10568,
+  "en": "awake",
+  "fa": "بیدار",
+  "cat": "adj",
+  "ex": "The baby was still awake at midnight.",
+  "exfa": "نوزاد نیمه‌شب هنوز بیدار بود.",
+  "ipa": "/əˈweɪk/"
+ },
+ {
+  "i": 10569,
+  "en": "boyfriend",
+  "fa": "دوست‌پسر",
+  "cat": "people",
+  "ex": "She introduced her boyfriend to her parents.",
+  "exfa": "او دوست‌پسرش را به والدینش معرفی کرد."
+ },
+ {
+  "i": 10570,
+  "en": "bucket",
+  "fa": "سطل",
+  "cat": "house",
+  "ex": "He filled the bucket with water from the tap.",
+  "exfa": "او سطل را با آب شیر آب پر کرد.",
+  "ipa": "/ˈbʌkɪt/"
+ },
+ {
+  "i": 10571,
+  "en": "burger",
+  "fa": "برگر",
+  "cat": "food",
+  "ex": "We ordered a burger and fries for lunch.",
+  "exfa": "ما برای ناهار یک برگر و سیب‌زمینی سرخ‌کرده سفارش دادیم."
+ },
+ {
+  "i": 10572,
+  "en": "café",
+  "fa": "کافه",
+  "cat": "place",
+  "ex": "They met at a small café near the park.",
+  "exfa": "آن‌ها در یک کافه‌ی کوچک نزدیک پارک همدیگر را دیدند."
+ },
+ {
+  "i": 10573,
+  "en": "CD",
+  "fa": "سی‌دی",
+  "cat": "tech",
+  "ex": "I still have my favorite album on CD.",
+  "exfa": "من هنوز آلبوم مورد علاقه‌ام را روی سی‌دی دارم."
+ },
+ {
+  "i": 10574,
+  "en": "classmate",
+  "fa": "هم‌کلاسی",
+  "cat": "school",
+  "ex": "My classmate helped me with the math homework.",
+  "exfa": "هم‌کلاسی‌ام در تکالیف ریاضی به من کمک کرد."
+ },
+ {
+  "i": 10575,
+  "en": "coke",
+  "fa": "نوشابه کولا",
+  "cat": "food",
+  "ex": "Can I have a cold coke with my burger?",
+  "exfa": "می‌شود یک نوشابه کولای سرد با برگرم داشته باشم؟"
+ },
+ {
+  "i": 10576,
+  "en": "couch",
+  "fa": "کاناپه",
+  "cat": "house",
+  "ex": "He fell asleep on the couch after work.",
+  "exfa": "او بعد از کار روی کاناپه خوابش برد.",
+  "ipa": "/kaʊtʃ/"
+ },
+ {
+  "i": 10577,
+  "en": "credit card",
+  "fa": "کارت اعتباری",
+  "cat": "money",
+  "ex": "She paid for the shoes with her credit card.",
+  "exfa": "او پول کفش‌ها را با کارت اعتباری‌اش پرداخت کرد."
+ },
+ {
+  "i": 10578,
+  "en": "dining room",
+  "fa": "اتاق غذاخوری",
+  "cat": "house",
+  "ex": "The family had dinner together in the dining room.",
+  "exfa": "خانواده با هم در اتاق غذاخوری شام خوردند."
+ },
+ {
+  "i": 10579,
+  "en": "Dr",
+  "fa": "دکتر (عنوان پیش از نام)",
+  "cat": "people",
+  "ex": "Dr Lee will see you in five minutes.",
+  "exfa": "دکتر لی تا پنج دقیقه‌ی دیگر شما را می‌بیند."
+ },
+ {
+  "i": 10580,
+  "en": "Dr.",
+  "fa": "دکتر (عنوان پیش از نام)",
+  "cat": "people",
+  "ex": "Dr. Carter works at the city hospital.",
+  "exfa": "دکتر کارتر در بیمارستان شهر کار می‌کند."
+ },
+ {
+  "i": 10581,
+  "en": "DVD",
+  "fa": "دی‌وی‌دی",
+  "cat": "tech",
+  "ex": "We watched a movie on DVD last night.",
+  "exfa": "دیشب یک فیلم روی دی‌وی‌دی تماشا کردیم."
+ },
+ {
+  "i": 10582,
+  "en": "e-mail",
+  "fa": "ایمیل",
+  "cat": "tech",
+  "ex": "Please send me an e-mail before Friday.",
+  "exfa": "لطفاً قبل از جمعه برایم یک ایمیل بفرست."
+ },
+ {
+  "i": 10583,
+  "en": "eighteen",
+  "fa": "هجده",
+  "cat": "noun",
+  "ex": "My brother is eighteen years old.",
+  "exfa": "برادرم هجده ساله است."
+ },
+ {
+  "i": 10584,
+  "en": "eighty",
+  "fa": "هشتاد",
+  "cat": "noun",
+  "ex": "The old book has eighty pages.",
+  "exfa": "آن کتاب قدیمی هشتاد صفحه دارد."
+ },
+ {
+  "i": 10585,
+  "en": "foggy",
+  "fa": "مه‌آلود",
+  "cat": "weather",
+  "ex": "It was too foggy to see the road clearly.",
+  "exfa": "هوا آنقدر مه‌آلود بود که جاده به‌وضوح دیده نمی‌شد.",
+  "ipa": "/ˈfɒɡi/"
+ },
+ {
+  "i": 10586,
+  "en": "foreigner",
+  "fa": "خارجی",
+  "cat": "people",
+  "ex": "A friendly foreigner helped me find the hotel.",
+  "exfa": "یک خارجی مهربان به من کمک کرد هتل را پیدا کنم."
+ },
+ {
+  "i": 10587,
+  "en": "fourteen",
+  "fa": "چهارده",
+  "cat": "noun",
+  "ex": "There are fourteen chairs around the table.",
+  "exfa": "دور میز چهارده صندلی وجود دارد."
+ },
+ {
+  "i": 10588,
+  "en": "go",
+  "fa": "رفتن",
+  "cat": "verb",
+  "ex": "We go to school every morning by bus.",
+  "exfa": "ما هر روز صبح با اتوبوس به مدرسه می‌رویم."
+ },
+ {
+  "i": 10589,
+  "en": "grandma",
+  "fa": "مادربزرگ",
+  "cat": "people",
+  "ex": "My grandma bakes cookies every Sunday.",
+  "exfa": "مادربزرگم هر یکشنبه کلوچه می‌پزد."
+ },
+ {
+  "i": 10590,
+  "en": "grandpa",
+  "fa": "پدربزرگ",
+  "cat": "people",
+  "ex": "Grandpa told us a funny story about his childhood.",
+  "exfa": "پدربزرگ داستان خنده‌داری از دوران کودکی‌اش برایمان تعریف کرد."
+ },
+ {
+  "i": 10591,
+  "en": "grandparent",
+  "fa": "پدربزرگ یا مادربزرگ",
+  "cat": "people",
+  "ex": "Each grandparent gave the child a small gift.",
+  "exfa": "هر پدربزرگ یا مادربزرگ هدیه‌ی کوچکی به کودک داد."
+ },
+ {
+  "i": 10592,
+  "en": "grape",
+  "fa": "انگور",
+  "cat": "food",
+  "ex": "He ate a purple grape from the bowl.",
+  "exfa": "او یک دانه انگور بنفش از کاسه خورد.",
+  "ipa": "/ɡreɪp/"
+ },
+ {
+  "i": 10593,
+  "en": "greet",
+  "fa": "سلام کردن / خوش‌آمد گفتن",
+  "cat": "talk",
+  "ex": "Please greet our guests warmly when they arrive.",
+  "exfa": "لطفاً وقتی مهمانانمان می‌رسند با گرمی به آن‌ها خوش‌آمد بگویید."
+ },
+ {
+  "i": 10594,
+  "en": "habit",
+  "fa": "عادت",
+  "cat": "general",
+  "ex": "Reading before bed is a good habit.",
+  "exfa": "خواندن کتاب قبل از خواب عادت خوبی است."
+ },
+ {
+  "i": 10595,
+  "en": "haircut",
+  "fa": "اصلاح مو",
+  "cat": "general",
+  "ex": "He got a haircut before his job interview.",
+  "exfa": "او قبل از مصاحبه‌ی شغلی‌اش موهایش را کوتاه کرد."
+ },
+ {
+  "i": 10596,
+  "en": "hamburger",
+  "fa": "همبرگر",
+  "cat": "food",
+  "ex": "The children shared a hamburger and a salad.",
+  "exfa": "بچه‌ها یک همبرگر و یک سالاد را با هم خوردند."
+ },
+ {
+  "i": 10597,
+  "en": "handsome",
+  "fa": "خوش‌تیپ / جذاب",
+  "cat": "adj",
+  "ex": "The handsome man smiled at everyone.",
+  "exfa": "آن مرد خوش‌تیپ به همه لبخند زد.",
+  "ipa": "/ˈhænsəm/"
+ },
+ {
+  "i": 10598,
+  "en": "headache",
+  "fa": "سردرد",
+  "cat": "health",
+  "ex": "I have a headache, so I need to rest.",
+  "exfa": "سردرد دارم، پس باید استراحت کنم.",
+  "ipa": "/ˈhedeɪk/"
+ },
+ {
+  "i": 10599,
+  "en": "hurry",
+  "fa": "عجله کردن",
+  "cat": "verb",
+  "ex": "Please hurry, the train leaves in two minutes!",
+  "exfa": "لطفاً عجله کن، قطار تا دو دقیقه‌ی دیگر حرکت می‌کند!"
+ },
+ {
+  "i": 10600,
+  "en": "ice cream",
+  "fa": "بستنی",
+  "cat": "food",
+  "ex": "The kids asked for ice cream after dinner.",
+  "exfa": "بچه‌ها بعد از شام بستنی خواستند."
+ },
+ {
+  "i": 10601,
+  "en": "interviewer",
+  "fa": "مصاحبه‌کننده",
+  "cat": "work",
+  "ex": "The interviewer asked me about my last job.",
+  "exfa": "مصاحبه‌کننده درباره‌ی شغل قبلی‌ام از من پرسید."
+ },
+ {
+  "i": 10602,
+  "en": "kite",
+  "fa": "بادبادک",
+  "cat": "general",
+  "ex": "The boys flew a kite on a windy hill.",
+  "exfa": "پسرها روی تپه‌ای بادی یک بادبادک هوا کردند.",
+  "ipa": "/kaɪt/"
+ },
+ {
+  "i": 10603,
+  "en": "last name",
+  "fa": "نام خانوادگی",
+  "cat": "people",
+  "ex": "Please write your first name and last name here.",
+  "exfa": "لطفاً نام کوچک و نام خانوادگی‌تان را اینجا بنویسید."
+ },
+ {
+  "i": 10604,
+  "en": "lily",
+  "fa": "سوسن",
+  "cat": "nature",
+  "ex": "A white lily was growing next to the fence.",
+  "exfa": "یک گل سوسن سفید کنار حصار روییده بود."
+ },
+ {
+  "i": 10605,
+  "en": "living room",
+  "fa": "اتاق نشیمن",
+  "cat": "house",
+  "ex": "We watched the news together in the living room.",
+  "exfa": "ما با هم در اتاق نشیمن اخبار را تماشا کردیم."
+ },
+ {
+  "i": 10606,
+  "en": "maths",
+  "fa": "ریاضی",
+  "cat": "school",
+  "ex": "She is really good at maths this year.",
+  "exfa": "او امسال واقعاً در ریاضی خوب است."
+ },
+ {
+  "i": 10607,
+  "en": "mobile phone",
+  "fa": "تلفن همراه",
+  "cat": "tech",
+  "ex": "He left his mobile phone at home this morning.",
+  "exfa": "او امروز صبح تلفن همراهش را در خانه جا گذاشت."
+ },
+ {
+  "i": 10608,
+  "en": "mommie",
+  "fa": "مامان",
+  "cat": "people",
+  "ex": "The little girl held her mommie's hand tightly.",
+  "exfa": "دختر کوچک دست مامانش را محکم گرفت."
+ },
+ {
+  "i": 10609,
+  "en": "mommy",
+  "fa": "مامان",
+  "cat": "people",
+  "ex": "Can mommy read me a story tonight?",
+  "exfa": "آیا مامان می‌تواند امشب برایم یک داستان بخواند؟"
+ },
+ {
+  "i": 10610,
+  "en": "Mr",
+  "fa": "آقای (عنوان پیش از نام)",
+  "cat": "people",
+  "ex": "Mr Johnson is our new neighbour.",
+  "exfa": "آقای جانسون همسایه‌ی جدید ماست."
+ },
+ {
+  "i": 10611,
+  "en": "Mr.",
+  "fa": "آقای (عنوان پیش از نام)",
+  "cat": "people",
+  "ex": "Mr. Johnson teaches history at our school.",
+  "exfa": "آقای جانسون در مدرسه‌ی ما تاریخ درس می‌دهد."
+ },
+ {
+  "i": 10612,
+  "en": "Mrs.",
+  "fa": "خانم (عنوان پیش از نام زن متأهل)",
+  "cat": "people",
+  "ex": "Mrs. Parker invited us for tea.",
+  "exfa": "خانم پارکر ما را برای صرف چای دعوت کرد."
+ },
+ {
+  "i": 10613,
+  "en": "mum",
+  "fa": "مامان",
+  "cat": "people",
+  "ex": "My mum drives me to school every day.",
+  "exfa": "مامانم هر روز مرا با ماشین به مدرسه می‌برد."
+ },
+ {
+  "i": 10614,
+  "en": "nineteen",
+  "fa": "نوزده",
+  "cat": "noun",
+  "ex": "Nineteen people came to the birthday party.",
+  "exfa": "نوزده نفر به جشن تولد آمدند."
+ },
+ {
+  "i": 10615,
+  "en": "ninety",
+  "fa": "نود",
+  "cat": "noun",
+  "ex": "The car went ninety kilometres an hour.",
+  "exfa": "ماشین با سرعت نود کیلومتر در ساعت رفت."
+ },
+ {
+  "i": 10616,
+  "en": "pop",
+  "fa": "ترکیدن (با صدای بلند)",
+  "cat": "verb",
+  "ex": "Be careful, that balloon might pop!",
+  "exfa": "مراقب باش، ممکن است آن بادکنک بترکد!"
+ },
+ {
+  "i": 10617,
+  "en": "practise",
+  "fa": "تمرین کردن",
+  "cat": "verb",
+  "ex": "You need to practise the piano every day.",
+  "exfa": "باید هر روز پیانو تمرین کنی."
+ },
+ {
+  "i": 10618,
+  "en": "sailor",
+  "fa": "ملوان",
+  "cat": "work",
+  "ex": "The old sailor told stories about the sea.",
+  "exfa": "ملوان پیر درباره‌ی دریا داستان‌هایی تعریف می‌کرد."
+ },
+ {
+  "i": 10619,
+  "en": "seventeen",
+  "fa": "هفده",
+  "cat": "noun",
+  "ex": "She bought seventeen apples at the market.",
+  "exfa": "او هفده سیب از بازار خرید."
+ },
+ {
+  "i": 10620,
+  "en": "seventy",
+  "fa": "هفتاد",
+  "cat": "noun",
+  "ex": "My grandfather is seventy years old.",
+  "exfa": "پدربزرگم هفتاد ساله است."
+ },
+ {
+  "i": 10621,
+  "en": "shy",
+  "fa": "خجالتی",
+  "cat": "feeling",
+  "ex": "The new student was too shy to speak in class.",
+  "exfa": "دانش‌آموز جدید آنقدر خجالتی بود که در کلاس صحبت نمی‌کرد.",
+  "ipa": "/ʃaɪ/",
+  "syn": [
+   "timid",
+   "bashful"
+  ]
+ },
+ {
+  "i": 10622,
+  "en": "sixteen",
+  "fa": "شانزده",
+  "cat": "noun",
+  "ex": "The team scored sixteen points in the game.",
+  "exfa": "تیم در بازی شانزده امتیاز کسب کرد."
+ },
+ {
+  "i": 10623,
+  "en": "sixty",
+  "fa": "شصت",
+  "cat": "noun",
+  "ex": "This jacket costs sixty dollars.",
+  "exfa": "قیمت این ژاکت شصت دلار است."
+ },
+ {
+  "i": 10624,
+  "en": "snowy",
+  "fa": "برفی",
+  "cat": "weather",
+  "ex": "The children played outside on a snowy afternoon.",
+  "exfa": "بچه‌ها در یک بعدازظهر برفی بیرون بازی کردند."
+ },
+ {
+  "i": 10625,
+  "en": "supermarket",
+  "fa": "سوپرمارکت",
+  "cat": "place",
+  "ex": "We buy our vegetables at the local supermarket.",
+  "exfa": "ما سبزیجاتمان را از سوپرمارکت محلی می‌خریم."
+ },
+ {
+  "i": 10626,
+  "en": "swimming pool",
+  "fa": "استخر شنا",
+  "cat": "place",
+  "ex": "The hotel has a large swimming pool on the roof.",
+  "exfa": "هتل یک استخر شنای بزرگ روی پشت‌بام دارد."
+ },
+ {
+  "i": 10627,
+  "en": "tee-shirt",
+  "fa": "تی‌شرت",
+  "cat": "clothes",
+  "ex": "He wore a blue tee-shirt and jeans to the picnic.",
+  "exfa": "او یک تی‌شرت آبی و شلوار جین به پیک‌نیک پوشید."
+ },
+ {
+  "i": 10628,
+  "en": "thirteen",
+  "fa": "سیزده",
+  "cat": "noun",
+  "ex": "My cousin turned thirteen last week.",
+  "exfa": "پسرعمویم هفته‌ی پیش سیزده ساله شد."
+ },
+ {
+  "i": 10629,
+  "en": "TV",
+  "fa": "تلویزیون",
+  "cat": "tech",
+  "ex": "The family gathered to watch TV after dinner.",
+  "exfa": "خانواده بعد از شام دور هم جمع شدند تا تلویزیون تماشا کنند."
+ },
+ {
+  "i": 10630,
+  "en": "umbrella",
+  "fa": "چتر",
+  "cat": "general",
+  "ex": "Take an umbrella with you; it might rain later.",
+  "exfa": "یک چتر با خودت ببر؛ ممکن است بعداً باران بیاید.",
+  "ipa": "/ʌmˈbrelə/"
+ },
+ {
+  "i": 10631,
+  "en": "underline",
+  "fa": "زیر خط کشیدن",
+  "cat": "verb",
+  "ex": "Underline the new words in your notebook.",
+  "exfa": "زیر کلمات جدید در دفترتان خط بکشید."
+ },
+ {
+  "i": 10632,
+  "en": "vase",
+  "fa": "گلدان",
+  "cat": "house",
+  "ex": "She put fresh flowers in the vase on the table.",
+  "exfa": "او گل‌های تازه را در گلدان روی میز گذاشت."
+ },
+ {
+  "i": 10633,
+  "en": "waitress",
+  "fa": "پیشخدمت (زن)",
+  "cat": "work",
+  "ex": "The waitress brought our coffee with a smile.",
+  "exfa": "پیشخدمت با لبخند قهوه‌مان را آورد."
+ },
+ {
+  "i": 10634,
+  "en": "yoghurt",
+  "fa": "ماست",
+  "cat": "food",
+  "ex": "She had yoghurt and fruit for breakfast.",
+  "exfa": "او برای صبحانه ماست و میوه خورد."
+ },
+ {
+  "i": 10635,
+  "en": "yogurt",
+  "fa": "ماست",
+  "cat": "food",
+  "ex": "He mixed honey into his yogurt.",
+  "exfa": "او عسل را با ماستش مخلوط کرد."
+ },
+ {
+  "i": 10636,
+  "en": "adjective",
+  "fa": "صفت",
+  "cat": "school",
+  "ex": "The word \"beautiful\" is an adjective.",
+  "exfa": "کلمه‌ی «beautiful» یک صفت است."
+ },
+ {
+  "i": 10637,
+  "en": "aisle",
+  "fa": "راهرو",
+  "cat": "place",
+  "ex": "She walked down the supermarket aisle looking for rice.",
+  "exfa": "او در راهروی سوپرمارکت به دنبال برنج قدم می‌زد."
+ },
+ {
+  "i": 10638,
+  "en": "alarm clock",
+  "fa": "ساعت زنگ‌دار",
+  "cat": "house",
+  "ex": "His alarm clock rings at six every morning.",
+  "exfa": "ساعت زنگ‌دارش هر روز صبح ساعت شش زنگ می‌زند."
+ },
+ {
+  "i": 10639,
+  "en": "ambition",
+  "fa": "جاه‌طلبی (آرزوی بزرگ)",
+  "cat": "general",
+  "ex": "Her ambition is to become a famous doctor.",
+  "exfa": "آرزوی بزرگ او این است که پزشکی مشهور شود."
+ },
+ {
+  "i": 10640,
+  "en": "amused",
+  "fa": "سرگرم و خندان",
+  "cat": "feeling",
+  "ex": "The audience looked amused during the comedy show.",
+  "exfa": "تماشاگران در طول برنامه‌ی کمدی سرگرم و خندان به نظر می‌رسیدند."
+ },
+ {
+  "i": 10641,
+  "en": "amusement",
+  "fa": "سرگرمی / تفریح",
+  "cat": "feeling",
+  "ex": "The clown's tricks were a great amusement for the children.",
+  "exfa": "شعبده‌بازی‌های دلقک سرگرمی بزرگی برای بچه‌ها بود."
+ },
+ {
+  "i": 10642,
+  "en": "ancestor",
+  "fa": "جد / نیا",
+  "cat": "people",
+  "ex": "Their ancestor built this old house.",
+  "exfa": "نیای آن‌ها این خانه‌ی قدیمی را ساخت."
+ },
+ {
+  "i": 10643,
+  "en": "angrily",
+  "fa": "با عصبانیت",
+  "cat": "adv",
+  "ex": "He slammed the door angrily and walked away.",
+  "exfa": "او با عصبانیت در را کوبید و رفت."
+ },
+ {
+  "i": 10644,
+  "en": "ankle",
+  "fa": "مچ پا",
+  "cat": "body",
+  "ex": "She hurt her ankle while running in the park.",
+  "exfa": "او هنگام دویدن در پارک مچ پایش را صدمه زد.",
+  "ipa": "/ˈæŋkəl/"
+ },
+ {
+  "i": 10645,
+  "en": "annoy",
+  "fa": "کلافه کردن / آزار دادن",
+  "cat": "verb",
+  "ex": "Loud music can annoy the neighbours at night.",
+  "exfa": "موسیقی بلند می‌تواند شب‌ها همسایه‌ها را کلافه کند."
+ },
+ {
+  "i": 10646,
+  "en": "anxious",
+  "fa": "نگران / مضطرب",
+  "cat": "feeling",
+  "ex": "She felt anxious before her driving test.",
+  "exfa": "او قبل از آزمون رانندگی‌اش احساس نگرانی می‌کرد.",
+  "syn": [
+   "worried",
+   "nervous"
+  ]
+ },
+ {
+  "i": 10647,
+  "en": "apologize",
+  "fa": "عذرخواهی کردن",
+  "cat": "talk",
+  "ex": "He called to apologize for being late.",
+  "exfa": "او تماس گرفت تا برای دیر آمدنش عذرخواهی کند."
+ },
+ {
+  "i": 10648,
+  "en": "armchair",
+  "fa": "صندلی راحتی",
+  "cat": "house",
+  "ex": "Grandpa always sits in his favorite armchair.",
+  "exfa": "پدربزرگ همیشه روی صندلی راحتی مورد علاقه‌اش می‌نشیند."
+ },
+ {
+  "i": 10649,
+  "en": "asleep",
+  "fa": "خواب (در حال خواب)",
+  "cat": "adj",
+  "ex": "The baby fell asleep during the car ride.",
+  "exfa": "نوزاد در طول مسیر ماشین به خواب رفت."
+ },
+ {
+  "i": 10650,
+  "en": "astronaut",
+  "fa": "فضانورد",
+  "cat": "work",
+  "ex": "The astronaut spent six months on the space station.",
+  "exfa": "فضانورد شش ماه را در ایستگاه فضایی گذراند."
+ },
+ {
+  "i": 10651,
+  "en": "badminton",
+  "fa": "بدمینتون",
+  "cat": "sport",
+  "ex": "We play badminton in the park every weekend.",
+  "exfa": "ما هر آخر هفته در پارک بدمینتون بازی می‌کنیم."
+ },
+ {
+  "i": 10652,
+  "en": "bake",
+  "fa": "پختن (در فر)",
+  "cat": "food",
+  "ex": "My mother likes to bake bread on Sundays.",
+  "exfa": "مادرم دوست دارد یکشنبه‌ها نان بپزد.",
+  "ipa": "/beɪk/"
+ },
+ {
+  "i": 10653,
+  "en": "balcony",
+  "fa": "بالکن / ایوان",
+  "cat": "house",
+  "ex": "We had breakfast on the balcony this morning.",
+  "exfa": "امروز صبح روی بالکن صبحانه خوردیم.",
+  "ipa": "/ˈbæl.kə.ni/"
+ },
+ {
+  "i": 10654,
+  "en": "beg",
+  "fa": "التماس کردن",
+  "cat": "verb",
+  "ex": "The dog began to beg for food under the table.",
+  "exfa": "سگ زیر میز شروع به التماس برای غذا کرد.",
+  "ipa": "/beɡ/",
+  "syn": [
+   "plead",
+   "implore"
+  ]
+ },
+ {
+  "i": 10655,
+  "en": "blackboard",
+  "fa": "تخته سیاه",
+  "cat": "school",
+  "ex": "The teacher wrote the new words on the blackboard.",
+  "exfa": "معلم کلمات جدید را روی تخته سیاه نوشت."
+ },
+ {
+  "i": 10656,
+  "en": "board game",
+  "fa": "بازی رومیزی",
+  "cat": "phrase",
+  "ex": "My family plays a board game every Friday night.",
+  "exfa": "خانواده‌ام هر جمعه شب یک بازی رومیزی انجام می‌دهند."
+ },
+ {
+  "i": 10657,
+  "en": "boil",
+  "fa": "جوشاندن / جوشیدن",
+  "cat": "verb",
+  "ex": "Boil the water before you make the tea.",
+  "exfa": "قبل از درست کردن چای، آب را بجوشان.",
+  "ipa": "/bɔɪl/"
+ },
+ {
+  "i": 10658,
+  "en": "boiled",
+  "fa": "آب‌پز",
+  "cat": "food",
+  "ex": "I usually eat a boiled egg for breakfast.",
+  "exfa": "من معمولاً برای صبحانه یک تخم‌مرغ آب‌پز می‌خورم."
+ },
+ {
+  "i": 10659,
+  "en": "bookshelf",
+  "fa": "قفسه کتاب",
+  "cat": "house",
+  "ex": "He put all his novels on the bookshelf.",
+  "exfa": "او همه رمان‌هایش را روی قفسه کتاب گذاشت."
+ },
+ {
+  "i": 10660,
+  "en": "bookshop",
+  "fa": "کتاب‌فروشی",
+  "cat": "place",
+  "ex": "There is a small bookshop next to the café.",
+  "exfa": "یک کتاب‌فروشی کوچک کنار کافه هست."
+ },
+ {
+  "i": 10661,
+  "en": "brainstorm",
+  "fa": "طوفان فکری / ایده‌پردازی",
+  "cat": "work",
+  "ex": "We had a quick brainstorm before writing the report.",
+  "exfa": "قبل از نوشتن گزارش، یک طوفان فکری سریع داشتیم."
+ },
+ {
+  "i": 10662,
+  "en": "breeze",
+  "fa": "نسیم",
+  "cat": "weather",
+  "ex": "A cool breeze came through the open window.",
+  "exfa": "یک نسیم خنک از پنجره باز وارد شد."
+ },
+ {
+  "i": 10663,
+  "en": "bulb",
+  "fa": "لامپ",
+  "cat": "house",
+  "ex": "This bulb is too weak for the kitchen.",
+  "exfa": "این لامپ برای آشپزخانه خیلی ضعیف است."
+ },
+ {
+  "i": 10664,
+  "en": "bury",
+  "fa": "دفن کردن",
+  "cat": "verb",
+  "ex": "The dog tried to bury its bone in the garden.",
+  "exfa": "سگ سعی کرد استخوانش را در باغ دفن کند.",
+  "ipa": "/ˈber.i/"
+ },
+ {
+  "i": 10665,
+  "en": "bus station",
+  "fa": "ترمینال اتوبوس",
+  "cat": "travel",
+  "ex": "We waited two hours at the bus station.",
+  "exfa": "دو ساعت در ترمینال اتوبوس منتظر ماندیم."
+ },
+ {
+  "i": 10666,
+  "en": "bus stop",
+  "fa": "ایستگاه اتوبوس",
+  "cat": "travel",
+  "ex": "She is standing at the bus stop with her umbrella.",
+  "exfa": "او با چترش کنار ایستگاه اتوبوس ایستاده است."
+ },
+ {
+  "i": 10667,
+  "en": "businessman",
+  "fa": "تاجر / کارآفرین مرد",
+  "cat": "work",
+  "ex": "The businessman flew to Tokyo for a meeting.",
+  "exfa": "آن تاجر برای یک جلسه به توکیو پرواز کرد."
+ },
+ {
+  "i": 10668,
+  "en": "businesswoman",
+  "fa": "تاجر / کارآفرین زن",
+  "cat": "work",
+  "ex": "The businesswoman started her own company last year.",
+  "exfa": "آن تاجر زن سال گذشته شرکت خودش را راه‌اندازی کرد."
+ },
+ {
+  "i": 10669,
+  "en": "cafeteria",
+  "fa": "سلف‌سرویس",
+  "cat": "place",
+  "ex": "We usually eat lunch in the school cafeteria.",
+  "exfa": "ما معمولاً ناهار را در سلف‌سرویس مدرسه می‌خوریم."
+ },
+ {
+  "i": 10670,
+  "en": "capital letter",
+  "fa": "حرف بزرگ",
+  "cat": "school",
+  "ex": "Remember to start each sentence with a capital letter.",
+  "exfa": "یادت باشد هر جمله را با حرف بزرگ شروع کنی."
+ },
+ {
+  "i": 10671,
+  "en": "car park",
+  "fa": "پارکینگ",
+  "cat": "car",
+  "ex": "The car park behind the mall was completely full.",
+  "exfa": "پارکینگ پشت مرکز خرید کاملاً پر بود."
+ },
+ {
+  "i": 10672,
+  "en": "carrot",
+  "fa": "هویج",
+  "cat": "food",
+  "ex": "She cut a carrot into small pieces for the soup.",
+  "exfa": "او یک هویج را برای سوپ به تکه‌های کوچک برید.",
+  "ipa": "/ˈkær.ət/"
+ },
+ {
+  "i": 10673,
+  "en": "centimeter",
+  "fa": "سانتی‌متر",
+  "cat": "noun",
+  "ex": "This pencil is one centimeter shorter than that one.",
+  "exfa": "این مداد یک سانتی‌متر از آن یکی کوتاه‌تر است."
+ },
+ {
+  "i": 10674,
+  "en": "centimetre",
+  "fa": "سانتی‌متر",
+  "cat": "noun",
+  "ex": "The insect was only one centimetre long.",
+  "exfa": "آن حشره فقط یک سانتی‌متر طول داشت."
+ },
+ {
+  "i": 10675,
+  "en": "cereal",
+  "fa": "غلات صبحانه",
+  "cat": "food",
+  "ex": "He poured milk over his cereal.",
+  "exfa": "او روی غلات صبحانه‌اش شیر ریخت."
+ },
+ {
+  "i": 10676,
+  "en": "cheek",
+  "fa": "گونه",
+  "cat": "body",
+  "ex": "She kissed her grandmother on the cheek.",
+  "exfa": "او گونه مادربزرگش را بوسید.",
+  "ipa": "/tʃiːk/"
+ },
+ {
+  "i": 10677,
+  "en": "cheer",
+  "fa": "تشویق کردن",
+  "cat": "feeling",
+  "ex": "The fans began to cheer when their team scored.",
+  "exfa": "وقتی تیمشان گل زد، هواداران شروع به تشویق کردن کردند."
+ },
+ {
+  "i": 10678,
+  "en": "chili",
+  "fa": "فلفل تند",
+  "cat": "food",
+  "ex": "This soup has too much chili in it.",
+  "exfa": "این سوپ فلفل تند زیادی دارد."
+ },
+ {
+  "i": 10679,
+  "en": "chilli",
+  "fa": "فلفل تند",
+  "cat": "food",
+  "ex": "He grows red chilli plants in his garden.",
+  "exfa": "او گیاهان فلفل تند قرمز را در باغش پرورش می‌دهد."
+ },
+ {
+  "i": 10680,
+  "en": "chimpanzee",
+  "fa": "شامپانزه",
+  "cat": "animal",
+  "ex": "The chimpanzee used a stick to get the ants.",
+  "exfa": "شامپانزه از یک چوب برای گرفتن مورچه‌ها استفاده کرد.",
+  "ipa": "/ˌtʃɪm.pænˈziː/"
+ },
+ {
+  "i": 10681,
+  "en": "chin",
+  "fa": "چانه",
+  "cat": "body",
+  "ex": "He rested his chin on his hand while thinking.",
+  "exfa": "او در حال فکر کردن، چانه‌اش را روی دستش گذاشت.",
+  "ipa": "/tʃɪn/"
+ },
+ {
+  "i": 10682,
+  "en": "chirp",
+  "fa": "جیک‌جیک (صدای پرنده)",
+  "cat": "animal",
+  "ex": "We heard the chirp of a small bird outside the window.",
+  "exfa": "صدای جیک‌جیک یک پرنده کوچک را بیرون پنجره شنیدیم."
+ },
+ {
+  "i": 10683,
+  "en": "classical music",
+  "fa": "موسیقی کلاسیک",
+  "cat": "music",
+  "ex": "My grandfather listens to classical music every evening.",
+  "exfa": "پدربزرگم هر عصر به موسیقی کلاسیک گوش می‌دهد."
+ },
+ {
+  "i": 10684,
+  "en": "clown",
+  "fa": "دلقک",
+  "cat": "people",
+  "ex": "A clown made funny faces for the children at the party.",
+  "exfa": "یک دلقک برای بچه‌ها در مهمانی چهره‌های خنده‌دار درآورد.",
+  "ipa": "/klaʊn/"
+ },
+ {
+  "i": 10685,
+  "en": "clue",
+  "fa": "سرنخ",
+  "cat": "crime",
+  "ex": "The detective found an important clue near the window.",
+  "exfa": "کارآگاه یک سرنخ مهم نزدیک پنجره پیدا کرد.",
+  "ipa": "/kluː/",
+  "syn": [
+   "hint"
+  ]
+ },
+ {
+  "i": 10686,
+  "en": "cola",
+  "fa": "نوشابه کولا",
+  "cat": "food",
+  "ex": "Can I have a glass of cola with ice, please?",
+  "exfa": "می‌شود لطفاً یک لیوان نوشابه کولا با یخ به من بدهید؟"
+ },
+ {
+  "i": 10687,
+  "en": "colorful",
+  "fa": "رنگارنگ",
+  "cat": "adj",
+  "ex": "The garden was full of colorful flowers.",
+  "exfa": "باغ پر از گل‌های رنگارنگ بود."
+ },
+ {
+  "i": 10688,
+  "en": "colourful",
+  "fa": "رنگارنگ",
+  "cat": "adj",
+  "ex": "She wore a colourful dress to the festival.",
+  "exfa": "او یک لباس رنگارنگ به جشنواره پوشید."
+ },
+ {
+  "i": 10689,
+  "en": "comb",
+  "fa": "شانه",
+  "cat": "general",
+  "ex": "He keeps a small comb in his bag.",
+  "exfa": "او یک شانه کوچک در کیفش نگه می‌دارد."
+ },
+ {
+  "i": 10690,
+  "en": "crisp",
+  "fa": "چیپس سیب‌زمینی",
+  "cat": "food",
+  "ex": "He ate the last crisp from the bag.",
+  "exfa": "او آخرین چیپس را از داخل پاکت خورد."
+ },
+ {
+  "i": 10691,
+  "en": "criticise",
+  "fa": "انتقاد کردن",
+  "cat": "talk",
+  "ex": "Please don't criticise him in front of everyone.",
+  "exfa": "لطفاً جلوی همه او را مورد انتقاد قرار نده.",
+  "syn": [
+   "condemn",
+   "disapprove of"
+  ]
+ },
+ {
+  "i": 10692,
+  "en": "criticize",
+  "fa": "انتقاد کردن",
+  "cat": "talk",
+  "ex": "The manager began to criticize the new plan.",
+  "exfa": "مدیر شروع به انتقاد از طرح جدید کرد.",
+  "syn": [
+   "condemn",
+   "disapprove of"
+  ]
+ },
+ {
+  "i": 10693,
+  "en": "crowded",
+  "fa": "شلوغ",
+  "cat": "place",
+  "ex": "The train was so crowded that we had to stand.",
+  "exfa": "قطار آنقدر شلوغ بود که مجبور شدیم بایستیم.",
+  "ipa": "/ˈkraʊ.dɪd/",
+  "syn": [
+   "packed",
+   "full"
+  ]
+ },
+ {
+  "i": 10694,
+  "en": "curry",
+  "fa": "خورشت کاری",
+  "cat": "food",
+  "ex": "We ordered chicken curry at the Indian restaurant.",
+  "exfa": "در رستوران هندی خورشت کاری مرغ سفارش دادیم."
+ },
+ {
+  "i": 10695,
+  "en": "curse",
+  "fa": "نفرین",
+  "cat": "noun",
+  "ex": "The old story tells of a curse on the castle.",
+  "exfa": "داستان قدیمی درباره نفرینی بر آن قلعه است."
+ },
+ {
+  "i": 10696,
+  "en": "dancer",
+  "fa": "رقصنده",
+  "cat": "work",
+  "ex": "The young dancer practiced for six hours every day.",
+  "exfa": "آن رقصنده جوان هر روز شش ساعت تمرین می‌کرد."
+ },
+ {
+  "i": 10697,
+  "en": "daylight",
+  "fa": "نور روز",
+  "cat": "nature",
+  "ex": "We started the trip before daylight.",
+  "exfa": "ما سفر را قبل از نور روز شروع کردیم.",
+  "ipa": "/ˈdeɪ.laɪt/"
+ },
+ {
+  "i": 10698,
+  "en": "department store",
+  "fa": "فروشگاه بزرگ",
+  "cat": "place",
+  "ex": "She bought a new coat at the department store.",
+  "exfa": "او یک پالتوی جدید از فروشگاه بزرگ خرید."
+ },
+ {
+  "i": 10699,
+  "en": "digital camera",
+  "fa": "دوربین دیجیتال",
+  "cat": "tech",
+  "ex": "He took hundreds of photos with his digital camera.",
+  "exfa": "او با دوربین دیجیتالش صدها عکس گرفت."
+ },
+ {
+  "i": 10700,
+  "en": "dinosaur",
+  "fa": "دایناسور",
+  "cat": "animal",
+  "ex": "The museum has a huge dinosaur skeleton.",
+  "exfa": "موزه یک اسکلت دایناسور بزرگ دارد.",
+  "ipa": "/ˈdaɪ.nə.sɔːr/"
+ },
+ {
+  "i": 10701,
+  "en": "disadvantage",
+  "fa": "نقطه ضعف / عیب",
+  "cat": "general",
+  "ex": "One disadvantage of the plan is its high cost.",
+  "exfa": "یکی از نقاط ضعف این طرح هزینه بالای آن است.",
+  "syn": [
+   "drawback"
+  ]
+ },
+ {
+  "i": 10702,
+  "en": "disappointing",
+  "fa": "ناامیدکننده",
+  "cat": "feeling",
+  "ex": "The film's ending was quite disappointing.",
+  "exfa": "پایان فیلم نسبتاً ناامیدکننده بود.",
+  "syn": [
+   "unsatisfying"
+  ]
+ },
+ {
+  "i": 10703,
+  "en": "dishonest",
+  "fa": "نادرست / بی‌صداقت",
+  "cat": "adj",
+  "ex": "He was dishonest when he hid the truth.",
+  "exfa": "او وقتی حقیقت را پنهان کرد، نادرست رفتار کرد.",
+  "syn": [
+   "deceitful",
+   "untruthful"
+  ]
+ },
+ {
+  "i": 10704,
+  "en": "dislike",
+  "fa": "دوست نداشتن / بیزار بودن",
+  "cat": "feeling",
+  "ex": "I dislike waiting in long lines.",
+  "exfa": "من از منتظر ماندن در صف‌های طولانی بیزارم.",
+  "syn": [
+   "disapprove of"
+  ]
+ },
+ {
+  "i": 10705,
+  "en": "dizzy",
+  "fa": "گیج (سرگیجه‌دار)",
+  "cat": "health",
+  "ex": "I felt dizzy after standing up too fast.",
+  "exfa": "بعد از اینکه خیلی سریع بلند شدم، احساس گیجی کردم.",
+  "ipa": "/ˈdɪz.i/",
+  "syn": [
+   "light-headed"
+  ]
+ },
+ {
+  "i": 10706,
+  "en": "downstairs",
+  "fa": "طبقه پایین",
+  "cat": "house",
+  "ex": "The kitchen is downstairs, next to the living room.",
+  "exfa": "آشپزخانه طبقه پایین، کنار اتاق نشیمن است."
+ },
+ {
+  "i": 10707,
+  "en": "driving licence",
+  "fa": "گواهینامه رانندگی",
+  "cat": "car",
+  "ex": "You need a driving licence to rent this car.",
+  "exfa": "برای اجاره این ماشین به گواهینامه رانندگی نیاز داری."
+ },
+ {
+  "i": 10708,
+  "en": "drugstore",
+  "fa": "داروخانه",
+  "cat": "place",
+  "ex": "I bought some shampoo at the drugstore.",
+  "exfa": "من از داروخانه کمی شامپو خریدم."
+ },
+ {
+  "i": 10709,
+  "en": "earring",
+  "fa": "گوشواره",
+  "cat": "clothes",
+  "ex": "She lost one earring at the party last night.",
+  "exfa": "او دیشب در مهمانی یک گوشواره‌اش را گم کرد.",
+  "ipa": "/ˈɪr.ɪŋ/"
+ },
+ {
+  "i": 10710,
+  "en": "elevator",
+  "fa": "آسانسور",
+  "cat": "house",
+  "ex": "We took the elevator to the tenth floor.",
+  "exfa": "ما با آسانسور به طبقه دهم رفتیم.",
+  "ipa": "/ˈel.ɪ.veɪ.tər/"
+ },
+ {
+  "i": 10711,
+  "en": "embarrassing",
+  "fa": "خجالت‌آور",
+  "cat": "feeling",
+  "ex": "Forgetting his name was really embarrassing.",
+  "exfa": "فراموش کردن اسمش واقعاً خجالت‌آور بود.",
+  "syn": [
+   "awkward"
+  ]
+ },
+ {
+  "i": 10712,
+  "en": "envy",
+  "fa": "حسادت / رشک",
+  "cat": "feeling",
+  "ex": "She couldn't hide her envy of her sister's new car.",
+  "exfa": "او نتوانست حسادتش به ماشین جدید خواهرش را پنهان کند.",
+  "ipa": "/ˈen.vi/",
+  "syn": [
+   "jealousy"
+  ]
+ },
+ {
+  "i": 10713,
+  "en": "escalator",
+  "fa": "پله برقی",
+  "cat": "place",
+  "ex": "Take the escalator to the second floor.",
+  "exfa": "از پله برقی به طبقه دوم برو.",
+  "ipa": "/ˈes.kə.leɪ.tər/"
+ },
+ {
+  "i": 10714,
+  "en": "feather",
+  "fa": "پر (پرنده)",
+  "cat": "animal",
+  "ex": "A soft feather fell from the bird's wing.",
+  "exfa": "یک پر نرم از بال پرنده افتاد.",
+  "ipa": "/ˈfeð.ər/"
+ },
+ {
+  "i": 10715,
+  "en": "first name",
+  "fa": "نام کوچک",
+  "cat": "people",
+  "ex": "Please write your first name and your last name.",
+  "exfa": "لطفاً نام کوچک و نام خانوادگی‌ات را بنویس."
+ },
+ {
+  "i": 10716,
+  "en": "fisherman",
+  "fa": "ماهیگیر",
+  "cat": "work",
+  "ex": "The old fisherman went out to sea before sunrise.",
+  "exfa": "ماهیگیر پیر قبل از طلوع آفتاب به دریا رفت."
+ },
+ {
+  "i": 10717,
+  "en": "flea",
+  "fa": "کک",
+  "cat": "animal",
+  "ex": "I found a flea on the cat's fur.",
+  "exfa": "من یک کک روی پشم گربه پیدا کردم.",
+  "ipa": "/fliː/"
+ },
+ {
+  "i": 10718,
+  "en": "footballer",
+  "fa": "فوتبالیست",
+  "cat": "sport",
+  "ex": "The young footballer scored two goals yesterday.",
+  "exfa": "آن فوتبالیست جوان دیروز دو گل زد."
+ },
+ {
+  "i": 10719,
+  "en": "forbid",
+  "fa": "ممنوع کردن",
+  "cat": "verb",
+  "ex": "The rules forbid smoking inside the building.",
+  "exfa": "قوانین سیگار کشیدن داخل ساختمان را ممنوع می‌کنند.",
+  "ipa": "/fərˈbɪd/",
+  "syn": [
+   "ban",
+   "prohibit"
+  ]
+ },
+ {
+  "i": 10720,
+  "en": "fortunately",
+  "fa": "خوشبختانه",
+  "cat": "adv",
+  "ex": "Fortunately, no one was hurt in the accident.",
+  "exfa": "خوشبختانه، هیچ‌کس در آن تصادف آسیب ندید.",
+  "ipa": "/ˈfɔːr.tʃə.nət.li/",
+  "syn": [
+   "luckily"
+  ]
+ },
+ {
+  "i": 10721,
+  "en": "fried",
+  "fa": "سرخ‌شده",
+  "cat": "food",
+  "ex": "We had fried fish and rice for dinner.",
+  "exfa": "برای شام ماهی سرخ‌شده و برنج خوردیم."
+ },
+ {
+  "i": 10722,
+  "en": "frighten",
+  "fa": "ترساندن",
+  "cat": "feeling",
+  "ex": "Loud thunder can frighten small children.",
+  "exfa": "رعد و برق بلند می‌تواند بچه‌های کوچک را بترساند.",
+  "ipa": "/ˈfraɪ.tən/",
+  "syn": [
+   "scare",
+   "alarm"
+  ]
+ },
+ {
+  "i": 10723,
+  "en": "frightened",
+  "fa": "ترسیده / وحشت‌زده",
+  "cat": "feeling",
+  "ex": "She was frightened by the sudden noise.",
+  "exfa": "او از صدای ناگهانی ترسیده بود.",
+  "syn": [
+   "scared",
+   "afraid"
+  ]
+ },
+ {
+  "i": 10724,
+  "en": "fry",
+  "fa": "سرخ کردن",
+  "cat": "food",
+  "ex": "My mother will fry the onions first.",
+  "exfa": "مادرم ابتدا پیازها را سرخ خواهد کرد."
+ },
+ {
+  "i": 10725,
+  "en": "glove",
+  "fa": "دستکش",
+  "cat": "clothes",
+  "ex": "He wore a thick glove to touch the hot pan.",
+  "exfa": "او یک دستکش ضخیم برای لمس کردن قابلمه داغ پوشید.",
+  "ipa": "/ɡlʌv/"
+ },
+ {
+  "i": 10726,
+  "en": "good-looking",
+  "fa": "خوش‌قیافه / خوش‌تیپ",
+  "cat": "adj",
+  "ex": "Her new boyfriend is very good-looking.",
+  "exfa": "دوست‌پسر جدید او خیلی خوش‌قیافه است.",
+  "syn": [
+   "attractive",
+   "handsome"
+  ]
+ },
+ {
+  "i": 10727,
+  "en": "gram",
+  "fa": "گرم (واحد وزن)",
+  "cat": "noun",
+  "ex": "This coin weighs about one gram.",
+  "exfa": "این سکه حدود یک گرم وزن دارد."
+ },
+ {
+  "i": 10728,
+  "en": "gramme",
+  "fa": "گرم (واحد وزن)",
+  "cat": "noun",
+  "ex": "The recipe needs only one gramme of salt.",
+  "exfa": "این دستور پخت فقط به یک گرم نمک نیاز دارد."
+ },
+ {
+  "i": 10729,
+  "en": "grandchild",
+  "fa": "نوه",
+  "cat": "people",
+  "ex": "Their first grandchild was born last week.",
+  "exfa": "اولین نوه‌شان هفته پیش به دنیا آمد."
+ },
+ {
+  "i": 10730,
+  "en": "granddad",
+  "fa": "بابابزرگ",
+  "cat": "people",
+  "ex": "My granddad tells the best stories.",
+  "exfa": "بابابزرگم بهترین داستان‌ها را تعریف می‌کند."
+ },
+ {
+  "i": 10731,
+  "en": "granddaughter",
+  "fa": "نوه دختر",
+  "cat": "people",
+  "ex": "Her granddaughter visits her every Sunday.",
+  "exfa": "نوه دخترش هر یکشنبه به او سر می‌زند."
+ },
+ {
+  "i": 10732,
+  "en": "grandson",
+  "fa": "نوه پسر",
+  "cat": "people",
+  "ex": "The old man walked to the park with his grandson.",
+  "exfa": "پیرمرد همراه نوه پسرش تا پارک پیاده رفت."
+ },
+ {
+  "i": 10733,
+  "en": "greedy",
+  "fa": "حریص / آزمند",
+  "cat": "adj",
+  "ex": "Don't be greedy and take all the cookies.",
+  "exfa": "حریص نباش و همه شیرینی‌ها را برندار.",
+  "ipa": "/ˈɡriː.di/",
+  "syn": [
+   "selfish"
+  ]
+ },
+ {
+  "i": 10734,
+  "en": "grilled",
+  "fa": "کبابی / گریل‌شده",
+  "cat": "food",
+  "ex": "We ordered grilled chicken and salad.",
+  "exfa": "ما مرغ کبابی و سالاد سفارش دادیم."
+ },
+ {
+  "i": 10735,
+  "en": "grocery store",
+  "fa": "فروشگاه مواد غذایی",
+  "cat": "place",
+  "ex": "I need to buy milk and eggs at the grocery store.",
+  "exfa": "باید شیر و تخم‌مرغ از فروشگاه مواد غذایی بخرم."
+ },
+ {
+  "i": 10736,
+  "en": "guidebook",
+  "fa": "کتاب راهنما",
+  "cat": "travel",
+  "ex": "She read the guidebook before visiting Rome.",
+  "exfa": "او قبل از سفر به رم کتاب راهنما را خواند."
+ },
+ {
+  "i": 10737,
+  "en": "half-price",
+  "fa": "نیم‌بها / نصف قیمت",
+  "cat": "money",
+  "ex": "These shoes are half-price this week.",
+  "exfa": "این کفش‌ها این هفته نیم‌بها هستند."
+ },
+ {
+  "i": 10738,
+  "en": "handbag",
+  "fa": "کیف دستی زنانه",
+  "cat": "clothes",
+  "ex": "She keeps her keys inside her handbag.",
+  "exfa": "او کلیدهایش را داخل کیف دستی‌اش نگه می‌دارد."
+ },
+ {
+  "i": 10739,
+  "en": "handicapped",
+  "fa": "معلول / دارای معلولیت",
+  "cat": "health",
+  "ex": "The building has a ramp for handicapped visitors.",
+  "exfa": "این ساختمان برای بازدیدکنندگان معلول یک رمپ دارد."
+ },
+ {
+  "i": 10740,
+  "en": "happily",
+  "fa": "با خوشحالی",
+  "cat": "feeling",
+  "ex": "The children played happily in the garden all afternoon.",
+  "exfa": "بچه‌ها تمام بعدازظهر با خوشحالی در باغ بازی کردند.",
+  "syn": [
+   "joyfully",
+   "gladly"
+  ]
+ },
+ {
+  "i": 10741,
+  "en": "headphone",
+  "fa": "هدفون",
+  "cat": "tech",
+  "ex": "I lost one headphone somewhere in the park.",
+  "exfa": "من یکی از هدفون‌هایم را جایی در پارک گم کردم.",
+  "ipa": "/ˈhedfoʊn/",
+  "syn": [
+   "earphone"
+  ]
+ },
+ {
+  "i": 10742,
+  "en": "headteacher",
+  "fa": "مدیر مدرسه",
+  "cat": "school",
+  "ex": "The headteacher spoke to all the students in the morning.",
+  "exfa": "مدیر مدرسه صبح با همه دانش‌آموزان صحبت کرد."
+ },
+ {
+  "i": 10743,
+  "en": "high school",
+  "fa": "دبیرستان",
+  "cat": "school",
+  "ex": "My sister studies at the high school near our house.",
+  "exfa": "خواهرم در دبیرستانی نزدیک خانه‌مان درس می‌خواند."
+ },
+ {
+  "i": 10744,
+  "en": "hike",
+  "fa": "پیاده‌روی طولانی",
+  "cat": "travel",
+  "ex": "We went on a long hike in the mountains last weekend.",
+  "exfa": "آخر هفته گذشته یک پیاده‌روی طولانی در کوهستان رفتیم.",
+  "syn": [
+   "trek",
+   "walk"
+  ]
+ },
+ {
+  "i": 10745,
+  "en": "hip hop",
+  "fa": "هیپ‌هاپ",
+  "cat": "music",
+  "ex": "My brother listens to hip hop every morning on his way to work.",
+  "exfa": "برادرم هر روز صبح در راه محل کارش به هیپ‌هاپ گوش می‌دهد."
+ },
+ {
+  "i": 10746,
+  "en": "hip-hop",
+  "fa": "هیپ‌هاپ",
+  "cat": "music",
+  "ex": "The dancers moved to a fast hip-hop song.",
+  "exfa": "رقصنده‌ها با یک آهنگ هیپ‌هاپ تند حرکت می‌کردند."
+ },
+ {
+  "i": 10747,
+  "en": "hiphop",
+  "fa": "هیپ‌هاپ",
+  "cat": "music",
+  "ex": "She wrote her own hiphop lyrics for the school show.",
+  "exfa": "او برای برنامه مدرسه، شعرهای هیپ‌هاپ خودش را نوشت."
+ },
+ {
+  "i": 10748,
+  "en": "honour",
+  "fa": "افتخار / احترام",
+  "cat": "general",
+  "ex": "It was a great honour to meet the famous writer.",
+  "exfa": "ملاقات با آن نویسنده معروف افتخار بزرگی بود."
+ },
+ {
+  "i": 10749,
+  "en": "ID",
+  "fa": "کارت شناسایی",
+  "cat": "general",
+  "ex": "You need to show your ID before you enter the building.",
+  "exfa": "قبل از ورود به ساختمان باید کارت شناسایی‌ات را نشان بدهی."
+ },
+ {
+  "i": 10750,
+  "en": "ID card",
+  "fa": "کارت شناسایی",
+  "cat": "general",
+  "ex": "He showed his ID card to the security guard at the airport.",
+  "exfa": "او کارت شناسایی‌اش را به نگهبان امنیتی فرودگاه نشان داد."
+ },
+ {
+  "i": 10751,
+  "en": "impress",
+  "fa": "تحت تأثیر قرار دادن",
+  "cat": "verb",
+  "ex": "She practiced for weeks to impress the judges at the competition.",
+  "exfa": "او هفته‌ها تمرین کرد تا داوران مسابقه را تحت تأثیر قرار دهد."
+ },
+ {
+  "i": 10752,
+  "en": "injure",
+  "fa": "مجروح کردن / آسیب رساندن",
+  "cat": "health",
+  "ex": "He fell off his bike and injured his knee.",
+  "exfa": "او از دوچرخه‌اش افتاد و زانویش را مجروح کرد."
+ },
+ {
+  "i": 10753,
+  "en": "insect",
+  "fa": "حشره",
+  "cat": "animal",
+  "ex": "A small insect landed on the flower.",
+  "exfa": "یک حشره کوچک روی گل نشست.",
+  "ipa": "/ˈɪnsekt/"
+ },
+ {
+  "i": 10754,
+  "en": "invade",
+  "fa": "حمله کردن (به یک کشور)",
+  "cat": "verb",
+  "ex": "The soldiers were ready to invade the enemy's land.",
+  "exfa": "سربازان آماده بودند تا به سرزمین دشمن حمله کنند."
+ },
+ {
+  "i": 10755,
+  "en": "jelly",
+  "fa": "ژله",
+  "cat": "food",
+  "ex": "The children ate red jelly with their ice cream.",
+  "exfa": "بچه‌ها ژله قرمز را با بستنی‌شان خوردند."
+ },
+ {
+  "i": 10756,
+  "en": "kilo",
+  "fa": "کیلو",
+  "cat": "general",
+  "ex": "Please buy a kilo of apples from the market.",
+  "exfa": "لطفاً یک کیلو سیب از بازار بخر."
+ },
+ {
+  "i": 10757,
+  "en": "kilogram",
+  "fa": "کیلوگرم",
+  "cat": "general",
+  "ex": "This bag of rice weighs one kilogram.",
+  "exfa": "این کیسه برنج یک کیلوگرم وزن دارد."
+ },
+ {
+  "i": 10758,
+  "en": "kilogramme",
+  "fa": "کیلوگرم",
+  "cat": "general",
+  "ex": "The recipe needs half a kilogramme of flour.",
+  "exfa": "این دستور پخت به نیم کیلوگرم آرد نیاز دارد."
+ },
+ {
+  "i": 10759,
+  "en": "kilometer",
+  "fa": "کیلومتر",
+  "cat": "general",
+  "ex": "The nearest town is ten kilometers from here.",
+  "exfa": "نزدیک‌ترین شهر ده کیلومتر از اینجا فاصله دارد."
+ },
+ {
+  "i": 10760,
+  "en": "kilometre",
+  "fa": "کیلومتر",
+  "cat": "general",
+  "ex": "We ran five kilometres in the park this morning.",
+  "exfa": "امروز صبح پنج کیلومتر در پارک دویدیم.",
+  "ipa": "/kɪˈlɒmɪtər/"
+ },
+ {
+  "i": 10761,
+  "en": "kindly",
+  "fa": "با مهربانی / لطفاً",
+  "cat": "adv",
+  "ex": "The old man kindly offered us a seat on the bus.",
+  "exfa": "پیرمرد با مهربانی به ما در اتوبوس جا داد."
+ },
+ {
+  "i": 10762,
+  "en": "laziness",
+  "fa": "تنبلی",
+  "cat": "feeling",
+  "ex": "His laziness was the main reason he failed the exam.",
+  "exfa": "تنبلی او دلیل اصلی رد شدنش در امتحان بود."
+ },
+ {
+  "i": 10763,
+  "en": "learner",
+  "fa": "زبان‌آموز / یادگیرنده",
+  "cat": "school",
+  "ex": "This book is written for young learners of English.",
+  "exfa": "این کتاب برای زبان‌آموزان جوان انگلیسی نوشته شده است."
+ },
+ {
+  "i": 10764,
+  "en": "left-hand",
+  "fa": "سمت چپ",
+  "cat": "adj",
+  "ex": "Turn into the left-hand door at the end of the hall.",
+  "exfa": "در انتهای راهرو به سمت در سمت چپ بپیچ."
+ },
+ {
+  "i": 10765,
+  "en": "lemonade",
+  "fa": "لیموناد",
+  "cat": "food",
+  "ex": "We drank cold lemonade under the tree.",
+  "exfa": "زیر درخت لیموناد سرد نوشیدیم."
+ },
+ {
+  "i": 10766,
+  "en": "liter",
+  "fa": "لیتر",
+  "cat": "general",
+  "ex": "The bottle holds one liter of water.",
+  "exfa": "این بطری یک لیتر آب جا می‌دهد."
+ },
+ {
+  "i": 10767,
+  "en": "litre",
+  "fa": "لیتر",
+  "cat": "general",
+  "ex": "I bought two litres of milk yesterday.",
+  "exfa": "دیروز دو لیتر شیر خریدم."
+ },
+ {
+  "i": 10768,
+  "en": "lively",
+  "fa": "پرانرژی / سرزنده",
+  "cat": "adj",
+  "ex": "The market was full of lively music and colorful stalls.",
+  "exfa": "بازار پر از موسیقی سرزنده و غرفه‌های رنگارنگ بود.",
+  "ipa": "/ˈlaɪvli/",
+  "syn": [
+   "energetic",
+   "cheerful"
+  ]
+ },
+ {
+  "i": 10769,
+  "en": "loudly",
+  "fa": "با صدای بلند",
+  "cat": "adv",
+  "ex": "Someone knocked loudly on the door at midnight.",
+  "exfa": "کسی نیمه‌شب با صدای بلند به در کوبید."
+ },
+ {
+  "i": 10770,
+  "en": "luckily",
+  "fa": "خوشبختانه",
+  "cat": "adv",
+  "ex": "Luckily, nobody was hurt in the small accident.",
+  "exfa": "خوشبختانه در آن تصادف کوچک کسی آسیب ندید."
+ },
+ {
+  "i": 10771,
+  "en": "lunchtime",
+  "fa": "زمان ناهار",
+  "cat": "time",
+  "ex": "The office is quiet during lunchtime.",
+  "exfa": "اداره در زمان ناهار ساکت است."
+ },
+ {
+  "i": 10772,
+  "en": "main course",
+  "fa": "غذای اصلی",
+  "cat": "food",
+  "ex": "For the main course, we had grilled chicken and rice.",
+  "exfa": "برای غذای اصلی، مرغ کبابی و برنج خوردیم."
+ },
+ {
+  "i": 10773,
+  "en": "make-up",
+  "fa": "آرایش",
+  "cat": "clothes",
+  "ex": "She put on light make-up before the party.",
+  "exfa": "او قبل از مهمانی آرایش ملایمی کرد."
+ },
+ {
+  "i": 10774,
+  "en": "marry",
+  "fa": "ازدواج کردن",
+  "cat": "people",
+  "ex": "They decided to marry next summer.",
+  "exfa": "آن‌ها تصمیم گرفتند تابستان آینده ازدواج کنند."
+ },
+ {
+  "i": 10775,
+  "en": "marvellous",
+  "fa": "فوق‌العاده / شگفت‌انگیز",
+  "cat": "adj",
+  "ex": "We had a marvellous time at the beach.",
+  "exfa": "در ساحل وقت فوق‌العاده‌ای داشتیم.",
+  "syn": [
+   "wonderful",
+   "amazing"
+  ]
+ },
+ {
+  "i": 10776,
+  "en": "marvelous",
+  "fa": "فوق‌العاده / شگفت‌انگیز",
+  "cat": "adj",
+  "ex": "The view from the top of the tower was marvelous.",
+  "exfa": "منظره از بالای برج فوق‌العاده بود.",
+  "syn": [
+   "wonderful",
+   "amazing"
+  ]
+ },
+ {
+  "i": 10777,
+  "en": "melon",
+  "fa": "خربزه / طالبی",
+  "cat": "food",
+  "ex": "She cut the melon into small pieces for the fruit salad.",
+  "exfa": "او خربزه را برای سالاد میوه به تکه‌های کوچک برید.",
+  "ipa": "/ˈmelən/"
+ },
+ {
+  "i": 10778,
+  "en": "metre",
+  "fa": "متر",
+  "cat": "general",
+  "ex": "The table is about one metre long.",
+  "exfa": "این میز حدود یک متر طول دارد."
+ },
+ {
+  "i": 10779,
+  "en": "midday",
+  "fa": "ظهر",
+  "cat": "time",
+  "ex": "The sun is very strong at midday in summer.",
+  "exfa": "در تابستان، آفتاب در ظهر خیلی قوی است."
+ },
+ {
+  "i": 10780,
+  "en": "mineral water",
+  "fa": "آب معدنی",
+  "cat": "food",
+  "ex": "He ordered a bottle of mineral water with his meal.",
+  "exfa": "او همراه غذایش یک بطری آب معدنی سفارش داد."
+ },
+ {
+  "i": 10781,
+  "en": "motorway",
+  "fa": "بزرگراه",
+  "cat": "travel",
+  "ex": "We drove for three hours on the motorway to reach the coast.",
+  "exfa": "سه ساعت در بزرگراه رانندگی کردیم تا به ساحل رسیدیم."
+ },
+ {
+  "i": 10782,
+  "en": "MP3 player",
+  "fa": "دستگاه پخش MP3",
+  "cat": "tech",
+  "ex": "He listens to songs on an old MP3 player.",
+  "exfa": "او با یک دستگاه پخش MP3 قدیمی به آهنگ‌ها گوش می‌دهد."
+ },
+ {
+  "i": 10783,
+  "en": "Ms",
+  "fa": "خانم (عنوان رسمی برای زنان)",
+  "cat": "people",
+  "ex": "Ms Johnson will teach our class this year.",
+  "exfa": "خانم جانسون امسال به کلاس ما درس می‌دهد."
+ },
+ {
+  "i": 10784,
+  "en": "Ms.",
+  "fa": "خانم (عنوان رسمی برای زنان)",
+  "cat": "people",
+  "ex": "Please send the package to Ms. Smith at this address.",
+  "exfa": "لطفاً بسته را به آدرس خانم اسمیت بفرستید."
+ },
+ {
+  "i": 10785,
+  "en": "mushroom",
+  "fa": "قارچ",
+  "cat": "food",
+  "ex": "There was a large mushroom growing under the tree.",
+  "exfa": "یک قارچ بزرگ زیر درخت رشد کرده بود.",
+  "ipa": "/ˈmʌʃruːm/"
+ },
+ {
+  "i": 10786,
+  "en": "napkin",
+  "fa": "دستمال سفره",
+  "cat": "house",
+  "ex": "She wiped her mouth with a paper napkin.",
+  "exfa": "او دهانش را با یک دستمال سفره کاغذی پاک کرد."
+ },
+ {
+  "i": 10787,
+  "en": "net",
+  "fa": "تور",
+  "cat": "sport",
+  "ex": "The fisherman pulled the net out of the water.",
+  "exfa": "ماهیگیر تور را از آب بیرون کشید."
+ },
+ {
+  "i": 10788,
+  "en": "noisy",
+  "fa": "پرسروصدا",
+  "cat": "adj",
+  "ex": "The classroom was too noisy for the students to concentrate.",
+  "exfa": "کلاس درس آنقدر پرسروصدا بود که دانش‌آموزان نمی‌توانستند تمرکز کنند.",
+  "ipa": "/ˈnɔɪzi/",
+  "syn": [
+   "loud"
+  ]
+ },
+ {
+  "i": 10789,
+  "en": "noun",
+  "fa": "اسم (در دستور زبان)",
+  "cat": "school",
+  "ex": "In this sentence, \"dog\" is a noun.",
+  "exfa": "در این جمله، «dog» یک اسم است."
+ },
+ {
+  "i": 10790,
+  "en": "nowadays",
+  "fa": "امروزه",
+  "cat": "adv",
+  "ex": "Nowadays, most people carry a phone everywhere they go.",
+  "exfa": "امروزه، بیشتر مردم هر جا که می‌روند تلفن همراه دارند."
+ },
+ {
+  "i": 10791,
+  "en": "olive oil",
+  "fa": "روغن زیتون",
+  "cat": "food",
+  "ex": "She cooked the vegetables in olive oil.",
+  "exfa": "او سبزیجات را با روغن زیتون پخت."
+ },
+ {
+  "i": 10792,
+  "en": "omelet",
+  "fa": "املت",
+  "cat": "food",
+  "ex": "He made a cheese omelet for breakfast.",
+  "exfa": "او برای صبحانه یک املت پنیری درست کرد."
+ },
+ {
+  "i": 10793,
+  "en": "omelette",
+  "fa": "املت",
+  "cat": "food",
+  "ex": "We ordered a vegetable omelette at the café.",
+  "exfa": "در کافه یک املت سبزیجات سفارش دادیم."
+ },
+ {
+  "i": 10794,
+  "en": "oppose",
+  "fa": "مخالفت کردن",
+  "cat": "verb",
+  "ex": "Many people in the town oppose the new road.",
+  "exfa": "بسیاری از مردم شهر با ساخت جاده جدید مخالفت می‌کنند."
+ },
+ {
+  "i": 10795,
+  "en": "orphan",
+  "fa": "یتیم",
+  "cat": "people",
+  "ex": "The little orphan was raised by his grandmother.",
+  "exfa": "آن یتیم کوچک توسط مادربزرگش بزرگ شد."
+ },
+ {
+  "i": 10796,
+  "en": "overweight",
+  "fa": "اضافه‌وزن / چاق",
+  "cat": "health",
+  "ex": "The doctor told him he was slightly overweight.",
+  "exfa": "دکتر به او گفت که کمی اضافه‌وزن دارد."
+ },
+ {
+  "i": 10797,
+  "en": "painter",
+  "fa": "نقاش",
+  "cat": "work",
+  "ex": "The painter finished the picture of the mountains.",
+  "exfa": "نقاش تابلوی کوهستان را تمام کرد."
+ },
+ {
+  "i": 10798,
+  "en": "PC",
+  "fa": "رایانه شخصی",
+  "cat": "tech",
+  "ex": "I do my homework on my PC every evening.",
+  "exfa": "من هر شب تکالیفم را روی رایانه شخصی‌ام انجام می‌دهم."
+ },
+ {
+  "i": 10799,
+  "en": "pea",
+  "fa": "نخودفرنگی",
+  "cat": "food",
+  "ex": "The child pushed a single pea around his plate.",
+  "exfa": "بچه یک دانه نخودفرنگی را روی بشقابش هل می‌داد.",
+  "ipa": "/piː/"
+ },
+ {
+  "i": 10800,
+  "en": "pear",
+  "fa": "گلابی",
+  "cat": "food",
+  "ex": "She packed a pear and a sandwich for lunch.",
+  "exfa": "او یک گلابی و یک ساندویچ برای ناهار برداشت.",
+  "ipa": "/peər/"
+ },
+ {
+  "i": 10801,
+  "en": "pen friend",
+  "fa": "دوست مکاتبه‌ای",
+  "cat": "people",
+  "ex": "I have written letters to my pen friend in France for two years.",
+  "exfa": "دو سال است که برای دوست مکاتبه‌ای‌ام در فرانسه نامه می‌نویسم."
+ },
+ {
+  "i": 10802,
+  "en": "pence",
+  "fa": "پنس (واحد پول خرد بریتانیا)",
+  "cat": "money",
+  "ex": "The stamp cost fifty pence at the post office.",
+  "exfa": "آن تمبر در اداره پست پنجاه پنس قیمت داشت."
+ },
+ {
+  "i": 10803,
+  "en": "penfriend",
+  "fa": "دوست مکاتبه‌ای",
+  "cat": "people",
+  "ex": "My penfriend sent me a postcard from Japan.",
+  "exfa": "دوست مکاتبه‌ای‌ام از ژاپن برایم یک کارت پستال فرستاد."
+ },
+ {
+  "i": 10804,
+  "en": "petrol station",
+  "fa": "پمپ بنزین",
+  "cat": "place",
+  "ex": "We stopped at a petrol station to fill the car.",
+  "exfa": "برای پر کردن باک ماشین در یک پمپ بنزین توقف کردیم."
+ },
+ {
+  "i": 10805,
+  "en": "pile",
+  "fa": "توده / انبوه",
+  "cat": "general",
+  "ex": "There was a pile of old newspapers in the corner.",
+  "exfa": "یک توده روزنامه‌های قدیمی در گوشه اتاق بود."
+ },
+ {
+  "i": 10806,
+  "en": "pilgrim",
+  "fa": "زائر",
+  "cat": "people",
+  "ex": "The old pilgrim walked for many days to reach the temple.",
+  "exfa": "آن زائر پیر روزهای زیادی راه رفت تا به معبد برسد."
+ },
+ {
+  "i": 10807,
+  "en": "pity",
+  "fa": "حیف / دلسوزی",
+  "cat": "feeling",
+  "ex": "It's a pity that you can't come to the party.",
+  "exfa": "حیف است که نمی‌توانی به مهمانی بیایی."
+ },
+ {
+  "i": 10808,
+  "en": "playful",
+  "fa": "بازیگوش",
+  "cat": "adj",
+  "ex": "The playful puppy chased its tail around the room.",
+  "exfa": "توله‌سگ بازیگوش دور اتاق دنبال دمش می‌دوید.",
+  "syn": [
+   "mischievous"
+  ]
+ },
+ {
+  "i": 10809,
+  "en": "playground",
+  "fa": "زمین بازی",
+  "cat": "place",
+  "ex": "The children ran to the playground after school.",
+  "exfa": "بچه‌ها بعد از مدرسه به سمت زمین بازی دویدند."
+ },
+ {
+  "i": 10810,
+  "en": "pleasing",
+  "fa": "خوشایند / دلپذیر",
+  "cat": "adj",
+  "ex": "The smell of fresh bread was very pleasing.",
+  "exfa": "بوی نان تازه خیلی دلپذیر بود.",
+  "syn": [
+   "delightful",
+   "pleasant"
+  ]
+ },
+ {
+  "i": 10811,
+  "en": "plural",
+  "fa": "جمع (در دستور زبان)",
+  "cat": "school",
+  "ex": "The plural of \"child\" is \"children.\"",
+  "exfa": "جمع کلمه «child» می‌شود «children»."
+ },
+ {
+  "i": 10812,
+  "en": "police station",
+  "fa": "کلانتری",
+  "cat": "place",
+  "ex": "She went to the police station to report the missing bag.",
+  "exfa": "او برای گزارش کیف گمشده به کلانتری رفت."
+ },
+ {
+  "i": 10813,
+  "en": "policeman",
+  "fa": "پلیس مرد",
+  "cat": "work",
+  "ex": "The policeman helped the old woman cross the street.",
+  "exfa": "پلیس به آن پیرزن کمک کرد تا از خیابان عبور کند.",
+  "ipa": "/pəˈliːsmən/"
+ },
+ {
+  "i": 10814,
+  "en": "policewoman",
+  "fa": "پلیس زن",
+  "cat": "work",
+  "ex": "A policewoman stopped the cars near the school.",
+  "exfa": "یک پلیس زن ماشین‌ها را نزدیک مدرسه متوقف کرد."
+ },
+ {
+  "i": 10815,
+  "en": "pollute",
+  "fa": "آلوده کردن",
+  "cat": "nature",
+  "ex": "Factories should not pollute the river with waste.",
+  "exfa": "کارخانه‌ها نباید رودخانه را با زباله آلوده کنند."
+ },
+ {
+  "i": 10816,
+  "en": "post office",
+  "fa": "اداره پست",
+  "cat": "place",
+  "ex": "I need to go to the post office to send this letter.",
+  "exfa": "باید بروم اداره پست تا این نامه را بفرستم."
+ },
+ {
+  "i": 10817,
+  "en": "pretend",
+  "fa": "وانمود کردن",
+  "cat": "verb",
+  "ex": "The children liked to pretend they were pirates.",
+  "exfa": "بچه‌ها دوست داشتند وانمود کنند دزد دریایی هستند."
+ },
+ {
+  "i": 10818,
+  "en": "pronunciation",
+  "fa": "تلفظ",
+  "cat": "school",
+  "ex": "Her pronunciation of English words improved a lot this year.",
+  "exfa": "تلفظ او از کلمات انگلیسی امسال خیلی بهتر شد.",
+  "ipa": "/prəˌnʌnsiˈeɪʃn/"
+ },
+ {
+  "i": 10819,
+  "en": "psychologist",
+  "fa": "روان‌شناس",
+  "cat": "work",
+  "ex": "The psychologist listened carefully to her patient's problems.",
+  "exfa": "روان‌شناس با دقت به مشکلات بیمارش گوش داد.",
+  "ipa": "/saɪˈkɒlədʒɪst/"
+ },
+ {
+  "i": 10820,
+  "en": "punctuation",
+  "fa": "نشانه‌گذاری (در نوشتار)",
+  "cat": "school",
+  "ex": "The teacher checked our essays for spelling and punctuation.",
+  "exfa": "معلم انشاهای ما را از نظر املا و نشانه‌گذاری بررسی کرد."
+ },
+ {
+  "i": 10821,
+  "en": "quietly",
+  "fa": "به آرامی",
+  "cat": "adv",
+  "ex": "She closed the door quietly so she wouldn't wake the baby.",
+  "exfa": "او در را به آرامی بست تا بچه را بیدار نکند.",
+  "ipa": "/ˈkwaɪətli/"
+ },
+ {
+  "i": 10822,
+  "en": "racket",
+  "fa": "راکت",
+  "cat": "sport",
+  "ex": "He bought a new tennis racket for the tournament.",
+  "exfa": "او برای مسابقات یک راکت تنیس جدید خرید."
+ },
+ {
+  "i": 10823,
+  "en": "raincoat",
+  "fa": "بارانی",
+  "cat": "clothes",
+  "ex": "Take your raincoat because it might rain later.",
+  "exfa": "بارانی‌ات را بردار چون ممکن است بعداً باران بیاید."
+ },
+ {
+  "i": 10824,
+  "en": "regret",
+  "fa": "پشیمانی / پشیمان شدن",
+  "cat": "feeling",
+  "ex": "I regret not calling my grandmother more often.",
+  "exfa": "پشیمانم که با مادربزرگم بیشتر تماس نمی‌گرفتم.",
+  "ipa": "/rɪˈɡret/"
+ },
+ {
+  "i": 10825,
+  "en": "relaxed",
+  "fa": "آرام / راحت",
+  "cat": "feeling",
+  "ex": "After the massage, she felt completely relaxed.",
+  "exfa": "بعد از ماساژ، او کاملاً احساس آرامش کرد.",
+  "syn": [
+   "calm",
+   "at ease"
+  ]
+ },
+ {
+  "i": 10826,
+  "en": "retire",
+  "fa": "بازنشسته شدن",
+  "cat": "work",
+  "ex": "My father plans to retire next year at the age of sixty-five.",
+  "exfa": "پدرم قصد دارد سال آینده در سن شصت‌وپنج سالگی بازنشسته شود.",
+  "ipa": "/rɪˈtaɪər/"
+ },
+ {
+  "i": 10827,
+  "en": "right-hand",
+  "fa": "سمت راست",
+  "cat": "adj",
+  "ex": "Put the box on the right-hand shelf.",
+  "exfa": "جعبه را روی قفسه سمت راست بگذار."
+ },
+ {
+  "i": 10828,
+  "en": "roast",
+  "fa": "کباب‌شده (در فر) / کباب کردن",
+  "cat": "food",
+  "ex": "We had roast chicken with potatoes for dinner.",
+  "exfa": "برای شام، مرغ کباب‌شده با سیب‌زمینی خوردیم."
+ },
+ {
+  "i": 10829,
+  "en": "robbery",
+  "fa": "سرقت",
+  "cat": "crime",
+  "ex": "The bank robbery happened early this morning.",
+  "exfa": "سرقت بانک امروز صبح زود اتفاق افتاد.",
+  "ipa": "/ˈrɒbəri/",
+  "syn": [
+   "theft",
+   "burglary"
+  ]
+ },
+ {
+  "i": 10830,
+  "en": "roundabout",
+  "fa": "فلکه",
+  "cat": "travel",
+  "ex": "Turn left at the roundabout to reach the station.",
+  "exfa": "در فلکه به چپ بپیچید تا به ایستگاه برسید.",
+  "ipa": "/ˈraʊndəbaʊt/"
+ },
+ {
+  "i": 10831,
+  "en": "ruin",
+  "fa": "خراب کردن",
+  "cat": "verb",
+  "ex": "Please don't ruin the surprise party.",
+  "exfa": "لطفاً مهمانی سوپرایز را خراب نکن.",
+  "syn": [
+   "destroy",
+   "spoil"
+  ]
+ },
+ {
+  "i": 10832,
+  "en": "rumor",
+  "fa": "شایعه",
+  "cat": "talk",
+  "ex": "There is a rumor that the school will close early today.",
+  "exfa": "شایعه‌ای هست که مدرسه امروز زود تعطیل می‌شود.",
+  "ipa": "/ˈruːmər/",
+  "syn": [
+   "gossip"
+  ]
+ },
+ {
+  "i": 10833,
+  "en": "rumour",
+  "fa": "شایعه",
+  "cat": "talk",
+  "ex": "Nobody believed the strange rumour about the old house.",
+  "exfa": "هیچ‌کس آن شایعه‌ی عجیب درباره‌ی خانه‌ی قدیمی را باور نکرد.",
+  "ipa": "/ˈruːmə/"
+ },
+ {
+  "i": 10834,
+  "en": "sadly",
+  "fa": "با ناراحتی / غمگینانه",
+  "cat": "adv",
+  "ex": "She looked at the broken toy sadly.",
+  "exfa": "او با ناراحتی به اسباب‌بازی شکسته نگاه کرد."
+ },
+ {
+  "i": 10835,
+  "en": "sausage",
+  "fa": "سوسیس",
+  "cat": "food",
+  "ex": "At the barbecue, the children each ate a sausage.",
+  "exfa": "در باربیکیو، هر کدام از بچه‌ها یک سوسیس خوردند.",
+  "ipa": "/ˈsɒsɪdʒ/"
+ },
+ {
+  "i": 10836,
+  "en": "scenery",
+  "fa": "منظره",
+  "cat": "nature",
+  "ex": "The scenery in the mountains was amazing.",
+  "exfa": "منظره‌ی کوه‌ها شگفت‌انگیز بود."
+ },
+ {
+  "i": 10837,
+  "en": "schoolchild",
+  "fa": "دانش‌آموز",
+  "cat": "school",
+  "ex": "Every schoolchild in the town knows that story.",
+  "exfa": "هر دانش‌آموزی در آن شهر آن داستان را می‌داند."
+ },
+ {
+  "i": 10838,
+  "en": "schoolwork",
+  "fa": "تکالیف مدرسه",
+  "cat": "school",
+  "ex": "He finishes his schoolwork before dinner.",
+  "exfa": "او تکالیف مدرسه‌اش را قبل از شام تمام می‌کند."
+ },
+ {
+  "i": 10839,
+  "en": "scissors",
+  "fa": "قیچی",
+  "cat": "house",
+  "ex": "Use the scissors to cut the paper.",
+  "exfa": "از قیچی برای بریدن کاغذ استفاده کن.",
+  "ipa": "/ˈsɪzərz/"
+ },
+ {
+  "i": 10840,
+  "en": "scream",
+  "fa": "جیغ زدن",
+  "cat": "feeling",
+  "ex": "She began to scream when she saw the spider.",
+  "exfa": "وقتی عنکبوت را دید، شروع به جیغ زدن کرد.",
+  "syn": [
+   "shriek",
+   "yell"
+  ]
+ },
+ {
+  "i": 10841,
+  "en": "seaside",
+  "fa": "کنار دریا",
+  "cat": "place",
+  "ex": "We spent our holiday at the seaside last summer.",
+  "exfa": "تابستان گذشته تعطیلاتمان را کنار دریا گذراندیم.",
+  "ipa": "/ˈsiːsaɪd/"
+ },
+ {
+  "i": 10842,
+  "en": "sew",
+  "fa": "دوختن",
+  "cat": "verb",
+  "ex": "My grandmother taught me how to sew clothes.",
+  "exfa": "مادربزرگم به من یاد داد چطور لباس بدوزم."
+ },
+ {
+  "i": 10843,
+  "en": "shop assistant",
+  "fa": "فروشنده",
+  "cat": "work",
+  "ex": "The shop assistant helped me find the right size.",
+  "exfa": "فروشنده به من کمک کرد سایز مناسب را پیدا کنم."
+ },
+ {
+  "i": 10844,
+  "en": "shout",
+  "fa": "داد زدن",
+  "cat": "talk",
+  "ex": "Don't shout, I can hear you.",
+  "exfa": "داد نزن، صدایت را می‌شنوم.",
+  "ipa": "/ʃaʊt/",
+  "syn": [
+   "yell"
+  ]
+ },
+ {
+  "i": 10845,
+  "en": "silently",
+  "fa": "بی‌صدا / ساکت",
+  "cat": "adv",
+  "ex": "The cat walked silently across the room.",
+  "exfa": "گربه بی‌صدا از اتاق عبور کرد."
+ },
+ {
+  "i": 10846,
+  "en": "singular",
+  "fa": "مفرد",
+  "cat": "school",
+  "ex": "\"Cat\" is singular, but \"cats\" is plural.",
+  "exfa": "«Cat» مفرد است، اما «cats» جمع است."
+ },
+ {
+  "i": 10847,
+  "en": "sitting room",
+  "fa": "اتاق نشیمن",
+  "cat": "house",
+  "ex": "We watched television together in the sitting room.",
+  "exfa": "ما با هم در اتاق نشیمن تلویزیون تماشا کردیم."
+ },
+ {
+  "i": 10848,
+  "en": "skate",
+  "fa": "اسکیت کردن",
+  "cat": "sport",
+  "ex": "The children like to skate on the frozen pond.",
+  "exfa": "بچه‌ها دوست دارند روی برکه‌ی یخ‌زده اسکیت کنند."
+ },
+ {
+  "i": 10849,
+  "en": "skateboarding",
+  "fa": "اسکیت‌بورد سواری",
+  "cat": "sport",
+  "ex": "Skateboarding is his favorite hobby.",
+  "exfa": "اسکیت‌بورد سواری سرگرمی مورد علاقه‌ی اوست."
+ },
+ {
+  "i": 10850,
+  "en": "sleepless",
+  "fa": "بی‌خواب",
+  "cat": "adj",
+  "ex": "I had a sleepless night before the exam.",
+  "exfa": "قبل از امتحان یک شب بی‌خواب داشتم."
+ },
+ {
+  "i": 10851,
+  "en": "sleepy",
+  "fa": "خواب‌آلود",
+  "cat": "feeling",
+  "ex": "The baby looked sleepy after lunch.",
+  "exfa": "بچه بعد از ناهار خواب‌آلود به نظر می‌رسید.",
+  "ipa": "/ˈsliːpi/",
+  "syn": [
+   "tired",
+   "drowsy"
+  ]
+ },
+ {
+  "i": 10852,
+  "en": "slice",
+  "fa": "برش / تکه",
+  "cat": "food",
+  "ex": "Can I have a slice of cake?",
+  "exfa": "می‌توانم یک تکه کیک بردارم؟",
+  "ipa": "/slaɪs/"
+ },
+ {
+  "i": 10853,
+  "en": "smoothly",
+  "fa": "بدون مشکل / به‌آرامی",
+  "cat": "adv",
+  "ex": "The meeting went smoothly from start to finish.",
+  "exfa": "جلسه از ابتدا تا انتها بدون مشکل پیش رفت."
+ },
+ {
+  "i": 10854,
+  "en": "sock",
+  "fa": "جوراب",
+  "cat": "clothes",
+  "ex": "I can't find my other sock.",
+  "exfa": "جوراب دیگرم را پیدا نمی‌کنم.",
+  "ipa": "/sɒk/"
+ },
+ {
+  "i": 10855,
+  "en": "soda",
+  "fa": "نوشابه",
+  "cat": "food",
+  "ex": "He ordered a soda with his burger.",
+  "exfa": "او همراه با همبرگرش یک نوشابه سفارش داد.",
+  "ipa": "/ˈsoʊdə/"
+ },
+ {
+  "i": 10856,
+  "en": "soft drink",
+  "fa": "نوشابه‌ی غیرالکلی",
+  "cat": "food",
+  "ex": "Would you like a soft drink or some juice?",
+  "exfa": "نوشابه‌ی غیرالکلی می‌خواهی یا آب‌میوه؟"
+ },
+ {
+  "i": 10857,
+  "en": "softly",
+  "fa": "آهسته / به‌آرامی",
+  "cat": "adv",
+  "ex": "She spoke softly so she wouldn't wake the baby.",
+  "exfa": "او آهسته صحبت کرد تا بچه را بیدار نکند."
+ },
+ {
+  "i": 10858,
+  "en": "someday",
+  "fa": "روزی / یک روز",
+  "cat": "time",
+  "ex": "I hope to visit Japan someday.",
+  "exfa": "امیدوارم روزی به ژاپن سفر کنم."
+ },
+ {
+  "i": 10859,
+  "en": "spaceship",
+  "fa": "سفینه‌ی فضایی",
+  "cat": "tech",
+  "ex": "In the movie, the spaceship landed on Mars.",
+  "exfa": "در فیلم، سفینه‌ی فضایی روی مریخ فرود آمد."
+ },
+ {
+  "i": 10860,
+  "en": "spaghetti",
+  "fa": "اسپاگتی",
+  "cat": "food",
+  "ex": "My brother cooked spaghetti with tomato sauce.",
+  "exfa": "برادرم اسپاگتی با سس گوجه‌فرنگی پخت."
+ },
+ {
+  "i": 10861,
+  "en": "spill",
+  "fa": "ریختن (مایعات)",
+  "cat": "verb",
+  "ex": "Be careful not to spill your coffee on the carpet.",
+  "exfa": "مراقب باش قهوه‌ات را روی فرش نریزی."
+ },
+ {
+  "i": 10862,
+  "en": "splash",
+  "fa": "پاشیدن (آب)",
+  "cat": "verb",
+  "ex": "The kids love to splash water in the pool.",
+  "exfa": "بچه‌ها عاشق پاشیدن آب در استخر هستند."
+ },
+ {
+  "i": 10863,
+  "en": "spoon",
+  "fa": "قاشق",
+  "cat": "house",
+  "ex": "She stirred her tea with a spoon.",
+  "exfa": "او چایش را با قاشق هم زد.",
+  "ipa": "/spuːn/"
+ },
+ {
+  "i": 10864,
+  "en": "sports center",
+  "fa": "مرکز ورزشی",
+  "cat": "sport",
+  "ex": "We play basketball at the sports center every Friday.",
+  "exfa": "ما هر جمعه در مرکز ورزشی بسکتبال بازی می‌کنیم."
+ },
+ {
+  "i": 10865,
+  "en": "sports centre",
+  "fa": "مرکز ورزشی",
+  "cat": "sport",
+  "ex": "The new sports centre has a large swimming pool.",
+  "exfa": "مرکز ورزشی جدید یک استخر شنای بزرگ دارد."
+ },
+ {
+  "i": 10866,
+  "en": "stair",
+  "fa": "پله",
+  "cat": "house",
+  "ex": "He tripped on the last stair and fell.",
+  "exfa": "او روی آخرین پله سکندری خورد و افتاد.",
+  "ipa": "/stɛr/"
+ },
+ {
+  "i": 10867,
+  "en": "steak",
+  "fa": "استیک",
+  "cat": "food",
+  "ex": "My father grilled a steak for dinner.",
+  "exfa": "پدرم برای شام یک استیک کباب کرد.",
+  "ipa": "/steɪk/"
+ },
+ {
+  "i": 10868,
+  "en": "stomachache",
+  "fa": "دل‌درد",
+  "cat": "health",
+  "ex": "I have a stomachache because I ate too fast.",
+  "exfa": "چون خیلی سریع غذا خوردم، دل‌درد دارم."
+ },
+ {
+  "i": 10869,
+  "en": "stove",
+  "fa": "اجاق گاز",
+  "cat": "house",
+  "ex": "She left the pot on the stove for too long.",
+  "exfa": "او قابلمه را خیلی زیاد روی اجاق گاز گذاشت.",
+  "ipa": "/stoʊv/"
+ },
+ {
+  "i": 10870,
+  "en": "suitcase",
+  "fa": "چمدان",
+  "cat": "travel",
+  "ex": "He packed his suitcase the night before the trip.",
+  "exfa": "او شب قبل از سفر چمدانش را بست.",
+  "ipa": "/ˈsuːtkeɪs/"
+ },
+ {
+  "i": 10871,
+  "en": "sunflower",
+  "fa": "آفتابگردان",
+  "cat": "nature",
+  "ex": "The sunflower turns toward the sun during the day.",
+  "exfa": "آفتابگردان در طول روز به‌سمت خورشید می‌چرخد."
+ },
+ {
+  "i": 10872,
+  "en": "sunlight",
+  "fa": "نور خورشید",
+  "cat": "nature",
+  "ex": "Sunlight came through the kitchen window.",
+  "exfa": "نور خورشید از پنجره‌ی آشپزخانه می‌تابید."
+ },
+ {
+  "i": 10873,
+  "en": "superlative",
+  "fa": "صفت عالی",
+  "cat": "school",
+  "ex": "\"Best\" is the superlative form of \"good\".",
+  "exfa": "«Best» شکل عالی «good» است."
+ },
+ {
+  "i": 10874,
+  "en": "superstar",
+  "fa": "ابرستاره",
+  "cat": "people",
+  "ex": "The singer became a superstar after her first album.",
+  "exfa": "آن خواننده بعد از اولین آلبومش تبدیل به یک ابرستاره شد.",
+  "syn": [
+   "celebrity",
+   "star"
+  ]
+ },
+ {
+  "i": 10875,
+  "en": "supper",
+  "fa": "شام",
+  "cat": "food",
+  "ex": "We usually have supper at seven o'clock.",
+  "exfa": "ما معمولاً ساعت هفت شام می‌خوریم."
+ },
+ {
+  "i": 10876,
+  "en": "swallow",
+  "fa": "قورت دادن",
+  "cat": "verb",
+  "ex": "Chew your food well before you swallow it.",
+  "exfa": "قبل از قورت دادن غذایت را خوب بجو."
+ },
+ {
+  "i": 10877,
+  "en": "sweat",
+  "fa": "عرق کردن",
+  "cat": "body",
+  "ex": "The long run made him sweat a lot.",
+  "exfa": "دویدن طولانی باعث شد او خیلی عرق کند."
+ },
+ {
+  "i": 10878,
+  "en": "sweetheart",
+  "fa": "عزیزم",
+  "cat": "people",
+  "ex": "He called his wife \"sweetheart\" every morning.",
+  "exfa": "او هر روز صبح همسرش را «عزیزم» صدا می‌زد.",
+  "syn": [
+   "darling"
+  ]
+ },
+ {
+  "i": 10879,
+  "en": "swimming costume",
+  "fa": "لباس شنا",
+  "cat": "clothes",
+  "ex": "The hotel pool requires a swimming costume, not shorts.",
+  "exfa": "استخر هتل به لباس شنا نیاز دارد، نه شلوارک."
+ },
+ {
+  "i": 10880,
+  "en": "swimsuit",
+  "fa": "لباس شنا",
+  "cat": "clothes",
+  "ex": "She bought a new swimsuit for the summer.",
+  "exfa": "او یک لباس شنای جدید برای تابستان خرید."
+ },
+ {
+  "i": 10881,
+  "en": "table tennis",
+  "fa": "پینگ‌پنگ",
+  "cat": "sport",
+  "ex": "They play table tennis in the garage every weekend.",
+  "exfa": "آن‌ها هر آخر هفته در گاراژ پینگ‌پنگ بازی می‌کنند."
+ },
+ {
+  "i": 10882,
+  "en": "tablespoon",
+  "fa": "قاشق غذاخوری",
+  "cat": "house",
+  "ex": "Add one tablespoon of sugar to the mix.",
+  "exfa": "یک قاشق غذاخوری شکر به مخلوط اضافه کن."
+ },
+ {
+  "i": 10883,
+  "en": "teenager",
+  "fa": "نوجوان",
+  "cat": "people",
+  "ex": "The teenager spends most evenings doing homework.",
+  "exfa": "آن نوجوان بیشتر عصرها را صرف انجام تکالیف می‌کند.",
+  "ipa": "/ˈtiːneɪdʒər/"
+ },
+ {
+  "i": 10884,
+  "en": "terrify",
+  "fa": "به‌شدت ترساندن",
+  "cat": "feeling",
+  "ex": "Loud fireworks terrify our dog.",
+  "exfa": "صدای بلند آتش‌بازی سگ ما را به‌شدت می‌ترساند.",
+  "syn": [
+   "frighten",
+   "scare"
+  ]
+ },
+ {
+  "i": 10885,
+  "en": "text message",
+  "fa": "پیامک",
+  "cat": "tech",
+  "ex": "I sent her a text message this morning.",
+  "exfa": "امروز صبح برایش یک پیامک فرستادم."
+ },
+ {
+  "i": 10886,
+  "en": "thief",
+  "fa": "دزد",
+  "cat": "crime",
+  "ex": "The thief ran away before the police arrived.",
+  "exfa": "دزد قبل از رسیدن پلیس فرار کرد.",
+  "ipa": "/θiːf/",
+  "syn": [
+   "robber",
+   "burglar"
+  ]
+ },
+ {
+  "i": 10887,
+  "en": "thirsty",
+  "fa": "تشنه",
+  "cat": "feeling",
+  "ex": "After the game, all the players were thirsty.",
+  "exfa": "بعد از بازی، همه‌ی بازیکنان تشنه بودند.",
+  "ipa": "/ˈθɜːrsti/"
+ },
+ {
+  "i": 10888,
+  "en": "thunderstorm",
+  "fa": "طوفان رعدوبرقی",
+  "cat": "weather",
+  "ex": "A thunderstorm woke us up in the middle of the night.",
+  "exfa": "یک طوفان رعدوبرقی نیمه‌شب ما را از خواب بیدار کرد."
+ },
+ {
+  "i": 10889,
+  "en": "tidy",
+  "fa": "مرتب",
+  "cat": "adj",
+  "ex": "Her desk is always tidy.",
+  "exfa": "میز او همیشه مرتب است.",
+  "syn": [
+   "neat",
+   "organized"
+  ]
+ },
+ {
+  "i": 10890,
+  "en": "tights",
+  "fa": "جوراب‌شلواری",
+  "cat": "clothes",
+  "ex": "She wore black tights under her skirt.",
+  "exfa": "او زیر دامنش جوراب‌شلواری مشکی پوشیده بود."
+ },
+ {
+  "i": 10891,
+  "en": "timetable",
+  "fa": "برنامه‌ی زمانی",
+  "cat": "time",
+  "ex": "The train timetable changes on public holidays.",
+  "exfa": "برنامه‌ی زمانی قطار در تعطیلات رسمی تغییر می‌کند."
+ },
+ {
+  "i": 10892,
+  "en": "toast",
+  "fa": "نان تست",
+  "cat": "food",
+  "ex": "He had toast and jam for breakfast.",
+  "exfa": "او برای صبحانه نان تست و مربا خورد.",
+  "ipa": "/toʊst/"
+ },
+ {
+  "i": 10893,
+  "en": "toothache",
+  "fa": "دندان‌درد",
+  "cat": "health",
+  "ex": "She went to the dentist because of a bad toothache.",
+  "exfa": "او به‌خاطر دندان‌درد شدید پیش دندان‌پزشک رفت."
+ },
+ {
+  "i": 10894,
+  "en": "toothbrush",
+  "fa": "مسواک",
+  "cat": "health",
+  "ex": "He forgot his toothbrush at the hotel.",
+  "exfa": "او مسواکش را در هتل جا گذاشت."
+ },
+ {
+  "i": 10895,
+  "en": "tour guide",
+  "fa": "راهنمای تور",
+  "cat": "travel",
+  "ex": "Our tour guide showed us the old castle.",
+  "exfa": "راهنمای تورمان قلعه‌ی قدیمی را به ما نشان داد."
+ },
+ {
+  "i": 10896,
+  "en": "tram",
+  "fa": "تراموا",
+  "cat": "travel",
+  "ex": "We took the tram to the city center.",
+  "exfa": "ما با تراموا به مرکز شهر رفتیم.",
+  "ipa": "/træm/"
+ },
+ {
+  "i": 10897,
+  "en": "underwater",
+  "fa": "زیر آب",
+  "cat": "nature",
+  "ex": "The divers took photos of the underwater world.",
+  "exfa": "غواص‌ها از دنیای زیر آب عکس گرفتند."
+ },
+ {
+  "i": 10898,
+  "en": "uneasy",
+  "fa": "نگران / ناآرام",
+  "cat": "feeling",
+  "ex": "He felt uneasy walking home alone at night.",
+  "exfa": "او هنگام پیاده‌روی تنها به خانه در شب احساس نگرانی کرد.",
+  "syn": [
+   "anxious",
+   "nervous"
+  ]
+ },
+ {
+  "i": 10899,
+  "en": "unfair",
+  "fa": "ناعادلانه",
+  "cat": "adj",
+  "ex": "It's unfair that she got more homework than the others.",
+  "exfa": "این ناعادلانه است که او تکلیف بیشتری از بقیه گرفت.",
+  "syn": [
+   "unjust"
+  ]
+ },
+ {
+  "i": 10900,
+  "en": "unhappy",
+  "fa": "ناراحت / غمگین",
+  "cat": "feeling",
+  "ex": "He seemed unhappy about the test results.",
+  "exfa": "او درباره‌ی نتایج امتحان ناراحت به نظر می‌رسید.",
+  "syn": [
+   "sad"
+  ]
+ },
+ {
+  "i": 10901,
+  "en": "unimportant",
+  "fa": "بی‌اهمیت",
+  "cat": "adj",
+  "ex": "Don't worry about such unimportant details.",
+  "exfa": "نگران چنین جزئیات بی‌اهمیتی نباش."
+ },
+ {
+  "i": 10902,
+  "en": "upstairs",
+  "fa": "طبقه‌ی بالا",
+  "cat": "house",
+  "ex": "The children are playing upstairs.",
+  "exfa": "بچه‌ها در طبقه‌ی بالا بازی می‌کنند."
+ },
+ {
+  "i": 10903,
+  "en": "verb",
+  "fa": "فعل",
+  "cat": "school",
+  "ex": "\"Run\" is a verb, but \"runner\" is a noun.",
+  "exfa": "«Run» یک فعل است، اما «runner» یک اسم است.",
+  "ipa": "/vɜːrb/"
+ },
+ {
+  "i": 10904,
+  "en": "video game",
+  "fa": "بازی ویدیویی",
+  "cat": "tech",
+  "ex": "He plays a video game every evening after school.",
+  "exfa": "او هر عصر بعد از مدرسه یک بازی ویدیویی انجام می‌دهد."
+ },
+ {
+  "i": 10905,
+  "en": "wander",
+  "fa": "بی‌هدف قدم زدن / پرسه زدن",
+  "cat": "verb",
+  "ex": "They like to wander through the forest on weekends.",
+  "exfa": "آن‌ها دوست دارند آخر هفته‌ها بی‌هدف در جنگل قدم بزنند.",
+  "ipa": "/ˈwɒndər/",
+  "syn": [
+   "roam",
+   "stroll"
+  ]
+ },
+ {
+  "i": 10906,
+  "en": "washing machine",
+  "fa": "ماشین لباسشویی",
+  "cat": "house",
+  "ex": "The washing machine broke down last week.",
+  "exfa": "ماشین لباسشویی هفته‌ی پیش خراب شد."
+ },
+ {
+  "i": 10907,
+  "en": "washing-up",
+  "fa": "شستن ظرف‌ها",
+  "cat": "house",
+  "ex": "I'll do the washing-up while you dry the dishes.",
+  "exfa": "من ظرف‌ها را می‌شویم تا تو خشکشان کنی."
+ },
+ {
+  "i": 10908,
+  "en": "web page",
+  "fa": "صفحه‌ی وب",
+  "cat": "tech",
+  "ex": "The article link opens a web page in your browser.",
+  "exfa": "لینک مقاله یک صفحه‌ی وب را در مرورگرت باز می‌کند."
+ },
+ {
+  "i": 10909,
+  "en": "weekday",
+  "fa": "روز هفته (کاری)",
+  "cat": "time",
+  "ex": "The store is open every weekday from nine to five.",
+  "exfa": "مغازه هر روز هفته از ساعت نه تا پنج باز است."
+ },
+ {
+  "i": 10910,
+  "en": "weep",
+  "fa": "گریه کردن",
+  "cat": "feeling",
+  "ex": "Please don't weep, everything will be fine.",
+  "exfa": "لطفاً گریه نکن، همه‌چیز درست می‌شود."
+ },
+ {
+  "i": 10911,
+  "en": "weigh",
+  "fa": "وزن داشتن",
+  "cat": "verb",
+  "ex": "Can you weigh this bag for me?",
+  "exfa": "می‌توانی این کیف را برای من وزن کنی؟",
+  "ipa": "/weɪ/"
+ },
+ {
+  "i": 10912,
+  "en": "wheelchair",
+  "fa": "ویلچر",
+  "cat": "health",
+  "ex": "He uses a wheelchair to get around the school.",
+  "exfa": "او برای رفت‌وآمد در مدرسه از ویلچر استفاده می‌کند."
+ },
+ {
+  "i": 10913,
+  "en": "windy",
+  "fa": "بادی",
+  "cat": "weather",
+  "ex": "It's too windy to fly a kite today.",
+  "exfa": "امروز هوا آن‌قدر بادی است که نمی‌شود بادبادک پرواز داد.",
+  "ipa": "/ˈwɪndi/"
  }
 ]
