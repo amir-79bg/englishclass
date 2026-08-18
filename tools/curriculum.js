@@ -21,6 +21,9 @@ const { LEVELS } = require('./validate-curriculum');
 const ROOT = path.join(__dirname, '..');
 const CURRICULUM = path.join(ROOT, 'data', 'curriculum.json');
 
+const key = s => String(s || '').toLowerCase().trim();
+const EXCLUDED = new Set(["'m", "'re", "'s", 'a', 'an', 'a.m.', 'p.m.', 'pm'].map(key));
+
 function readCurriculum(file = CURRICULUM) {
   if (!fs.existsSync(file)) {
     throw new Error('data/curriculum.json not found — run node tools/build-curriculum.js');
@@ -59,6 +62,15 @@ function levelIndex(cur, words) {
       const isAcronym = letters.length >= 2 && letters === letters.toUpperCase();
       if (isAcronym && e.en !== e.en.toUpperCase()) return;
     }
+    // Un-flashcardable: a contraction fragment never appears as a standalone
+    // token in real text ("'m" only ever exists glued to a preceding pronoun),
+    // and an indefinite article has no independent lexical content to quiz —
+    // a Persian learner has no single word to pick out of a multiple-choice
+    // set for "a"/"an". Explicit product-owner call, 2026-08-18: these read as
+    // nonsense flashcards even though CEFR-J lists them as real A1 items.
+    // `am`/`is`/`at`/`by`/`to` etc. are NOT here — those have one clear,
+    // quizzable Persian sense, same as any other word.
+    if (EXCLUDED.has(key(e.en))) return;
     if (seen.has(e.i)) return;                   // one slot per word, ever
     seen.add(e.i);
     out[e.level].push(e.i);
