@@ -10834,6 +10834,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
     <div style="font-size:11px;color:#b3a9e6">{{ gramHeading }} · {{ gramLvNote }}</div>
     <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">
       <sc-if value="{{ gramIsReview }}" hint-placeholder-val="{{ false }}"><button class="vbtn" sc-camel-on-click="{{ gramExitReview }}" style="display:flex;align-items:center;gap:5px;padding:8px 12px;border-radius:9px;background:transparent;border:1px solid rgba(233,233,237,.18);color:rgba(233,233,237,.62);font-size:11.5px"><i class="ph ph-path"></i><span>بازگشت به مسیر آموزش</span></button></sc-if>
+      <sc-if value="{{ gramHasReviewDue }}" hint-placeholder-val="{{ false }}"><button class="vbtn" sc-camel-on-click="{{ gramReviewGo }}" style="display:flex;align-items:center;gap:7px;padding:9px 15px;border-radius:9px;background:rgba(132,197,217,.1);border:1px solid rgba(132,197,217,.5);color:#84c5d9;font-size:12.5px;font-weight:500"><i class="ph-fill ph-clock-countdown"></i><span>{{ gramReviewLabel }}</span></button></sc-if>
       <sc-if value="{{ gramHasGame }}" hint-placeholder-val="{{ false }}"><button class="vbtn" sc-camel-on-click="{{ gramGameGo }}" style="display:flex;align-items:center;gap:7px;padding:9px 15px;border-radius:9px;background:rgba(224,164,88,.1);border:1px solid rgba(224,164,88,.5);color:#e0a458;font-size:12.5px;font-weight:500"><i class="ph-fill ph-game-controller"></i><span>{{ gramGameLabel }} · {{ gramGameBest }}</span></button></sc-if>
     </div>
   </div>

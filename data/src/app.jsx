@@ -497,6 +497,9 @@ const IL_MAX_FAILS = 3;
 // the exact "one stuck item blocks everything downstream" trap LEG-034
 // found and fixed for vocabulary, just reintroduced in a different engine.
 const CS_MAX_RETRY = 3;
+// Spaced-recall ladder for completed grammar lessons (gramScheduleFirstReview()
+// / gramAdvanceReview()) — day-offsets, expanding then flat.
+const GRAM_REVIEW_GAPS = [1, 3, 7];
 function levelSpans(total) {
   const out = []; let acc = 0;
   for (let i = 0; i < LEVELS.length; i++) {
@@ -3354,7 +3357,7 @@ class Component extends DCLogic {
     const txt = (this.state.gpText || '').trim();
     const stats = les ? this.gramStats(les) : null;
     if (stats && !stats.complete && stats.next && stats.next.mode !== 'produce') {
-      return this.setState({ gpErr: 'این بخش بعد از تمام‌کردن چهار مرحلهٔ قبلی باز می‌شود.', gFlowNote: 'اول مرحلهٔ جاری را تمام کن.' });
+      return this.setState({ gpErr: 'این بخش بعد از تمام‌کردن مرحله‌های قبلی باز می‌شود.', gFlowNote: 'اول مرحلهٔ جاری را تمام کن.' });
     }
     if (!les || !txt) return this.setState({ gpErr: 'اول جملهٔ خودت را بنویس.' });
     if (txt.length > 500) return this.setState({ gpErr: 'متن را کوتاه‌تر از ۵۰۰ نویسه بنویس.' });
@@ -3395,6 +3398,11 @@ class Component extends DCLogic {
       checks: checks.concat(online), service, proofFailed, translationFailed, at: Date.now() };
     this.saveGramProduction(les, result);
     if (passed) this.addXp(8);
+    // 'produce' is always the last step (gramModes()), so a lesson only
+    // just became complete right here — this is the one moment to start
+    // its spaced-recall ladder. Guarded inside gramScheduleFirstReview() so
+    // redoing 'produce' later for a better score never resets it.
+    if (this.gramStats(les).complete) this.gramScheduleFirstReview(les);
     this.setState({ gpBusy: false, gpErr: '', gpResult: result, tick: (this.state.tick || 0) + 1 });
   }
   async retryGrammarTranslation() {
@@ -3450,7 +3458,7 @@ class Component extends DCLogic {
     // array index, since a requeued item's index changes as the set grows.
     const items = cfg.items.map((it, i) => Object.assign({}, it, { _rid: i }));
     const st = { kind: cfg.kind, mode: cfg.mode, title: cfg.title, key: cfg.key, back: cfg.back, lv: cfg.lv || null, items: items,
-      total0: cfg.items.length, wrongIds: [], failCounts: {},
+      isReview: !!cfg.isReview, total0: cfg.items.length, wrongIds: [], failCounts: {},
       pit: cfg.pit || [], formula: cfg.formula || '', use: cfg.use || '', lessonId: cfg.lessonId || '', step: cfg.step || '',
       k: 0, right: 0, picked: null, typed: '', checked: false, ok: false, done: false, pool: [], seq: [],
       lives: 3, score: 0, left: cfg.mode === 'game' ? 45 : 0, over: false, best: cfg.key ? this.csBest(cfg.key) : 0 };
@@ -3574,6 +3582,17 @@ class Component extends DCLogic {
     const pct = Math.round(((total0 - wrongIds.length) / total0) * 100);
     if (cs.key) this.csSaveScore(cs.key, pct);
     this.addXp(cs.right * 6);
+    // A spaced-recall session (gramReviewStart()) has no single `key` of its
+    // own — it mixes items from several lessons — so completing it instead
+    // pushes each of those lessons further out on the review ladder.
+    // Reschedules on FINISHING the set, same as everywhere else in this
+    // engine: retry-to-criterion already means every item ends up correct,
+    // so "finished" is the right trigger, not "answered right the first time".
+    if (cs.isReview) {
+      const seen = {};
+      items.forEach(x => { if (x._reviewLessonId) seen[x._reviewLessonId] = true; });
+      Object.keys(seen).forEach(id => this.gramAdvanceReview(id));
+    }
     this.csSet({ items, wrongIds, failCounts, done: true });
   }
   csQuit() { clearInterval(this.csIv); const cs = this.state.cs; this.setState({ screen: this.navBack() || (cs && cs.back) || 'home', cs: null }); }
@@ -3617,8 +3636,25 @@ class Component extends DCLogic {
     const lv = this.state.gLv || 'A1';
     const names = { choose: 'چهارگزینه‌ای', fill: 'پر کردن جای خالی', err: 'پیدا کردن غلط', order: 'مرتب‌کردن جمله' };
     const map = { choose: les.choose, fill: les.fill, err: les.err, order: les.order };
-    const items = (map[mode] || []).slice();
+    let items = (map[mode] || []).slice();
     if (!items.length) return;
+    // Interleaving (research item 7): 'choose' now sits at the END of a
+    // lesson specifically so it can mix in a couple of items from lessons
+    // ALREADY passed — the discriminative-contrast benefit of interleaving
+    // only helps once there is something else to discriminate against.
+    // First lesson of a level has nothing prior yet, which is fine; from
+    // the second lesson on this quietly becomes a review, not just a test
+    // of the lesson just learned.
+    if (mode === 'choose') {
+      const priorPool = [];
+      LEVELS.slice(0, LEVELS.indexOf(lv) + 1).forEach(L => this.gramLessons(L)
+        .filter(x => x.id !== les.id && this.gramStats(x).passed > 0)
+        .forEach(x => (x.choose || []).forEach(q => priorPool.push(q))));
+      if (priorPool.length) {
+        const seed = les.id.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+        items = items.concat(shuffled(priorPool, seed + 977).slice(0, Math.min(2, priorPool.length)));
+      }
+    }
     this.csStart({ kind: 'gram', mode: mode === 'err' ? 'error' : mode, title: names[mode] + ' · ' + les.t,
       // fill and order questions carry no per-item explanation, so the
       // lesson's formula (first) and pitfalls (second) are the only things
@@ -3635,6 +3671,54 @@ class Component extends DCLogic {
       .forEach(les => (les.choose || []).forEach(q => pool.push(q))));
     if (!pool.length) return;
     this.csStart({ kind: 'gram', mode: 'game', title: 'بازی دستور زبان · تا سطح ' + L, key: 'g_game_' + L, back: 'gram', items: shuffled(pool, Date.now() % 9973) });
+  }
+  // ---- grammar spaced recall (research item 10) ----
+  // Li 2010: explicit corrective feedback wins on immediate posttests, but
+  // its advantage mostly dissipates by delayed posttests — a lesson's
+  // explanations need to be revisited later, not just given once. This is
+  // deliberately a fixed 3-touch ladder (+1d, +3d, +7d, then repeating +7d)
+  // rather than a full SRS: grammar lessons are few (18) and coarse-grained
+  // compared to vocabulary words, so a simple expanding schedule is enough
+  // — building a second full spaced-repetition engine for 18 items would be
+  // a lot of new failure surface for very little gained precision.
+  gramGrLoad() { const p = this.csLoad(); return p.gr || {}; }
+  gramGrSave(gr) { const p = this.csLoad(); p.gr = gr; try { localStorage.setItem('vocab_course', JSON.stringify(p)); } catch (e) {} }
+  // Called once a lesson's every step has been attempted (gramStats().complete).
+  // Guarded so re-completing (e.g. redoing 'produce' for a better score)
+  // never resets an already-running schedule.
+  gramScheduleFirstReview(les) {
+    const gr = this.gramGrLoad();
+    if (gr[les.id]) return;
+    gr[les.id] = { due: currentDayNo() + GRAM_REVIEW_GAPS[0], stage: 0 };
+    this.gramGrSave(gr);
+  }
+  gramAdvanceReview(lessonId) {
+    const gr = this.gramGrLoad();
+    const rec = gr[lessonId]; if (!rec) return;
+    const stage = Math.min(rec.stage + 1, GRAM_REVIEW_GAPS.length - 1);
+    gr[lessonId] = { due: currentDayNo() + GRAM_REVIEW_GAPS[stage], stage: stage };
+    this.gramGrSave(gr);
+  }
+  gramDueLessons() {
+    const gr = this.gramGrLoad(), day = currentDayNo();
+    return this.gramItems().filter(x => gr[x.les.id] && gr[x.les.id].due <= day);
+  }
+  // Two items per due lesson (research spec), pulled from that lesson's own
+  // 'choose' pool — reusing content already authored, same as every other
+  // beat in this redesign. Each item is tagged with which lesson it came
+  // from so csNext() below knows what to reschedule once the set is done.
+  gramReviewStart() {
+    const due = this.gramDueLessons();
+    if (!due.length) return;
+    const items = [];
+    due.forEach(x => {
+      const pool = x.les.choose || [];
+      shuffled(pool, currentDayNo() + x.les.id.length).slice(0, 2)
+        .forEach(q => items.push(Object.assign({}, q, { _reviewLessonId: x.les.id })));
+    });
+    if (!items.length) return;
+    this.csStart({ kind: 'gram', mode: 'choose', title: 'مرور فاصله‌دار', back: 'gram', isReview: true,
+      items: shuffled(items, currentDayNo()) });
   }
 
   // ---- collocation drill builders ----
@@ -3748,6 +3832,10 @@ class Component extends DCLogic {
       out.gramGameGo = () => this.gramGame(lv);
       out.gramHasGame = LEVELS.slice(0, LEVELS.indexOf(lv) + 1).some(L => this.gramLessons(L).some(les => this.gramStats(les).passed > 0));
       out.gramGameLabel = reviewOnly ? 'مرور ترکیبی' : 'مرور درس‌های گذرانده‌شده';
+      out.gramReviewDueCount = this.gramDueLessons().length;
+      out.gramHasReviewDue = out.gramReviewDueCount > 0;
+      out.gramReviewLabel = out.gramReviewDueCount + ' درس آماده‌ی مرور فاصله‌دار';
+      out.gramReviewGo = () => this.gramReviewStart();
       out.gramLvNote = reviewOnly ? shownLessons.length + ' درس قابل مرور در سطح ' + lv : 'سطح ' + lv + ' — ' + this.gramLessons(lv).length + ' درس';
     }
     if (out.isGLesson) {
@@ -3954,7 +4042,7 @@ class Component extends DCLogic {
       const gramHit = csNextIsLesson ? this.grammarLessonById(cs.lessonId) : null;
       const nextGram = gramHit ? this.gramStats(gramHit.les).next : null;
       const nextGramNames = { learn: 'قاعده و مثال‌ها', input: 'تشخیص معنی', choose: 'تشخیص گزینه‌ها', fill: 'جای خالی', order: 'جمله‌سازی', err: 'اصلاح خطا', produce: 'جملهٔ خودم' };
-      out.csNextLabel2 = nextGram ? 'مرحلهٔ بعد · ' + nextGramNames[nextGram.mode] : 'بازگشت به درس';
+      out.csNextLabel2 = nextGram ? 'مرحلهٔ بعد · ' + nextGramNames[nextGram.mode] : (cs.isReview ? 'بازگشت به دستور زبان' : 'بازگشت به درس');
       out.csNextGo2 = csNextIsLesson ? (() => this.gramContinue(cs)) : (() => this.csQuit());
       out.csBackGo = () => this.csQuit();
       // game HUD
