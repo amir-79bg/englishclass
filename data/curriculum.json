@@ -40,8 +40,8 @@
  },
  "counts": {
   "total": 8845,
-  "matched": 4930,
-  "pending": 3915,
+  "matched": 5692,
+  "pending": 3153,
   "byLevel": {
    "A1": 1084,
    "A2": 1272,
@@ -53,7 +53,7 @@
   "pendingByLevel": {
    "A1": 0,
    "A2": 0,
-   "B1": 762,
+   "B1": 0,
    "B2": 1548,
    "C1": 769,
    "C2": 836
@@ -24410,7 +24410,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10914
   },
   {
    "en": "able",
@@ -24429,7 +24430,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10915
   },
   {
    "en": "aboard",
@@ -24439,7 +24441,8 @@
     "adverb",
     "preposition"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10916
   },
   {
    "en": "aborigine",
@@ -24448,7 +24451,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10917
   },
   {
    "en": "absence",
@@ -24498,7 +24502,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10918
   },
   {
    "en": "abstract",
@@ -24517,7 +24522,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10919
   },
   {
    "en": "abundant",
@@ -24526,7 +24532,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10920
   },
   {
    "en": "academic",
@@ -24606,7 +24613,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10921
   },
   {
    "en": "accidentally",
@@ -24615,7 +24623,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10922
   },
   {
    "en": "accompany",
@@ -24624,7 +24633,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10923
   },
   {
    "en": "accomplish",
@@ -24643,7 +24653,8 @@
    "pos": [
     "preposition"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10924
   },
   {
    "en": "accountant",
@@ -24692,7 +24703,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10925
   },
   {
    "en": "accustom",
@@ -24701,7 +24713,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10926
   },
   {
    "en": "ache",
@@ -24711,7 +24724,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10927
   },
   {
    "en": "achievement",
@@ -24741,7 +24755,8 @@
     "noun"
    ],
    "from": "acknowledgment/acknowledgement",
-   "status": "pending"
+   "status": "matched",
+   "i": 10928
   },
   {
    "en": "acknowledgment",
@@ -24751,7 +24766,8 @@
     "noun"
    ],
    "from": "acknowledgment/acknowledgement",
-   "status": "pending"
+   "status": "matched",
+   "i": 10929
   },
   {
    "en": "acquaintance",
@@ -24760,7 +24776,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10930
   },
   {
    "en": "acquire",
@@ -24799,7 +24816,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10931
   },
   {
    "en": "adapt",
@@ -24818,7 +24836,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10932
   },
   {
    "en": "administration",
@@ -24837,7 +24856,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10933
   },
   {
    "en": "admission",
@@ -24866,7 +24886,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10934
   },
   {
    "en": "advance",
@@ -24886,7 +24907,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10935
   },
   {
    "en": "adverbial",
@@ -24895,7 +24917,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10936
   },
   {
    "en": "advert",
@@ -24925,7 +24948,8 @@
     "noun"
    ],
    "from": "adviser/advisor",
-   "status": "pending"
+   "status": "matched",
+   "i": 10937
   },
   {
    "en": "advisor",
@@ -24945,7 +24969,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10938
   },
   {
    "en": "affect",
@@ -24964,7 +24989,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10939
   },
   {
    "en": "afford",
@@ -24983,7 +25009,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10940
   },
   {
    "en": "afterwards",
@@ -25115,7 +25142,8 @@
     "adjective",
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10941
   },
   {
    "en": "alike",
@@ -25135,7 +25163,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10942
   },
   {
    "en": "allowance",
@@ -25154,7 +25183,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10943
   },
   {
    "en": "alphabet",
@@ -25163,7 +25193,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10944
   },
   {
    "en": "alternative",
@@ -25183,7 +25214,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10945
   },
   {
    "en": "amazed",
@@ -25222,7 +25254,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10946
   },
   {
    "en": "amount",
@@ -25241,7 +25274,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10947
   },
   {
    "en": "analyse",
@@ -25251,7 +25285,8 @@
     "verb"
    ],
    "from": "analyze/analyse",
-   "status": "pending"
+   "status": "matched",
+   "i": 10948
   },
   {
    "en": "analysis",
@@ -25342,7 +25377,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10949
   },
   {
    "en": "annoyed",
@@ -25412,7 +25448,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10950
   },
   {
    "en": "anxiety",
@@ -25431,7 +25468,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10951
   },
   {
    "en": "anyhow",
@@ -25440,7 +25478,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10952
   },
   {
    "en": "ape",
@@ -25449,7 +25488,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10953
   },
   {
    "en": "apology",
@@ -25458,7 +25498,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10954
   },
   {
    "en": "apparent",
@@ -25488,7 +25529,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10955
   },
   {
    "en": "applaud",
@@ -25497,7 +25539,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10956
   },
   {
    "en": "applause",
@@ -25506,7 +25549,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10957
   },
   {
    "en": "application",
@@ -25525,7 +25569,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10958
   },
   {
    "en": "appreciation",
@@ -25605,7 +25650,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10959
   },
   {
    "en": "army",
@@ -25695,7 +25741,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10960
   },
   {
    "en": "aside",
@@ -25724,7 +25771,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10961
   },
   {
    "en": "assign",
@@ -25793,7 +25841,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10962
   },
   {
    "en": "athletic",
@@ -25862,7 +25911,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10963
   },
   {
    "en": "attend",
@@ -25911,7 +25961,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10964
   },
   {
    "en": "available",
@@ -25970,7 +26021,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10965
   },
   {
    "en": "babysit",
@@ -25979,7 +26031,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10966
   },
   {
    "en": "babysitter",
@@ -25988,7 +26041,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10967
   },
   {
    "en": "backache",
@@ -25997,7 +26051,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10968
   },
   {
    "en": "backpack",
@@ -26026,7 +26081,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10969
   },
   {
    "en": "bacon",
@@ -26045,7 +26101,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10970
   },
   {
    "en": "baker",
@@ -26064,7 +26121,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10971
   },
   {
    "en": "balance",
@@ -26095,7 +26153,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10972
   },
   {
    "en": "bang",
@@ -26115,7 +26174,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10973
   },
   {
    "en": "bare",
@@ -26146,7 +26206,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10974
   },
   {
    "en": "barman",
@@ -26155,7 +26216,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10975
   },
   {
    "en": "barrel",
@@ -26204,7 +26266,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10976
   },
   {
    "en": "battle",
@@ -26223,7 +26286,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10977
   },
   {
    "en": "beast",
@@ -26273,7 +26337,8 @@
    "pos": [
     "preposition"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10978
   },
   {
    "en": "bedside",
@@ -26282,7 +26347,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10979
   },
   {
    "en": "behalf",
@@ -26321,7 +26387,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10980
   },
   {
    "en": "beneath",
@@ -26371,7 +26438,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10981
   },
   {
    "en": "bin",
@@ -26380,7 +26448,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10982
   },
   {
    "en": "biochemistry",
@@ -26389,7 +26458,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10983
   },
   {
    "en": "biography",
@@ -26438,7 +26508,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10984
   },
   {
    "en": "blend",
@@ -26468,7 +26539,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10985
   },
   {
    "en": "blind",
@@ -26508,7 +26580,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10986
   },
   {
    "en": "boast",
@@ -26518,7 +26591,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10987
   },
   {
    "en": "bold",
@@ -26538,7 +26612,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10988
   },
   {
    "en": "bomb",
@@ -26608,7 +26683,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10989
   },
   {
    "en": "boredom",
@@ -26617,7 +26693,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10990
   },
   {
    "en": "bounce",
@@ -26627,7 +26704,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10991
   },
   {
    "en": "bound",
@@ -26677,7 +26755,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10992
   },
   {
    "en": "brand-new",
@@ -26686,7 +26765,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10993
   },
   {
    "en": "brass",
@@ -26705,7 +26785,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10994
   },
   {
    "en": "breakthrough",
@@ -26744,7 +26825,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10995
   },
   {
    "en": "breed",
@@ -26806,7 +26888,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10996
   },
   {
    "en": "broad",
@@ -26836,7 +26919,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10997
   },
   {
    "en": "bronze",
@@ -26855,7 +26939,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10998
   },
   {
    "en": "bubble",
@@ -26924,7 +27009,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 10999
   },
   {
    "en": "bunch",
@@ -26964,7 +27050,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11000
   },
   {
    "en": "burning",
@@ -26994,7 +27081,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11001
   },
   {
    "en": "butcher",
@@ -27004,7 +27092,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11002
   },
   {
    "en": "buyer",
@@ -27023,7 +27112,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11003
   },
   {
    "en": "cabin",
@@ -27082,7 +27172,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11004
   },
   {
    "en": "caller",
@@ -27091,7 +27182,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11005
   },
   {
    "en": "calm",
@@ -27110,7 +27202,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11006
   },
   {
    "en": "camel",
@@ -27129,7 +27222,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11007
   },
   {
    "en": "canal",
@@ -27178,7 +27272,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11008
   },
   {
    "en": "canteen",
@@ -27187,7 +27282,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11009
   },
   {
    "en": "capable",
@@ -27216,7 +27312,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11010
   },
   {
    "en": "capture",
@@ -27246,7 +27343,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11011
   },
   {
    "en": "carelessly",
@@ -27255,7 +27353,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11012
   },
   {
    "en": "carelessness",
@@ -27264,7 +27363,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11013
   },
   {
    "en": "carpet",
@@ -27283,7 +27383,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11014
   },
   {
    "en": "carton",
@@ -27292,7 +27393,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11015
   },
   {
    "en": "cashpoint",
@@ -27301,7 +27403,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11016
   },
   {
    "en": "casual",
@@ -27321,7 +27424,8 @@
     "verb"
    ],
    "from": "categorize/categorise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11017
   },
   {
    "en": "categorize",
@@ -27331,7 +27435,8 @@
     "verb"
    ],
    "from": "categorize/categorise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11018
   },
   {
    "en": "category",
@@ -27370,7 +27475,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11019
   },
   {
    "en": "cave",
@@ -27389,7 +27495,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11020
   },
   {
    "en": "celebrity",
@@ -27428,7 +27535,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11021
   },
   {
    "en": "ceremony",
@@ -27447,7 +27555,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11022
   },
   {
    "en": "challenging",
@@ -27497,7 +27606,8 @@
     "verb"
    ],
    "from": "characterize/characterise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11023
   },
   {
    "en": "characteristic",
@@ -27518,7 +27628,8 @@
     "verb"
    ],
    "from": "characterize/characterise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11024
   },
   {
    "en": "charge",
@@ -27538,7 +27649,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11025
   },
   {
    "en": "charity",
@@ -27578,7 +27690,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11026
   },
   {
    "en": "check-in",
@@ -27599,7 +27712,8 @@
     "noun"
    ],
    "from": "check-in counter/check-in",
-   "status": "pending"
+   "status": "matched",
+   "i": 11027
   },
   {
    "en": "check-in desk",
@@ -27609,7 +27723,8 @@
     "noun"
    ],
    "from": "check-in desk/check-in",
-   "status": "pending"
+   "status": "matched",
+   "i": 11028
   },
   {
    "en": "checkout",
@@ -27618,7 +27733,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11029
   },
   {
    "en": "cheerful",
@@ -27637,7 +27753,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11030
   },
   {
    "en": "chemistry",
@@ -27656,7 +27773,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11031
   },
   {
    "en": "chest of drawers",
@@ -27665,7 +27783,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11032
   },
   {
    "en": "chewing gum",
@@ -27674,7 +27793,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11033
   },
   {
    "en": "chief",
@@ -27704,7 +27824,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11034
   },
   {
    "en": "Christian",
@@ -27723,7 +27844,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11035
   },
   {
    "en": "chuckle",
@@ -27732,7 +27854,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11036
   },
   {
    "en": "circular",
@@ -27813,7 +27936,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11037
   },
   {
    "en": "cliff",
@@ -27842,7 +27966,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11038
   },
   {
    "en": "clinic",
@@ -27911,7 +28036,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11039
   },
   {
    "en": "collapse",
@@ -27941,7 +28067,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11040
   },
   {
    "en": "combination",
@@ -27970,7 +28097,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11041
   },
   {
    "en": "comedy",
@@ -27989,7 +28117,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11042
   },
   {
    "en": "comfort",
@@ -28008,7 +28137,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11043
   },
   {
    "en": "command",
@@ -28059,7 +28189,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11044
   },
   {
    "en": "commonly",
@@ -28118,7 +28249,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11045
   },
   {
    "en": "complement",
@@ -28157,7 +28289,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11046
   },
   {
    "en": "complicated",
@@ -28176,7 +28309,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11047
   },
   {
    "en": "compose",
@@ -28185,7 +28319,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11048
   },
   {
    "en": "composition",
@@ -28326,7 +28461,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11049
   },
   {
    "en": "confusion",
@@ -28345,7 +28481,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11050
   },
   {
    "en": "connect",
@@ -28376,7 +28513,8 @@
     "noun"
    ],
    "from": "connection/connexion",
-   "status": "pending"
+   "status": "matched",
+   "i": 11051
   },
   {
    "en": "conquer",
@@ -28385,7 +28523,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11052
   },
   {
    "en": "conscious",
@@ -28454,7 +28593,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11053
   },
   {
    "en": "constantly",
@@ -28564,7 +28704,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11054
   },
   {
    "en": "continually",
@@ -28643,7 +28784,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11055
   },
   {
    "en": "convince",
@@ -28693,7 +28835,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11056
   },
   {
    "en": "council",
@@ -28724,7 +28867,8 @@
     "noun"
    ],
    "from": "counseling/counselling",
-   "status": "pending"
+   "status": "matched",
+   "i": 11057
   },
   {
    "en": "counter",
@@ -28744,7 +28888,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11058
   },
   {
    "en": "county",
@@ -28783,7 +28928,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11059
   },
   {
    "en": "craft",
@@ -28845,7 +28991,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11060
   },
   {
    "en": "critical",
@@ -28884,7 +29031,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11061
   },
   {
    "en": "crow",
@@ -28893,7 +29041,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11062
   },
   {
    "en": "cruel",
@@ -28902,7 +29051,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11063
   },
   {
    "en": "crush",
@@ -28911,7 +29061,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11064
   },
   {
    "en": "cucumber",
@@ -28920,7 +29071,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11065
   },
   {
    "en": "cultivate",
@@ -28929,7 +29081,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11066
   },
   {
    "en": "cultural",
@@ -28959,7 +29112,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11067
   },
   {
    "en": "curious",
@@ -28978,7 +29132,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11068
   },
   {
    "en": "curly",
@@ -28987,7 +29142,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11069
   },
   {
    "en": "currency",
@@ -29076,7 +29232,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11070
   },
   {
    "en": "cycle",
@@ -29127,7 +29284,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11071
   },
   {
    "en": "dangerously",
@@ -29136,7 +29294,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11072
   },
   {
    "en": "dare",
@@ -29175,7 +29334,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11073
   },
   {
    "en": "dazzle",
@@ -29184,7 +29344,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11074
   },
   {
    "en": "deadline",
@@ -29233,7 +29394,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11075
   },
   {
    "en": "debt",
@@ -29304,7 +29466,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11076
   },
   {
    "en": "deed",
@@ -29313,7 +29476,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11077
   },
   {
    "en": "defeat",
@@ -29354,7 +29518,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11078
   },
   {
    "en": "defense",
@@ -29394,7 +29559,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11079
   },
   {
    "en": "definite article",
@@ -29403,7 +29569,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11080
   },
   {
    "en": "definitely",
@@ -29463,7 +29630,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11081
   },
   {
    "en": "delightful",
@@ -29472,7 +29640,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11082
   },
   {
    "en": "deliver",
@@ -29562,7 +29731,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11083
   },
   {
    "en": "department",
@@ -29613,7 +29783,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11084
   },
   {
    "en": "depressing",
@@ -29622,7 +29793,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11085
   },
   {
    "en": "depression",
@@ -29641,7 +29813,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11086
   },
   {
    "en": "depth",
@@ -29660,7 +29833,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11087
   },
   {
    "en": "deserve",
@@ -29701,7 +29875,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11088
   },
   {
    "en": "desperate",
@@ -29750,7 +29925,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11089
   },
   {
    "en": "detective",
@@ -29789,7 +29965,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11090
   },
   {
    "en": "devastating",
@@ -29798,7 +29975,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11091
   },
   {
    "en": "development",
@@ -29827,7 +30005,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11092
   },
   {
    "en": "diagram",
@@ -29889,7 +30068,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11093
   },
   {
    "en": "differ",
@@ -29918,7 +30098,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11094
   },
   {
    "en": "diligent",
@@ -29937,7 +30118,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11095
   },
   {
    "en": "directly",
@@ -29996,7 +30178,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11096
   },
   {
    "en": "disappoint",
@@ -30005,7 +30188,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11097
   },
   {
    "en": "disappointment",
@@ -30034,7 +30218,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11098
   },
   {
    "en": "disc",
@@ -30055,7 +30240,8 @@
     "noun"
    ],
    "from": "disc jockey/disk jockey",
-   "status": "pending"
+   "status": "matched",
+   "i": 11099
   },
   {
    "en": "discomfort",
@@ -30064,7 +30250,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11100
   },
   {
    "en": "discount",
@@ -30083,7 +30270,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11101
   },
   {
    "en": "discovery",
@@ -30132,7 +30320,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11102
   },
   {
    "en": "disk",
@@ -30153,7 +30342,8 @@
     "noun"
    ],
    "from": "disc jockey/disk jockey",
-   "status": "pending"
+   "status": "matched",
+   "i": 11103
   },
   {
    "en": "dissolve",
@@ -30162,7 +30352,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11104
   },
   {
    "en": "distance",
@@ -30201,7 +30392,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11105
   },
   {
    "en": "distinguish",
@@ -30250,7 +30442,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11106
   },
   {
    "en": "dive",
@@ -30270,7 +30463,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11107
   },
   {
    "en": "diverse",
@@ -30309,7 +30503,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11108
   },
   {
    "en": "DJ",
@@ -30318,7 +30513,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11109
   },
   {
    "en": "doc",
@@ -30357,7 +30553,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11110
   },
   {
    "en": "dot",
@@ -30376,7 +30573,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11111
   },
   {
    "en": "doze",
@@ -30385,7 +30583,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11112
   },
   {
    "en": "dozen",
@@ -30425,7 +30624,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11113
   },
   {
    "en": "drunk",
@@ -30454,7 +30654,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11114
   },
   {
    "en": "dump",
@@ -30474,7 +30675,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11115
   },
   {
    "en": "dusty",
@@ -30483,7 +30685,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11116
   },
   {
    "en": "duty",
@@ -30502,7 +30705,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11117
   },
   {
    "en": "duvet",
@@ -30511,7 +30715,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11118
   },
   {
    "en": "dynasty",
@@ -30530,7 +30735,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11119
   },
   {
    "en": "eagerness",
@@ -30539,7 +30745,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11120
   },
   {
    "en": "earache",
@@ -30548,7 +30755,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11121
   },
   {
    "en": "earnest",
@@ -30557,7 +30765,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11122
   },
   {
    "en": "eastern",
@@ -30577,7 +30786,8 @@
     "adjective"
    ],
    "from": "easygoing/easy-going",
-   "status": "pending"
+   "status": "matched",
+   "i": 11123
   },
   {
    "en": "easygoing",
@@ -30587,7 +30797,8 @@
     "adjective"
    ],
    "from": "easygoing/easy-going",
-   "status": "pending"
+   "status": "matched",
+   "i": 11124
   },
   {
    "en": "eco",
@@ -30666,7 +30877,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11125
   },
   {
    "en": "edge",
@@ -30735,7 +30947,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11126
   },
   {
    "en": "election",
@@ -30814,7 +31027,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11127
   },
   {
    "en": "embarrassed",
@@ -30833,7 +31047,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11128
   },
   {
    "en": "emerge",
@@ -30872,7 +31087,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11129
   },
   {
    "en": "emperor",
@@ -30902,7 +31118,8 @@
     "verb"
    ],
    "from": "emphasize/emphasize",
-   "status": "pending"
+   "status": "matched",
+   "i": 11130
   },
   {
    "en": "empire",
@@ -30941,7 +31158,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11131
   },
   {
    "en": "encounter",
@@ -30961,7 +31179,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11132
   },
   {
    "en": "encouraging",
@@ -30981,7 +31200,8 @@
     "noun"
    ],
    "from": "encyclopedia/encyclopaedia",
-   "status": "pending"
+   "status": "matched",
+   "i": 11133
   },
   {
    "en": "encyclopedia",
@@ -31001,7 +31221,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11134
   },
   {
    "en": "endless",
@@ -31080,7 +31301,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11135
   },
   {
    "en": "enjoyable",
@@ -31099,7 +31321,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11136
   },
   {
    "en": "enquiry",
@@ -31119,7 +31342,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11137
   },
   {
    "en": "ensure",
@@ -31138,7 +31362,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11138
   },
   {
    "en": "entertainer",
@@ -31147,7 +31372,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11139
   },
   {
    "en": "enthusiasm",
@@ -31156,7 +31382,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11140
   },
   {
    "en": "enthusiast",
@@ -31165,7 +31392,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11141
   },
   {
    "en": "enthusiastic",
@@ -31224,7 +31452,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11142
   },
   {
    "en": "equal",
@@ -31336,7 +31565,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11143
   },
   {
    "en": "evenly",
@@ -31345,7 +31575,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11144
   },
   {
    "en": "eventually",
@@ -31405,7 +31636,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11145
   },
   {
    "en": "excellence",
@@ -31434,7 +31666,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11146
   },
   {
    "en": "excitedly",
@@ -31443,7 +31676,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11147
   },
   {
    "en": "excitement",
@@ -31472,7 +31706,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11148
   },
   {
    "en": "existence",
@@ -31563,7 +31798,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11149
   },
   {
    "en": "extend",
@@ -31582,7 +31818,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11150
   },
   {
    "en": "extent",
@@ -31641,7 +31878,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11151
   },
   {
    "en": "eyesight",
@@ -31650,7 +31888,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11152
   },
   {
    "en": "face to face",
@@ -31659,7 +31898,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11153
   },
   {
    "en": "face-to-face",
@@ -31668,7 +31908,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11154
   },
   {
    "en": "facility",
@@ -31687,7 +31928,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11155
   },
   {
    "en": "failure",
@@ -31707,7 +31949,8 @@
     "adjective",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11156
   },
   {
    "en": "faithful",
@@ -31756,7 +31999,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11157
   },
   {
    "en": "farewell",
@@ -31765,7 +32009,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11158
   },
   {
    "en": "farming",
@@ -31784,7 +32029,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11159
   },
   {
    "en": "farther",
@@ -31793,7 +32039,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11160
   },
   {
    "en": "farthest",
@@ -31802,7 +32049,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11161
   },
   {
    "en": "fascinate",
@@ -31811,7 +32059,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11162
   },
   {
    "en": "fashionable",
@@ -31820,7 +32069,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11163
   },
   {
    "en": "fasten",
@@ -31829,7 +32079,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11164
   },
   {
    "en": "favorable",
@@ -31839,7 +32090,8 @@
     "adjective"
    ],
    "from": "favorable/favourable",
-   "status": "pending"
+   "status": "matched",
+   "i": 11165
   },
   {
    "en": "favourable",
@@ -31849,7 +32101,8 @@
     "adjective"
    ],
    "from": "favorable/favourable",
-   "status": "pending"
+   "status": "matched",
+   "i": 11166
   },
   {
    "en": "fax",
@@ -31869,7 +32122,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11167
   },
   {
    "en": "fellow",
@@ -31899,7 +32153,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11168
   },
   {
    "en": "fetch",
@@ -31908,7 +32163,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11169
   },
   {
    "en": "feverishly",
@@ -31917,7 +32173,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11170
   },
   {
    "en": "fifth",
@@ -31946,7 +32203,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11171
   },
   {
    "en": "filter",
@@ -32006,7 +32264,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11172
   },
   {
    "en": "firefighter",
@@ -32015,7 +32274,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11173
   },
   {
    "en": "firework",
@@ -32024,7 +32284,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11174
   },
   {
    "en": "firm",
@@ -32045,7 +32306,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11175
   },
   {
    "en": "first floor",
@@ -32064,7 +32326,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11176
   },
   {
    "en": "first-floor",
@@ -32073,7 +32336,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11177
   },
   {
    "en": "fitness",
@@ -32126,7 +32390,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11178
   },
   {
    "en": "flow",
@@ -32156,7 +32421,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11179
   },
   {
    "en": "fluently",
@@ -32165,7 +32431,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11180
   },
   {
    "en": "flunk",
@@ -32174,7 +32441,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11181
   },
   {
    "en": "flute",
@@ -32183,7 +32451,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11182
   },
   {
    "en": "fold",
@@ -32213,7 +32482,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11183
   },
   {
    "en": "fondness",
@@ -32222,7 +32492,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11184
   },
   {
    "en": "foolish",
@@ -32231,7 +32502,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11185
   },
   {
    "en": "foot",
@@ -32270,7 +32542,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11186
   },
   {
    "en": "forgive",
@@ -32279,7 +32552,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11187
   },
   {
    "en": "formal",
@@ -32298,7 +32572,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11188
   },
   {
    "en": "format",
@@ -32388,7 +32663,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11189
   },
   {
    "en": "freely",
@@ -32407,7 +32683,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11190
   },
   {
    "en": "freezing",
@@ -32416,7 +32693,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11191
   },
   {
    "en": "frequency",
@@ -32455,7 +32733,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11192
   },
   {
    "en": "friendliness",
@@ -32464,7 +32743,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11193
   },
   {
    "en": "fright",
@@ -32473,7 +32753,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11194
   },
   {
    "en": "frost",
@@ -32513,7 +32794,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11195
   },
   {
    "en": "frying pan",
@@ -32522,7 +32804,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11196
   },
   {
    "en": "fuel",
@@ -32541,7 +32824,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11197
   },
   {
    "en": "full-time",
@@ -32551,7 +32835,8 @@
     "adjective",
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11198
   },
   {
    "en": "fund",
@@ -32591,7 +32876,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11199
   },
   {
    "en": "furthermore",
@@ -32610,7 +32896,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11200
   },
   {
    "en": "fuss",
@@ -32619,7 +32906,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11201
   },
   {
    "en": "gain",
@@ -32639,7 +32927,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11202
   },
   {
    "en": "gallon",
@@ -32648,7 +32937,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11203
   },
   {
    "en": "gaol",
@@ -32658,7 +32948,8 @@
     "noun"
    ],
    "from": "jail/gaol",
-   "status": "pending"
+   "status": "matched",
+   "i": 11204
   },
   {
    "en": "gap",
@@ -32687,7 +32978,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11205
   },
   {
    "en": "gay",
@@ -32706,7 +32998,8 @@
    "pos": [
     "interjection"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11206
   },
   {
    "en": "gene",
@@ -32776,7 +33069,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11207
   },
   {
    "en": "genetics",
@@ -32855,7 +33149,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11208
   },
   {
    "en": "giggle",
@@ -32864,7 +33159,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11209
   },
   {
    "en": "ginger",
@@ -32883,7 +33179,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11210
   },
   {
    "en": "glance",
@@ -32903,7 +33200,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11211
   },
   {
    "en": "glimpse",
@@ -32912,7 +33210,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11212
   },
   {
    "en": "glint",
@@ -32922,7 +33221,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11213
   },
   {
    "en": "global",
@@ -32941,7 +33241,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11214
   },
   {
    "en": "glory",
@@ -32960,7 +33261,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11215
   },
   {
    "en": "goddess",
@@ -32969,7 +33271,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11216
   },
   {
    "en": "golfer",
@@ -32978,7 +33281,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11217
   },
   {
    "en": "goodness",
@@ -32987,7 +33291,8 @@
    "pos": [
     "interjection"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11218
   },
   {
    "en": "goods",
@@ -33016,7 +33321,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11219
   },
   {
    "en": "gossip",
@@ -33036,7 +33342,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11220
   },
   {
    "en": "governor",
@@ -33055,7 +33362,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11221
   },
   {
    "en": "grab",
@@ -33074,7 +33382,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11222
   },
   {
    "en": "graduation",
@@ -33134,7 +33443,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11223
   },
   {
    "en": "grave",
@@ -33153,7 +33463,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11224
   },
   {
    "en": "greenhouse",
@@ -33193,7 +33504,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11225
   },
   {
    "en": "ground floor",
@@ -33202,7 +33514,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11226
   },
   {
    "en": "grouping",
@@ -33211,7 +33524,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11227
   },
   {
    "en": "growth",
@@ -33282,7 +33596,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11228
   },
   {
    "en": "gym",
@@ -33301,7 +33616,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11229
   },
   {
    "en": "habitat",
@@ -33330,7 +33646,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11230
   },
   {
    "en": "hammer",
@@ -33350,7 +33667,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11231
   },
   {
    "en": "handball",
@@ -33359,7 +33677,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11232
   },
   {
    "en": "handkerchief",
@@ -33368,7 +33687,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11233
   },
   {
    "en": "handshake",
@@ -33377,7 +33697,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11234
   },
   {
    "en": "handwriting",
@@ -33386,7 +33707,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11235
   },
   {
    "en": "handy",
@@ -33451,7 +33773,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11236
   },
   {
    "en": "hardship",
@@ -33460,7 +33783,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11237
   },
   {
    "en": "harness",
@@ -33469,7 +33793,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11238
   },
   {
    "en": "hasty",
@@ -33478,7 +33803,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11239
   },
   {
    "en": "hatch",
@@ -33487,7 +33813,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11240
   },
   {
    "en": "hatred",
@@ -33496,7 +33823,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11241
   },
   {
    "en": "haunt",
@@ -33506,7 +33834,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11242
   },
   {
    "en": "haven",
@@ -33546,7 +33875,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11243
   },
   {
    "en": "healing",
@@ -33585,7 +33915,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11244
   },
   {
    "en": "hearty",
@@ -33624,7 +33955,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11245
   },
   {
    "en": "heel",
@@ -33663,7 +33995,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11246
   },
   {
    "en": "herd",
@@ -33672,7 +34005,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11247
   },
   {
    "en": "hesitate",
@@ -33681,7 +34015,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11248
   },
   {
    "en": "hidden",
@@ -33741,7 +34076,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11249
   },
   {
    "en": "historic",
@@ -33820,7 +34156,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11250
   },
   {
    "en": "honeymoon",
@@ -33829,7 +34166,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11251
   },
   {
    "en": "hop",
@@ -33848,7 +34186,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11252
   },
   {
    "en": "hopefully",
@@ -33867,7 +34206,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11253
   },
   {
    "en": "horizon",
@@ -33906,7 +34246,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11254
   },
   {
    "en": "hostel",
@@ -33935,7 +34276,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11255
   },
   {
    "en": "huge",
@@ -33964,7 +34306,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11256
   },
   {
    "en": "humor",
@@ -33984,7 +34327,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11257
   },
   {
    "en": "humour",
@@ -33994,7 +34338,8 @@
     "noun"
    ],
    "from": "humor/humour",
-   "status": "pending"
+   "status": "matched",
+   "i": 11258
   },
   {
    "en": "hunger",
@@ -34024,7 +34369,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11259
   },
   {
    "en": "hut",
@@ -34033,7 +34379,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11260
   },
   {
    "en": "ice hockey",
@@ -34042,7 +34389,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11261
   },
   {
    "en": "ice skating",
@@ -34051,7 +34399,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11262
   },
   {
    "en": "identity",
@@ -34070,7 +34419,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11263
   },
   {
    "en": "idiom",
@@ -34079,7 +34429,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11264
   },
   {
    "en": "idol",
@@ -34108,7 +34459,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11265
   },
   {
    "en": "illness",
@@ -34127,7 +34479,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11266
   },
   {
    "en": "imaginary",
@@ -34136,7 +34489,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11267
   },
   {
    "en": "imitate",
@@ -34145,7 +34499,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11268
   },
   {
    "en": "immediate",
@@ -34174,7 +34529,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11269
   },
   {
    "en": "immigration",
@@ -34193,7 +34549,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11270
   },
   {
    "en": "impression",
@@ -34222,7 +34579,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11271
   },
   {
    "en": "improvement",
@@ -34271,7 +34629,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11272
   },
   {
    "en": "incorrect",
@@ -34310,7 +34669,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11273
   },
   {
    "en": "indefinite article",
@@ -34319,7 +34679,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11274
   },
   {
    "en": "independent",
@@ -34348,7 +34709,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11275
   },
   {
    "en": "individual",
@@ -34368,7 +34730,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11276
   },
   {
    "en": "industrial",
@@ -34397,7 +34760,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11277
   },
   {
    "en": "infection",
@@ -34416,7 +34780,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11278
   },
   {
    "en": "inform",
@@ -34455,7 +34820,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11279
   },
   {
    "en": "inhale",
@@ -34464,7 +34830,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11280
   },
   {
    "en": "initial",
@@ -34494,7 +34861,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11281
   },
   {
    "en": "injury",
@@ -34523,7 +34891,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11282
   },
   {
    "en": "innocent",
@@ -34542,7 +34911,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11283
   },
   {
    "en": "inquiry",
@@ -34562,7 +34932,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11284
   },
   {
    "en": "inscribe",
@@ -34571,7 +34942,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11285
   },
   {
    "en": "inscription",
@@ -34600,7 +34972,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11286
   },
   {
    "en": "inspection",
@@ -34619,7 +34992,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11287
   },
   {
    "en": "instal",
@@ -34629,7 +35003,8 @@
     "verb"
    ],
    "from": "install/instal",
-   "status": "pending"
+   "status": "matched",
+   "i": 11288
   },
   {
    "en": "install",
@@ -34659,7 +35034,8 @@
    "pos": [
     "preposition"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11289
   },
   {
    "en": "institute",
@@ -34749,7 +35125,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11290
   },
   {
    "en": "interact",
@@ -34788,7 +35165,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11291
   },
   {
    "en": "internal",
@@ -34817,7 +35195,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11292
   },
   {
    "en": "interval",
@@ -34836,7 +35215,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11293
   },
   {
    "en": "introduction",
@@ -34895,7 +35275,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11294
   },
   {
    "en": "involve",
@@ -34935,7 +35316,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11295
   },
   {
    "en": "irregular",
@@ -34944,7 +35326,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11296
   },
   {
    "en": "irritate",
@@ -34953,7 +35336,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11297
   },
   {
    "en": "isle",
@@ -35054,7 +35438,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11298
   },
   {
    "en": "jogging",
@@ -35063,7 +35448,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11299
   },
   {
    "en": "joint",
@@ -35104,7 +35490,8 @@
     "noun"
    ],
    "from": "judgment/judgement",
-   "status": "pending"
+   "status": "matched",
+   "i": 11300
   },
   {
    "en": "judgment",
@@ -35124,7 +35511,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11301
   },
   {
    "en": "juicy",
@@ -35143,7 +35531,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11302
   },
   {
    "en": "jungle",
@@ -35172,7 +35561,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11303
   },
   {
    "en": "keyboard",
@@ -35211,7 +35601,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11304
   },
   {
    "en": "knit",
@@ -35270,7 +35661,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11305
   },
   {
    "en": "largely",
@@ -35299,7 +35691,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11306
   },
   {
    "en": "lately",
@@ -35318,7 +35711,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11307
   },
   {
    "en": "launch",
@@ -35338,7 +35732,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11308
   },
   {
    "en": "lay",
@@ -35409,7 +35804,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11309
   },
   {
    "en": "lecture",
@@ -35458,7 +35854,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11310
   },
   {
    "en": "lettuce",
@@ -35467,7 +35864,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11311
   },
   {
    "en": "liar",
@@ -35476,7 +35874,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11312
   },
   {
    "en": "liberate",
@@ -35485,7 +35884,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11313
   },
   {
    "en": "liberation",
@@ -35494,7 +35894,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11314
   },
   {
    "en": "librarian",
@@ -35513,7 +35914,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11315
   },
   {
    "en": "lifelong",
@@ -35522,7 +35924,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11316
   },
   {
    "en": "lift",
@@ -35552,7 +35955,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11317
   },
   {
    "en": "lightning",
@@ -35571,7 +35975,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11318
   },
   {
    "en": "limit",
@@ -35611,7 +36016,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11319
   },
   {
    "en": "link",
@@ -35743,7 +36149,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11320
   },
   {
    "en": "loss",
@@ -35783,7 +36190,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11321
   },
   {
    "en": "lovingly",
@@ -35792,7 +36200,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11322
   },
   {
    "en": "loyal",
@@ -35811,7 +36220,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11323
   },
   {
    "en": "luggage",
@@ -35861,7 +36271,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11324
   },
   {
    "en": "magnificent",
@@ -35880,7 +36291,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11325
   },
   {
    "en": "main",
@@ -35939,7 +36351,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11326
   },
   {
    "en": "maple",
@@ -35998,7 +36411,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11327
   },
   {
    "en": "mass",
@@ -36028,7 +36442,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11328
   },
   {
    "en": "mathematics",
@@ -36129,7 +36544,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11329
   },
   {
    "en": "meditation",
@@ -36169,7 +36585,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11330
   },
   {
    "en": "membership",
@@ -36188,7 +36605,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11331
   },
   {
    "en": "memorise",
@@ -36198,7 +36616,8 @@
     "verb"
    ],
    "from": "memorize/memorise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11332
   },
   {
    "en": "memorize",
@@ -36208,7 +36627,8 @@
     "verb"
    ],
    "from": "memorize/memorise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11333
   },
   {
    "en": "mend",
@@ -36217,7 +36637,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11334
   },
   {
    "en": "mental",
@@ -36236,7 +36657,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11335
   },
   {
    "en": "merchant",
@@ -36286,7 +36708,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11336
   },
   {
    "en": "messy",
@@ -36295,7 +36718,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11337
   },
   {
    "en": "middle-aged",
@@ -36304,7 +36728,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11338
   },
   {
    "en": "mild",
@@ -36344,7 +36769,8 @@
     "verb"
    ],
    "from": "minimize/minimise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11339
   },
   {
    "en": "minimize",
@@ -36415,7 +36841,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11340
   },
   {
    "en": "miserable",
@@ -36424,7 +36851,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11341
   },
   {
    "en": "misery",
@@ -36433,7 +36861,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11342
   },
   {
    "en": "mislead",
@@ -36442,7 +36871,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11343
   },
   {
    "en": "mission",
@@ -36461,7 +36891,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11344
   },
   {
    "en": "misunderstanding",
@@ -36470,7 +36901,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11345
   },
   {
    "en": "mixing bowl",
@@ -36479,7 +36911,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11346
   },
   {
    "en": "modal",
@@ -36489,7 +36922,8 @@
     "noun"
    ],
    "from": "modal verb/modal",
-   "status": "pending"
+   "status": "matched",
+   "i": 11347
   },
   {
    "en": "modal verb",
@@ -36499,7 +36933,8 @@
     "noun"
    ],
    "from": "modal verb/modal",
-   "status": "pending"
+   "status": "matched",
+   "i": 11348
   },
   {
    "en": "modem",
@@ -36548,7 +36983,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11349
   },
   {
    "en": "monitor",
@@ -36568,7 +37004,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11350
   },
   {
    "en": "monster",
@@ -36629,7 +37066,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11351
   },
   {
    "en": "moss",
@@ -36648,7 +37086,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11352
   },
   {
    "en": "motionless",
@@ -36657,7 +37096,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11353
   },
   {
    "en": "motivate",
@@ -36666,7 +37106,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11354
   },
   {
    "en": "motivation",
@@ -36685,7 +37126,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11355
   },
   {
    "en": "motor",
@@ -36714,7 +37156,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11356
   },
   {
    "en": "mount",
@@ -36734,7 +37177,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11357
   },
   {
    "en": "mourn",
@@ -36743,7 +37187,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11358
   },
   {
    "en": "movement",
@@ -36772,7 +37217,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11359
   },
   {
    "en": "murderer",
@@ -36781,7 +37227,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11360
   },
   {
    "en": "muscle",
@@ -36800,7 +37247,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11361
   },
   {
    "en": "mutual",
@@ -36839,7 +37287,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11362
   },
   {
    "en": "nap",
@@ -36848,7 +37297,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11363
   },
   {
    "en": "narrate",
@@ -36857,7 +37307,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11364
   },
   {
    "en": "narrative",
@@ -36896,7 +37347,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11365
   },
   {
    "en": "naturally",
@@ -36915,7 +37367,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11366
   },
   {
    "en": "nearby",
@@ -36945,7 +37398,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11367
   },
   {
    "en": "needle",
@@ -36964,7 +37418,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11368
   },
   {
    "en": "negotiation",
@@ -36995,7 +37450,8 @@
     "noun"
    ],
    "from": "neighborhood/neighbourhood",
-   "status": "pending"
+   "status": "matched",
+   "i": 11369
   },
   {
    "en": "nephew",
@@ -37014,7 +37470,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11370
   },
   {
    "en": "ness",
@@ -37023,7 +37480,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11371
   },
   {
    "en": "network",
@@ -37062,7 +37520,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11372
   },
   {
    "en": "newcomer",
@@ -37071,7 +37530,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11373
   },
   {
    "en": "newly",
@@ -37090,7 +37550,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11374
   },
   {
    "en": "next-door",
@@ -37099,7 +37560,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11375
   },
   {
    "en": "nickname",
@@ -37149,7 +37611,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11376
   },
   {
    "en": "none",
@@ -37168,7 +37631,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11377
   },
   {
    "en": "nonsense",
@@ -37177,7 +37641,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11378
   },
   {
    "en": "nor",
@@ -37217,7 +37682,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11379
   },
   {
    "en": "northern",
@@ -37247,7 +37713,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11380
   },
   {
    "en": "noticeable",
@@ -37256,7 +37723,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11381
   },
   {
    "en": "noticeboard",
@@ -37265,7 +37733,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11382
   },
   {
    "en": "notion",
@@ -37294,7 +37763,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11383
   },
   {
    "en": "nowhere",
@@ -37323,7 +37793,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11384
   },
   {
    "en": "numerous",
@@ -37383,7 +37854,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11385
   },
   {
    "en": "objective",
@@ -37423,7 +37895,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11386
   },
   {
    "en": "obtain",
@@ -37493,7 +37966,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11387
   },
   {
    "en": "occur",
@@ -37552,7 +38026,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11388
   },
   {
    "en": "on to",
@@ -37562,7 +38037,8 @@
     "preposition"
    ],
    "from": "onto/on to",
-   "status": "pending"
+   "status": "matched",
+   "i": 11389
   },
   {
    "en": "oneself",
@@ -37571,7 +38047,8 @@
    "pos": [
     "pronoun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11390
   },
   {
    "en": "onstage",
@@ -37580,7 +38057,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11391
   },
   {
    "en": "onto",
@@ -37630,7 +38108,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11392
   },
   {
    "en": "oppression",
@@ -37639,7 +38118,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11393
   },
   {
    "en": "option",
@@ -37689,7 +38169,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11394
   },
   {
    "en": "ordinary",
@@ -37739,7 +38220,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11395
   },
   {
    "en": "organization",
@@ -37779,7 +38261,8 @@
    "pos": [
     "modal auxiliary"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11396
   },
   {
    "en": "out-of-date",
@@ -37788,7 +38271,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11397
   },
   {
    "en": "outdoor",
@@ -37827,7 +38311,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11398
   },
   {
    "en": "outline",
@@ -37857,7 +38342,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11399
   },
   {
    "en": "outweigh",
@@ -37866,7 +38352,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11400
   },
   {
    "en": "overcome",
@@ -37885,7 +38372,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11401
   },
   {
    "en": "overnight",
@@ -37905,7 +38393,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11402
   },
   {
    "en": "overwhelming",
@@ -37914,7 +38403,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11403
   },
   {
    "en": "overwork",
@@ -37923,7 +38413,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11404
   },
   {
    "en": "owe",
@@ -37932,7 +38423,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11405
   },
   {
    "en": "owing",
@@ -37941,7 +38433,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11406
   },
   {
    "en": "oxygen",
@@ -37992,7 +38485,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11407
   },
   {
    "en": "paid",
@@ -38051,7 +38545,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11408
   },
   {
    "en": "paradise",
@@ -38071,7 +38566,8 @@
     "verb"
    ],
    "from": "paralyze/paralyse",
-   "status": "pending"
+   "status": "matched",
+   "i": 11409
   },
   {
    "en": "paralyze",
@@ -38081,7 +38577,8 @@
     "verb"
    ],
    "from": "paralyze/paralyse",
-   "status": "pending"
+   "status": "matched",
+   "i": 11410
   },
   {
    "en": "parcel",
@@ -38120,7 +38617,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11411
   },
   {
    "en": "part-time",
@@ -38130,7 +38628,8 @@
     "adjective",
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11412
   },
   {
    "en": "partial",
@@ -38169,7 +38668,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11413
   },
   {
    "en": "particularly",
@@ -38259,7 +38759,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11414
   },
   {
    "en": "peanut",
@@ -38268,7 +38769,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11415
   },
   {
    "en": "peculiar",
@@ -38277,7 +38779,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11416
   },
   {
    "en": "penniless",
@@ -38286,7 +38789,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11417
   },
   {
    "en": "penny",
@@ -38316,7 +38820,8 @@
     "noun"
    ],
    "from": "percent/per cent",
-   "status": "pending"
+   "status": "matched",
+   "i": 11418
   },
   {
    "en": "percent",
@@ -38356,7 +38861,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11419
   },
   {
    "en": "permit",
@@ -38385,7 +38891,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11420
   },
   {
    "en": "persuasive",
@@ -38394,7 +38901,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11421
   },
   {
    "en": "phantom",
@@ -38464,7 +38972,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11422
   },
   {
    "en": "phrasal verb",
@@ -38473,7 +38982,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11423
   },
   {
    "en": "phrase",
@@ -38512,7 +39022,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11424
   },
   {
    "en": "pillow",
@@ -38542,7 +39053,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11425
   },
   {
    "en": "pipe",
@@ -38591,7 +39103,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11426
   },
   {
    "en": "plug",
@@ -38611,7 +39124,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11427
   },
   {
    "en": "poet",
@@ -38681,7 +39195,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11428
   },
   {
    "en": "politician",
@@ -38690,7 +39205,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11429
   },
   {
    "en": "politics",
@@ -38729,7 +39245,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11430
   },
   {
    "en": "pork",
@@ -38768,7 +39285,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11431
   },
   {
    "en": "possess",
@@ -38797,7 +39315,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11432
   },
   {
    "en": "possibility",
@@ -38826,7 +39345,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11433
   },
   {
    "en": "pot",
@@ -38969,7 +39489,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11434
   },
   {
    "en": "preparation",
@@ -38998,7 +39519,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11435
   },
   {
    "en": "preschool",
@@ -39007,7 +39529,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11436
   },
   {
    "en": "prescription",
@@ -39117,7 +39640,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11437
   },
   {
    "en": "primitive",
@@ -39126,7 +39650,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11438
   },
   {
    "en": "principle",
@@ -39216,7 +39741,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11439
   },
   {
    "en": "procrastination",
@@ -39286,7 +39812,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11440
   },
   {
    "en": "prominent",
@@ -39325,7 +39852,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11441
   },
   {
    "en": "proof",
@@ -39394,7 +39922,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11442
   },
   {
    "en": "prosperous",
@@ -39403,7 +39932,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11443
   },
   {
    "en": "protect",
@@ -39473,7 +40003,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11444
   },
   {
    "en": "provided",
@@ -39512,7 +40043,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11445
   },
   {
    "en": "publicly",
@@ -39541,7 +40073,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11446
   },
   {
    "en": "pump",
@@ -39580,7 +40113,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11447
   },
   {
    "en": "puppy",
@@ -39609,7 +40143,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11448
   },
   {
    "en": "purse",
@@ -39639,7 +40174,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11449
   },
   {
    "en": "qualified",
@@ -39678,7 +40214,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11450
   },
   {
    "en": "questionnaire",
@@ -39779,7 +40316,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11451
   },
   {
    "en": "rainforest",
@@ -39848,7 +40386,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11452
   },
   {
    "en": "ration",
@@ -39857,7 +40396,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11453
   },
   {
    "en": "rational",
@@ -39886,7 +40426,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11454
   },
   {
    "en": "realistic",
@@ -39915,7 +40456,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11455
   },
   {
    "en": "reasonable",
@@ -39934,7 +40476,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11456
   },
   {
    "en": "recall",
@@ -39964,7 +40507,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11457
   },
   {
    "en": "reclaim",
@@ -39973,7 +40517,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11458
   },
   {
    "en": "recognise",
@@ -39983,7 +40528,8 @@
     "verb"
    ],
    "from": "recognize/recognise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11459
   },
   {
    "en": "recognize",
@@ -40043,7 +40589,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11460
   },
   {
    "en": "recycling",
@@ -40112,7 +40659,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11461
   },
   {
    "en": "refund",
@@ -40131,7 +40679,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11462
   },
   {
    "en": "refuse",
@@ -40151,7 +40700,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11463
   },
   {
    "en": "regard",
@@ -40293,7 +40843,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11464
   },
   {
    "en": "reliable",
@@ -40383,7 +40934,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11465
   },
   {
    "en": "remote control",
@@ -40392,7 +40944,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11466
   },
   {
    "en": "remove",
@@ -40421,7 +40974,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11467
   },
   {
    "en": "repeatedly",
@@ -40430,7 +40984,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11468
   },
   {
    "en": "representative",
@@ -40520,7 +41075,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11469
   },
   {
    "en": "reservation",
@@ -40623,7 +41179,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11470
   },
   {
    "en": "respond",
@@ -40713,7 +41270,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11471
   },
   {
    "en": "retrospect",
@@ -40722,7 +41280,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11472
   },
   {
    "en": "reunification",
@@ -40731,7 +41290,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11473
   },
   {
    "en": "reunify",
@@ -40740,7 +41300,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11474
   },
   {
    "en": "revise",
@@ -40749,7 +41310,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11475
   },
   {
    "en": "revision",
@@ -40779,7 +41341,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11476
   },
   {
    "en": "rid",
@@ -40799,7 +41362,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11477
   },
   {
    "en": "ridiculous",
@@ -40850,7 +41414,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11478
   },
   {
    "en": "robot",
@@ -40879,7 +41444,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11479
   },
   {
    "en": "rough",
@@ -40918,7 +41484,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11480
   },
   {
    "en": "rudely",
@@ -40927,7 +41494,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11481
   },
   {
    "en": "runaway",
@@ -40936,7 +41504,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11482
   },
   {
    "en": "runway",
@@ -40945,7 +41514,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11483
   },
   {
    "en": "sacred",
@@ -40964,7 +41534,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11484
   },
   {
    "en": "safari",
@@ -40984,7 +41555,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11485
   },
   {
    "en": "safely",
@@ -41013,7 +41585,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11486
   },
   {
    "en": "salmon",
@@ -41042,7 +41615,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11487
   },
   {
    "en": "satellite",
@@ -41081,7 +41655,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11488
   },
   {
    "en": "saucer",
@@ -41090,7 +41665,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11489
   },
   {
    "en": "scan",
@@ -41110,7 +41686,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11490
   },
   {
    "en": "scared",
@@ -41139,7 +41716,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11491
   },
   {
    "en": "scenic",
@@ -41178,7 +41756,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11492
   },
   {
    "en": "schoolteacher",
@@ -41187,7 +41766,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11493
   },
   {
    "en": "science fiction",
@@ -41206,7 +41786,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11494
   },
   {
    "en": "scope",
@@ -41267,7 +41848,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11495
   },
   {
    "en": "seaweed",
@@ -41276,7 +41858,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11496
   },
   {
    "en": "second-hand",
@@ -41286,7 +41869,8 @@
     "adjective",
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11497
   },
   {
    "en": "secondary school",
@@ -41295,7 +41879,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11498
   },
   {
    "en": "secretly",
@@ -41304,7 +41889,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11499
   },
   {
    "en": "secure",
@@ -41334,7 +41920,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11500
   },
   {
    "en": "select",
@@ -41364,7 +41951,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11501
   },
   {
    "en": "selfish",
@@ -41383,7 +41971,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11502
   },
   {
    "en": "separation",
@@ -41513,7 +42102,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11503
   },
   {
    "en": "sex",
@@ -41532,7 +42122,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11504
   },
   {
    "en": "shallow",
@@ -41541,7 +42132,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11505
   },
   {
    "en": "shame",
@@ -41560,7 +42152,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11506
   },
   {
    "en": "sharp",
@@ -41641,7 +42234,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11507
   },
   {
    "en": "shiver",
@@ -41650,7 +42244,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11508
   },
   {
    "en": "shocked",
@@ -41669,7 +42264,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11509
   },
   {
    "en": "shopper",
@@ -41688,7 +42284,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11510
   },
   {
    "en": "shortly",
@@ -41707,7 +42304,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11511
   },
   {
    "en": "sickness",
@@ -41716,7 +42314,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11512
   },
   {
    "en": "sidewalk",
@@ -41725,7 +42324,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11513
   },
   {
    "en": "sigh",
@@ -41735,7 +42335,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11514
   },
   {
    "en": "signal",
@@ -41775,7 +42376,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11515
   },
   {
    "en": "silent",
@@ -41804,7 +42406,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11516
   },
   {
    "en": "similarly",
@@ -41823,7 +42426,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11517
   },
   {
    "en": "simultaneously",
@@ -41872,7 +42476,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11518
   },
   {
    "en": "sleeve",
@@ -41923,7 +42528,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11519
   },
   {
    "en": "slope",
@@ -41952,7 +42558,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11520
   },
   {
    "en": "sneeze",
@@ -41962,7 +42569,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11521
   },
   {
    "en": "snowboard",
@@ -41981,7 +42589,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11522
   },
   {
    "en": "soap opera",
@@ -41990,7 +42599,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11523
   },
   {
    "en": "social networking",
@@ -41999,7 +42609,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11524
   },
   {
    "en": "socially",
@@ -42008,7 +42619,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11525
   },
   {
    "en": "soil",
@@ -42048,7 +42660,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11526
   },
   {
    "en": "sometime",
@@ -42057,7 +42670,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11527
   },
   {
    "en": "sometimes",
@@ -42076,7 +42690,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11528
   },
   {
    "en": "sophomore",
@@ -42085,7 +42700,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11529
   },
   {
    "en": "sore",
@@ -42094,7 +42710,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11530
   },
   {
    "en": "sorrow",
@@ -42103,7 +42720,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11531
   },
   {
    "en": "sort",
@@ -42133,7 +42751,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11532
   },
   {
    "en": "southeast",
@@ -42184,7 +42803,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11533
   },
   {
    "en": "specialise",
@@ -42194,7 +42814,8 @@
     "verb"
    ],
    "from": "specialize/specialise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11534
   },
   {
    "en": "specialist",
@@ -42214,7 +42835,8 @@
     "verb"
    ],
    "from": "specialize/specialise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11535
   },
   {
    "en": "specially",
@@ -42303,7 +42925,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11536
   },
   {
    "en": "spiral",
@@ -42312,7 +42935,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11537
   },
   {
    "en": "spirit",
@@ -42351,7 +42975,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11538
   },
   {
    "en": "sponsor",
@@ -42381,7 +43006,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11539
   },
   {
    "en": "stable",
@@ -42400,7 +43026,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11540
   },
   {
    "en": "standard",
@@ -42420,7 +43047,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11541
   },
   {
    "en": "status",
@@ -42439,7 +43067,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11542
   },
   {
    "en": "steady",
@@ -42478,7 +43107,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11543
   },
   {
    "en": "stem",
@@ -42528,7 +43158,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11544
   },
   {
    "en": "storage",
@@ -42547,7 +43178,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11545
   },
   {
    "en": "storyteller",
@@ -42556,7 +43188,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11546
   },
   {
    "en": "strain",
@@ -42576,7 +43209,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11547
   },
   {
    "en": "strategic",
@@ -42595,7 +43229,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11548
   },
   {
    "en": "strawberry",
@@ -42604,7 +43239,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11549
   },
   {
    "en": "stream",
@@ -42645,7 +43281,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11550
   },
   {
    "en": "stressful",
@@ -42654,7 +43291,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11551
   },
   {
    "en": "stretch",
@@ -42673,7 +43311,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11552
   },
   {
    "en": "strip",
@@ -42693,7 +43332,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11553
   },
   {
    "en": "struggle",
@@ -42753,7 +43393,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11554
   },
   {
    "en": "stun",
@@ -42762,7 +43403,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11555
   },
   {
    "en": "stunning",
@@ -42801,7 +43443,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11556
   },
   {
    "en": "submarine",
@@ -42810,7 +43453,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11557
   },
   {
    "en": "substantial",
@@ -42870,7 +43514,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11558
   },
   {
    "en": "suicide",
@@ -42890,7 +43535,8 @@
     "verb"
    ],
    "from": "summarize/summarise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11559
   },
   {
    "en": "summarize",
@@ -42900,7 +43546,8 @@
     "verb"
    ],
    "from": "summarize/summarise",
-   "status": "pending"
+   "status": "matched",
+   "i": 11560
   },
   {
    "en": "summit",
@@ -42919,7 +43566,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11561
   },
   {
    "en": "sundial",
@@ -42928,7 +43576,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11562
   },
   {
    "en": "sunrise",
@@ -42967,7 +43616,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11563
   },
   {
    "en": "supply",
@@ -42987,7 +43637,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11564
   },
   {
    "en": "supportive",
@@ -42996,7 +43647,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11565
   },
   {
    "en": "suppose",
@@ -43015,7 +43667,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11566
   },
   {
    "en": "surely",
@@ -43064,7 +43717,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11567
   },
   {
    "en": "surround",
@@ -43124,7 +43778,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11568
   },
   {
    "en": "swarm",
@@ -43133,7 +43788,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11569
   },
   {
    "en": "swear",
@@ -43142,7 +43798,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11570
   },
   {
    "en": "sweatshirt",
@@ -43151,7 +43808,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11571
   },
   {
    "en": "swell",
@@ -43160,7 +43818,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11572
   },
   {
    "en": "swimmer",
@@ -43169,7 +43828,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11573
   },
   {
    "en": "switch",
@@ -43189,7 +43849,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11574
   },
   {
    "en": "sword",
@@ -43218,7 +43879,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11575
   },
   {
    "en": "syndrome",
@@ -43258,7 +43920,8 @@
     "noun"
    ],
    "from": "takeoff/take-off",
-   "status": "pending"
+   "status": "matched",
+   "i": 11576
   },
   {
    "en": "takeaway",
@@ -43267,7 +43930,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11577
   },
   {
    "en": "takeoff",
@@ -43277,7 +43941,8 @@
     "noun"
    ],
    "from": "takeoff/take-off",
-   "status": "pending"
+   "status": "matched",
+   "i": 11578
   },
   {
    "en": "tale",
@@ -43306,7 +43971,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11579
   },
   {
    "en": "tank",
@@ -43376,7 +44042,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11580
   },
   {
    "en": "teamwork",
@@ -43385,7 +44052,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11581
   },
   {
    "en": "tease",
@@ -43395,7 +44063,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11582
   },
   {
    "en": "technique",
@@ -43444,7 +44113,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11583
   },
   {
    "en": "teller",
@@ -43453,7 +44123,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11584
   },
   {
    "en": "temper",
@@ -43463,7 +44134,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11585
   },
   {
    "en": "temporary",
@@ -43482,7 +44154,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11586
   },
   {
    "en": "tend",
@@ -43501,7 +44174,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11587
   },
   {
    "en": "tense",
@@ -43511,7 +44185,8 @@
     "adjective",
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11588
   },
   {
    "en": "tension",
@@ -43560,7 +44235,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11589
   },
   {
    "en": "terrific",
@@ -43579,7 +44255,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11590
   },
   {
    "en": "terror",
@@ -43608,7 +44285,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11591
   },
   {
    "en": "theft",
@@ -43638,7 +44316,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11592
   },
   {
    "en": "thorough",
@@ -43707,7 +44386,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11593
   },
   {
    "en": "thunder",
@@ -43726,7 +44406,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11594
   },
   {
    "en": "thus",
@@ -43746,7 +44427,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11595
   },
   {
    "en": "tide",
@@ -43765,7 +44447,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11596
   },
   {
    "en": "tightly",
@@ -43774,7 +44457,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11597
   },
   {
    "en": "tile",
@@ -43833,7 +44517,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11598
   },
   {
    "en": "tissue",
@@ -43892,7 +44577,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11599
   },
   {
    "en": "total",
@@ -43953,7 +44639,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11600
   },
   {
    "en": "traditionally",
@@ -43962,7 +44649,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11601
   },
   {
    "en": "traffic jam",
@@ -43971,7 +44659,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11602
   },
   {
    "en": "tragedy",
@@ -43990,7 +44679,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11603
   },
   {
    "en": "trail",
@@ -44041,7 +44731,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11604
   },
   {
    "en": "translate",
@@ -44091,7 +44782,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11605
   },
   {
    "en": "treat",
@@ -44191,7 +44883,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11606
   },
   {
    "en": "trustworthy",
@@ -44210,7 +44903,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11607
   },
   {
    "en": "tuna",
@@ -44219,7 +44913,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11608
   },
   {
    "en": "turbulence",
@@ -44228,7 +44923,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11609
   },
   {
    "en": "turning",
@@ -44308,7 +45004,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11610
   },
   {
    "en": "unbelievable",
@@ -44317,7 +45014,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11611
   },
   {
    "en": "uncertainty",
@@ -44336,7 +45034,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11612
   },
   {
    "en": "uncontrollable",
@@ -44345,7 +45044,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11613
   },
   {
    "en": "uncover",
@@ -44354,7 +45054,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11614
   },
   {
    "en": "underage",
@@ -44363,7 +45064,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11615
   },
   {
    "en": "undergo",
@@ -44372,7 +45074,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11616
   },
   {
    "en": "underneath",
@@ -44382,7 +45085,8 @@
     "adverb",
     "preposition"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11617
   },
   {
    "en": "underpants",
@@ -44391,7 +45095,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11618
   },
   {
    "en": "undo",
@@ -44410,7 +45115,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11619
   },
   {
    "en": "unemployed",
@@ -44419,7 +45125,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11620
   },
   {
    "en": "unemployment",
@@ -44448,7 +45155,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11621
   },
   {
    "en": "unfairly",
@@ -44457,7 +45165,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11622
   },
   {
    "en": "unfit",
@@ -44466,7 +45175,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11623
   },
   {
    "en": "unfold",
@@ -44475,7 +45185,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11624
   },
   {
    "en": "unfortunate",
@@ -44494,7 +45205,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11625
   },
   {
    "en": "unheard",
@@ -44503,7 +45215,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11626
   },
   {
    "en": "unify",
@@ -44512,7 +45225,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11627
   },
   {
    "en": "uninterested",
@@ -44521,7 +45235,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11628
   },
   {
    "en": "uninteresting",
@@ -44530,7 +45245,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11629
   },
   {
    "en": "union",
@@ -44559,7 +45275,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11630
   },
   {
    "en": "universe",
@@ -44598,7 +45315,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11631
   },
   {
    "en": "unpack",
@@ -44607,7 +45325,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11632
   },
   {
    "en": "unpredictable",
@@ -44616,7 +45335,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11633
   },
   {
    "en": "unrelated",
@@ -44625,7 +45345,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11634
   },
   {
    "en": "untidy",
@@ -44634,7 +45355,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11635
   },
   {
    "en": "unusually",
@@ -44643,7 +45365,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11636
   },
   {
    "en": "unwanted",
@@ -44662,7 +45385,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11637
   },
   {
    "en": "up-to-date",
@@ -44671,7 +45395,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11638
   },
   {
    "en": "update",
@@ -44691,7 +45416,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11639
   },
   {
    "en": "upload",
@@ -44720,7 +45446,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11640
   },
   {
    "en": "urge",
@@ -44770,7 +45497,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11641
   },
   {
    "en": "vacancy",
@@ -44789,7 +45517,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11642
   },
   {
    "en": "vain",
@@ -44798,7 +45527,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11643
   },
   {
    "en": "valuable",
@@ -44888,7 +45618,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11644
   },
   {
    "en": "vessel",
@@ -44907,7 +45638,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11645
   },
   {
    "en": "via",
@@ -44936,7 +45668,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11646
   },
   {
    "en": "victim",
@@ -44965,7 +45698,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11647
   },
   {
    "en": "viewpoint",
@@ -44974,7 +45708,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11648
   },
   {
    "en": "violence",
@@ -44993,7 +45728,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11649
   },
   {
    "en": "virtual",
@@ -45062,7 +45798,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11650
   },
   {
    "en": "vivid",
@@ -45071,7 +45808,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11651
   },
   {
    "en": "vividly",
@@ -45080,7 +45818,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11652
   },
   {
    "en": "volcano",
@@ -45120,7 +45859,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11653
   },
   {
    "en": "voyage",
@@ -45169,7 +45909,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11654
   },
   {
    "en": "warmth",
@@ -45178,7 +45919,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11655
   },
   {
    "en": "warn",
@@ -45187,7 +45929,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11656
   },
   {
    "en": "warning",
@@ -45226,7 +45969,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11657
   },
   {
    "en": "waste",
@@ -45247,7 +45991,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11658
   },
   {
    "en": "waterfall",
@@ -45277,7 +46022,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11659
   },
   {
    "en": "weapon",
@@ -45296,7 +46042,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11660
   },
   {
    "en": "webcam",
@@ -45305,7 +46052,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11661
   },
   {
    "en": "weird",
@@ -45324,7 +46072,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11662
   },
   {
    "en": "westward",
@@ -45333,7 +46082,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11663
   },
   {
    "en": "wetland",
@@ -45394,7 +46144,8 @@
     "determiner",
     "pronoun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11664
   },
   {
    "en": "whisper",
@@ -45404,7 +46155,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11665
   },
   {
    "en": "whistle",
@@ -45414,7 +46166,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11666
   },
   {
    "en": "whoever",
@@ -45423,7 +46176,8 @@
    "pos": [
     "pronoun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11667
   },
   {
    "en": "widespread",
@@ -45452,7 +46206,8 @@
    "pos": [
     "adverb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11668
   },
   {
    "en": "willingness",
@@ -45461,7 +46216,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11669
   },
   {
    "en": "windscreen",
@@ -45470,7 +46226,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11670
   },
   {
    "en": "windsurfing",
@@ -45479,7 +46236,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11671
   },
   {
    "en": "wing",
@@ -45509,7 +46267,8 @@
    "pos": [
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11672
   },
   {
    "en": "witness",
@@ -45599,7 +46358,8 @@
    "pos": [
     "adjective"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11673
   },
   {
    "en": "worthy",
@@ -45660,7 +46420,8 @@
    "pos": [
     "noun"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11674
   },
   {
    "en": "written",
@@ -45680,7 +46441,8 @@
     "noun",
     "verb"
    ],
-   "status": "pending"
+   "status": "matched",
+   "i": 11675
   },
   {
    "en": "yoga",

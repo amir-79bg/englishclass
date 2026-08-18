@@ -88665,5 +88665,7174 @@
   "ex": "It's too windy to fly a kite today.",
   "exfa": "امروز هوا آن‌قدر بادی است که نمی‌شود بادبادک پرواز داد.",
   "ipa": "/ˈwɪndi/"
+ },
+ {
+  "i": 10914,
+  "en": "abandon",
+  "fa": "رها کردن",
+  "cat": "verb",
+  "ex": "The sailors had to abandon the sinking ship.",
+  "exfa": "ملوانان مجبور شدند کشتی در حال غرق شدن را رها کنند.",
+  "ipa": "/əˈbændən/",
+  "syn": [
+   "desert",
+   "leave",
+   "forsake"
+  ]
+ },
+ {
+  "i": 10915,
+  "en": "abnormal",
+  "fa": "غیرعادی",
+  "cat": "adj",
+  "ex": "The doctor said her heart rate was abnormal.",
+  "exfa": "دکتر گفت ضربان قلب او غیرعادی بود.",
+  "ipa": "/æbˈnɔːrməl/",
+  "syn": [
+   "unusual",
+   "irregular"
+  ]
+ },
+ {
+  "i": 10916,
+  "en": "aboard",
+  "fa": "سوار بر (هواپیما، کشتی یا قطار)",
+  "cat": "travel",
+  "ex": "Passengers were asked to come aboard before the plane took off.",
+  "exfa": "از مسافران خواسته شد قبل از پرواز هواپیما سوار شوند.",
+  "ipa": "/əˈbɔːrd/"
+ },
+ {
+  "i": 10917,
+  "en": "aborigine",
+  "fa": "بومی استرالیا",
+  "cat": "people",
+  "ex": "Many Aborigine communities in Australia still practice traditional customs.",
+  "exfa": "بسیاری از جوامع بومی استرالیا هنوز رسوم سنتی خود را انجام می‌دهند."
+ },
+ {
+  "i": 10918,
+  "en": "absorb",
+  "fa": "جذب کردن",
+  "cat": "verb",
+  "ex": "A sponge can absorb a lot of water quickly.",
+  "exfa": "یک اسفنج می‌تواند مقدار زیادی آب را به سرعت جذب کند.",
+  "ipa": "/əbˈzɔːrb/",
+  "syn": [
+   "soak up",
+   "take in"
+  ]
+ },
+ {
+  "i": 10919,
+  "en": "abundance",
+  "fa": "فراوانی",
+  "cat": "general",
+  "ex": "This year's harvest produced an abundance of fresh fruit.",
+  "exfa": "برداشت امسال فراوانی میوه تازه به همراه داشت.",
+  "ipa": "/əˈbʌndəns/"
+ },
+ {
+  "i": 10920,
+  "en": "abundant",
+  "fa": "فراوان",
+  "cat": "adj",
+  "ex": "Fish were abundant in the river before the factory opened.",
+  "exfa": "قبل از افتتاح کارخانه، ماهی‌ها در رودخانه فراوان بودند.",
+  "ipa": "/əˈbʌndənt/",
+  "syn": [
+   "plentiful",
+   "ample"
+  ]
+ },
+ {
+  "i": 10921,
+  "en": "accidental",
+  "fa": "تصادفی",
+  "cat": "adj",
+  "ex": "The fire was accidental, not caused by anyone on purpose.",
+  "exfa": "آتش‌سوزی تصادفی بود، نه اینکه کسی عمداً آن را ایجاد کرده باشد.",
+  "ipa": "/ˌæksɪˈdentl/",
+  "syn": [
+   "unintentional",
+   "unplanned"
+  ]
+ },
+ {
+  "i": 10922,
+  "en": "accidentally",
+  "fa": "تصادفاً",
+  "cat": "adv",
+  "ex": "I accidentally deleted the whole file this morning.",
+  "exfa": "امروز صبح تصادفاً کل فایل را پاک کردم.",
+  "ipa": "/ˌæksɪˈdentli/"
+ },
+ {
+  "i": 10923,
+  "en": "accompany",
+  "fa": "همراهی کردن",
+  "cat": "verb",
+  "ex": "My father will accompany me to the interview tomorrow.",
+  "exfa": "پدرم فردا مرا در مصاحبه همراهی خواهد کرد.",
+  "ipa": "/əˈkʌmpəni/",
+  "syn": [
+   "escort",
+   "go with"
+  ]
+ },
+ {
+  "i": 10924,
+  "en": "according to",
+  "fa": "طبق، بر اساس",
+  "cat": "phrase",
+  "ex": "According to the weather forecast, it will rain all weekend.",
+  "exfa": "طبق پیش‌بینی هواشناسی، تمام آخر هفته باران خواهد بارید."
+ },
+ {
+  "i": 10925,
+  "en": "accuse",
+  "fa": "متهم کردن",
+  "cat": "crime",
+  "ex": "They accused him of stealing money from the office.",
+  "exfa": "آنها او را به دزدیدن پول از اداره متهم کردند.",
+  "ipa": "/əˈkjuːz/",
+  "syn": [
+   "blame",
+   "charge"
+  ]
+ },
+ {
+  "i": 10926,
+  "en": "accustom",
+  "fa": "عادت دادن",
+  "cat": "verb",
+  "ex": "It took her weeks to accustom herself to the cold climate.",
+  "exfa": "چند هفته طول کشید تا او خودش را به آب‌وهوای سرد عادت دهد."
+ },
+ {
+  "i": 10927,
+  "en": "ache",
+  "fa": "درد کردن",
+  "cat": "body",
+  "ex": "My legs ache after running for an hour.",
+  "exfa": "بعد از یک ساعت دویدن، پاهایم درد می‌کند.",
+  "ipa": "/eɪk/"
+ },
+ {
+  "i": 10928,
+  "en": "acknowledgement",
+  "fa": "تشکر و قدردانی",
+  "cat": "general",
+  "ex": "She wrote a short acknowledgement to thank everyone who helped with the book.",
+  "exfa": "او یک تقدیر و تشکر کوتاه نوشت تا از همه کسانی که در نوشتن کتاب کمک کرده بودند تشکر کند."
+ },
+ {
+  "i": 10929,
+  "en": "acknowledgment",
+  "fa": "تأییدیه، رسید دریافت",
+  "cat": "general",
+  "ex": "The company sent an acknowledgment of receipt for my complaint letter.",
+  "exfa": "شرکت برای نامه شکایت من یک تأییدیه دریافت ارسال کرد."
+ },
+ {
+  "i": 10930,
+  "en": "acquaintance",
+  "fa": "آشنا",
+  "cat": "people",
+  "ex": "He's just a business acquaintance, not a close friend.",
+  "exfa": "او فقط یک آشنای کاری است، نه یک دوست صمیمی.",
+  "ipa": "/əˈkweɪntəns/"
+ },
+ {
+  "i": 10931,
+  "en": "ad",
+  "fa": "آگهی، تبلیغ",
+  "cat": "general",
+  "ex": "I saw an ad for cheap flights to Spain online.",
+  "exfa": "یک آگهی برای پروازهای ارزان به اسپانیا آنلاین دیدم.",
+  "ipa": "/æd/"
+ },
+ {
+  "i": 10932,
+  "en": "addressee",
+  "fa": "گیرنده (نامه یا بسته)",
+  "cat": "talk",
+  "ex": "Make sure the addressee's name is spelled correctly on the envelope.",
+  "exfa": "مطمئن شوید نام گیرنده روی پاکت درست نوشته شده است."
+ },
+ {
+  "i": 10933,
+  "en": "admiration",
+  "fa": "تحسین",
+  "cat": "feeling",
+  "ex": "The whole team looked at her with admiration after she solved the problem.",
+  "exfa": "بعد از اینکه او مشکل را حل کرد، کل تیم با تحسین به او نگاه کردند.",
+  "ipa": "/ˌædməˈreɪʃn/",
+  "syn": [
+   "respect",
+   "esteem"
+  ]
+ },
+ {
+  "i": 10934,
+  "en": "adorable",
+  "fa": "دوست‌داشتنی",
+  "cat": "adj",
+  "ex": "Their new puppy is absolutely adorable.",
+  "exfa": "توله‌سگ جدیدشان واقعاً دوست‌داشتنی است.",
+  "ipa": "/əˈdɔːrəbl/",
+  "syn": [
+   "cute",
+   "lovely"
+  ]
+ },
+ {
+  "i": 10935,
+  "en": "adverb",
+  "fa": "قید",
+  "cat": "school",
+  "ex": "In the sentence 'she runs quickly', the word 'quickly' is an adverb.",
+  "exfa": "در جمله «او سریع می‌دود»، کلمه «سریع» یک قید است.",
+  "ipa": "/ˈædvɜːrb/"
+ },
+ {
+  "i": 10936,
+  "en": "adverbial",
+  "fa": "قیدی",
+  "cat": "school",
+  "ex": "'In the morning' is an adverbial phrase that shows when something happens.",
+  "exfa": "«در صبح» یک عبارت قیدی است که نشان می‌دهد چیزی چه زمانی اتفاق می‌افتد."
+ },
+ {
+  "i": 10937,
+  "en": "adviser",
+  "fa": "مشاور",
+  "cat": "work",
+  "ex": "She works as a financial adviser for small businesses.",
+  "exfa": "او به‌عنوان مشاور مالی برای کسب‌وکارهای کوچک کار می‌کند.",
+  "ipa": "/ədˈvaɪzər/",
+  "syn": [
+   "consultant",
+   "counselor"
+  ]
+ },
+ {
+  "i": 10938,
+  "en": "aerobics",
+  "fa": "ایروبیک",
+  "cat": "sport",
+  "ex": "My mother goes to an aerobics class every Tuesday evening.",
+  "exfa": "مادرم هر سه‌شنبه عصر به کلاس ایروبیک می‌رود.",
+  "ipa": "/eəˈroʊbɪks/"
+ },
+ {
+  "i": 10939,
+  "en": "affection",
+  "fa": "محبت",
+  "cat": "feeling",
+  "ex": "He showed great affection for his younger sister.",
+  "exfa": "او محبت زیادی نسبت به خواهر کوچک‌ترش نشان داد.",
+  "ipa": "/əˈfekʃn/",
+  "syn": [
+   "fondness",
+   "warmth"
+  ]
+ },
+ {
+  "i": 10940,
+  "en": "afterward",
+  "fa": "بعداً",
+  "cat": "time",
+  "ex": "We had dinner and went to the cinema afterward.",
+  "exfa": "ما شام خوردیم و بعداً به سینما رفتیم.",
+  "ipa": "/ˈæftərwərd/",
+  "syn": [
+   "later",
+   "subsequently"
+  ]
+ },
+ {
+  "i": 10941,
+  "en": "alcoholic",
+  "fa": "الکلی",
+  "cat": "food",
+  "ex": "Beer and wine are alcoholic drinks.",
+  "exfa": "آبجو و شراب نوشیدنی‌های الکلی هستند.",
+  "ipa": "/ˌælkəˈhɔːlɪk/"
+ },
+ {
+  "i": 10942,
+  "en": "allergic",
+  "fa": "آلرژیک، حساس (به چیزی)",
+  "cat": "health",
+  "ex": "I'm allergic to peanuts, so I always check food labels.",
+  "exfa": "من به بادام‌زمینی حساسیت دارم، بنابراین همیشه برچسب مواد غذایی را چک می‌کنم.",
+  "ipa": "/əˈlɜːrdʒɪk/"
+ },
+ {
+  "i": 10943,
+  "en": "aloud",
+  "fa": "با صدای بلند",
+  "cat": "talk",
+  "ex": "The teacher asked him to read the poem aloud.",
+  "exfa": "معلم از او خواست شعر را با صدای بلند بخواند.",
+  "ipa": "/əˈlaʊd/"
+ },
+ {
+  "i": 10944,
+  "en": "alphabet",
+  "fa": "الفبا",
+  "cat": "school",
+  "ex": "Children usually learn the alphabet before they start reading books.",
+  "exfa": "بچه‌ها معمولاً قبل از شروع به خواندن کتاب، الفبا را یاد می‌گیرند.",
+  "ipa": "/ˈælfəbet/"
+ },
+ {
+  "i": 10945,
+  "en": "altogether",
+  "fa": "رویهم‌رفته",
+  "cat": "adv",
+  "ex": "The trip cost us three hundred dollars altogether.",
+  "exfa": "این سفر رویهم‌رفته سیصد دلار برای ما هزینه داشت.",
+  "ipa": "/ˌɔːltəˈgeðər/",
+  "syn": [
+   "in total",
+   "completely"
+  ]
+ },
+ {
+  "i": 10946,
+  "en": "ambulance",
+  "fa": "آمبولانس",
+  "cat": "health",
+  "ex": "Someone called an ambulance as soon as the man collapsed.",
+  "exfa": "به محض اینکه آن مرد از حال رفت، کسی آمبولانس خبر کرد.",
+  "ipa": "/ˈæmbjələns/"
+ },
+ {
+  "i": 10947,
+  "en": "amusing",
+  "fa": "سرگرم‌کننده",
+  "cat": "adj",
+  "ex": "He told us an amusing story about his trip to Japan.",
+  "exfa": "او داستانی سرگرم‌کننده درباره سفرش به ژاپن برای ما تعریف کرد.",
+  "ipa": "/əˈmjuːzɪŋ/",
+  "syn": [
+   "funny",
+   "entertaining"
+  ]
+ },
+ {
+  "i": 10948,
+  "en": "analyse",
+  "fa": "تحلیل کردن",
+  "cat": "verb",
+  "ex": "Scientists will analyse the water samples next week.",
+  "exfa": "دانشمندان هفته آینده نمونه‌های آب را تحلیل خواهند کرد.",
+  "ipa": "/ˈænəlaɪz/",
+  "syn": [
+   "examine",
+   "study"
+  ]
+ },
+ {
+  "i": 10949,
+  "en": "annoyance",
+  "fa": "آزردگی، دلخوری",
+  "cat": "feeling",
+  "ex": "To his annoyance, the bus was twenty minutes late again.",
+  "exfa": "در کمال ناراحتی او، اتوبوس دوباره بیست دقیقه تأخیر داشت.",
+  "syn": [
+   "irritation"
+  ]
+ },
+ {
+  "i": 10950,
+  "en": "antonym",
+  "fa": "متضاد",
+  "cat": "school",
+  "ex": "'Hot' is the antonym of 'cold'.",
+  "exfa": "کلمه «hot» متضاد کلمه «cold» است."
+ },
+ {
+  "i": 10951,
+  "en": "anxiously",
+  "fa": "با اضطراب",
+  "cat": "feeling",
+  "ex": "She waited anxiously outside the hospital room for news.",
+  "exfa": "او با اضطراب بیرون اتاق بیمارستان منتظر خبر بود.",
+  "ipa": "/ˈæŋkʃəsli/",
+  "syn": [
+   "nervously",
+   "worriedly"
+  ]
+ },
+ {
+  "i": 10952,
+  "en": "anyhow",
+  "fa": "به هر حال",
+  "cat": "adv",
+  "ex": "It was raining, but we went for a walk anyhow.",
+  "exfa": "باران می‌بارید، اما ما به هر حال به پیاده‌روی رفتیم.",
+  "ipa": "/ˈenihaʊ/",
+  "syn": [
+   "anyway",
+   "regardless"
+  ]
+ },
+ {
+  "i": 10953,
+  "en": "ape",
+  "fa": "میمون (بزرگ و بدون دم)",
+  "cat": "animal",
+  "ex": "Gorillas and chimpanzees are both types of ape.",
+  "exfa": "گوریل‌ها و شامپانزه‌ها هر دو نوعی میمون بزرگ هستند.",
+  "ipa": "/eɪp/"
+ },
+ {
+  "i": 10954,
+  "en": "apology",
+  "fa": "عذرخواهی",
+  "cat": "talk",
+  "ex": "He owes her an apology for missing the wedding.",
+  "exfa": "او به‌خاطر غایب بودن در عروسی، به او عذرخواهی بدهکار است.",
+  "ipa": "/əˈpɒlədʒi/"
+ },
+ {
+  "i": 10955,
+  "en": "appetite",
+  "fa": "اشتها",
+  "cat": "food",
+  "ex": "Swimming always gives me a big appetite.",
+  "exfa": "شنا کردن همیشه اشتهایم را زیاد می‌کند.",
+  "ipa": "/ˈæpɪtaɪt/",
+  "syn": [
+   "hunger"
+  ]
+ },
+ {
+  "i": 10956,
+  "en": "applaud",
+  "fa": "تشویق کردن (با دست زدن)",
+  "cat": "general",
+  "ex": "The audience applauded loudly at the end of the concert.",
+  "exfa": "تماشاگران در پایان کنسرت با صدای بلند تشویق کردند.",
+  "ipa": "/əˈplɔːd/",
+  "syn": [
+   "clap",
+   "cheer"
+  ]
+ },
+ {
+  "i": 10957,
+  "en": "applause",
+  "fa": "تشویق (با کف زدن)",
+  "cat": "general",
+  "ex": "The singer bowed as the applause continued for several minutes.",
+  "exfa": "خواننده تعظیم کرد در حالی که تشویق چند دقیقه ادامه داشت.",
+  "ipa": "/əˈplɔːz/"
+ },
+ {
+  "i": 10958,
+  "en": "appoint",
+  "fa": "منصوب کردن",
+  "cat": "work",
+  "ex": "The board decided to appoint her as the new manager.",
+  "exfa": "هیئت‌مدیره تصمیم گرفت او را به‌عنوان مدیر جدید منصوب کند.",
+  "ipa": "/əˈpɔɪnt/"
+ },
+ {
+  "i": 10959,
+  "en": "arithmetic",
+  "fa": "حساب (ریاضیات پایه)",
+  "cat": "school",
+  "ex": "We spent the whole lesson practicing simple arithmetic.",
+  "exfa": "ما کل کلاس را به تمرین حساب ساده گذراندیم.",
+  "ipa": "/əˈrɪθmətɪk/"
+ },
+ {
+  "i": 10960,
+  "en": "ashamed",
+  "fa": "شرمنده",
+  "cat": "feeling",
+  "ex": "I felt ashamed after I lied to my best friend.",
+  "exfa": "بعد از اینکه به بهترین دوستم دروغ گفتم، احساس شرمندگی کردم.",
+  "ipa": "/əˈʃeɪmd/",
+  "syn": [
+   "embarrassed",
+   "guilty"
+  ]
+ },
+ {
+  "i": 10961,
+  "en": "aspirin",
+  "fa": "آسپرین",
+  "cat": "health",
+  "ex": "Take an aspirin if your headache gets worse.",
+  "exfa": "اگر سردردت بدتر شد، یک آسپرین بخور.",
+  "ipa": "/ˈæsprɪn/"
+ },
+ {
+  "i": 10962,
+  "en": "astronomer",
+  "fa": "ستاره‌شناس",
+  "cat": "work",
+  "ex": "The astronomer discovered a new star using a powerful telescope.",
+  "exfa": "آن ستاره‌شناس با استفاده از یک تلسکوپ قدرتمند یک ستاره جدید کشف کرد.",
+  "ipa": "/əˈstrɒnəmər/"
+ },
+ {
+  "i": 10963,
+  "en": "attain",
+  "fa": "به دست آوردن",
+  "cat": "verb",
+  "ex": "It took years of hard work for her to attain her goal.",
+  "exfa": "چندین سال کار سخت طول کشید تا او به هدفش برسد.",
+  "ipa": "/əˈteɪn/",
+  "syn": [
+   "achieve",
+   "reach"
+  ]
+ },
+ {
+  "i": 10964,
+  "en": "auxiliary",
+  "fa": "کمکی",
+  "cat": "school",
+  "ex": "'Have', 'be', and 'do' are common auxiliary verbs in English.",
+  "exfa": "«have»، «be» و «do» فعل‌های کمکی رایج در زبان انگلیسی هستند.",
+  "ipa": "/ɔːgˈzɪliəri/"
+ },
+ {
+  "i": 10965,
+  "en": "awkward",
+  "fa": "ناجور، معذب",
+  "cat": "feeling",
+  "ex": "There was an awkward silence after he forgot her name.",
+  "exfa": "بعد از اینکه او اسمش را فراموش کرد، سکوتی ناجور برقرار شد.",
+  "ipa": "/ˈɔːkwərd/",
+  "syn": [
+   "uncomfortable",
+   "clumsy"
+  ]
+ },
+ {
+  "i": 10966,
+  "en": "babysit",
+  "fa": "از بچه مراقبت کردن",
+  "cat": "work",
+  "ex": "Can you babysit my kids on Friday night?",
+  "exfa": "می‌توانی جمعه شب از بچه‌های من نگهداری کنی؟",
+  "ipa": "/ˈbeɪbisɪt/"
+ },
+ {
+  "i": 10967,
+  "en": "babysitter",
+  "fa": "پرستار بچه",
+  "cat": "work",
+  "ex": "We hired a babysitter so we could go out for dinner.",
+  "exfa": "ما یک پرستار بچه استخدام کردیم تا بتوانیم برای شام بیرون برویم.",
+  "ipa": "/ˈbeɪbisɪtər/",
+  "syn": [
+   "nanny",
+   "childminder"
+  ]
+ },
+ {
+  "i": 10968,
+  "en": "backache",
+  "fa": "کمردرد",
+  "cat": "body",
+  "ex": "Sitting at a desk all day gave him a terrible backache.",
+  "exfa": "نشستن پشت میز تمام روز باعث کمردرد شدیدی برایش شد.",
+  "ipa": "/ˈbækeɪk/"
+ },
+ {
+  "i": 10969,
+  "en": "backpacking",
+  "fa": "کوله‌گردی",
+  "cat": "travel",
+  "ex": "They spent the summer backpacking across South America.",
+  "exfa": "آنها تابستان را در سرتاسر آمریکای جنوبی به کوله‌گردی گذراندند."
+ },
+ {
+  "i": 10970,
+  "en": "baggage",
+  "fa": "چمدان، بار سفر",
+  "cat": "travel",
+  "ex": "Please keep your baggage with you at all times in the airport.",
+  "exfa": "لطفاً همیشه در فرودگاه چمدان‌های خود را همراه داشته باشید.",
+  "ipa": "/ˈbægɪdʒ/",
+  "syn": [
+   "luggage"
+  ]
+ },
+ {
+  "i": 10971,
+  "en": "bakery",
+  "fa": "نانوایی",
+  "cat": "food",
+  "ex": "The smell of fresh bread came from the bakery on the corner.",
+  "exfa": "بوی نان تازه از نانوایی سر خیابان می‌آمد.",
+  "ipa": "/ˈbeɪkəri/"
+ },
+ {
+  "i": 10972,
+  "en": "bandage",
+  "fa": "باند (زخم)",
+  "cat": "health",
+  "ex": "The nurse wrapped a bandage around his injured ankle.",
+  "exfa": "پرستار دور مچ پای آسیب‌دیده‌اش باند پیچید.",
+  "ipa": "/ˈbændɪdʒ/",
+  "syn": [
+   "dressing"
+  ]
+ },
+ {
+  "i": 10973,
+  "en": "bank account",
+  "fa": "حساب بانکی",
+  "cat": "money",
+  "ex": "She opened a bank account as soon as she got her first job.",
+  "exfa": "او به محض گرفتن اولین شغلش یک حساب بانکی باز کرد."
+ },
+ {
+  "i": 10974,
+  "en": "bark",
+  "fa": "پارس کردن",
+  "cat": "animal",
+  "ex": "The dog barked loudly at every stranger who passed the gate.",
+  "exfa": "سگ با صدای بلند به هر غریبه‌ای که از دروازه رد می‌شد پارس می‌کرد.",
+  "ipa": "/bɑːrk/"
+ },
+ {
+  "i": 10975,
+  "en": "barman",
+  "fa": "متصدی بار",
+  "cat": "work",
+  "ex": "The barman mixed us two cocktails while we waited.",
+  "exfa": "متصدی بار در حالی که منتظر بودیم دو کوکتل برایمان درست کرد."
+ },
+ {
+  "i": 10976,
+  "en": "bathe",
+  "fa": "حمام دادن، حمام کردن",
+  "cat": "body",
+  "ex": "She gently bathed the baby in warm water.",
+  "exfa": "او نوزاد را به‌آرامی در آب گرم حمام داد.",
+  "ipa": "/beɪð/"
+ },
+ {
+  "i": 10977,
+  "en": "beard",
+  "fa": "ریش",
+  "cat": "body",
+  "ex": "He hasn't shaved in months, so his beard is very long now.",
+  "exfa": "او ماه‌هاست ریشش را نتراشیده، پس ریشش الان خیلی بلند است.",
+  "ipa": "/bɪrd/"
+ },
+ {
+  "i": 10978,
+  "en": "because of",
+  "fa": "به‌خاطر، به‌دلیل",
+  "cat": "phrase",
+  "ex": "The match was cancelled because of heavy rain.",
+  "exfa": "مسابقه به‌خاطر باران شدید لغو شد."
+ },
+ {
+  "i": 10979,
+  "en": "bedside",
+  "fa": "کنار تخت",
+  "cat": "health",
+  "ex": "He sat by his wife's bedside all night after the operation.",
+  "exfa": "او بعد از عمل، تمام شب کنار تخت همسرش نشست."
+ },
+ {
+  "i": 10980,
+  "en": "beloved",
+  "fa": "محبوب، عزیز",
+  "cat": "feeling",
+  "ex": "The old man never stopped talking about his beloved wife.",
+  "exfa": "آن پیرمرد هیچ‌وقت از صحبت کردن درباره همسر محبوبش دست نکشید.",
+  "syn": [
+   "dear",
+   "cherished"
+  ]
+ },
+ {
+  "i": 10981,
+  "en": "bilingual",
+  "fa": "دوزبانه",
+  "cat": "people",
+  "ex": "Growing up in Canada, she became fully bilingual in English and French.",
+  "exfa": "او که در کانادا بزرگ شده بود، کاملاً به انگلیسی و فرانسوی دوزبانه شد.",
+  "ipa": "/baɪˈlɪŋgwəl/"
+ },
+ {
+  "i": 10982,
+  "en": "bin",
+  "fa": "سطل زباله",
+  "cat": "house",
+  "ex": "Please put the empty bottle in the bin.",
+  "exfa": "لطفاً بطری خالی را در سطل زباله بینداز.",
+  "ipa": "/bɪn/"
+ },
+ {
+  "i": 10983,
+  "en": "biochemistry",
+  "fa": "بیوشیمی",
+  "cat": "school",
+  "ex": "She is studying biochemistry at university this year.",
+  "exfa": "او امسال در دانشگاه بیوشیمی می‌خواند."
+ },
+ {
+  "i": 10984,
+  "en": "bleed",
+  "fa": "خونریزی کردن",
+  "cat": "health",
+  "ex": "His hand started to bleed after he cut it with a knife.",
+  "exfa": "بعد از اینکه دستش را با چاقو برید، شروع به خونریزی کرد.",
+  "ipa": "/bliːd/"
+ },
+ {
+  "i": 10985,
+  "en": "blessing",
+  "fa": "نعمت",
+  "cat": "general",
+  "ex": "Good health is a real blessing that people often take for granted.",
+  "exfa": "سلامتی نعمتی واقعی است که مردم اغلب آن را بدیهی می‌پندارند.",
+  "syn": [
+   "gift",
+   "boon"
+  ]
+ },
+ {
+  "i": 10986,
+  "en": "blush",
+  "fa": "سرخ شدن (از خجالت)",
+  "cat": "feeling",
+  "ex": "She blushed when the teacher praised her in front of the class.",
+  "exfa": "وقتی معلم جلوی کلاس از او تعریف کرد، سرخ شد.",
+  "ipa": "/blʌʃ/"
+ },
+ {
+  "i": 10987,
+  "en": "boast",
+  "fa": "لاف زدن",
+  "cat": "talk",
+  "ex": "He always boasts about how fast his new car is.",
+  "exfa": "او همیشه لاف می‌زند که ماشین جدیدش چقدر سریع است.",
+  "ipa": "/boʊst/",
+  "syn": [
+   "brag",
+   "show off"
+  ]
+ },
+ {
+  "i": 10988,
+  "en": "boldly",
+  "fa": "جسورانه",
+  "cat": "adv",
+  "ex": "She boldly asked the manager for a pay rise.",
+  "exfa": "او با شهامت از مدیر درخواست افزایش حقوق کرد.",
+  "syn": [
+   "bravely",
+   "fearlessly"
+  ]
+ },
+ {
+  "i": 10989,
+  "en": "bore",
+  "fa": "کسل کردن",
+  "cat": "feeling",
+  "ex": "His long speeches always bore the audience.",
+  "exfa": "سخنرانی‌های طولانی او همیشه حضار را کسل می‌کند.",
+  "ipa": "/bɔːr/",
+  "syn": [
+   "tire",
+   "weary"
+  ]
+ },
+ {
+  "i": 10990,
+  "en": "boredom",
+  "fa": "کسالت",
+  "cat": "feeling",
+  "ex": "The children complained of boredom during the long car journey.",
+  "exfa": "بچه‌ها در طول سفر طولانی با ماشین از کسالت شکایت کردند.",
+  "ipa": "/ˈbɔːrdəm/",
+  "syn": [
+   "tedium"
+  ]
+ },
+ {
+  "i": 10991,
+  "en": "bounce",
+  "fa": "جهیدن",
+  "cat": "sport",
+  "ex": "The ball bounced twice before it went into the goal.",
+  "exfa": "توپ قبل از اینکه وارد دروازه شود، دو بار جهید.",
+  "ipa": "/baʊns/"
+ },
+ {
+  "i": 10992,
+  "en": "brainstorming",
+  "fa": "طوفان فکری",
+  "cat": "work",
+  "ex": "We had a brainstorming session to come up with ideas for the new logo.",
+  "exfa": "ما یک جلسه طوفان فکری داشتیم تا برای لوگوی جدید ایده پیدا کنیم."
+ },
+ {
+  "i": 10993,
+  "en": "brand-new",
+  "fa": "کاملاً نو",
+  "cat": "adj",
+  "ex": "He drove his brand-new car to work for the first time today.",
+  "exfa": "او امروز برای اولین بار با ماشین کاملاً نویش سر کار رفت."
+ },
+ {
+  "i": 10994,
+  "en": "bravely",
+  "fa": "شجاعانه",
+  "cat": "adv",
+  "ex": "The firefighters bravely entered the burning building to save the family.",
+  "exfa": "آتش‌نشانان شجاعانه وارد ساختمان در حال سوختن شدند تا خانواده را نجات دهند.",
+  "syn": [
+   "courageously",
+   "boldly"
+  ]
+ },
+ {
+  "i": 10995,
+  "en": "breathless",
+  "fa": "نفس‌نفس‌زنان",
+  "cat": "body",
+  "ex": "By the time she reached the top of the hill, she was breathless.",
+  "exfa": "تا زمانی که او به بالای تپه رسید، نفس‌نفس می‌زد.",
+  "ipa": "/ˈbreθləs/",
+  "syn": [
+   "out of breath",
+   "panting"
+  ]
+ },
+ {
+  "i": 10996,
+  "en": "brightly",
+  "fa": "به‌روشنی",
+  "cat": "nature",
+  "ex": "The stars shone brightly in the clear night sky.",
+  "exfa": "ستاره‌ها در آسمان صاف شب به‌روشنی می‌درخشیدند."
+ },
+ {
+  "i": 10997,
+  "en": "broccoli",
+  "fa": "کلم بروکلی",
+  "cat": "food",
+  "ex": "My son refuses to eat broccoli no matter how I cook it.",
+  "exfa": "پسرم هرطور که بروکلی را بپزم، حاضر به خوردنش نیست.",
+  "ipa": "/ˈbrɒkəli/"
+ },
+ {
+  "i": 10998,
+  "en": "brotherhood",
+  "fa": "برادری",
+  "cat": "people",
+  "ex": "The soldiers felt a strong sense of brotherhood after fighting together.",
+  "exfa": "سربازان بعد از جنگیدن در کنار هم، احساس قوی برادری داشتند."
+ },
+ {
+  "i": 10999,
+  "en": "bump",
+  "fa": "برخورد کردن (تصادفی)",
+  "cat": "body",
+  "ex": "The little boy bumped his head on the low doorway.",
+  "exfa": "سر پسر کوچک به درگاه کوتاه خورد.",
+  "ipa": "/bʌmp/"
+ },
+ {
+  "i": 11000,
+  "en": "burglar",
+  "fa": "سارق (خانه)",
+  "cat": "crime",
+  "ex": "A burglar broke into their house while they were on holiday.",
+  "exfa": "یک سارق در حالی که آنها در تعطیلات بودند، وارد خانه‌شان شد.",
+  "ipa": "/ˈbɜːrglər/",
+  "syn": [
+   "thief",
+   "robber"
+  ]
+ },
+ {
+  "i": 11001,
+  "en": "bust",
+  "fa": "دستگیر کردن، لو دادن",
+  "cat": "crime",
+  "ex": "Police busted the group for selling fake tickets outside the stadium.",
+  "exfa": "پلیس آن گروه را به‌خاطر فروش بلیت‌های تقلبی بیرون استادیوم دستگیر کرد.",
+  "ipa": "/bʌst/"
+ },
+ {
+  "i": 11002,
+  "en": "butcher",
+  "fa": "قصاب",
+  "cat": "food",
+  "ex": "I bought fresh lamb from the butcher this morning.",
+  "exfa": "امروز صبح گوشت بره تازه از قصابی خریدم.",
+  "ipa": "/ˈbʊtʃər/"
+ },
+ {
+  "i": 11003,
+  "en": "cabbage",
+  "fa": "کلم",
+  "cat": "food",
+  "ex": "She chopped the cabbage finely for the salad.",
+  "exfa": "او کلم را برای سالاد ریز خرد کرد.",
+  "ipa": "/ˈkæbɪdʒ/"
+ },
+ {
+  "i": 11004,
+  "en": "calf",
+  "fa": "گوساله",
+  "cat": "animal",
+  "ex": "The calf stayed close to its mother in the field.",
+  "exfa": "گوساله در مزرعه نزدیک مادرش ماند.",
+  "ipa": "/kæf/"
+ },
+ {
+  "i": 11005,
+  "en": "caller",
+  "fa": "تماس‌گیرنده",
+  "cat": "talk",
+  "ex": "The radio show invited a caller to share her opinion live on air.",
+  "exfa": "برنامه رادیویی از یک تماس‌گیرنده دعوت کرد تا نظرش را به‌صورت زنده پخش کند."
+ },
+ {
+  "i": 11006,
+  "en": "calmness",
+  "fa": "آرامش",
+  "cat": "feeling",
+  "ex": "She answered the difficult questions with surprising calmness.",
+  "exfa": "او به سؤالات دشوار با آرامشی شگفت‌انگیز پاسخ داد.",
+  "ipa": "/ˈkɑːmnəs/"
+ },
+ {
+  "i": 11007,
+  "en": "campsite",
+  "fa": "محل کمپ",
+  "cat": "travel",
+  "ex": "We set up our tent at a quiet campsite near the lake.",
+  "exfa": "ما چادرمان را در یک محل کمپ آرام نزدیک دریاچه برپا کردیم."
+ },
+ {
+  "i": 11008,
+  "en": "canned",
+  "fa": "کنسروی",
+  "cat": "food",
+  "ex": "We always keep some canned soup in the cupboard for emergencies.",
+  "exfa": "ما همیشه مقداری سوپ کنسروی برای مواقع اضطراری در کابینت نگه می‌داریم.",
+  "ipa": "/kænd/"
+ },
+ {
+  "i": 11009,
+  "en": "canteen",
+  "fa": "سلف‌سرویس",
+  "cat": "food",
+  "ex": "We had lunch together in the school canteen.",
+  "exfa": "ما با هم در سلف‌سرویس مدرسه ناهار خوردیم.",
+  "ipa": "/kænˈtiːn/",
+  "syn": [
+   "cafeteria"
+  ]
+ },
+ {
+  "i": 11010,
+  "en": "capsule",
+  "fa": "کپسول",
+  "cat": "health",
+  "ex": "The doctor told him to take one capsule after breakfast.",
+  "exfa": "دکتر به او گفت که بعد از صبحانه یک کپسول بخورد.",
+  "ipa": "/ˈkæpsjuːl/"
+ },
+ {
+  "i": 11011,
+  "en": "careless",
+  "fa": "بی‌دقت",
+  "cat": "adj",
+  "ex": "It was careless of him to leave his passport at home.",
+  "exfa": "بی‌دقتی از او بود که پاسپورتش را در خانه جا گذاشت.",
+  "syn": [
+   "negligent",
+   "sloppy",
+   "thoughtless"
+  ]
+ },
+ {
+  "i": 11012,
+  "en": "carelessly",
+  "fa": "با بی‌دقتی",
+  "cat": "adv",
+  "ex": "She threw her bag carelessly onto the sofa.",
+  "exfa": "او کیفش را با بی‌دقتی روی مبل انداخت."
+ },
+ {
+  "i": 11013,
+  "en": "carelessness",
+  "fa": "بی‌دقتی",
+  "cat": "noun",
+  "ex": "The accident happened because of the driver's carelessness.",
+  "exfa": "این تصادف به دلیل بی‌دقتی راننده اتفاق افتاد."
+ },
+ {
+  "i": 11014,
+  "en": "carriage",
+  "fa": "واگن قطار",
+  "cat": "travel",
+  "ex": "We found two empty seats in the first carriage of the train.",
+  "exfa": "ما دو صندلی خالی در واگن اول قطار پیدا کردیم."
+ },
+ {
+  "i": 11015,
+  "en": "carton",
+  "fa": "پاکت (شیر یا آب‌میوه)",
+  "cat": "food",
+  "ex": "He took a carton of milk out of the fridge.",
+  "exfa": "او یک پاکت شیر از یخچال بیرون آورد."
+ },
+ {
+  "i": 11016,
+  "en": "cashpoint",
+  "fa": "عابربانک",
+  "cat": "money",
+  "ex": "I need to find a cashpoint to withdraw some money before the shop closes.",
+  "exfa": "باید یک عابربانک پیدا کنم تا قبل از بسته شدن مغازه کمی پول برداشت کنم."
+ },
+ {
+  "i": 11017,
+  "en": "categorise",
+  "fa": "دسته‌بندی کردن",
+  "cat": "verb",
+  "ex": "Librarians categorise books by subject and author.",
+  "exfa": "کتابداران کتاب‌ها را بر اساس موضوع و نویسنده دسته‌بندی می‌کنند.",
+  "syn": [
+   "classify",
+   "sort"
+  ]
+ },
+ {
+  "i": 11018,
+  "en": "categorize",
+  "fa": "دسته‌بندی کردن",
+  "cat": "verb",
+  "ex": "Scientists categorize animals into different groups based on their features.",
+  "exfa": "دانشمندان حیوانات را بر اساس ویژگی‌هایشان به گروه‌های مختلف دسته‌بندی می‌کنند.",
+  "syn": [
+   "classify",
+   "sort"
+  ]
+ },
+ {
+  "i": 11019,
+  "en": "cautious",
+  "fa": "محتاط",
+  "cat": "adj",
+  "ex": "Drivers should be cautious when the roads are icy.",
+  "exfa": "رانندگان باید وقتی جاده‌ها یخ‌زده است محتاط باشند.",
+  "ipa": "/ˈkɔːʃəs/",
+  "syn": [
+   "careful",
+   "wary",
+   "prudent"
+  ]
+ },
+ {
+  "i": 11020,
+  "en": "CD-ROM",
+  "fa": "سی‌دی‌رام",
+  "cat": "tech",
+  "ex": "The software used to come on a CD-ROM instead of being downloaded.",
+  "exfa": "این نرم‌افزار قبلاً به‌جای دانلود، روی یک سی‌دی‌رام عرضه می‌شد."
+ },
+ {
+  "i": 11021,
+  "en": "central heating",
+  "fa": "سیستم گرمایش مرکزی",
+  "cat": "house",
+  "ex": "Our house doesn't have central heating, so we use small heaters in winter.",
+  "exfa": "خانه ما سیستم گرمایش مرکزی ندارد، پس در زمستان از بخاری‌های کوچک استفاده می‌کنیم."
+ },
+ {
+  "i": 11022,
+  "en": "certainty",
+  "fa": "قطعیت",
+  "cat": "noun",
+  "ex": "There is no certainty that the flight will leave on time.",
+  "exfa": "هیچ قطعیتی وجود ندارد که پرواز به‌موقع انجام شود."
+ },
+ {
+  "i": 11023,
+  "en": "characterise",
+  "fa": "مشخص کردن",
+  "cat": "verb",
+  "ex": "Heavy rain and strong winds characterise the region's winters.",
+  "exfa": "باران شدید و باد تند، زمستان‌های این منطقه را مشخص می‌کند."
+ },
+ {
+  "i": 11024,
+  "en": "characterize",
+  "fa": "مشخص کردن",
+  "cat": "verb",
+  "ex": "Her novels are often characterized by dark humor and unexpected endings.",
+  "exfa": "رمان‌های او اغلب با طنز تلخ و پایان‌های غیرمنتظره مشخص می‌شوند."
+ },
+ {
+  "i": 11025,
+  "en": "chariot",
+  "fa": "ارابه جنگی",
+  "cat": "general",
+  "ex": "In the ancient painting, a king rides a golden chariot pulled by four horses.",
+  "exfa": "در آن نقاشی باستانی، پادشاهی سوار بر ارابه‌ای طلایی است که چهار اسب آن را می‌کشند.",
+  "ipa": "/ˈtʃæriət/"
+ },
+ {
+  "i": 11026,
+  "en": "chat show",
+  "fa": "برنامه گفتگوی تلویزیونی",
+  "cat": "talk",
+  "ex": "The singer talked about her new album on a popular chat show.",
+  "exfa": "آن خواننده درباره آلبوم جدیدش در یک برنامه گفتگوی تلویزیونی معروف صحبت کرد."
+ },
+ {
+  "i": 11027,
+  "en": "check-in counter",
+  "fa": "باجه چک‌این",
+  "cat": "travel",
+  "ex": "Passengers were queuing at the check-in counter two hours before the flight.",
+  "exfa": "مسافران دو ساعت قبل از پرواز در صف باجه چک‌این ایستاده بودند."
+ },
+ {
+  "i": 11028,
+  "en": "check-in desk",
+  "fa": "میز چک‌این",
+  "cat": "travel",
+  "ex": "She dropped off her suitcase at the check-in desk and went through security.",
+  "exfa": "او چمدانش را در میز چک‌این تحویل داد و از بازرسی امنیتی عبور کرد."
+ },
+ {
+  "i": 11029,
+  "en": "checkout",
+  "fa": "صندوق فروشگاه",
+  "cat": "money",
+  "ex": "There was a long line at the checkout on Saturday afternoon.",
+  "exfa": "روز شنبه بعدازظهر صف طولانی‌ای پشت صندوق بود."
+ },
+ {
+  "i": 11030,
+  "en": "chemist",
+  "fa": "داروخانه",
+  "cat": "health",
+  "ex": "I need to go to the chemist to buy some medicine for my cough.",
+  "exfa": "باید به داروخانه بروم تا برای سرفه‌ام کمی دارو بخرم."
+ },
+ {
+  "i": 11031,
+  "en": "cherish",
+  "fa": "عزیز داشتن",
+  "cat": "feeling",
+  "ex": "She still cherishes the letters her grandmother wrote to her as a child.",
+  "exfa": "او هنوز نامه‌هایی را که مادربزرگش در کودکی برایش نوشته بود، عزیز می‌دارد.",
+  "ipa": "/ˈtʃerɪʃ/"
+ },
+ {
+  "i": 11032,
+  "en": "chest of drawers",
+  "fa": "کمد کشودار",
+  "cat": "house",
+  "ex": "He keeps his socks and T-shirts in the top drawer of the chest of drawers.",
+  "exfa": "او جوراب‌ها و تی‌شرت‌هایش را در کشوی بالایی کمد کشودار نگه می‌دارد."
+ },
+ {
+  "i": 11033,
+  "en": "chewing gum",
+  "fa": "آدامس",
+  "cat": "food",
+  "ex": "Chewing gum is not allowed in some classrooms.",
+  "exfa": "جویدن آدامس در برخی کلاس‌های درس مجاز نیست."
+ },
+ {
+  "i": 11034,
+  "en": "choke",
+  "fa": "خفه شدن",
+  "cat": "health",
+  "ex": "The little boy started to choke on a piece of apple.",
+  "exfa": "آن پسربچه به خاطر یک تکه سیب که در گلویش گیر کرده بود، شروع به خفه شدن کرد."
+ },
+ {
+  "i": 11035,
+  "en": "chronological",
+  "fa": "براساس ترتیب زمانی",
+  "cat": "time",
+  "ex": "The museum displays the paintings in chronological order, from the oldest to the newest.",
+  "exfa": "موزه نقاشی‌ها را به ترتیب زمانی، از قدیمی‌ترین تا جدیدترین، به نمایش می‌گذارد.",
+  "ipa": "/ˌkrɒnəˈlɒdʒɪkl/"
+ },
+ {
+  "i": 11036,
+  "en": "chuckle",
+  "fa": "خنده آهسته",
+  "cat": "feeling",
+  "ex": "He gave a quiet chuckle when he remembered the joke.",
+  "exfa": "وقتی آن جوک را به یاد آورد، خنده آهسته‌ای کرد.",
+  "syn": [
+   "giggle",
+   "laugh"
+  ]
+ },
+ {
+  "i": 11037,
+  "en": "classify",
+  "fa": "طبقه‌بندی کردن",
+  "cat": "verb",
+  "ex": "You should classify your emails into folders to stay organized.",
+  "exfa": "باید ایمیل‌هایت را برای منظم ماندن، در پوشه‌های مختلف طبقه‌بندی کنی.",
+  "syn": [
+   "categorize",
+   "sort"
+  ]
+ },
+ {
+  "i": 11038,
+  "en": "climber",
+  "fa": "کوهنورد",
+  "cat": "sport",
+  "ex": "The climber reached the top of the mountain just before sunset.",
+  "exfa": "کوهنورد درست قبل از غروب آفتاب به قله کوه رسید."
+ },
+ {
+  "i": 11039,
+  "en": "coffin",
+  "fa": "تابوت",
+  "cat": "general",
+  "ex": "The coffin was carried into the church by six men.",
+  "exfa": "تابوت توسط شش مرد به داخل کلیسا برده شد.",
+  "ipa": "/ˈkɒfɪn/"
+ },
+ {
+  "i": 11040,
+  "en": "columnist",
+  "fa": "ستون‌نویس",
+  "cat": "work",
+  "ex": "She works as a columnist for a national newspaper, writing about politics.",
+  "exfa": "او به‌عنوان ستون‌نویس یک روزنامه ملی کار می‌کند و درباره سیاست می‌نویسد."
+ },
+ {
+  "i": 11041,
+  "en": "comedian",
+  "fa": "کمدین",
+  "cat": "work",
+  "ex": "The comedian made the whole audience laugh with his jokes about daily life.",
+  "exfa": "آن کمدین با جوک‌هایش درباره زندگی روزمره، تمام تماشاگران را خنداند.",
+  "ipa": "/kəˈmiːdiən/"
+ },
+ {
+  "i": 11042,
+  "en": "comet",
+  "fa": "ستاره دنباله‌دار",
+  "cat": "nature",
+  "ex": "You can only see this comet from Earth once every seventy-six years.",
+  "exfa": "این ستاره دنباله‌دار را فقط هر هفتاد و شش سال یک‌بار می‌توان از زمین دید."
+ },
+ {
+  "i": 11043,
+  "en": "comma",
+  "fa": "ویرگول",
+  "cat": "school",
+  "ex": "Don't forget to put a comma before 'but' in that sentence.",
+  "exfa": "یادت نرود قبل از «but» در آن جمله یک ویرگول بگذاری.",
+  "ipa": "/ˈkɒmə/"
+ },
+ {
+  "i": 11044,
+  "en": "common sense",
+  "fa": "عقل سلیم",
+  "cat": "general",
+  "ex": "Use your common sense and don't leave the stove on when you go out.",
+  "exfa": "از عقل سلیمت استفاده کن و وقتی بیرون می‌روی اجاق را روشن نگذار."
+ },
+ {
+  "i": 11045,
+  "en": "competitor",
+  "fa": "رقیب",
+  "cat": "sport",
+  "ex": "Only one competitor finished the marathon in under three hours.",
+  "exfa": "فقط یک رقیب توانست ماراتن را در کمتر از سه ساعت به پایان برساند.",
+  "syn": [
+   "rival",
+   "opponent"
+  ]
+ },
+ {
+  "i": 11046,
+  "en": "complicate",
+  "fa": "پیچیده کردن",
+  "cat": "verb",
+  "ex": "Please don't complicate things by adding more rules.",
+  "exfa": "لطفاً با اضافه کردن قوانین بیشتر، اوضاع را پیچیده نکن."
+ },
+ {
+  "i": 11047,
+  "en": "compliment",
+  "fa": "تعریف",
+  "cat": "talk",
+  "ex": "He gave her a compliment on her new haircut.",
+  "exfa": "او از مدل موی جدیدش تعریف کرد.",
+  "syn": [
+   "praise",
+   "flattery"
+  ]
+ },
+ {
+  "i": 11048,
+  "en": "compose",
+  "fa": "ساختن یا تصنیف کردن (آهنگ)",
+  "cat": "music",
+  "ex": "The composer began to compose a new symphony last spring.",
+  "exfa": "آهنگساز بهار گذشته شروع به ساختن یک سمفونی جدید کرد."
+ },
+ {
+  "i": 11049,
+  "en": "confusing",
+  "fa": "گیج‌کننده",
+  "cat": "adj",
+  "ex": "The instructions on the form were so confusing that nobody understood them.",
+  "exfa": "دستورالعمل‌های روی فرم آنقدر گیج‌کننده بود که هیچ‌کس آن‌ها را نفهمید.",
+  "syn": [
+   "puzzling",
+   "bewildering"
+  ]
+ },
+ {
+  "i": 11050,
+  "en": "congratulate",
+  "fa": "تبریک گفتن",
+  "cat": "talk",
+  "ex": "We called to congratulate him on passing his driving test.",
+  "exfa": "ما تماس گرفتیم تا برای قبولی‌اش در آزمون رانندگی به او تبریک بگوییم."
+ },
+ {
+  "i": 11051,
+  "en": "connexion",
+  "fa": "ارتباط (املای قدیمی «connection»)",
+  "cat": "noun",
+  "ex": "The word 'connexion' is an old-fashioned British spelling of 'connection'.",
+  "exfa": "واژه «connexion» یک املای قدیمی بریتانیایی برای «connection» است."
+ },
+ {
+  "i": 11052,
+  "en": "conquer",
+  "fa": "فتح کردن",
+  "cat": "verb",
+  "ex": "The army conquered the city after a long battle.",
+  "exfa": "ارتش پس از یک نبرد طولانی، آن شهر را فتح کرد.",
+  "syn": [
+   "defeat",
+   "overcome"
+  ]
+ },
+ {
+  "i": 11053,
+  "en": "consonant",
+  "fa": "صامت",
+  "cat": "school",
+  "ex": "The letter 'b' is a consonant, while 'a' is a vowel.",
+  "exfa": "حرف «b» یک صامت است، در حالی که «a» یک مصوت است."
+ },
+ {
+  "i": 11054,
+  "en": "continual",
+  "fa": "مکرر",
+  "cat": "adj",
+  "ex": "The continual noise from the construction site gave her a headache.",
+  "exfa": "سروصدای مکرر کارگاه ساختمانی باعث سردرد او شد.",
+  "syn": [
+   "constant",
+   "repeated",
+   "persistent"
+  ]
+ },
+ {
+  "i": 11055,
+  "en": "convey",
+  "fa": "منتقل کردن (پیام یا احساس)",
+  "cat": "talk",
+  "ex": "A smile can convey more warmth than words.",
+  "exfa": "یک لبخند می‌تواند گرمای بیشتری نسبت به کلمات منتقل کند.",
+  "syn": [
+   "communicate",
+   "express"
+  ]
+ },
+ {
+  "i": 11056,
+  "en": "cough",
+  "fa": "سرفه کردن",
+  "cat": "health",
+  "ex": "She started to cough loudly during the movie.",
+  "exfa": "او در طول فیلم با صدای بلند شروع به سرفه کردن کرد."
+ },
+ {
+  "i": 11057,
+  "en": "counselling",
+  "fa": "مشاوره روان‌شناسی",
+  "cat": "health",
+  "ex": "After the accident, he received counselling to help him cope with the stress.",
+  "exfa": "او پس از تصادف، برای کنار آمدن با استرس، مشاوره دریافت کرد."
+ },
+ {
+  "i": 11058,
+  "en": "countless",
+  "fa": "بی‌شمار",
+  "cat": "adj",
+  "ex": "She has read this book countless times and still loves it.",
+  "exfa": "او این کتاب را بی‌شمار بار خوانده و هنوز هم آن را دوست دارد.",
+  "syn": [
+   "numerous",
+   "innumerable"
+  ]
+ },
+ {
+  "i": 11059,
+  "en": "courgette",
+  "fa": "کدو سبز",
+  "cat": "food",
+  "ex": "He sliced a courgette and added it to the vegetable soup.",
+  "exfa": "او یک کدو سبز را برش زد و به سوپ سبزیجات اضافه کرد."
+ },
+ {
+  "i": 11060,
+  "en": "critic",
+  "fa": "منتقد",
+  "cat": "movie",
+  "ex": "The film critic gave the new movie only two stars out of five.",
+  "exfa": "منتقد فیلم به فیلم جدید فقط دو ستاره از پنج ستاره داد."
+ },
+ {
+  "i": 11061,
+  "en": "crossroads",
+  "fa": "چهارراه",
+  "cat": "place",
+  "ex": "Turn left at the crossroads and the hotel is on your right.",
+  "exfa": "در چهارراه به چپ بپیچید و هتل سمت راست شماست."
+ },
+ {
+  "i": 11062,
+  "en": "crow",
+  "fa": "کلاغ",
+  "cat": "animal",
+  "ex": "A crow landed on the fence and looked around before flying away.",
+  "exfa": "یک کلاغ روی حصار نشست و قبل از پرواز کردن، اطراف را نگاه کرد."
+ },
+ {
+  "i": 11063,
+  "en": "cruel",
+  "fa": "بی‌رحم",
+  "cat": "adj",
+  "ex": "It would be cruel to leave the dog outside in this cold weather.",
+  "exfa": "بی‌رحمی خواهد بود که سگ را در این هوای سرد بیرون رها کنیم.",
+  "syn": [
+   "brutal",
+   "heartless",
+   "vicious"
+  ]
+ },
+ {
+  "i": 11064,
+  "en": "crush",
+  "fa": "دلبستگی عاشقانه کوتاه‌مدت",
+  "cat": "feeling",
+  "ex": "Everyone in class knew that Tom had a crush on the new student.",
+  "exfa": "همه در کلاس می‌دانستند که تام به دانش‌آموز جدید دلبستگی پیدا کرده است."
+ },
+ {
+  "i": 11065,
+  "en": "cucumber",
+  "fa": "خیار",
+  "cat": "food",
+  "ex": "She added some sliced cucumber to the salad.",
+  "exfa": "او مقداری خیار خرد شده به سالاد اضافه کرد.",
+  "ipa": "/ˈkjuːkʌmbər/"
+ },
+ {
+  "i": 11066,
+  "en": "cultivate",
+  "fa": "کشت کردن",
+  "cat": "nature",
+  "ex": "Farmers in this region cultivate rice and vegetables.",
+  "exfa": "کشاورزان این منطقه برنج و سبزیجات کشت می‌کنند."
+ },
+ {
+  "i": 11067,
+  "en": "curiosity",
+  "fa": "کنجکاوی",
+  "cat": "feeling",
+  "ex": "Her curiosity about other cultures led her to travel around the world.",
+  "exfa": "کنجکاوی او درباره فرهنگ‌های دیگر، او را به سفر دور دنیا کشاند.",
+  "ipa": "/ˌkjʊəriˈɒsəti/"
+ },
+ {
+  "i": 11068,
+  "en": "curiously",
+  "fa": "با کنجکاوی",
+  "cat": "adv",
+  "ex": "The cat looked curiously at the strange box in the corner.",
+  "exfa": "گربه با کنجکاوی به آن جعبه عجیب در گوشه اتاق نگاه کرد."
+ },
+ {
+  "i": 11069,
+  "en": "curly",
+  "fa": "فرفری",
+  "cat": "body",
+  "ex": "He has short, curly hair.",
+  "exfa": "او موهای کوتاه و فرفری دارد.",
+  "ipa": "/ˈkɜːrli/"
+ },
+ {
+  "i": 11070,
+  "en": "CV",
+  "fa": "رزومه",
+  "cat": "work",
+  "ex": "Please attach your CV and a cover letter to the email.",
+  "exfa": "لطفاً رزومه و یک نامه معرفی خود را به ایمیل پیوست کنید."
+ },
+ {
+  "i": 11071,
+  "en": "damp",
+  "fa": "نمناک",
+  "cat": "weather",
+  "ex": "The towels were still damp from yesterday's rain.",
+  "exfa": "حوله‌ها هنوز از باران دیروز نمناک بودند.",
+  "ipa": "/dæmp/",
+  "syn": [
+   "moist",
+   "humid"
+  ]
+ },
+ {
+  "i": 11072,
+  "en": "dangerously",
+  "fa": "به‌طور خطرناک",
+  "cat": "adv",
+  "ex": "The motorbike was going dangerously fast down the narrow street.",
+  "exfa": "موتورسیکلت به‌طور خطرناکی در آن خیابان باریک با سرعت زیاد می‌رفت."
+ },
+ {
+  "i": 11073,
+  "en": "daze",
+  "fa": "منگی",
+  "cat": "feeling",
+  "ex": "After the crash, he walked around in a daze for several minutes.",
+  "exfa": "او بعد از تصادف، برای چند دقیقه با حالت منگی این‌طرف و آن‌طرف راه می‌رفت."
+ },
+ {
+  "i": 11074,
+  "en": "dazzle",
+  "fa": "درخشش خیره‌کننده",
+  "cat": "general",
+  "ex": "The dazzle of the city lights amazed the tourists on their first night.",
+  "exfa": "درخشش خیره‌کننده چراغ‌های شهر، گردشگران را در اولین شبشان شگفت‌زده کرد."
+ },
+ {
+  "i": 11075,
+  "en": "debris",
+  "fa": "آوار",
+  "cat": "general",
+  "ex": "Workers spent days clearing the debris after the storm destroyed several houses.",
+  "exfa": "کارگران روزها صرف پاک‌سازی آوار پس از ویرانی چند خانه توسط طوفان کردند.",
+  "ipa": "/ˈdebriː/"
+ },
+ {
+  "i": 11076,
+  "en": "dedicate",
+  "fa": "اختصاص دادن",
+  "cat": "verb",
+  "ex": "She decided to dedicate her free time to helping homeless animals.",
+  "exfa": "او تصمیم گرفت اوقات فراغتش را به کمک به حیوانات بی‌خانمان اختصاص دهد.",
+  "syn": [
+   "devote",
+   "commit"
+  ]
+ },
+ {
+  "i": 11077,
+  "en": "deed",
+  "fa": "عمل نیک یا بد",
+  "cat": "general",
+  "ex": "Helping the old man cross the street was a kind deed.",
+  "exfa": "کمک کردن به آن پیرمرد برای عبور از خیابان، یک کار نیک بود."
+ },
+ {
+  "i": 11078,
+  "en": "defender",
+  "fa": "مدافع",
+  "cat": "sport",
+  "ex": "The defender stopped the ball just before it crossed the goal line.",
+  "exfa": "مدافع درست قبل از اینکه توپ از خط دروازه عبور کند، آن را متوقف کرد."
+ },
+ {
+  "i": 11079,
+  "en": "definite",
+  "fa": "قطعی",
+  "cat": "adj",
+  "ex": "We don't have a definite date for the wedding yet.",
+  "exfa": "ما هنوز تاریخ قطعی‌ای برای عروسی نداریم.",
+  "ipa": "/ˈdefɪnɪt/",
+  "syn": [
+   "certain",
+   "fixed"
+  ]
+ },
+ {
+  "i": 11080,
+  "en": "definite article",
+  "fa": "حرف تعریف معین",
+  "cat": "school",
+  "ex": "In English, 'the' is called the definite article.",
+  "exfa": "در زبان انگلیسی، «the» را حرف تعریف معین می‌نامند."
+ },
+ {
+  "i": 11081,
+  "en": "delighted",
+  "fa": "خیلی خوشحال",
+  "cat": "feeling",
+  "ex": "She was delighted to hear that she had won the scholarship.",
+  "exfa": "او از شنیدن اینکه بورسیه را برده است، خیلی خوشحال شد.",
+  "ipa": "/dɪˈlaɪtɪd/",
+  "syn": [
+   "thrilled",
+   "overjoyed"
+  ]
+ },
+ {
+  "i": 11082,
+  "en": "delightful",
+  "fa": "دلپذیر",
+  "cat": "adj",
+  "ex": "We spent a delightful afternoon walking through the old town.",
+  "exfa": "ما یک بعدازظهر دلپذیر را در حال قدم زدن در شهر قدیمی گذراندیم.",
+  "syn": [
+   "lovely",
+   "pleasant",
+   "charming"
+  ]
+ },
+ {
+  "i": 11083,
+  "en": "depart",
+  "fa": "حرکت کردن",
+  "cat": "travel",
+  "ex": "The train will depart from platform four in ten minutes.",
+  "exfa": "قطار ده دقیقه دیگر از سکوی چهار حرکت می‌کند.",
+  "syn": [
+   "leave",
+   "set off"
+  ]
+ },
+ {
+  "i": 11084,
+  "en": "depressed",
+  "fa": "افسرده",
+  "cat": "feeling",
+  "ex": "He felt depressed after losing his job last month.",
+  "exfa": "او بعد از از دست دادن شغلش در ماه گذشته، احساس افسردگی کرد.",
+  "syn": [
+   "sad",
+   "downhearted"
+  ]
+ },
+ {
+  "i": 11085,
+  "en": "depressing",
+  "fa": "دلگیر",
+  "cat": "feeling",
+  "ex": "The gray weather all week has been really depressing.",
+  "exfa": "هوای خاکستری تمام هفته واقعاً دلگیر بوده است.",
+  "syn": [
+   "gloomy",
+   "dispiriting"
+  ]
+ },
+ {
+  "i": 11086,
+  "en": "deprive",
+  "fa": "محروم کردن",
+  "cat": "verb",
+  "ex": "Lack of sleep can deprive your body of the energy it needs.",
+  "exfa": "کمبود خواب می‌تواند بدن شما را از انرژی مورد نیازش محروم کند."
+ },
+ {
+  "i": 11087,
+  "en": "derive",
+  "fa": "به‌دست آوردن از یک منبع",
+  "cat": "verb",
+  "ex": "Many English words derive from Latin and Greek.",
+  "exfa": "بسیاری از واژه‌های انگلیسی از لاتین و یونانی گرفته شده‌اند."
+ },
+ {
+  "i": 11088,
+  "en": "despair",
+  "fa": "نومیدی",
+  "cat": "feeling",
+  "ex": "After months of searching for work, he was starting to feel despair.",
+  "exfa": "بعد از ماه‌ها دنبال کار گشتن، او داشت احساس نومیدی می‌کرد.",
+  "ipa": "/dɪˈspeər/"
+ },
+ {
+  "i": 11089,
+  "en": "destructive",
+  "fa": "مخرب",
+  "cat": "adj",
+  "ex": "The hurricane's destructive winds tore the roofs off several houses.",
+  "exfa": "بادهای مخرب طوفان، سقف چند خانه را کند.",
+  "syn": [
+   "harmful",
+   "damaging"
+  ]
+ },
+ {
+  "i": 11090,
+  "en": "devastate",
+  "fa": "ویران کردن",
+  "cat": "verb",
+  "ex": "The earthquake devastated the small coastal town.",
+  "exfa": "زلزله آن شهر کوچک ساحلی را ویران کرد.",
+  "syn": [
+   "destroy",
+   "ruin"
+  ]
+ },
+ {
+  "i": 11091,
+  "en": "devastating",
+  "fa": "فاجعه‌بار",
+  "cat": "adj",
+  "ex": "Losing her mother at such a young age was devastating for her.",
+  "exfa": "از دست دادن مادرش در چنین سن کمی، برایش فاجعه‌بار بود.",
+  "syn": [
+   "crushing",
+   "shattering"
+  ]
+ },
+ {
+  "i": 11092,
+  "en": "devotion",
+  "fa": "فداکاری",
+  "cat": "feeling",
+  "ex": "His devotion to his family was clear in everything he did.",
+  "exfa": "فداکاری او نسبت به خانواده‌اش در تمام کارهایی که انجام می‌داد، مشخص بود.",
+  "syn": [
+   "loyalty",
+   "dedication"
+  ]
+ },
+ {
+  "i": 11093,
+  "en": "diaper",
+  "fa": "پوشک",
+  "cat": "general",
+  "ex": "The baby needed a clean diaper after her nap.",
+  "exfa": "نوزاد بعد از چرت زدنش به یک پوشک تمیز نیاز داشت."
+ },
+ {
+  "i": 11094,
+  "en": "diligence",
+  "fa": "پشتکار",
+  "cat": "work",
+  "ex": "Her diligence at work eventually earned her a promotion.",
+  "exfa": "پشتکار او در محل کار، سرانجام باعث ارتقای شغلی‌اش شد.",
+  "ipa": "/ˈdɪlɪdʒəns/"
+ },
+ {
+  "i": 11095,
+  "en": "dioxide",
+  "fa": "دی‌اکسید",
+  "cat": "nature",
+  "ex": "Plants absorb carbon dioxide and release oxygen.",
+  "exfa": "گیاهان دی‌اکسید کربن را جذب می‌کنند و اکسیژن آزاد می‌کنند."
+ },
+ {
+  "i": 11096,
+  "en": "disagreement",
+  "fa": "اختلاف نظر",
+  "cat": "talk",
+  "ex": "The two brothers had a disagreement about how to spend the money their father left them.",
+  "exfa": "آن دو برادر بر سر نحوه خرج کردن پولی که پدرشان برایشان گذاشته بود، اختلاف نظر داشتند."
+ },
+ {
+  "i": 11097,
+  "en": "disappoint",
+  "fa": "ناامید کردن",
+  "cat": "feeling",
+  "ex": "I don't want to disappoint my parents by failing this exam.",
+  "exfa": "نمی‌خواهم با رد شدن در این امتحان، والدینم را ناامید کنم."
+ },
+ {
+  "i": 11098,
+  "en": "disastrous",
+  "fa": "فاجعه‌بار",
+  "cat": "adj",
+  "ex": "The team's first match of the season was disastrous; they lost seven to nothing.",
+  "exfa": "اولین مسابقه تیم در این فصل فاجعه‌بار بود؛ آن‌ها هفت بر هیچ باختند.",
+  "syn": [
+   "catastrophic",
+   "calamitous"
+  ]
+ },
+ {
+  "i": 11099,
+  "en": "disc jockey",
+  "fa": "دی‌جی",
+  "cat": "music",
+  "ex": "The disc jockey played all the songs the guests had requested.",
+  "exfa": "دی‌جی تمام آهنگ‌هایی را که مهمانان درخواست کرده بودند، پخش کرد."
+ },
+ {
+  "i": 11100,
+  "en": "discomfort",
+  "fa": "ناراحتی جسمی",
+  "cat": "health",
+  "ex": "She felt some discomfort in her back after sitting for so long.",
+  "exfa": "او بعد از این‌قدر نشستن، کمی ناراحتی در کمرش احساس کرد."
+ },
+ {
+  "i": 11101,
+  "en": "discourage",
+  "fa": "دلسرد کردن",
+  "cat": "feeling",
+  "ex": "Don't let one failure discourage you from trying again.",
+  "exfa": "نگذار یک شکست، تو را از تلاش دوباره دلسرد کند.",
+  "syn": [
+   "dishearten",
+   "deter"
+  ]
+ },
+ {
+  "i": 11102,
+  "en": "dishwasher",
+  "fa": "ماشین ظرفشویی",
+  "cat": "house",
+  "ex": "Just put the dirty plates in the dishwasher, and I'll turn it on later.",
+  "exfa": "فقط بشقاب‌های کثیف را در ماشین ظرفشویی بگذار، من بعداً روشنش می‌کنم."
+ },
+ {
+  "i": 11103,
+  "en": "disk jockey",
+  "fa": "دی‌جی",
+  "cat": "music",
+  "ex": "Before becoming a famous singer, she worked as a disk jockey at local clubs.",
+  "exfa": "او قبل از اینکه خواننده‌ای مشهور شود، به‌عنوان دی‌جی در کلوپ‌های محلی کار می‌کرد."
+ },
+ {
+  "i": 11104,
+  "en": "dissolve",
+  "fa": "حل شدن",
+  "cat": "verb",
+  "ex": "These tablets dissolve quickly in a glass of water.",
+  "exfa": "این قرص‌ها به‌سرعت در یک لیوان آب حل می‌شوند.",
+  "ipa": "/dɪˈzɒlv/",
+  "syn": [
+   "melt",
+   "disperse"
+  ]
+ },
+ {
+  "i": 11105,
+  "en": "distinctly",
+  "fa": "به‌وضوح، آشکارا",
+  "cat": "adv",
+  "ex": "I can distinctly remember the smell of my grandmother's kitchen.",
+  "exfa": "من می‌توانم بوی آشپزخانه مادربزرگم را به‌وضوح به یاد بیاورم.",
+  "ipa": "/dɪˈstɪŋktli/",
+  "syn": [
+   "clearly",
+   "plainly"
+  ]
+ },
+ {
+  "i": 11106,
+  "en": "disturbance",
+  "fa": "اغتشاش، مزاحمت",
+  "cat": "crime",
+  "ex": "Neighbours complained about a disturbance coming from the flat upstairs.",
+  "exfa": "همسایه‌ها از مزاحمتی که از آپارتمان طبقه بالا می‌آمد شکایت کردند.",
+  "syn": [
+   "commotion",
+   "disruption"
+  ]
+ },
+ {
+  "i": 11107,
+  "en": "diver",
+  "fa": "غواص",
+  "cat": "sport",
+  "ex": "The diver checked her oxygen tank twice before jumping into the sea.",
+  "exfa": "غواص قبل از پریدن به دریا کپسول اکسیژنش را دو بار بررسی کرد.",
+  "ipa": "/ˈdaɪvər/"
+ },
+ {
+  "i": 11108,
+  "en": "divorced",
+  "fa": "طلاق‌گرفته، مطلقه",
+  "cat": "people",
+  "ex": "Her parents got divorced when she was only six years old.",
+  "exfa": "والدین او وقتی او فقط شش ساله بود از هم طلاق گرفتند."
+ },
+ {
+  "i": 11109,
+  "en": "DJ",
+  "fa": "دی‌جی",
+  "cat": "music",
+  "ex": "Could you ask the DJ to play something a bit slower?",
+  "exfa": "می‌شود از دی‌جی بخواهی یک آهنگ کمی آرام‌تر پخش کند؟"
+ },
+ {
+  "i": 11110,
+  "en": "dolphin",
+  "fa": "دلفین",
+  "cat": "animal",
+  "ex": "Dolphins are known for being one of the most intelligent animals in the ocean.",
+  "exfa": "دلفین‌ها به‌عنوان یکی از باهوش‌ترین حیوانات اقیانوس شناخته می‌شوند.",
+  "ipa": "/ˈdɒlfɪn/"
+ },
+ {
+  "i": 11111,
+  "en": "downward",
+  "fa": "نزولی",
+  "cat": "money",
+  "ex": "The company's profits have been on a downward trend since spring.",
+  "exfa": "سود شرکت از بهار روند نزولی داشته است."
+ },
+ {
+  "i": 11112,
+  "en": "doze",
+  "fa": "چرت کوتاه",
+  "cat": "general",
+  "ex": "After the long shift, the nurse allowed herself a short doze in the staff room.",
+  "exfa": "بعد از شیفت طولانی، پرستار به خودش اجازه داد یک چرت کوتاه در اتاق کارکنان بزند."
+ },
+ {
+  "i": 11113,
+  "en": "drown",
+  "fa": "غرق شدن",
+  "cat": "verb",
+  "ex": "Without a life jacket, he would have drowned in the strong current.",
+  "exfa": "بدون جلیقه نجات، او در جریان قوی آب غرق می‌شد."
+ },
+ {
+  "i": 11114,
+  "en": "dull",
+  "fa": "کسل‌کننده، بی‌روح",
+  "cat": "adj",
+  "ex": "The meeting was so dull that two people fell asleep.",
+  "exfa": "جلسه آنقدر کسل‌کننده بود که دو نفر خوابشان برد.",
+  "ipa": "/dʌl/",
+  "syn": [
+   "boring",
+   "tedious"
+  ]
+ },
+ {
+  "i": 11115,
+  "en": "dustbin",
+  "fa": "سطل زباله",
+  "cat": "house",
+  "ex": "The dustbin outside was overflowing after the weekend party.",
+  "exfa": "سطل زباله بیرون بعد از مهمانی آخر هفته لبریز شده بود."
+ },
+ {
+  "i": 11116,
+  "en": "dusty",
+  "fa": "غبارآلود",
+  "cat": "house",
+  "ex": "No one had opened the old book in years, and its cover was dusty.",
+  "exfa": "هیچ‌کس سال‌ها آن کتاب قدیمی را باز نکرده بود و جلدش غبارآلود بود.",
+  "ipa": "/ˈdʌsti/"
+ },
+ {
+  "i": 11117,
+  "en": "duty-free",
+  "fa": "معاف از عوارض گمرکی",
+  "cat": "travel",
+  "ex": "We bought some perfume at the duty-free shop before boarding.",
+  "exfa": "ما قبل از سوار شدن به هواپیما مقداری عطر از فروشگاه معاف از عوارض گمرکی خریدیم."
+ },
+ {
+  "i": 11118,
+  "en": "duvet",
+  "fa": "لحاف",
+  "cat": "house",
+  "ex": "She pulled the duvet right up to her chin on cold winter nights.",
+  "exfa": "او در شب‌های سرد زمستان لحاف را تا زیر چانه‌اش بالا می‌کشید."
+ },
+ {
+  "i": 11119,
+  "en": "eager",
+  "fa": "مشتاق",
+  "cat": "feeling",
+  "ex": "The new students were eager to start their first English class.",
+  "exfa": "دانش‌آموزان جدید مشتاق بودند که اولین کلاس انگلیسی خود را شروع کنند.",
+  "ipa": "/ˈiːɡər/",
+  "syn": [
+   "keen",
+   "enthusiastic"
+  ]
+ },
+ {
+  "i": 11120,
+  "en": "eagerness",
+  "fa": "اشتیاق",
+  "cat": "feeling",
+  "ex": "She answered every question with obvious eagerness.",
+  "exfa": "او با اشتیاق آشکاری به هر سؤالی پاسخ داد."
+ },
+ {
+  "i": 11121,
+  "en": "earache",
+  "fa": "گوش‌درد",
+  "cat": "health",
+  "ex": "My son woke up crying in the night because of an earache.",
+  "exfa": "پسرم نیمه‌شب از شدت گوش‌درد گریه‌کنان از خواب بیدار شد."
+ },
+ {
+  "i": 11122,
+  "en": "earnest",
+  "fa": "جدی، صادقانه",
+  "cat": "feeling",
+  "ex": "He made an earnest attempt to apologize for what he had said.",
+  "exfa": "او تلاش صادقانه‌ای برای عذرخواهی بابت حرفی که زده بود کرد."
+ },
+ {
+  "i": 11123,
+  "en": "easy-going",
+  "fa": "خون‌گرم، آسان‌گیر",
+  "cat": "people",
+  "ex": "Unlike her sister, Mia is easy-going and rarely gets upset.",
+  "exfa": "برخلاف خواهرش، میا آدم آسان‌گیری است و به‌ندرت ناراحت می‌شود."
+ },
+ {
+  "i": 11124,
+  "en": "easygoing",
+  "fa": "خون‌گرم، آسان‌گیر",
+  "cat": "people",
+  "ex": "Our new manager has an easygoing attitude that makes the office feel relaxed.",
+  "exfa": "مدیر جدیدمان نگرشی آسان‌گیر دارد که فضای اداره را آرام می‌کند."
+ },
+ {
+  "i": 11125,
+  "en": "ecstasy",
+  "fa": "خلسه، سرخوشی شدید",
+  "cat": "feeling",
+  "ex": "When her name was called as the winner, she screamed in ecstasy.",
+  "exfa": "وقتی اسمش به‌عنوان برنده اعلام شد، از شدت سرخوشی جیغ کشید."
+ },
+ {
+  "i": 11126,
+  "en": "elbow",
+  "fa": "آرنج",
+  "cat": "body",
+  "ex": "He leaned his elbow on the table while he talked.",
+  "exfa": "او هنگام صحبت کردن آرنجش را روی میز تکیه داد.",
+  "ipa": "/ˈelboʊ/"
+ },
+ {
+  "i": 11127,
+  "en": "embarrass",
+  "fa": "خجالت‌زده کردن",
+  "cat": "feeling",
+  "ex": "Don't tell that story, it will embarrass me in front of everyone.",
+  "exfa": "آن داستان را تعریف نکن، جلوی همه خجالت‌زده‌ام می‌کند.",
+  "ipa": "/ɪmˈbærəs/"
+ },
+ {
+  "i": 11128,
+  "en": "embarrassment",
+  "fa": "خجالت، شرمساری",
+  "cat": "feeling",
+  "ex": "To her embarrassment, her phone rang loudly during the funeral.",
+  "exfa": "در کمال خجالتش، تلفنش با صدای بلند وسط مراسم تشییع زنگ خورد."
+ },
+ {
+  "i": 11129,
+  "en": "emotionally",
+  "fa": "از نظر عاطفی",
+  "cat": "feeling",
+  "ex": "The film's ending was emotionally difficult for many viewers.",
+  "exfa": "پایان فیلم از نظر عاطفی برای بسیاری از تماشاگران سخت بود."
+ },
+ {
+  "i": 11130,
+  "en": "emphasize",
+  "fa": "تأکید کردن",
+  "cat": "talk",
+  "ex": "The doctor emphasized how important it is to drink enough water.",
+  "exfa": "دکتر تأکید کرد که نوشیدن آب کافی چقدر مهم است."
+ },
+ {
+  "i": 11131,
+  "en": "enclose",
+  "fa": "پیوست کردن، ضمیمه کردن",
+  "cat": "general",
+  "ex": "She enclosed a handwritten note with the birthday present.",
+  "exfa": "او یک یادداشت دست‌نویس همراه با هدیه تولد ضمیمه کرد."
+ },
+ {
+  "i": 11132,
+  "en": "encouragement",
+  "fa": "تشویق، دلگرمی",
+  "cat": "feeling",
+  "ex": "With a little encouragement from her coach, she finally tried the jump.",
+  "exfa": "با کمی تشویق از سوی مربی‌اش، او بالاخره آن پرش را امتحان کرد."
+ },
+ {
+  "i": 11133,
+  "en": "encyclopaedia",
+  "fa": "دایرةالمعارف، دانشنامه",
+  "cat": "school",
+  "ex": "Before the internet, students often looked up facts in an encyclopaedia.",
+  "exfa": "قبل از اینترنت، دانش‌آموزان اغلب حقایق را در دایرةالمعارف جستجو می‌کردند."
+ },
+ {
+  "i": 11134,
+  "en": "endanger",
+  "fa": "به خطر انداختن",
+  "cat": "nature",
+  "ex": "Cutting down the rainforest will endanger thousands of species.",
+  "exfa": "قطع کردن جنگل بارانی هزاران گونه را به خطر می‌اندازد."
+ },
+ {
+  "i": 11135,
+  "en": "Englishman",
+  "fa": "مرد انگلیسی",
+  "cat": "people",
+  "ex": "The Englishman sitting next to me on the plane was reading a mystery novel.",
+  "exfa": "آن مرد انگلیسی که کنار من در هواپیما نشسته بود، رمان معمایی می‌خواند."
+ },
+ {
+  "i": 11136,
+  "en": "enjoyment",
+  "fa": "لذت",
+  "cat": "feeling",
+  "ex": "Gardening gives my mother a lot of enjoyment on weekends.",
+  "exfa": "باغبانی در آخر هفته‌ها لذت زیادی به مادرم می‌دهد."
+ },
+ {
+  "i": 11137,
+  "en": "enrich",
+  "fa": "غنی کردن",
+  "cat": "general",
+  "ex": "Traveling to new countries can really enrich your understanding of the world.",
+  "exfa": "سفر به کشورهای جدید می‌تواند واقعاً درک شما از جهان را غنی کند."
+ },
+ {
+  "i": 11138,
+  "en": "entertain",
+  "fa": "سرگرم کردن",
+  "cat": "general",
+  "ex": "The clown entertained the children with balloons and magic tricks.",
+  "exfa": "دلقک بچه‌ها را با بادکنک و ترفندهای شعبده‌بازی سرگرم کرد."
+ },
+ {
+  "i": 11139,
+  "en": "entertainer",
+  "fa": "مجری، هنرمند سرگرم‌کننده",
+  "cat": "music",
+  "ex": "As a child, she dreamed of becoming a famous entertainer.",
+  "exfa": "او در کودکی آرزو داشت یک هنرمند سرگرم‌کننده مشهور شود."
+ },
+ {
+  "i": 11140,
+  "en": "enthusiasm",
+  "fa": "شور و شوق",
+  "cat": "feeling",
+  "ex": "The team lost the match, but their enthusiasm never faded.",
+  "exfa": "تیم مسابقه را باخت، اما شور و شوقشان هرگز کم نشد."
+ },
+ {
+  "i": 11141,
+  "en": "enthusiast",
+  "fa": "علاقه‌مند، طرفدار پروپاقرص",
+  "cat": "people",
+  "ex": "My brother is a real car enthusiast and reads about engines every night.",
+  "exfa": "برادرم واقعاً یک علاقه‌مند به ماشین است و هر شب درباره موتورها می‌خواند."
+ },
+ {
+  "i": 11142,
+  "en": "environmentalist",
+  "fa": "فعال محیط‌زیست",
+  "cat": "nature",
+  "ex": "An environmentalist spoke at the conference about plastic pollution in the oceans.",
+  "exfa": "یک فعال محیط‌زیست در کنفرانس درباره آلودگی پلاستیکی اقیانوس‌ها صحبت کرد."
+ },
+ {
+  "i": 11143,
+  "en": "eternity",
+  "fa": "ابدیت، جاودانگی",
+  "cat": "time",
+  "ex": "Waiting for the exam results felt like an eternity.",
+  "exfa": "منتظر ماندن برای نتایج امتحان مثل یک ابدیت به نظر می‌رسید."
+ },
+ {
+  "i": 11144,
+  "en": "evenly",
+  "fa": "به‌طور یکنواخت، به‌طور مساوی",
+  "cat": "adv",
+  "ex": "Spread the butter evenly across the bread before adding the jam.",
+  "exfa": "قبل از افزودن مربا، کره را به‌طور یکنواخت روی نان پخش کن."
+ },
+ {
+  "i": 11145,
+  "en": "examiner",
+  "fa": "ممتحن، ارزیاب",
+  "cat": "school",
+  "ex": "The examiner asked her to describe her hometown in the speaking test.",
+  "exfa": "ممتحن از او خواست در آزمون مکالمه شهر زادگاهش را توصیف کند."
+ },
+ {
+  "i": 11146,
+  "en": "exchange rate",
+  "fa": "نرخ ارز",
+  "cat": "money",
+  "ex": "The exchange rate between the dollar and the euro changes every day.",
+  "exfa": "نرخ ارز بین دلار و یورو هر روز تغییر می‌کند."
+ },
+ {
+  "i": 11147,
+  "en": "excitedly",
+  "fa": "با هیجان",
+  "cat": "feeling",
+  "ex": "The children talked excitedly about their trip to the amusement park.",
+  "exfa": "بچه‌ها با هیجان درباره سفرشان به شهربازی صحبت می‌کردند."
+ },
+ {
+  "i": 11148,
+  "en": "exhausted",
+  "fa": "خسته و کوفته، از پا افتاده",
+  "cat": "feeling",
+  "ex": "By the time the twelve-hour flight landed, we were completely exhausted.",
+  "exfa": "زمانی که پرواز دوازده‌ساعته فرود آمد، ما کاملاً خسته و کوفته بودیم.",
+  "ipa": "/ɪɡˈzɔːstɪd/",
+  "syn": [
+   "tired",
+   "worn out"
+  ]
+ },
+ {
+  "i": 11149,
+  "en": "expose",
+  "fa": "افشا کردن",
+  "cat": "verb",
+  "ex": "The journalist's report exposed corruption inside the city council.",
+  "exfa": "گزارش خبرنگار فساد داخل شورای شهر را افشا کرد."
+ },
+ {
+  "i": 11150,
+  "en": "extensively",
+  "fa": "به‌طور گسترده",
+  "cat": "adv",
+  "ex": "The professor has written extensively on climate change over the past decade.",
+  "exfa": "استاد در دهه گذشته به‌طور گسترده درباره تغییرات اقلیمی نوشته است."
+ },
+ {
+  "i": 11151,
+  "en": "extreme sports",
+  "fa": "ورزش‌های مخاطره‌آمیز",
+  "cat": "sport",
+  "ex": "He loves extreme sports like bungee jumping and skydiving.",
+  "exfa": "او عاشق ورزش‌های مخاطره‌آمیز مانند بانجی‌جامپینگ و چتربازی است."
+ },
+ {
+  "i": 11152,
+  "en": "eyesight",
+  "fa": "بینایی",
+  "cat": "health",
+  "ex": "Grandma's eyesight has gotten worse, so she needs new glasses.",
+  "exfa": "بینایی مادربزرگ بدتر شده است، پس او به عینک جدید نیاز دارد.",
+  "ipa": "/ˈaɪsaɪt/"
+ },
+ {
+  "i": 11153,
+  "en": "face to face",
+  "fa": "رودررو، چهره به چهره",
+  "cat": "talk",
+  "ex": "It's better to sort this problem out face to face rather than by email.",
+  "exfa": "بهتر است این مشکل را رودررو حل کنیم تا با ایمیل."
+ },
+ {
+  "i": 11154,
+  "en": "face-to-face",
+  "fa": "رودررو، حضوری",
+  "cat": "talk",
+  "ex": "Students finally had a face-to-face lesson after months of studying online.",
+  "exfa": "دانش‌آموزان بعد از ماه‌ها درس خواندن آنلاین، بالاخره یک درس حضوری داشتند."
+ },
+ {
+  "i": 11155,
+  "en": "fade",
+  "fa": "محو شدن، رنگ باختن",
+  "cat": "verb",
+  "ex": "The curtains had faded badly after years in the sun.",
+  "exfa": "پرده‌ها بعد از سال‌ها بودن زیر نور آفتاب به‌شدت رنگ‌باخته بودند."
+ },
+ {
+  "i": 11156,
+  "en": "faint",
+  "fa": "ضعیف، کم‌رنگ",
+  "cat": "health",
+  "ex": "She felt so faint in the heat that she had to sit down.",
+  "exfa": "او در گرما آنقدر احساس ضعف کرد که مجبور شد بنشیند.",
+  "ipa": "/feɪnt/"
+ },
+ {
+  "i": 11157,
+  "en": "faraway",
+  "fa": "دورافتاده، دور",
+  "cat": "place",
+  "ex": "She always dreamed of living on a faraway island someday.",
+  "exfa": "او همیشه آرزو داشت روزی در یک جزیره دورافتاده زندگی کند."
+ },
+ {
+  "i": 11158,
+  "en": "farewell",
+  "fa": "خداحافظی، بدرود",
+  "cat": "talk",
+  "ex": "The office threw a small farewell party for Tom before he moved abroad.",
+  "exfa": "اداره قبل از اینکه تام به خارج از کشور نقل مکان کند، یک مهمانی خداحافظی کوچک برایش گرفت."
+ },
+ {
+  "i": 11159,
+  "en": "farmland",
+  "fa": "زمین کشاورزی",
+  "cat": "nature",
+  "ex": "The village is surrounded by miles of green farmland.",
+  "exfa": "روستا با کیلومترها زمین کشاورزی سرسبز احاطه شده است."
+ },
+ {
+  "i": 11160,
+  "en": "farther",
+  "fa": "دورتر",
+  "cat": "adv",
+  "ex": "We walked farther than we planned and got lost on the way back.",
+  "exfa": "ما دورتر از چیزی که برنامه‌ریزی کرده بودیم راه رفتیم و در راه برگشت گم شدیم.",
+  "ipa": "/ˈfɑːrðər/"
+ },
+ {
+  "i": 11161,
+  "en": "farthest",
+  "fa": "دورترین",
+  "cat": "adv",
+  "ex": "Of all the planets, Neptune is the farthest from the sun.",
+  "exfa": "از میان همه سیارات، نپتون دورترین سیاره از خورشید است.",
+  "ipa": "/ˈfɑːrðɪst/"
+ },
+ {
+  "i": 11162,
+  "en": "fascinate",
+  "fa": "مجذوب کردن، شیفته کردن",
+  "cat": "feeling",
+  "ex": "Ancient Egyptian history fascinated her from the very first museum visit.",
+  "exfa": "تاریخ مصر باستان او را از همان اولین بازدید از موزه مجذوب کرد."
+ },
+ {
+  "i": 11163,
+  "en": "fashionable",
+  "fa": "شیک، مد روز",
+  "cat": "clothes",
+  "ex": "Those boots used to be fashionable, but nobody wears them now.",
+  "exfa": "آن پوتین‌ها زمانی مد روز بودند، اما الان دیگر کسی آن‌ها را نمی‌پوشد.",
+  "syn": [
+   "stylish",
+   "trendy"
+  ]
+ },
+ {
+  "i": 11164,
+  "en": "fasten",
+  "fa": "بستن، محکم کردن",
+  "cat": "travel",
+  "ex": "Please fasten your seatbelt before the plane takes off.",
+  "exfa": "لطفاً قبل از بلند شدن هواپیما کمربندتان را ببندید.",
+  "ipa": "/ˈfæsn/"
+ },
+ {
+  "i": 11165,
+  "en": "favorable",
+  "fa": "مطلوب، مساعد",
+  "cat": "adj",
+  "ex": "The weather forecast for the wedding day looks favorable.",
+  "exfa": "پیش‌بینی هواشناسی برای روز عروسی مطلوب به نظر می‌رسد."
+ },
+ {
+  "i": 11166,
+  "en": "favourable",
+  "fa": "مطلوب، مساعد",
+  "cat": "adj",
+  "ex": "The bank offered him a favourable interest rate on the loan.",
+  "exfa": "بانک به او نرخ بهره مطلوبی برای وام پیشنهاد داد."
+ },
+ {
+  "i": 11167,
+  "en": "feast",
+  "fa": "ضیافت، جشن غذا",
+  "cat": "food",
+  "ex": "The whole family gathered for a huge feast on New Year's Eve.",
+  "exfa": "تمام خانواده برای یک ضیافت بزرگ در شب سال نو دور هم جمع شدند."
+ },
+ {
+  "i": 11168,
+  "en": "festive",
+  "fa": "جشنی، پرشور",
+  "cat": "general",
+  "ex": "The streets were decorated with lights, giving the town a festive mood.",
+  "exfa": "خیابان‌ها با چراغ‌ها تزئین شده بودند و به شهر حال‌وهوای جشن می‌دادند."
+ },
+ {
+  "i": 11169,
+  "en": "fetch",
+  "fa": "آوردن، رفتن و آوردن",
+  "cat": "verb",
+  "ex": "Please fetch some water from the kitchen while I finish cooking.",
+  "exfa": "لطفاً کمی آب از آشپزخانه بیاور تا من آشپزی را تمام کنم."
+ },
+ {
+  "i": 11170,
+  "en": "feverishly",
+  "fa": "با شتاب و اضطراب، تب‌آلود",
+  "cat": "adv",
+  "ex": "She worked feverishly to finish the report before the deadline.",
+  "exfa": "او با شتاب و اضطراب کار کرد تا گزارش را قبل از مهلت تمام کند."
+ },
+ {
+  "i": 11171,
+  "en": "film-maker",
+  "fa": "فیلم‌ساز",
+  "cat": "movie",
+  "ex": "The young film-maker won an award for her first short movie.",
+  "exfa": "آن فیلم‌ساز جوان برای اولین فیلم کوتاهش جایزه‌ای برد."
+ },
+ {
+  "i": 11172,
+  "en": "fire station",
+  "fa": "ایستگاه آتش‌نشانی",
+  "cat": "place",
+  "ex": "There's a fire station just around the corner from our house.",
+  "exfa": "یک ایستگاه آتش‌نشانی درست نبش خیابان خانه ما قرار دارد."
+ },
+ {
+  "i": 11173,
+  "en": "firefighter",
+  "fa": "آتش‌نشان",
+  "cat": "work",
+  "ex": "Firefighters rescued a family from the burning building last night.",
+  "exfa": "آتش‌نشانان دیشب یک خانواده را از ساختمان در حال سوختن نجات دادند."
+ },
+ {
+  "i": 11174,
+  "en": "firework",
+  "fa": "آتش‌بازی",
+  "cat": "general",
+  "ex": "A firework exploded loudly above the stadium during the final match.",
+  "exfa": "یک آتش‌بازی با صدای بلند بالای استادیوم در طول مسابقه نهایی منفجر شد."
+ },
+ {
+  "i": 11175,
+  "en": "firmly",
+  "fa": "محکم، قاطعانه",
+  "cat": "adv",
+  "ex": "He firmly believes that hard work is the key to success.",
+  "exfa": "او قاطعانه معتقد است که سخت‌کوشی کلید موفقیت است."
+ },
+ {
+  "i": 11176,
+  "en": "first lady",
+  "fa": "بانوی اول",
+  "cat": "people",
+  "ex": "The first lady visited the hospital to thank the nurses.",
+  "exfa": "بانوی اول برای تشکر از پرستاران به بیمارستان رفت."
+ },
+ {
+  "i": 11177,
+  "en": "first-floor",
+  "fa": "طبقه اول",
+  "cat": "house",
+  "ex": "We rented a first-floor apartment with a nice view of the park.",
+  "exfa": "ما یک آپارتمان طبقه اول با چشم‌انداز خوبی به پارک اجاره کردیم."
+ },
+ {
+  "i": 11178,
+  "en": "flock",
+  "fa": "گله، دسته (پرندگان یا گوسفندان)",
+  "cat": "animal",
+  "ex": "A flock of sheep blocked the narrow road for almost ten minutes.",
+  "exfa": "یک گله گوسفند تقریباً ده دقیقه جاده باریک را مسدود کرد."
+ },
+ {
+  "i": 11179,
+  "en": "fluent",
+  "fa": "مسلط (به زبان)، روان",
+  "cat": "talk",
+  "ex": "She became fluent in French after spending five years in Paris.",
+  "exfa": "او بعد از گذراندن پنج سال در پاریس، به زبان فرانسه مسلط شد.",
+  "ipa": "/ˈfluːənt/",
+  "syn": [
+   "proficient"
+  ]
+ },
+ {
+  "i": 11180,
+  "en": "fluently",
+  "fa": "به‌روانی، مسلط",
+  "cat": "talk",
+  "ex": "My cousin speaks three languages fluently.",
+  "exfa": "پسرخاله‌ام به‌روانی به سه زبان صحبت می‌کند."
+ },
+ {
+  "i": 11181,
+  "en": "flunk",
+  "fa": "رد شدن (در امتحان)",
+  "cat": "school",
+  "ex": "If you don't study tonight, you might flunk tomorrow's chemistry test.",
+  "exfa": "اگر امشب درس نخوانی، ممکن است فردا در امتحان شیمی رد شوی."
+ },
+ {
+  "i": 11182,
+  "en": "flute",
+  "fa": "فلوت",
+  "cat": "music",
+  "ex": "She has played the flute in the school orchestra since she was nine.",
+  "exfa": "او از نه‌سالگی در ارکستر مدرسه فلوت می‌نوازد.",
+  "ipa": "/fluːt/"
+ },
+ {
+  "i": 11183,
+  "en": "fond",
+  "fa": "علاقه‌مند، دلبسته",
+  "cat": "feeling",
+  "ex": "I'm quite fond of the old café on the corner of our street.",
+  "exfa": "من نسبت به کافه قدیمی گوشه خیابانمان علاقه زیادی دارم."
+ },
+ {
+  "i": 11184,
+  "en": "fondness",
+  "fa": "علاقه، دلبستگی",
+  "cat": "feeling",
+  "ex": "Grandpa has always had a fondness for old jazz records.",
+  "exfa": "پدربزرگ همیشه به صفحه‌های موسیقی جاز قدیمی علاقه داشته است."
+ },
+ {
+  "i": 11185,
+  "en": "foolish",
+  "fa": "احمقانه",
+  "cat": "adj",
+  "ex": "Leaving the front door unlocked all night was a foolish mistake.",
+  "exfa": "باز گذاشتن در جلویی تمام شب یک اشتباه احمقانه بود.",
+  "syn": [
+   "silly",
+   "unwise"
+  ]
+ },
+ {
+  "i": 11186,
+  "en": "forehead",
+  "fa": "پیشانی",
+  "cat": "body",
+  "ex": "The nurse gently touched his forehead to check for a fever.",
+  "exfa": "پرستار به‌آرامی پیشانی او را لمس کرد تا تب او را بررسی کند."
+ },
+ {
+  "i": 11187,
+  "en": "forgive",
+  "fa": "بخشیدن",
+  "cat": "feeling",
+  "ex": "It took her years to forgive her brother for what he had said.",
+  "exfa": "چند سال طول کشید تا او برادرش را برای حرفی که زده بود ببخشد.",
+  "ipa": "/fərˈɡɪv/",
+  "syn": [
+   "pardon"
+  ]
+ },
+ {
+  "i": 11188,
+  "en": "formally",
+  "fa": "به‌طور رسمی",
+  "cat": "adv",
+  "ex": "The mayor formally opened the new library on Monday morning.",
+  "exfa": "شهردار صبح دوشنبه کتابخانه جدید را به‌طور رسمی افتتاح کرد."
+ },
+ {
+  "i": 11189,
+  "en": "fragment",
+  "fa": "تکه، قطعه",
+  "cat": "noun",
+  "ex": "Archaeologists found a small fragment of ancient pottery near the ruins.",
+  "exfa": "باستان‌شناسان تکه کوچکی از سفال باستانی نزدیک ویرانه‌ها پیدا کردند."
+ },
+ {
+  "i": 11190,
+  "en": "freezer",
+  "fa": "فریزر",
+  "cat": "house",
+  "ex": "There's still some ice cream left in the freezer.",
+  "exfa": "هنوز کمی بستنی در فریزر باقی مانده است."
+ },
+ {
+  "i": 11191,
+  "en": "freezing",
+  "fa": "یخ‌زده، بسیار سرد",
+  "cat": "weather",
+  "ex": "It was freezing outside, so we stayed indoors and drank hot chocolate.",
+  "exfa": "بیرون هوا بسیار سرد بود، پس داخل خانه ماندیم و شکلات داغ نوشیدیم.",
+  "ipa": "/ˈfriːzɪŋ/"
+ },
+ {
+  "i": 11192,
+  "en": "freshman",
+  "fa": "دانشجوی سال اول",
+  "cat": "school",
+  "ex": "Most universities hold a special orientation day just for freshman students.",
+  "exfa": "بیشتر دانشگاه‌ها یک روز ویژه آشناسازی فقط برای دانشجویان سال اول برگزار می‌کنند."
+ },
+ {
+  "i": 11193,
+  "en": "friendliness",
+  "fa": "دوستانه بودن، مهربانی",
+  "cat": "feeling",
+  "ex": "Visitors often comment on the friendliness of people in this town.",
+  "exfa": "بازدیدکنندگان اغلب درباره مهربانی مردم این شهر صحبت می‌کنند."
+ },
+ {
+  "i": 11194,
+  "en": "fright",
+  "fa": "ترس، وحشت",
+  "cat": "feeling",
+  "ex": "That sudden noise gave everyone in the room a real fright.",
+  "exfa": "آن صدای ناگهانی باعث ترس واقعی همه افراد داخل اتاق شد.",
+  "ipa": "/fraɪt/",
+  "syn": [
+   "scare",
+   "shock"
+  ]
+ },
+ {
+  "i": 11195,
+  "en": "frustration",
+  "fa": "ناامیدی، سرخوردگی (از یک مانع)",
+  "cat": "feeling",
+  "ex": "He sighed with frustration when the printer jammed for the third time.",
+  "exfa": "وقتی پرینتر برای بار سوم گیر کرد، او از سر ناامیدی آه کشید."
+ },
+ {
+  "i": 11196,
+  "en": "frying pan",
+  "fa": "ماهیتابه",
+  "cat": "food",
+  "ex": "She cracked two eggs into the hot frying pan.",
+  "exfa": "او دو تخم‌مرغ را داخل ماهیتابه داغ شکست."
+ },
+ {
+  "i": 11197,
+  "en": "full stop",
+  "fa": "نقطه (علامت نگارشی)",
+  "cat": "school",
+  "ex": "Remember to put a full stop at the end of every sentence.",
+  "exfa": "یادت باشد در پایان هر جمله یک نقطه بگذاری."
+ },
+ {
+  "i": 11198,
+  "en": "full-time",
+  "fa": "تمام‌وقت",
+  "cat": "work",
+  "ex": "After graduating, she found a full-time job at a marketing agency.",
+  "exfa": "بعد از فارغ‌التحصیلی، او یک شغل تمام‌وقت در یک آژانس بازاریابی پیدا کرد."
+ },
+ {
+  "i": 11199,
+  "en": "furnish",
+  "fa": "مبله کردن",
+  "cat": "house",
+  "ex": "They furnished their new apartment with secondhand furniture.",
+  "exfa": "آن‌ها آپارتمان جدید خود را با مبلمان دست دوم مبله کردند.",
+  "ipa": "/ˈfɜːrnɪʃ/",
+  "syn": [
+   "equip",
+   "decorate"
+  ]
+ },
+ {
+  "i": 11200,
+  "en": "furthest",
+  "fa": "دورترین",
+  "cat": "adv",
+  "ex": "Of all the runners, she ran furthest without stopping.",
+  "exfa": "از میان همه‌ی دوندگان، او بدون توقف دورترین مسافت را دوید.",
+  "ipa": "/ˈfɜːrðɪst/",
+  "syn": [
+   "farthest"
+  ]
+ },
+ {
+  "i": 11201,
+  "en": "fuss",
+  "fa": "جنجال",
+  "cat": "feeling",
+  "ex": "Don't make such a fuss about a small mistake.",
+  "exfa": "برای یک اشتباه کوچک این‌قدر جنجال به‌پا نکن.",
+  "ipa": "/fʌs/",
+  "syn": [
+   "commotion",
+   "bother"
+  ]
+ },
+ {
+  "i": 11202,
+  "en": "gall",
+  "fa": "پررویی",
+  "cat": "feeling",
+  "ex": "He had the gall to ask for a pay rise after arriving late every day.",
+  "exfa": "او آن‌قدر پررو بود که بعد از هر روز دیر آمدن، درخواست افزایش حقوق کرد.",
+  "ipa": "/ɡɔːl/",
+  "syn": [
+   "nerve",
+   "cheek",
+   "audacity"
+  ]
+ },
+ {
+  "i": 11203,
+  "en": "gallon",
+  "fa": "گالن (واحد اندازه‌گیری مایعات)",
+  "cat": "general",
+  "ex": "The car's tank holds about twelve gallons of fuel.",
+  "exfa": "باک ماشین حدود دوازده گالن سوخت جا می‌دهد.",
+  "ipa": "/ˈɡælən/"
+ },
+ {
+  "i": 11204,
+  "en": "gaol",
+  "fa": "زندان (املای بریتانیایی برای jail)",
+  "cat": "crime",
+  "ex": "In the old novel, the thief was sent to gaol for ten years.",
+  "exfa": "در آن رمان قدیمی، دزد به مدت ده سال به زندان فرستاده شد.",
+  "ipa": "/dʒeɪl/",
+  "syn": [
+   "jail",
+   "prison"
+  ]
+ },
+ {
+  "i": 11205,
+  "en": "garment",
+  "fa": "قطعه لباس",
+  "cat": "clothes",
+  "ex": "Each garment in the shop was carefully folded and labeled.",
+  "exfa": "هر قطعه لباس در مغازه با دقت تا شده و برچسب خورده بود.",
+  "ipa": "/ˈɡɑːrmənt/",
+  "syn": [
+   "clothing",
+   "attire"
+  ]
+ },
+ {
+  "i": 11206,
+  "en": "gee",
+  "fa": "وای! (بیان تعجب یا هیجان)",
+  "cat": "talk",
+  "ex": "\"Gee, I didn't expect you to be here so early!\" she said.",
+  "exfa": "او گفت: «وای، فکر نمی‌کردم این‌قدر زود اینجا باشی!»",
+  "ipa": "/dʒiː/"
+ },
+ {
+  "i": 11207,
+  "en": "genetically",
+  "fa": "از نظر ژنتیکی",
+  "cat": "health",
+  "ex": "Some diseases are genetically passed down from parents to children.",
+  "exfa": "برخی بیماری‌ها از نظر ژنتیکی از والدین به فرزندان منتقل می‌شوند.",
+  "ipa": "/dʒəˈnetɪkli/"
+ },
+ {
+  "i": 11208,
+  "en": "gifted",
+  "fa": "بااستعداد",
+  "cat": "adj",
+  "ex": "Her younger brother is a gifted musician who started playing piano at age four.",
+  "exfa": "برادر کوچک‌تر او نوازنده‌ای بااستعداد است که از چهار سالگی شروع به نواختن پیانو کرد.",
+  "ipa": "/ˈɡɪftɪd/",
+  "syn": [
+   "talented",
+   "skilled"
+  ]
+ },
+ {
+  "i": 11209,
+  "en": "giggle",
+  "fa": "خنده‌ی ریز و کوتاه",
+  "cat": "feeling",
+  "ex": "She let out a giggle when he told the joke.",
+  "exfa": "وقتی او آن جوک را گفت، دختر خنده‌ی ریزی سر داد.",
+  "ipa": "/ˈɡɪɡəl/",
+  "syn": [
+   "chuckle",
+   "titter"
+  ]
+ },
+ {
+  "i": 11210,
+  "en": "giraffe",
+  "fa": "زرافه",
+  "cat": "animal",
+  "ex": "The giraffe at the zoo stretched its long neck to reach the leaves.",
+  "exfa": "زرافه‌ی باغ‌وحش گردنش را دراز کرد تا به برگ‌ها برسد.",
+  "ipa": "/dʒəˈræf/"
+ },
+ {
+  "i": 11211,
+  "en": "glide",
+  "fa": "حرکت نرم و لغزان",
+  "cat": "general",
+  "ex": "With one smooth glide, the swan crossed the lake.",
+  "exfa": "قو با یک حرکت نرم و لغزان دریاچه را طی کرد.",
+  "ipa": "/ɡlaɪd/"
+ },
+ {
+  "i": 11212,
+  "en": "glimpse",
+  "fa": "نگاه گذرا",
+  "cat": "general",
+  "ex": "I only caught a glimpse of the actress as she got into her car.",
+  "exfa": "من فقط یک نگاه گذرا به آن بازیگر زن انداختم، درست وقتی سوار ماشینش می‌شد.",
+  "ipa": "/ɡlɪmps/",
+  "syn": [
+   "glance",
+   "peek"
+  ]
+ },
+ {
+  "i": 11213,
+  "en": "glint",
+  "fa": "برق کوتاه و ناگهانی",
+  "cat": "general",
+  "ex": "There was a glint of excitement in his eyes when he opened the gift.",
+  "exfa": "وقتی هدیه را باز کرد، برقی از هیجان در چشمانش دیده می‌شد.",
+  "ipa": "/ɡlɪnt/",
+  "syn": [
+   "sparkle",
+   "flash"
+  ]
+ },
+ {
+  "i": 11214,
+  "en": "glorious",
+  "fa": "باشکوه",
+  "cat": "adj",
+  "ex": "We had a glorious day at the beach with clear skies and warm sun.",
+  "exfa": "ما یک روز باشکوه در ساحل با آسمانی صاف و آفتابی گرم داشتیم.",
+  "ipa": "/ˈɡlɔːriəs/",
+  "syn": [
+   "magnificent",
+   "splendid"
+  ]
+ },
+ {
+  "i": 11215,
+  "en": "goalkeeper",
+  "fa": "دروازه‌بان",
+  "cat": "sport",
+  "ex": "The goalkeeper dived to the left and saved the penalty kick.",
+  "exfa": "دروازه‌بان به سمت چپ شیرجه زد و ضربه‌ی پنالتی را مهار کرد.",
+  "ipa": "/ˈɡoʊlkiːpər/"
+ },
+ {
+  "i": 11216,
+  "en": "goddess",
+  "fa": "الهه",
+  "cat": "general",
+  "ex": "In ancient Greek stories, Athena was the goddess of wisdom.",
+  "exfa": "در داستان‌های یونان باستان، آتنا الهه‌ی خرد بود.",
+  "ipa": "/ˈɡɒdes/"
+ },
+ {
+  "i": 11217,
+  "en": "golfer",
+  "fa": "گلف‌باز",
+  "cat": "sport",
+  "ex": "The golfer practiced her swing for an hour before the tournament.",
+  "exfa": "گلف‌باز پیش از مسابقه یک ساعت روی ضربه‌اش تمرین کرد.",
+  "ipa": "/ˈɡɒlfər/"
+ },
+ {
+  "i": 11218,
+  "en": "goodness",
+  "fa": "وای! (بیان تعجب)",
+  "cat": "talk",
+  "ex": "\"Goodness, you've grown so tall since last year!\" my aunt exclaimed.",
+  "exfa": "عمه‌ام با تعجب گفت: «وای، از سال پیش چقدر قد کشیده‌ای!»",
+  "ipa": "/ˈɡʊdnəs/"
+ },
+ {
+  "i": 11219,
+  "en": "gorilla",
+  "fa": "گوریل",
+  "cat": "animal",
+  "ex": "The gorilla in the enclosure beat its chest and let out a loud roar.",
+  "exfa": "گوریل داخل محوطه به سینه‌اش کوبید و غرش بلندی کرد.",
+  "ipa": "/ɡəˈrɪlə/"
+ },
+ {
+  "i": 11220,
+  "en": "govern",
+  "fa": "اداره کردن (کشور)",
+  "cat": "general",
+  "ex": "The new president promised to govern the country fairly and wisely.",
+  "exfa": "رئیس‌جمهور جدید قول داد کشور را عادلانه و خردمندانه اداره کند.",
+  "ipa": "/ˈɡʌvərn/",
+  "syn": [
+   "rule",
+   "control"
+  ]
+ },
+ {
+  "i": 11221,
+  "en": "gown",
+  "fa": "گان (پیراهن بلند و رسمی زنانه)",
+  "cat": "clothes",
+  "ex": "She wore a long silk gown to the award ceremony.",
+  "exfa": "او یک گان ابریشمی بلند به مراسم اهدای جوایز پوشید.",
+  "ipa": "/ɡaʊn/"
+ },
+ {
+  "i": 11222,
+  "en": "graceful",
+  "fa": "موزون",
+  "cat": "adj",
+  "ex": "The dancer moved across the stage with graceful, flowing steps.",
+  "exfa": "رقصنده با قدم‌هایی موزون و روان روی صحنه حرکت کرد.",
+  "ipa": "/ˈɡreɪsfəl/",
+  "syn": [
+   "elegant",
+   "smooth"
+  ]
+ },
+ {
+  "i": 11223,
+  "en": "gratitude",
+  "fa": "قدردانی",
+  "cat": "feeling",
+  "ex": "He wrote a letter to express his gratitude for their support.",
+  "exfa": "او نامه‌ای نوشت تا قدردانی خود را از حمایتشان ابراز کند.",
+  "ipa": "/ˈɡrætɪtjuːd/",
+  "syn": [
+   "thankfulness",
+   "appreciation"
+  ]
+ },
+ {
+  "i": 11224,
+  "en": "gravy",
+  "fa": "سس گوشت",
+  "cat": "food",
+  "ex": "She poured hot gravy over the mashed potatoes.",
+  "exfa": "او سس گوشت داغ را روی پوره‌ی سیب‌زمینی ریخت.",
+  "ipa": "/ˈɡreɪvi/"
+ },
+ {
+  "i": 11225,
+  "en": "groom",
+  "fa": "داماد",
+  "cat": "people",
+  "ex": "The groom looked nervous as he waited at the altar for his bride.",
+  "exfa": "داماد در حالی که کنار محراب منتظر عروسش بود، عصبی به نظر می‌رسید.",
+  "ipa": "/ɡruːm/"
+ },
+ {
+  "i": 11226,
+  "en": "ground floor",
+  "fa": "طبقه‌ی همکف",
+  "cat": "house",
+  "ex": "Our apartment is on the ground floor, so we don't need to use the elevator.",
+  "exfa": "آپارتمان ما در طبقه‌ی همکف است، پس نیازی به استفاده از آسانسور نداریم."
+ },
+ {
+  "i": 11227,
+  "en": "grouping",
+  "fa": "گروه‌بندی",
+  "cat": "general",
+  "ex": "The teacher created small groupings of students to work on different projects.",
+  "exfa": "معلم گروه‌بندی‌های کوچکی از دانش‌آموزان تشکیل داد تا روی پروژه‌های مختلف کار کنند.",
+  "ipa": "/ˈɡruːpɪŋ/"
+ },
+ {
+  "i": 11228,
+  "en": "guitarist",
+  "fa": "گیتاریست",
+  "cat": "music",
+  "ex": "The lead guitarist played an amazing solo during the concert.",
+  "exfa": "گیتاریست اصلی در طول کنسرت یک سولوی فوق‌العاده نواخت.",
+  "ipa": "/ɡɪˈtɑːrɪst/"
+ },
+ {
+  "i": 11229,
+  "en": "gymnastics",
+  "fa": "ژیمناستیک",
+  "cat": "sport",
+  "ex": "She has practiced gymnastics since she was six years old.",
+  "exfa": "او از شش سالگی ژیمناستیک تمرین کرده است.",
+  "ipa": "/dʒɪmˈnæstɪks/"
+ },
+ {
+  "i": 11230,
+  "en": "hairdryer",
+  "fa": "سشوار",
+  "cat": "house",
+  "ex": "I forgot to pack my hairdryer, so my hair was still wet when we left.",
+  "exfa": "سشوارم را فراموش کردم ببرم، پس وقتی رفتیم موهایم هنوز خیس بود.",
+  "ipa": "/ˈherdraɪər/"
+ },
+ {
+  "i": 11231,
+  "en": "hand-held",
+  "fa": "دستی (قابل حمل با دست)",
+  "cat": "tech",
+  "ex": "He used a hand-held scanner to check the barcodes on each box.",
+  "exfa": "او از یک اسکنر دستی برای بررسی بارکد هر جعبه استفاده کرد."
+ },
+ {
+  "i": 11232,
+  "en": "handball",
+  "fa": "هندبال (ورزش)",
+  "cat": "sport",
+  "ex": "Our school team won the regional handball championship last spring.",
+  "exfa": "تیم مدرسه‌ی ما بهار گذشته قهرمانی منطقه‌ای هندبال را برد."
+ },
+ {
+  "i": 11233,
+  "en": "handkerchief",
+  "fa": "دستمال (پارچه‌ای)",
+  "cat": "clothes",
+  "ex": "He pulled a white handkerchief from his pocket to wipe his forehead.",
+  "exfa": "او یک دستمال سفید از جیبش بیرون آورد تا پیشانی‌اش را پاک کند.",
+  "ipa": "/ˈhæŋkərtʃɪf/"
+ },
+ {
+  "i": 11234,
+  "en": "handshake",
+  "fa": "دست دادن",
+  "cat": "people",
+  "ex": "They sealed the business deal with a firm handshake.",
+  "exfa": "آن‌ها معامله‌ی تجاری را با یک دست دادن محکم مهر و موم کردند."
+ },
+ {
+  "i": 11235,
+  "en": "handwriting",
+  "fa": "دست‌خط",
+  "cat": "school",
+  "ex": "The teacher praised his neat handwriting on the essay.",
+  "exfa": "معلم دست‌خط منظم او را در آن مقاله تحسین کرد."
+ },
+ {
+  "i": 11236,
+  "en": "hard-working",
+  "fa": "سخت‌کوش",
+  "cat": "work",
+  "ex": "My colleague is one of the most hard-working people in the office.",
+  "exfa": "همکارم یکی از سخت‌کوش‌ترین افراد دفتر است.",
+  "syn": [
+   "diligent",
+   "industrious"
+  ]
+ },
+ {
+  "i": 11237,
+  "en": "hardship",
+  "fa": "سختی",
+  "cat": "general",
+  "ex": "The family faced great financial hardship after the factory closed.",
+  "exfa": "آن خانواده بعد از تعطیلی کارخانه با سختی مالی زیادی روبه‌رو شد.",
+  "ipa": "/ˈhɑːrdʃɪp/"
+ },
+ {
+  "i": 11238,
+  "en": "harness",
+  "fa": "بند ایمنی",
+  "cat": "general",
+  "ex": "The climbers checked each other's harness before beginning the steep climb.",
+  "exfa": "کوهنوردان قبل از شروع صعود شیب‌دار، بند ایمنی یکدیگر را بررسی کردند.",
+  "ipa": "/ˈhɑːrnɪs/"
+ },
+ {
+  "i": 11239,
+  "en": "hasty",
+  "fa": "عجولانه",
+  "cat": "adj",
+  "ex": "He regretted making such a hasty decision without asking for advice.",
+  "exfa": "او از تصمیم عجولانه‌ای که بدون مشورت گرفت پشیمان شد.",
+  "ipa": "/ˈheɪsti/",
+  "syn": [
+   "hurried",
+   "rushed"
+  ]
+ },
+ {
+  "i": 11240,
+  "en": "hatch",
+  "fa": "دریچه (در کوچک کشتی یا هواپیما)",
+  "cat": "general",
+  "ex": "Through the hatch, the sailors climbed up to reach the deck.",
+  "exfa": "ملوان‌ها از دریچه بالا رفتند تا به عرشه برسند.",
+  "ipa": "/hætʃ/"
+ },
+ {
+  "i": 11241,
+  "en": "hatred",
+  "fa": "نفرت",
+  "cat": "feeling",
+  "ex": "The old feud filled both families with deep hatred for generations.",
+  "exfa": "آن دشمنی قدیمی نسل‌ها هر دو خانواده را از نفرت عمیق پر کرد.",
+  "ipa": "/ˈheɪtrɪd/",
+  "syn": [
+   "hate",
+   "loathing"
+  ]
+ },
+ {
+  "i": 11242,
+  "en": "haunt",
+  "fa": "رها نکردن (فکر یا خاطره‌ای آزاردهنده)",
+  "cat": "feeling",
+  "ex": "The memory of that accident still haunts her many years later.",
+  "exfa": "خاطره‌ی آن تصادف هنوز هم بعد از سال‌ها ذهن او را رها نمی‌کند.",
+  "ipa": "/hɔːnt/",
+  "syn": [
+   "torment",
+   "trouble"
+  ]
+ },
+ {
+  "i": 11243,
+  "en": "heal",
+  "fa": "بهبود یافتن (زخم)",
+  "cat": "health",
+  "ex": "It took almost three weeks for the wound to heal completely.",
+  "exfa": "آن زخم برای بهبود کامل تقریباً سه هفته طول کشید.",
+  "ipa": "/hiːl/",
+  "syn": [
+   "cure",
+   "mend"
+  ]
+ },
+ {
+  "i": 11244,
+  "en": "hearted",
+  "fa": "دل (پسوند صفت‌ساز، مانند: warm-hearted)",
+  "cat": "adj",
+  "ex": "Grandma has always been a warm-hearted woman who welcomes everyone.",
+  "exfa": "مادربزرگ همیشه زنی مهربان و گرم‌دل بوده که همه را با آغوش باز می‌پذیرد."
+ },
+ {
+  "i": 11245,
+  "en": "heavenly",
+  "fa": "بهشتی",
+  "cat": "adj",
+  "ex": "The smell of fresh bread from the bakery was absolutely heavenly.",
+  "exfa": "بوی نان تازه از نانوایی واقعاً بهشتی بود.",
+  "ipa": "/ˈhevənli/"
+ },
+ {
+  "i": 11246,
+  "en": "helpless",
+  "fa": "درمانده",
+  "cat": "feeling",
+  "ex": "The kitten looked so helpless, shivering alone in the rain.",
+  "exfa": "بچه‌گربه در حالی که تنها زیر باران می‌لرزید، بسیار درمانده به نظر می‌رسید.",
+  "ipa": "/ˈhelpləs/",
+  "syn": [
+   "powerless",
+   "defenseless"
+  ]
+ },
+ {
+  "i": 11247,
+  "en": "herd",
+  "fa": "گله",
+  "cat": "animal",
+  "ex": "A herd of elephants crossed the river at sunset.",
+  "exfa": "یک گله‌ی فیل هنگام غروب آفتاب از رودخانه عبور کرد.",
+  "ipa": "/hɜːrd/"
+ },
+ {
+  "i": 11248,
+  "en": "hesitate",
+  "fa": "تردید کردن",
+  "cat": "general",
+  "ex": "Please don't hesitate to call me if you need any help.",
+  "exfa": "لطفاً اگر به کمک نیاز داشتی، تردید نکن و به من زنگ بزن.",
+  "ipa": "/ˈhezɪteɪt/",
+  "syn": [
+   "pause",
+   "waver"
+  ]
+ },
+ {
+  "i": 11249,
+  "en": "historian",
+  "fa": "تاریخ‌دان",
+  "cat": "work",
+  "ex": "For ten years, the historian researched the causes of the war.",
+  "exfa": "آن تاریخ‌دان ده سال را صرف پژوهش درباره‌ی علل جنگ کرد.",
+  "ipa": "/hɪˈstɔːriən/"
+ },
+ {
+  "i": 11250,
+  "en": "honesty",
+  "fa": "صداقت",
+  "cat": "general",
+  "ex": "I appreciate your honesty, even though the truth was hard to hear.",
+  "exfa": "من از صداقت تو قدردانی می‌کنم، حتی با اینکه شنیدن آن حقیقت سخت بود.",
+  "ipa": "/ˈɒnɪsti/",
+  "syn": [
+   "truthfulness",
+   "sincerity"
+  ]
+ },
+ {
+  "i": 11251,
+  "en": "honeymoon",
+  "fa": "ماه عسل",
+  "cat": "travel",
+  "ex": "They spent their honeymoon on a small island in Greece.",
+  "exfa": "آن‌ها ماه عسل خود را در جزیره‌ای کوچک در یونان گذراندند.",
+  "ipa": "/ˈhʌnimuːn/"
+ },
+ {
+  "i": 11252,
+  "en": "hopeful",
+  "fa": "امیدوار",
+  "cat": "feeling",
+  "ex": "Despite the delay, the team remained hopeful about finishing the project on time.",
+  "exfa": "با وجود تأخیر، تیم همچنان امیدوار بود که پروژه را به‌موقع تمام کند.",
+  "ipa": "/ˈhoʊpfəl/",
+  "syn": [
+   "optimistic",
+   "positive"
+  ]
+ },
+ {
+  "i": 11253,
+  "en": "hopeless",
+  "fa": "ناامید",
+  "cat": "feeling",
+  "ex": "After the third failed attempt, he felt completely hopeless about passing the exam.",
+  "exfa": "بعد از سومین تلاش ناموفق، او درباره‌ی قبول شدن در امتحان کاملاً ناامید شد.",
+  "ipa": "/ˈhoʊpləs/"
+ },
+ {
+  "i": 11254,
+  "en": "horrify",
+  "fa": "وحشت‌زده کردن",
+  "cat": "feeling",
+  "ex": "Graphic images of the disaster in the news report continued to horrify viewers for weeks.",
+  "exfa": "تصاویر تکان‌دهنده از فاجعه در گزارش خبری، هفته‌ها بینندگان را وحشت‌زده می‌کرد.",
+  "ipa": "/ˈhɔːrɪfaɪ/",
+  "syn": [
+   "shock",
+   "terrify"
+  ]
+ },
+ {
+  "i": 11255,
+  "en": "housework",
+  "fa": "کارهای خانه",
+  "cat": "house",
+  "ex": "We usually split the housework evenly between us on weekends.",
+  "exfa": "ما معمولاً آخر هفته‌ها کارهای خانه را به‌طور مساوی بین خودمان تقسیم می‌کنیم."
+ },
+ {
+  "i": 11256,
+  "en": "humid",
+  "fa": "مرطوب",
+  "cat": "weather",
+  "ex": "Summer afternoons in the city are hot and humid.",
+  "exfa": "بعدازظهرهای تابستان در شهر گرم و مرطوب است.",
+  "ipa": "/ˈhjuːmɪd/"
+ },
+ {
+  "i": 11257,
+  "en": "humorous",
+  "fa": "طنزآمیز",
+  "cat": "adj",
+  "ex": "The speaker told a humorous story to break the ice before her presentation.",
+  "exfa": "سخنران قبل از ارائه‌اش یک داستان طنزآمیز تعریف کرد تا فضا را صمیمی کند.",
+  "ipa": "/ˈhjuːmərəs/",
+  "syn": [
+   "funny",
+   "witty"
+  ]
+ },
+ {
+  "i": 11258,
+  "en": "humour",
+  "fa": "شوخ‌طبعی",
+  "cat": "general",
+  "ex": "She has a great sense of humour and always makes us laugh.",
+  "exfa": "او حس شوخ‌طبعی فوق‌العاده‌ای دارد و همیشه ما را می‌خنداند.",
+  "ipa": "/ˈhjuːmər/"
+ },
+ {
+  "i": 11259,
+  "en": "hurriedly",
+  "fa": "با عجله",
+  "cat": "adv",
+  "ex": "She hurriedly packed her bag and ran to catch the last train.",
+  "exfa": "او با عجله ساکش را بست و دوید تا به آخرین قطار برسد."
+ },
+ {
+  "i": 11260,
+  "en": "hut",
+  "fa": "کلبه",
+  "cat": "house",
+  "ex": "By the shore stood a small wooden hut where the fishermen kept their tools.",
+  "exfa": "کنار ساحل یک کلبه‌ی چوبی کوچک بود که ماهیگیران ابزار خود را در آن نگه می‌داشتند.",
+  "ipa": "/hʌt/"
+ },
+ {
+  "i": 11261,
+  "en": "ice hockey",
+  "fa": "هاکی روی یخ",
+  "cat": "sport",
+  "ex": "Canadians are famous for their passion for ice hockey.",
+  "exfa": "کانادایی‌ها به‌خاطر علاقه‌ی شدیدشان به هاکی روی یخ معروف هستند."
+ },
+ {
+  "i": 11262,
+  "en": "ice skating",
+  "fa": "اسکیت روی یخ",
+  "cat": "sport",
+  "ex": "We went ice skating on the frozen lake last weekend.",
+  "exfa": "آخر هفته‌ی پیش روی دریاچه‌ی یخ‌زده اسکیت روی یخ رفتیم."
+ },
+ {
+  "i": 11263,
+  "en": "identity card",
+  "fa": "کارت شناسایی",
+  "cat": "general",
+  "ex": "You must show your identity card before entering the building.",
+  "exfa": "شما باید قبل از ورود به ساختمان، کارت شناسایی خود را نشان دهید."
+ },
+ {
+  "i": 11264,
+  "en": "idiom",
+  "fa": "اصطلاح",
+  "cat": "talk",
+  "ex": "\"Break the ice\" is an English idiom that means to start a conversation easily.",
+  "exfa": "«Break the ice» یک اصطلاح انگلیسی است که به معنای شروع آسان یک گفتگو است.",
+  "ipa": "/ˈɪdiəm/"
+ },
+ {
+  "i": 11265,
+  "en": "illegally",
+  "fa": "به‌طور غیرقانونی",
+  "cat": "crime",
+  "ex": "He was fined for parking illegally outside the hospital.",
+  "exfa": "او به‌خاطر پارک غیرقانونی بیرون از بیمارستان جریمه شد."
+ },
+ {
+  "i": 11266,
+  "en": "illuminate",
+  "fa": "روشن کردن",
+  "cat": "general",
+  "ex": "Hundreds of candles illuminated the old cathedral during the ceremony.",
+  "exfa": "صدها شمع در طول مراسم، کلیسای جامع قدیمی را روشن کردند.",
+  "ipa": "/ɪˈluːmɪneɪt/",
+  "syn": [
+   "light up",
+   "brighten"
+  ]
+ },
+ {
+  "i": 11267,
+  "en": "imaginary",
+  "fa": "خیالی",
+  "cat": "adj",
+  "ex": "When she was little, she had an imaginary friend named Tom.",
+  "exfa": "وقتی کوچک بود، یک دوست خیالی به نام تام داشت.",
+  "ipa": "/ɪˈmædʒɪneri/"
+ },
+ {
+  "i": 11268,
+  "en": "imitate",
+  "fa": "تقلید کردن",
+  "cat": "general",
+  "ex": "The parrot could imitate almost any sound it heard.",
+  "exfa": "طوطی می‌توانست تقریباً هر صدایی را که می‌شنید تقلید کند.",
+  "ipa": "/ˈɪmɪteɪt/",
+  "syn": [
+   "copy",
+   "mimic"
+  ]
+ },
+ {
+  "i": 11269,
+  "en": "immigrate",
+  "fa": "مهاجرت کردن (به کشوری دیگر)",
+  "cat": "travel",
+  "ex": "His grandparents immigrated to Canada in the 1960s.",
+  "exfa": "پدربزرگ و مادربزرگ او در دهه‌ی ۱۹۶۰ به کانادا مهاجرت کردند.",
+  "ipa": "/ˈɪmɪɡreɪt/"
+ },
+ {
+  "i": 11270,
+  "en": "impair",
+  "fa": "مختل کردن",
+  "cat": "health",
+  "ex": "Drinking too much alcohol can seriously impair your judgment.",
+  "exfa": "نوشیدن بیش‌ازحد الکل می‌تواند به‌شدت قضاوت شما را مختل کند.",
+  "ipa": "/ɪmˈpɛr/",
+  "syn": [
+   "damage",
+   "weaken"
+  ]
+ },
+ {
+  "i": 11271,
+  "en": "improper",
+  "fa": "نامناسب",
+  "cat": "adj",
+  "ex": "Wearing shorts to a formal wedding was considered improper.",
+  "exfa": "پوشیدن شلوارک در یک عروسی رسمی نامناسب تلقی می‌شد."
+ },
+ {
+  "i": 11272,
+  "en": "inconvenient",
+  "fa": "نامناسب (از نظر زمان یا شرایط)",
+  "cat": "adj",
+  "ex": "The meeting was rescheduled to a more inconvenient time for everyone.",
+  "exfa": "زمان جلسه به وقتی نامناسب‌تر برای همه تغییر کرد.",
+  "ipa": "/ˌɪnkənˈviːniənt/"
+ },
+ {
+  "i": 11273,
+  "en": "incredibly",
+  "fa": "به‌طرز باورنکردنی",
+  "cat": "adv",
+  "ex": "From start to finish, the final match was incredibly exciting.",
+  "exfa": "از ابتدا تا انتها، بازی نهایی به‌طرز باورنکردنی هیجان‌انگیز بود."
+ },
+ {
+  "i": 11274,
+  "en": "indefinite article",
+  "fa": "حرف تعریف نکره (a/an)",
+  "cat": "school",
+  "ex": "In English, \"a\" and \"an\" are examples of the indefinite article.",
+  "exfa": "در زبان انگلیسی، «a» و «an» نمونه‌هایی از حرف تعریف نکره هستند."
+ },
+ {
+  "i": 11275,
+  "en": "indirectly",
+  "fa": "به‌طور غیرمستقیم",
+  "cat": "adv",
+  "ex": "She found out about the surprise party indirectly, through a friend's comment.",
+  "exfa": "او درباره‌ی مهمانی سورپرایز به‌طور غیرمستقیم، از طریق حرف یک دوست، فهمید."
+ },
+ {
+  "i": 11276,
+  "en": "indoors",
+  "fa": "در داخل ساختمان",
+  "cat": "place",
+  "ex": "Because of the storm, the children had to stay indoors all afternoon.",
+  "exfa": "به‌خاطر طوفان، بچه‌ها مجبور شدند تمام بعدازظهر را داخل خانه بمانند.",
+  "ipa": "/ˈɪndɔːrz/"
+ },
+ {
+  "i": 11277,
+  "en": "inevitable",
+  "fa": "اجتناب‌ناپذیر",
+  "cat": "adj",
+  "ex": "With so little time left, defeat seemed inevitable.",
+  "exfa": "با توجه به زمان بسیار کمی که باقی مانده بود، شکست اجتناب‌ناپذیر به نظر می‌رسید.",
+  "ipa": "/ɪnˈevɪtəbəl/",
+  "syn": [
+   "unavoidable",
+   "certain"
+  ]
+ },
+ {
+  "i": 11278,
+  "en": "infinitive",
+  "fa": "مصدر (در دستور زبان)",
+  "cat": "school",
+  "ex": "\"To go\" is the infinitive form of the verb \"go\".",
+  "exfa": "«to go» شکل مصدری فعل «go» است."
+ },
+ {
+  "i": 11279,
+  "en": "inhabitant",
+  "fa": "ساکن",
+  "cat": "place",
+  "ex": "The city's inhabitants gathered in the square to celebrate the festival.",
+  "exfa": "ساکنان شهر برای جشن گرفتن در میدان جمع شدند.",
+  "ipa": "/ɪnˈhæbɪtənt/",
+  "syn": [
+   "resident"
+  ]
+ },
+ {
+  "i": 11280,
+  "en": "inhale",
+  "fa": "استنشاق کردن",
+  "cat": "health",
+  "ex": "She closed her eyes and inhaled the fresh mountain air deeply.",
+  "exfa": "او چشمانش را بست و هوای تازه‌ی کوهستان را عمیقاً استنشاق کرد.",
+  "ipa": "/ɪnˈheɪl/"
+ },
+ {
+  "i": 11281,
+  "en": "inject",
+  "fa": "تزریق کردن",
+  "cat": "health",
+  "ex": "Before he could ask any questions, the nurse injected the vaccine into his upper arm.",
+  "exfa": "پیش از آنکه او بتواند سؤالی بپرسد، پرستار واکسن را به بازوی بالای او تزریق کرد.",
+  "ipa": "/ɪnˈdʒekt/"
+ },
+ {
+  "i": 11282,
+  "en": "innermost",
+  "fa": "درونی‌ترین",
+  "cat": "adj",
+  "ex": "She only shared her innermost thoughts with her closest friend.",
+  "exfa": "او فقط درونی‌ترین افکارش را با نزدیک‌ترین دوستش در میان می‌گذاشت."
+ },
+ {
+  "i": 11283,
+  "en": "innovator",
+  "fa": "نوآور",
+  "cat": "work",
+  "ex": "He is widely considered an innovator in renewable energy technology.",
+  "exfa": "او به‌طور گسترده به‌عنوان یک نوآور در فناوری انرژی‌های تجدیدپذیر شناخته می‌شود."
+ },
+ {
+  "i": 11284,
+  "en": "insane",
+  "fa": "دیوانه",
+  "cat": "health",
+  "ex": "The court had to decide whether the defendant was legally insane at the time of the crime.",
+  "exfa": "دادگاه باید تصمیم می‌گرفت که آیا متهم در زمان ارتکاب جرم از نظر قانونی دیوانه بوده است یا نه.",
+  "ipa": "/ɪnˈseɪn/",
+  "syn": [
+   "crazy",
+   "mad"
+  ]
+ },
+ {
+  "i": 11285,
+  "en": "inscribe",
+  "fa": "حک کردن",
+  "cat": "general",
+  "ex": "On the inside of the ring, the jeweler inscribed their wedding date.",
+  "exfa": "جواهرساز تاریخ ازدواجشان را روی داخل حلقه حک کرد.",
+  "ipa": "/ɪnˈskraɪb/"
+ },
+ {
+  "i": 11286,
+  "en": "insist",
+  "fa": "اصرار کردن",
+  "cat": "talk",
+  "ex": "My mother insisted that we finish our homework before dinner.",
+  "exfa": "مادرم اصرار کرد که تکالیفمان را قبل از شام تمام کنیم.",
+  "ipa": "/ɪnˈsɪst/"
+ },
+ {
+  "i": 11287,
+  "en": "inspire",
+  "fa": "الهام بخشیدن",
+  "cat": "feeling",
+  "ex": "Her courage during the illness inspired everyone around her.",
+  "exfa": "شجاعت او در طول بیماری به همه‌ی اطرافیانش الهام بخشید.",
+  "ipa": "/ɪnˈspaɪər/",
+  "syn": [
+   "motivate",
+   "encourage"
+  ]
+ },
+ {
+  "i": 11288,
+  "en": "instal",
+  "fa": "نصب کردن",
+  "cat": "tech",
+  "ex": "Tomorrow, the technician will instal the new software on all office computers.",
+  "exfa": "فردا تکنسین نرم‌افزار جدید را روی همه‌ی رایانه‌های دفتر نصب خواهد کرد."
+ },
+ {
+  "i": 11289,
+  "en": "instead of",
+  "fa": "به‌جای",
+  "cat": "phrase",
+  "ex": "Let's take the bus instead of driving today.",
+  "exfa": "بیا امروز به‌جای رانندگی کردن، اتوبوس سوار شویم."
+ },
+ {
+  "i": 11290,
+  "en": "intentionally",
+  "fa": "عمداً",
+  "cat": "adv",
+  "ex": "He claimed he hadn't intentionally broken the vase.",
+  "exfa": "او ادعا کرد که آن گلدان را عمداً نشکسته است."
+ },
+ {
+  "i": 11291,
+  "en": "intermission",
+  "fa": "وقفه‌ی کوتاه (بین نمایش یا فیلم)",
+  "cat": "movie",
+  "ex": "During the intermission, most of the audience went out to get snacks.",
+  "exfa": "در طول وقفه، بیشتر تماشاگران برای گرفتن تنقلات بیرون رفتند.",
+  "ipa": "/ˌɪntərˈmɪʃən/"
+ },
+ {
+  "i": 11292,
+  "en": "interrupt",
+  "fa": "حرف کسی را قطع کردن",
+  "cat": "talk",
+  "ex": "Please don't interrupt me while I'm explaining the instructions.",
+  "exfa": "لطفاً وقتی دارم دستورالعمل‌ها را توضیح می‌دهم، حرفم را قطع نکن.",
+  "ipa": "/ˌɪntəˈrʌpt/"
+ },
+ {
+  "i": 11293,
+  "en": "interviewee",
+  "fa": "مصاحبه‌شونده",
+  "cat": "work",
+  "ex": "The interviewee answered every question calmly and confidently.",
+  "exfa": "مصاحبه‌شونده به هر سؤالی آرام و با اعتمادبه‌نفس پاسخ داد."
+ },
+ {
+  "i": 11294,
+  "en": "involuntarily",
+  "fa": "به طور غیرارادی",
+  "cat": "adv",
+  "ex": "His hand jerked involuntarily when the doctor tested his reflex.",
+  "exfa": "دستش هنگامی که دکتر رفلکسش را آزمایش کرد، به طور غیرارادی پرید.",
+  "ipa": "/ɪnˈvɒlənterəli/",
+  "syn": [
+   "automatically",
+   "instinctively"
+  ]
+ },
+ {
+  "i": 11295,
+  "en": "ironing",
+  "fa": "اتوکشی",
+  "cat": "house",
+  "ex": "She does the ironing every Sunday afternoon.",
+  "exfa": "او هر یکشنبه بعدازظهر لباس‌ها را اتو می‌کند.",
+  "ipa": "/ˈaɪərnɪŋ/"
+ },
+ {
+  "i": 11296,
+  "en": "irregular",
+  "fa": "نامنظم",
+  "cat": "adj",
+  "ex": "His heartbeat was irregular, so the doctor ordered more tests.",
+  "exfa": "ضربان قلب او نامنظم بود، بنابراین دکتر آزمایش‌های بیشتری تجویز کرد.",
+  "ipa": "/ɪˈregjələr/",
+  "syn": [
+   "uneven",
+   "erratic"
+  ]
+ },
+ {
+  "i": 11297,
+  "en": "irritate",
+  "fa": "کلافه کردن",
+  "cat": "feeling",
+  "ex": "Loud chewing noises really irritate me.",
+  "exfa": "صدای جویدن بلند واقعاً مرا کلافه می‌کند.",
+  "ipa": "/ˈɪrɪteɪt/",
+  "syn": [
+   "annoy",
+   "bother"
+  ]
+ },
+ {
+  "i": 11298,
+  "en": "jog",
+  "fa": "دویدن آرام",
+  "cat": "sport",
+  "ex": "We jog around the park together every morning before work.",
+  "exfa": "ما هر روز صبح قبل از کار با هم دور پارک آرام می‌دویم.",
+  "ipa": "/dʒɒɡ/",
+  "syn": [
+   "trot"
+  ]
+ },
+ {
+  "i": 11299,
+  "en": "jogging",
+  "fa": "دویدن آرام (به‌عنوان ورزش)",
+  "cat": "sport",
+  "ex": "His doctor recommended jogging three times a week to strengthen his heart.",
+  "exfa": "دکترش دویدن آرام سه بار در هفته را برای تقویت قلبش توصیه کرد.",
+  "ipa": "/ˈdʒɒɡɪŋ/"
+ },
+ {
+  "i": 11300,
+  "en": "judgement",
+  "fa": "قضاوت",
+  "cat": "general",
+  "ex": "Try not to make a judgement until you've heard both sides of the story.",
+  "exfa": "سعی کن تا وقتی هر دو طرف داستان را نشنیده‌ای قضاوت نکنی.",
+  "ipa": "/ˈdʒʌdʒmənt/",
+  "syn": [
+   "verdict",
+   "opinion"
+  ]
+ },
+ {
+  "i": 11301,
+  "en": "jug",
+  "fa": "پارچ",
+  "cat": "house",
+  "ex": "She filled the jug with cold water and put it on the table.",
+  "exfa": "او پارچ را با آب سرد پر کرد و روی میز گذاشت.",
+  "ipa": "/dʒʌɡ/"
+ },
+ {
+  "i": 11302,
+  "en": "jumper",
+  "fa": "پلیور",
+  "cat": "clothes",
+  "ex": "He put on a warm wool jumper before going outside.",
+  "exfa": "او قبل از بیرون رفتن یک پلیور پشمی گرم پوشید.",
+  "ipa": "/ˈdʒʌmpər/",
+  "syn": [
+   "sweater",
+   "pullover"
+  ]
+ },
+ {
+  "i": 11303,
+  "en": "kettle",
+  "fa": "کتری",
+  "cat": "house",
+  "ex": "Could you put the kettle on while I get the cups?",
+  "exfa": "می‌شود کتری را روشن کنی تا من فنجان‌ها را بیاورم؟",
+  "ipa": "/ˈketl/"
+ },
+ {
+  "i": 11304,
+  "en": "kitten",
+  "fa": "بچه‌گربه",
+  "cat": "animal",
+  "ex": "The kitten chased a ball of wool across the living room floor.",
+  "exfa": "بچه‌گربه یک توپ نخ پشمی را روی کف اتاق نشیمن دنبال کرد.",
+  "ipa": "/ˈkɪtn/"
+ },
+ {
+  "i": 11305,
+  "en": "landlord",
+  "fa": "صاحبخانه",
+  "cat": "house",
+  "ex": "Our landlord finally agreed to fix the broken heating system.",
+  "exfa": "بالاخره صاحبخانه‌مان موافقت کرد سیستم گرمایش خراب را تعمیر کند.",
+  "ipa": "/ˈlændlɔːrd/"
+ },
+ {
+  "i": 11306,
+  "en": "latecomer",
+  "fa": "کسی که دیر می‌آید",
+  "cat": "people",
+  "ex": "Latecomers were asked to wait outside until the first act ended.",
+  "exfa": "از کسانی که دیر رسیده بودند خواسته شد تا پایان پرده اول بیرون منتظر بمانند.",
+  "ipa": "/ˈleɪtkʌmər/"
+ },
+ {
+  "i": 11307,
+  "en": "laughter",
+  "fa": "خنده",
+  "cat": "feeling",
+  "ex": "The sound of children's laughter filled the small backyard.",
+  "exfa": "صدای خندهٔ بچه‌ها حیاط خلوت کوچک را پر کرد.",
+  "ipa": "/ˈlæftər/"
+ },
+ {
+  "i": 11308,
+  "en": "lawful",
+  "fa": "قانونی",
+  "cat": "adj",
+  "ex": "The company insisted that all its business practices were lawful.",
+  "exfa": "شرکت اصرار داشت که همهٔ روش‌های تجاری‌اش قانونی هستند.",
+  "ipa": "/ˈlɔːfl/",
+  "syn": [
+   "legal",
+   "legitimate"
+  ]
+ },
+ {
+  "i": 11309,
+  "en": "leap",
+  "fa": "جهیدن؛ پرش ناگهانی",
+  "cat": "verb",
+  "ex": "The cat took a sudden leap onto the kitchen counter.",
+  "exfa": "گربه ناگهان به روی پیشخوان آشپزخانه جهید.",
+  "ipa": "/liːp/",
+  "syn": [
+   "jump",
+   "bound"
+  ]
+ },
+ {
+  "i": 11310,
+  "en": "lessen",
+  "fa": "کاهش دادن",
+  "cat": "verb",
+  "ex": "Regular exercise can lessen the risk of heart disease.",
+  "exfa": "ورزش منظم می‌تواند خطر بیماری قلبی را کاهش دهد.",
+  "ipa": "/ˈlesn/",
+  "syn": [
+   "reduce",
+   "diminish"
+  ]
+ },
+ {
+  "i": 11311,
+  "en": "lettuce",
+  "fa": "کاهو",
+  "cat": "food",
+  "ex": "The lettuce in the fridge had gone brown at the edges.",
+  "exfa": "کاهوی داخل یخچال لبه‌هایش قهوه‌ای شده بود.",
+  "ipa": "/ˈletɪs/"
+ },
+ {
+  "i": 11312,
+  "en": "liar",
+  "fa": "دروغگو",
+  "cat": "people",
+  "ex": "Everyone in the office knew he was a liar after that incident.",
+  "exfa": "همه در اداره بعد از آن ماجرا می‌دانستند که او دروغگو است.",
+  "ipa": "/ˈlaɪər/"
+ },
+ {
+  "i": 11313,
+  "en": "liberate",
+  "fa": "آزاد کردن",
+  "cat": "verb",
+  "ex": "The soldiers helped liberate the town after months of fighting.",
+  "exfa": "سربازان کمک کردند تا شهر پس از ماه‌ها جنگ آزاد شود.",
+  "ipa": "/ˈlɪbəreɪt/",
+  "syn": [
+   "free",
+   "release"
+  ]
+ },
+ {
+  "i": 11314,
+  "en": "liberation",
+  "fa": "آزادسازی",
+  "cat": "general",
+  "ex": "The whole nation celebrated the liberation of the capital.",
+  "exfa": "کل ملت آزادسازی پایتخت را جشن گرفتند.",
+  "ipa": "/ˌlɪbəˈreɪʃn/"
+ },
+ {
+  "i": 11315,
+  "en": "lifeguard",
+  "fa": "نجات‌غریق",
+  "cat": "work",
+  "ex": "The lifeguard blew her whistle when a swimmer went too far out.",
+  "exfa": "وقتی شناگری خیلی دور شد، نجات‌غریق سوتش را زد.",
+  "ipa": "/ˈlaɪfɡɑːrd/"
+ },
+ {
+  "i": 11316,
+  "en": "lifelong",
+  "fa": "مادام‌العمر",
+  "cat": "adj",
+  "ex": "They became lifelong friends after meeting at university.",
+  "exfa": "آن‌ها پس از آشنایی در دانشگاه دوستان مادام‌العمر یکدیگر شدند.",
+  "ipa": "/ˈlaɪflɒŋ/"
+ },
+ {
+  "i": 11317,
+  "en": "lightly",
+  "fa": "به آرامی",
+  "cat": "adv",
+  "ex": "She touched his shoulder lightly to get his attention.",
+  "exfa": "او به آرامی روی شانه‌اش دست زد تا توجهش را جلب کند.",
+  "ipa": "/ˈlaɪtli/"
+ },
+ {
+  "i": 11318,
+  "en": "likeness",
+  "fa": "شباهت",
+  "cat": "noun",
+  "ex": "The painting captured a striking likeness of the old king.",
+  "exfa": "این تابلو شباهت شگفت‌انگیزی به پادشاه پیر داشت.",
+  "ipa": "/ˈlaɪknəs/",
+  "syn": [
+   "resemblance"
+  ]
+ },
+ {
+  "i": 11319,
+  "en": "limp",
+  "fa": "لنگیدن",
+  "cat": "body",
+  "ex": "He twisted his ankle and had to limp home.",
+  "exfa": "او مچ پایش پیچ خورد و مجبور شد لنگ‌لنگان به خانه برود.",
+  "ipa": "/lɪmp/",
+  "syn": [
+   "hobble"
+  ]
+ },
+ {
+  "i": 11320,
+  "en": "lorry",
+  "fa": "کامیون",
+  "cat": "car",
+  "ex": "A lorry blocked the narrow road while it delivered furniture.",
+  "exfa": "یک کامیون هنگام تحویل مبلمان، جادهٔ باریک را مسدود کرد.",
+  "ipa": "/ˈlɒri/",
+  "syn": [
+   "truck"
+  ]
+ },
+ {
+  "i": 11321,
+  "en": "loudspeaker",
+  "fa": "بلندگو",
+  "cat": "tech",
+  "ex": "An announcement came over the loudspeaker asking passengers to board.",
+  "exfa": "اعلامیه‌ای از بلندگو پخش شد که از مسافران خواست سوار شوند.",
+  "ipa": "/ˈlaʊdspiːkər/"
+ },
+ {
+  "i": 11322,
+  "en": "lovingly",
+  "fa": "با محبت",
+  "cat": "adv",
+  "ex": "Grandma had lovingly wrapped each gift in colourful paper.",
+  "exfa": "مادربزرگ هر هدیه را با محبت در کاغذ رنگی پیچیده بود.",
+  "ipa": "/ˈlʌvɪŋli/"
+ },
+ {
+  "i": 11323,
+  "en": "loyalty",
+  "fa": "وفاداری",
+  "cat": "feeling",
+  "ex": "The dog's loyalty to its owner never wavered, even after the move.",
+  "exfa": "وفاداری سگ به صاحبش حتی بعد از نقل مکان هم هرگز کم نشد.",
+  "ipa": "/ˈlɔɪəlti/",
+  "syn": [
+   "faithfulness",
+   "devotion"
+  ]
+ },
+ {
+  "i": 11324,
+  "en": "magician",
+  "fa": "شعبده‌باز",
+  "cat": "work",
+  "ex": "The magician pulled a white rabbit out of his hat.",
+  "exfa": "شعبده‌باز یک خرگوش سفید از کلاهش بیرون آورد.",
+  "ipa": "/məˈdʒɪʃn/"
+ },
+ {
+  "i": 11325,
+  "en": "mailbox",
+  "fa": "صندوق پستی",
+  "cat": "house",
+  "ex": "She checked the mailbox but found only bills and flyers.",
+  "exfa": "او صندوق پستی را چک کرد اما فقط قبض و آگهی پیدا کرد.",
+  "ipa": "/ˈmeɪlbɒks/"
+ },
+ {
+  "i": 11326,
+  "en": "mankind",
+  "fa": "بشریت",
+  "cat": "people",
+  "ex": "Scientists warned that climate change threatens the future of mankind.",
+  "exfa": "دانشمندان هشدار دادند که تغییرات اقلیمی آیندهٔ بشریت را تهدید می‌کند.",
+  "ipa": "/mænˈkaɪnd/",
+  "syn": [
+   "humanity"
+  ]
+ },
+ {
+  "i": 11327,
+  "en": "mash",
+  "fa": "له کردن",
+  "cat": "food",
+  "ex": "Mash the bananas with a fork before adding them to the batter.",
+  "exfa": "موزها را قبل از افزودن به خمیر، با چنگال له کن.",
+  "ipa": "/mæʃ/"
+ },
+ {
+  "i": 11328,
+  "en": "mathematician",
+  "fa": "ریاضی‌دان",
+  "cat": "work",
+  "ex": "The young mathematician solved the puzzle that had baffled experts for years.",
+  "exfa": "آن ریاضی‌دان جوان معمایی را حل کرد که سال‌ها متخصصان را گیج کرده بود.",
+  "ipa": "/ˌmæθəməˈtɪʃən/"
+ },
+ {
+  "i": 11329,
+  "en": "meditate",
+  "fa": "مدیتیشن کردن",
+  "cat": "health",
+  "ex": "He sat cross-legged on the floor and meditated in silence for an hour.",
+  "exfa": "او روی زمین چهارزانو نشست و یک ساعت در سکوت مدیتیشن کرد.",
+  "ipa": "/ˈmedɪteɪt/"
+ },
+ {
+  "i": 11330,
+  "en": "melt",
+  "fa": "ذوب شدن",
+  "cat": "verb",
+  "ex": "The ice cream began to melt before we even left the shop.",
+  "exfa": "بستنی حتی قبل از اینکه از مغازه بیرون بیاییم شروع به ذوب شدن کرد.",
+  "ipa": "/melt/"
+ },
+ {
+  "i": 11331,
+  "en": "memorable",
+  "fa": "به‌یادماندنی",
+  "cat": "adj",
+  "ex": "Their wedding day turned out to be truly memorable.",
+  "exfa": "روز عروسی آن‌ها واقعاً به‌یادماندنی از آب درآمد.",
+  "ipa": "/ˈmemərəbl/",
+  "syn": [
+   "unforgettable"
+  ]
+ },
+ {
+  "i": 11332,
+  "en": "memorise",
+  "fa": "حفظ کردن",
+  "cat": "school",
+  "ex": "British students often memorise poems for their English class.",
+  "exfa": "دانش‌آموزان بریتانیایی اغلب برای کلاس انگلیسی شعر حفظ می‌کنند.",
+  "ipa": "/ˈmeməraɪz/",
+  "syn": [
+   "learn by heart"
+  ]
+ },
+ {
+  "i": 11333,
+  "en": "memorize",
+  "fa": "حفظ کردن",
+  "cat": "school",
+  "ex": "He struggled to memorize all the new vocabulary before the test.",
+  "exfa": "او پیش از امتحان به‌سختی تلاش کرد تا تمام واژگان جدید را حفظ کند.",
+  "ipa": "/ˈmeməraɪz/"
+ },
+ {
+  "i": 11334,
+  "en": "mend",
+  "fa": "تعمیر کردن",
+  "cat": "verb",
+  "ex": "Grandpa can mend almost anything with a bit of glue and wire.",
+  "exfa": "پدربزرگ می‌تواند تقریباً هر چیزی را با کمی چسب و سیم تعمیر کند.",
+  "ipa": "/mend/",
+  "syn": [
+   "repair",
+   "fix"
+  ]
+ },
+ {
+  "i": 11335,
+  "en": "mentally",
+  "fa": "از لحاظ ذهنی",
+  "cat": "health",
+  "ex": "The long journey left the whole team mentally and physically exhausted.",
+  "exfa": "سفر طولانی تمام تیم را از لحاظ ذهنی و جسمی خسته کرد.",
+  "ipa": "/ˈmentəli/"
+ },
+ {
+  "i": 11336,
+  "en": "message board",
+  "fa": "تابلوی پیام (انجمن آنلاین)",
+  "cat": "tech",
+  "ex": "She posted her question on the message board and got three replies within an hour.",
+  "exfa": "او سؤالش را در تابلوی پیام گذاشت و ظرف یک ساعت سه پاسخ گرفت."
+ },
+ {
+  "i": 11337,
+  "en": "messy",
+  "fa": "به‌هم‌ریخته",
+  "cat": "house",
+  "ex": "His bedroom was so messy that you couldn't see the floor.",
+  "exfa": "اتاق خوابش آنقدر به‌هم‌ریخته بود که نمی‌شد کف اتاق را دید.",
+  "ipa": "/ˈmesi/",
+  "syn": [
+   "untidy",
+   "disorganized"
+  ]
+ },
+ {
+  "i": 11338,
+  "en": "middle-aged",
+  "fa": "میان‌سال",
+  "cat": "people",
+  "ex": "A middle-aged couple was sitting quietly at the corner table.",
+  "exfa": "یک زوج میان‌سال آرام سر میز گوشه نشسته بودند.",
+  "ipa": "/ˌmɪdlˈeɪdʒd/"
+ },
+ {
+  "i": 11339,
+  "en": "minimise",
+  "fa": "به حداقل رساندن",
+  "cat": "verb",
+  "ex": "Wearing a helmet helps minimise the risk of head injury.",
+  "exfa": "پوشیدن کلاه ایمنی کمک می‌کند خطر آسیب سر به حداقل برسد.",
+  "ipa": "/ˈmɪnɪmaɪz/",
+  "syn": [
+   "minimize",
+   "reduce"
+  ]
+ },
+ {
+  "i": 11340,
+  "en": "mischief",
+  "fa": "شیطنت",
+  "cat": "general",
+  "ex": "The twins were always getting into mischief when left alone.",
+  "exfa": "دوقلوها هر وقت تنها می‌ماندند همیشه مشغول شیطنت می‌شدند.",
+  "ipa": "/ˈmɪstʃɪf/"
+ },
+ {
+  "i": 11341,
+  "en": "miserable",
+  "fa": "بدبخت (اندوهگین)",
+  "cat": "feeling",
+  "ex": "He felt miserable after losing his job and staying home alone.",
+  "exfa": "او بعد از از دست دادن شغلش و تنها ماندن در خانه احساس بدبختی می‌کرد.",
+  "ipa": "/ˈmɪzrəbl/",
+  "syn": [
+   "unhappy",
+   "wretched"
+  ]
+ },
+ {
+  "i": 11342,
+  "en": "misery",
+  "fa": "بدبختی",
+  "cat": "feeling",
+  "ex": "Years of misery ended the day she left that terrible job for good.",
+  "exfa": "روزی که او آن شغل وحشتناک را برای همیشه ترک کرد، سال‌ها بدبختی به پایان رسید.",
+  "ipa": "/ˈmɪzəri/"
+ },
+ {
+  "i": 11343,
+  "en": "mislead",
+  "fa": "گمراه کردن",
+  "cat": "verb",
+  "ex": "The advert was banned for trying to mislead customers about the price.",
+  "exfa": "این آگهی به دلیل تلاش برای گمراه کردن مشتریان دربارهٔ قیمت ممنوع شد.",
+  "ipa": "/ˌmɪsˈliːd/",
+  "syn": [
+   "deceive"
+  ]
+ },
+ {
+  "i": 11344,
+  "en": "misty",
+  "fa": "مه‌آلود",
+  "cat": "weather",
+  "ex": "The hills looked mysterious in the misty morning air.",
+  "exfa": "تپه‌ها در هوای مه‌آلود صبحگاهی مرموز به نظر می‌رسیدند.",
+  "ipa": "/ˈmɪsti/"
+ },
+ {
+  "i": 11345,
+  "en": "misunderstanding",
+  "fa": "سوءتفاهم",
+  "cat": "talk",
+  "ex": "A small misunderstanding between the neighbours turned into a serious argument.",
+  "exfa": "یک سوءتفاهم کوچک بین همسایه‌ها به یک دعوای جدی تبدیل شد.",
+  "ipa": "/ˌmɪsʌndərˈstændɪŋ/"
+ },
+ {
+  "i": 11346,
+  "en": "mixing bowl",
+  "fa": "کاسهٔ مخلوط‌کن",
+  "cat": "house",
+  "ex": "Crack the eggs into the mixing bowl and whisk them together.",
+  "exfa": "تخم‌مرغ‌ها را در کاسهٔ مخلوط‌کن بشکن و آن‌ها را با هم بزن."
+ },
+ {
+  "i": 11347,
+  "en": "modal",
+  "fa": "فعل کمکی وجهی (مودال)",
+  "cat": "school",
+  "ex": "'Must' and 'should' are both modals used to express obligation.",
+  "exfa": "«must» و «should» هر دو مودال (فعل کمکی وجهی) هستند که برای بیان الزام به کار می‌روند.",
+  "ipa": "/ˈmoʊdl/"
+ },
+ {
+  "i": 11348,
+  "en": "modal verb",
+  "fa": "فعل کمکی وجهی",
+  "cat": "school",
+  "ex": "In the sentence 'You must leave now,' must is a modal verb.",
+  "exfa": "در جملهٔ «You must leave now»، کلمهٔ must یک فعل کمکی وجهی است."
+ },
+ {
+  "i": 11349,
+  "en": "molecule",
+  "fa": "مولکول",
+  "cat": "school",
+  "ex": "A water molecule is made up of two hydrogen atoms and one oxygen atom.",
+  "exfa": "یک مولکول آب از دو اتم هیدروژن و یک اتم اکسیژن تشکیل شده است.",
+  "ipa": "/ˈmɒlɪkjuːl/"
+ },
+ {
+  "i": 11350,
+  "en": "monk",
+  "fa": "راهب",
+  "cat": "people",
+  "ex": "The old monk had lived in the mountain monastery for fifty years.",
+  "exfa": "آن راهب پیر پنجاه سال بود که در صومعهٔ کوهستانی زندگی می‌کرد.",
+  "ipa": "/mʌŋk/"
+ },
+ {
+  "i": 11351,
+  "en": "mosquito",
+  "fa": "پشه",
+  "cat": "animal",
+  "ex": "A single mosquito kept buzzing around my ear all night.",
+  "exfa": "یک پشه تمام شب دور گوشم وزوز می‌کرد.",
+  "ipa": "/məˈskiːtoʊ/"
+ },
+ {
+  "i": 11352,
+  "en": "motherland",
+  "fa": "میهن (وطن مادری)",
+  "cat": "place",
+  "ex": "After thirty years abroad, he finally returned to his motherland.",
+  "exfa": "بعد از سی سال زندگی در خارج، او بالاخره به میهنش بازگشت.",
+  "ipa": "/ˈmʌðərlænd/",
+  "syn": [
+   "homeland"
+  ]
+ },
+ {
+  "i": 11353,
+  "en": "motionless",
+  "fa": "بی‌حرکت",
+  "cat": "adj",
+  "ex": "The deer stood motionless in the headlights before running off.",
+  "exfa": "آهو پیش از فرار کردن، بی‌حرکت در نور چراغ‌های ماشین ایستاده بود.",
+  "ipa": "/ˈmoʊʃnləs/"
+ },
+ {
+  "i": 11354,
+  "en": "motivate",
+  "fa": "انگیزه دادن",
+  "cat": "verb",
+  "ex": "A good coach knows how to motivate players during a losing streak.",
+  "exfa": "یک مربی خوب می‌داند چگونه در دورهٔ باخت به بازیکنان انگیزه بدهد.",
+  "ipa": "/ˈmoʊtɪveɪt/",
+  "syn": [
+   "inspire",
+   "encourage"
+  ]
+ },
+ {
+  "i": 11355,
+  "en": "motive",
+  "fa": "انگیزه",
+  "cat": "crime",
+  "ex": "Police still haven't figured out the motive behind the robbery.",
+  "exfa": "پلیس هنوز انگیزهٔ پشت این سرقت را کشف نکرده است.",
+  "ipa": "/ˈmoʊtɪv/",
+  "syn": [
+   "reason",
+   "motivation"
+  ]
+ },
+ {
+  "i": 11356,
+  "en": "motto",
+  "fa": "شعار",
+  "cat": "general",
+  "ex": "'Never give up' has been the team's motto since the club was founded.",
+  "exfa": "«هرگز تسلیم نشو» از زمان تأسیس باشگاه شعار تیم بوده است.",
+  "ipa": "/ˈmɒtoʊ/"
+ },
+ {
+  "i": 11357,
+  "en": "mountaintop",
+  "fa": "قلهٔ کوه",
+  "cat": "nature",
+  "ex": "From the mountaintop, we could see three different countries.",
+  "exfa": "از قلهٔ کوه می‌توانستیم سه کشور مختلف را ببینیم.",
+  "ipa": "/ˈmaʊntntɒp/"
+ },
+ {
+  "i": 11358,
+  "en": "mourn",
+  "fa": "سوگواری کردن",
+  "cat": "feeling",
+  "ex": "The whole village gathered to mourn the loss of their beloved teacher.",
+  "exfa": "تمام روستا گرد هم آمدند تا برای از دست دادن معلم محبوبشان سوگواری کنند.",
+  "ipa": "/mɔːrn/"
+ },
+ {
+  "i": 11359,
+  "en": "mule",
+  "fa": "قاطر",
+  "cat": "animal",
+  "ex": "The farmer loaded heavy bags of grain onto the mule's back.",
+  "exfa": "کشاورز کیسه‌های سنگین غله را روی پشت قاطر بار کرد.",
+  "ipa": "/mjuːl/"
+ },
+ {
+  "i": 11360,
+  "en": "murderer",
+  "fa": "قاتل",
+  "cat": "crime",
+  "ex": "The murderer was caught two years after the crime, following a lengthy police investigation.",
+  "exfa": "قاتل دو سال پس از جنایت و در پی یک تحقیق پلیسی طولانی، دستگیر شد.",
+  "ipa": "/ˈmɜːrdərər/"
+ },
+ {
+  "i": 11361,
+  "en": "mustard",
+  "fa": "خردل",
+  "cat": "food",
+  "ex": "He spread mustard on his sandwich instead of ketchup.",
+  "exfa": "او به‌جای سس کچاپ، خردل را روی ساندویچش مالید.",
+  "ipa": "/ˈmʌstərd/"
+ },
+ {
+  "i": 11362,
+  "en": "naked",
+  "fa": "برهنه",
+  "cat": "body",
+  "ex": "The children ran naked through the sprinkler on the hot afternoon.",
+  "exfa": "بچه‌ها در آن بعدازظهر گرم، لخت زیر آبپاش می‌دویدند.",
+  "ipa": "/ˈneɪkɪd/"
+ },
+ {
+  "i": 11363,
+  "en": "nap",
+  "fa": "چرت (خواب کوتاه)",
+  "cat": "health",
+  "ex": "I need a quick nap before I go back to work this afternoon.",
+  "exfa": "قبل از اینکه بعدازظهر به سر کار برگردم، به یک چرت کوتاه نیاز دارم.",
+  "ipa": "/næp/",
+  "syn": [
+   "doze"
+  ]
+ },
+ {
+  "i": 11364,
+  "en": "narrate",
+  "fa": "روایت کردن",
+  "cat": "movie",
+  "ex": "A famous actor was chosen to narrate the nature documentary.",
+  "exfa": "یک بازیگر مشهور برای روایت کردن مستند طبیعت انتخاب شد.",
+  "ipa": "/nəˈreɪt/"
+ },
+ {
+  "i": 11365,
+  "en": "nationalist",
+  "fa": "ملی‌گرا",
+  "cat": "people",
+  "ex": "The politician was known as a strong nationalist who opposed foreign influence.",
+  "exfa": "این سیاستمدار به عنوان یک ملی‌گرای قوی که با نفوذ خارجی مخالف بود شناخته می‌شد.",
+  "ipa": "/ˈnæʃnəlɪst/"
+ },
+ {
+  "i": 11366,
+  "en": "navy blue",
+  "fa": "آبی سرمه‌ای",
+  "cat": "clothes",
+  "ex": "He wore a navy blue suit to the job interview.",
+  "exfa": "او برای مصاحبهٔ شغلی یک کت‌وشلوار آبی سرمه‌ای پوشید."
+ },
+ {
+  "i": 11367,
+  "en": "nectar",
+  "fa": "شهد",
+  "cat": "nature",
+  "ex": "Bees collect nectar from flowers to make honey.",
+  "exfa": "زنبورها برای تولید عسل، شهد را از گل‌ها جمع‌آوری می‌کنند.",
+  "ipa": "/ˈnektər/"
+ },
+ {
+  "i": 11368,
+  "en": "negotiate",
+  "fa": "مذاکره کردن",
+  "cat": "work",
+  "ex": "The union tried to negotiate a better deal for factory workers.",
+  "exfa": "اتحادیه تلاش کرد برای کارگران کارخانه توافق بهتری مذاکره کند.",
+  "ipa": "/nɪˈɡoʊʃieɪt/",
+  "syn": [
+   "bargain"
+  ]
+ },
+ {
+  "i": 11369,
+  "en": "neighbourhood",
+  "fa": "محله",
+  "cat": "place",
+  "ex": "We've lived in this neighbourhood for almost fifteen years.",
+  "exfa": "ما تقریباً پانزده سال است که در این محله زندگی می‌کنیم.",
+  "ipa": "/ˈneɪbərhʊd/",
+  "syn": [
+   "neighborhood"
+  ]
+ },
+ {
+  "i": 11370,
+  "en": "nervousness",
+  "fa": "اضطراب",
+  "cat": "feeling",
+  "ex": "You could hear the nervousness in her voice before the interview.",
+  "exfa": "قبل از مصاحبه، اضطراب را می‌شد در صدایش شنید.",
+  "ipa": "/ˈnɜːrvəsnəs/"
+ },
+ {
+  "i": 11371,
+  "en": "ness",
+  "fa": "دماغه (زمین باریک ساحلی)",
+  "cat": "nature",
+  "ex": "Fishermen have used this ness as a lookout point for centuries.",
+  "exfa": "ماهیگیران قرن‌هاست از این دماغه به عنوان نقطهٔ دیده‌بانی استفاده می‌کنند.",
+  "ipa": "/nes/"
+ },
+ {
+  "i": 11372,
+  "en": "newborn",
+  "fa": "تازه‌متولد",
+  "cat": "body",
+  "ex": "The newborn baby slept peacefully in her mother's arms.",
+  "exfa": "نوزاد تازه‌متولد، آرام در آغوش مادرش خوابیده بود.",
+  "ipa": "/ˈnuːbɔːrn/"
+ },
+ {
+  "i": 11373,
+  "en": "newcomer",
+  "fa": "تازه‌وارد",
+  "cat": "people",
+  "ex": "As a newcomer to the city, she didn't know anyone yet.",
+  "exfa": "او به عنوان یک تازه‌وارد به شهر، هنوز کسی را نمی‌شناخت.",
+  "ipa": "/ˈnuːkʌmər/"
+ },
+ {
+  "i": 11374,
+  "en": "next door",
+  "fa": "در همسایگی (خانهٔ بغلی)",
+  "cat": "place",
+  "ex": "My best friend has lived next door since we were kids.",
+  "exfa": "بهترین دوستم از وقتی بچه بودیم در خانهٔ بغلی زندگی می‌کند."
+ },
+ {
+  "i": 11375,
+  "en": "next-door",
+  "fa": "همسایه (بغلی)",
+  "cat": "place",
+  "ex": "The next-door neighbours invited us over for dinner on Friday.",
+  "exfa": "همسایه‌های بغلی ما را برای شام جمعه دعوت کردند."
+ },
+ {
+  "i": 11376,
+  "en": "noisily",
+  "fa": "با سروصدا",
+  "cat": "adv",
+  "ex": "The children ran noisily down the stairs on Christmas morning.",
+  "exfa": "بچه‌ها صبح کریسمس با سروصدا از پله‌ها پایین دویدند.",
+  "ipa": "/ˈnɔɪzɪli/"
+ },
+ {
+  "i": 11377,
+  "en": "nonetheless",
+  "fa": "با این حال",
+  "cat": "adv",
+  "ex": "The weather was terrible; nonetheless, they decided to go hiking.",
+  "exfa": "هوا افتضاح بود؛ با این حال، آن‌ها تصمیم گرفتند به کوه‌پیمایی بروند.",
+  "ipa": "/ˌnʌnðəˈles/",
+  "syn": [
+   "nevertheless",
+   "however"
+  ]
+ },
+ {
+  "i": 11378,
+  "en": "nonsense",
+  "fa": "مزخرف",
+  "cat": "talk",
+  "ex": "Stop talking nonsense and tell me what really happened.",
+  "exfa": "دست از چرند گفتن بردار و بگو واقعاً چه اتفاقی افتاد.",
+  "ipa": "/ˈnɒnsns/"
+ },
+ {
+  "i": 11379,
+  "en": "northeastern",
+  "fa": "شمال‌شرقی",
+  "cat": "place",
+  "ex": "Snowstorms are common in the northeastern part of the country during winter.",
+  "exfa": "طوفان‌های برفی در بخش شمال‌شرقی کشور در زمستان رایج هستند.",
+  "ipa": "/ˌnɔːrθˈiːstərn/"
+ },
+ {
+  "i": 11380,
+  "en": "northwestern",
+  "fa": "شمال‌غربی",
+  "cat": "place",
+  "ex": "The company opened a new factory in the northwestern region last year.",
+  "exfa": "شرکت سال گذشته یک کارخانهٔ جدید در منطقهٔ شمال‌غربی افتتاح کرد.",
+  "ipa": "/ˌnɔːrθˈwestərn/"
+ },
+ {
+  "i": 11381,
+  "en": "noticeable",
+  "fa": "قابل‌توجه",
+  "cat": "adj",
+  "ex": "There was a noticeable change in his mood after the good news.",
+  "exfa": "بعد از آن خبر خوب، تغییری قابل‌توجه در خلق‌وخویش دیده می‌شد.",
+  "ipa": "/ˈnoʊtɪsəbl/",
+  "syn": [
+   "evident",
+   "obvious"
+  ]
+ },
+ {
+  "i": 11382,
+  "en": "noticeboard",
+  "fa": "تابلوی اعلانات",
+  "cat": "school",
+  "ex": "The lost keys were pinned to the noticeboard in the hallway.",
+  "exfa": "کلیدهای گم‌شده به تابلوی اعلانات در راهرو سنجاق شده بودند.",
+  "ipa": "/ˈnoʊtɪsbɔːrd/"
+ },
+ {
+  "i": 11383,
+  "en": "novelist",
+  "fa": "رمان‌نویس",
+  "cat": "work",
+  "ex": "The novelist spent three years writing her latest book.",
+  "exfa": "آن رمان‌نویس سه سال صرف نوشتن آخرین کتابش کرد.",
+  "ipa": "/ˈnɒvəlɪst/"
+ },
+ {
+  "i": 11384,
+  "en": "nucleus",
+  "fa": "هسته",
+  "cat": "school",
+  "ex": "The nucleus of an atom contains protons and neutrons.",
+  "exfa": "هستهٔ یک اتم شامل پروتون‌ها و نوترون‌ها است.",
+  "ipa": "/ˈnuːkliəs/"
+ },
+ {
+  "i": 11385,
+  "en": "objection",
+  "fa": "اعتراض",
+  "cat": "talk",
+  "ex": "The lawyer raised an objection before the witness could answer.",
+  "exfa": "وکیل قبل از اینکه شاهد بتواند پاسخ دهد، اعتراضی مطرح کرد.",
+  "ipa": "/əbˈdʒekʃən/"
+ },
+ {
+  "i": 11386,
+  "en": "obstacle",
+  "fa": "مانع",
+  "cat": "general",
+  "ex": "Lack of funding remains the biggest obstacle to finishing the project.",
+  "exfa": "کمبود بودجه همچنان بزرگ‌ترین مانع برای تکمیل پروژه است.",
+  "ipa": "/ˈɒbstəkl/",
+  "syn": [
+   "barrier",
+   "hurdle"
+  ]
+ },
+ {
+  "i": 11387,
+  "en": "occupy",
+  "fa": "اشغال کردن",
+  "cat": "verb",
+  "ex": "Soldiers moved in to occupy the abandoned building overnight.",
+  "exfa": "سربازان یک‌شبه وارد شدند تا ساختمان متروکه را اشغال کنند.",
+  "ipa": "/ˈɒkjupaɪ/"
+ },
+ {
+  "i": 11388,
+  "en": "old-fashioned",
+  "fa": "قدیمی (کهنه)",
+  "cat": "adj",
+  "ex": "My grandfather still uses an old-fashioned typewriter instead of a computer.",
+  "exfa": "پدربزرگم هنوز به‌جای کامپیوتر از یک ماشین‌تحریر قدیمی استفاده می‌کند.",
+  "ipa": "/ˌoʊldˈfæʃənd/",
+  "syn": [
+   "outdated",
+   "old-school"
+  ]
+ },
+ {
+  "i": 11389,
+  "en": "on to",
+  "fa": "به روی؛ روی",
+  "cat": "general",
+  "ex": "She climbed on to the roof to fix the antenna.",
+  "exfa": "او به روی پشت‌بام رفت تا آنتن را تعمیر کند."
+ },
+ {
+  "i": 11390,
+  "en": "oneself",
+  "fa": "خود؛ خویشتن",
+  "cat": "general",
+  "ex": "It is important to believe in oneself.",
+  "exfa": "مهم است که آدم به خودش اعتماد داشته باشد."
+ },
+ {
+  "i": 11391,
+  "en": "onstage",
+  "fa": "روی صحنه",
+  "cat": "general",
+  "ex": "The actors felt nervous just before going onstage.",
+  "exfa": "بازیگران درست پیش از رفتن روی صحنه احساس اضطراب کردند."
+ },
+ {
+  "i": 11392,
+  "en": "oppress",
+  "fa": "ستم کردن؛ سرکوب کردن",
+  "cat": "general",
+  "ex": "The dictator oppressed anyone who disagreed with him.",
+  "exfa": "دیکتاتور هر کسی را که با او مخالف بود سرکوب می‌کرد.",
+  "ipa": "/əˈpres/"
+ },
+ {
+  "i": 11393,
+  "en": "oppression",
+  "fa": "ستم؛ سرکوب",
+  "cat": "general",
+  "ex": "Years of oppression finally led to a revolution.",
+  "exfa": "سال‌ها ستم سرانجام به یک انقلاب منجر شد."
+ },
+ {
+  "i": 11394,
+  "en": "orderly",
+  "fa": "منظم؛ مرتب",
+  "cat": "adj",
+  "ex": "The students left the building in an orderly line.",
+  "exfa": "دانش‌آموزان به‌صورت منظم و در یک صف از ساختمان خارج شدند."
+ },
+ {
+  "i": 11395,
+  "en": "organism",
+  "fa": "موجود زنده؛ ارگانیسم",
+  "cat": "nature",
+  "ex": "A single-celled organism can reproduce very quickly.",
+  "exfa": "یک موجود زنده تک‌سلولی می‌تواند خیلی سریع تولیدمثل کند."
+ },
+ {
+  "i": 11396,
+  "en": "ought to",
+  "fa": "باید",
+  "cat": "general",
+  "ex": "You ought to apologize for what you said.",
+  "exfa": "تو باید بابت چیزی که گفتی عذرخواهی کنی."
+ },
+ {
+  "i": 11397,
+  "en": "out-of-date",
+  "fa": "قدیمی؛ منسوخ؛ تاریخ‌گذشته",
+  "cat": "adj",
+  "ex": "This textbook is out-of-date and needs to be replaced.",
+  "exfa": "این کتاب درسی قدیمی است و باید جایگزین شود."
+ },
+ {
+  "i": 11398,
+  "en": "outlaw",
+  "fa": "یاغی؛ قانون‌شکن",
+  "cat": "crime",
+  "ex": "In the old western films, the outlaw always wore a black hat.",
+  "exfa": "در فیلم‌های وسترن قدیمی، یاغی همیشه کلاه سیاه به سر داشت."
+ },
+ {
+  "i": 11399,
+  "en": "outward",
+  "fa": "ظاهری؛ بیرونی",
+  "cat": "adj",
+  "ex": "Despite his outward calm, he was terrified inside.",
+  "exfa": "با وجود آرامش ظاهری‌اش، او در درون وحشت‌زده بود."
+ },
+ {
+  "i": 11400,
+  "en": "outweigh",
+  "fa": "بیشتر از ... اهمیت داشتن؛ برتری داشتن بر",
+  "cat": "general",
+  "ex": "The benefits of the new policy outweigh its costs.",
+  "exfa": "مزایای این سیاست جدید بر هزینه‌های آن برتری دارد."
+ },
+ {
+  "i": 11401,
+  "en": "overjoyed",
+  "fa": "بسیار خوشحال؛ شادمان",
+  "cat": "feeling",
+  "ex": "My parents were overjoyed when I got accepted into university.",
+  "exfa": "وقتی در دانشگاه پذیرفته شدم، والدینم بسیار خوشحال شدند.",
+  "syn": [
+   "delighted",
+   "thrilled",
+   "ecstatic"
+  ]
+ },
+ {
+  "i": 11402,
+  "en": "overwhelm",
+  "fa": "غرق کردن؛ تحت فشار قرار دادن",
+  "cat": "feeling",
+  "ex": "The amount of homework began to overwhelm her.",
+  "exfa": "حجم تکالیف داشت او را تحت فشار قرار می‌داد."
+ },
+ {
+  "i": 11403,
+  "en": "overwhelming",
+  "fa": "طاقت‌فرسا؛ زیاد و فشارآور",
+  "cat": "feeling",
+  "ex": "He felt an overwhelming urge to cry during the movie.",
+  "exfa": "او در حین فیلم یک میل طاقت‌فرسا برای گریه کردن احساس کرد."
+ },
+ {
+  "i": 11404,
+  "en": "overwork",
+  "fa": "کار زیاد؛ اضافه‌کاری",
+  "cat": "work",
+  "ex": "Overwork can seriously damage your health over time.",
+  "exfa": "کار زیاد در طول زمان می‌تواند به سلامتی شما آسیب جدی بزند."
+ },
+ {
+  "i": 11405,
+  "en": "owe",
+  "fa": "بدهکار بودن؛ مدیون بودن",
+  "cat": "money",
+  "ex": "I still owe my brother twenty dollars from last month.",
+  "exfa": "من هنوز از ماه گذشته بیست دلار به برادرم بدهکارم."
+ },
+ {
+  "i": 11406,
+  "en": "owing",
+  "fa": "به‌دلیل؛ ناشی از",
+  "cat": "general",
+  "ex": "The match was cancelled, owing to heavy rain.",
+  "exfa": "به دلیل باران شدید، بازی لغو شد."
+ },
+ {
+  "i": 11407,
+  "en": "paddle",
+  "fa": "پارو؛ پارو زدن",
+  "cat": "travel",
+  "ex": "They used a wooden paddle to steer the canoe down the river.",
+  "exfa": "آن‌ها از یک پاروی چوبی برای هدایت قایق در رودخانه استفاده کردند."
+ },
+ {
+  "i": 11408,
+  "en": "parachute",
+  "fa": "چتر نجات",
+  "cat": "travel",
+  "ex": "The pilot opened his parachute seconds before the plane crashed.",
+  "exfa": "خلبان چند ثانیه قبل از سقوط هواپیما چتر نجاتش را باز کرد.",
+  "ipa": "/ˈpærəʃuːt/"
+ },
+ {
+  "i": 11409,
+  "en": "paralyse",
+  "fa": "فلج کردن",
+  "cat": "health",
+  "ex": "The accident paralysed him from the waist down.",
+  "exfa": "آن تصادف او را از کمر به پایین فلج کرد."
+ },
+ {
+  "i": 11410,
+  "en": "paralyze",
+  "fa": "فلج کردن",
+  "cat": "health",
+  "ex": "A severe snowstorm can paralyze traffic across the whole city.",
+  "exfa": "یک بوران شدید می‌تواند ترافیک کل شهر را فلج کند."
+ },
+ {
+  "i": 11411,
+  "en": "parrot",
+  "fa": "طوطی",
+  "cat": "animal",
+  "ex": "My grandmother taught her parrot to say a few simple words.",
+  "exfa": "مادربزرگم به طوطی‌اش چند کلمه ساده را یاد داد.",
+  "ipa": "/ˈpærət/"
+ },
+ {
+  "i": 11412,
+  "en": "part-time",
+  "fa": "پاره‌وقت",
+  "cat": "work",
+  "ex": "She works part-time at a bookshop while studying at college.",
+  "exfa": "او هنگام تحصیل در کالج، پاره‌وقت در یک کتاب‌فروشی کار می‌کند."
+ },
+ {
+  "i": 11413,
+  "en": "participle",
+  "fa": "وجه وصفی (اسم مفعول/فاعل)",
+  "cat": "school",
+  "ex": "'Broken' is the past participle of the verb 'break'.",
+  "exfa": "«broken» وجه وصفی گذشته فعل «break» است."
+ },
+ {
+  "i": 11414,
+  "en": "pause",
+  "fa": "مکث؛ مکث کردن",
+  "cat": "general",
+  "ex": "She took a long pause before answering the difficult question.",
+  "exfa": "او پیش از پاسخ به آن سؤال سخت، مکث طولانی کرد.",
+  "ipa": "/pɔːz/"
+ },
+ {
+  "i": 11415,
+  "en": "peanut",
+  "fa": "بادام‌زمینی",
+  "cat": "food",
+  "ex": "He is allergic to peanuts, so he never eats peanut butter.",
+  "exfa": "او به بادام‌زمینی حساسیت دارد، پس هرگز کره بادام‌زمینی نمی‌خورد."
+ },
+ {
+  "i": 11416,
+  "en": "peculiar",
+  "fa": "عجیب؛ غریب",
+  "cat": "adj",
+  "ex": "There was a peculiar smell coming from the kitchen.",
+  "exfa": "بویی عجیب از آشپزخانه می‌آمد.",
+  "syn": [
+   "odd",
+   "strange",
+   "unusual"
+  ]
+ },
+ {
+  "i": 11417,
+  "en": "penniless",
+  "fa": "بی‌پول؛ تهیدست",
+  "cat": "money",
+  "ex": "He arrived in the city penniless and had to sleep in the station.",
+  "exfa": "او بدون هیچ پولی به شهر رسید و مجبور شد در ایستگاه بخوابد."
+ },
+ {
+  "i": 11418,
+  "en": "per cent",
+  "fa": "درصد",
+  "cat": "noun",
+  "ex": "Only ten per cent of the tickets are still available.",
+  "exfa": "فقط ده درصد از بلیت‌ها هنوز موجود است."
+ },
+ {
+  "i": 11419,
+  "en": "permanently",
+  "fa": "برای همیشه؛ دائماً",
+  "cat": "adv",
+  "ex": "The factory closed permanently after the fire.",
+  "exfa": "کارخانه پس از آتش‌سوزی برای همیشه تعطیل شد."
+ },
+ {
+  "i": 11420,
+  "en": "persuade",
+  "fa": "متقاعد کردن؛ راضی کردن",
+  "cat": "talk",
+  "ex": "It took an hour to persuade my father to let me go.",
+  "exfa": "یک ساعت طول کشید تا پدرم را راضی کنم که بگذارد بروم.",
+  "ipa": "/pərˈsweɪd/"
+ },
+ {
+  "i": 11421,
+  "en": "persuasive",
+  "fa": "قانع‌کننده؛ اقناع‌کننده",
+  "cat": "talk",
+  "ex": "Her argument was so persuasive that the whole committee agreed.",
+  "exfa": "استدلال او آنقدر قانع‌کننده بود که کل کمیته موافقت کرد."
+ },
+ {
+  "i": 11422,
+  "en": "photocopy",
+  "fa": "فتوکپی",
+  "cat": "work",
+  "ex": "Could you make a photocopy of this document for me?",
+  "exfa": "می‌شود یک فتوکپی از این سند برایم بگیری؟"
+ },
+ {
+  "i": 11423,
+  "en": "phrasal verb",
+  "fa": "فعل عبارتی",
+  "cat": "school",
+  "ex": "'Give up' is a phrasal verb that means to stop trying.",
+  "exfa": "«give up» یک فعل عبارتی است که به معنی دست کشیدن از تلاش است."
+ },
+ {
+  "i": 11424,
+  "en": "piety",
+  "fa": "دینداری؛ تقوا",
+  "cat": "general",
+  "ex": "The old monk was known throughout the village for his piety.",
+  "exfa": "آن راهب پیر در سراسر روستا به دینداری‌اش شهرت داشت."
+ },
+ {
+  "i": 11425,
+  "en": "pineapple",
+  "fa": "آناناس",
+  "cat": "food",
+  "ex": "We ordered a pizza with pineapple and ham on top.",
+  "exfa": "ما یک پیتزا با آناناس و ژامبون روی آن سفارش دادیم.",
+  "ipa": "/ˈpaɪnæpl/"
+ },
+ {
+  "i": 11426,
+  "en": "pleasantly",
+  "fa": "به‌طرز خوشایندی",
+  "cat": "adv",
+  "ex": "I was pleasantly surprised by how friendly the staff were.",
+  "exfa": "من از اینکه کارکنان چقدر دوستانه بودند به‌طرز خوشایندی شگفت‌زده شدم."
+ },
+ {
+  "i": 11427,
+  "en": "pocket money",
+  "fa": "پول توجیبی",
+  "cat": "money",
+  "ex": "Children usually get pocket money for doing small chores at home.",
+  "exfa": "کودکان معمولاً برای انجام کارهای کوچک خانه پول توجیبی می‌گیرند."
+ },
+ {
+  "i": 11428,
+  "en": "politely",
+  "fa": "با ادب؛ مؤدبانه",
+  "cat": "adv",
+  "ex": "The waiter politely asked us to wait a few minutes.",
+  "exfa": "پیشخدمت مؤدبانه از ما خواست چند دقیقه صبر کنیم."
+ },
+ {
+  "i": 11429,
+  "en": "politician",
+  "fa": "سیاستمدار",
+  "cat": "people",
+  "ex": "A good politician listens carefully to the concerns of ordinary people.",
+  "exfa": "یک سیاستمدار خوب با دقت به نگرانی‌های مردم عادی گوش می‌دهد.",
+  "ipa": "/ˌpɒləˈtɪʃn/"
+ },
+ {
+  "i": 11430,
+  "en": "popcorn",
+  "fa": "ذرت بو داده؛ پاپ‌کورن",
+  "cat": "food",
+  "ex": "We always buy a large popcorn before the movie starts.",
+  "exfa": "ما همیشه قبل از شروع فیلم یک پاپ‌کورن بزرگ می‌خریم.",
+  "ipa": "/ˈpɒpkɔːrn/"
+ },
+ {
+  "i": 11431,
+  "en": "positively",
+  "fa": "به‌طور مثبت",
+  "cat": "adv",
+  "ex": "Regular exercise affects your mood positively.",
+  "exfa": "ورزش منظم روی خلق‌وخوی شما به‌طور مثبت تأثیر می‌گذارد."
+ },
+ {
+  "i": 11432,
+  "en": "possessive",
+  "fa": "دارای حس مالکیت؛ حسود و کنترل‌گر",
+  "cat": "feeling",
+  "ex": "He got very possessive whenever she talked to other friends.",
+  "exfa": "او هر وقت که آن دختر با دوستان دیگر صحبت می‌کرد، خیلی حسود و کنترل‌گر می‌شد."
+ },
+ {
+  "i": 11433,
+  "en": "postman",
+  "fa": "پستچی",
+  "cat": "work",
+  "ex": "The postman delivers letters to our street every morning.",
+  "exfa": "پستچی هر روز صبح نامه‌ها را به خیابان ما تحویل می‌دهد."
+ },
+ {
+  "i": 11434,
+  "en": "prejudice",
+  "fa": "تعصب؛ پیش‌داوری",
+  "cat": "people",
+  "ex": "The film explores racial prejudice in the 1960s.",
+  "exfa": "این فیلم تعصب نژادی در دهه ۱۹۶۰ را بررسی می‌کند.",
+  "ipa": "/ˈpredʒʊdɪs/"
+ },
+ {
+  "i": 11435,
+  "en": "preposition",
+  "fa": "حرف اضافه",
+  "cat": "school",
+  "ex": "'In', 'on' and 'at' are common English prepositions.",
+  "exfa": "«in»، «on» و «at» حروف اضافه رایج انگلیسی هستند."
+ },
+ {
+  "i": 11436,
+  "en": "preschool",
+  "fa": "پیش‌دبستانی",
+  "cat": "school",
+  "ex": "Preschool children usually learn best through play.",
+  "exfa": "کودکان پیش‌دبستانی معمولاً از طریق بازی بهتر یاد می‌گیرند."
+ },
+ {
+  "i": 11437,
+  "en": "primary school",
+  "fa": "دبستان",
+  "cat": "school",
+  "ex": "My daughter started primary school last September.",
+  "exfa": "دخترم سپتامبر گذشته وارد دبستان شد."
+ },
+ {
+  "i": 11438,
+  "en": "primitive",
+  "fa": "ابتدایی؛ بدوی",
+  "cat": "adj",
+  "ex": "The tribe used primitive tools made of stone and wood.",
+  "exfa": "آن قبیله از ابزارهای ابتدایی ساخته‌شده از سنگ و چوب استفاده می‌کرد."
+ },
+ {
+  "i": 11439,
+  "en": "proclaim",
+  "fa": "اعلام کردن (رسمی)",
+  "cat": "general",
+  "ex": "The king proclaimed a national holiday to celebrate the victory.",
+  "exfa": "پادشاه برای جشن گرفتن پیروزی، یک تعطیلی ملی اعلام کرد."
+ },
+ {
+  "i": 11440,
+  "en": "prohibition",
+  "fa": "ممنوعیت",
+  "cat": "general",
+  "ex": "There is a strict prohibition on smoking inside the hospital.",
+  "exfa": "ممنوعیت سختگیرانه‌ای برای سیگار کشیدن داخل بیمارستان وجود دارد."
+ },
+ {
+  "i": 11441,
+  "en": "pronoun",
+  "fa": "ضمیر",
+  "cat": "school",
+  "ex": "'She', 'they' and 'it' are all examples of a pronoun.",
+  "exfa": "«she»، «they» و «it» همگی نمونه‌هایی از ضمیر هستند."
+ },
+ {
+  "i": 11442,
+  "en": "prosperity",
+  "fa": "رفاه؛ کامیابی؛ رونق اقتصادی",
+  "cat": "money",
+  "ex": "The country enjoyed decades of peace and prosperity.",
+  "exfa": "آن کشور دهه‌ها صلح و رفاه اقتصادی را تجربه کرد."
+ },
+ {
+  "i": 11443,
+  "en": "prosperous",
+  "fa": "مرفه؛ کامیاب",
+  "cat": "money",
+  "ex": "The city became more prosperous after the new factories opened.",
+  "exfa": "شهر پس از افتتاح کارخانه‌های جدید مرفه‌تر شد.",
+  "syn": [
+   "wealthy",
+   "thriving"
+  ]
+ },
+ {
+  "i": 11444,
+  "en": "proverb",
+  "fa": "ضرب‌المثل",
+  "cat": "talk",
+  "ex": "There's an old proverb that says patience is a virtue.",
+  "exfa": "یک ضرب‌المثل قدیمی می‌گوید صبر نشانه فضیلت است.",
+  "ipa": "/ˈprɒvɜːrb/"
+ },
+ {
+  "i": 11445,
+  "en": "public transport",
+  "fa": "حمل‌ونقل عمومی",
+  "cat": "travel",
+  "ex": "It's usually faster to take public transport than to drive downtown.",
+  "exfa": "معمولاً استفاده از حمل‌ونقل عمومی سریع‌تر از رانندگی به مرکز شهر است."
+ },
+ {
+  "i": 11446,
+  "en": "pullover",
+  "fa": "پلیور؛ ژاکت",
+  "cat": "clothes",
+  "ex": "She wore a thick woollen pullover to keep warm in winter.",
+  "exfa": "او یک پلیور پشمی ضخیم پوشید تا در زمستان گرم بماند."
+ },
+ {
+  "i": 11447,
+  "en": "pupil",
+  "fa": "دانش‌آموز",
+  "cat": "school",
+  "ex": "Each teacher in this school is responsible for about thirty pupils.",
+  "exfa": "هر معلم در این مدرسه مسئول حدود سی دانش‌آموز است."
+ },
+ {
+  "i": 11448,
+  "en": "purify",
+  "fa": "تصفیه کردن؛ پاک کردن",
+  "cat": "general",
+  "ex": "This machine is designed to purify drinking water.",
+  "exfa": "این دستگاه برای تصفیه آب آشامیدنی طراحی شده است.",
+  "ipa": "/ˈpjʊrəfaɪ/"
+ },
+ {
+  "i": 11449,
+  "en": "quake",
+  "fa": "زمین‌لرزه",
+  "cat": "nature",
+  "ex": "A strong quake shook the coastal town early this morning.",
+  "exfa": "یک زمین‌لرزه قوی امروز صبح زود آن شهر ساحلی را لرزاند."
+ },
+ {
+  "i": 11450,
+  "en": "question mark",
+  "fa": "علامت سؤال",
+  "cat": "school",
+  "ex": "Don't forget to put a question mark at the end of a question.",
+  "exfa": "فراموش نکن که در پایان یک جمله پرسشی علامت سؤال بگذاری."
+ },
+ {
+  "i": 11451,
+  "en": "rainfall",
+  "fa": "بارندگی",
+  "cat": "weather",
+  "ex": "The region received unusually heavy rainfall last spring.",
+  "exfa": "آن منطقه بهار گذشته بارندگی غیرعادی سنگینی دریافت کرد."
+ },
+ {
+  "i": 11452,
+  "en": "raspberry",
+  "fa": "تمشک",
+  "cat": "food",
+  "ex": "She put a fresh raspberry on top of the cake.",
+  "exfa": "او یک تمشک تازه روی کیک گذاشت."
+ },
+ {
+  "i": 11453,
+  "en": "ration",
+  "fa": "سهمیه",
+  "cat": "food",
+  "ex": "During the war, each family received a weekly ration of bread and sugar.",
+  "exfa": "در طول جنگ، هر خانواده سهمیه هفتگی نان و شکر دریافت می‌کرد."
+ },
+ {
+  "i": 11454,
+  "en": "react",
+  "fa": "واکنش نشان دادن",
+  "cat": "feeling",
+  "ex": "How did your parents react when you told them the news?",
+  "exfa": "وقتی آن خبر را به والدینت گفتی، چطور واکنش نشان دادند؟",
+  "ipa": "/riˈækt/"
+ },
+ {
+  "i": 11455,
+  "en": "rearrange",
+  "fa": "دوباره چیدن؛ ترتیب دادن مجدد",
+  "cat": "house",
+  "ex": "We decided to rearrange the furniture in the living room.",
+  "exfa": "ما تصمیم گرفتیم مبلمان اتاق نشیمن را دوباره بچینیم."
+ },
+ {
+  "i": 11456,
+  "en": "rebuild",
+  "fa": "بازسازی کردن",
+  "cat": "general",
+  "ex": "It took the village five years to rebuild after the flood.",
+  "exfa": "پنج سال طول کشید تا آن روستا پس از سیل بازسازی شود."
+ },
+ {
+  "i": 11457,
+  "en": "recite",
+  "fa": "از حفظ خواندن؛ قرائت کردن",
+  "cat": "school",
+  "ex": "Each student had to recite a short poem in front of the class.",
+  "exfa": "هر دانش‌آموز باید یک شعر کوتاه را جلوی کلاس از حفظ می‌خواند."
+ },
+ {
+  "i": 11458,
+  "en": "reclaim",
+  "fa": "پس گرفتن؛ بازپس‌گیری کردن",
+  "cat": "travel",
+  "ex": "You can reclaim your lost luggage at the airport counter.",
+  "exfa": "می‌توانید چمدان گم‌شده‌تان را از باجه فرودگاه پس بگیرید."
+ },
+ {
+  "i": 11459,
+  "en": "recognise",
+  "fa": "شناختن؛ تشخیص دادن",
+  "cat": "general",
+  "ex": "I almost didn't recognise you with your new haircut.",
+  "exfa": "با آن مدل موی جدیدت تقریباً تو را نشناختم."
+ },
+ {
+  "i": 11460,
+  "en": "recycled",
+  "fa": "بازیافت‌شده",
+  "cat": "nature",
+  "ex": "This notebook is made entirely from recycled paper.",
+  "exfa": "این دفترچه کاملاً از کاغذ بازیافت‌شده ساخته شده است."
+ },
+ {
+  "i": 11461,
+  "en": "refreshments",
+  "fa": "تنقلات و نوشیدنی (پذیرایی)",
+  "cat": "food",
+  "ex": "Light refreshments will be served after the meeting.",
+  "exfa": "پس از جلسه، پذیرایی سبکی ارائه خواهد شد."
+ },
+ {
+  "i": 11462,
+  "en": "refusal",
+  "fa": "امتناع؛ رد کردن",
+  "cat": "general",
+  "ex": "His flat refusal to apologize made the argument worse.",
+  "exfa": "امتناع قاطع او از عذرخواهی، دعوا را بدتر کرد."
+ },
+ {
+  "i": 11463,
+  "en": "regain",
+  "fa": "دوباره به‌دست آوردن",
+  "cat": "health",
+  "ex": "It took months for her to regain her strength after the surgery.",
+  "exfa": "چند ماه طول کشید تا او پس از جراحی دوباره قدرتش را به‌دست آورد."
+ },
+ {
+  "i": 11464,
+  "en": "relaxing",
+  "fa": "آرامش‌بخش",
+  "cat": "feeling",
+  "ex": "A hot bath after work is really relaxing.",
+  "exfa": "حمام آب گرم بعد از کار واقعاً آرامش‌بخش است."
+ },
+ {
+  "i": 11465,
+  "en": "remembrance",
+  "fa": "یادبود؛ یادآوری",
+  "cat": "general",
+  "ex": "A minute of silence was held in remembrance of the victims.",
+  "exfa": "یک دقیقه سکوت به‌عنوان یادبود قربانیان برگزار شد."
+ },
+ {
+  "i": 11466,
+  "en": "remote control",
+  "fa": "کنترل از راه دور",
+  "cat": "tech",
+  "ex": "Has anyone seen the remote control for the TV?",
+  "exfa": "کسی کنترل از راه دور تلویزیون را ندیده؟"
+ },
+ {
+  "i": 11467,
+  "en": "repay",
+  "fa": "بازپرداخت کردن؛ پس دادن (پول)",
+  "cat": "money",
+  "ex": "He promised to repay the loan within two years.",
+  "exfa": "او قول داد وام را ظرف دو سال بازپرداخت کند."
+ },
+ {
+  "i": 11468,
+  "en": "repeatedly",
+  "fa": "بارها؛ به‌طور مکرر",
+  "cat": "adv",
+  "ex": "She repeatedly warned him not to drive so fast.",
+  "exfa": "او بارها به او هشدار داد که این‌قدر سریع رانندگی نکند."
+ },
+ {
+  "i": 11469,
+  "en": "resemble",
+  "fa": "شبیه بودن به",
+  "cat": "people",
+  "ex": "With her dark hair, she really resembles her mother.",
+  "exfa": "با آن موهای مشکی، او واقعاً شبیه مادرش است.",
+  "ipa": "/rɪˈzembl/"
+ },
+ {
+  "i": 11470,
+  "en": "respectable",
+  "fa": "محترم؛ آبرومند",
+  "cat": "people",
+  "ex": "He comes from a respectable family in the neighbourhood.",
+  "exfa": "او از یک خانواده محترم در آن محله است."
+ },
+ {
+  "i": 11471,
+  "en": "retell",
+  "fa": "دوباره تعریف کردن",
+  "cat": "school",
+  "ex": "The teacher asked us to retell the story in our own words.",
+  "exfa": "معلم از ما خواست داستان را با کلمات خودمان دوباره تعریف کنیم."
+ },
+ {
+  "i": 11472,
+  "en": "retrospect",
+  "fa": "بازنگری گذشته؛ نگاه به گذشته",
+  "cat": "general",
+  "ex": "In retrospect, moving to a new city was the best decision I ever made.",
+  "exfa": "با نگاهی به گذشته، نقل مکان به شهر جدید بهترین تصمیمی بود که تا به‌حال گرفته‌ام."
+ },
+ {
+  "i": 11473,
+  "en": "reunification",
+  "fa": "بازاتحاد؛ اتحاد مجدد",
+  "cat": "general",
+  "ex": "German reunification took place in 1990.",
+  "exfa": "بازاتحاد آلمان در سال ۱۹۹۰ رخ داد."
+ },
+ {
+  "i": 11474,
+  "en": "reunify",
+  "fa": "دوباره متحد کردن",
+  "cat": "general",
+  "ex": "The two neighbouring towns finally agreed to reunify into one city.",
+  "exfa": "دو شهر همسایه سرانجام موافقت کردند که دوباره در یک شهر متحد شوند."
+ },
+ {
+  "i": 11475,
+  "en": "revise",
+  "fa": "مرور کردن (درس)؛ بازبینی کردن",
+  "cat": "school",
+  "ex": "I need to revise my notes before the exam tomorrow.",
+  "exfa": "باید قبل از امتحان فردا یادداشت‌هایم را مرور کنم."
+ },
+ {
+  "i": 11476,
+  "en": "rewrite",
+  "fa": "دوباره نوشتن؛ بازنویسی کردن",
+  "cat": "talk",
+  "ex": "The editor asked her to rewrite the whole first chapter.",
+  "exfa": "ویراستار از او خواست کل فصل اول را بازنویسی کند."
+ },
+ {
+  "i": 11477,
+  "en": "riddle",
+  "fa": "معما",
+  "cat": "general",
+  "ex": "Can you solve this riddle: what has keys but no locks?",
+  "exfa": "می‌توانی این معما را حل کنی: چه چیزی کلید دارد اما قفل ندارد؟"
+ },
+ {
+  "i": 11478,
+  "en": "roadside",
+  "fa": "کنار جاده",
+  "cat": "travel",
+  "ex": "We stopped at a small café by the roadside for coffee.",
+  "exfa": "ما برای قهوه در یک کافه کوچک کنار جاده توقف کردیم."
+ },
+ {
+  "i": 11479,
+  "en": "rotten",
+  "fa": "گندیده؛ فاسد",
+  "cat": "food",
+  "ex": "Throw away those rotten tomatoes at the back of the fridge.",
+  "exfa": "آن گوجه‌فرنگی‌های گندیده ته یخچال را دور بینداز.",
+  "ipa": "/ˈrɒtn/",
+  "syn": [
+   "spoiled",
+   "decayed"
+  ]
+ },
+ {
+  "i": 11480,
+  "en": "rubbish",
+  "fa": "زباله؛ آشغال",
+  "cat": "house",
+  "ex": "Please take the rubbish out before you leave for work.",
+  "exfa": "لطفاً قبل از رفتن به سر کار، زباله را بیرون ببر.",
+  "ipa": "/ˈrʌbɪʃ/"
+ },
+ {
+  "i": 11481,
+  "en": "rudely",
+  "fa": "بی‌ادبانه",
+  "cat": "adv",
+  "ex": "He rudely interrupted her in the middle of the meeting.",
+  "exfa": "او بی‌ادبانه وسط جلسه صحبت او را قطع کرد."
+ },
+ {
+  "i": 11482,
+  "en": "runaway",
+  "fa": "فراری (کسی که از خانه فرار کرده)",
+  "cat": "people",
+  "ex": "The shelter offers a safe place for young runaways to stay.",
+  "exfa": "آن پناهگاه مکانی امن برای اقامت نوجوانان فراری فراهم می‌کند."
+ },
+ {
+  "i": 11483,
+  "en": "runway",
+  "fa": "باند فرودگاه",
+  "cat": "travel",
+  "ex": "The plane waited on the runway for almost an hour before takeoff.",
+  "exfa": "هواپیما تقریباً یک ساعت روی باند فرودگاه قبل از پرواز منتظر ماند.",
+  "ipa": "/ˈrʌnweɪ/"
+ },
+ {
+  "i": 11484,
+  "en": "sadness",
+  "fa": "غم، اندوه",
+  "cat": "feeling",
+  "ex": "Her voice was full of sadness when she talked about the move.",
+  "exfa": "صدای او وقتی درباره‌ی نقل‌مکان صحبت می‌کرد پر از غم بود.",
+  "ipa": "/ˈsædnəs/",
+  "syn": [
+   "sorrow",
+   "grief"
+  ]
+ },
+ {
+  "i": 11485,
+  "en": "safeguard",
+  "fa": "محافظت کردن / تدبیر امنیتی",
+  "cat": "general",
+  "ex": "The company added new passwords to safeguard customer data.",
+  "exfa": "شرکت رمز‌های عبور جدیدی اضافه کرد تا از اطلاعات مشتریان محافظت کند.",
+  "syn": [
+   "protect",
+   "shield"
+  ]
+ },
+ {
+  "i": 11486,
+  "en": "salesman",
+  "fa": "فروشنده (مرد)",
+  "cat": "work",
+  "ex": "The salesman convinced them to buy a more expensive car.",
+  "exfa": "فروشنده آن‌ها را متقاعد کرد که ماشین گران‌تری بخرند.",
+  "ipa": "/ˈseɪlzmən/"
+ },
+ {
+  "i": 11487,
+  "en": "sandal",
+  "fa": "صندل",
+  "cat": "clothes",
+  "ex": "She wore sandals because the weather was so hot.",
+  "exfa": "او صندل پوشید چون هوا خیلی گرم بود."
+ },
+ {
+  "i": 11488,
+  "en": "saucepan",
+  "fa": "قابلمه",
+  "cat": "house",
+  "ex": "He melted the butter in a small saucepan.",
+  "exfa": "او کره را در یک قابلمه‌ی کوچک آب کرد."
+ },
+ {
+  "i": 11489,
+  "en": "saucer",
+  "fa": "نعلبکی",
+  "cat": "house",
+  "ex": "She placed the cup carefully on its saucer.",
+  "exfa": "او فنجان را با دقت روی نعلبکی‌اش گذاشت."
+ },
+ {
+  "i": 11490,
+  "en": "scare",
+  "fa": "ترساندن",
+  "cat": "feeling",
+  "ex": "Don't scare your little brother like that again!",
+  "exfa": "دیگر برادر کوچکت را این‌طوری نترسان!",
+  "syn": [
+   "frighten",
+   "startle"
+  ]
+ },
+ {
+  "i": 11491,
+  "en": "scatter",
+  "fa": "پراکنده کردن",
+  "cat": "verb",
+  "ex": "The wind scattered the leaves across the garden.",
+  "exfa": "باد برگ‌ها را در سراسر باغ پراکنده کرد."
+ },
+ {
+  "i": 11492,
+  "en": "schoolmate",
+  "fa": "هم‌مدرسه‌ای",
+  "cat": "school",
+  "ex": "I bumped into an old schoolmate at the train station yesterday.",
+  "exfa": "دیروز در ایستگاه قطار به یک هم‌مدرسه‌ای قدیمی برخوردم."
+ },
+ {
+  "i": 11493,
+  "en": "schoolteacher",
+  "fa": "معلم مدرسه",
+  "cat": "school",
+  "ex": "His mother has worked as a schoolteacher for over twenty years.",
+  "exfa": "مادرش بیش از بیست سال است که به‌عنوان معلم مدرسه کار می‌کند."
+ },
+ {
+  "i": 11494,
+  "en": "scold",
+  "fa": "سرزنش کردن، دعوا کردن",
+  "cat": "talk",
+  "ex": "The teacher scolded the boys for talking during the exam.",
+  "exfa": "معلم پسر‌ها را به‌خاطر صحبت کردن در طول امتحان سرزنش کرد.",
+  "syn": [
+   "reprimand",
+   "tell off"
+  ]
+ },
+ {
+  "i": 11495,
+  "en": "seawater",
+  "fa": "آب دریا",
+  "cat": "nature",
+  "ex": "Seawater is too salty for humans to drink.",
+  "exfa": "آب دریا برای نوشیدن انسان‌ها خیلی شور است."
+ },
+ {
+  "i": 11496,
+  "en": "seaweed",
+  "fa": "جلبک دریایی",
+  "cat": "nature",
+  "ex": "Thick seaweed covered the rocks near the shore.",
+  "exfa": "جلبک دریایی غلیظی صخره‌های نزدیک ساحل را پوشانده بود."
+ },
+ {
+  "i": 11497,
+  "en": "second-hand",
+  "fa": "دست دوم",
+  "cat": "general",
+  "ex": "I bought this bike second-hand because it was much cheaper.",
+  "exfa": "این دوچرخه را دست دوم خریدم چون خیلی ارزان‌تر بود."
+ },
+ {
+  "i": 11498,
+  "en": "secondary school",
+  "fa": "دبیرستان، مدرسه‌ی متوسطه",
+  "cat": "school",
+  "ex": "Most children in the UK start secondary school at age eleven.",
+  "exfa": "بیشتر بچه‌ها در بریتانیا از سن یازده سالگی وارد دبیرستان می‌شوند."
+ },
+ {
+  "i": 11499,
+  "en": "secretly",
+  "fa": "مخفیانه، پنهانی",
+  "cat": "adv",
+  "ex": "They secretly planned a surprise party for their mother.",
+  "exfa": "آن‌ها مخفیانه یک مهمانی سورپرایز برای مادرشان برنامه‌ریزی کردند."
+ },
+ {
+  "i": 11500,
+  "en": "seize",
+  "fa": "ضبط کردن، توقیف کردن",
+  "cat": "crime",
+  "ex": "Police seized several boxes of illegal goods at the border.",
+  "exfa": "پلیس چندین جعبه کالای غیرقانونی را در مرز توقیف کرد.",
+  "syn": [
+   "confiscate",
+   "capture"
+  ]
+ },
+ {
+  "i": 11501,
+  "en": "self-service",
+  "fa": "سلف‌سرویس",
+  "cat": "general",
+  "ex": "The hotel only offers a self-service breakfast in the mornings.",
+  "exfa": "هتل صبح‌ها فقط صبحانه‌ی سلف‌سرویس ارائه می‌دهد."
+ },
+ {
+  "i": 11502,
+  "en": "sensation",
+  "fa": "حس، احساس",
+  "cat": "feeling",
+  "ex": "She felt a strange sensation in her fingers after the injection.",
+  "exfa": "او بعد از تزریق یک حس عجیب در انگشتانش احساس کرد."
+ },
+ {
+  "i": 11503,
+  "en": "severely",
+  "fa": "به‌شدت، شدیداً",
+  "cat": "adv",
+  "ex": "The company was severely criticized for polluting the river.",
+  "exfa": "این شرکت به‌خاطر آلوده کردن رودخانه به‌شدت مورد انتقاد قرار گرفت.",
+  "ipa": "/səˈvɪrli/"
+ },
+ {
+  "i": 11504,
+  "en": "shadowy",
+  "fa": "سایه‌دار، مبهم",
+  "cat": "adj",
+  "ex": "A shadowy figure stood at the end of the alley.",
+  "exfa": "یک هیکل سایه‌دار و مبهم در انتهای کوچه ایستاده بود.",
+  "syn": [
+   "dim",
+   "murky"
+  ]
+ },
+ {
+  "i": 11505,
+  "en": "shallow",
+  "fa": "کم‌عمق",
+  "cat": "nature",
+  "ex": "Children can safely swim in the shallow end of the pool.",
+  "exfa": "بچه‌ها می‌توانند با خیال راحت در قسمت کم‌عمق استخر شنا کنند.",
+  "ipa": "/ˈʃæloʊ/"
+ },
+ {
+  "i": 11506,
+  "en": "shameful",
+  "fa": "شرم‌آور، ننگین",
+  "cat": "feeling",
+  "ex": "It was shameful how the players treated the referee.",
+  "exfa": "رفتار بازیکنان با داور بسیار شرم‌آور بود.",
+  "syn": [
+   "disgraceful",
+   "humiliating"
+  ]
+ },
+ {
+  "i": 11507,
+  "en": "shiny",
+  "fa": "براق، درخشان",
+  "cat": "adj",
+  "ex": "He polished his shoes until they were shiny.",
+  "exfa": "او کفش‌هایش را برق انداخت تا براق شدند.",
+  "ipa": "/ˈʃaɪni/",
+  "syn": [
+   "glossy",
+   "bright"
+  ]
+ },
+ {
+  "i": 11508,
+  "en": "shiver",
+  "fa": "لرزیدن (از سرما یا ترس)",
+  "cat": "body",
+  "ex": "She began to shiver as soon as she stepped outside without a coat.",
+  "exfa": "به‌محض اینکه بدون کت بیرون رفت، شروع به لرزیدن کرد."
+ },
+ {
+  "i": 11509,
+  "en": "shocking",
+  "fa": "تکان‌دهنده، شوکه‌کننده",
+  "cat": "feeling",
+  "ex": "The news of the accident was absolutely shocking.",
+  "exfa": "خبر آن تصادف کاملاً تکان‌دهنده بود.",
+  "syn": [
+   "startling",
+   "appalling"
+  ]
+ },
+ {
+  "i": 11510,
+  "en": "shortage",
+  "fa": "کمبود",
+  "cat": "general",
+  "ex": "Hospitals across the region are struggling with a shortage of nurses.",
+  "exfa": "بیمارستان‌های سراسر منطقه با کمبود پرستار دست‌وپنجه نرم می‌کنند.",
+  "ipa": "/ˈʃɔːrtɪdʒ/",
+  "syn": [
+   "deficit",
+   "scarcity"
+  ]
+ },
+ {
+  "i": 11511,
+  "en": "shrimp",
+  "fa": "میگو",
+  "cat": "food",
+  "ex": "We ordered grilled shrimp and a salad at the restaurant.",
+  "exfa": "ما در رستوران میگوی کبابی و سالاد سفارش دادیم."
+ },
+ {
+  "i": 11512,
+  "en": "sickness",
+  "fa": "بیماری، مریضی",
+  "cat": "health",
+  "ex": "He stayed home from work because of sudden sickness.",
+  "exfa": "او به‌خاطر بیماری ناگهانی از کار در خانه ماند.",
+  "ipa": "/ˈsɪknəs/"
+ },
+ {
+  "i": 11513,
+  "en": "sidewalk",
+  "fa": "پیاده‌رو",
+  "cat": "place",
+  "ex": "Children were riding their bikes along the sidewalk.",
+  "exfa": "بچه‌ها داشتند دوچرخه‌هایشان را در امتداد پیاده‌رو می‌راندند.",
+  "ipa": "/ˈsaɪdwɔːk/"
+ },
+ {
+  "i": 11514,
+  "en": "sigh",
+  "fa": "آه کشیدن؛ آه",
+  "cat": "feeling",
+  "ex": "He let out a long sigh after finishing the exam.",
+  "exfa": "او بعد از تمام کردن امتحان یک آه بلند کشید."
+ },
+ {
+  "i": 11515,
+  "en": "signpost",
+  "fa": "تابلوی راهنما",
+  "cat": "travel",
+  "ex": "We followed the signposts until we finally found the campsite.",
+  "exfa": "ما تابلو‌های راهنما را دنبال کردیم تا بالاخره اردوگاه را پیدا کردیم."
+ },
+ {
+  "i": 11516,
+  "en": "similarity",
+  "fa": "شباهت",
+  "cat": "general",
+  "ex": "There is a strong similarity between the two paintings.",
+  "exfa": "شباهت زیادی بین آن دو نقاشی وجود دارد.",
+  "syn": [
+   "resemblance",
+   "likeness"
+  ]
+ },
+ {
+  "i": 11517,
+  "en": "simplify",
+  "fa": "ساده کردن",
+  "cat": "verb",
+  "ex": "Teachers should simplify difficult topics for beginners.",
+  "exfa": "معلم‌ها باید موضوعات دشوار را برای مبتدی‌ها ساده کنند.",
+  "ipa": "/ˈsɪmplɪfaɪ/",
+  "syn": [
+   "streamline",
+   "clarify"
+  ]
+ },
+ {
+  "i": 11518,
+  "en": "slavery",
+  "fa": "برده‌داری",
+  "cat": "general",
+  "ex": "Slavery was officially abolished in the United States in 1865.",
+  "exfa": "برده‌داری در سال ۱۸۶۵ رسماً در ایالات متحده لغو شد.",
+  "ipa": "/ˈsleɪvəri/"
+ },
+ {
+  "i": 11519,
+  "en": "slogan",
+  "fa": "شعار",
+  "cat": "talk",
+  "ex": "The company came up with a catchy slogan for its new product.",
+  "exfa": "شرکت یک شعار جذاب برای محصول جدیدش ابداع کرد."
+ },
+ {
+  "i": 11520,
+  "en": "smoker",
+  "fa": "سیگاری",
+  "cat": "health",
+  "ex": "He has been a heavy smoker since he was a teenager.",
+  "exfa": "او از زمانی که نوجوان بود یک سیگاری قهار بوده است."
+ },
+ {
+  "i": 11521,
+  "en": "sneeze",
+  "fa": "عطسه کردن؛ عطسه",
+  "cat": "body",
+  "ex": "The dust made her sneeze several times in a row.",
+  "exfa": "گرد و غبار باعث شد او چند بار پشت سر هم عطسه کند."
+ },
+ {
+  "i": 11522,
+  "en": "snowstorm",
+  "fa": "کولاک، طوفان برف",
+  "cat": "weather",
+  "ex": "The flight was delayed because of a heavy snowstorm.",
+  "exfa": "پرواز به‌خاطر یک طوفان برف شدید به تأخیر افتاد."
+ },
+ {
+  "i": 11523,
+  "en": "soap opera",
+  "fa": "سریال آبکی (تلویزیونی)",
+  "cat": "movie",
+  "ex": "My grandmother watches her favorite soap opera every afternoon.",
+  "exfa": "مادربزرگم هر بعدازظهر سریال آبکی مورد علاقه‌اش را تماشا می‌کند."
+ },
+ {
+  "i": 11524,
+  "en": "social networking",
+  "fa": "شبکه‌های اجتماعی",
+  "cat": "tech",
+  "ex": "Social networking has changed the way young people communicate with each other.",
+  "exfa": "شبکه‌های اجتماعی نحوه‌ی ارتباط جوانان با یکدیگر را تغییر داده است."
+ },
+ {
+  "i": 11525,
+  "en": "socially",
+  "fa": "از نظر اجتماعی",
+  "cat": "adv",
+  "ex": "The two families are very different socially and financially.",
+  "exfa": "آن دو خانواده از نظر اجتماعی و مالی بسیار متفاوت‌اند."
+ },
+ {
+  "i": 11526,
+  "en": "someplace",
+  "fa": "یک جایی، جایی",
+  "cat": "adv",
+  "ex": "Let's go someplace quiet where we can talk.",
+  "exfa": "بیا به یک جای آرام برویم که بتوانیم صحبت کنیم."
+ },
+ {
+  "i": 11527,
+  "en": "sometime",
+  "fa": "یک زمانی، در آینده‌ای نامشخص",
+  "cat": "time",
+  "ex": "We should meet for coffee sometime next week.",
+  "exfa": "باید یک زمانی هفته‌ی بعد برای قهوه خوردن همدیگر را ببینیم."
+ },
+ {
+  "i": 11528,
+  "en": "soothe",
+  "fa": "آرام کردن، تسکین دادن",
+  "cat": "feeling",
+  "ex": "The mother sang softly to soothe her crying baby.",
+  "exfa": "مادر به‌آرامی آواز خواند تا نوزاد گریان خود را آرام کند.",
+  "syn": [
+   "calm",
+   "comfort"
+  ]
+ },
+ {
+  "i": 11529,
+  "en": "sophomore",
+  "fa": "دانشجوی سال دوم",
+  "cat": "school",
+  "ex": "As a sophomore, she finally felt comfortable on campus.",
+  "exfa": "او به‌عنوان دانشجوی سال دوم، بالاخره در محوطه‌ی دانشگاه احساس راحتی کرد."
+ },
+ {
+  "i": 11530,
+  "en": "sore",
+  "fa": "دردناک",
+  "cat": "health",
+  "ex": "My legs were sore after running the marathon.",
+  "exfa": "پاهایم بعد از دویدن ماراتن درد گرفته بودند.",
+  "syn": [
+   "painful",
+   "tender"
+  ]
+ },
+ {
+  "i": 11531,
+  "en": "sorrow",
+  "fa": "اندوه، غم",
+  "cat": "feeling",
+  "ex": "The old man spoke with deep sorrow about the friends he had lost.",
+  "exfa": "پیرمرد با اندوه عمیقی درباره‌ی دوستانی که از دست داده بود صحبت کرد.",
+  "syn": [
+   "grief",
+   "sadness"
+  ]
+ },
+ {
+  "i": 11532,
+  "en": "sour",
+  "fa": "ترش",
+  "cat": "food",
+  "ex": "This yogurt tastes too sour for me.",
+  "exfa": "طعم این ماست برای من خیلی ترش است.",
+  "ipa": "/ˈsaʊər/"
+ },
+ {
+  "i": 11533,
+  "en": "sparkle",
+  "fa": "درخشش، برق (چشم)",
+  "cat": "nature",
+  "ex": "There was a special sparkle in her eyes when she talked about her trip.",
+  "exfa": "وقتی درباره‌ی سفرش صحبت می‌کرد، برق خاصی در چشمانش بود.",
+  "syn": [
+   "glimmer",
+   "shine"
+  ]
+ },
+ {
+  "i": 11534,
+  "en": "specialise",
+  "fa": "تخصص داشتن",
+  "cat": "work",
+  "ex": "This law firm specialises in international business cases.",
+  "exfa": "این شرکت حقوقی در پرونده‌های تجاری بین‌المللی تخصص دارد."
+ },
+ {
+  "i": 11535,
+  "en": "specialize",
+  "fa": "تخصص گرفتن، تخصص داشتن",
+  "cat": "work",
+  "ex": "After medical school, he decided to specialize in heart surgery.",
+  "exfa": "بعد از دانشکده‌ی پزشکی، او تصمیم گرفت در جراحی قلب تخصص بگیرد."
+ },
+ {
+  "i": 11536,
+  "en": "spinach",
+  "fa": "اسفناج",
+  "cat": "food",
+  "ex": "My daughter refuses to eat spinach no matter how I cook it.",
+  "exfa": "دخترم هر طور که آن را بپزم، حاضر نیست اسفناج بخورد.",
+  "ipa": "/ˈspɪnɪtʃ/"
+ },
+ {
+  "i": 11537,
+  "en": "spiral",
+  "fa": "مارپیچی",
+  "cat": "adj",
+  "ex": "They climbed a narrow spiral staircase to reach the tower.",
+  "exfa": "آن‌ها از یک پلکان مارپیچی باریک بالا رفتند تا به برج برسند."
+ },
+ {
+  "i": 11538,
+  "en": "sponge",
+  "fa": "اسفنج",
+  "cat": "house",
+  "ex": "Use a damp sponge to wipe the kitchen counter.",
+  "exfa": "برای پاک کردن پیشخوان آشپزخانه از یک اسفنج مرطوب استفاده کن."
+ },
+ {
+  "i": 11539,
+  "en": "sportsmanship",
+  "fa": "جوانمردی ورزشی",
+  "cat": "sport",
+  "ex": "Shaking hands after the match is a sign of good sportsmanship.",
+  "exfa": "دست دادن بعد از مسابقه نشانه‌ی جوانمردی ورزشی خوب است."
+ },
+ {
+  "i": 11540,
+  "en": "stall",
+  "fa": "غرفه، دکه",
+  "cat": "place",
+  "ex": "She bought fresh vegetables from a stall at the market.",
+  "exfa": "او سبزیجات تازه را از یک غرفه در بازار خرید."
+ },
+ {
+  "i": 11541,
+  "en": "stare",
+  "fa": "خیره شدن",
+  "cat": "body",
+  "ex": "It's rude to stare at people you don't know.",
+  "exfa": "خیره شدن به افرادی که نمی‌شناسی، بی‌ادبی است."
+ },
+ {
+  "i": 11542,
+  "en": "steadily",
+  "fa": "به‌طور پیوسته",
+  "cat": "adv",
+  "ex": "The company's profits have grown steadily over the past five years.",
+  "exfa": "سود این شرکت طی پنج سال گذشته به‌طور پیوسته افزایش یافته است.",
+  "syn": [
+   "consistently",
+   "gradually"
+  ]
+ },
+ {
+  "i": 11543,
+  "en": "steep",
+  "fa": "شیب‌دار، پرشیب",
+  "cat": "nature",
+  "ex": "The path up the mountain was too steep for young children.",
+  "exfa": "مسیر بالای کوه برای بچه‌های کوچک خیلی پرشیب بود.",
+  "ipa": "/stiːp/"
+ },
+ {
+  "i": 11544,
+  "en": "stir",
+  "fa": "هم زدن",
+  "cat": "food",
+  "ex": "Stir the soup gently so it doesn't stick to the pot.",
+  "exfa": "سوپ را به‌آرامی هم بزن تا به قابلمه نچسبد."
+ },
+ {
+  "i": 11545,
+  "en": "stormy",
+  "fa": "طوفانی",
+  "cat": "weather",
+  "ex": "The sailors decided not to leave the harbor during such stormy weather.",
+  "exfa": "ملوانان تصمیم گرفتند در چنین هوای طوفانی از بندر خارج نشوند."
+ },
+ {
+  "i": 11546,
+  "en": "storyteller",
+  "fa": "قصه‌گو، داستان‌سرا",
+  "cat": "talk",
+  "ex": "My grandfather was a wonderful storyteller who kept us listening for hours.",
+  "exfa": "پدربزرگم قصه‌گوی فوق‌العاده‌ای بود که ساعت‌ها ما را مجذوب خودش نگه می‌داشت.",
+  "syn": [
+   "narrator"
+  ]
+ },
+ {
+  "i": 11547,
+  "en": "strangely",
+  "fa": "به‌طرز عجیبی",
+  "cat": "adv",
+  "ex": "Strangely, nobody noticed that the painting was missing until the next morning.",
+  "exfa": "به‌طرز عجیبی، تا صبح روز بعد هیچ‌کس متوجه گم شدن تابلو نشد."
+ },
+ {
+  "i": 11548,
+  "en": "straw",
+  "fa": "نی (برای نوشیدن)",
+  "cat": "general",
+  "ex": "The child drank her juice through a straw.",
+  "exfa": "آن بچه آب‌میوه‌اش را با نی نوشید."
+ },
+ {
+  "i": 11549,
+  "en": "strawberry",
+  "fa": "توت‌فرنگی",
+  "cat": "food",
+  "ex": "This strawberry tastes much sweeter than the ones we bought last week.",
+  "exfa": "این توت‌فرنگی خیلی شیرین‌تر از آن‌هایی است که هفته‌ی پیش خریدیم.",
+  "ipa": "/ˈstrɔːberi/"
+ },
+ {
+  "i": 11550,
+  "en": "stressed",
+  "fa": "استرس‌دار، دچار فشار روانی",
+  "cat": "feeling",
+  "ex": "She felt extremely stressed the night before her final exams.",
+  "exfa": "او شب قبل از امتحانات پایانی‌اش شدیداً استرس داشت.",
+  "ipa": "/strest/",
+  "syn": [
+   "anxious",
+   "tense"
+  ]
+ },
+ {
+  "i": 11551,
+  "en": "stressful",
+  "fa": "استرس‌زا، پراسترس",
+  "cat": "feeling",
+  "ex": "Moving to a new city alone can be very stressful.",
+  "exfa": "نقل‌مکان تنها به یک شهر جدید می‌تواند بسیار استرس‌زا باشد.",
+  "ipa": "/ˈstresfl/",
+  "syn": [
+   "demanding",
+   "taxing"
+  ]
+ },
+ {
+  "i": 11552,
+  "en": "stricken",
+  "fa": "دچار (بلا یا بیماری) شده",
+  "cat": "health",
+  "ex": "The region was stricken by a severe drought last summer.",
+  "exfa": "آن منطقه تابستان گذشته دچار خشکسالی شدیدی شده بود."
+ },
+ {
+  "i": 11553,
+  "en": "stripe",
+  "fa": "نوار، خط (رنگی روی پارچه)",
+  "cat": "clothes",
+  "ex": "The referee's shirt had thick black and white stripes.",
+  "exfa": "پیراهن داور نوار‌های ضخیم سیاه و سفید داشت."
+ },
+ {
+  "i": 11554,
+  "en": "stumble",
+  "fa": "تلوتلو خوردن، سکندری خوردن",
+  "cat": "body",
+  "ex": "He stumbled over a rock in the dark and nearly fell.",
+  "exfa": "او در تاریکی روی یک سنگ سکندری خورد و نزدیک بود بیفتد.",
+  "syn": [
+   "trip",
+   "stagger"
+  ]
+ },
+ {
+  "i": 11555,
+  "en": "stun",
+  "fa": "مبهوت کردن، شوکه کردن",
+  "cat": "feeling",
+  "ex": "The announcement of her resignation stunned the entire office.",
+  "exfa": "اعلام استعفای او کل دفتر را مبهوت کرد.",
+  "syn": [
+   "shock",
+   "astonish"
+  ]
+ },
+ {
+  "i": 11556,
+  "en": "subconscious",
+  "fa": "ناخودآگاه",
+  "cat": "general",
+  "ex": "Some of our habits are formed by subconscious fears we don't even notice.",
+  "exfa": "برخی از عادت‌های ما از ترس‌های ناخودآگاه شکل می‌گیرند که حتی متوجهشان نمی‌شویم."
+ },
+ {
+  "i": 11557,
+  "en": "submarine",
+  "fa": "زیردریایی",
+  "cat": "travel",
+  "ex": "The submarine stayed underwater for nearly three months.",
+  "exfa": "زیردریایی نزدیک به سه ماه زیر آب ماند.",
+  "ipa": "/ˈsʌbməriːn/"
+ },
+ {
+  "i": 11558,
+  "en": "suffix",
+  "fa": "پسوند",
+  "cat": "school",
+  "ex": "The suffix '-less' means 'without', as in 'careless'.",
+  "exfa": "پسوند «-less» به معنی «بدون» است، مانند کلمه‌ی «careless».",
+  "ipa": "/ˈsʌfɪks/"
+ },
+ {
+  "i": 11559,
+  "en": "summarise",
+  "fa": "خلاصه کردن",
+  "cat": "school",
+  "ex": "Can you summarise the main points of the report in two sentences?",
+  "exfa": "می‌توانی نکات اصلی گزارش را در دو جمله خلاصه کنی؟"
+ },
+ {
+  "i": 11560,
+  "en": "summarize",
+  "fa": "خلاصه کردن",
+  "cat": "school",
+  "ex": "The professor asked us to summarize the novel for homework.",
+  "exfa": "استاد از ما خواست رمان را برای تکلیف خلاصه کنیم."
+ },
+ {
+  "i": 11561,
+  "en": "sunbathe",
+  "fa": "حمام آفتاب گرفتن",
+  "cat": "travel",
+  "ex": "They like to sunbathe on the beach every summer.",
+  "exfa": "آن‌ها هر تابستان دوست دارند در ساحل حمام آفتاب بگیرند."
+ },
+ {
+  "i": 11562,
+  "en": "sundial",
+  "fa": "ساعت آفتابی",
+  "cat": "general",
+  "ex": "The ancient sundial in the garden still shows the correct time on sunny days.",
+  "exfa": "ساعت آفتابی باستانی داخل باغ هنوز در روز‌های آفتابی زمان درستی را نشان می‌دهد."
+ },
+ {
+  "i": 11563,
+  "en": "superstition",
+  "fa": "خرافه، باور خرافی",
+  "cat": "general",
+  "ex": "According to an old superstition, breaking a mirror brings seven years of bad luck.",
+  "exfa": "طبق یک خرافه‌ی قدیمی، شکستن آینه هفت سال بدشانسی می‌آورد.",
+  "ipa": "/ˌsuːpərˈstɪʃn/"
+ },
+ {
+  "i": 11564,
+  "en": "supporter",
+  "fa": "هوادار، طرفدار",
+  "cat": "sport",
+  "ex": "Thousands of supporters traveled to the final match to cheer for their team.",
+  "exfa": "هزاران هوادار برای تشویق تیمشان به دیدار پایانی سفر کردند.",
+  "syn": [
+   "fan",
+   "follower"
+  ]
+ },
+ {
+  "i": 11565,
+  "en": "supportive",
+  "fa": "حمایتگر، پشتیبان",
+  "cat": "feeling",
+  "ex": "My parents have always been very supportive of my career choices.",
+  "exfa": "والدینم همیشه نسبت به انتخاب‌های شغلی‌ام بسیار حمایتگر بوده‌اند.",
+  "syn": [
+   "encouraging",
+   "caring"
+  ]
+ },
+ {
+  "i": 11566,
+  "en": "supposedly",
+  "fa": "ظاهراً",
+  "cat": "adv",
+  "ex": "The building is supposedly haunted, although no one has ever proven it.",
+  "exfa": "ظاهراً آن ساختمان تسخیر‌شده است، هرچند هیچ‌کس تا به حال آن را ثابت نکرده.",
+  "syn": [
+   "allegedly",
+   "reportedly"
+  ]
+ },
+ {
+  "i": 11567,
+  "en": "surprisingly",
+  "fa": "به‌طرز شگفت‌انگیزی",
+  "cat": "adv",
+  "ex": "Surprisingly, the youngest player scored the winning goal.",
+  "exfa": "به‌طرز شگفت‌انگیزی، جوان‌ترین بازیکن گل برنده را زد.",
+  "syn": [
+   "unexpectedly"
+  ]
+ },
+ {
+  "i": 11568,
+  "en": "suspicion",
+  "fa": "سوءظن، شک",
+  "cat": "crime",
+  "ex": "The detective's suspicion grew stronger after finding the missing key.",
+  "exfa": "سوءظن کارآگاه بعد از پیدا کردن کلید گمشده قوی‌تر شد.",
+  "ipa": "/səˈspɪʃn/",
+  "syn": [
+   "doubt",
+   "mistrust"
+  ]
+ },
+ {
+  "i": 11569,
+  "en": "swarm",
+  "fa": "دسته (زنبور یا حشرات)، ازدحام",
+  "cat": "animal",
+  "ex": "A swarm of bees suddenly appeared near the picnic tables.",
+  "exfa": "ناگهان یک دسته زنبور نزدیک میز‌های پیک‌نیک ظاهر شد."
+ },
+ {
+  "i": 11570,
+  "en": "swear",
+  "fa": "قسم خوردن",
+  "cat": "talk",
+  "ex": "I swear I didn't take your phone.",
+  "exfa": "قسم می‌خورم که گوشی تو را برنداشتم."
+ },
+ {
+  "i": 11571,
+  "en": "sweatshirt",
+  "fa": "سویشرت",
+  "cat": "clothes",
+  "ex": "He put on a warm sweatshirt before going for a walk.",
+  "exfa": "او قبل از رفتن به پیاده‌روی یک سویشرت گرم پوشید."
+ },
+ {
+  "i": 11572,
+  "en": "swell",
+  "fa": "ورم کردن، متورم شدن",
+  "cat": "health",
+  "ex": "Her ankle began to swell soon after she twisted it.",
+  "exfa": "مچ پای او کمی بعد از پیچ خوردن شروع به ورم کردن کرد."
+ },
+ {
+  "i": 11573,
+  "en": "swimmer",
+  "fa": "شناگر",
+  "cat": "sport",
+  "ex": "She has been a competitive swimmer since she was six years old.",
+  "exfa": "او از شش سالگی یک شناگر حرفه‌ای بوده است.",
+  "ipa": "/ˈswɪmər/"
+ },
+ {
+  "i": 11574,
+  "en": "swollen",
+  "fa": "متورم، ورم‌کرده",
+  "cat": "health",
+  "ex": "His eyes were swollen from crying all night.",
+  "exfa": "چشمانش از گریه کردن تمام شب متورم بودند.",
+  "ipa": "/ˈswoʊlən/",
+  "syn": [
+   "puffy",
+   "inflamed"
+  ]
+ },
+ {
+  "i": 11575,
+  "en": "symptom",
+  "fa": "علامت (بیماری)، نشانه",
+  "cat": "health",
+  "ex": "A high fever is a common symptom of the flu.",
+  "exfa": "تب بالا یکی از نشانه‌های رایج آنفولانزا است.",
+  "ipa": "/ˈsɪmptəm/"
+ },
+ {
+  "i": 11576,
+  "en": "take-off",
+  "fa": "بلند شدن هواپیما، لحظه‌ی پرواز",
+  "cat": "travel",
+  "ex": "Passengers must fasten their seatbelts before take-off.",
+  "exfa": "مسافران باید قبل از بلند شدن هواپیما کمربندشان را ببندند."
+ },
+ {
+  "i": 11577,
+  "en": "takeaway",
+  "fa": "غذای بیرون‌بر",
+  "cat": "food",
+  "ex": "We ordered a curry takeaway on Friday night instead of cooking.",
+  "exfa": "جمعه شب به‌جای آشپزی، یک غذای بیرون‌بر کاری سفارش دادیم."
+ },
+ {
+  "i": 11578,
+  "en": "takeoff",
+  "fa": "بلند شدن هواپیما",
+  "cat": "travel",
+  "ex": "The plane's takeoff was delayed due to strong winds.",
+  "exfa": "بلند شدن هواپیما به‌خاطر باد‌های شدید به تأخیر افتاد.",
+  "ipa": "/ˈteɪkɒf/"
+ },
+ {
+  "i": 11579,
+  "en": "talkative",
+  "fa": "پرحرف",
+  "cat": "adj",
+  "ex": "My little sister never stops chatting because she's naturally talkative.",
+  "exfa": "خواهر کوچکم هرگز از حرف زدن دست نمی‌کشد چون ذاتاً پرحرف است.",
+  "ipa": "/ˈtɔːkətɪv/",
+  "syn": [
+   "chatty",
+   "wordy"
+  ]
+ },
+ {
+  "i": 11580,
+  "en": "teammate",
+  "fa": "هم‌تیمی",
+  "cat": "sport",
+  "ex": "She passed the ball to her teammate near the goal.",
+  "exfa": "او توپ را به هم‌تیمی‌اش نزدیک دروازه پاس داد.",
+  "ipa": "/ˈtiːmmeɪt/"
+ },
+ {
+  "i": 11581,
+  "en": "teamwork",
+  "fa": "کار تیمی",
+  "cat": "work",
+  "ex": "Good teamwork helped the volunteers finish the project ahead of schedule.",
+  "exfa": "کار تیمی خوب به داوطلبان کمک کرد پروژه را زودتر از موعد تمام کنند.",
+  "ipa": "/ˈtiːmwɜːrk/"
+ },
+ {
+  "i": 11582,
+  "en": "tease",
+  "fa": "دست انداختن (به شوخی)",
+  "cat": "talk",
+  "ex": "His older brothers always tease him about his haircut.",
+  "exfa": "برادرهای بزرگ‌تر او همیشه سر مدل موی او دستش می‌اندازند.",
+  "syn": [
+   "mock",
+   "taunt"
+  ]
+ },
+ {
+  "i": 11583,
+  "en": "telegram",
+  "fa": "تلگرام، پیام تلگرافی",
+  "cat": "tech",
+  "ex": "In the 1940s, people used telegrams to send urgent messages quickly.",
+  "exfa": "در دهه ۱۹۴۰ میلادی، مردم برای ارسال سریع پیام‌های فوری از تلگرام استفاده می‌کردند."
+ },
+ {
+  "i": 11584,
+  "en": "teller",
+  "fa": "تحویلدار بانک",
+  "cat": "money",
+  "ex": "The bank teller counted the cash carefully before handing it to the customer.",
+  "exfa": "تحویلدار بانک پول نقد را قبل از تحویل به مشتری با دقت شمرد."
+ },
+ {
+  "i": 11585,
+  "en": "temper",
+  "fa": "خلق و خو",
+  "cat": "feeling",
+  "ex": "He lost his temper when the printer broke down again.",
+  "exfa": "وقتی پرینتر دوباره خراب شد، او از کوره در رفت."
+ },
+ {
+  "i": 11586,
+  "en": "tempt",
+  "fa": "وسوسه کردن",
+  "cat": "verb",
+  "ex": "The smell of fresh cookies tempted her to skip her diet.",
+  "exfa": "بوی کلوچه‌های تازه او را وسوسه کرد که رژیمش را کنار بگذارد.",
+  "ipa": "/tempt/",
+  "syn": [
+   "entice",
+   "lure"
+  ]
+ },
+ {
+  "i": 11587,
+  "en": "tendency",
+  "fa": "گرایش، تمایل",
+  "cat": "noun",
+  "ex": "He has a tendency to forget his keys at home.",
+  "exfa": "او تمایل دارد کلیدهایش را در خانه جا بگذارد.",
+  "ipa": "/ˈtendənsi/"
+ },
+ {
+  "i": 11588,
+  "en": "tense",
+  "fa": "پرتنش، مضطرب",
+  "cat": "feeling",
+  "ex": "The room went tense after the manager mentioned layoffs.",
+  "exfa": "بعد از اینکه مدیر به اخراج‌ها اشاره کرد، فضای اتاق پرتنش شد."
+ },
+ {
+  "i": 11589,
+  "en": "terribly",
+  "fa": "به‌شدت، وحشتناک",
+  "cat": "adv",
+  "ex": "The weather was terribly cold during our trip to the mountains.",
+  "exfa": "هوا در سفر ما به کوهستان به‌طرز وحشتناکی سرد بود.",
+  "ipa": "/ˈterəbli/"
+ },
+ {
+  "i": 11590,
+  "en": "terrified",
+  "fa": "وحشت‌زده",
+  "cat": "feeling",
+  "ex": "She was terrified when the lights suddenly went out in the basement.",
+  "exfa": "وقتی چراغ‌ها ناگهان در زیرزمین خاموش شدند، او وحشت‌زده شد.",
+  "ipa": "/ˈterɪfaɪd/",
+  "syn": [
+   "petrified",
+   "scared"
+  ]
+ },
+ {
+  "i": 11591,
+  "en": "thankful",
+  "fa": "سپاسگزار",
+  "cat": "feeling",
+  "ex": "We are thankful for everything our parents have done for us.",
+  "exfa": "ما بابت هر کاری که والدینمان برایمان انجام داده‌اند سپاسگزاریم.",
+  "ipa": "/ˈθæŋkfəl/",
+  "syn": [
+   "grateful"
+  ]
+ },
+ {
+  "i": 11592,
+  "en": "thirst",
+  "fa": "تشنگی",
+  "cat": "body",
+  "ex": "After the long run, nothing but cold water could satisfy his thirst.",
+  "exfa": "بعد از آن دویدن طولانی، فقط آب سرد می‌توانست تشنگی‌اش را برطرف کند."
+ },
+ {
+  "i": 11593,
+  "en": "thump",
+  "fa": "محکم کوبیدن، ضربه زدن",
+  "cat": "verb",
+  "ex": "His heart began to thump loudly as he waited for the results.",
+  "exfa": "قلبش وقتی منتظر نتایج بود شروع به تپیدن شدید کرد."
+ },
+ {
+  "i": 11594,
+  "en": "thunderous",
+  "fa": "رعدآسا",
+  "cat": "adj",
+  "ex": "The stadium erupted in thunderous applause after the winning goal.",
+  "exfa": "استادیوم بعد از گل برنده غرق در تشویق رعدآسا شد."
+ },
+ {
+  "i": 11595,
+  "en": "tick",
+  "fa": "علامت زدن (تیک)",
+  "cat": "general",
+  "ex": "Please tick the box next to your preferred meal option.",
+  "exfa": "لطفاً کنار گزینه غذای مورد نظر خود علامت بزنید."
+ },
+ {
+  "i": 11596,
+  "en": "tighten",
+  "fa": "سفت کردن، محکم کردن",
+  "cat": "verb",
+  "ex": "He tightened the screws on the shelf before loading it with books.",
+  "exfa": "او پیچ‌های قفسه را قبل از گذاشتن کتاب‌ها روی آن سفت کرد.",
+  "ipa": "/ˈtaɪtən/"
+ },
+ {
+  "i": 11597,
+  "en": "tightly",
+  "fa": "محکم، سفت",
+  "cat": "adv",
+  "ex": "She held her daughter's hand tightly while crossing the busy street.",
+  "exfa": "او دست دخترش را هنگام عبور از خیابان شلوغ محکم گرفت.",
+  "ipa": "/ˈtaɪtli/"
+ },
+ {
+  "i": 11598,
+  "en": "tiring",
+  "fa": "خسته‌کننده",
+  "cat": "adj",
+  "ex": "Moving all the furniture by ourselves turned out to be really tiring.",
+  "exfa": "جابه‌جا کردن تمام مبلمان توسط خودمان در نهایت واقعاً خسته‌کننده بود."
+ },
+ {
+  "i": 11599,
+  "en": "toss",
+  "fa": "پرت کردن",
+  "cat": "verb",
+  "ex": "He tossed his backpack onto the bed after a long day at school.",
+  "exfa": "او بعد از یک روز طولانی در مدرسه، کوله‌پشتی‌اش را روی تخت پرت کرد.",
+  "ipa": "/tɔːs/",
+  "syn": [
+   "throw",
+   "fling"
+  ]
+ },
+ {
+  "i": 11600,
+  "en": "tracksuit",
+  "fa": "گرمکن (لباس ورزشی)",
+  "cat": "clothes",
+  "ex": "He wore a blue tracksuit for his morning jog in the park.",
+  "exfa": "او برای دویدن صبحگاهی‌اش در پارک یک گرمکن آبی پوشید."
+ },
+ {
+  "i": 11601,
+  "en": "traditionally",
+  "fa": "به‌طور سنتی",
+  "cat": "adv",
+  "ex": "Traditionally, the whole family gathers at grandma's house for New Year.",
+  "exfa": "به‌طور سنتی، تمام خانواده برای نوروز در خانه مادربزرگ جمع می‌شوند."
+ },
+ {
+  "i": 11602,
+  "en": "traffic jam",
+  "fa": "ترافیک سنگین",
+  "cat": "car",
+  "ex": "We were stuck in a traffic jam for almost two hours yesterday.",
+  "exfa": "دیروز تقریباً دو ساعت در ترافیک سنگین گیر افتاده بودیم."
+ },
+ {
+  "i": 11603,
+  "en": "tragic",
+  "fa": "غم‌انگیز",
+  "cat": "movie",
+  "ex": "The film tells a tragic story about two lovers separated by war.",
+  "exfa": "این فیلم داستانی غم‌انگیز درباره دو عاشق که جنگ آن‌ها را از هم جدا کرد روایت می‌کند.",
+  "ipa": "/ˈtrædʒɪk/"
+ },
+ {
+  "i": 11604,
+  "en": "transitional",
+  "fa": "انتقالی",
+  "cat": "adj",
+  "ex": "University can be a difficult transitional period between school and working life.",
+  "exfa": "دانشگاه می‌تواند دوره انتقالی سختی بین مدرسه و زندگی کاری باشد."
+ },
+ {
+  "i": 11605,
+  "en": "travel agent",
+  "fa": "کارگزار مسافرتی",
+  "cat": "travel",
+  "ex": "The travel agent booked us a hotel near the beach for half the price.",
+  "exfa": "کارگزار مسافرتی برای ما هتلی نزدیک ساحل با نصف قیمت رزرو کرد."
+ },
+ {
+  "i": 11606,
+  "en": "trumpet",
+  "fa": "ترومپت",
+  "cat": "music",
+  "ex": "My brother has practiced the trumpet every evening since he joined the school band.",
+  "exfa": "برادرم از وقتی به گروه موسیقی مدرسه پیوسته هر عصر ترومپت تمرین می‌کند.",
+  "ipa": "/ˈtrʌmpɪt/"
+ },
+ {
+  "i": 11607,
+  "en": "tumble",
+  "fa": "افتادن، غلتیدن",
+  "cat": "verb",
+  "ex": "The toddler tumbled down the last two steps but wasn't hurt.",
+  "exfa": "کودک نوپا از دو پله آخر افتاد ولی آسیبی ندید.",
+  "syn": [
+   "fall",
+   "topple"
+  ]
+ },
+ {
+  "i": 11608,
+  "en": "tuna",
+  "fa": "ماهی تن",
+  "cat": "food",
+  "ex": "She made tuna sandwiches for everyone at the picnic.",
+  "exfa": "او برای همه در پیک‌نیک ساندویچ‌های ماهی تن درست کرد."
+ },
+ {
+  "i": 11609,
+  "en": "turbulence",
+  "fa": "تلاطم (هوایی)",
+  "cat": "travel",
+  "ex": "The plane shook violently due to turbulence over the mountains.",
+  "exfa": "هواپیما به دلیل تلاطم هوا بر فراز کوه‌ها به‌شدت تکان خورد.",
+  "ipa": "/ˈtɜːrbjələns/"
+ },
+ {
+  "i": 11610,
+  "en": "unafraid",
+  "fa": "نترس، بی‌باک",
+  "cat": "feeling",
+  "ex": "She remained unafraid even as the storm grew stronger outside.",
+  "exfa": "او حتی وقتی طوفان بیرون شدیدتر می‌شد، همچنان نترس ماند."
+ },
+ {
+  "i": 11611,
+  "en": "unbelievable",
+  "fa": "باورنکردنی",
+  "cat": "adj",
+  "ex": "It's unbelievable that he finished the marathon without any training.",
+  "exfa": "باورنکردنی است که او بدون هیچ تمرینی ماراتن را تمام کرد.",
+  "syn": [
+   "incredible",
+   "astonishing"
+  ]
+ },
+ {
+  "i": 11612,
+  "en": "unclear",
+  "fa": "نامشخص، مبهم",
+  "cat": "adj",
+  "ex": "The instructions on the form were unclear, so I called the office for help.",
+  "exfa": "دستورالعمل‌های فرم نامشخص بودند، بنابراین برای کمک با اداره تماس گرفتم.",
+  "ipa": "/ʌnˈklɪər/"
+ },
+ {
+  "i": 11613,
+  "en": "uncontrollable",
+  "fa": "غیرقابل کنترل",
+  "cat": "adj",
+  "ex": "The children burst into uncontrollable laughter during the school play.",
+  "exfa": "بچه‌ها در نمایش مدرسه به خنده‌ای غیرقابل کنترل افتادند."
+ },
+ {
+  "i": 11614,
+  "en": "uncover",
+  "fa": "کشف کردن، آشکار کردن",
+  "cat": "verb",
+  "ex": "Investigators uncovered new evidence about the cause of the fire.",
+  "exfa": "بازرسان مدارک جدیدی درباره علت آتش‌سوزی کشف کردند.",
+  "syn": [
+   "discover",
+   "reveal",
+   "expose"
+  ]
+ },
+ {
+  "i": 11615,
+  "en": "underage",
+  "fa": "زیر سن قانونی",
+  "cat": "adj",
+  "ex": "The shop was fined for selling alcohol to an underage customer.",
+  "exfa": "فروشگاه به دلیل فروش الکل به مشتری زیر سن قانونی جریمه شد."
+ },
+ {
+  "i": 11616,
+  "en": "undergo",
+  "fa": "متحمل شدن",
+  "cat": "health",
+  "ex": "My grandfather will undergo surgery next week to fix his hip.",
+  "exfa": "پدربزرگم هفته آینده تحت عمل جراحی برای اصلاح لگنش قرار خواهد گرفت."
+ },
+ {
+  "i": 11617,
+  "en": "underneath",
+  "fa": "زیر",
+  "cat": "adv",
+  "ex": "The cat was hiding underneath the car when it started to rain.",
+  "exfa": "وقتی باران شروع شد، گربه زیر ماشین پنهان شده بود."
+ },
+ {
+  "i": 11618,
+  "en": "underpants",
+  "fa": "زیرشلواری",
+  "cat": "clothes",
+  "ex": "He packed several pairs of underpants for the week-long trip.",
+  "exfa": "او چند جفت زیرشلواری برای سفر یک‌هفته‌ای‌اش بست."
+ },
+ {
+  "i": 11619,
+  "en": "undress",
+  "fa": "لباس درآوردن",
+  "cat": "clothes",
+  "ex": "The little boy quickly undressed and jumped into the swimming pool.",
+  "exfa": "پسر کوچک سریع لباس‌هایش را درآورد و به داخل استخر پرید."
+ },
+ {
+  "i": 11620,
+  "en": "unemployed",
+  "fa": "بیکار",
+  "cat": "work",
+  "ex": "After the factory closed, hundreds of workers became unemployed overnight.",
+  "exfa": "بعد از تعطیلی کارخانه، صدها کارگر یک‌شبه بیکار شدند.",
+  "ipa": "/ˌʌnɪmˈplɔɪd/"
+ },
+ {
+  "i": 11621,
+  "en": "unexpectedly",
+  "fa": "به‌طور غیرمنتظره",
+  "cat": "adv",
+  "ex": "Her old college friend unexpectedly showed up at her birthday party.",
+  "exfa": "دوست قدیمی دانشگاهی‌اش به‌طور غیرمنتظره در جشن تولدش ظاهر شد."
+ },
+ {
+  "i": 11622,
+  "en": "unfairly",
+  "fa": "ناعادلانه",
+  "cat": "adv",
+  "ex": "Many employees felt they had been unfairly treated during the layoffs.",
+  "exfa": "بسیاری از کارمندان احساس کردند در دوران اخراج‌ها با آن‌ها ناعادلانه رفتار شده است.",
+  "ipa": "/ʌnˈfeərli/"
+ },
+ {
+  "i": 11623,
+  "en": "unfit",
+  "fa": "از نظر جسمی نامناسب",
+  "cat": "health",
+  "ex": "Years of sitting at a desk had left him quite unfit.",
+  "exfa": "سال‌ها پشت میز نشستن او را کاملاً از نظر جسمی ناآماده کرده بود."
+ },
+ {
+  "i": 11624,
+  "en": "unfold",
+  "fa": "باز کردن (چیز تاشده)",
+  "cat": "verb",
+  "ex": "She unfolded the map and spread it across the table.",
+  "exfa": "او نقشه را باز کرد و روی میز پهن کرد."
+ },
+ {
+  "i": 11625,
+  "en": "unfriendly",
+  "fa": "غیردوستانه",
+  "cat": "feeling",
+  "ex": "The new neighbor seemed unfriendly and never said hello to anyone.",
+  "exfa": "همسایه جدید غیردوستانه به نظر می‌رسید و هرگز به کسی سلام نمی‌کرد.",
+  "ipa": "/ʌnˈfrendli/"
+ },
+ {
+  "i": 11626,
+  "en": "unheard",
+  "fa": "ناشنیده مانده",
+  "cat": "adj",
+  "ex": "Many good ideas from junior staff go unheard in large meetings.",
+  "exfa": "بسیاری از ایده‌های خوب کارکنان جوان در جلسات بزرگ ناشنیده می‌ماند."
+ },
+ {
+  "i": 11627,
+  "en": "unify",
+  "fa": "متحد کردن، یکپارچه کردن",
+  "cat": "verb",
+  "ex": "The new leader tried to unify the two rival political parties.",
+  "exfa": "رهبر جدید تلاش کرد دو حزب سیاسی رقیب را متحد کند."
+ },
+ {
+  "i": 11628,
+  "en": "uninterested",
+  "fa": "بی‌علاقه",
+  "cat": "feeling",
+  "ex": "He seemed completely uninterested in the meeting and kept checking his phone.",
+  "exfa": "او به‌کلی نسبت به جلسه بی‌علاقه به نظر می‌رسید و مدام گوشی‌اش را چک می‌کرد."
+ },
+ {
+  "i": 11629,
+  "en": "uninteresting",
+  "fa": "کسل‌کننده، بی‌جذابیت",
+  "cat": "adj",
+  "ex": "Nobody enjoyed the uninteresting documentary about tax law.",
+  "exfa": "هیچ‌کس از آن مستند بی‌جذابیت درباره قوانین مالیاتی خوشش نیامد."
+ },
+ {
+  "i": 11630,
+  "en": "unite",
+  "fa": "متحد کردن",
+  "cat": "verb",
+  "ex": "The tragedy united the whole community in support of the victims' families.",
+  "exfa": "این فاجعه کل جامعه محلی را در حمایت از خانواده‌های قربانیان متحد کرد.",
+  "ipa": "/juˈnaɪt/"
+ },
+ {
+  "i": 11631,
+  "en": "unlucky",
+  "fa": "بدشانس",
+  "cat": "adj",
+  "ex": "The unlucky team lost three matches in a row despite playing well.",
+  "exfa": "آن تیم بدشانس با وجود بازی خوب سه بازی پشت سر هم را باخت.",
+  "ipa": "/ʌnˈlʌki/"
+ },
+ {
+  "i": 11632,
+  "en": "unpack",
+  "fa": "باز کردن چمدان",
+  "cat": "travel",
+  "ex": "We unpacked our suitcases as soon as we arrived at the hotel.",
+  "exfa": "به محض رسیدن به هتل چمدان‌هایمان را باز کردیم.",
+  "ipa": "/ʌnˈpæk/"
+ },
+ {
+  "i": 11633,
+  "en": "unpredictable",
+  "fa": "غیرقابل پیش‌بینی",
+  "cat": "weather",
+  "ex": "Mountain weather can be extremely unpredictable, even in summer.",
+  "exfa": "آب‌وهوای کوهستان حتی در تابستان می‌تواند بسیار غیرقابل پیش‌بینی باشد.",
+  "ipa": "/ˌʌnprɪˈdɪktəbəl/"
+ },
+ {
+  "i": 11634,
+  "en": "unrelated",
+  "fa": "بی‌ربط، نامرتبط",
+  "cat": "adj",
+  "ex": "Police confirmed that the two incidents were completely unrelated.",
+  "exfa": "پلیس تأیید کرد که آن دو حادثه کاملاً بی‌ربط بودند."
+ },
+ {
+  "i": 11635,
+  "en": "untidy",
+  "fa": "نامرتب، شلخته",
+  "cat": "house",
+  "ex": "Piles of clothes and books covered every corner of his untidy room.",
+  "exfa": "توده‌هایی از لباس و کتاب هر گوشه اتاق نامرتب او را پوشانده بود.",
+  "ipa": "/ʌnˈtaɪdi/"
+ },
+ {
+  "i": 11636,
+  "en": "unusually",
+  "fa": "به‌طور غیرمعمول",
+  "cat": "weather",
+  "ex": "It has been unusually warm for early spring this year.",
+  "exfa": "امسال اوایل بهار به‌طور غیرمعمول گرم بوده است.",
+  "ipa": "/ʌnˈjuːʒuəli/"
+ },
+ {
+  "i": 11637,
+  "en": "unwell",
+  "fa": "ناخوش، بیمار",
+  "cat": "health",
+  "ex": "He stayed home from school because he was feeling unwell.",
+  "exfa": "او به دلیل احساس ناخوشی در خانه ماند و به مدرسه نرفت.",
+  "ipa": "/ʌnˈwel/"
+ },
+ {
+  "i": 11638,
+  "en": "up-to-date",
+  "fa": "به‌روز",
+  "cat": "tech",
+  "ex": "Make sure your software is up-to-date before installing the new app.",
+  "exfa": "قبل از نصب برنامه جدید، مطمئن شوید که نرم‌افزارتان به‌روز است."
+ },
+ {
+  "i": 11639,
+  "en": "uplifted",
+  "fa": "دلگرم، امیدوار",
+  "cat": "feeling",
+  "ex": "I felt uplifted after talking with my old friend on the phone.",
+  "exfa": "بعد از صحبت تلفنی با دوست قدیمی‌ام احساس دلگرمی کردم."
+ },
+ {
+  "i": 11640,
+  "en": "upward",
+  "fa": "رو به بالا، صعودی",
+  "cat": "money",
+  "ex": "House prices in the city have followed an upward trend for years.",
+  "exfa": "قیمت مسکن در شهر سال‌هاست روندی صعودی داشته است."
+ },
+ {
+  "i": 11641,
+  "en": "useless",
+  "fa": "بی‌فایده",
+  "cat": "adj",
+  "ex": "This old phone is useless now that the screen is cracked.",
+  "exfa": "این گوشی قدیمی حالا که صفحه‌اش ترک خورده بی‌فایده است.",
+  "ipa": "/ˈjuːsləs/"
+ },
+ {
+  "i": 11642,
+  "en": "vague",
+  "fa": "مبهم، نامشخص",
+  "cat": "adj",
+  "ex": "His answer was so vague that I still don't know what he meant.",
+  "exfa": "پاسخ او آنقدر مبهم بود که هنوز نمی‌دانم منظورش چه بود.",
+  "ipa": "/veɪɡ/",
+  "syn": [
+   "unclear",
+   "ambiguous"
+  ]
+ },
+ {
+  "i": 11643,
+  "en": "vain",
+  "fa": "خودشیفته، مغرور",
+  "cat": "feeling",
+  "ex": "He's too vain to wear glasses in public, even though he needs them.",
+  "exfa": "او آنقدر مغرور است که حتی با اینکه به عینک نیاز دارد، در جمع آن را نمی‌زند."
+ },
+ {
+  "i": 11644,
+  "en": "vein",
+  "fa": "رگ، ورید",
+  "cat": "body",
+  "ex": "The nurse had trouble finding a vein to draw blood from his arm.",
+  "exfa": "پرستار برای پیدا کردن رگی جهت گرفتن خون از بازوی او مشکل داشت.",
+  "ipa": "/veɪn/"
+ },
+ {
+  "i": 11645,
+  "en": "vet",
+  "fa": "دامپزشک",
+  "cat": "animal",
+  "ex": "My sister took her injured cat to the vet on Sunday morning.",
+  "exfa": "خواهرم یکشنبه صبح گربه زخمی‌اش را پیش دامپزشک برد.",
+  "ipa": "/vet/"
+ },
+ {
+  "i": 11646,
+  "en": "vice president",
+  "fa": "معاون",
+  "cat": "work",
+  "ex": "The vice president will represent the company at tomorrow's conference.",
+  "exfa": "معاون شرکت فردا در کنفرانس نماینده شرکت خواهد بود."
+ },
+ {
+  "i": 11647,
+  "en": "video clip",
+  "fa": "کلیپ ویدیویی",
+  "cat": "tech",
+  "ex": "My cousin shared a funny video clip of dancing dogs on social media.",
+  "exfa": "پسرخاله‌ام یک کلیپ ویدیویی خنده‌دار از رقصیدن سگ‌ها را در شبکه‌های اجتماعی به اشتراک گذاشت."
+ },
+ {
+  "i": 11648,
+  "en": "viewpoint",
+  "fa": "دیدگاه، نقطه‌نظر",
+  "cat": "talk",
+  "ex": "From my viewpoint, the new policy will only make things worse.",
+  "exfa": "از دیدگاه من، سیاست جدید فقط اوضاع را بدتر می‌کند.",
+  "ipa": "/ˈvjuːpɔɪnt/",
+  "syn": [
+   "perspective",
+   "opinion"
+  ]
+ },
+ {
+  "i": 11649,
+  "en": "violently",
+  "fa": "به‌شدت (خشونت‌آمیز)",
+  "cat": "crime",
+  "ex": "The two men argued violently outside the bar late at night.",
+  "exfa": "آن دو مرد نیمه‌شب بیرون از بار به‌شدت با هم دعوا کردند."
+ },
+ {
+  "i": 11650,
+  "en": "visually",
+  "fa": "از نظر بصری",
+  "cat": "adv",
+  "ex": "The new museum exhibit is visually stunning but hard to understand.",
+  "exfa": "نمایشگاه جدید موزه از نظر بصری خیره‌کننده است اما درک آن سخت است."
+ },
+ {
+  "i": 11651,
+  "en": "vivid",
+  "fa": "واضح و زنده (خاطره، رنگ)",
+  "cat": "adj",
+  "ex": "She still has vivid memories of her first day at school.",
+  "exfa": "او هنوز خاطرات واضح و زنده‌ای از اولین روز مدرسه‌اش دارد.",
+  "ipa": "/ˈvɪvɪd/"
+ },
+ {
+  "i": 11652,
+  "en": "vividly",
+  "fa": "به‌وضوح، به‌روشنی",
+  "cat": "adv",
+  "ex": "He remembers vividly the moment he first saw the ocean.",
+  "exfa": "او لحظه‌ای که برای اولین بار اقیانوس را دید به‌وضوح به یاد دارد."
+ },
+ {
+  "i": 11653,
+  "en": "vowel",
+  "fa": "حرف صدادار (مصوت)",
+  "cat": "school",
+  "ex": "The teacher asked the students to circle every vowel in the word.",
+  "exfa": "معلم از دانش‌آموزان خواست هر حرف صدادار را در کلمه دور بگیرند.",
+  "ipa": "/ˈvaʊəl/"
+ },
+ {
+  "i": 11654,
+  "en": "warmly",
+  "fa": "به‌گرمی",
+  "cat": "adv",
+  "ex": "The host greeted us warmly and offered us hot tea.",
+  "exfa": "میزبان با گرمی از ما استقبال کرد و به ما چای داغ تعارف کرد.",
+  "ipa": "/ˈwɔːrmli/"
+ },
+ {
+  "i": 11655,
+  "en": "warmth",
+  "fa": "گرما، صمیمیت",
+  "cat": "house",
+  "ex": "The warmth of the fireplace made the whole cabin feel cozy.",
+  "exfa": "گرمای بخاری تمام کلبه را دنج کرده بود.",
+  "ipa": "/wɔːrmθ/"
+ },
+ {
+  "i": 11656,
+  "en": "warn",
+  "fa": "هشدار دادن",
+  "cat": "verb",
+  "ex": "The lifeguard warned swimmers about the strong currents near the rocks.",
+  "exfa": "نجات‌غریق شناگران را درباره جریان‌های قوی نزدیک صخره‌ها هشدار داد.",
+  "ipa": "/wɔːrn/"
+ },
+ {
+  "i": 11657,
+  "en": "washbowl",
+  "fa": "روشویی",
+  "cat": "house",
+  "ex": "He filled the washbowl with warm water to wash his face.",
+  "exfa": "او روشویی را با آب گرم پر کرد تا صورتش را بشوید."
+ },
+ {
+  "i": 11658,
+  "en": "wasteful",
+  "fa": "اسراف‌کننده",
+  "cat": "adj",
+  "ex": "Throwing away half-eaten food is wasteful and bad for the environment.",
+  "exfa": "دور ریختن غذای نیمه‌خورده اسراف است و برای محیط‌زیست مضر."
+ },
+ {
+  "i": 11659,
+  "en": "weakness",
+  "fa": "ضعف، نقطه‌ضعف",
+  "cat": "noun",
+  "ex": "Public speaking has always been a weakness of mine.",
+  "exfa": "سخنرانی در جمع همیشه نقطه‌ضعف من بوده است.",
+  "ipa": "/ˈwiːknəs/"
+ },
+ {
+  "i": 11660,
+  "en": "weather forecast",
+  "fa": "پیش‌بینی آب‌وهوا",
+  "cat": "weather",
+  "ex": "According to the weather forecast, it will rain all weekend.",
+  "exfa": "طبق پیش‌بینی آب‌وهوا، تمام آخر هفته باران خواهد بارید."
+ },
+ {
+  "i": 11661,
+  "en": "webcam",
+  "fa": "وب‌کم",
+  "cat": "tech",
+  "ex": "His laptop's webcam stopped working right before the online meeting.",
+  "exfa": "وب‌کم لپ‌تاپش درست قبل از جلسه آنلاین از کار افتاد.",
+  "ipa": "/ˈwebkæm/"
+ },
+ {
+  "i": 11662,
+  "en": "well-dressed",
+  "fa": "خوش‌لباس",
+  "cat": "clothes",
+  "ex": "Every man at the wedding was well-dressed in a dark suit.",
+  "exfa": "هر مردی در آن عروسی با کت‌وشلوار تیره خوش‌لباس بود."
+ },
+ {
+  "i": 11663,
+  "en": "westward",
+  "fa": "به سمت غرب",
+  "cat": "travel",
+  "ex": "The ship sailed westward across the Atlantic for two weeks.",
+  "exfa": "کشتی به مدت دو هفته به سمت غرب اقیانوس اطلس حرکت کرد."
+ },
+ {
+  "i": 11664,
+  "en": "whichever",
+  "fa": "هر کدام که",
+  "cat": "general",
+  "ex": "You can choose whichever seat you like on the train.",
+  "exfa": "می‌توانید هر صندلی‌ای که دوست دارید در قطار انتخاب کنید."
+ },
+ {
+  "i": 11665,
+  "en": "whisper",
+  "fa": "نجوا کردن",
+  "cat": "talk",
+  "ex": "She leaned over and whispered the answer into his ear.",
+  "exfa": "او خم شد و پاسخ را زیر گوش او نجوا کرد.",
+  "ipa": "/ˈwɪspər/"
+ },
+ {
+  "i": 11666,
+  "en": "whistle",
+  "fa": "سوت زدن",
+  "cat": "sport",
+  "ex": "The referee blew his whistle to stop the match.",
+  "exfa": "داور برای متوقف کردن بازی سوتش را زد.",
+  "ipa": "/ˈwɪsəl/"
+ },
+ {
+  "i": 11667,
+  "en": "whoever",
+  "fa": "هر کسی که",
+  "cat": "general",
+  "ex": "Whoever finishes the race first will win a gold medal.",
+  "exfa": "هر کسی که اول مسابقه را تمام کند مدال طلا خواهد برد."
+ },
+ {
+  "i": 11668,
+  "en": "wildly",
+  "fa": "به‌شدت، دیوانه‌وار",
+  "cat": "sport",
+  "ex": "The crowd cheered wildly when their team scored the final goal.",
+  "exfa": "جمعیت وقتی تیمشان گل آخر را زد دیوانه‌وار هورا کشیدند.",
+  "ipa": "/ˈwaɪldli/"
+ },
+ {
+  "i": 11669,
+  "en": "willingness",
+  "fa": "تمایل، اشتیاق",
+  "cat": "noun",
+  "ex": "Her willingness to help new employees made her popular in the office.",
+  "exfa": "تمایل او به کمک به کارمندان جدید باعث محبوبیتش در اداره شد."
+ },
+ {
+  "i": 11670,
+  "en": "windscreen",
+  "fa": "شیشه جلوی خودرو",
+  "cat": "car",
+  "ex": "A stone hit the windscreen and left a small crack.",
+  "exfa": "یک سنگ به شیشه جلوی ماشین خورد و یک ترک کوچک ایجاد کرد."
+ },
+ {
+  "i": 11671,
+  "en": "windsurfing",
+  "fa": "موج‌سواری بادی",
+  "cat": "sport",
+  "ex": "They tried windsurfing for the first time during their trip to the coast.",
+  "exfa": "آن‌ها در سفرشان به ساحل برای اولین بار موج‌سواری بادی را امتحان کردند."
+ },
+ {
+  "i": 11672,
+  "en": "wither",
+  "fa": "پژمرده شدن",
+  "cat": "nature",
+  "ex": "The flowers in the garden withered because nobody watered them.",
+  "exfa": "گل‌های باغ چون کسی به آن‌ها آب نداد پژمرده شدند.",
+  "ipa": "/ˈwɪðər/"
+ },
+ {
+  "i": 11673,
+  "en": "worthwhile",
+  "fa": "ارزشمند",
+  "cat": "adj",
+  "ex": "Learning a new language is worthwhile even if it takes years.",
+  "exfa": "یاد گرفتن یک زبان جدید ارزشمند است حتی اگر سال‌ها طول بکشد.",
+  "ipa": "/ˌwɜːrθˈwaɪl/"
+ },
+ {
+  "i": 11674,
+  "en": "wristwatch",
+  "fa": "ساعت مچی",
+  "cat": "time",
+  "ex": "She checked her wristwatch to see if she was late for the meeting.",
+  "exfa": "او به ساعت مچی‌اش نگاه کرد تا ببیند برای جلسه دیر کرده است یا نه.",
+  "ipa": "/ˈrɪstwɒtʃ/",
+  "syn": [
+   "watch"
+  ]
+ },
+ {
+  "i": 11675,
+  "en": "yell",
+  "fa": "فریاد زدن / فریاد",
+  "cat": "talk",
+  "ex": "Don't yell at your little brother just because he broke your toy.",
+  "exfa": "فقط به این خاطر که اسباب‌بازی‌ات را شکسته، سر برادر کوچکت فریاد نزن.",
+  "ipa": "/jel/",
+  "syn": [
+   "shout",
+   "scream",
+   "holler"
+  ]
  }
 ]
