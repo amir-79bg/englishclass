@@ -9643,58 +9643,284 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 .vbtn:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #b3a9e6!important;outline-offset:3px}
 .vrow:hover{background:rgba(255,255,255,.05)}
 .word-stats>*+*{border-right:1px solid rgba(233,233,237,.065)}
+.dictionary-screen{max-width:920px;margin:0 auto}
 .dict-search-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:stretch}
+.dict-search-input{min-height:46px}
+.dict-translate-button{white-space:nowrap}
 .dict-quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;align-items:stretch}
 .dict-action-button{min-width:0;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 9px;border-radius:10px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.15);color:rgba(233,233,237,.65);font-size:11.5px}
 .dict-action-button i{font-size:15px}.dict-action-button small{font:600 9.5px Inter,sans-serif;opacity:.78}
 .dict-category-action{display:none}
+.dict-state-filters{display:none}
 .dict-tools-panel{display:none;gap:9px;padding:10px;margin-top:8px;border-radius:10px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.08)}
 .dict-tool-heading{display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(233,233,237,.5)}
 .dict-sort-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
 .dict-cats-mobile{display:none}
-.dict-cats{display:flex;gap:7px;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;padding:2px 0 7px}
+.dict-cats{display:flex;gap:7px;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:rgba(233,233,237,.26) rgba(233,233,237,.06);scroll-snap-type:inline proximity;padding:2px 0 9px}
+.dict-cats::-webkit-scrollbar{height:6px}
+.dict-cats::-webkit-scrollbar-track{background:rgba(233,233,237,.06);border-radius:99px}
+.dict-cats::-webkit-scrollbar-thumb{background:rgba(233,233,237,.26);border-radius:99px}
 .dict-cats>.vbtn{flex:none}
-.level-tabs{display:flex;gap:7px;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;padding:2px 0 7px}
-.level-tabs>.vbtn{flex:none}
+.dict-cats>.vbtn{scroll-snap-align:start}
+.level-tabs{display:flex;gap:2px;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none;padding:4px;border-radius:12px;background:rgba(233,233,237,.035);border:1px solid rgba(233,233,237,.075)}
+.level-tabs::-webkit-scrollbar{display:none}
+.level-tabs>.level-tab{position:relative;flex:none;min-width:max-content;min-height:38px!important;padding:0 12px!important;border:0!important;border-radius:8px!important;background:transparent!important;color:rgba(233,233,237,.58)!important;font-family:Inter,sans-serif!important;font-size:11.5px!important;font-weight:500!important;box-shadow:none!important;opacity:1!important;cursor:pointer!important;transition:background .18s,color .18s,box-shadow .18s!important}
+.level-tabs>.level-tab i{font-size:13px}
+.level-tabs>.level-tab:hover{background:rgba(233,233,237,.045)!important;color:rgba(233,233,237,.82)!important}
+.level-tabs>.level-tab.is-active{background:rgba(145,132,217,.17)!important;color:#d7d1f5!important;box-shadow:inset 0 0 0 1px rgba(145,132,217,.42),0 4px 12px rgba(0,0,0,.14)!important}
+.level-tabs>.level-tab.is-active i{color:#b3a9e6}
+.level-tabs>.level-tab.is-locked{opacity:.32!important;cursor:not-allowed!important}
+.level-tabs>.level-tab.is-locked:hover{background:transparent!important;color:rgba(233,233,237,.58)!important}
+.level-tabs>.level-tab:focus-visible{outline:2px solid #84c5d9!important;outline-offset:1px}
 .cat-practice-strip{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 2px;margin:1px 0 9px;border-top:1px solid rgba(233,233,237,.07);border-bottom:1px solid rgba(233,233,237,.07)}
 .cat-practice-actions{display:flex;gap:5px;align-items:center;overflow-x:auto}
 .dict-more-panel{display:grid;gap:9px;margin-top:8px;padding-top:9px;border-top:1px solid rgba(233,233,237,.07)}
 .dict-word-details{display:grid;gap:8px;padding:9px 10px;border-radius:9px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.06)}
 .dict-more-actions{display:flex;align-items:center;gap:7px}
+.dict-result-summary{display:flex;align-items:center;gap:6px;color:rgba(233,233,237,.52)}
+.dict-result-summary i{font-size:13px;color:#84c5d9}
+.dict-word-list{display:grid;gap:6px}
+.dict-word-row{padding:10px 11px;border-radius:10px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.06);transition:border-color .18s,background .18s}
+.dict-word-row.is-open{background:rgba(145,132,217,.035);border-color:rgba(145,132,217,.24)}
+.dict-word-main{display:flex;align-items:center;gap:8px}
+.dict-word-copy{flex:1;min-width:0}
+.dict-word-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.dict-word-en{font-family:Inter,sans-serif;font-size:13.5px;direction:ltr;overflow-wrap:anywhere}
+.dict-word-fa{font-size:12px;color:rgba(233,233,237,.62);margin-top:2px;line-height:1.65}
+.dict-word-actions{display:flex;direction:rtl;gap:6px;flex:none}
+.dict-word-action{flex:none;width:38px;height:38px;min-width:38px!important;min-height:38px!important;border-radius:9px;display:grid;place-items:center}
+.colloc-screen{display:grid;gap:14px;max-width:1080px;margin:0 auto}
+.colloc-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:linear-gradient(135deg,rgba(143,217,193,.075),rgba(132,197,217,.025));border:1px solid rgba(143,217,193,.2)}
+.colloc-hero-copy{display:grid;gap:5px;min-width:0}
+.colloc-eyebrow{display:flex;align-items:center;gap:6px;color:#8fd9c1;font-size:10.5px}
+.colloc-title{font-size:18px;font-weight:650;color:rgba(233,233,237,.96)}
+.colloc-description{font-size:11.5px;line-height:1.9;color:rgba(233,233,237,.54)}
+.colloc-hero-actions{display:flex;align-items:center;gap:7px}
+.colloc-game,.colloc-next{display:flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap;border-radius:10px}
+.colloc-game{padding:9px 13px;background:rgba(224,164,88,.1);border:1px solid rgba(224,164,88,.45);color:#e0a458;font-size:11.5px}
+.colloc-next{padding:9px 11px;background:rgba(143,217,193,.08);border:1px solid rgba(143,217,193,.32);color:#8fd9c1;font-size:11px}
+.colloc-groups{display:flex;gap:4px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline proximity;scrollbar-width:thin;scrollbar-color:rgba(143,217,193,.3) rgba(233,233,237,.05);padding:4px;border-radius:13px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.075)}
+.colloc-groups::-webkit-scrollbar{height:5px}.colloc-groups::-webkit-scrollbar-track{background:rgba(233,233,237,.05)}.colloc-groups::-webkit-scrollbar-thumb{background:rgba(143,217,193,.3);border-radius:99px}
+.colloc-group-tab{flex:none;display:flex;align-items:center;gap:7px;min-height:40px!important;padding:7px 11px;border:0;border-radius:9px;background:transparent;color:rgba(233,233,237,.58);font-size:11.5px;white-space:nowrap;scroll-snap-align:start}
+.colloc-group-tab small{font:600 9px Inter,sans-serif;padding:2px 5px;border-radius:6px;background:rgba(233,233,237,.06);color:rgba(233,233,237,.5)}
+.colloc-group-tab.is-active{background:rgba(143,217,193,.13);color:#a7e4d1;box-shadow:inset 0 0 0 1px rgba(143,217,193,.38)}
+.colloc-group-tab.is-active small{background:rgba(143,217,193,.14);color:#8fd9c1}
+.colloc-section-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:1px 2px 8px}
+.colloc-section-head strong{font-size:12.5px;font-weight:600}.colloc-section-head span{font-size:10px;color:rgba(233,233,237,.44)}
+.colloc-use{display:flex;align-items:flex-start;gap:7px;padding:10px 12px;border-radius:11px;background:rgba(143,217,193,.055);border:1px solid rgba(143,217,193,.18);color:rgba(233,233,237,.7);font-size:11.5px;line-height:1.85}
+.colloc-use i{flex:none;margin-top:3px;color:#8fd9c1}
+.colloc-drills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.colloc-drill{display:grid;grid-template-columns:38px minmax(0,1fr);align-items:center;gap:9px;min-height:70px!important;padding:10px;border-radius:12px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.1);text-align:right}
+.colloc-drill-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;background:rgba(233,233,237,.045);box-shadow:inset 0 0 0 1px var(--colloc-accent);color:var(--colloc-accent);font-size:17px}
+.colloc-drill-copy{display:grid;gap:2px;min-width:0}.colloc-drill-title{font-size:11.5px;font-weight:600;color:rgba(233,233,237,.9)}
+.colloc-drill-meta{font-size:9.5px;line-height:1.55;color:rgba(233,233,237,.48)}
+.colloc-drill-score{font:600 9px Inter,sans-serif;color:var(--colloc-accent)}
+.colloc-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.colloc-item{display:grid;grid-template-columns:28px minmax(0,1fr) 40px;align-items:center;gap:9px;padding:9px 10px;border-radius:11px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.065)}
+.colloc-item-number{width:24px;height:24px;display:grid;place-items:center;border-radius:7px;background:rgba(143,217,193,.08);font:600 9.5px Inter,sans-serif;color:rgba(143,217,193,.72)}
+.colloc-item-copy{min-width:0}.colloc-item-en{font-family:Inter,sans-serif;font-size:13px;direction:ltr;text-align:left;font-weight:550;overflow-wrap:anywhere}.colloc-item-fa{font-size:11px;color:rgba(233,233,237,.5);margin-top:2px}
+.colloc-speak{width:38px;height:38px;min-width:38px!important;min-height:38px!important;border-radius:10px;background:transparent;border:1px solid rgba(132,197,217,.24);color:#84c5d9;display:grid;place-items:center;font-size:15px}
 .practice-input-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
 .add-form>div{min-width:0}.add-form input{min-width:0;max-width:100%}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.lesson-browser{display:grid;gap:12px;padding-bottom:76px}
+.lesson-progress-label{font:600 12px Inter,sans-serif;color:#84c5d9;white-space:nowrap}
+.lesson-progress-track,.lesson-progress-track>span{display:block}
+.lesson-progress-track{height:3px;border-radius:99px;overflow:hidden;background:rgba(233,233,237,.1)}
+.lesson-resume-dock{position:fixed;z-index:25;left:50%;bottom:12px;transform:translateX(-50%);width:min(680px,calc(100vw - 24px));padding:7px;border-radius:15px;background:rgba(22,24,38,.92);border:1px solid rgba(145,132,217,.42);box-shadow:0 16px 38px rgba(0,0,0,.4);backdrop-filter:blur(16px)}
+.lesson-resume-button{display:grid;grid-template-columns:auto minmax(0,1fr) 116px auto;align-items:center;gap:9px;width:100%;padding:7px 9px;border:0;border-radius:10px;background:linear-gradient(135deg,rgba(145,132,217,.14),rgba(143,217,193,.06));text-align:right}
+.lesson-resume-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:rgba(145,132,217,.2);color:#c8bef1;font-size:18px}
+.lesson-resume-copy{display:grid;gap:1px;min-width:0}
+.lesson-resume-copy strong{font-size:12.5px;font-weight:600;color:rgba(233,233,237,.94)}
+.lesson-resume-copy small{font-size:10px;color:rgba(233,233,237,.52);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lesson-resume-progress{display:grid;gap:5px;min-width:0}
+.lesson-unit{border-radius:14px;background:rgba(233,233,237,.022);border:1px solid rgba(233,233,237,.085);overflow:hidden}
+.lesson-unit-head{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:13px 14px;background:transparent;border:0;text-align:right}
+.lesson-current-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 7px;border-radius:99px;background:rgba(145,132,217,.12);border:1px solid rgba(145,132,217,.38);color:#b3a9e6;font-size:9.5px;white-space:nowrap}
+.lesson-list{padding:0 12px 6px;border-top:1px solid rgba(233,233,237,.055)}
+.lesson-row{position:relative;width:100%;min-height:58px;text-align:right;background:transparent;border:0;color:inherit;transition:background .18s}
+.lesson-row[aria-disabled="false"]:hover{background:rgba(145,132,217,.055)}
+.lesson-row[aria-disabled="true"]{cursor:default}
+.lesson-row-complete{background:linear-gradient(90deg,rgba(143,217,193,.045),transparent)}
+.lesson-row-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:5px}
+.lesson-word-list{display:flex;flex-wrap:wrap;gap:5px 7px;margin-bottom:9px}
+.lesson-word{display:inline-flex;align-items:center;gap:4px;padding:4px 7px;border-radius:7px;background:rgba(233,233,237,.035);font-size:10.5px;color:rgba(233,233,237,.52)}
+.lesson-word-en{font-family:Inter,sans-serif;direction:ltr;color:rgba(233,233,237,.84)}
+.lesson-review-icon{flex:none;width:36px;height:36px;display:grid;place-items:center;align-self:center;border-radius:10px;background:rgba(143,217,193,.1);border:1px solid rgba(143,217,193,.3);color:#8fd9c1;font-size:16px}
+.study-screen{max-width:680px;margin:0 auto}
+.study-card{position:relative}
+.study-card-art{position:relative}
+.study-card-icon{font-size:60px;opacity:.22}
+.study-card-meta{position:absolute;bottom:9px;right:12px;font-size:10px;color:rgba(233,233,237,.55);font-family:Inter,sans-serif}
+.study-card-body{padding:18px 18px 20px}
+.study-phase{margin:0 3px 8px;padding:0 2px}
+.study-phase-row{display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(233,233,237,.65)}
+.study-phase-row i{color:#b3a9e6;font-size:12px}
+.study-phase-label{font-weight:600;color:rgba(233,233,237,.9)}
+.study-phase-count{margin-right:auto;font-family:Inter,sans-serif;color:#b3a9e6}
+.study-phase-track{height:2px;margin-top:5px;border-radius:99px;overflow:hidden;background:rgba(233,233,237,.08)}
+.study-phase-bar{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#9184d9,#84c5d9);transition:width .25s ease}
+.study-prompt{text-align:center;margin-bottom:14px}
+.study-prompt-word{overflow-wrap:anywhere}
+.study-prompt-hint{font-size:12px;color:rgba(233,233,237,.55);margin-top:6px}
+.study-syn-slot{display:flex;align-items:center;justify-content:center;gap:6px;min-height:22px;margin-top:8px;font-family:Inter,sans-serif;font-size:12.5px;direction:ltr;color:#8fc7a0;transition:filter .2s,opacity .2s}
+.study-syn-slot.is-concealed{filter:blur(5px);opacity:.28;user-select:none;pointer-events:none}
+.study-syn-slot.is-revealed{filter:none;opacity:1}
+.study-inline-answer{margin-top:9px;font-size:18px;font-weight:500;line-height:1.6;color:rgba(233,233,237,.92)}
+.study-tools{position:absolute;z-index:2;top:11px;left:12px;display:flex;direction:rtl;gap:7px}
+.study-tool{display:grid!important;place-items:center;width:44px;height:44px;min-width:44px!important;padding:0!important;border-radius:12px!important;background:rgba(18,20,31,.42)!important;border:1px solid rgba(233,233,237,.28)!important;color:rgba(233,233,237,.75)!important;font-size:18px!important;backdrop-filter:blur(8px)}
+.study-tool-primary{background:rgba(145,132,217,.2)!important;border-color:rgba(145,132,217,.68)!important;color:#c8bef1!important}
+.study-tool-starred{background:rgba(224,164,88,.16)!important;border-color:#e0a458!important;color:#e0a458!important}
+.study-options{display:grid;gap:9px;margin-bottom:15px}
+.study-options>.vbtn{min-height:54px!important}
+.study-example{padding:13px 15px;border-radius:11px;background:rgba(145,132,217,.07);border:1px solid rgba(145,132,217,.18);margin-bottom:14px}
+.study-example-label{display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(145,132,217,.9);margin-bottom:7px}
+.study-example-content{display:grid;gap:6px}
+.study-example-en{font-family:Inter,sans-serif;font-size:15px;direction:ltr;text-align:left;line-height:1.65;color:rgba(233,233,237,.9)}
+.study-example-fa{font-size:12px;color:rgba(233,233,237,.5);line-height:1.8;margin-top:6px}
+.study-compose-block{padding:14px 2px 0;border-top:1px solid rgba(233,233,237,.075);margin-top:14px}
+.study-action-dock{display:flex;direction:rtl;gap:9px;justify-content:center;flex-wrap:wrap}
+.study-action-dock>.vbtn{justify-content:center;min-height:50px!important}
+.study-footnote{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:11px;color:rgba(233,233,237,.55)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media (min-width:521px){
+  .study-screen{max-width:780px}
+  .study-card{border-radius:18px!important;box-shadow:0 18px 48px rgba(0,0,0,.24)!important}
+  .study-card-art{height:72px!important}
+  .study-card-icon{font-size:50px}
+  .study-card-body{padding:20px 24px 22px}
+  .study-prompt{max-width:640px;margin:0 auto 17px;padding:2px 0}
+  .study-prompt-word{font-size:clamp(32px,3.2vw,40px)!important;line-height:1.22!important}
+  .study-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
+  .study-options>.vbtn{min-height:58px!important;padding:12px 15px!important}
+  .study-example{padding:14px 17px;margin-bottom:16px}
+  .study-example-content{direction:ltr;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px;align-items:center}
+  .study-example-en{grid-column:1}
+  .study-example-en:only-child{grid-column:1/-1}
+  .study-example-fa{grid-column:2;direction:rtl;text-align:right;margin-top:0}
+  .study-action-dock{max-width:460px;margin:18px auto 0;flex-wrap:nowrap}
+  .study-action-dock>.vbtn{min-width:160px;min-height:54px!important;padding-inline:22px!important;font-weight:600!important}
+  .study-compose-block{display:grid;justify-items:start;padding-top:15px;margin-top:16px}
+  .study-compose-block>div{width:100%}
+  .study-compose-toggle{min-height:44px!important;padding-inline:18px!important}
+}
 @media (max-width:520px){
   .word-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
-  .dict-search-row{grid-template-columns:minmax(0,1fr) 48px}
-  .dict-search-row>.vbtn{width:48px;padding:0!important;justify-content:center}
-  .dict-search-row .dict-translate-label{display:none}
+  .dictionary-screen{margin-inline:-1px}
+  .dict-search-row{grid-template-columns:minmax(0,1fr);margin-bottom:8px!important}
+  .dict-search-input{min-height:46px!important;padding:10px 12px!important;border-radius:12px!important;font-size:12.5px!important;background:rgba(233,233,237,.035)!important}
+  .dict-translate-button{display:none!important}
   .practice-input-row{grid-template-columns:1fr}
   .practice-input-row>.vbtn{width:100%;justify-content:center}
-  .dict-quick{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
-  .dict-action-button{min-height:52px!important;flex-direction:column;gap:3px;padding:6px 4px;font-size:10px}
-  .dict-action-button i{font-size:16px}
+  .dict-quick{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-bottom:8px!important}
+  .dict-action-button{min-height:42px!important;gap:4px;padding:5px 6px;font-size:10.5px;border-radius:10px}
+  .dict-action-button i{font-size:15px}
+  .dict-action-button small{font-size:8.5px}
+  .dict-learned-action{display:none}
   .dict-category-action{display:flex}
-  .dict-tools-panel{display:grid}
-  .dict-sort-options{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dict-tools-panel{display:grid;gap:10px;padding:10px;margin:0 0 8px!important;border-radius:12px;background:rgba(233,233,237,.02)}
+  .dict-tool-heading{font-size:10px}
+  .dict-sort-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+  .dict-sort-options>.vbtn{min-height:39px!important;padding:6px 7px!important}
   .dict-cats-desktop{display:none}
   .dict-cats-mobile{display:flex}
+  .dict-state-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+  .dict-state-filters>.vbtn{min-height:39px!important;justify-content:center!important;padding:6px 8px!important;border-radius:9px!important;font-size:10.5px!important}
+  .dict-cats{gap:5px;padding:1px 0 2px;scrollbar-width:none}
+  .dict-cats::-webkit-scrollbar{display:none}
+  .dict-cats-mobile .dict-cats>.vbtn:first-child{display:none}
+  .dict-cats>.vbtn{min-height:36px!important;padding:6px 9px!important;border-radius:9px!important;font-size:10.5px!important}
   .cat-practice-strip{grid-template-columns:1fr;gap:7px}
   .cat-practice-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}
   .cat-practice-actions>.vbtn{padding:7px 4px!important;min-width:0!important;font-size:10.5px!important}
-  .dict-word-main{gap:7px!important}
+  .dict-result-summary{font-size:10.5px!important;margin:3px 2px 7px!important}
+  .dict-word-list{gap:7px}
+  .dict-word-row{padding:10px 11px;border-radius:12px}
+  .dict-word-main{gap:8px!important;align-items:center}
+  .dict-word-en{font-size:15px;font-weight:500;line-height:1.35}
+  .dict-word-fa{font-size:12px;margin-top:3px;color:rgba(233,233,237,.58)}
+  .dict-word-actions{gap:5px}
+  .dict-word-action{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;border-radius:10px!important}
+  .dict-more-panel{gap:8px;margin-top:9px;padding-top:9px}
+  .dict-word-details{padding:0;background:transparent;border:0}
   .dict-more-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-  .dict-more-actions>.vbtn{justify-content:center}
+  .dict-more-actions>.vbtn{justify-content:center;min-height:42px!important}
+  .colloc-screen{gap:10px}
+  .colloc-hero{grid-template-columns:1fr;padding:12px;border-radius:14px;gap:10px}
+  .colloc-title{font-size:15px}.colloc-description{font-size:10.5px;line-height:1.75}
+  .colloc-hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+  .colloc-game,.colloc-next{min-height:40px!important;padding:7px 8px;font-size:10.5px}
+  .colloc-groups{margin-inline:-1px;padding:3px;scrollbar-width:none}
+  .colloc-groups::-webkit-scrollbar{display:none}
+  .colloc-group-tab{min-height:38px!important;padding:6px 9px;font-size:10.5px}
+  .colloc-use{padding:9px 10px;font-size:10.5px}
+  .colloc-drills{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .colloc-drill{grid-template-columns:34px minmax(0,1fr);min-height:64px!important;padding:8px;gap:7px}
+  .colloc-drill-icon{width:34px;height:34px;border-radius:9px;font-size:15px}
+  .colloc-drill-title{font-size:10.5px}.colloc-drill-meta{font-size:8.8px}
+  .colloc-items{grid-template-columns:1fr;gap:6px}
+  .colloc-item{grid-template-columns:26px minmax(0,1fr) 38px;padding:8px 9px;gap:8px}
+  .colloc-item-en{font-size:13.5px}.colloc-item-fa{font-size:10.5px}
+  .colloc-speak{width:36px;height:36px;min-width:36px!important;min-height:36px!important}
   .add-review-btn,.add-submit{width:100%;justify-content:center}
+  .app-shell{padding:8px 10px calc(78px + env(safe-area-inset-bottom))!important}
+  .app-header{padding-bottom:9px!important;margin-bottom:9px!important}
+  .app-header-back,.app-header-settings{width:38px!important;height:38px!important;border-radius:10px!important}
+  .app-header-title{font-size:13.5px!important}
+  .app-header-pos{font-size:10px!important;margin-top:1px!important}
+  .lesson-browser{gap:10px;padding-bottom:82px}
+  .lesson-resume-dock{left:0;right:0;bottom:0;transform:none;width:100%;padding:7px 10px calc(7px + env(safe-area-inset-bottom));border-radius:16px 16px 0 0}
+  .lesson-resume-button{grid-template-columns:auto minmax(0,1fr) 88px auto;padding:6px 7px}
+  .lesson-resume-icon{width:34px;height:34px}
+  .lesson-resume-copy strong{font-size:12px}
+  .lesson-resume-copy small{font-size:9.5px}
+  .lesson-progress-label{font-size:10px}
+  .level-tabs{margin-inline:-2px;padding:3px!important;border-radius:10px}
+  .level-tabs>.level-tab{min-height:36px!important;padding-inline:10px!important;font-size:11px!important}
+  .lesson-unit-head{padding:13px 12px}
+  .lesson-list{padding:0 10px 5px}
+  .lesson-row{gap:9px!important;padding:12px 4px!important}
+  .lesson-row-head{align-items:flex-start;flex-direction:column;gap:2px}
+  .lesson-word-list{display:none}
+  .lesson-review-icon{width:34px;height:34px}
+  .study-screen{padding-bottom:74px}
+  .study-card{border-radius:16px!important;box-shadow:0 10px 28px rgba(0,0,0,.24)!important}
+  .study-card-art{height:58px!important;display:block!important;background:linear-gradient(145deg,rgba(145,132,217,.12),rgba(132,197,217,.055))!important}
+  .study-card-icon,.study-card-meta{display:none!important}
+  .study-card-chip{top:10px!important;right:9px!important;max-width:124px;min-height:36px;box-sizing:border-box;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .study-card-body{padding:14px 12px 15px}
+  .study-phase{margin:0 2px 6px;padding:0 1px}
+  .study-prompt{padding:8px 2px 2px;margin-bottom:10px}
+  .study-prompt-word{font-size:clamp(27px,9vw,38px)!important;line-height:1.18!important;letter-spacing:-.025em!important}
+  .study-prompt-hint{font-size:11.5px!important;color:rgba(233,233,237,.7)!important;margin-top:5px!important}
+  .study-syn-slot{min-height:20px;margin-top:6px;font-size:12px}
+  .study-inline-answer{margin-top:7px;font-size:17px;line-height:1.45}
+  .study-tools{top:7px;left:8px;gap:5px}
+  .study-tool{width:44px;height:44px;border-radius:11px!important;background:rgba(18,20,31,.55)!important}
+  .study-options{gap:8px;margin-bottom:12px}
+  .study-options>.vbtn{min-height:52px!important;padding:11px!important;font-size:13.5px!important}
+  .study-input{min-height:52px!important;padding:12px 13px!important;font-size:16px!important}
+  .study-example{padding:11px 12px;border-radius:10px;margin-bottom:10px}
+  .study-example-label{margin-bottom:5px;font-size:10px}
+  .study-example-en{font-size:14px;line-height:1.5}
+  .study-example-fa{font-size:11.5px;line-height:1.65;margin-top:5px;color:rgba(233,233,237,.68)}
+  .study-compose-block{padding:10px 0 0;margin-top:10px}
+  .study-compose-toggle{width:100%;min-height:44px!important;justify-content:center!important;padding:8px 10px!important;color:rgba(233,233,237,.75)!important}
+  .study-action-dock{position:fixed;z-index:30;left:0;right:0;bottom:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(18,20,31,0),rgba(18,20,31,.96) 22%,#12141f 100%);backdrop-filter:blur(14px);flex-wrap:nowrap}
+  .study-action-dock>.vbtn{flex:1;width:100%;min-height:54px!important;font-size:14px!important;font-weight:600!important;box-shadow:0 10px 24px rgba(0,0,0,.28)}
+  .study-footnote{display:none}
+}
+@media (max-width:360px){
+  .study-card-chip{width:44px;justify-content:center;padding-inline:0!important}
+  .study-card-chip span{display:none}
 }
 </style>
 </helmet>
 
 <div style="min-height:100vh;background:radial-gradient(1200px 600px at 70% -10%,rgba(145,132,217,.13),transparent 60%),#12141f;direction:rtl">
-<div style="max-width:860px;margin:0 auto;padding:20px 18px 90px">
+<div class="app-shell" style="max-width:860px;margin:0 auto;padding:20px 18px 90px">
 
-<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px;margin-bottom:18px;border-bottom:1px solid rgba(233,233,237,.07)">
+<div class="app-header" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px;margin-bottom:18px;border-bottom:1px solid rgba(233,233,237,.07)">
   <sc-if value="{{ headerRoot }}" hint-placeholder-val="{{ true }}">
     <div style="display:flex;align-items:center;gap:10px">
       <div style="width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:rgba(145,132,217,.16);border:1px solid rgba(145,132,217,.35);color:#b3a9e6;font-size:17px"><i class="ph-fill ph-book-open-text"></i></div>
@@ -9706,10 +9932,10 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
   </sc-if>
   <sc-if value="{{ hasCrumb }}" hint-placeholder-val="{{ false }}">
     <div style="display:flex;align-items:center;gap:10px;min-width:0">
-      <button class="vbtn" sc-camel-on-click="{{ crumbUp }}" aria-label="بازگشت" style="flex:none;width:40px;height:40px;border-radius:11px;background:rgba(233,233,237,.03);border:1px solid rgba(233,233,237,.1);color:rgba(233,233,237,.68);display:grid;place-items:center;font-size:16px"><i class="ph ph-caret-right"></i></button>
+      <button class="vbtn app-header-back" sc-camel-on-click="{{ crumbUp }}" aria-label="بازگشت" style="flex:none;width:40px;height:40px;border-radius:11px;background:rgba(233,233,237,.03);border:1px solid rgba(233,233,237,.1);color:rgba(233,233,237,.68);display:grid;place-items:center;font-size:16px"><i class="ph ph-caret-right"></i></button>
       <div style="min-width:0">
-        <div style="font-size:14px;font-weight:500;color:rgba(233,233,237,.9);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ crumb }}</div>
-        <sc-if value="{{ crumbPos }}" hint-placeholder-val="{{ false }}"><div style="font-size:10.5px;color:rgba(233,233,237,.45);font-family:Inter,sans-serif;margin-top:2px;unicode-bidi:plaintext">{{ crumbPos }}</div></sc-if>
+        <div class="app-header-title" style="font-size:14px;font-weight:500;color:rgba(233,233,237,.9);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ crumb }}</div>
+        <sc-if value="{{ crumbPos }}" hint-placeholder-val="{{ false }}"><div class="app-header-pos" style="font-size:10.5px;color:rgba(233,233,237,.45);font-family:Inter,sans-serif;margin-top:2px;unicode-bidi:plaintext">{{ crumbPos }}</div></sc-if>
       </div>
     </div>
   </sc-if>
@@ -9718,7 +9944,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
       <button class="vbtn" sc-camel-on-click="{{ startPlacement }}" title="آزمون کوتاهی بده تا سطحت مشخص شود" aria-label="تعیین سطح" style="display:flex;align-items:center;gap:5px;height:44px;padding:0 12px;border-radius:11px;background:rgba(132,197,217,.1);border:1px solid rgba(132,197,217,.4);color:#84c5d9;font-size:11.5px"><i class="ph ph-gauge"></i><span>تعیین سطح</span></button>
     </sc-if>
     <sc-if value="{{ showGear }}" hint-placeholder-val="{{ true }}">
-      <button class="vbtn" sc-camel-on-click="{{ goSettings }}" title="تنظیمات" aria-label="تنظیمات" style="width:44px;height:44px;border-radius:11px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.1);color:rgba(233,233,237,.58);font-size:16px;display:grid;place-items:center"><i class="ph ph-gear-six"></i></button>
+      <button class="vbtn app-header-settings" sc-camel-on-click="{{ goSettings }}" title="تنظیمات" aria-label="تنظیمات" style="width:44px;height:44px;border-radius:11px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.1);color:rgba(233,233,237,.58);font-size:16px;display:grid;place-items:center"><i class="ph ph-gear-six"></i></button>
     </sc-if>
   </div>
 </div>
@@ -9779,7 +10005,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
   </div>
   <div class="level-tabs" style="margin-bottom:10px">
     <sc-for list="{{ practiceLevelTabs }}" as="l" hint-placeholder-count="6">
-      <button class="vbtn" sc-camel-on-click="{{ l.pick }}" style="{{ l.style }}"><i class="{{ l.icon }}"></i><span>{{ l.label }}</span></button>
+      <button class="vbtn level-tab {{ l.tabClass }}" sc-camel-on-click="{{ l.pick }}" aria-disabled="{{ l.locked }}" style="{{ l.style }}"><i class="{{ l.icon }}"></i><span>{{ l.label }}</span></button>
     </sc-for>
   </div>
   <div style="display:grid;gap:9px">
@@ -9890,30 +10116,12 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 </sc-if>
 
 <sc-if value="{{ isLessons }}" hint-placeholder-val="{{ false }}">
-<div class="vcard">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
-    <span style="flex:none;padding:4px 9px;border-radius:8px;background:rgba(145,132,217,.16);border:1px solid rgba(145,132,217,.42);color:#b3a9e6;font-family:Inter,sans-serif;font-size:12px;font-weight:600">{{ lbLevel }}</span>
-    <div style="font-size:15px;font-weight:500">فهرست درس‌ها</div>
-  </div>
-
-  <button class="vbtn" sc-camel-on-click="{{ lbContinueGo }}" style="display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:14px 16px;border-radius:12px;background:linear-gradient(135deg,rgba(145,132,217,.2),rgba(143,217,193,.1));border:1px solid rgba(145,132,217,.55);margin-bottom:12px;text-align:right">
-    <span style="display:flex;align-items:center;gap:10px;min-width:0">
-      <i class="ph-fill ph-play-circle" style="flex:none;font-size:24px;color:#b3a9e6"></i>
-      <span style="min-width:0">
-        <div style="font-size:14px;font-weight:600;color:rgba(233,233,237,.95)">{{ lbContinueLabel }}</div>
-        <div style="font-size:11px;color:rgba(233,233,237,.6);margin-top:2px">{{ lbContinueSub }}</div>
-      </span>
-    </span>
-    <i class="ph ph-arrow-left" style="flex:none;font-size:16px;color:rgba(233,233,237,.5)"></i>
-  </button>
-
-  <div class="level-tabs" style="margin-bottom:10px">
+<div class="vcard lesson-browser">
+  <div class="level-tabs">
     <sc-for list="{{ lbLevelTabs }}" as="c" hint-placeholder-count="6">
-      <button class="vbtn" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
+      <button class="vbtn level-tab {{ c.tabClass }}" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
     </sc-for>
   </div>
-
-  <div style="font-size:11.5px;color:rgba(233,233,237,.5);line-height:1.8;margin-bottom:14px">{{ lbIntro }}</div>
 
   <sc-if value="{{ lbLevelComplete }}" hint-placeholder-val="{{ false }}">
     <sc-if value="{{ lbHasNextLevel }}" hint-placeholder-val="{{ true }}">
@@ -9924,101 +10132,91 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
     </sc-if>
   </sc-if>
 
-  <div style="display:grid;gap:8px">
+  <div style="display:grid;gap:9px">
     <sc-for list="{{ lbUnits }}" as="u" hint-placeholder-count="3">
-      <div style="border-radius:12px;background:rgba(233,233,237,.02);border:1px solid rgba(233,233,237,.07);overflow:hidden">
-        <button class="vbtn" sc-camel-on-click="{{ u.toggle }}" style="display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:12px 14px;background:transparent;border:0;text-align:right">
+      <div class="lesson-unit">
+        <button class="vbtn lesson-unit-head" sc-camel-on-click="{{ u.toggle }}">
           <div style="display:flex;align-items:center;gap:8px;min-width:0">
             <i class="{{ u.icon }}" style="font-size:15px;color:{{ u.iconColor }}"></i>
             <span style="font-size:13.5px;font-weight:500">{{ u.title }}</span>
+            <sc-if value="{{ u.current }}" hint-placeholder-val="{{ false }}"><span class="lesson-current-badge"><i class="ph-fill ph-map-pin"></i><span>بخش فعلی</span></span></sc-if>
             <span style="font-size:11px;color:rgba(233,233,237,.5)">{{ u.summary }}</span>
           </div>
           <i class="{{ u.caretIcon }}" style="{{ u.caretStyle }}"></i>
         </button>
-        <sc-if value="{{ u.locked }}" hint-placeholder-val="{{ false }}">
-          <div style="font-size:10.5px;color:rgba(233,233,237,.4);padding:0 14px 12px"><i class="ph ph-lock-key"></i> {{ u.lockedHint }}</div>
-        </sc-if>
         <sc-if value="{{ u.expanded }}" hint-placeholder-val="{{ true }}">
-          <div style="padding:0 12px 6px">
+          <div class="lesson-list">
             <sc-for list="{{ u.lessons }}" as="les" hint-placeholder-count="10">
-              <div style="{{ les.rowStyle }}">
+              <button class="vbtn lesson-row {{ les.rowClass }}" sc-camel-on-click="{{ les.start }}" aria-label="{{ les.ariaLabel }}" aria-disabled="{{ les.locked }}" style="{{ les.rowStyle }}">
                 <i class="{{ les.statusIcon }}" style="flex:none;font-size:17px;margin-top:2px;color:{{ les.statusColor }}"></i>
-                <div style="flex:1;min-width:0">
-                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:4px">
+                <span style="display:block;flex:1;min-width:0">
+                  <span class="lesson-row-head">
                     <span style="font-size:13px;font-weight:500">{{ les.title }}</span>
                     <span style="font-size:10.5px;color:rgba(233,233,237,.5)">{{ les.wordCountLabel }} · {{ les.statusLabel }}</span>
-                  </div>
+                  </span>
                   <sc-if value="{{ les.hasWords }}" hint-placeholder-val="{{ true }}">
-                    <div style="display:flex;flex-wrap:wrap;gap:3px 9px;margin-bottom:8px;font-size:11px;color:rgba(233,233,237,.5)">
+                    <span class="lesson-word-list">
                       <sc-for list="{{ les.words }}" as="w" hint-placeholder-count="8">
-                        <span><span style="font-family:Inter,sans-serif;direction:ltr;color:rgba(233,233,237,.8)">{{ w.en }}</span><span> {{ w.fa }}</span></span>
+                        <span class="lesson-word"><span class="lesson-word-en">{{ w.en }}</span><span>{{ w.fa }}</span></span>
                       </sc-for>
-                    </div>
+                    </span>
                   </sc-if>
-                  <sc-if value="{{ les.canStart }}" hint-placeholder-val="{{ true }}">
-                    <button class="vbtn" sc-camel-on-click="{{ les.start }}" style="display:flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;background:rgba(145,132,217,.12);border:1px solid #9184d9;color:#b3a9e6;font-size:12px;font-weight:500"><i class="ph ph-play"></i><span>{{ les.btnLabel }}</span></button>
-                  </sc-if>
-                  <sc-if value="{{ les.locked }}" hint-placeholder-val="{{ false }}">
-                    <div style="font-size:10.5px;color:rgba(233,233,237,.4)"><i class="ph ph-lock-key"></i> با تمام‌شدن درس قبلی باز می‌شود</div>
-                  </sc-if>
-                </div>
-              </div>
+                </span>
+                <sc-if value="{{ les.showReviewIcon }}" hint-placeholder-val="{{ false }}"><span class="lesson-review-icon" aria-hidden="true"><i class="ph ph-arrow-counter-clockwise"></i></span></sc-if>
+              </button>
             </sc-for>
           </div>
         </sc-if>
       </div>
     </sc-for>
   </div>
+
+  <div class="lesson-resume-dock">
+    <button class="vbtn lesson-resume-button" sc-camel-on-click="{{ lbContinueGo }}" aria-label="{{ lbContinueLabel }}؛ {{ lbContinueSub }}">
+      <span class="lesson-resume-icon"><i class="ph-fill ph-play"></i></span>
+      <span class="lesson-resume-copy"><strong>{{ lbContinueLabel }}</strong><small>{{ lbContinueSub }}</small></span>
+      <span class="lesson-resume-progress"><span class="lesson-progress-label">{{ lbProgressLabel }}</span><span class="lesson-progress-track"><span style="{{ lbProgressBarStyle }}"></span></span></span>
+      <i class="ph ph-arrow-left" style="font-size:14px;color:rgba(233,233,237,.45)"></i>
+    </button>
+  </div>
 </div>
 </sc-if>
 
 <sc-if value="{{ isStudy }}" hint-placeholder-val="{{ false }}">
-<div>
-  <div style="padding:9px 11px;border-radius:11px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.08);margin-bottom:10px">
-    <div style="display:flex;align-items:center;gap:8px;min-width:0">
-      <span style="flex:none;padding:4px 9px;border-radius:8px;background:rgba(145,132,217,.16);border:1px solid rgba(145,132,217,.42);color:#b3a9e6;font-family:Inter,sans-serif;font-size:12px;font-weight:600">{{ levelLabel }}</span>
-      <div style="flex:1;min-width:0;display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11px;color:rgba(233,233,237,.65)">
-        <strong style="color:rgba(233,233,237,.9);font-weight:500;unicode-bidi:plaintext">{{ levelWordProgress }}</strong>
-        <span style="opacity:.35">·</span><span>{{ levelKnown }}</span>
-      </div>
-      <span style="flex:none;font-family:Inter,sans-serif;font-size:11px;color:#84c5d9">{{ levelPctLabel }}</span>
-    </div>
-    <div style="height:4px;border-radius:99px;background:rgba(233,233,237,.09);overflow:hidden;margin:7px 0"><div style="{{ levelBarStyle }}"></div></div>
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap;font-size:10.5px;color:rgba(233,233,237,.52)">
-      <span style="{{ wordStageStyle }}">{{ wordStageLabel }}</span>
-      <span style="display:flex;gap:8px"><span style="unicode-bidi:plaintext">{{ sessionPosition }}</span><span style="opacity:.35">·</span><span style="unicode-bidi:plaintext">{{ todayShort }}</span></span>
-    </div>
-  </div>
+<div class="study-screen">
   <div class="sr-only" role="status" aria-live="polite" aria-atomic="true">{{ liveStatus }}</div>
 
-  <div class="vcard" style="{{ cardStyle }}">
-    <div style="{{ artStyle }}">
-      <i class="{{ card.bigIcon }}" style="font-size:60px;opacity:.22"></i>
-      <div style="position:absolute;bottom:9px;right:12px;font-size:10px;color:rgba(233,233,237,.55);font-family:Inter,sans-serif">{{ card.cat }}</div>
-      <div style="{{ chipStyle }}"><i class="{{ card.icon }}"></i><span>{{ card.catFa }}</span></div>
+  <sc-if value="{{ showStudyPhase }}" hint-placeholder-val="{{ true }}">
+    <div class="study-phase" aria-label="وضعیت مرحلهٔ درس">
+      <div class="study-phase-row"><i class="{{ studyPhaseIcon }}"></i><span class="study-phase-label">{{ studyPhaseLabel }}</span><span class="study-phase-count">{{ studyPhaseCount }}</span></div>
+      <div class="study-phase-track" aria-hidden="true"><span class="study-phase-bar" style="{{ studyPhaseBarStyle }}"></span></div>
+    </div>
+  </sc-if>
+
+  <div class="vcard study-card" style="{{ cardStyle }}">
+    <div class="study-card-art" style="{{ artStyle }}">
+      <i class="study-card-icon {{ card.bigIcon }}"></i>
+      <div class="study-card-meta">{{ card.cat }}</div>
+      <div class="study-card-chip" style="{{ chipStyle }}"><i class="{{ card.icon }}"></i><span>{{ card.catFa }}</span></div>
+      <div class="study-tools" aria-label="ابزارهای واژه">
+        <button class="vbtn study-tool study-tool-primary" sc-camel-on-click="{{ speak }}" title="پخش تلفظ" aria-label="پخش تلفظ واژه"><i class="ph-fill ph-speaker-high"></i><span class="sr-only">تلفظ</span></button>
+        <button class="vbtn study-tool" sc-camel-on-click="{{ speakSlow }}" title="پخش آهسته" aria-label="پخش آهستهٔ تلفظ"><i class="ph ph-hourglass-low"></i><span class="sr-only">آهسته</span></button>
+        <button class="vbtn study-tool {{ cardStarClass }}" sc-camel-on-click="{{ cardStarGo }}" title="{{ cardStarTitle }}" aria-label="{{ cardStarTitle }}"><i class="{{ cardStarIcon }}"></i><span class="sr-only">{{ cardStarLabel }}</span></button>
+      </div>
     </div>
 
-    <div style="padding:16px 16px 18px">
-      <div style="text-align:center;margin-bottom:12px">
-        <div style="{{ promptStyle }}">{{ promptText }}</div>
-        <div style="font-size:12px;color:rgba(233,233,237,.55);margin-top:6px">{{ promptHint }}</div>
+    <div class="study-card-body">
+      <div class="study-prompt">
+        <div class="study-prompt-word" style="{{ promptStyle }}">{{ promptText }}</div>
+        <sc-if value="{{ hasSyn }}" hint-placeholder-val="{{ true }}">
+          <div class="study-syn-slot {{ synSlotClass }}" aria-hidden="{{ synAriaHidden }}"><i class="ph ph-arrows-left-right"></i><span>{{ synList }}</span></div>
+        </sc-if>
+        <sc-if value="{{ showFlashAnswer }}" hint-placeholder-val="{{ false }}"><div class="study-inline-answer">{{ card.fa }}</div></sc-if>
+        <div class="study-prompt-hint">{{ promptHint }}</div>
       </div>
-
-      <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:12px">
-        <button class="vbtn" sc-camel-on-click="{{ speak }}" aria-label="پخش تلفظ واژه" style="display:flex;align-items:center;gap:7px;padding:9px 15px;border-radius:9px;background:rgba(145,132,217,.12);border:1px solid rgba(145,132,217,.4);color:#b3a9e6;font-size:12.5px"><i class="ph-fill ph-speaker-high"></i><span>تلفظ</span></button>
-        <button class="vbtn" sc-camel-on-click="{{ speakSlow }}" aria-label="پخش آهستهٔ تلفظ" style="display:flex;align-items:center;gap:7px;padding:9px 13px;border-radius:9px;background:transparent;border:1px solid rgba(233,233,237,.42);color:rgba(233,233,237,.65);font-size:12.5px"><i class="ph ph-hourglass-low"></i><span>آهسته</span></button>
-        <button class="vbtn" sc-camel-on-click="{{ cardStarGo }}" title="نشان‌گذاری برای دسترسی سریع" aria-label="نشان‌گذاری این واژه" style="{{ cardStarStyle }}"><i class="{{ cardStarIcon }}"></i><span>{{ cardStarLabel }}</span></button>
-      </div>
-
-      <sc-if value="{{ showAnswer }}" hint-placeholder-val="{{ false }}">
-        <div style="text-align:center;padding:16px 12px;border-radius:11px;background:rgba(233,233,237,.04);border:1px solid rgba(233,233,237,.08);margin-bottom:14px">
-          <div style="font-size:24px;font-weight:500;line-height:1.5">{{ card.fa }}</div>
-          <div style="font-family:Inter,sans-serif;font-size:13px;color:rgba(233,233,237,.55);direction:ltr;margin-top:6px">{{ card.en }}</div>
-        </div>
-      </sc-if>
 
       <sc-if value="{{ hasOptions }}" hint-placeholder-val="{{ false }}">
-        <div style="display:grid;gap:8px;margin-bottom:14px">
+        <div class="study-options">
           <sc-for list="{{ options }}" as="o" hint-placeholder-count="4">
             <button class="vbtn" sc-camel-on-click="{{ o.pick }}" style="{{ o.style }}">
               <span style="{{ o.numStyle }}">{{ o.n }}</span>
@@ -10030,36 +10228,33 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
       </sc-if>
 
       <sc-if value="{{ hasInput }}" hint-placeholder-val="{{ false }}">
-        <div style="margin-bottom:14px">
-          <input value="{{ typed }}" sc-camel-on-change="{{ onType }}" sc-camel-on-key-down="{{ onKey }}" aria-label="پاسخ انگلیسی" autocomplete="off" spellcheck="false" placeholder="املای انگلیسی را بنویس…" style="{{ inputStyle }}">
+        <div class="study-input-wrap" style="margin-bottom:14px">
+          <input class="study-input" value="{{ typed }}" sc-camel-on-change="{{ onType }}" sc-camel-on-key-down="{{ onKey }}" aria-label="پاسخ انگلیسی" autocomplete="off" spellcheck="false" placeholder="املای انگلیسی را بنویس…" style="{{ inputStyle }}">
           <div role="status" style="{{ feedbackStyle }}">{{ feedbackText }}</div>
         </div>
       </sc-if>
 
       <sc-if value="{{ showSentence }}" hint-placeholder-val="{{ false }}">
-        <div style="padding:13px 15px;border-radius:11px;background:rgba(145,132,217,.07);border:1px solid rgba(145,132,217,.18);margin-bottom:14px">
-          <div style="display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(145,132,217,.9);margin-bottom:7px"><i class="ph ph-quotes"></i><span>جمله‌ی نمونه</span></div>
-          <div style="font-family:Inter,sans-serif;font-size:15px;direction:ltr;text-align:left;line-height:1.65;color:rgba(233,233,237,.9)">{{ sentenceEn }}</div>
-          <sc-if value="{{ hasSentenceFa }}" hint-placeholder-val="{{ false }}"><div style="font-size:12px;color:rgba(233,233,237,.5);line-height:1.8;margin-top:6px">{{ sentenceFa }}</div></sc-if>
+        <div class="study-example">
+          <div class="study-example-label"><i class="ph ph-quotes"></i><span>جمله‌ی نمونه</span></div>
+          <div class="study-example-content">
+            <div class="study-example-en">{{ sentenceEn }}</div>
+            <sc-if value="{{ hasSentenceFa }}" hint-placeholder-val="{{ false }}"><div class="study-example-fa">{{ sentenceFa }}</div></sc-if>
+          </div>
         </div>
       </sc-if>
 
-      <sc-if value="{{ hasSyn }}" hint-placeholder-val="{{ false }}">
-        <div style="padding:10px 13px;border-radius:10px;background:rgba(143,199,160,.06);border:1px solid rgba(143,199,160,.22);margin-bottom:14px">
-          <div style="display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(143,199,160,.95);margin-bottom:5px"><i class="ph ph-arrows-left-right"></i><span>هم‌معنی‌ها</span></div>
-          <div style="font-family:Inter,sans-serif;font-size:13.5px;direction:ltr;text-align:left;color:rgba(233,233,237,.85)">{{ synList }}</div>
+      <sc-if value="{{ hasActions }}" hint-placeholder-val="{{ true }}">
+        <div class="study-action-dock">
+          <sc-for list="{{ actions }}" as="a" hint-placeholder-count="2">
+            <button class="vbtn" sc-camel-on-click="{{ a.go }}" style="{{ a.style }}"><i class="{{ a.icon }}"></i><span style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.25"><span>{{ a.label }}</span><sc-if value="{{ a.sub }}" hint-placeholder-val=""><span style="font-size:9.5px;opacity:.7;font-weight:400">{{ a.sub }}</span></sc-if></span></button>
+          </sc-for>
         </div>
       </sc-if>
-
-      <div style="display:flex;direction:rtl;flex-direction:row;gap:9px;justify-content:center;flex-wrap:wrap">
-        <sc-for list="{{ actions }}" as="a" hint-placeholder-count="2">
-          <button class="vbtn" sc-camel-on-click="{{ a.go }}" style="{{ a.style }}"><i class="{{ a.icon }}"></i><span style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.25"><span>{{ a.label }}</span><sc-if value="{{ a.sub }}" hint-placeholder-val=""><span style="font-size:9.5px;opacity:.7;font-weight:400">{{ a.sub }}</span></sc-if></span></button>
-        </sc-for>
-      </div>
 
       <sc-if value="{{ showMyBlock }}" hint-placeholder-val="{{ false }}">
-        <div style="padding:14px 2px 0;border-top:1px solid rgba(233,233,237,.075);margin-top:14px">
-          <button class="vbtn" sc-camel-on-click="{{ msToggle }}" style="{{ msToggleStyle }}"><i class="{{ msToggleIcon }}"></i><span>{{ msToggleLabel }}</span></button>
+        <div class="study-compose-block">
+          <button class="vbtn study-compose-toggle" sc-camel-on-click="{{ msToggle }}" style="{{ msToggleStyle }}"><i class="{{ msToggleIcon }}"></i><span>{{ msToggleLabel }}</span></button>
           <sc-if value="{{ msExpanded }}" hint-placeholder-val="{{ false }}">
             <div style="margin-top:11px">
               <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(233,233,237,.62);margin-bottom:4px"><i class="ph ph-translate"></i><span>بررسی آنلاین املا و دستور + ترجمهٔ فارسی</span></div>
@@ -10110,7 +10305,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
     <div style="margin-top:12px;padding:10px 13px;border-radius:9px;background:rgba(143,217,193,.08);border:1px solid rgba(143,217,193,.3);font-size:12px;color:#8fd9c1;line-height:1.9"><i class="ph-fill ph-seal-check"></i> <span>{{ justKnownMsg }}</span></div>
   </sc-if>
 
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:11px;color:rgba(233,233,237,.55)">
+  <div class="study-footnote">
     <span>{{ hintLine }}</span>
     <span>آزمون دوره‌ای: {{ nextQuizIn }} پاسخ دیگر</span>
   </div>
@@ -10310,10 +10505,10 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 </sc-if>
 
 <sc-if value="{{ isBrowse }}" hint-placeholder-val="{{ false }}">
-<div>
+<div class="dictionary-screen">
   <div class="dict-search-row" style="margin-bottom:9px">
-    <input value="{{ query }}" sc-camel-on-change="{{ onQuery }}" sc-camel-on-key-down="{{ queryKey }}" aria-label="جست‌وجو یا ترجمه در واژه‌نامه" type="search" placeholder="واژه یا عبارت انگلیسی/فارسی…" style="width:100%;min-width:0;padding:11px 14px;border-radius:10px;background:rgba(233,233,237,.04);border:1px solid rgba(233,233,237,.24);color:#e9e9ed;font-size:13px;outline:none">
-    <button class="vbtn" sc-camel-on-click="{{ dictTranslate }}" aria-busy="{{ dictTrBusy }}" title="ترجمهٔ آنلاین" style="display:flex;align-items:center;gap:7px;padding:9px 15px;border-radius:10px;background:rgba(132,197,217,.11);border:1px solid rgba(132,197,217,.48);color:#84c5d9;font-size:12.5px"><i class="ph ph-translate"></i><span class="dict-translate-label">{{ dictTrBtnLabel }}</span></button>
+    <input class="dict-search-input" value="{{ query }}" sc-camel-on-change="{{ onQuery }}" sc-camel-on-key-down="{{ queryKey }}" aria-label="جست‌وجو؛ برای ترجمه Enter بزن" type="search" placeholder="جست‌وجو یا ترجمهٔ واژه…" style="width:100%;min-width:0;padding:11px 14px;border-radius:10px;background:rgba(233,233,237,.04);border:1px solid rgba(233,233,237,.24);color:#e9e9ed;font-size:13px;outline:none">
+    <button class="vbtn dict-translate-button" sc-camel-on-click="{{ dictTranslate }}" aria-busy="{{ dictTrBusy }}" title="ترجمهٔ آنلاین" style="display:flex;align-items:center;gap:7px;padding:9px 15px;border-radius:10px;background:rgba(132,197,217,.11);border:1px solid rgba(132,197,217,.48);color:#84c5d9;font-size:12.5px"><i class="ph ph-translate"></i><span class="dict-translate-label">{{ dictTrBtnLabel }}</span></button>
   </div>
   <sc-if value="{{ hasDictTrResult }}" hint-placeholder-val="{{ false }}">
     <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:10px 12px;margin-bottom:9px;border-right:2px solid rgba(132,197,217,.6);background:linear-gradient(90deg,transparent,rgba(132,197,217,.06))">
@@ -10329,13 +10524,18 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
     </sc-for>
   </div>
   <div class="dict-quick" style="margin-bottom:9px">
-    <button class="vbtn dict-action-button" sc-camel-on-click="{{ goLearned }}" style="{{ learnedQuickStyle }}"><i class="ph-fill ph-seal-check"></i><span>یادگیری</span><small>{{ learnedTotal }}</small></button>
+    <button class="vbtn dict-action-button dict-learned-action" sc-camel-on-click="{{ goLearned }}" style="{{ learnedQuickStyle }}"><i class="ph-fill ph-seal-check"></i><span>یادگیری</span><small>{{ learnedTotal }}</small></button>
     <button class="vbtn dict-action-button" sc-camel-on-click="{{ goStars }}" style="{{ starsQuickStyle }}"><i class="ph-fill ph-star"></i><span>نشان‌دار</span><small>{{ starTotal }}</small></button>
     <button class="vbtn dict-action-button" sc-camel-on-click="{{ goAdd }}"><i class="ph ph-plus" style="color:#b3a9e6"></i><span>افزودن</span></button>
-    <button class="vbtn dict-action-button dict-category-action" sc-camel-on-click="{{ toggleDictTools }}" style="{{ toolsQuickStyle }}"><i class="ph ph-tag"></i><span>دسته‌ها</span></button>
+    <button class="vbtn dict-action-button dict-category-action" sc-camel-on-click="{{ toggleDictTools }}" aria-expanded="{{ dictToolsOpen }}" style="{{ toolsQuickStyle }}"><i class="ph ph-funnel-simple"></i><span>فیلترها</span></button>
   </div>
   <sc-if value="{{ dictToolsOpen }}" hint-placeholder-val="{{ false }}">
     <div class="dict-tools-panel" style="margin-bottom:9px">
+      <div class="dict-tool-heading"><i class="ph ph-sliders-horizontal"></i><span>وضعیت واژه‌ها</span></div>
+      <div class="dict-state-filters">
+        <button class="vbtn" sc-camel-on-click="{{ clearBrowseFilter }}" style="{{ allWordsFilterStyle }}"><i class="ph ph-squares-four"></i><span>همهٔ واژه‌ها</span></button>
+        <button class="vbtn" sc-camel-on-click="{{ goLearned }}" style="{{ learnedQuickStyle }}"><i class="ph-fill ph-seal-check"></i><span>در حال یادگیری</span><small>{{ learnedTotal }}</small></button>
+      </div>
       <div class="dict-cats-mobile">
         <div style="width:100%">
           <div class="dict-tool-heading" style="margin-bottom:7px"><i class="ph ph-tag"></i><span>دستهٔ واژه‌ها</span></div>
@@ -10373,22 +10573,24 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
       </div>
     </div>
   </sc-if>
-  <div style="font-size:11px;color:rgba(233,233,237,.55);margin-bottom:9px">{{ browseCount }}</div>
-  <div style="display:grid;gap:5px">
+  <div class="dict-result-summary" style="font-size:11px;margin-bottom:9px"><i class="ph ph-list-magnifying-glass"></i><span>{{ browseCount }}</span></div>
+  <div class="dict-word-list">
     <sc-for list="{{ browseList }}" as="w" hint-placeholder-count="10">
-      <div class="vrow" style="padding:10px 11px;border-radius:9px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.05)">
-      <div class="dict-word-main" style="display:flex;align-items:center;gap:8px">
+      <div class="vrow dict-word-row {{ w.rowClass }}">
+      <div class="dict-word-main">
         <sc-if value="{{ w.notEditing }}" hint-placeholder-val="{{ true }}">
-          <div style="flex:1;min-width:0">
-            <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap">
-              <span style="font-family:Inter,sans-serif;font-size:13.5px;direction:ltr">{{ w.en }}</span>
+          <div class="dict-word-copy">
+            <div class="dict-word-title">
+              <span class="dict-word-en">{{ w.en }}</span>
               <sc-if value="{{ w.hasIpa }}" hint-placeholder-val="{{ false }}"><span style="font-family:Inter,sans-serif;font-size:11.5px;color:rgba(233,233,237,.55);direction:ltr">{{ w.ipa }}</span></sc-if>
             </div>
-            <div style="font-size:12px;color:rgba(233,233,237,.62);margin-top:2px">{{ w.fa }}</div>
+            <div class="dict-word-fa">{{ w.fa }}</div>
           </div>
         </sc-if>
-        <button class="vbtn" sc-camel-on-click="{{ w.starGo }}" title="نشان‌گذاری" aria-label="نشان‌گذاری {{ w.en }}" style="{{ w.starStyle }}"><i class="{{ w.star }}"></i></button>
-        <button class="vbtn" sc-camel-on-click="{{ w.moreGo }}" title="گزینه‌های بیشتر" aria-label="گزینه‌های بیشتر برای {{ w.en }}" style="flex:none;width:38px;height:38px;min-width:38px;min-height:38px;border-radius:9px;background:transparent;border:1px solid rgba(233,233,237,.16);color:rgba(233,233,237,.55);display:grid;place-items:center;font-size:16px"><i class="ph ph-dots-three-vertical"></i></button>
+        <div class="dict-word-actions">
+          <button class="vbtn dict-word-action" sc-camel-on-click="{{ w.starGo }}" title="نشان‌گذاری" aria-label="نشان‌گذاری {{ w.en }}" style="{{ w.starStyle }}"><i class="{{ w.star }}"></i></button>
+          <button class="vbtn dict-word-action" sc-camel-on-click="{{ w.moreGo }}" title="{{ w.moreLabel }}" aria-label="{{ w.moreLabel }} برای {{ w.en }}" style="background:transparent;border:1px solid rgba(233,233,237,.16);color:rgba(233,233,237,.55);font-size:16px"><i class="{{ w.moreIcon }}"></i></button>
+        </div>
       </div>
       <sc-if value="{{ w.moreOpen }}" hint-placeholder-val="{{ false }}">
         <div class="dict-more-panel">
@@ -10398,7 +10600,6 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
               <span style="{{ w.statusStyle }}">{{ w.status }}</span>
               <span style="font-family:Inter,sans-serif;direction:ltr;padding:4px 8px;border-radius:99px;background:rgba(233,233,237,.035);border:1px solid rgba(233,233,237,.12);color:rgba(233,233,237,.58);font-size:10.5px">{{ w.pronunciation }}</span>
             </div>
-            <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px;align-items:start"><span style="font-size:10.5px;color:rgba(233,233,237,.4)">معنی</span><span style="font-size:12.5px;line-height:1.8">{{ w.fa }}</span></div>
             <sc-if value="{{ w.hasSyn }}" hint-placeholder-val="{{ false }}"><div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px"><span style="font-size:10.5px;color:rgba(233,233,237,.4)">هم‌معنی</span><span style="font-family:Inter,sans-serif;direction:ltr;text-align:left;font-size:11.5px;color:#8fc7a0">{{ w.syn }}</span></div></sc-if>
           </div>
           <div class="dict-more-actions">
@@ -10453,7 +10654,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
             <div style="padding:8px 12px;border-radius:9px;background:rgba(132,197,217,.08);border:1px solid rgba(132,197,217,.28);color:#84c5d9;font-size:12px">{{ exSpeechScore }}</div>
           </sc-if>
           <sc-if value="{{ exHasSpeechMissing }}" hint-placeholder-val="{{ false }}"><div style="font-size:11.5px;color:#e0a458;direction:ltr;text-align:left">{{ exSpeechMissing }}</div></sc-if>
-          <sc-if value="{{ exHasAudio }}" hint-placeholder-val="{{ false }}"><audio controls="" src="{{ exAudioUrl }}" style="width:100%;max-width:320px"></audio></sc-if>
+          <sc-if value="{{ exHasAudio }}" hint-placeholder-val="{{ false }}"><audio controls="" sc-camel-src="{{ exAudioUrl }}" style="width:100%;max-width:320px"></audio></sc-if>
           <div style="font-size:10.5px;color:rgba(233,233,237,.4);line-height:1.7">در حالت آنلاین، مرورگر ممکن است صدا را برای تبدیل گفتار به متن به سرویس گفتار بفرستد.</div>
           <sc-if value="{{ exShowSelf }}" hint-placeholder-val="{{ false }}">
             <div style="display:flex;gap:8px">
@@ -10514,7 +10715,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 <div class="vcard">
   <div class="level-tabs" style="margin-bottom:12px">
       <sc-for list="{{ sbLvChips }}" as="c" hint-placeholder-count="6">
-        <button class="vbtn" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
+        <button class="vbtn level-tab {{ c.tabClass }}" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
       </sc-for>
   </div>
   <div style="font-size:10.5px;color:rgba(233,233,237,.42);margin:-5px 1px 12px"><i class="ph ph-lock-key"></i> سطح بعد با گرفتن حداقل ۷۰٪ در چهار تمرین اصلی باز می‌شود؛ سطح‌های قبلی همیشه برای مرور می‌مانند.</div>
@@ -10841,7 +11042,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
   <div style="font-size:11.5px;color:rgba(233,233,237,.5);line-height:1.9;margin:10px 0">{{ gramIntro }}</div>
   <div class="level-tabs" style="margin-bottom:12px">
     <sc-for list="{{ gLvChips2 }}" as="c" hint-placeholder-count="6">
-      <button class="vbtn" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
+      <button class="vbtn level-tab {{ c.tabClass }}" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
     </sc-for>
   </div>
   <sc-if value="{{ gramIsPath }}" hint-placeholder-val="{{ true }}"><div style="font-size:10.5px;color:rgba(233,233,237,.42);margin:-5px 1px 12px"><i class="ph ph-lock-key"></i> سطح بعد پس از کامل‌کردن همهٔ درس‌های این سطح باز می‌شود؛ درس‌های گذشته را هر زمان می‌توانی مرور کنی.</div></sc-if>
@@ -10964,42 +11165,60 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 </sc-if>
 
 <sc-if value="{{ isColloc }}" hint-placeholder-val="{{ false }}">
-<div class="vcard">
-  <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
-    <div style="font-size:11px;color:#8fd9c1">{{ cgCount }}</div>
-    <button class="vbtn" sc-camel-on-click="{{ cGameGo }}" style="display:flex;align-items:center;gap:7px;padding:9px 15px;border-radius:9px;background:rgba(224,164,88,.1);border:1px solid rgba(224,164,88,.5);color:#e0a458;font-size:12.5px;font-weight:500"><i class="ph-fill ph-game-controller"></i><span>بازی سرعت · {{ cGameBest }}</span></button>
+<div class="colloc-screen">
+  <div class="colloc-hero">
+    <div class="colloc-hero-copy">
+      <div class="colloc-eyebrow"><i class="ph ph-link-simple"></i><span>{{ cgCount }}</span><span>·</span><span>{{ cgProgressLabel }}</span></div>
+      <div class="colloc-title">{{ cgLabel }}</div>
+      <div class="colloc-description">عبارت را یک‌جا یاد بگیر؛ انتخاب کلمه، تایپ و بازیابی معنی هرکدام حافظه را از یک مسیر تقویت می‌کنند.</div>
+    </div>
+    <div class="colloc-hero-actions">
+      <button class="vbtn colloc-game" sc-camel-on-click="{{ cGameGo }}"><i class="ph-fill ph-game-controller"></i><span>بازی سرعت</span><small>{{ cGameBest }}</small></button>
+      <button class="vbtn colloc-next" sc-camel-on-click="{{ cgNextGo }}"><span>گروه بعدی</span><i class="ph ph-arrow-left"></i></button>
+    </div>
   </div>
-  <div style="font-size:11.5px;color:rgba(233,233,237,.5);line-height:1.9;margin:10px 0">ترکیب رایج یعنی ترکیب‌هایی که انگلیسی‌زبان‌ها همیشه با هم می‌گویند. جفت‌ها را حفظ کن، نه تک‌کلمه‌ها.</div>
-  <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px">
+
+  <div class="colloc-groups" aria-label="گروه‌های ترکیب رایج">
     <sc-for list="{{ cgChips2 }}" as="c" hint-placeholder-count="8">
-      <button class="vbtn" sc-camel-on-click="{{ c.pick }}" style="{{ c.style }}">{{ c.label }}</button>
+      <button class="vbtn colloc-group-tab {{ c.tabClass }}" sc-camel-on-click="{{ c.pick }}"><span>{{ c.label }}</span><sc-if value="{{ c.hasProgress }}" hint-placeholder-val="{{ false }}"><small>{{ c.progress }}</small></sc-if></button>
     </sc-for>
   </div>
+
   <sc-if value="{{ cgHasUse }}" hint-placeholder-val="{{ true }}">
-    <div style="padding:10px 13px;border-radius:9px;background:rgba(143,217,193,.06);border:1px solid rgba(143,217,193,.22);color:rgba(233,233,237,.72);font-size:12px;line-height:1.9;margin-bottom:12px"><i class="ph ph-lightbulb" style="color:#8fd9c1"></i> <span style="unicode-bidi:plaintext">{{ cgUse }}</span></div>
+    <div class="colloc-use"><i class="ph ph-lightbulb"></i><span style="unicode-bidi:plaintext">{{ cgUse }}</span></div>
   </sc-if>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin-bottom:14px">
+
+  <section>
+    <div class="colloc-section-head"><strong>تمرین این گروه</strong><span>از تشخیص شروع کن و به تولید برس</span></div>
+    <div class="colloc-drills">
     <sc-for list="{{ cgDrills }}" as="d" hint-placeholder-count="4">
-      <button class="vbtn" sc-camel-on-click="{{ d.go }}" style="{{ d.style }}">
-        <div style="{{ d.iconStyle }}"><i class="{{ d.icon }}"></i></div>
-        <div style="min-width:0">
-          <div style="font-size:12.5px;font-weight:500">{{ d.label }}</div>
-          <div style="font-size:10.5px;color:rgba(233,233,237,.55);margin-top:2px">{{ d.d }}</div>
+      <button class="vbtn colloc-drill" sc-camel-on-click="{{ d.go }}" style="{{ d.accentStyle }}">
+        <div class="colloc-drill-icon"><i class="{{ d.icon }}"></i></div>
+        <div class="colloc-drill-copy">
+          <div class="colloc-drill-title">{{ d.label }}</div>
+          <div class="colloc-drill-meta">{{ d.d }}</div>
+          <sc-if value="{{ d.hasScore }}" hint-placeholder-val="{{ false }}"><div class="colloc-drill-score">بهترین {{ d.score }}</div></sc-if>
         </div>
       </button>
     </sc-for>
-  </div>
-  <div style="display:grid;gap:5px">
-    <sc-for list="{{ cgItems }}" as="w" hint-placeholder-count="10">
-      <div class="vrow" style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;background:rgba(233,233,237,.025);border:1px solid rgba(233,233,237,.05)">
-        <div style="flex:1;min-width:0">
-          <div style="font-family:Inter,sans-serif;font-size:13.5px;direction:ltr;text-align:left;font-weight:500">{{ w.en }}</div>
-          <div style="font-size:12px;color:rgba(233,233,237,.5);margin-top:2px">{{ w.fa }}</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="colloc-section-head"><strong>عبارت‌های این گروه</strong><span>برای شنیدن روی بلندگو بزن</span></div>
+    <div class="colloc-items">
+      <sc-for list="{{ cgItems }}" as="w" hint-placeholder-count="10">
+        <div class="vrow colloc-item">
+          <span class="colloc-item-number">{{ w.n }}</span>
+          <div class="colloc-item-copy">
+            <div class="colloc-item-en">{{ w.en }}</div>
+            <div class="colloc-item-fa">{{ w.fa }}</div>
+          </div>
+          <button class="vbtn colloc-speak" sc-camel-on-click="{{ w.say }}" aria-label="پخش تلفظ {{ w.en }}"><i class="ph ph-speaker-simple-high"></i></button>
         </div>
-        <button class="vbtn" sc-camel-on-click="{{ w.say }}" style="flex:none;width:30px;height:30px;border-radius:8px;background:transparent;border:1px solid rgba(233,233,237,.42);color:rgba(233,233,237,.6);display:grid;place-items:center;font-size:14px"><i class="ph ph-speaker-simple-high"></i></button>
-      </div>
-    </sc-for>
-  </div>
+      </sc-for>
+    </div>
+  </section>
 </div>
 </sc-if>
 
@@ -11141,7 +11360,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
   <div style="font-size:11.5px;color:rgba(233,233,237,.5);line-height:1.9;margin:10px 0">هر متن را بشنو، خط‌به‌خط با ترجمه دنبال کن، با گوینده هم‌زمان تکرار کن (شدوئینگ) و در پایان آزمون درک مطلب بده. ضبط آفلاین می‌ماند؛ با اینترنت، گفتارت هم به متن تبدیل و مقایسه می‌شود.</div>
   <div class="level-tabs" style="margin-bottom:12px">
     <sc-for list="{{ lsLvChips }}" as="c" hint-placeholder-count="6">
-      <button class="vbtn" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
+      <button class="vbtn level-tab {{ c.tabClass }}" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
     </sc-for>
   </div>
   <div style="font-size:10.5px;color:rgba(233,233,237,.42);margin:-5px 1px 12px"><i class="ph ph-lock-key"></i> برای بازشدن سطح بعد، آزمون همهٔ متن‌های این سطح را با حداقل ۷۰٪ تمام کن؛ متن‌های قبلی برای مرور می‌مانند.</div>
@@ -11198,7 +11417,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
         <button class="vbtn" sc-camel-on-click="{{ ltRecGo }}" style="{{ ltRecStyle }}"><i class="ph-fill ph-record"></i><span>{{ ltRecLabel }}</span></button>
       </div>
       <sc-if value="{{ ltHasUrl }}" hint-placeholder-val="{{ false }}">
-        <div style="margin-top:9px"><audio controls="" src="{{ ltUrl }}" style="width:100%;max-width:340px"></audio></div>
+        <div style="margin-top:9px"><audio controls="" sc-camel-src="{{ ltUrl }}" style="width:100%;max-width:340px"></audio></div>
       </sc-if>
       <sc-if value="{{ ltHasHeard }}" hint-placeholder-val="{{ false }}">
         <div style="margin-top:9px;padding:10px 12px;border-radius:9px;background:rgba(143,217,193,.06);border:1px solid rgba(143,217,193,.24)">
@@ -11287,7 +11506,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
 
   <div class="level-tabs" style="margin-bottom:12px">
     <sc-for list="{{ dLvChips }}" as="c" hint-placeholder-count="6">
-      <button class="vbtn" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
+      <button class="vbtn level-tab {{ c.tabClass }}" sc-camel-on-click="{{ c.pick }}" aria-disabled="{{ c.locked }}" style="{{ c.style }}"><i class="{{ c.icon }}"></i><span>{{ c.label }}</span></button>
     </sc-for>
   </div>
   <div style="font-size:10.5px;color:rgba(233,233,237,.42);margin:-5px 1px 12px"><i class="ph ph-lock-key"></i> با انجام همهٔ جلسه‌های این سطح، تب بعدی باز می‌شود؛ تب‌های قبلی برای تمرین دوباره فعال می‌مانند.</div>
@@ -11371,7 +11590,7 @@ input::placeholder,textarea::placeholder{color:rgba(233,233,237,.55);opacity:1}
     <sc-if value="{{ dHasUrl }}" hint-placeholder-val="{{ false }}">
       <div style="margin-bottom:14px">
         <div style="font-size:11.5px;color:rgba(233,233,237,.5);line-height:1.9;margin-bottom:6px">صدای ضبط‌شده‌ات — گوش بده و با فهرست پایین خودت را بسنج.</div>
-        <audio controls="" src="{{ dUrl }}" style="width:100%;max-width:360px"></audio>
+        <audio controls="" sc-camel-src="{{ dUrl }}" style="width:100%;max-width:360px"></audio>
       </div>
     </sc-if>
     <sc-if value="{{ dHasHeard }}" hint-placeholder-val="{{ false }}">

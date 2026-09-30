@@ -449,7 +449,7 @@ const WORD_LADDER = [
 // here independently — an unbounded engine plus one finite course, never n
 // parallel skill tracks.
 const SB_MODE_FA = { pattern: 'الگو', chunk: 'تکه‌چینی', expand: 'بسط دادن', combine: 'ترکیب', free: 'نوشتن آزاد', game: 'بازی' };
-const RUNNERS = ['study', 'quiz', 'result', 'add', 'exercise', 'game', 'sbrun', 'glesson', 'csrun', 'ltext', 'dses', 'placement'];
+const RUNNERS = ['lessons', 'study', 'quiz', 'result', 'add', 'exercise', 'game', 'sbrun', 'glesson', 'csrun', 'ltext', 'dses', 'placement'];
 // The seven curricula, grouped by what the learner DOES — not by which data
 // file backs them. Three groups is what makes the app describable in a sentence.
 const HUBS = {
@@ -476,15 +476,11 @@ const LESSON_SIZE = 8, UNIT_LESSONS = 10;
 // resets only the cursor when this differs from the saved value; vocab_sr_v1 is
 // never touched, so nothing a learner actually learned is affected.
 const CURRICULUM_V = 2;
-// LEG-003 — same-session Initial Learning for brand-new words (see
-// vocab_session_v1 below). A word gets exactly 3 turns this session, spread
-// apart so it never repeats back-to-back: introduce (A) -> recognition MCQ
-// en->fa (B) -> retrieval MCQ fa->en (C). Gaps are expanding (Karpicke &
-// Roediger 2007) and jittered within a range, not fixed, so spacing never
-// feels mechanical; the MIN/MAX pairs below bracket the "roughly 2-4 cards,
-// then 4-7 cards" the product spec asked for, centered near 3 and 5.
-const IL_GAP_B_MIN = 2, IL_GAP_B_MAX = 4;
-const IL_GAP_C_MIN = 4, IL_GAP_C_MAX = 7;
+const IL_FLOW_V = 2;
+// LEG-050 — Initial Learning is phase-based: introduce every fresh word in
+// the selected lesson first (A), then test recognition for the whole set (B),
+// then test Persian->English retrieval for the whole set (C). Only wrong
+// answers are spaced and retried inside their current test phase.
 // A wrong Turn B/C answer never shows "دوباره" (LEG-001's pattern stays
 // removed here) — it silently re-queues the same turn a few cards later.
 const IL_RETRY_GAP_MIN = 3, IL_RETRY_GAP_MAX = 5;
@@ -523,6 +519,10 @@ const norm = s => (s || '').toLowerCase().trim().replace(/[^a-z ]/g, '').replace
 const searchNorm = s => (s || '').normalize('NFKC').toLowerCase()
   .replace(/[يى]/g, 'ی').replace(/ك/g, 'ک').replace(/[\u064b-\u065f\u0670]/g, '')
   .replace(/[\u200c\u200d'’`\-ـ]/g, '').replace(/[^a-z0-9\u0600-\u06ff]+/g, ' ').trim();
+const revokeObjectUrl = url => {
+  if (!url || !/^blob:/.test(url) || typeof URL === 'undefined' || !URL.revokeObjectURL) return;
+  try { URL.revokeObjectURL(url); } catch (e) {}
+};
 
 class Component extends DCLogic {
   constructor(p) {
@@ -631,6 +631,7 @@ class Component extends DCLogic {
     this.faMap = P('vocab_famap', {});
     this.sentCache = P('vocab_sentences', {});
     this._sr = null;
+    this._il = null;
     this.rebuildW();
   }
   applyBackup(dump) {
@@ -655,6 +656,12 @@ class Component extends DCLogic {
       if (!rollbackOk) throw new Error('بازیابی به‌علت کمبود فضای مرورگر متوقف شد و بازگردانی کامل دادهٔ قبلی تأیید نشد؛ صفحه را نبند و یک فایل پشتیبان بگیر.');
       throw new Error('فضای ذخیره‌سازی مرورگر کافی نیست؛ دادهٔ قبلی نگه داشته شد.');
     }
+    // Initial-learning state is deliberately not part of a durable backup: it
+    // only describes today's in-flight A/B/C turns. Keeping the destination
+    // device's old session after restoring another progress snapshot mixes two
+    // timelines and can make restored words look done or unfinished.
+    try { localStorage.removeItem('vocab_session_v1'); } catch (e) {}
+    this._il = null;
     this.reloadStoredModels();
     const data = this.load(this.W.length);
     if (this._mounted) this.setState({ data: data, screen: 'home', confirmReset: false });
@@ -835,7 +842,7 @@ class Component extends DCLogic {
         // LEG-009 — vocabulary now opens on the lesson browser, not straight
         // into a continuous study queue; the learner picks a lesson there
         // and "شروع تمرین" is what actually starts a session (startLessonPractice()).
-        go: () => this.setState({ screen: 'lessons' }) },
+        go: () => this.setState({ screen: 'lessons', lbUnit: 0 }) },
 
       { key: 'gram', label: 'دستور زبان', icon: 'ph-fill ph-book-open-text', color: '#b3a9e6',
         done: gDone, total: gi.length,
@@ -1077,16 +1084,39 @@ class Component extends DCLogic {
       return t === 'A' || t === 'B' || t === 'C';
     });
   }
-  // Insert word i's next turn `min`-`max` cards ahead of the card just
-  // answered, clamped to the current queue length — the exact same "requeue
-  // a few cards later" pattern advance() already used for a wrong review
-  // answer, just with a wider/jittered gap so the same word never comes back
-  // adjacent, or even close, to its previous turn.
+  // Requeue a wrong test answer `min`-`max` cards ahead, clamped to the
+  // current phase queue so it does not leak into a later learning phase.
   ilSchedule(d, i, min, max) {
     const span = Math.max(0, max - min);
     const gap = min + (span ? Math.floor(mulberry(i * 2654435761 + d.pos)() * (span + 1)) : 0);
     const at = Math.min(d.pos + gap, d.order.length);
     d.order = d.order.slice(0, at).concat([i], d.order.slice(at));
+  }
+  // Read-only snapshot for the selected lesson's phased learning flow.
+  // Long-term SRS remains the source of truth for words completed earlier;
+  // vocab_session_v1 only describes today's A/B/C work.
+  ilLessonState(d) {
+    const lesson = this.lessonWordsOf(d.level, d.unit, d.lesson);
+    const il = this.ilLoad();
+    const fresh = lesson.filter(i => {
+      const sr = this.srRec(i);
+      return !(sr && sr[4]) && !il.words[i];
+    });
+    const byTurn = turn => lesson.filter(i => il.words[i] && il.words[i].turn === turn);
+    const session = lesson.filter(i => !!il.words[i]);
+    const learnDone = lesson.filter(i => {
+      const sr = this.srRec(i), rec = il.words[i];
+      return !!(sr && sr[4]) || !!(rec && rec.turn !== 'A');
+    }).length;
+    const testDone = session.reduce((sum, i) => {
+      const turn = il.words[i].turn;
+      return sum + (turn === 'C' ? 1 : (turn === 'done' || turn === 'unfinished' ? 2 : 0));
+    }, 0);
+    return {
+      lesson, fresh, session,
+      A: byTurn('A'), B: byTurn('B'), C: byTurn('C'),
+      learnDone, testDone, testTotal: session.length * 2
+    };
   }
 
   hubCards(screen) {
@@ -1430,9 +1460,9 @@ class Component extends DCLogic {
   isStar(i) { const d = this.state.data; return !!(d && d.starred && d.starred[i]); }
   toggleStar(i) { this.set(d => { if (!d.starred) d.starred = {}; if (d.starred[i]) delete d.starred[i]; else d.starred[i] = 1; }); }
   starCount() { const d = this.state.data; return d && d.starred ? Object.keys(d.starred).length : 0; }
-  goStars() { this.setState({ screen: 'browse', catFilter: this.state.catFilter === '__star' ? 'all' : '__star', limit: 60, query: '', dictTrResult: null, dictTrErr: '', wordMoreEn: null }); }
+  goStars() { this.setState({ screen: 'browse', catFilter: this.state.catFilter === '__star' ? 'all' : '__star', limit: 60, query: '', dictTrResult: null, dictTrErr: '', wordMoreEn: null, dictToolsOpen: false }); }
   blank(n) {
-    const d = { v5: 1, v6: 1, v7: 1, starred: {}, wordCount: n, round: 1, level: LEVELS[0], unit: 1, lesson: 1, pos: 0, order: [], mastered: {}, seen: 0, correct: 0, wrong: 0, days: {}, dayStats: {}, goal: 20, streak: 1, lastDay: today(), quizzes: {} };
+    const d = { v5: 1, v6: 1, v7: 1, ilFlowV: IL_FLOW_V, starred: {}, wordCount: n, round: 1, level: LEVELS[0], unit: 1, lesson: 1, pos: 0, order: [], mastered: {}, seen: 0, correct: 0, wrong: 0, days: {}, dayStats: {}, goal: 20, streak: 1, lastDay: today(), quizzes: {} };
     d.order = this.chunkOrder(d, n);
     return d;
   }
@@ -1541,11 +1571,9 @@ class Component extends DCLogic {
     const r = d.round;
     const ord = (this.ORDER && this.ORDER.length ? this.ORDER : Array.from({ length: n }, (_, i) => i)).filter(i => i < n);
     if (!ord.length) return [];
-    const spans = levelSpans(ord.length);
-    // Reviews first. Nakata & Webb 2016: with a fixed card budget, spacing
-    // matters and set size barely does — so due words get first claim and new
-    // words fill what is left. New words are capped so the review load can
-    // stabilise instead of compounding.
+    // Build the due-review fallback now, but defer it while the explicitly
+    // selected lesson still has A/B/C work. New lesson learning should read as
+    // one coherent course flow; normal due reviews resume once it is complete.
     const day = currentDayNo();
     // LEG-006 — when more words are due than MAX_REVIEWS can fit, prioritise
     // struggling words over merely-more-overdue ones. weaknessBonus is
@@ -1594,25 +1622,10 @@ class Component extends DCLogic {
       if (releasedAny) this.ilSave();
     }
     const isFresh = i => { const x = this.srRec(i); if (x && x[4]) return false; return !il.words[i]; };
-    // LEG-003 point 2: new words come from the current LESSON_SIZE-word
-    // lesson specifically, not the whole level band chunkOrder() used before.
-    let fresh = this.lessonWordsOf(d.level, d.unit, d.lesson).filter(isFresh).slice(0, MAX_NEW);
-    // srDue() is false for any word that was never introduced, so once the
-    // round advances past a band (placement or manual level change),
-    // chunkOrder() would otherwise never draw new words from that band again
-    // — placing someone at C1 silently orphaned every lower-band word they
-    // hadn't already met. Reserve one new-word slot per session for the
-    // nearest lower band that still has un-introduced words, so a high
-    // placement borrows from what it skipped instead of discarding it.
-    const band0 = this.band(r);
-    if (band0 > 0) {
-      fresh = fresh.slice(0, Math.max(0, MAX_NEW - 1));
-      for (let b = band0 - 1; b >= 0 && fresh.length < MAX_NEW; b--) {
-        const lowerSp = spans[b]; if (!lowerSp) continue;
-        const lowerFresh = ord.slice(lowerSp[0], lowerSp[0] + lowerSp[1]).filter(isFresh);
-        if (lowerFresh.length) { fresh.push(shuffled(lowerFresh, r * 977 + b)[0]); break; }
-      }
-    }
+    // New material is exactly the selected lesson. A lower-level catch-up
+    // word must not displace one of its eight words: the learner explicitly
+    // picked this lesson and expects its complete roster before the test.
+    const fresh = this.lessonWordsOf(d.level, d.unit, d.lesson).filter(isFresh).slice(0, MAX_NEW);
     // Every word about to enter the queue as new material gets an Initial-
     // Learning record right away (turn 'A'), so isFresh() above never draws
     // it a second time this session and modeFor() recognises it once shown.
@@ -1621,15 +1634,16 @@ class Component extends DCLogic {
       fresh.forEach(i => { if (!il.words[i]) { il.words[i] = { turn: 'A', fails: 0 }; changed = true; } });
       if (changed) this.ilSave();
     }
-    // Three reviews, then one new word. A backlog can no longer hide all new
-    // material, and a session remains a calm, predictable twenty cards.
-    const out = [], reviews = due.slice(), news = fresh.slice();
-    while (reviews.length || news.length) {
-      for (let j = 0; j < 3 && reviews.length; j++) out.push(reviews.shift());
-      if (news.length) out.push(news.shift());
-      if (!reviews.length && news.length) out.push(news.shift());
-    }
-    return Array.from(new Set(out));
+    // Phase gate: every A card must finish before the first B card; every B
+    // card must finish before the first C card. Rebuilding a queue mid-session
+    // therefore resumes the earliest unfinished phase instead of interleaving
+    // introductions and questions. Normal due reviews remain unchanged once
+    // this lesson has no Initial-Learning work.
+    const phased = this.ilLessonState(d);
+    if (phased.A.length) return phased.A.slice();
+    if (phased.B.length) return shuffled(phased.B, r * 977 + 2);
+    if (phased.C.length) return shuffled(phased.C, r * 977 + 3);
+    return due;
   }
   // d may be null/undefined at the very first paint, before load() runs.
   queueStats(d, n) {
@@ -1746,6 +1760,23 @@ class Component extends DCLogic {
     if (!d.dayStats) d.dayStats = {};
     if (!d.dayStats[t]) d.dayStats[t] = { introduced: 0, correct: 0, wrong: 0 };
     if (!d.goal) d.goal = 20;
+    // LEG-050 migration: an in-flight queue produced by the old interleaved
+    // engine may already contain B/C copies between remaining A cards. Keep
+    // every per-word turn and all SRS history, but rebuild only the unanswered
+    // tail from the earliest unfinished phase so the new flow applies
+    // immediately after an update. Clearing order before chunkOrder() avoids
+    // its orphan-A cleanup, because these records came from a real saved
+    // session rather than a speculative discarded queue.
+    if (n && d.ilFlowV !== IL_FLOW_V) {
+      d.ilFlowV = IL_FLOW_V;
+      const phase = this.ilLessonState(d);
+      if (phase.fresh.length || phase.A.length || phase.B.length || phase.C.length) {
+        d.order = [];
+        d.pos = 0;
+        d.order = this.chunkOrder(d, n);
+      }
+      this.save(d);
+    }
     if (n && (!d.v7 || newDay)) {
       d.v5 = 1; d.v6 = 1; d.v7 = 1;
       d.order = this.chunkOrder(d, n);
@@ -1764,28 +1795,6 @@ class Component extends DCLogic {
     this.setState(s => { const d = JSON.parse(JSON.stringify(s.data)); mut(d); this.save(d); return Object.assign({ data: d }, extra || {}); }, done);
   }
 
-  // ---- where you came from ----
-  // Recorded centrally rather than at each of the ~40 places that change
-  // screen, so nothing can forget to push. Kept in memory only: a back stack
-  // that survived a reload would send you back to a screen from last week.
-  // The runtime calls componentDidUpdate(prevProps) — one argument, no
-  // prevState — so the previous screen has to be tracked here.
-  componentDidUpdate() {
-    const to = this.state.screen;
-    const from = this._navPrev;
-    this._navPrev = to;
-    if (!from || !to || from === to) return;
-    if (this._navPopped === to) { this._navPopped = null; return; }   // this was a back move
-    this._nav = (this._nav || []).filter(x => x !== from).concat([from]).slice(-15);
-  }
-  navBack() {
-    const stack = this._nav || [];
-    const dest = stack.pop();
-    if (!dest) return null;
-    this._nav = stack;
-    this._navPopped = dest;
-    return dest;
-  }
   // Stop whatever the screen being left had running. Timers and the microphone
   // do not stop themselves.
   leaveScreen(screen) {
@@ -1794,12 +1803,11 @@ class Component extends DCLogic {
     if (screen === 'ltext' || screen === 'listen') this.lsStop();
     if (screen === 'dses' || screen === 'disc') this.dcStop();
     if (screen === 'game') this.setState({ game: null });
-    if (screen === 'exercise') this.setState({ ex: null });
+    if (screen === 'exercise') { this.exStop(); this.setState({ ex: null }); }
   }
 
   componentDidMount() {
     this._mounted = true;
-    this._navPrev = this.state.screen;
     if (!this.W.length) {
       this.iv = setInterval(() => {
         if (window.VOCAB_WORDS && window.VOCAB_WORDS.length) {
@@ -1813,11 +1821,8 @@ class Component extends DCLogic {
   componentWillUnmount() {
     this._mounted = false;
     clearInterval(this.iv); clearInterval(this.csIv); clearInterval(this.dIv);
-    this.lsAuto = false;
-    try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
     clearInterval(this.sbIv);
-    if (this.rec) { try { this.rec.abort(); } catch (e) {} }
-    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    this.exStop(); this.lsStop(true); this.dcStop();
   }
 
   // The task follows the WORD, not the round. Receptive knowledge precedes
@@ -2113,10 +2118,9 @@ class Component extends DCLogic {
   }
   // LEG-003 — Initial Learning turn completion. Deliberately not advance():
   // Turn A/B never touch vocab_sr_v1 (see srCompleteInitialLearning, called
-  // only on a correct Turn C); a wrong Turn B/C never shows "دوباره" (point
-  // 3) — it silently reschedules the same turn a few cards later instead,
-  // up to IL_MAX_FAILS times before the word is marked 'unfinished' for this
-  // lesson (point 4).
+  // only on a correct Turn C). Correct answers advance state but are queued
+  // only after every word finishes the current phase; wrong B/C answers stay
+  // in the phase and silently retry, up to IL_MAX_FAILS.
   ilAdvance(turn, wasCorrect) {
     const w = this.current(); if (!w) return;
     const il = this.ilLoad();
@@ -2124,10 +2128,9 @@ class Component extends DCLogic {
     let gapMin = 0, gapMax = 0, reschedule = false;
     if (turn === 'A') {
       rec.turn = 'B'; rec.fails = 0;
-      gapMin = IL_GAP_B_MIN; gapMax = IL_GAP_B_MAX; reschedule = true;
     } else if (turn === 'B' || turn === 'C') {
       if (wasCorrect) {
-        if (turn === 'B') { rec.turn = 'C'; rec.fails = 0; gapMin = IL_GAP_C_MIN; gapMax = IL_GAP_C_MAX; reschedule = true; }
+        if (turn === 'B') { rec.turn = 'C'; rec.fails = 0; }
         else { this.srCompleteInitialLearning(w.i); rec.turn = 'done'; }
       } else {
         rec.fails = (rec.fails || 0) + 1;
@@ -2312,7 +2315,9 @@ class Component extends DCLogic {
     let grew = false;
     this.set(d => {
       const before = d.order.length;
-      const more = this.chunkOrder(d, n).filter(i => d.order.indexOf(i) < 0);
+      // A/B/C deliberately reuse the same word indices in successive phase
+      // queues, so global index de-duplication would erase the entire test.
+      const more = this.chunkOrder(d, n);
       if (more.length) d.order = d.order.concat(more);
       grew = d.order.length > before;
     }, {}, () => {
@@ -2532,6 +2537,13 @@ class Component extends DCLogic {
     this.setState({ screen: 'exercise', ex: { type, cat, items, k: 0, picked: null, typed: '', checked: false, correct: null, right: 0, opts: [], recState: 'idle', heard: '', speechScore: null, speechMissing: [], audioUrl: '', done: false } }, () => this.exPrepare());
   }
   exSet(patch, cb) { this.setState(s => ({ ex: Object.assign({}, s.ex, patch) }), cb); }
+  exStop() {
+    this._exMicToken = (this._exMicToken || 0) + 1;
+    try { if (this.rec) this.rec.abort(); } catch (e) {}
+    try { if (this.mr && this.mr.state !== 'inactive') this.mr.stop(); } catch (e) {}
+    this.rec = null; this.mr = null;
+    revokeObjectUrl(this.state && this.state.ex && this.state.ex.audioUrl);
+  }
   exPrepare() {
     const ex = this.state.ex; if (!ex) return;
     const w = ex.items[ex.k];
@@ -2606,19 +2618,29 @@ class Component extends DCLogic {
   }
   exRecordAudio() {
     if (!navigator.mediaDevices || !window.MediaRecorder) return this.exSet({ recState: 'error' });
+    const token = (this._exMicToken || 0) + 1;
+    this._exMicToken = token;
     navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+      if (this._exMicToken !== token || !this._mounted || this.state.screen !== 'exercise' || !this.state.ex) {
+        stream.getTracks().forEach(t => t.stop());
+        return;
+      }
+      revokeObjectUrl(this.state.ex.audioUrl);
       const mr = new MediaRecorder(stream); this.mr = mr;
       const chunks = [];
       mr.ondataavailable = e => chunks.push(e.data);
       mr.onstop = () => {
         stream.getTracks().forEach(t => t.stop());
+        if (this._exMicToken !== token || !this._mounted || this.state.screen !== 'exercise' || !this.state.ex) return;
         const url = URL.createObjectURL(new Blob(chunks, { type: 'audio/webm' }));
         this.exSet({ recState: 'review', audioUrl: url });
       };
       mr.start();
       this.exSet({ recState: 'recording' });
       setTimeout(() => { if (mr.state !== 'inactive') mr.stop(); }, 4000);
-    }).catch(() => this.exSet({ recState: 'error' }));
+    }).catch(() => {
+      if (this._exMicToken === token && this._mounted && this.state.screen === 'exercise' && this.state.ex) this.exSet({ recState: 'error' });
+    });
   }
   exSelf(ok) {
     const ex = this.state.ex; if (!ex || ex.checked) return;
@@ -2799,7 +2821,7 @@ class Component extends DCLogic {
       out.exScoreDesc = (pctE >= 70 ? 'عالی! این دسته دارد جا می‌افتد. ' : 'اشکال ندارد — دوباره تمرین کن تا جا بیفتد. ') + (ex.right * 5) + ' امتیاز تجربه گرفتی.';
       out.exResIconStyle = 'width:56px;height:56px;margin:0 auto;border-radius:16px;display:grid;place-items:center;font-size:28px;background:' + (pctE >= 70 ? 'rgba(143,217,193,.12)' : 'rgba(224,164,88,.12)') + ';border:1px solid ' + (pctE >= 70 ? 'rgba(143,217,193,.4)' : 'rgba(224,164,88,.4)') + ';color:' + (pctE >= 70 ? '#8fd9c1' : '#e0a458');
       out.exRetry = () => this.startEx(ex.type);
-      out.exBack = () => this.setState({ screen: this.navBack() || 'browse', ex: null });
+      out.exBack = () => this.setState({ screen: 'browse', ex: null });
     }
     if (out.isGame) {
       out.gLevel = 'مرحله ' + gm.level;
@@ -2819,7 +2841,7 @@ class Component extends DCLogic {
       out.gOverTitle = 'بازی تمام شد — امتیاز ' + gm.score;
       out.gOverDesc = gm.score > (gm.best || 0) ? 'رکورد تازه ثبت شد!' : 'رکوردت ' + (gm.best || 0) + ' است — دوباره امتحان کن.';
       out.gRetry = () => this.startGame(gm.cat, gm.lv);
-      out.gQuit = () => this.setState({ screen: this.navBack() || 'words', game: null });
+      out.gQuit = () => this.setState({ screen: 'words', game: null });
     }
     return out;
   }
@@ -3052,7 +3074,7 @@ class Component extends DCLogic {
     const k = (sb.k + 1) % sb.items.length;
     this.sbSet({ k, left: 30 }, () => this.sbPrep());
   }
-  sbQuit() { clearInterval(this.sbIv); this.setState({ screen: this.navBack() || 'sent', sb: null }); }
+  sbQuit() { clearInterval(this.sbIv); this.setState({ screen: 'sent', sb: null }); }
 
   sentVals() {
     const s = this.state, SD = window.SENT || null;
@@ -3064,7 +3086,7 @@ class Component extends DCLogic {
       const lv = s.sbLv || 'A1', D = SD[lv];
       out.sbLvChips = LEVELS.map(L => {
         const unlocked = this.sbLevelUnlocked(L);
-        return { label: L, icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked,
+        return { label: L, icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked, tabClass: lv === L ? 'is-active' : (unlocked ? '' : 'is-locked'),
           style: chip(lv === L, '#84c5d9') + (unlocked ? '' : ';opacity:.38;cursor:not-allowed'),
           pick: () => { if (unlocked) this.setState({ sbLv: L }); } };
       });
@@ -3595,7 +3617,7 @@ class Component extends DCLogic {
     }
     this.csSet({ items, wrongIds, failCounts, done: true });
   }
-  csQuit() { clearInterval(this.csIv); const cs = this.state.cs; this.setState({ screen: this.navBack() || (cs && cs.back) || 'home', cs: null }); }
+  csQuit() { clearInterval(this.csIv); const cs = this.state.cs; this.setState({ screen: (cs && cs.back) || 'home', cs: null }); }
 
   // ---- grammar drill builders ----
   // Structured input: meaning cannot be recovered without parsing the
@@ -3812,7 +3834,7 @@ class Component extends DCLogic {
         const ls = this.gramLessons(L);
         const dn = reviewOnly ? ls.filter(x => this.gramStats(x).passed > 0).length : ls.filter(x => this.gramStats(x).complete).length;
         const unlocked = reviewOnly || this.gramLevelUnlocked(L);
-        return { label: L + (ls.length ? ' · ' + dn + '/' + ls.length : ''), icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked,
+        return { label: L + (ls.length ? ' · ' + dn + '/' + ls.length : ''), icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked, tabClass: lv === L ? 'is-active' : (unlocked ? '' : 'is-locked'),
           style: chip(lv === L, '#9184d9') + (unlocked ? '' : ';opacity:.38;cursor:not-allowed'),
           pick: () => { if (unlocked) this.setState({ gLv: L }); } };
       });
@@ -3923,13 +3945,19 @@ class Component extends DCLogic {
         const DRILLS = ['_choose', '_fill', '_mean', '_prod'];
         out.cgChips2 = G.map(x => {
           const done = DRILLS.filter(d => this.csScore('c_' + x.key + d) != null).length;
-          return { label: x.label + (done ? ' · ' + done + '/' + DRILLS.length : ''), style: chip(g.key === x.key, '#8fd9c1'), pick: () => this.setState({ cgKey: x.key }) };
+          return { label: x.label, progress: done + '/' + DRILLS.length, hasProgress: done > 0,
+            tabClass: g.key === x.key ? 'is-active' : '', pick: () => this.setState({ cgKey: x.key }) };
         });
+        const activeDone = DRILLS.filter(d => this.csScore('c_' + g.key + d) != null).length;
+        const groupIndex = Math.max(0, G.findIndex(x => x.key === g.key));
+        const nextGroup = G[(groupIndex + 1) % G.length];
         out.cgUse = g.use || g.note || '';
         out.cgHasUse = !!(g.use || g.note);
         out.cgLabel = g.label;
-        out.cgItems = g.items.map(it => ({ en: it.en, fa: it.fa, say: () => this.speakWord(it.en) }));
+        out.cgItems = g.items.map((it, i) => ({ n: String(i + 1), en: it.en, fa: it.fa, say: () => this.speakWord(it.en) }));
         out.cgCount = g.items.length + ' ترکیب در این گروه';
+        out.cgProgressLabel = activeDone ? activeDone + ' از ' + DRILLS.length + ' تمرین انجام‌شده' : 'آمادهٔ شروع';
+        out.cgNextGo = () => nextGroup && this.setState({ cgKey: nextGroup.key });
         // Only the verb groups actually ask about a verb; the function groups
         // ("نظر دادن", "سلام و گپ", …) blank out a preposition or an opener.
         const isVerbGroup = g.items.every(it => CORE_VERBS.indexOf(it.en.split(' ')[0]) >= 0);
@@ -3941,7 +3969,8 @@ class Component extends DCLogic {
           { label: 'از فارسی بساز', d: 'سخت‌ترین تمرین — کل عبارت را بنویس', icon: 'ph ph-pen-nib', c: '#e0879e', key: '_prod', go: () => this.cProduceDrill(g) }
         ].map(x => {
           const pc = this.csScore('c_' + g.key + x.key);
-          return { label: x.label, d: x.d + (pc != null ? ' · بهترین ' + pc + '٪' : ''), icon: x.icon, style: drillBtn(x.c), iconStyle: iconSq(x.c), go: x.go };
+          return { label: x.label, d: x.d, icon: x.icon, accentStyle: '--colloc-accent:' + x.c,
+            hasScore: pc != null, score: pc != null ? pc + '٪' : '', go: x.go };
         });
       }
       out.cGameBest = 'رکورد: ' + this.csBest('c_game');
@@ -4088,12 +4117,15 @@ class Component extends DCLogic {
     this.setState({ screen: 'ltext', lsText: t, lsLine: 0, lsPlaying: false, lsRate: 0.9, lsShowFa: false,
       lsRec: 'idle', lsUrl: '', lsHeard: '', lsSpeech: null, lsSpeechState: 'idle', lsQuiz: null }, () => this.lsMarkRead(t.id));
   }
-  lsStop() {
+  lsStop(silent) {
+    this._lsMicToken = (this._lsMicToken || 0) + 1;
     this.lsAuto = false;
     try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
     try { if (this.lsSR) this.lsSR.abort(); } catch (e) {}
     try { if (this.lsMr && this.lsMr.state !== 'inactive') this.lsMr.stop(); } catch (e) {}
-    if (this.state && this.state.lsPlaying) this.setState({ lsPlaying: false });
+    this.lsSR = null; this.lsMr = null;
+    revokeObjectUrl(this.state && this.state.lsUrl);
+    if (!silent && this.state && this.state.lsPlaying) this.setState({ lsPlaying: false });
   }
   lsSpeak(text, cb) {
     if (!window.speechSynthesis) return cb && cb();
@@ -4143,12 +4175,20 @@ class Component extends DCLogic {
       return;
     }
     if (!navigator.mediaDevices || !window.MediaRecorder) return this.setState({ lsRec: 'error' });
+    const token = (this._lsMicToken || 0) + 1;
+    this._lsMicToken = token;
     navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+      if (this._lsMicToken !== token || !this._mounted || this.state.screen !== 'ltext' || !this.state.lsText) {
+        stream.getTracks().forEach(x => x.stop());
+        return;
+      }
+      revokeObjectUrl(this.state.lsUrl);
       const mr = new MediaRecorder(stream); this.lsMr = mr;
       const chunks = [];
       mr.ondataavailable = e => chunks.push(e.data);
       mr.onstop = () => {
         stream.getTracks().forEach(x => x.stop());
+        if (this._lsMicToken !== token || !this._mounted || this.state.screen !== 'ltext' || !this.state.lsText) return;
         this.setState({ lsRec: 'done', lsUrl: URL.createObjectURL(new Blob(chunks, { type: 'audio/webm' })) });
       };
       mr.start();
@@ -4163,7 +4203,9 @@ class Component extends DCLogic {
         onEnd: () => { if (this.state.lsSpeechState === 'connecting') this.setState({ lsSpeechState: 'offline' }); }
       });
       if (!this.lsSR) this.setState({ lsSpeechState: 'offline' });
-    }).catch(() => this.setState({ lsRec: 'error' }));
+    }).catch(() => {
+      if (this._lsMicToken === token && this._mounted && this.state.screen === 'ltext' && this.state.lsText) this.setState({ lsRec: 'error' });
+    });
   }
   lsStartQuiz() {
     const t = this.state.lsText; if (!t || !t.q || !t.q.length) return;
@@ -4197,7 +4239,7 @@ class Component extends DCLogic {
       out.lsLvChips = LEVELS.map(L => {
         const n = all.filter(t => t.lv === L).length;
         const unlocked = this.lsLevelUnlocked(L);
-        return { label: L + (n ? ' · ' + n : ' · —'), icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked,
+        return { label: L + (n ? ' · ' + n : ' · —'), icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked, tabClass: lv === L ? 'is-active' : (unlocked ? '' : 'is-locked'),
           style: chip(lv === L, '#84c5d9') + (unlocked ? '' : ';opacity:.38;cursor:not-allowed'),
           pick: () => { if (unlocked) this.setState({ lsLv: L }); } };
       });
@@ -4327,11 +4369,14 @@ class Component extends DCLogic {
       dChecks: {}, dSaved: false, dNote: '' });
   }
   dcStop() {
+    this._dMicToken = (this._dMicToken || 0) + 1;
     clearInterval(this.dIv); this.dIv = null;
     try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch (e) {}
     try { if (this.dSR) this.dSR.abort(); } catch (e) {}
     // Leaving the screen must release the microphone — mr.onstop stops the tracks.
     try { if (this.dMr && this.dMr.state !== 'inactive') this.dMr.stop(); } catch (e) {}
+    this.dSR = null; this.dMr = null;
+    revokeObjectUrl(this.state && this.state.dUrl);
   }
   dcQuestions() {
     const s = this.state, ses = s.dSes; if (!ses) return [];
@@ -4397,12 +4442,20 @@ class Component extends DCLogic {
       return;
     }
     if (!navigator.mediaDevices || !window.MediaRecorder) return this.setState({ dRec: 'error' });
+    const token = (this._dMicToken || 0) + 1;
+    this._dMicToken = token;
     navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+      if (this._dMicToken !== token || !this._mounted || this.state.screen !== 'dses' || !this.state.dSes) {
+        stream.getTracks().forEach(x => x.stop());
+        return;
+      }
+      revokeObjectUrl(this.state.dUrl);
       const mr = new MediaRecorder(stream); this.dMr = mr;
       const chunks = [];
       mr.ondataavailable = e => chunks.push(e.data);
       mr.onstop = () => {
         stream.getTracks().forEach(x => x.stop());
+        if (this._dMicToken !== token || !this._mounted || this.state.screen !== 'dses' || !this.state.dSes) return;
         this.setState({ dRec: 'done', dUrl: URL.createObjectURL(new Blob(chunks, { type: 'audio/webm' })) }, () => this.dcReviewSpeech());
       };
       mr.start();
@@ -4413,7 +4466,9 @@ class Component extends DCLogic {
         onEnd: () => { if (this.state.dSpeechState === 'connecting') this.setState({ dSpeechState: 'offline' }); }
       });
       if (!this.dSR) this.setState({ dSpeechState: 'offline' });
-    }).catch(() => this.setState({ dRec: 'error' }));
+    }).catch(() => {
+      if (this._dMicToken === token && this._mounted && this.state.screen === 'dses' && this.state.dSes) this.setState({ dRec: 'error' });
+    });
   }
   async dcReviewSpeech() {
     const heard = (this.state.dHeard || '').trim();
@@ -4451,7 +4506,7 @@ class Component extends DCLogic {
         const n = all.filter(x => x.lv === L).length;
         const dn = all.filter(x => x.lv === L && done[x.id]).length;
         const unlocked = this.dcLevelUnlocked(L);
-        return { label: L + ' · ' + dn + '/' + n, icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked,
+        return { label: L + ' · ' + dn + '/' + n, icon: unlocked ? (lv === L ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key', locked: !unlocked, tabClass: lv === L ? 'is-active' : (unlocked ? '' : 'is-locked'),
           style: chip(lv === L, '#e0879e') + (unlocked ? '' : ';opacity:.38;cursor:not-allowed'),
           pick: () => { if (unlocked) this.setState({ dLv: L }); } };
       });
@@ -4626,6 +4681,7 @@ class Component extends DCLogic {
         label: tabLevel,
         icon: unlocked ? (active ? 'ph-fill ph-map-pin' : 'ph ph-circle') : 'ph-fill ph-lock-key',
         locked: !unlocked,
+        tabClass: active ? 'is-active' : (unlocked ? '' : 'is-locked'),
         style: chip(active, '#9184d9') + (unlocked ? '' : ';opacity:.38;cursor:not-allowed'),
         pick: () => { if (unlocked) this.setState({ lbLv: tabLevel, lbUnit: null }); }
       };
@@ -4639,13 +4695,9 @@ class Component extends DCLogic {
     out.lbContinueSub = 'سطح ' + cont.level + ' · بخش ' + cont.unit + ' · درس ' + cont.lesson;
     out.lbContinueGo = () => this.startLessonPractice(cont.level, cont.unit, cont.lesson);
     const unitCount = this.unitsInLevel(L);
-    // Same accordion convention as the rest of the app (one section open at
-    // a time): default to the learner's current unit only while viewing
-    // their actual current level — a past level's unit numbers do not line
-    // up with d.unit, so default those to unit 1. 0/null means "nothing
-    // open" so tapping the already-open unit's header collapses it.
-    const defaultUnit = viewLevel === d.level ? (d.unit || 1) : 1;
-    const openUnit = s.lbUnit != null ? s.lbUnit : defaultUnit;
+    // Start with every section collapsed. The learner opens exactly the unit
+    // they want; 0/null means "nothing open", and tapping it again closes it.
+    const openUnit = s.lbUnit || 0;
     // LEG-010 point 6 — flattened from three nested bordered/backgrounded
     // boxes (unit card > per-lesson bordered pill > per-word bordered chip)
     // down to one: the unit card stays (it is the actual grouping, same
@@ -4655,8 +4707,11 @@ class Component extends DCLogic {
     // the plain word list used elsewhere) instead of individually bordered
     // pills. Locked state is now communicated by icon + dimmed opacity only,
     // not by a whole extra box per row.
-    const lessonRowStyle = unlocked => 'display:flex;align-items:flex-start;gap:10px;padding:11px 2px;border-bottom:1px solid rgba(233,233,237,.06)' + (unlocked ? '' : ';opacity:.5');
+    const lessonRowStyle = unlocked => 'display:flex;align-items:flex-start;gap:10px;padding:12px 7px;border-bottom:1px solid rgba(233,233,237,.06)' + (unlocked ? '' : ';opacity:.5');
     const progress = this.lessonProgress(L);
+    const completedLessons = progress.filter(x => x.complete).length;
+    out.lbProgressLabel = completedLessons + ' از ' + progress.length + ' درس';
+    out.lbProgressBarStyle = 'height:100%;width:' + (progress.length ? Math.round((completedLessons / progress.length) * 100) : 0) + '%;border-radius:inherit;background:linear-gradient(90deg,#9184d9,#84c5d9,#8fd9c1);transition:width .35s';
     const units = [];
     for (let u = 1; u <= unitCount; u++) {
       const lessonsCount = this.lessonsInUnit(L, u);
@@ -4681,19 +4736,22 @@ class Component extends DCLogic {
           statusIcon: complete ? 'ph-fill ph-check-circle' : (unlocked ? (started ? 'ph-fill ph-clock-countdown' : 'ph ph-circle') : 'ph-fill ph-lock-key'),
           statusColor: unlocked ? color : 'rgba(233,233,237,.32)',
           rowStyle: lessonRowStyle(unlocked),
-          btnLabel: complete ? 'مرور دوباره' : 'شروع تمرین',
-          canStart: unlocked,
+          rowClass: complete ? 'lesson-row-complete' : '',
+          ariaLabel: complete ? 'مرور دوبارهٔ درس ' + les : (unlocked ? 'شروع درس ' + les : 'درس ' + les + ' قفل است'),
+          showReviewIcon: complete,
           start: () => { if (unlocked) this.startLessonPractice(L, u, les); }
         });
       }
       const unitLocked = lessons.length > 0 && lessons[0].locked;
       const unitAllComplete = lessons.length > 0 && lessons.every(x => x.complete);
+      const isCurrentUnit = viewLevel === d.level && u === d.unit;
       units.push({
         n: u, title: 'بخش ' + u,
         summary: unitComplete + ' از ' + lessonsCount + ' درس کامل',
         icon: unitLocked ? 'ph-fill ph-lock-key' : (unitAllComplete ? 'ph-fill ph-check-circle' : 'ph ph-circle'),
         iconColor: unitLocked ? 'rgba(233,233,237,.32)' : (unitAllComplete ? '#8fd9c1' : '#9184d9'),
         locked: unitLocked,
+        current: isCurrentUnit,
         // LEG-010 point 5 — the disclosure caret itself becomes the lock icon
         // when the unit cannot be opened, instead of a caret that silently
         // does nothing when tapped.
@@ -4702,11 +4760,10 @@ class Component extends DCLogic {
         caretStyle: unitLocked
           ? 'font-size:14px;color:rgba(233,233,237,.32)'
           : 'font-size:14px;color:rgba(233,233,237,.5);transition:transform .2s;transform:rotate(' + (u === openUnit ? 180 : 0) + 'deg)',
-        lockedHint: unitLocked ? 'با تمام‌شدن بخش قبلی باز می‌شود' : '',
         lessons: lessons,
         // LEG-010 point 4 — a locked unit's header click is a no-op; it can
-        // never reveal its lesson list (lockedHint above is the only
-        // feedback), matching the lesson-level lock which already refuses
+        // never reveal its lesson list; lock icon and summary are sufficient
+        // feedback, matching the lesson-level lock which already refuses
         // startLessonPractice() the same way.
         toggle: () => { if (unitLocked) return; this.setState({ lbUnit: openUnit === u ? 0 : u }); }
       });
@@ -4725,7 +4782,6 @@ class Component extends DCLogic {
     // to advance into from here.
     const li = LEVELS.indexOf(L);
     out.lbLevel = L;
-    out.lbIntro = 'سطح ' + L + ' — هر درس ' + LESSON_SIZE + ' واژهٔ تازه دارد؛ درس بعدی وقتی باز می‌شود که همهٔ واژه‌های درس فعلی یادگیری اولیه‌شان تمام شده باشد.';
     out.lbUnits = units;
     out.lbLevelComplete = viewLevel === d.level && progress.length > 0 && progress[progress.length - 1].complete;
     out.lbHasNextLevel = li >= 0 && li < LEVELS.length - 1;
@@ -4774,6 +4830,13 @@ class Component extends DCLogic {
     // LEG-003: which Initial-Learning turn (if any) is driving the current
     // card. null for every normal/already-tracked word — untouched below.
     const ilTurn = this.ilTurnFor(w.i);
+    const ilLesson = this.ilLessonState(d);
+    const isLearnPhase = ilTurn === 'A';
+    const isTestPhase = ilTurn === 'B' || ilTurn === 'C';
+    const studyPhaseDone = isLearnPhase ? ilLesson.learnDone : ilLesson.testDone;
+    const studyPhaseTotal = isLearnPhase ? ilLesson.lesson.length : ilLesson.testTotal;
+    const studyPhaseCurrent = Math.min(studyPhaseTotal, studyPhaseDone + 1);
+    const studyPhasePct = studyPhaseTotal ? Math.round((studyPhaseDone / studyPhaseTotal) * 100) : 0;
     let promptText = w.en, promptHint = 'معنی را به یاد بیاور', ltr = true;
     if (mode === 'mcq') promptHint = 'معنی درست را انتخاب کن';
     if (mode === 'type') { promptText = faShown; promptHint = 'املای انگلیسی را بنویس'; ltr = false; }
@@ -4981,6 +5044,9 @@ class Component extends DCLogic {
         editing: s.editEn === x.en, notEditing: s.editEn !== x.en,
         edit: () => this.setState({ wordMoreEn: x.en }, () => this.editStart(x.en, x.fa)),
         moreOpen: s.wordMoreEn === x.en,
+        rowClass: s.wordMoreEn === x.en ? 'is-open' : '',
+        moreIcon: s.wordMoreEn === x.en ? 'ph ph-caret-up' : 'ph ph-dots-three',
+        moreLabel: s.wordMoreEn === x.en ? 'بستن جزئیات' : 'نمایش جزئیات',
         moreGo: () => this.setState({ wordMoreEn: s.wordMoreEn === x.en ? null : x.en, editEn: null, editVal: '' }),
         picking: s.catPickEn === x.en,
         move: () => this.setState({ catPickEn: s.catPickEn === x.en ? null : x.en, editEn: null }),
@@ -5010,10 +5076,6 @@ class Component extends DCLogic {
         pick: () => this.setState({ dictSort: o.key, limit: 60, dictToolsOpen: false }) };
     });
     const qstats = this.queueStats(d, total);
-    const lvstats = this.levelStats(d.round, total);
-    const levelPctRaw = lvstats.total ? Math.min(100, (lvstats.introduced / lvstats.total) * 100) : 0;
-    const rawWordPhase = this.srKnown(w.i) ? 4 : Math.min(3, this.srStage(w.i));
-    const wordPhase = Math.max(0, rawWordPhase);
     const coverageTarget = srn.introduced < STAGES.core ? STAGES.core : (srn.introduced < STAGES.periphery ? STAGES.periphery : STAGES.total);
     // Today's lesson: what is ticked, what is planned, and which step is next.
     const nextMile = (Math.floor(d.seen / QUIZ_EVERY) + 1) * QUIZ_EVERY;
@@ -5026,8 +5088,9 @@ class Component extends DCLogic {
     const vals = Object.assign(this.exVals(), this.courseVals(), this.listenVals(), this.discVals(), this.sentVals(), this.lessonBrowserVals(), {
       totalWords: String(total), roundNum: String(d.round), roundName: info.name, streak: String(d.streak || 1),
       cardStarIcon: (this.current() && (d.starred || {})[this.current().i]) ? 'ph-fill ph-star' : 'ph ph-star',
-      cardStarStyle: 'display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:9px;font-size:12.5px;cursor:pointer;background:' + ((this.current() && (d.starred || {})[this.current().i]) ? 'rgba(224,164,88,.14)' : 'transparent') + ';border:1px solid ' + ((this.current() && (d.starred || {})[this.current().i]) ? '#e0a458' : 'rgba(233,233,237,.42)') + ';color:' + ((this.current() && (d.starred || {})[this.current().i]) ? '#e0a458' : 'rgba(233,233,237,.6)'),
+      cardStarClass: (this.current() && (d.starred || {})[this.current().i]) ? 'study-tool-starred' : '',
       cardStarLabel: (this.current() && (d.starred || {})[this.current().i]) ? 'نشان‌دار' : 'نشان‌گذاری',
+      cardStarTitle: (this.current() && (d.starred || {})[this.current().i]) ? 'برداشتن نشان واژه' : 'نشان‌گذاری این واژه',
       cardStarGo: () => { const c = this.current(); if (c) this.toggleStar(c.i); },
       isHome: s.screen === 'home', isStudy: s.screen === 'study', isQuiz: s.screen === 'quiz', isResult: s.screen === 'result', isBrowse: s.screen === 'browse',
       isWords: s.screen === 'words', isJobs: s.screen === 'jobs', isJobDetail: s.screen === 'jobdetail' && !!s.job,
@@ -5052,6 +5115,7 @@ class Component extends DCLogic {
         const unlocked = this.practiceLevelUnlocked(L), on = (s.practiceLv || 'A1') === L;
         return {
           label: L, icon: unlocked ? (on ? 'ph-fill ph-check-circle' : 'ph ph-circle') : 'ph ph-lock-key',
+          locked: !unlocked, tabClass: on ? 'is-active' : (unlocked ? '' : 'is-locked'),
           style: 'display:flex;align-items:center;justify-content:center;gap:5px;min-width:58px;padding:8px 12px;border-radius:9px;font-family:Inter,sans-serif;font-size:12px;background:' + (on ? 'rgba(145,132,217,.15)' : 'transparent') + ';border:1px solid ' + (on ? 'rgba(145,132,217,.65)' : 'rgba(233,233,237,.14)') + ';color:' + (unlocked ? (on ? '#d7d1f5' : 'rgba(233,233,237,.62)') : 'rgba(233,233,237,.28)') + (unlocked ? '' : ';cursor:not-allowed'),
           pick: () => { if (unlocked) this.setState({ practiceLv: L }); }
         };
@@ -5119,20 +5183,11 @@ class Component extends DCLogic {
         iconStyle: iconSq(t.color),
         go: t.go
       })),
-      levelLabel: this.levelOf(d.round),
-      levelWordProgress: lvstats.introduced + ' از ' + lvstats.total + ' آشناشده',
-      levelKnown: lvstats.known + ' بلد',
-      levelPctLabel: lvstats.introduced > 0 && levelPctRaw < 1 ? 'کمتر از ۱٪' : Math.round(levelPctRaw) + '٪',
-      levelBarStyle: 'height:100%;width:' + (lvstats.introduced > 0 ? Math.max(1, levelPctRaw) : 0) + '%;background:linear-gradient(90deg,#84c5d9,#9184d9);transition:width .35s',
-      sessionPosition: 'کارت ' + (d.order.length ? Math.min(d.pos + 1, d.order.length) : 0) + ' از ' + d.order.length,
-      todayShort: 'امروز ' + Math.min(d.goal || 20, d.days[t] || 0) + ' از ' + (d.goal || 20),
       // Coverage moves immediately; mastery stays a strict separate number.
       stageLabel: srn.introduced < STAGES.core ? 'هسته‌ی دوره' : (srn.introduced < STAGES.periphery ? 'واژه‌های دوره' : 'گنجینه'),
       stageCount: srn.introduced + ' آشناشده از ' + coverageTarget + ' · ' + srn.known + ' بلد',
       knownCount: String(srn.known),
       progressSummary: srn.introduced + ' آشناشده · ' + srn.known + ' بلد',
-      wordStageLabel: 'مرحلهٔ ' + (wordPhase + 1) + ' از ۵ · ' + WORD_LADDER[wordPhase].name,
-      wordStageStyle: 'padding:3px 8px;border-radius:99px;background:rgba(132,197,217,.1);border:1px solid rgba(132,197,217,.35);color:#84c5d9',
       dueToday: String(qstats.due),
       sessionMix: Math.min(MAX_REVIEWS, qstats.due) + ' مرور · ' + Math.min(MAX_NEW, qstats.fresh) + ' تازه',
       sessionEta: 'حدود ' + Math.max(1, Math.ceil((Math.min(MAX_REVIEWS, qstats.due) + Math.min(MAX_NEW, qstats.fresh)) * .45)) + ' دقیقه',
@@ -5157,13 +5212,14 @@ class Component extends DCLogic {
       resetLabel: s.confirmReset ? 'مطمئنی؟ دوباره بزن' : 'پاک کردن پیشرفت',
       resetAll: () => {
         if (!s.confirmReset) return this.setState({ confirmReset: true });
-        ['vocab_game', 'vocab_sent', 'vocab_course', 'vocab_listen', 'vocab_disc', 'vocab_ui_v1', 'vocab_sr_v1', 'vocab_mysent']
+        ['vocab_game', 'vocab_sent', 'vocab_course', 'vocab_listen', 'vocab_disc', 'vocab_ui_v1', 'vocab_sr_v1', 'vocab_mysent', 'vocab_session_v1']
           .forEach(k => { try { localStorage.removeItem(k); } catch (e) {} });
         // srLoad() caches vocab_sr_v1 in this._sr for the component's lifetime;
         // clearing the key above does nothing on screen until this in-memory
         // cache is dropped too, so "known" state and the review schedule kept
         // showing pre-reset values until a full page reload.
         this._sr = {};
+        this._il = null;
         this.mySent = {};
         const nd = this.blank(total); this.save(nd);
         this.setState({ data: nd, confirmReset: false, screen: 'home', msText: '', gpText: '', gpResult: null });
@@ -5173,9 +5229,16 @@ class Component extends DCLogic {
       cardStyle: 'border-radius:16px;overflow:hidden;background:rgba(233,233,237,.035);border:1px solid ' + accent + '33;box-shadow:0 18px 44px rgba(0,0,0,.35)',
       artStyle: 'position:relative;height:84px;display:grid;place-items:center;color:' + accent + ';background:radial-gradient(300px 100px at 30% 0%,' + accent + '26,transparent 70%),linear-gradient(160deg,' + accent + '14,rgba(18,20,31,0))',
       chipStyle: 'position:absolute;top:11px;right:12px;display:flex;align-items:center;gap:5px;padding:4px 9px;border-radius:99px;font-size:11px;background:' + accent + '1f;border:1px solid ' + accent + '3d;color:' + accent,
+      showStudyPhase: isLearnPhase || isTestPhase,
+      studyPhaseIcon: isLearnPhase ? 'ph-fill ph-book-open-text' : 'ph-fill ph-check-square-offset',
+      studyPhaseLabel: isLearnPhase ? 'آموزش واژه‌ها' : 'آزمون درس',
+      studyPhaseCount: isLearnPhase ? (studyPhaseDone + ' از ' + studyPhaseTotal + ' یادگرفته') : ('سؤال ' + studyPhaseCurrent + ' از ' + studyPhaseTotal),
+      studyPhaseBarStyle: 'width:' + studyPhasePct + '%',
       promptText, promptHint, promptStyle,
       speak: () => this.speakWord(w.en), speakSlow: () => this.speakWord(w.en, 0.55),
-      showAnswer: answered,
+      // Assessed modes reveal answers in their option/input feedback. A flash
+      // card gets only a compact inline meaning, never a second boxed panel.
+      showFlashAnswer: answered && mode === 'flash',
       editVal: s.editVal, onEditVal: e => this.setState({ editVal: e.target.value }),
       editKey: e => { if (e.key === 'Enter') this.editSave(); if (e.key === 'Escape') this.setState({ editEn: null, editVal: '' }); },
       editSave: () => this.editSave(),
@@ -5192,10 +5255,13 @@ class Component extends DCLogic {
       // cloze used to be excluded — the one mode built on the example sentence
       // was the only one that never revealed it, or its Persian translation.
       showSentence: !!sent && answered,
-      // Shown once the answer is revealed: a near-synonym is the cheapest way to
-      // place a new word next to one already known.
-      hasSyn: !!(w.syn && w.syn.length) && answered,
+      // Reserve the synonym row from the first frame so revealing it never
+      // shifts the options. It is visually blurred and hidden from assistive
+      // technology until the learner commits an answer.
+      hasSyn: !!(w.syn && w.syn.length),
       synList: (w.syn || []).join(' · '),
+      synSlotClass: answered ? 'is-revealed' : 'is-concealed',
+      synAriaHidden: answered ? 'false' : 'true',
       hasIpa: !!w.ipa, ipaText: w.ipa || '',
       showMyBlock: answered,
       // Collapsed by default so the rating buttons — the action every card
@@ -5234,7 +5300,7 @@ class Component extends DCLogic {
       msInputStyle: 'flex:1;min-width:0;padding:10px 13px;border-radius:9px;background:rgba(233,233,237,.04);border:1px solid rgba(233,233,237,.13);color:#e9e9ed;font-size:14px;outline:none;font-family:Inter,sans-serif;direction:ltr;text-align:left',
       hasMsErr: !!s.msErr, msErr: s.msErr,
       sentenceEn: sent ? sent.s : '', sentenceFa: sent ? sent.fa : '', hasSentenceFa: !!(sent && sent.fa),
-      actions,
+      hasActions: actions.length > 0, actions,
       hintLine: answered ? '' : (mode === 'flash' ? 'دکمهٔ «نمایش معنی» را بزن' : (isMcqLike ? 'گزینه‌ی درست را انتخاب کن' : 'Enter = بررسی')),
       nextQuizIn: String(Math.max(0, nextMile - d.seen)),
 
@@ -5325,13 +5391,14 @@ class Component extends DCLogic {
       learnedTotal: String((srn.known || 0) + (srn.learning || 0)),
       learnedActive: s.catFilter === '__learned',
       learnedQuickStyle: 'background:' + (s.catFilter === '__learned' ? 'rgba(143,217,193,.15)' : 'rgba(233,233,237,.025)') + ';border-color:' + (s.catFilter === '__learned' ? 'rgba(143,217,193,.62)' : 'rgba(233,233,237,.15)') + ';color:' + (s.catFilter === '__learned' ? '#8fd9c1' : 'rgba(233,233,237,.65)'),
+      allWordsFilterStyle: 'display:flex;align-items:center;gap:5px;background:' + (s.catFilter === 'all' ? 'rgba(145,132,217,.15)' : 'transparent') + ';border:1px solid ' + (s.catFilter === 'all' ? 'rgba(145,132,217,.55)' : 'rgba(233,233,237,.15)') + ';color:' + (s.catFilter === 'all' ? '#c8bef1' : 'rgba(233,233,237,.62)'),
       starsQuickStyle: 'background:' + (s.catFilter === '__star' ? 'rgba(224,164,88,.14)' : 'rgba(233,233,237,.025)') + ';border-color:' + (s.catFilter === '__star' ? 'rgba(224,164,88,.58)' : 'rgba(233,233,237,.15)') + ';color:' + (s.catFilter === '__star' ? '#e0a458' : 'rgba(233,233,237,.65)'),
       toolsQuickStyle: 'background:' + (s.dictToolsOpen ? 'rgba(132,197,217,.13)' : 'rgba(233,233,237,.025)') + ';border-color:' + (s.dictToolsOpen ? 'rgba(132,197,217,.55)' : 'rgba(233,233,237,.15)') + ';color:' + (s.dictToolsOpen ? '#84c5d9' : 'rgba(233,233,237,.65)'),
-      goLearned: () => this.setState({ screen: 'browse', catFilter: s.catFilter === '__learned' ? 'all' : '__learned', limit: 60, query: '', dictTrResult: null, dictTrErr: '', wordMoreEn: null }),
+      goLearned: () => this.setState({ screen: 'browse', catFilter: s.catFilter === '__learned' ? 'all' : '__learned', limit: 60, query: '', dictTrResult: null, dictTrErr: '', wordMoreEn: null, dictToolsOpen: false }),
       hasBrowseFilter: s.catFilter !== 'all',
       browseFilterLabel: s.catFilter === '__star' ? 'واژه‌های نشان‌دار' : (s.catFilter === '__learned' ? 'بلد و در حال یادگیری' : this.catLabel(s.catFilter)),
       clearBrowseFilter: () => this.setState({ catFilter: 'all', limit: 60, wordMoreEn: null, dictToolsOpen: false }),
-      browseCount: (s.catFilter === '__star' ? 'واژه‌های نشان‌دار — ' : (s.catFilter === '__learned' ? 'واژه‌های بلد و در حال یادگیری — ' : '')) + filtered.length + ' واژه' + (srn.known || srn.learning ? ' · ' + srn.known + ' واژه بلد · ' + srn.learning + ' در حال یادگیری' : ''),
+      browseCount: filtered.length + ' واژه' + (qy ? ' برای «' + qy + '»' : ''),
       browseList, hasMore: filtered.length > s.limit, showMore: () => this.setState({ limit: s.limit + 60 })
     });
 
@@ -5351,10 +5418,7 @@ class Component extends DCLogic {
       jobs:     ['', '', null],
       jobdetail:[s.job ? s.job.fa : 'جزئیات شغل', '', 'jobs'],
       settings: ['تنظیمات', '', 'home'],
-      // LEG-009 — a study session is now always entered from the lesson
-      // browser, so «بستن» falls back there (real navigation history via
-      // navBack() already does the right thing whenever it exists; this is
-      // only the static fallback for when it does not).
+      // LEG-009 — a study session is always a child of the lesson browser.
       study:    ['یادگیری · واژه‌ها', 'posLabel', 'lessons'],
       quiz:     ['یادگیری · آزمون واژه', 'quizPos', 'home'],
       placement:['تعیین سطح', 'plPos', 'home'],
@@ -5385,15 +5449,13 @@ class Component extends DCLogic {
     const up = s.screen === 'settings' && s.settingsFrom
       ? s.settingsFrom
       : (c && (c[2] || (s.cs && s.cs.back) || 'home'));
-    // «بستن» returns you to where you actually came from, not to a fixed
-    // parent. Entering a grammar lesson from the home tracks and closing it
-    // used to drop you on the grammar hub — somewhere you had never been.
-    // The static parent stays as the fallback for a first screen with no
-    // history behind it.
+    // LEG-054: every inner screen has one canonical parent. A global visit
+    // history also recorded automatic transitions and tab changes, which
+    // could send Back to an unrelated stale screen. Only the two genuinely
+    // shared routes above (settings and csrun) keep an explicit dynamic parent.
     vals.crumbUp = () => {
-      const dest = this.navBack() || up;
       this.leaveScreen(s.screen);
-      this.setState({ screen: dest });
+      this.setState({ screen: up });
     };
     return vals;
   }
